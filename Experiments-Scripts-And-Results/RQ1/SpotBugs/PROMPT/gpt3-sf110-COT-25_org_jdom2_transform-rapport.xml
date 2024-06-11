@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360740903" analysisTimestamp="1714575671339" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/jdom/JDOMResultTEST/25/org/jdom2/transform</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="8cedce65518219d894badd1cbe7138e2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.transform.JDOMResultTest.testGetDocument()</LongMessage>
+    <Class classname="org.jdom2.transform.JDOMResultTest" primary="true">
+      <SourceLine classname="org.jdom2.transform.JDOMResultTest" start="5" end="73" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java">
+        <Message>At JDOMResultTest.java:[lines 5-73]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.transform.JDOMResultTest</Message>
+    </Class>
+    <Method classname="org.jdom2.transform.JDOMResultTest" name="testGetDocument" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.transform.JDOMResultTest" start="40" end="42" startBytecode="0" endBytecode="4" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java"/>
+      <Message>In method org.jdom2.transform.JDOMResultTest.testGetDocument()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.transform.JDOMResultTest" primary="true" start="40" end="40" startBytecode="7" endBytecode="7" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java">
+      <Message>At JDOMResultTest.java:[line 40]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="d96fdf8d0db29077b731e4ce4e7c0ccb" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.transform.JDOMResultTest.testGetFactory()</LongMessage>
+    <Class classname="org.jdom2.transform.JDOMResultTest" primary="true">
+      <SourceLine classname="org.jdom2.transform.JDOMResultTest" start="5" end="73" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java">
+        <Message>At JDOMResultTest.java:[lines 5-73]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.transform.JDOMResultTest</Message>
+    </Class>
+    <Method classname="org.jdom2.transform.JDOMResultTest" name="testGetFactory" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.transform.JDOMResultTest" start="55" end="57" startBytecode="0" endBytecode="4" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java"/>
+      <Message>In method org.jdom2.transform.JDOMResultTest.testGetFactory()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.transform.JDOMResultTest" primary="true" start="55" end="55" startBytecode="7" endBytecode="7" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java">
+      <Message>At JDOMResultTest.java:[line 55]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="1968c98f8d706450346374743f2cc9c5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.transform.JDOMResultTest.testGetResult()</LongMessage>
+    <Class classname="org.jdom2.transform.JDOMResultTest" primary="true">
+      <SourceLine classname="org.jdom2.transform.JDOMResultTest" start="5" end="73" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java">
+        <Message>At JDOMResultTest.java:[lines 5-73]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.transform.JDOMResultTest</Message>
+    </Class>
+    <Method classname="org.jdom2.transform.JDOMResultTest" name="testGetResult" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.transform.JDOMResultTest" start="25" end="27" startBytecode="0" endBytecode="4" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java"/>
+      <Message>In method org.jdom2.transform.JDOMResultTest.testGetResult()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.transform.JDOMResultTest" primary="true" start="25" end="25" startBytecode="7" endBytecode="7" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java">
+      <Message>At JDOMResultTest.java:[line 25]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.jdom2.Document</MissingClass>
+    <MissingClass>org.jdom2.JDOMFactory</MissingClass>
+    <MissingClass>org.jdom2.transform.JDOMResult</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:00 +0100" total_classes="1" referenced_classes="12" total_bugs="3" total_size="36" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.59" clock_seconds="4.78" peak_mbytes="189.46" alloc_mbytes="7104.00" gc_seconds="0.27" priority_1="3">
+    <FileStats path="org/jdom2/transform/JDOMResultTest.java" bugCount="3" size="36" bugHash="222391aed3f0ba18ce0d8ce6e324f45b"/>
+    <PackageStats package="org.jdom2.transform" total_bugs="3" total_types="1" total_size="36" priority_1="3">
+      <ClassStats class="org.jdom2.transform.JDOMResultTest" sourceFile="JDOMResultTest.java" interface="false" size="36" bugs="3" priority_1="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="831" invocations="305" avgMicrosecondsPerInvocation="2727" maxMicrosecondsPerInvocation="65680" standardDeviationMicrosecondsPerInvocation="8463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="308" invocations="12" avgMicrosecondsPerInvocation="25679" maxMicrosecondsPerInvocation="302746" standardDeviationMicrosecondsPerInvocation="83541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="192" invocations="12" avgMicrosecondsPerInvocation="16062" maxMicrosecondsPerInvocation="82928" standardDeviationMicrosecondsPerInvocation="26504"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="178" invocations="45" avgMicrosecondsPerInvocation="3973" maxMicrosecondsPerInvocation="37308" standardDeviationMicrosecondsPerInvocation="7785"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="144" invocations="12" avgMicrosecondsPerInvocation="12018" maxMicrosecondsPerInvocation="61823" standardDeviationMicrosecondsPerInvocation="21608"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="139" invocations="268" avgMicrosecondsPerInvocation="519" maxMicrosecondsPerInvocation="17914" standardDeviationMicrosecondsPerInvocation="2210"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="126" invocations="30" avgMicrosecondsPerInvocation="4224" maxMicrosecondsPerInvocation="67757" standardDeviationMicrosecondsPerInvocation="13703"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="111" invocations="12" avgMicrosecondsPerInvocation="9287" maxMicrosecondsPerInvocation="90136" standardDeviationMicrosecondsPerInvocation="24592"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="101" invocations="10" avgMicrosecondsPerInvocation="10131" maxMicrosecondsPerInvocation="94339" standardDeviationMicrosecondsPerInvocation="28084"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="95" invocations="10" avgMicrosecondsPerInvocation="9527" maxMicrosecondsPerInvocation="84546" standardDeviationMicrosecondsPerInvocation="25014"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="79" invocations="268" avgMicrosecondsPerInvocation="296" maxMicrosecondsPerInvocation="37808" standardDeviationMicrosecondsPerInvocation="2870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="76" invocations="12" avgMicrosecondsPerInvocation="6415" maxMicrosecondsPerInvocation="33961" standardDeviationMicrosecondsPerInvocation="11620"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="65" invocations="1" avgMicrosecondsPerInvocation="65073" maxMicrosecondsPerInvocation="65073" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="53" invocations="10" avgMicrosecondsPerInvocation="5354" maxMicrosecondsPerInvocation="32457" standardDeviationMicrosecondsPerInvocation="9237"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="51" invocations="12" avgMicrosecondsPerInvocation="4317" maxMicrosecondsPerInvocation="30515" standardDeviationMicrosecondsPerInvocation="9385"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

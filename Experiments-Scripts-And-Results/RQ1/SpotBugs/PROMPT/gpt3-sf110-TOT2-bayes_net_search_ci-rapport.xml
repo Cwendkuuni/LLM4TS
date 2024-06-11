@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756311796" analysisTimestamp="1714599183230" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/107_weka/ICSSearchAlgorithmTEST/19/weka/classifiers/bayes/net/search/ci</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="fceddca533cbc1ff55cb29614747f456" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testExistsSepSet()</LongMessage>
+    <Class classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="5" end="56" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+        <Message>At ICSSearchAlgorithmTest.java:[lines 5-56]</Message>
+      </SourceLine>
+      <Message>In class weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest</Message>
+    </Class>
+    <Method classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" name="testExistsSepSet" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="44" end="48" startBytecode="0" endBytecode="15" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java"/>
+      <Message>In method weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testExistsSepSet()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true" start="46" end="46" startBytecode="23" endBytecode="23" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+      <Message>At ICSSearchAlgorithmTest.java:[line 46]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="141e01e934e997da8fc829df09168d6" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testNext()</LongMessage>
+    <Class classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="5" end="56" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+        <Message>At ICSSearchAlgorithmTest.java:[lines 5-56]</Message>
+      </SourceLine>
+      <Message>In class weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest</Message>
+    </Class>
+    <Method classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" name="testNext" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="52" end="56" startBytecode="0" endBytecode="15" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java"/>
+      <Message>In method weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testNext()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true" start="54" end="54" startBytecode="23" endBytecode="23" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+      <Message>At ICSSearchAlgorithmTest.java:[line 54]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithm</MissingClass>
+    <MissingClass>weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithm$SeparationSet</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:11 +0100" total_classes="1" referenced_classes="10" total_bugs="2" total_size="36" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.73" clock_seconds="1.77" peak_mbytes="189.75" alloc_mbytes="7104.00" gc_seconds="0.17" priority_2="2">
+    <FileStats path="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java" bugCount="2" size="36" bugHash="e6655415263a9b0f1abe33aa0385c34b"/>
+    <PackageStats package="weka.classifiers.bayes.net.search.ci" total_bugs="2" total_types="1" total_size="36" priority_2="2">
+      <ClassStats class="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" sourceFile="ICSSearchAlgorithmTest.java" interface="false" size="36" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="239" invocations="315" avgMicrosecondsPerInvocation="760" maxMicrosecondsPerInvocation="16534" standardDeviationMicrosecondsPerInvocation="1882"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="189" invocations="10" avgMicrosecondsPerInvocation="18930" maxMicrosecondsPerInvocation="172201" standardDeviationMicrosecondsPerInvocation="51150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="98" invocations="10" avgMicrosecondsPerInvocation="9815" maxMicrosecondsPerInvocation="26273" standardDeviationMicrosecondsPerInvocation="8893"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="83" invocations="65" avgMicrosecondsPerInvocation="1281" maxMicrosecondsPerInvocation="16565" standardDeviationMicrosecondsPerInvocation="2746"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="70" invocations="10" avgMicrosecondsPerInvocation="7050" maxMicrosecondsPerInvocation="49495" standardDeviationMicrosecondsPerInvocation="14282"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="57" invocations="1" avgMicrosecondsPerInvocation="57978" maxMicrosecondsPerInvocation="57978" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="49" invocations="10" avgMicrosecondsPerInvocation="4970" maxMicrosecondsPerInvocation="22965" standardDeviationMicrosecondsPerInvocation="7026"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="39" invocations="8" avgMicrosecondsPerInvocation="4999" maxMicrosecondsPerInvocation="36513" standardDeviationMicrosecondsPerInvocation="11920"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="37" invocations="26" avgMicrosecondsPerInvocation="1434" maxMicrosecondsPerInvocation="21325" standardDeviationMicrosecondsPerInvocation="4084"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="36" invocations="10" avgMicrosecondsPerInvocation="3667" maxMicrosecondsPerInvocation="9617" standardDeviationMicrosecondsPerInvocation="3506"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="33" invocations="10" avgMicrosecondsPerInvocation="3342" maxMicrosecondsPerInvocation="15157" standardDeviationMicrosecondsPerInvocation="5050"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="31" invocations="278" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="1762" standardDeviationMicrosecondsPerInvocation="218"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="30" invocations="317" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="7298" standardDeviationMicrosecondsPerInvocation="415"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="29" invocations="8" avgMicrosecondsPerInvocation="3707" maxMicrosecondsPerInvocation="19271" standardDeviationMicrosecondsPerInvocation="5886"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

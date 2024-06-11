@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711017767163" analysisTimestamp="1714573277494" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V4/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/FEWSHOT/Odc/24/26/com/oceanbase/odc/metadb/iam</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="d7a01cc50474641768197ba72a3a5eb6" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByIdIn()</LongMessage>
+    <Class classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="19" end="105" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+        <Message>At RoleRepositoryTest.java:[lines 19-105]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.metadb.iam.RoleRepositoryTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" name="testFindByIdIn" signature="()V" isStatic="false" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="25" end="28" startBytecode="0" endBytecode="19" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java"/>
+      <Message>In method com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByIdIn()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="35" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" start="26" end="26" startBytecode="34" endBytecode="34" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+      <Message>At RoleRepositoryTest.java:[line 26]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="7d2e95d0bea95ae937ba0bb78138e65b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByName()</LongMessage>
+    <Class classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="19" end="105" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+        <Message>At RoleRepositoryTest.java:[lines 19-105]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.metadb.iam.RoleRepositoryTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" name="testFindByName" signature="()V" isStatic="false" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="32" end="35" startBytecode="0" endBytecode="7" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java"/>
+      <Message>In method com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByName()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="14" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" start="33" end="33" startBytecode="13" endBytecode="13" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+      <Message>At RoleRepositoryTest.java:[line 33]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="9852287f6b7f4ff949c7b7fb5ffaa732" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByNameAndOrganizationId()</LongMessage>
+    <Class classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="19" end="105" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+        <Message>At RoleRepositoryTest.java:[lines 19-105]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.metadb.iam.RoleRepositoryTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" name="testFindByNameAndOrganizationId" signature="()V" isStatic="false" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="48" end="52" startBytecode="0" endBytecode="11" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java"/>
+      <Message>In method com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByNameAndOrganizationId()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="22" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" start="50" end="50" startBytecode="21" endBytecode="21" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+      <Message>At RoleRepositoryTest.java:[line 50]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="d486a9423fb20afd0c3c30bc59e62db8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByOrganizationId()</LongMessage>
+    <Class classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="19" end="105" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+        <Message>At RoleRepositoryTest.java:[lines 19-105]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.metadb.iam.RoleRepositoryTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" name="testFindByOrganizationId" signature="()V" isStatic="false" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="39" end="44" startBytecode="0" endBytecode="13" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java"/>
+      <Message>In method com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByOrganizationId()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="26" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" start="42" end="42" startBytecode="25" endBytecode="25" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+      <Message>At RoleRepositoryTest.java:[line 42]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="7f462a539c825153bc2cdf10249a58f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByOrganizationIdAndNameIn()</LongMessage>
+    <Class classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="19" end="105" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+        <Message>At RoleRepositoryTest.java:[lines 19-105]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.metadb.iam.RoleRepositoryTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" name="testFindByOrganizationIdAndNameIn" signature="()V" isStatic="false" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="56" end="60" startBytecode="0" endBytecode="21" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java"/>
+      <Message>In method com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByOrganizationIdAndNameIn()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="37" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" start="58" end="58" startBytecode="36" endBytecode="36" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+      <Message>At RoleRepositoryTest.java:[line 58]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="4143b27a862c9b14aa7ed3f4e5231a5d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByOrganizationIdAndRoleIds()</LongMessage>
+    <Class classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="19" end="105" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+        <Message>At RoleRepositoryTest.java:[lines 19-105]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.metadb.iam.RoleRepositoryTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" name="testFindByOrganizationIdAndRoleIds" signature="()V" isStatic="false" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="64" end="70" startBytecode="0" endBytecode="28" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java"/>
+      <Message>In method com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByOrganizationIdAndRoleIds()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="51" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" start="68" end="68" startBytecode="49" endBytecode="49" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+      <Message>At RoleRepositoryTest.java:[line 68]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="77cdcfeedda1406aa3721def8b7e0c7c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByRoleIdsAndEnabled()</LongMessage>
+    <Class classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="19" end="105" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+        <Message>At RoleRepositoryTest.java:[lines 19-105]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.metadb.iam.RoleRepositoryTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" name="testFindByRoleIdsAndEnabled" signature="()V" isStatic="false" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="89" end="93" startBytecode="0" endBytecode="23" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java"/>
+      <Message>In method com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByRoleIdsAndEnabled()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="41" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" start="91" end="91" startBytecode="40" endBytecode="40" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+      <Message>At RoleRepositoryTest.java:[line 91]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="3b489ae1e8be6e025e5c6760bfd885fe" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByUserId()</LongMessage>
+    <Class classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="19" end="105" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+        <Message>At RoleRepositoryTest.java:[lines 19-105]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.metadb.iam.RoleRepositoryTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" name="testFindByUserId" signature="()V" isStatic="false" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="74" end="77" startBytecode="0" endBytecode="8" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java"/>
+      <Message>In method com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByUserId()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="18" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" start="75" end="75" startBytecode="17" endBytecode="17" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+      <Message>At RoleRepositoryTest.java:[line 75]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="b63ee18805a7731a1df8e209128168d2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByUserIdAndEnabled()</LongMessage>
+    <Class classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="19" end="105" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+        <Message>At RoleRepositoryTest.java:[lines 19-105]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.metadb.iam.RoleRepositoryTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" name="testFindByUserIdAndEnabled" signature="()V" isStatic="false" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="81" end="85" startBytecode="0" endBytecode="12" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java"/>
+      <Message>In method com.oceanbase.odc.metadb.iam.RoleRepositoryTest.testFindByUserIdAndEnabled()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" start="83" end="83" startBytecode="23" endBytecode="23" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+      <Message>At RoleRepositoryTest.java:[line 83]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" instanceHash="97a5cdcba326759efd3eca56644def09" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ jamais écrit</ShortMessage>
+    <LongMessage>Champ jamais écrit : com.oceanbase.odc.metadb.iam.RoleRepositoryTest.roleRepository</LongMessage>
+    <Class classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" start="19" end="105" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+        <Message>At RoleRepositoryTest.java:[lines 19-105]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.metadb.iam.RoleRepositoryTest</Message>
+    </Class>
+    <Field classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" name="roleRepository" signature="Lcom/oceanbase/odc/metadb/iam/RoleRepository;" isStatic="false" primary="true" classAnnotationNames="org.springframework.data.jpa.repository.config.EnableJpaRepositories">
+      <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+        <Message>In RoleRepositoryTest.java</Message>
+      </SourceLine>
+      <Message>Field com.oceanbase.odc.metadb.iam.RoleRepositoryTest.roleRepository</Message>
+    </Field>
+    <SourceLine classname="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" primary="true" start="26" end="26" startBytecode="25" endBytecode="25" sourcefile="RoleRepositoryTest.java" sourcepath="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java">
+      <Message>At RoleRepositoryTest.java:[line 26]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="UWF_UNWRITTEN_FIELD" abbrev="UwF" category="CORRECTNESS">
+    <ShortDescription>Champ jamais écrit</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais alimenté. Toutes les lectures vont renvoyer sa valeur par défaut. Recherchez les erreurs (devrait-il avoir été initialisé ?) ou supprimez le s'il est inutile.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UwF">
+    <Description>Champ jamais alimenté</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="5">
+    <MissingClass>com.oceanbase.odc.metadb.iam.RoleEntity</MissingClass>
+    <MissingClass>com.oceanbase.odc.metadb.iam.RoleRepository</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.springframework.data.domain.PageRequest</MissingClass>
+    <MissingClass>org.springframework.data.domain.Pageable</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 21 Mar 2024 11:42:47 +0100" total_classes="1" referenced_classes="16" total_bugs="10" total_size="56" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.78" clock_seconds="5.72" peak_mbytes="191.51" alloc_mbytes="7104.00" gc_seconds="0.22" priority_2="10">
+    <FileStats path="com/oceanbase/odc/metadb/iam/RoleRepositoryTest.java" bugCount="10" size="56" bugHash="ebf5ef92ea8c6bd592ce82871c79a320"/>
+    <PackageStats package="com.oceanbase.odc.metadb.iam" total_bugs="10" total_types="1" total_size="56" priority_2="10">
+      <ClassStats class="com.oceanbase.odc.metadb.iam.RoleRepositoryTest" sourceFile="RoleRepositoryTest.java" interface="false" size="56" bugs="10" priority_2="10"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="963" invocations="367" avgMicrosecondsPerInvocation="2626" maxMicrosecondsPerInvocation="65757" standardDeviationMicrosecondsPerInvocation="8068"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="328" invocations="16" avgMicrosecondsPerInvocation="20527" maxMicrosecondsPerInvocation="227656" standardDeviationMicrosecondsPerInvocation="57815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="314" invocations="139" avgMicrosecondsPerInvocation="2259" maxMicrosecondsPerInvocation="36870" standardDeviationMicrosecondsPerInvocation="6400"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="258" invocations="16" avgMicrosecondsPerInvocation="16127" maxMicrosecondsPerInvocation="62919" standardDeviationMicrosecondsPerInvocation="19851"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="204" invocations="16" avgMicrosecondsPerInvocation="12786" maxMicrosecondsPerInvocation="38271" standardDeviationMicrosecondsPerInvocation="14252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="172" invocations="34" avgMicrosecondsPerInvocation="5084" maxMicrosecondsPerInvocation="86299" standardDeviationMicrosecondsPerInvocation="15550"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="144" invocations="11" avgMicrosecondsPerInvocation="13127" maxMicrosecondsPerInvocation="90453" standardDeviationMicrosecondsPerInvocation="25725"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="137" invocations="11" avgMicrosecondsPerInvocation="12481" maxMicrosecondsPerInvocation="114424" standardDeviationMicrosecondsPerInvocation="32487"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="136" invocations="369" avgMicrosecondsPerInvocation="370" maxMicrosecondsPerInvocation="28073" standardDeviationMicrosecondsPerInvocation="2338"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="133" invocations="325" avgMicrosecondsPerInvocation="411" maxMicrosecondsPerInvocation="20734" standardDeviationMicrosecondsPerInvocation="1784"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="114" invocations="16" avgMicrosecondsPerInvocation="7128" maxMicrosecondsPerInvocation="52964" standardDeviationMicrosecondsPerInvocation="15093"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="110" invocations="16" avgMicrosecondsPerInvocation="6914" maxMicrosecondsPerInvocation="53143" standardDeviationMicrosecondsPerInvocation="14324"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="98" invocations="11" avgMicrosecondsPerInvocation="8925" maxMicrosecondsPerInvocation="47758" standardDeviationMicrosecondsPerInvocation="12713"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="89" invocations="16" avgMicrosecondsPerInvocation="5571" maxMicrosecondsPerInvocation="38636" standardDeviationMicrosecondsPerInvocation="10943"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="80" invocations="1" avgMicrosecondsPerInvocation="80493" maxMicrosecondsPerInvocation="80493" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

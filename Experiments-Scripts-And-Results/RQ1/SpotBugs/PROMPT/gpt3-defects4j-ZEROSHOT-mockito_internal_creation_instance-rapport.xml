@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420589869" analysisTimestamp="1714613937432" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/ZEROSHOT/Mockito/21/14/org/mockito/internal/creation/instance</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="1cb95fe5fa37393df0314e150c15690e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.mockito.internal.creation.instance.ConstructorInstantiatorTest$TestClass in org.mockito.internal.creation.instance.ConstructorInstantiatorTest.testNewInstance_withNoArgConstructor() at ConstructorInstantiatorTest.java:[line 18] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/mockito/internal/creation/instance/ConstructorInstantiatorTest$TestClass;">
+      <SourceLine classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest$TestClass">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.mockito.internal.creation.instance.ConstructorInstantiatorTest$TestClass</Message>
+    </Type>
+    <Class classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" primary="true">
+      <SourceLine classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" start="6" end="57" sourcefile="ConstructorInstantiatorTest.java" sourcepath="org/mockito/internal/creation/instance/ConstructorInstantiatorTest.java">
+        <Message>At ConstructorInstantiatorTest.java:[lines 6-57]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.creation.instance.ConstructorInstantiatorTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" name="testNewInstance_withNoArgConstructor" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" start="11" end="19" startBytecode="0" endBytecode="67" sourcefile="ConstructorInstantiatorTest.java" sourcepath="org/mockito/internal/creation/instance/ConstructorInstantiatorTest.java"/>
+      <Message>In method org.mockito.internal.creation.instance.ConstructorInstantiatorTest.testNewInstance_withNoArgConstructor()</Message>
+    </Method>
+    <SourceLine classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" primary="true" start="18" end="18" startBytecode="24" endBytecode="24" sourcefile="ConstructorInstantiatorTest.java" sourcepath="org/mockito/internal/creation/instance/ConstructorInstantiatorTest.java">
+      <Message>At ConstructorInstantiatorTest.java:[line 18]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="69ccd630cd5728b3d25326025d9cef59" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.mockito.internal.creation.instance.ConstructorInstantiatorTest$TestInnerClass in org.mockito.internal.creation.instance.ConstructorInstantiatorTest.testNewInstance_withOuterClass() at ConstructorInstantiatorTest.java:[line 32] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/mockito/internal/creation/instance/ConstructorInstantiatorTest$TestInnerClass;">
+      <SourceLine classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest$TestInnerClass">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.mockito.internal.creation.instance.ConstructorInstantiatorTest$TestInnerClass</Message>
+    </Type>
+    <Class classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" primary="true">
+      <SourceLine classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" start="6" end="57" sourcefile="ConstructorInstantiatorTest.java" sourcepath="org/mockito/internal/creation/instance/ConstructorInstantiatorTest.java">
+        <Message>At ConstructorInstantiatorTest.java:[lines 6-57]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.creation.instance.ConstructorInstantiatorTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" name="testNewInstance_withOuterClass" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" start="24" end="34" startBytecode="0" endBytecode="95" sourcefile="ConstructorInstantiatorTest.java" sourcepath="org/mockito/internal/creation/instance/ConstructorInstantiatorTest.java"/>
+      <Message>In method org.mockito.internal.creation.instance.ConstructorInstantiatorTest.testNewInstance_withOuterClass()</Message>
+    </Method>
+    <SourceLine classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" primary="true" start="32" end="32" startBytecode="33" endBytecode="33" sourcefile="ConstructorInstantiatorTest.java" sourcepath="org/mockito/internal/creation/instance/ConstructorInstantiatorTest.java">
+      <Message>At ConstructorInstantiatorTest.java:[line 32]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="8">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.mockito.internal.creation.instance.ConstructorInstantiator</MissingClass>
+    <MissingClass>org.mockito.internal.creation.instance.ConstructorInstantiatorTest$1</MissingClass>
+    <MissingClass>org.mockito.internal.creation.instance.ConstructorInstantiatorTest$TestClass</MissingClass>
+    <MissingClass>org.mockito.internal.creation.instance.ConstructorInstantiatorTest$TestClassWithException</MissingClass>
+    <MissingClass>org.mockito.internal.creation.instance.ConstructorInstantiatorTest$TestInnerClass</MissingClass>
+    <MissingClass>org.mockito.internal.creation.instance.ConstructorInstantiatorTest$TestInnerClassWithException</MissingClass>
+    <MissingClass>org.mockito.internal.creation.instance.ConstructorInstantiatorTest$TestOuterClass</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:29 +0100" total_classes="1" referenced_classes="9" total_bugs="2" total_size="26" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.22" clock_seconds="1.02" peak_mbytes="191.64" alloc_mbytes="7104.00" gc_seconds="0.06" priority_2="2">
+    <FileStats path="org/mockito/internal/creation/instance/ConstructorInstantiatorTest.java" bugCount="2" size="26" bugHash="96d0a914d63a946d539333b3d6ad9c6b"/>
+    <PackageStats package="org.mockito.internal.creation.instance" total_bugs="2" total_types="1" total_size="26" priority_2="2">
+      <ClassStats class="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" sourceFile="ConstructorInstantiatorTest.java" interface="false" size="26" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="212" invocations="303" avgMicrosecondsPerInvocation="702" maxMicrosecondsPerInvocation="65329" standardDeviationMicrosecondsPerInvocation="3873"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="45" invocations="9" avgMicrosecondsPerInvocation="5015" maxMicrosecondsPerInvocation="22143" standardDeviationMicrosecondsPerInvocation="6983"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="36" invocations="38" avgMicrosecondsPerInvocation="967" maxMicrosecondsPerInvocation="4114" standardDeviationMicrosecondsPerInvocation="852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="35" invocations="5" avgMicrosecondsPerInvocation="7001" maxMicrosecondsPerInvocation="31585" standardDeviationMicrosecondsPerInvocation="12308"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="30" invocations="9" avgMicrosecondsPerInvocation="3365" maxMicrosecondsPerInvocation="16408" standardDeviationMicrosecondsPerInvocation="4937"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="24" invocations="28" avgMicrosecondsPerInvocation="865" maxMicrosecondsPerInvocation="14341" standardDeviationMicrosecondsPerInvocation="2683"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="22" invocations="7" avgMicrosecondsPerInvocation="3197" maxMicrosecondsPerInvocation="10583" standardDeviationMicrosecondsPerInvocation="3940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="22" invocations="262" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="1811" standardDeviationMicrosecondsPerInvocation="160"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="18" invocations="9" avgMicrosecondsPerInvocation="2094" maxMicrosecondsPerInvocation="11780" standardDeviationMicrosecondsPerInvocation="3618"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="17" invocations="9" avgMicrosecondsPerInvocation="1933" maxMicrosecondsPerInvocation="8317" standardDeviationMicrosecondsPerInvocation="2596"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="17" invocations="5" avgMicrosecondsPerInvocation="3451" maxMicrosecondsPerInvocation="13787" standardDeviationMicrosecondsPerInvocation="5172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="15" invocations="9" avgMicrosecondsPerInvocation="1723" maxMicrosecondsPerInvocation="6959" standardDeviationMicrosecondsPerInvocation="2368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="15" invocations="305" avgMicrosecondsPerInvocation="50" maxMicrosecondsPerInvocation="431" standardDeviationMicrosecondsPerInvocation="37"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="13" invocations="5" avgMicrosecondsPerInvocation="2716" maxMicrosecondsPerInvocation="11434" standardDeviationMicrosecondsPerInvocation="4361"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

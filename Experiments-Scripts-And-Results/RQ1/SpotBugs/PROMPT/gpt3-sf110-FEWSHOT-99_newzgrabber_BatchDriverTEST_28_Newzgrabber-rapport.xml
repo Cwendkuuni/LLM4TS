@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360747100" analysisTimestamp="1714588721759" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/FEWSHOT/99_newzgrabber/BatchDriverTEST/28/Newzgrabber</Jar>
+  </Project>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="8b55cffbc40fc04cadcf2cbce8c91b36" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in Newzgrabber.BatchDriverTest.setUp()</LongMessage>
+    <Class classname="Newzgrabber.BatchDriverTest" primary="true">
+      <SourceLine classname="Newzgrabber.BatchDriverTest" start="13" end="43" sourcefile="BatchDriverTest.java" sourcepath="Newzgrabber/BatchDriverTest.java">
+        <Message>At BatchDriverTest.java:[lines 13-43]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.BatchDriverTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.BatchDriverTest" name="setUp" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.BatchDriverTest" start="20" end="24" startBytecode="0" endBytecode="92" sourcefile="BatchDriverTest.java" sourcepath="Newzgrabber/BatchDriverTest.java"/>
+      <Message>In method Newzgrabber.BatchDriverTest.setUp()</Message>
+    </Method>
+    <SourceLine classname="Newzgrabber.BatchDriverTest" primary="true" start="21" end="21" startBytecode="18" endBytecode="18" sourcefile="BatchDriverTest.java" sourcepath="Newzgrabber/BatchDriverTest.java">
+      <Message>At BatchDriverTest.java:[line 21]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DCN_NULLPOINTER_EXCEPTION" abbrev="DCN" category="STYLE">
+    <ShortDescription>NullPointerException caught</ShortDescription>
+    <Details><![CDATA[
+   
+<p>
+According to SEI Cert rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">ERR08-J</a> NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
+<p>
+This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+  try {
+    String ms[] = m.split(" ");
+    return names.length != 1;
+  } catch (NullPointerException e) {
+    return false;
+  }
+}
+</code></pre>
+<p>
+A compliant solution would use a null-check as in the following example:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+    if (m == null) return false;
+    String ms[] = m.split(" ");
+    return names.length != 1;
+}
+</code></pre>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DCN">
+    <Description>Don&apos;t Catch NullPointer Exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>Newzgrabber.BatchDriver</MissingClass>
+    <MissingClass>Newzgrabber.BatchJob</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:07 +0100" total_classes="1" referenced_classes="13" total_bugs="1" total_size="23" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.42" clock_seconds="1.96" peak_mbytes="191.08" alloc_mbytes="7104.00" gc_seconds="0.17" priority_2="1">
+    <FileStats path="Newzgrabber/BatchDriverTest.java" bugCount="1" size="23" bugHash="7564010d39336436b87a54797853b72a"/>
+    <PackageStats package="Newzgrabber" total_bugs="1" total_types="1" total_size="23" priority_2="1">
+      <ClassStats class="Newzgrabber.BatchDriverTest" sourceFile="BatchDriverTest.java" interface="false" size="23" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="367" invocations="318" avgMicrosecondsPerInvocation="1156" maxMicrosecondsPerInvocation="34385" standardDeviationMicrosecondsPerInvocation="3619"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="197" invocations="13" avgMicrosecondsPerInvocation="15197" maxMicrosecondsPerInvocation="185009" standardDeviationMicrosecondsPerInvocation="49044"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="99" invocations="13" avgMicrosecondsPerInvocation="7652" maxMicrosecondsPerInvocation="39721" standardDeviationMicrosecondsPerInvocation="12164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="67" invocations="62" avgMicrosecondsPerInvocation="1084" maxMicrosecondsPerInvocation="16725" standardDeviationMicrosecondsPerInvocation="2191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="62" invocations="5" avgMicrosecondsPerInvocation="12453" maxMicrosecondsPerInvocation="58589" standardDeviationMicrosecondsPerInvocation="23083"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="49" invocations="1" avgMicrosecondsPerInvocation="49769" maxMicrosecondsPerInvocation="49769" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="48" invocations="280" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="5625" standardDeviationMicrosecondsPerInvocation="574"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="40" invocations="13" avgMicrosecondsPerInvocation="3145" maxMicrosecondsPerInvocation="15742" standardDeviationMicrosecondsPerInvocation="4943"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="40" invocations="31" avgMicrosecondsPerInvocation="1298" maxMicrosecondsPerInvocation="23059" standardDeviationMicrosecondsPerInvocation="4138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="38" invocations="6" avgMicrosecondsPerInvocation="6372" maxMicrosecondsPerInvocation="25029" standardDeviationMicrosecondsPerInvocation="8445"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="37" invocations="320" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="13534" standardDeviationMicrosecondsPerInvocation="756"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="37" invocations="13" avgMicrosecondsPerInvocation="2860" maxMicrosecondsPerInvocation="12454" standardDeviationMicrosecondsPerInvocation="4009"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

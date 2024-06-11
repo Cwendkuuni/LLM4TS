@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756319188" analysisTimestamp="1714597810693" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/commons-math/BrentOptimizerTEST/26/org/apache/commons/math3/optim/univariate</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.apache.commons.math3.optim.ConvergenceChecker</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.univariate.BrentOptimizer</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.univariate.BrentOptimizerTest$DummyConvergenceChecker</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:19 +0100" total_classes="1" referenced_classes="9" total_bugs="0" total_size="16" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.61" clock_seconds="1.77" peak_mbytes="189.74" alloc_mbytes="7104.00" gc_seconds="0.13">
+    <FileStats path="org/apache/commons/math3/optim/univariate/BrentOptimizerTest.java" bugCount="0" size="16"/>
+    <PackageStats package="org.apache.commons.math3.optim.univariate" total_bugs="0" total_types="1" total_size="16">
+      <ClassStats class="org.apache.commons.math3.optim.univariate.BrentOptimizerTest" sourceFile="BrentOptimizerTest.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="415" invocations="295" avgMicrosecondsPerInvocation="1409" maxMicrosecondsPerInvocation="59243" standardDeviationMicrosecondsPerInvocation="5057"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="127" invocations="9" avgMicrosecondsPerInvocation="14189" maxMicrosecondsPerInvocation="127571" standardDeviationMicrosecondsPerInvocation="40086"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="76" invocations="24" avgMicrosecondsPerInvocation="3172" maxMicrosecondsPerInvocation="46536" standardDeviationMicrosecondsPerInvocation="9549"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="74" invocations="9" avgMicrosecondsPerInvocation="8259" maxMicrosecondsPerInvocation="40575" standardDeviationMicrosecondsPerInvocation="13435"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="73" invocations="9" avgMicrosecondsPerInvocation="8168" maxMicrosecondsPerInvocation="23218" standardDeviationMicrosecondsPerInvocation="10050"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="47" invocations="258" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="12495" standardDeviationMicrosecondsPerInvocation="918"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="45" invocations="297" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="22100" standardDeviationMicrosecondsPerInvocation="1288"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="45" invocations="38" avgMicrosecondsPerInvocation="1190" maxMicrosecondsPerInvocation="6177" standardDeviationMicrosecondsPerInvocation="1404"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="42" invocations="5" avgMicrosecondsPerInvocation="8415" maxMicrosecondsPerInvocation="40480" standardDeviationMicrosecondsPerInvocation="16039"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="28" invocations="9" avgMicrosecondsPerInvocation="3204" maxMicrosecondsPerInvocation="19606" standardDeviationMicrosecondsPerInvocation="6024"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

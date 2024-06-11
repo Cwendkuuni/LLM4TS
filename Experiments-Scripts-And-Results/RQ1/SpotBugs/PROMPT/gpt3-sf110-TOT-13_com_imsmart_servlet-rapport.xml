@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360741803" analysisTimestamp="1714591645111" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/11_imsmart/HTMLFilterTEST/13/com/imsmart/servlet</Jar>
+  </Project>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="33523e4c521402ca7f0bcc4c765b8dae" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode concatène des chaînes au moyen de + en boucle</ShortMessage>
+    <LongMessage>La méthode com.imsmart.servlet.HTMLFilterTest.testFilter_LargeMessage() concatène des chaînes au moyen de + en boucle</LongMessage>
+    <Class classname="com.imsmart.servlet.HTMLFilterTest" primary="true">
+      <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" start="5" end="79" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java">
+        <Message>At HTMLFilterTest.java:[lines 5-79]</Message>
+      </SourceLine>
+      <Message>In class com.imsmart.servlet.HTMLFilterTest</Message>
+    </Class>
+    <Method classname="com.imsmart.servlet.HTMLFilterTest" name="testFilter_LargeMessage" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" start="69" end="79" startBytecode="0" endBytecode="176" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java"/>
+      <Message>In method com.imsmart.servlet.HTMLFilterTest.testFilter_LargeMessage()</Message>
+    </Method>
+    <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" primary="true" start="76" end="76" startBytecode="47" endBytecode="47" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java">
+      <Message>At HTMLFilterTest.java:[line 76]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="49d503d15732840d6e256c8200248f95" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode concatène des chaînes au moyen de + en boucle</ShortMessage>
+    <LongMessage>La méthode com.imsmart.servlet.HTMLFilterTest.testFilter_LongMessage() concatène des chaînes au moyen de + en boucle</LongMessage>
+    <Class classname="com.imsmart.servlet.HTMLFilterTest" primary="true">
+      <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" start="5" end="79" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java">
+        <Message>At HTMLFilterTest.java:[lines 5-79]</Message>
+      </SourceLine>
+      <Message>In class com.imsmart.servlet.HTMLFilterTest</Message>
+    </Class>
+    <Method classname="com.imsmart.servlet.HTMLFilterTest" name="testFilter_LongMessage" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" start="55" end="65" startBytecode="0" endBytecode="178" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java"/>
+      <Message>In method com.imsmart.servlet.HTMLFilterTest.testFilter_LongMessage()</Message>
+    </Method>
+    <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" primary="true" start="62" end="62" startBytecode="49" endBytecode="49" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java">
+      <Message>At HTMLFilterTest.java:[line 62]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="SBSC_USE_STRINGBUFFER_CONCATENATION" abbrev="SBSC" category="PERFORMANCE">
+    <ShortDescription>La méthode concatène des chaînes au moyen de + en boucle</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette méthode semble construire une <ocde>String</code> en utilisant une concaténation en boucle. A chaque itération, l'objet <code>String</code> est converti en <code>StringBuffer</code>/<code>StringBuilder</code>, complété, puis de nouveau converti en <code>String</code>. Ceci a un coût exponentiel en fonction du nombre d'itérations, puisque la chaîne est recopiée à chaque itération.</p>
+<p>De meilleurs performances peuvent être obtenues en utilisant explicitement <code>StringBuffer</code> (ou <code>StringBuilder</code> en Java 5).</p>
+<p>Par exemple :</p>
+<pre><code>
+// C'est mal !
+String s = "";
+for (int i = 0; i &lt; field.length; ++i) {
+  s = s + field[i];
+}
+
+// C'est mieux...
+StringBuffer buf = new StringBuffer();
+for (int i = 0; i &lt; field.length; ++i) {
+  buf.append(field[i]);
+}
+String s = buf.toString();
+</code></pre>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SBSC">
+    <Description>Concaténation de chaînes au moyen de + dans une boucle</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.imsmart.servlet.HTMLFilter</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:01 +0100" total_classes="1" referenced_classes="10" total_bugs="2" total_size="53" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.65" clock_seconds="1.99" peak_mbytes="190.55" alloc_mbytes="7104.00" gc_seconds="0.19" priority_2="2">
+    <FileStats path="com/imsmart/servlet/HTMLFilterTest.java" bugCount="2" size="53" bugHash="e61b1a0a0d5775bb408226ef7965329b"/>
+    <PackageStats package="com.imsmart.servlet" total_bugs="2" total_types="1" total_size="53" priority_2="2">
+      <ClassStats class="com.imsmart.servlet.HTMLFilterTest" sourceFile="HTMLFilterTest.java" interface="false" size="53" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="263" invocations="70" avgMicrosecondsPerInvocation="3769" maxMicrosecondsPerInvocation="190288" standardDeviationMicrosecondsPerInvocation="22515"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="253" invocations="308" avgMicrosecondsPerInvocation="823" maxMicrosecondsPerInvocation="26332" standardDeviationMicrosecondsPerInvocation="2496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="127" invocations="10" avgMicrosecondsPerInvocation="12785" maxMicrosecondsPerInvocation="54816" standardDeviationMicrosecondsPerInvocation="17772"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="65" invocations="10" avgMicrosecondsPerInvocation="6555" maxMicrosecondsPerInvocation="23638" standardDeviationMicrosecondsPerInvocation="7788"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="55" invocations="11" avgMicrosecondsPerInvocation="5079" maxMicrosecondsPerInvocation="52142" standardDeviationMicrosecondsPerInvocation="14887"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="48" invocations="10" avgMicrosecondsPerInvocation="4844" maxMicrosecondsPerInvocation="28647" standardDeviationMicrosecondsPerInvocation="8389"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="41" invocations="10" avgMicrosecondsPerInvocation="4197" maxMicrosecondsPerInvocation="28812" standardDeviationMicrosecondsPerInvocation="8397"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="36" invocations="27" avgMicrosecondsPerInvocation="1356" maxMicrosecondsPerInvocation="20786" standardDeviationMicrosecondsPerInvocation="3965"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="35" invocations="273" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="2383" standardDeviationMicrosecondsPerInvocation="278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="34" invocations="11" avgMicrosecondsPerInvocation="3124" maxMicrosecondsPerInvocation="17762" standardDeviationMicrosecondsPerInvocation="4832"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="33" invocations="11" avgMicrosecondsPerInvocation="3071" maxMicrosecondsPerInvocation="13820" standardDeviationMicrosecondsPerInvocation="4297"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StringConcatenation" totalMilliseconds="31" invocations="1" avgMicrosecondsPerInvocation="31166" maxMicrosecondsPerInvocation="31166" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="29" invocations="11" avgMicrosecondsPerInvocation="2677" maxMicrosecondsPerInvocation="16299" standardDeviationMicrosecondsPerInvocation="4404"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="27" invocations="11" avgMicrosecondsPerInvocation="2474" maxMicrosecondsPerInvocation="17359" standardDeviationMicrosecondsPerInvocation="4782"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="24" invocations="10" avgMicrosecondsPerInvocation="2432" maxMicrosecondsPerInvocation="14789" standardDeviationMicrosecondsPerInvocation="4285"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

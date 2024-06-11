@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287215534" analysisTimestamp="1714586492594" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/scribe/TokenTEST/25/org/scribe/model</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.scribe.model.Token</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:55 +0200" total_classes="1" referenced_classes="10" total_bugs="0" total_size="8" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.98" clock_seconds="2.70" peak_mbytes="189.35" alloc_mbytes="7104.00" gc_seconds="0.18">
+    <FileStats path="org/scribe/model/TokenTest.java" bugCount="0" size="8"/>
+    <PackageStats package="org.scribe.model" total_bugs="0" total_types="1" total_size="8">
+      <ClassStats class="org.scribe.model.TokenTest" sourceFile="TokenTest.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="401" invocations="308" avgMicrosecondsPerInvocation="1302" maxMicrosecondsPerInvocation="26095" standardDeviationMicrosecondsPerInvocation="3687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="227" invocations="10" avgMicrosecondsPerInvocation="22720" maxMicrosecondsPerInvocation="208210" standardDeviationMicrosecondsPerInvocation="61986"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="167" invocations="10" avgMicrosecondsPerInvocation="16760" maxMicrosecondsPerInvocation="56341" standardDeviationMicrosecondsPerInvocation="18860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="148" invocations="59" avgMicrosecondsPerInvocation="2514" maxMicrosecondsPerInvocation="24988" standardDeviationMicrosecondsPerInvocation="5434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="138" invocations="273" avgMicrosecondsPerInvocation="508" maxMicrosecondsPerInvocation="28258" standardDeviationMicrosecondsPerInvocation="2323"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="113" invocations="2" avgMicrosecondsPerInvocation="56591" maxMicrosecondsPerInvocation="101122" standardDeviationMicrosecondsPerInvocation="44531"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="99" invocations="10" avgMicrosecondsPerInvocation="9956" maxMicrosecondsPerInvocation="42287" standardDeviationMicrosecondsPerInvocation="13831"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="88" invocations="10" avgMicrosecondsPerInvocation="8847" maxMicrosecondsPerInvocation="48146" standardDeviationMicrosecondsPerInvocation="14842"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="60" invocations="27" avgMicrosecondsPerInvocation="2235" maxMicrosecondsPerInvocation="45989" standardDeviationMicrosecondsPerInvocation="8639"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="55" invocations="2" avgMicrosecondsPerInvocation="27954" maxMicrosecondsPerInvocation="54249" standardDeviationMicrosecondsPerInvocation="26294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="55" invocations="10" avgMicrosecondsPerInvocation="5512" maxMicrosecondsPerInvocation="23490" standardDeviationMicrosecondsPerInvocation="8303"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

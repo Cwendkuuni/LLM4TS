@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287206858" analysisTimestamp="1714579443498" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT/11_imsmart/HTMLFilterTEST/5/com/imsmart/servlet</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.imsmart.servlet.HTMLFilter</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:46 +0200" total_classes="1" referenced_classes="10" total_bugs="0" total_size="61" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.47" clock_seconds="3.00" peak_mbytes="189.49" alloc_mbytes="7104.00" gc_seconds="0.19">
+    <FileStats path="com/imsmart/servlet/HTMLFilterTest.java" bugCount="0" size="61"/>
+    <PackageStats package="com.imsmart.servlet" total_bugs="0" total_types="1" total_size="61">
+      <ClassStats class="com.imsmart.servlet.HTMLFilterTest" sourceFile="HTMLFilterTest.java" interface="false" size="61" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="468" invocations="308" avgMicrosecondsPerInvocation="1519" maxMicrosecondsPerInvocation="55045" standardDeviationMicrosecondsPerInvocation="4923"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="238" invocations="10" avgMicrosecondsPerInvocation="23821" maxMicrosecondsPerInvocation="215126" standardDeviationMicrosecondsPerInvocation="63980"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="153" invocations="68" avgMicrosecondsPerInvocation="2253" maxMicrosecondsPerInvocation="22670" standardDeviationMicrosecondsPerInvocation="4572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="148" invocations="10" avgMicrosecondsPerInvocation="14803" maxMicrosecondsPerInvocation="54586" standardDeviationMicrosecondsPerInvocation="18621"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="111" invocations="273" avgMicrosecondsPerInvocation="409" maxMicrosecondsPerInvocation="20230" standardDeviationMicrosecondsPerInvocation="2117"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="107" invocations="11" avgMicrosecondsPerInvocation="9767" maxMicrosecondsPerInvocation="103836" standardDeviationMicrosecondsPerInvocation="29750"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="85" invocations="11" avgMicrosecondsPerInvocation="7730" maxMicrosecondsPerInvocation="73697" standardDeviationMicrosecondsPerInvocation="20871"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="84" invocations="10" avgMicrosecondsPerInvocation="8473" maxMicrosecondsPerInvocation="40171" standardDeviationMicrosecondsPerInvocation="12914"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="82" invocations="10" avgMicrosecondsPerInvocation="8241" maxMicrosecondsPerInvocation="33357" standardDeviationMicrosecondsPerInvocation="11873"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="76" invocations="10" avgMicrosecondsPerInvocation="7639" maxMicrosecondsPerInvocation="29323" standardDeviationMicrosecondsPerInvocation="10982"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="69" invocations="11" avgMicrosecondsPerInvocation="6302" maxMicrosecondsPerInvocation="58967" standardDeviationMicrosecondsPerInvocation="16659"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="65" invocations="10" avgMicrosecondsPerInvocation="6508" maxMicrosecondsPerInvocation="39058" standardDeviationMicrosecondsPerInvocation="12333"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

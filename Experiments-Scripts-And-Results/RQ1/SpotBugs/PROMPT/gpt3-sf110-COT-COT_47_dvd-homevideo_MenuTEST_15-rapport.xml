@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360738183" analysisTimestamp="1714580212418" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/47_dvd-homevideo/MenuTEST/15</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="96c59744bb3cdd5aaab04bed29bdfed8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : MenuTest.gui</LongMessage>
+    <Class classname="MenuTest" primary="true">
+      <SourceLine classname="MenuTest" start="16" end="123" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+        <Message>At MenuTest.java:[lines 16-123]</Message>
+      </SourceLine>
+      <Message>In class MenuTest</Message>
+    </Class>
+    <Field classname="MenuTest" name="gui" signature="LGUI;" isStatic="false" primary="true">
+      <SourceLine classname="MenuTest" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+        <Message>In MenuTest.java</Message>
+      </SourceLine>
+      <Message>Field MenuTest.gui</Message>
+    </Field>
+    <SourceLine classname="MenuTest" primary="true" start="23" end="23" startBytecode="8" endBytecode="8" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+      <Message>At MenuTest.java:[line 23]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>GUI</MissingClass>
+    <MissingClass>Menu</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:38:58 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="78" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.64" clock_seconds="3.78" peak_mbytes="190.97" alloc_mbytes="7104.00" gc_seconds="0.21" priority_2="1">
+    <FileStats path="MenuTest.java" bugCount="1" size="78" bugHash="c499c560a52b4a56356c55ba20928fc2"/>
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="78" priority_2="1">
+      <ClassStats class="MenuTest" sourceFile="MenuTest.java" interface="false" size="78" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="603" invocations="329" avgMicrosecondsPerInvocation="1833" maxMicrosecondsPerInvocation="62449" standardDeviationMicrosecondsPerInvocation="6463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="232" invocations="11" avgMicrosecondsPerInvocation="21149" maxMicrosecondsPerInvocation="223830" standardDeviationMicrosecondsPerInvocation="64100"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="205" invocations="11" avgMicrosecondsPerInvocation="18666" maxMicrosecondsPerInvocation="74495" standardDeviationMicrosecondsPerInvocation="23342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="162" invocations="11" avgMicrosecondsPerInvocation="14749" maxMicrosecondsPerInvocation="52711" standardDeviationMicrosecondsPerInvocation="17227"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="147" invocations="9" avgMicrosecondsPerInvocation="16412" maxMicrosecondsPerInvocation="68125" standardDeviationMicrosecondsPerInvocation="21424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="141" invocations="69" avgMicrosecondsPerInvocation="2048" maxMicrosecondsPerInvocation="19837" standardDeviationMicrosecondsPerInvocation="4444"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="129" invocations="9" avgMicrosecondsPerInvocation="14421" maxMicrosecondsPerInvocation="92588" standardDeviationMicrosecondsPerInvocation="28149"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="124" invocations="291" avgMicrosecondsPerInvocation="428" maxMicrosecondsPerInvocation="24995" standardDeviationMicrosecondsPerInvocation="2044"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="103" invocations="9" avgMicrosecondsPerInvocation="11540" maxMicrosecondsPerInvocation="44562" standardDeviationMicrosecondsPerInvocation="17634"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="70" invocations="31" avgMicrosecondsPerInvocation="2273" maxMicrosecondsPerInvocation="45449" standardDeviationMicrosecondsPerInvocation="8153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="64" invocations="9" avgMicrosecondsPerInvocation="7199" maxMicrosecondsPerInvocation="42304" standardDeviationMicrosecondsPerInvocation="13347"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="61" invocations="9" avgMicrosecondsPerInvocation="6795" maxMicrosecondsPerInvocation="31069" standardDeviationMicrosecondsPerInvocation="9929"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="50" invocations="9" avgMicrosecondsPerInvocation="5632" maxMicrosecondsPerInvocation="15996" standardDeviationMicrosecondsPerInvocation="5936"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="50" invocations="11" avgMicrosecondsPerInvocation="4564" maxMicrosecondsPerInvocation="24273" standardDeviationMicrosecondsPerInvocation="6727"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

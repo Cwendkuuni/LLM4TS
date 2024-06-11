@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360742611" analysisTimestamp="1714591817844" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/47_dvd-homevideo/ConvertTEST/24</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="953ba649abaf70b85665276c04956ffd" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode ConvertTest.testConstructorWithFormatAspectRatioAndGUI()</LongMessage>
+    <Class classname="ConvertTest" primary="true">
+      <SourceLine classname="ConvertTest" start="4" end="55" sourcefile="ConvertTest.java" sourcepath="ConvertTest.java">
+        <Message>At ConvertTest.java:[lines 4-55]</Message>
+      </SourceLine>
+      <Message>In class ConvertTest</Message>
+    </Class>
+    <Method classname="ConvertTest" name="testConstructorWithFormatAspectRatioAndGUI" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="ConvertTest" start="42" end="44" startBytecode="0" endBytecode="8" sourcefile="ConvertTest.java" sourcepath="ConvertTest.java"/>
+      <Message>In method ConvertTest.testConstructorWithFormatAspectRatioAndGUI()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="16" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="ConvertTest" primary="true" start="42" end="42" startBytecode="15" endBytecode="15" sourcefile="ConvertTest.java" sourcepath="ConvertTest.java">
+      <Message>At ConvertTest.java:[line 42]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="80fef79251c1b1a86fefec17541e5e1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode ConvertTest.testConstructorWithQualityFormatAspectRatioAndGUI()</LongMessage>
+    <Class classname="ConvertTest" primary="true">
+      <SourceLine classname="ConvertTest" start="4" end="55" sourcefile="ConvertTest.java" sourcepath="ConvertTest.java">
+        <Message>At ConvertTest.java:[lines 4-55]</Message>
+      </SourceLine>
+      <Message>In class ConvertTest</Message>
+    </Class>
+    <Method classname="ConvertTest" name="testConstructorWithQualityFormatAspectRatioAndGUI" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="ConvertTest" start="48" end="50" startBytecode="0" endBytecode="9" sourcefile="ConvertTest.java" sourcepath="ConvertTest.java"/>
+      <Message>In method ConvertTest.testConstructorWithQualityFormatAspectRatioAndGUI()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="17" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="ConvertTest" primary="true" start="48" end="48" startBytecode="16" endBytecode="16" sourcefile="ConvertTest.java" sourcepath="ConvertTest.java">
+      <Message>At ConvertTest.java:[line 48]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>Convert</MissingClass>
+    <MissingClass>GUI</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:02 +0100" total_classes="1" referenced_classes="10" total_bugs="2" total_size="32" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.02" clock_seconds="1.68" peak_mbytes="189.71" alloc_mbytes="7104.00" gc_seconds="0.16" priority_1="2">
+    <FileStats path="ConvertTest.java" bugCount="2" size="32" bugHash="42a356c42e240bb4df433b3adb4f4bd3"/>
+    <PackageStats package="" total_bugs="2" total_types="1" total_size="32" priority_1="2">
+      <ClassStats class="ConvertTest" sourceFile="ConvertTest.java" interface="false" size="32" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="280" invocations="311" avgMicrosecondsPerInvocation="903" maxMicrosecondsPerInvocation="25376" standardDeviationMicrosecondsPerInvocation="2448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="195" invocations="10" avgMicrosecondsPerInvocation="19534" maxMicrosecondsPerInvocation="163488" standardDeviationMicrosecondsPerInvocation="48112"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="64" invocations="10" avgMicrosecondsPerInvocation="6457" maxMicrosecondsPerInvocation="16201" standardDeviationMicrosecondsPerInvocation="6778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="63" invocations="66" avgMicrosecondsPerInvocation="967" maxMicrosecondsPerInvocation="9508" standardDeviationMicrosecondsPerInvocation="1773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="48" invocations="272" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="5669" standardDeviationMicrosecondsPerInvocation="570"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="47" invocations="27" avgMicrosecondsPerInvocation="1771" maxMicrosecondsPerInvocation="26702" standardDeviationMicrosecondsPerInvocation="5175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="44" invocations="10" avgMicrosecondsPerInvocation="4427" maxMicrosecondsPerInvocation="15815" standardDeviationMicrosecondsPerInvocation="6025"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="35" invocations="9" avgMicrosecondsPerInvocation="3952" maxMicrosecondsPerInvocation="33276" standardDeviationMicrosecondsPerInvocation="10372"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="34" invocations="10" avgMicrosecondsPerInvocation="3459" maxMicrosecondsPerInvocation="14017" standardDeviationMicrosecondsPerInvocation="4676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="28" invocations="10" avgMicrosecondsPerInvocation="2845" maxMicrosecondsPerInvocation="22905" standardDeviationMicrosecondsPerInvocation="6739"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="28" invocations="10" avgMicrosecondsPerInvocation="2823" maxMicrosecondsPerInvocation="9227" standardDeviationMicrosecondsPerInvocation="2851"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="25" invocations="10" avgMicrosecondsPerInvocation="2526" maxMicrosecondsPerInvocation="14292" standardDeviationMicrosecondsPerInvocation="4337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="24" invocations="313" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="1447" standardDeviationMicrosecondsPerInvocation="127"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360750280" analysisTimestamp="1714604089376" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/52_lagoon/LagoonGUITEST/22/nu/staldal/lagoon</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="7f81ed514adc57247da3d2c933683099" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : nu.staldal.lagoon.LagoonGUITest.lagoonGUI</LongMessage>
+    <Class classname="nu.staldal.lagoon.LagoonGUITest" primary="true">
+      <SourceLine classname="nu.staldal.lagoon.LagoonGUITest" start="6" end="65" sourcefile="LagoonGUITest.java" sourcepath="nu/staldal/lagoon/LagoonGUITest.java">
+        <Message>At LagoonGUITest.java:[lines 6-65]</Message>
+      </SourceLine>
+      <Message>In class nu.staldal.lagoon.LagoonGUITest</Message>
+    </Class>
+    <Field classname="nu.staldal.lagoon.LagoonGUITest" name="lagoonGUI" signature="Lnu/staldal/lagoon/LagoonGUI;" isStatic="false" primary="true">
+      <SourceLine classname="nu.staldal.lagoon.LagoonGUITest" sourcefile="LagoonGUITest.java" sourcepath="nu/staldal/lagoon/LagoonGUITest.java">
+        <Message>In LagoonGUITest.java</Message>
+      </SourceLine>
+      <Message>Field nu.staldal.lagoon.LagoonGUITest.lagoonGUI</Message>
+    </Field>
+    <SourceLine classname="nu.staldal.lagoon.LagoonGUITest" primary="true" start="11" end="11" startBytecode="8" endBytecode="8" sourcefile="LagoonGUITest.java" sourcepath="nu/staldal/lagoon/LagoonGUITest.java">
+      <Message>At LagoonGUITest.java:[line 11]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>nu.staldal.lagoon.LagoonGUI</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:10 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="26" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.19" clock_seconds="2.01" peak_mbytes="189.36" alloc_mbytes="7104.00" gc_seconds="0.23" priority_2="1">
+    <FileStats path="nu/staldal/lagoon/LagoonGUITest.java" bugCount="1" size="26" bugHash="aa434bef9ec1bb85840a01be40a6cec3"/>
+    <PackageStats package="nu.staldal.lagoon" total_bugs="1" total_types="1" total_size="26" priority_2="1">
+      <ClassStats class="nu.staldal.lagoon.LagoonGUITest" sourceFile="LagoonGUITest.java" interface="false" size="26" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="307" invocations="9" avgMicrosecondsPerInvocation="34202" maxMicrosecondsPerInvocation="247023" standardDeviationMicrosecondsPerInvocation="75715"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="293" invocations="294" avgMicrosecondsPerInvocation="998" maxMicrosecondsPerInvocation="23524" standardDeviationMicrosecondsPerInvocation="3061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="76" invocations="9" avgMicrosecondsPerInvocation="8519" maxMicrosecondsPerInvocation="42073" standardDeviationMicrosecondsPerInvocation="13840"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="76" invocations="44" avgMicrosecondsPerInvocation="1733" maxMicrosecondsPerInvocation="21059" standardDeviationMicrosecondsPerInvocation="3625"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="70" invocations="9" avgMicrosecondsPerInvocation="7883" maxMicrosecondsPerInvocation="29745" standardDeviationMicrosecondsPerInvocation="11312"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="66" invocations="9" avgMicrosecondsPerInvocation="7402" maxMicrosecondsPerInvocation="51685" standardDeviationMicrosecondsPerInvocation="15931"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="61" invocations="258" avgMicrosecondsPerInvocation="238" maxMicrosecondsPerInvocation="17364" standardDeviationMicrosecondsPerInvocation="1171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="50" invocations="24" avgMicrosecondsPerInvocation="2086" maxMicrosecondsPerInvocation="28873" standardDeviationMicrosecondsPerInvocation="5977"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="45" invocations="9" avgMicrosecondsPerInvocation="5023" maxMicrosecondsPerInvocation="24558" standardDeviationMicrosecondsPerInvocation="8232"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="44" invocations="11" avgMicrosecondsPerInvocation="4010" maxMicrosecondsPerInvocation="41033" standardDeviationMicrosecondsPerInvocation="11715"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="40" invocations="9" avgMicrosecondsPerInvocation="4515" maxMicrosecondsPerInvocation="15773" standardDeviationMicrosecondsPerInvocation="6304"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

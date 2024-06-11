@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360749664" analysisTimestamp="1714605514973" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/40_glengineer/BlockTEST/21/glengineer/blocks</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="7a5f9efbdb040008b79763ac2a1e7d7c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type glengineer.blocks.TestBlock in glengineer.blocks.BlockTest.testSubblock() at BlockTest.java:[line 18] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lglengineer/blocks/TestBlock;">
+      <SourceLine classname="glengineer.blocks.TestBlock">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type glengineer.blocks.TestBlock</Message>
+    </Type>
+    <Class classname="glengineer.blocks.BlockTest" primary="true">
+      <SourceLine classname="glengineer.blocks.BlockTest" start="8" end="137" sourcefile="BlockTest.java" sourcepath="glengineer/blocks/BlockTest.java">
+        <Message>At BlockTest.java:[lines 8-137]</Message>
+      </SourceLine>
+      <Message>In class glengineer.blocks.BlockTest</Message>
+    </Class>
+    <Method classname="glengineer.blocks.BlockTest" name="testSubblock" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="glengineer.blocks.BlockTest" start="12" end="24" startBytecode="0" endBytecode="149" sourcefile="BlockTest.java" sourcepath="glengineer/blocks/BlockTest.java"/>
+      <Message>In method glengineer.blocks.BlockTest.testSubblock()</Message>
+    </Method>
+    <SourceLine classname="glengineer.blocks.BlockTest" primary="true" start="18" end="18" startBytecode="42" endBytecode="42" sourcefile="BlockTest.java" sourcepath="glengineer/blocks/BlockTest.java">
+      <Message>At BlockTest.java:[line 18]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="5">
+    <MissingClass>glengineer.blocks.Block</MissingClass>
+    <MissingClass>glengineer.blocks.Scheme</MissingClass>
+    <MissingClass>glengineer.blocks.TestBlock</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.junit.function.ThrowingRunnable</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:09 +0100" total_classes="1" referenced_classes="17" total_bugs="1" total_size="84" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.02" clock_seconds="1.65" peak_mbytes="192.78" alloc_mbytes="7104.00" gc_seconds="0.11" priority_2="1">
+    <FileStats path="glengineer/blocks/BlockTest.java" bugCount="1" size="84" bugHash="1b6279bf7e6d55fbedcfc8c6dfdf338c"/>
+    <PackageStats package="glengineer.blocks" total_bugs="1" total_types="1" total_size="84" priority_2="1">
+      <ClassStats class="glengineer.blocks.BlockTest" sourceFile="BlockTest.java" interface="false" size="84" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="254" invocations="364" avgMicrosecondsPerInvocation="699" maxMicrosecondsPerInvocation="22031" standardDeviationMicrosecondsPerInvocation="1780"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="136" invocations="17" avgMicrosecondsPerInvocation="8048" maxMicrosecondsPerInvocation="118404" standardDeviationMicrosecondsPerInvocation="27621"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="74" invocations="17" avgMicrosecondsPerInvocation="4371" maxMicrosecondsPerInvocation="18436" standardDeviationMicrosecondsPerInvocation="5465"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="52" invocations="11" avgMicrosecondsPerInvocation="4736" maxMicrosecondsPerInvocation="37523" standardDeviationMicrosecondsPerInvocation="10506"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="50" invocations="15" avgMicrosecondsPerInvocation="3391" maxMicrosecondsPerInvocation="18343" standardDeviationMicrosecondsPerInvocation="4548"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="48" invocations="17" avgMicrosecondsPerInvocation="2832" maxMicrosecondsPerInvocation="10455" standardDeviationMicrosecondsPerInvocation="3037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="48" invocations="88" avgMicrosecondsPerInvocation="545" maxMicrosecondsPerInvocation="4651" standardDeviationMicrosecondsPerInvocation="759"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="44" invocations="48" avgMicrosecondsPerInvocation="926" maxMicrosecondsPerInvocation="20766" standardDeviationMicrosecondsPerInvocation="3056"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="40" invocations="11" avgMicrosecondsPerInvocation="3702" maxMicrosecondsPerInvocation="19261" standardDeviationMicrosecondsPerInvocation="4967"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="36" invocations="324" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="2072" standardDeviationMicrosecondsPerInvocation="228"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="28" invocations="17" avgMicrosecondsPerInvocation="1687" maxMicrosecondsPerInvocation="8676" standardDeviationMicrosecondsPerInvocation="2368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="28" invocations="11" avgMicrosecondsPerInvocation="2550" maxMicrosecondsPerInvocation="12896" standardDeviationMicrosecondsPerInvocation="3353"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="25" invocations="11" avgMicrosecondsPerInvocation="2273" maxMicrosecondsPerInvocation="10772" standardDeviationMicrosecondsPerInvocation="2830"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="24" invocations="367" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="1223" standardDeviationMicrosecondsPerInvocation="81"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="23" invocations="11" avgMicrosecondsPerInvocation="2128" maxMicrosecondsPerInvocation="3864" standardDeviationMicrosecondsPerInvocation="1146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="21" invocations="17" avgMicrosecondsPerInvocation="1283" maxMicrosecondsPerInvocation="9817" standardDeviationMicrosecondsPerInvocation="2312"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711194554683" analysisTimestamp="1714576584460" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V3/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/TOT/Odc/23/26/com/oceanbase/odc/service/onlineschemachange/pipeline</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="ee6ab21ffee0fc0420491376e31276cf" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.scheduleCheckOmsProjectValve</LongMessage>
+    <Class classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="6" end="60" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>At ScheduleCheckOmsProjectValveTest.java:[lines 6-60]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest</Message>
+    </Class>
+    <Field classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" name="scheduleCheckOmsProjectValve" signature="Lcom/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValve;" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>In ScheduleCheckOmsProjectValveTest.java</Message>
+      </SourceLine>
+      <Message>Field com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.scheduleCheckOmsProjectValve</Message>
+    </Field>
+    <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true" start="13" end="13" startBytecode="8" endBytecode="8" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+      <Message>At ScheduleCheckOmsProjectValveTest.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="df54285e8bc753006e067bf798c52fb7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.valveContext</LongMessage>
+    <Class classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="6" end="60" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>At ScheduleCheckOmsProjectValveTest.java:[lines 6-60]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest</Message>
+    </Class>
+    <Field classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" name="valveContext" signature="Lcom/oceanbase/odc/service/onlineschemachange/pipeline/ValveContext;" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>In ScheduleCheckOmsProjectValveTest.java</Message>
+      </SourceLine>
+      <Message>Field com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.valveContext</Message>
+    </Field>
+    <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true" start="14" end="14" startBytecode="20" endBytecode="20" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+      <Message>At ScheduleCheckOmsProjectValveTest.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValve</MissingClass>
+    <MissingClass>com.oceanbase.odc.service.onlineschemachange.pipeline.ValveContext</MissingClass>
+    <MissingClass>org.mockito.Mockito</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sat, 23 Mar 2024 12:49:14 +0100" total_classes="1" referenced_classes="9" total_bugs="2" total_size="27" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.80" clock_seconds="4.21" peak_mbytes="189.28" alloc_mbytes="7104.00" gc_seconds="0.18" priority_2="2">
+    <FileStats path="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java" bugCount="2" size="27" bugHash="153af95707148a4a92b61d203a6916f7"/>
+    <PackageStats package="com.oceanbase.odc.service.onlineschemachange.pipeline" total_bugs="2" total_types="1" total_size="27" priority_2="2">
+      <ClassStats class="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" sourceFile="ScheduleCheckOmsProjectValveTest.java" interface="false" size="27" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="838" invocations="299" avgMicrosecondsPerInvocation="2804" maxMicrosecondsPerInvocation="67862" standardDeviationMicrosecondsPerInvocation="8078"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="224" invocations="9" avgMicrosecondsPerInvocation="24927" maxMicrosecondsPerInvocation="200113" standardDeviationMicrosecondsPerInvocation="62150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="197" invocations="9" avgMicrosecondsPerInvocation="21952" maxMicrosecondsPerInvocation="65349" standardDeviationMicrosecondsPerInvocation="23167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="140" invocations="44" avgMicrosecondsPerInvocation="3191" maxMicrosecondsPerInvocation="31890" standardDeviationMicrosecondsPerInvocation="6427"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="132" invocations="9" avgMicrosecondsPerInvocation="14760" maxMicrosecondsPerInvocation="66454" standardDeviationMicrosecondsPerInvocation="22169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="123" invocations="11" avgMicrosecondsPerInvocation="11229" maxMicrosecondsPerInvocation="116953" standardDeviationMicrosecondsPerInvocation="33471"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="94" invocations="25" avgMicrosecondsPerInvocation="3760" maxMicrosecondsPerInvocation="69647" standardDeviationMicrosecondsPerInvocation="13652"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="83" invocations="9" avgMicrosecondsPerInvocation="9319" maxMicrosecondsPerInvocation="36678" standardDeviationMicrosecondsPerInvocation="13424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="78" invocations="262" avgMicrosecondsPerInvocation="298" maxMicrosecondsPerInvocation="12796" standardDeviationMicrosecondsPerInvocation="1181"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="77" invocations="9" avgMicrosecondsPerInvocation="8616" maxMicrosecondsPerInvocation="43571" standardDeviationMicrosecondsPerInvocation="15787"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="72" invocations="9" avgMicrosecondsPerInvocation="8040" maxMicrosecondsPerInvocation="45979" standardDeviationMicrosecondsPerInvocation="15017"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="71" invocations="11" avgMicrosecondsPerInvocation="6513" maxMicrosecondsPerInvocation="61607" standardDeviationMicrosecondsPerInvocation="17501"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="67" invocations="301" avgMicrosecondsPerInvocation="222" maxMicrosecondsPerInvocation="17680" standardDeviationMicrosecondsPerInvocation="1310"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

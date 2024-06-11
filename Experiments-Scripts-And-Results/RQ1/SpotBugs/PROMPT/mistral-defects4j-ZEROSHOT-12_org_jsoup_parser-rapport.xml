@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713290020201" analysisTimestamp="1714585035804" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/DEFECTS4J/AVEC-PACKAGE_GLOBAL/Defects4J-generated-tests/ZEROSHOT/Jsoup/53/12/org/jsoup/parser</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="8c7b4cf951dcd2480cd5672f04b167a7" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.TokenQueueTest.testMatchesWhitespace()</LongMessage>
+    <Class classname="org.jsoup.parser.TokenQueueTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.TokenQueueTest" start="6" end="185" sourcefile="TokenQueueTest.java" sourcepath="org/jsoup/parser/TokenQueueTest.java">
+        <Message>At TokenQueueTest.java:[lines 6-185]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.TokenQueueTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.TokenQueueTest" name="testMatchesWhitespace" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.TokenQueueTest" start="80" end="84" startBytecode="0" endBytecode="16" sourcefile="TokenQueueTest.java" sourcepath="org/jsoup/parser/TokenQueueTest.java"/>
+      <Message>In method org.jsoup.parser.TokenQueueTest.testMatchesWhitespace()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="27" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.TokenQueueTest" primary="true" start="82" end="82" startBytecode="26" endBytecode="26" sourcefile="TokenQueueTest.java" sourcepath="org/jsoup/parser/TokenQueueTest.java">
+      <Message>At TokenQueueTest.java:[line 82]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="6bbeb95a5577e6d61b8a812720be39b1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.TokenQueueTest.testMatchesWord()</LongMessage>
+    <Class classname="org.jsoup.parser.TokenQueueTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.TokenQueueTest" start="6" end="185" sourcefile="TokenQueueTest.java" sourcepath="org/jsoup/parser/TokenQueueTest.java">
+        <Message>At TokenQueueTest.java:[lines 6-185]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.TokenQueueTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.TokenQueueTest" name="testMatchesWord" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.TokenQueueTest" start="88" end="92" startBytecode="0" endBytecode="16" sourcefile="TokenQueueTest.java" sourcepath="org/jsoup/parser/TokenQueueTest.java"/>
+      <Message>In method org.jsoup.parser.TokenQueueTest.testMatchesWord()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="27" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.TokenQueueTest" primary="true" start="90" end="90" startBytecode="26" endBytecode="26" sourcefile="TokenQueueTest.java" sourcepath="org/jsoup/parser/TokenQueueTest.java">
+      <Message>At TokenQueueTest.java:[line 90]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="ad0a390ddb32cb92bb4f0f85fff58a0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.TokenQueueTest.testRemainder()</LongMessage>
+    <Class classname="org.jsoup.parser.TokenQueueTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.TokenQueueTest" start="6" end="185" sourcefile="TokenQueueTest.java" sourcepath="org/jsoup/parser/TokenQueueTest.java">
+        <Message>At TokenQueueTest.java:[lines 6-185]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.TokenQueueTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.TokenQueueTest" name="testRemainder" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.TokenQueueTest" start="181" end="185" startBytecode="0" endBytecode="18" sourcefile="TokenQueueTest.java" sourcepath="org/jsoup/parser/TokenQueueTest.java"/>
+      <Message>In method org.jsoup.parser.TokenQueueTest.testRemainder()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="29" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.TokenQueueTest" primary="true" start="183" end="183" startBytecode="28" endBytecode="28" sourcefile="TokenQueueTest.java" sourcepath="org/jsoup/parser/TokenQueueTest.java">
+      <Message>At TokenQueueTest.java:[line 183]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.jsoup.parser.TokenQueue</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:53:40 +0200" total_classes="1" referenced_classes="11" total_bugs="3" total_size="130" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.83" clock_seconds="3.76" peak_mbytes="190.97" alloc_mbytes="7104.00" gc_seconds="0.22" priority_1="3">
+    <FileStats path="org/jsoup/parser/TokenQueueTest.java" bugCount="3" size="130" bugHash="edcabaefee2f790b2b63bd1baa23cf0d"/>
+    <PackageStats package="org.jsoup.parser" total_bugs="3" total_types="1" total_size="130" priority_1="3">
+      <ClassStats class="org.jsoup.parser.TokenQueueTest" sourceFile="TokenQueueTest.java" interface="false" size="130" bugs="3" priority_1="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="558" invocations="320" avgMicrosecondsPerInvocation="1744" maxMicrosecondsPerInvocation="49577" standardDeviationMicrosecondsPerInvocation="5437"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="279" invocations="11" avgMicrosecondsPerInvocation="25409" maxMicrosecondsPerInvocation="247262" standardDeviationMicrosecondsPerInvocation="70477"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="216" invocations="88" avgMicrosecondsPerInvocation="2459" maxMicrosecondsPerInvocation="34748" standardDeviationMicrosecondsPerInvocation="6487"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="211" invocations="11" avgMicrosecondsPerInvocation="19235" maxMicrosecondsPerInvocation="74434" standardDeviationMicrosecondsPerInvocation="24842"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="92" invocations="11" avgMicrosecondsPerInvocation="8431" maxMicrosecondsPerInvocation="45824" standardDeviationMicrosecondsPerInvocation="13922"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="91" invocations="11" avgMicrosecondsPerInvocation="8344" maxMicrosecondsPerInvocation="44673" standardDeviationMicrosecondsPerInvocation="15793"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="84" invocations="285" avgMicrosecondsPerInvocation="295" maxMicrosecondsPerInvocation="26005" standardDeviationMicrosecondsPerInvocation="1792"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="79" invocations="27" avgMicrosecondsPerInvocation="2928" maxMicrosecondsPerInvocation="31729" standardDeviationMicrosecondsPerInvocation="6654"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="70" invocations="28" avgMicrosecondsPerInvocation="2531" maxMicrosecondsPerInvocation="39215" standardDeviationMicrosecondsPerInvocation="7647"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="70" invocations="27" avgMicrosecondsPerInvocation="2607" maxMicrosecondsPerInvocation="64748" standardDeviationMicrosecondsPerInvocation="12189"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="60" invocations="27" avgMicrosecondsPerInvocation="2225" maxMicrosecondsPerInvocation="25225" standardDeviationMicrosecondsPerInvocation="4899"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="58" invocations="27" avgMicrosecondsPerInvocation="2155" maxMicrosecondsPerInvocation="13893" standardDeviationMicrosecondsPerInvocation="3024"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="50" invocations="27" avgMicrosecondsPerInvocation="1879" maxMicrosecondsPerInvocation="15597" standardDeviationMicrosecondsPerInvocation="3941"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="49" invocations="322" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="14418" standardDeviationMicrosecondsPerInvocation="932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="46" invocations="27" avgMicrosecondsPerInvocation="1735" maxMicrosecondsPerInvocation="27224" standardDeviationMicrosecondsPerInvocation="5072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="41" invocations="27" avgMicrosecondsPerInvocation="1545" maxMicrosecondsPerInvocation="15457" standardDeviationMicrosecondsPerInvocation="3597"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="41" invocations="1" avgMicrosecondsPerInvocation="41595" maxMicrosecondsPerInvocation="41595" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

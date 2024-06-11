@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360741719" analysisTimestamp="1714591902718" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/107_weka/MemoryTEST/6/weka/core</Jar>
+  </Project>
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" abbrev="NP" category="CORRECTNESS" instanceHash="dc7ec232780c013a79e3145ce1e249a2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Déréférencement d&apos;un pointeur null dans la méthode</ShortMessage>
+    <LongMessage>Déréférencement d&apos;un pointeur null dans la méthode weka.core.MemoryTest.testGetRevision()</LongMessage>
+    <Class classname="weka.core.MemoryTest" primary="true">
+      <SourceLine classname="weka.core.MemoryTest" start="5" end="124" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java">
+        <Message>At MemoryTest.java:[lines 5-124]</Message>
+      </SourceLine>
+      <Message>In class weka.core.MemoryTest</Message>
+    </Class>
+    <Method classname="weka.core.MemoryTest" name="testGetRevision" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.core.MemoryTest" start="112" end="118" startBytecode="0" endBytecode="64" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java"/>
+      <Message>In method weka.core.MemoryTest.testGetRevision()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="17" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="weka.core.MemoryTest" primary="true" start="117" end="117" startBytecode="18" endBytecode="18" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at MemoryTest.java:[line 117]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_ALWAYS_NULL" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Déréférencement d&apos;un pointeur null dans la méthode</ShortDescription>
+    <Details><![CDATA[
+
+<p>Un pointeur à <code>null</code> est déréférencé ici. Ceci va mener à une <code>NullPointerException</code> quand le code sera exécuté.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Déréférencement d&apos;un pointeur à null</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>weka.core.Memory</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:01 +0100" total_classes="1" referenced_classes="13" total_bugs="1" total_size="65" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.86" clock_seconds="1.59" peak_mbytes="191.10" alloc_mbytes="7104.00" gc_seconds="0.10" priority_1="1">
+    <FileStats path="weka/core/MemoryTest.java" bugCount="1" size="65" bugHash="a19db4bc4b4d00f9d02e936a228d1b33"/>
+    <PackageStats package="weka.core" total_bugs="1" total_types="1" total_size="65" priority_1="1">
+      <ClassStats class="weka.core.MemoryTest" sourceFile="MemoryTest.java" interface="false" size="65" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="267" invocations="320" avgMicrosecondsPerInvocation="836" maxMicrosecondsPerInvocation="37622" standardDeviationMicrosecondsPerInvocation="2794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="120" invocations="13" avgMicrosecondsPerInvocation="9289" maxMicrosecondsPerInvocation="99137" standardDeviationMicrosecondsPerInvocation="26043"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="64" invocations="13" avgMicrosecondsPerInvocation="4986" maxMicrosecondsPerInvocation="17382" standardDeviationMicrosecondsPerInvocation="5317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="54" invocations="285" avgMicrosecondsPerInvocation="192" maxMicrosecondsPerInvocation="15949" standardDeviationMicrosecondsPerInvocation="1090"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="51" invocations="76" avgMicrosecondsPerInvocation="672" maxMicrosecondsPerInvocation="4824" standardDeviationMicrosecondsPerInvocation="857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="48" invocations="31" avgMicrosecondsPerInvocation="1567" maxMicrosecondsPerInvocation="30281" standardDeviationMicrosecondsPerInvocation="5338"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="42" invocations="13" avgMicrosecondsPerInvocation="3237" maxMicrosecondsPerInvocation="18980" standardDeviationMicrosecondsPerInvocation="4913"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="13" avgMicrosecondsPerInvocation="2872" maxMicrosecondsPerInvocation="34689" standardDeviationMicrosecondsPerInvocation="9188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="29" invocations="13" avgMicrosecondsPerInvocation="2246" maxMicrosecondsPerInvocation="19365" standardDeviationMicrosecondsPerInvocation="5019"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="23" invocations="13" avgMicrosecondsPerInvocation="1838" maxMicrosecondsPerInvocation="9181" standardDeviationMicrosecondsPerInvocation="2401"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="22" invocations="13" avgMicrosecondsPerInvocation="1735" maxMicrosecondsPerInvocation="14565" standardDeviationMicrosecondsPerInvocation="3722"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="20" invocations="322" avgMicrosecondsPerInvocation="64" maxMicrosecondsPerInvocation="738" standardDeviationMicrosecondsPerInvocation="53"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="20" invocations="13" avgMicrosecondsPerInvocation="1598" maxMicrosecondsPerInvocation="12180" standardDeviationMicrosecondsPerInvocation="3099"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="20" invocations="13" avgMicrosecondsPerInvocation="1562" maxMicrosecondsPerInvocation="8592" standardDeviationMicrosecondsPerInvocation="2250"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

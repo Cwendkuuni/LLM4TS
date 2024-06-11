@@ -1,0 +1,23 @@
+package com.oceanbase.odc.service.session.factory;
+import com.oceanbase.odc.core.datasource.ConnectionInitializer;
+import com.oceanbase.odc.core.datasource.SingleConnectionDataSource;
+import com.oceanbase.odc.plugin.connect.api.ConnectionExtensionPoint;
+import com.oceanbase.odc.service.connection.model.ConnectionConfig;
+import com.oceanbase.odc.service.connection.model.ConnectionConfig.SSLConfig;
+import com.oceanbase.odc.service.connection.model.ConnectionConfig.SSLFileEntry;
+import com.oceanbase.odc.service.connection.model.OBTenantEndpoint;
+import com.oceanbase.odc.service.session.factory.OBConsoleDataSourceFactory;
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import javax.sql.DataSource;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287206474" analysisTimestamp="1714573795675" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/COT/scribe/VerifierTEST/29/org/scribe/model</Jar>
+  </Project>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="a28ee3ec47a56b082a6d7ebe3f67c03c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode concatène des chaînes au moyen de + en boucle</ShortMessage>
+    <LongMessage>La méthode org.scribe.model.test.VerifierTest.testVerifierWithLongString() concatène des chaînes au moyen de + en boucle</LongMessage>
+    <Class classname="org.scribe.model.test.VerifierTest" primary="true">
+      <SourceLine classname="org.scribe.model.test.VerifierTest" start="8" end="55" sourcefile="VerifierTest.java" sourcepath="org/scribe/model/test/VerifierTest.java">
+        <Message>At VerifierTest.java:[lines 8-55]</Message>
+      </SourceLine>
+      <Message>In class org.scribe.model.test.VerifierTest</Message>
+    </Class>
+    <Method classname="org.scribe.model.test.VerifierTest" name="testVerifierWithLongString" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.scribe.model.test.VerifierTest" start="50" end="55" startBytecode="0" endBytecode="109" sourcefile="VerifierTest.java" sourcepath="org/scribe/model/test/VerifierTest.java"/>
+      <Message>In method org.scribe.model.test.VerifierTest.testVerifierWithLongString()</Message>
+    </Method>
+    <SourceLine classname="org.scribe.model.test.VerifierTest" primary="true" start="52" end="52" startBytecode="12" endBytecode="12" sourcefile="VerifierTest.java" sourcepath="org/scribe/model/test/VerifierTest.java">
+      <Message>At VerifierTest.java:[line 52]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="SBSC_USE_STRINGBUFFER_CONCATENATION" abbrev="SBSC" category="PERFORMANCE">
+    <ShortDescription>La méthode concatène des chaînes au moyen de + en boucle</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette méthode semble construire une <ocde>String</code> en utilisant une concaténation en boucle. A chaque itération, l'objet <code>String</code> est converti en <code>StringBuffer</code>/<code>StringBuilder</code>, complété, puis de nouveau converti en <code>String</code>. Ceci a un coût exponentiel en fonction du nombre d'itérations, puisque la chaîne est recopiée à chaque itération.</p>
+<p>De meilleurs performances peuvent être obtenues en utilisant explicitement <code>StringBuffer</code> (ou <code>StringBuilder</code> en Java 5).</p>
+<p>Par exemple :</p>
+<pre><code>
+// C'est mal !
+String s = "";
+for (int i = 0; i &lt; field.length; ++i) {
+  s = s + field[i];
+}
+
+// C'est mieux...
+StringBuffer buf = new StringBuffer();
+for (int i = 0; i &lt; field.length; ++i) {
+  buf.append(field[i]);
+}
+String s = buf.toString();
+</code></pre>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SBSC">
+    <Description>Concaténation de chaînes au moyen de + dans une boucle</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.scribe.model.Verifier</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:46 +0200" total_classes="1" referenced_classes="10" total_bugs="1" total_size="35" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.83" clock_seconds="5.45" peak_mbytes="190.10" alloc_mbytes="7104.00" gc_seconds="0.24" priority_2="1">
+    <FileStats path="org/scribe/model/test/VerifierTest.java" bugCount="1" size="35" bugHash="37027e2da212dd0788eb656714cd4e85"/>
+    <PackageStats package="org.scribe.model.test" total_bugs="1" total_types="1" total_size="35" priority_2="1">
+      <ClassStats class="org.scribe.model.test.VerifierTest" sourceFile="VerifierTest.java" interface="false" size="35" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="795" invocations="308" avgMicrosecondsPerInvocation="2583" maxMicrosecondsPerInvocation="58323" standardDeviationMicrosecondsPerInvocation="7778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="438" invocations="10" avgMicrosecondsPerInvocation="43824" maxMicrosecondsPerInvocation="299930" standardDeviationMicrosecondsPerInvocation="88358"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="213" invocations="8" avgMicrosecondsPerInvocation="26697" maxMicrosecondsPerInvocation="168043" standardDeviationMicrosecondsPerInvocation="54189"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="197" invocations="66" avgMicrosecondsPerInvocation="2997" maxMicrosecondsPerInvocation="34054" standardDeviationMicrosecondsPerInvocation="7204"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="178" invocations="273" avgMicrosecondsPerInvocation="655" maxMicrosecondsPerInvocation="27337" standardDeviationMicrosecondsPerInvocation="3091"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="178" invocations="10" avgMicrosecondsPerInvocation="17863" maxMicrosecondsPerInvocation="48028" standardDeviationMicrosecondsPerInvocation="19167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="163" invocations="10" avgMicrosecondsPerInvocation="16376" maxMicrosecondsPerInvocation="55917" standardDeviationMicrosecondsPerInvocation="20728"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="161" invocations="8" avgMicrosecondsPerInvocation="20175" maxMicrosecondsPerInvocation="151234" standardDeviationMicrosecondsPerInvocation="49538"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="136" invocations="28" avgMicrosecondsPerInvocation="4890" maxMicrosecondsPerInvocation="70150" standardDeviationMicrosecondsPerInvocation="13964"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="132" invocations="8" avgMicrosecondsPerInvocation="16620" maxMicrosecondsPerInvocation="70641" standardDeviationMicrosecondsPerInvocation="22144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="105" invocations="1" avgMicrosecondsPerInvocation="105801" maxMicrosecondsPerInvocation="105801" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="102" invocations="8" avgMicrosecondsPerInvocation="12806" maxMicrosecondsPerInvocation="61306" standardDeviationMicrosecondsPerInvocation="19102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="89" invocations="311" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="20124" standardDeviationMicrosecondsPerInvocation="1572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="86" invocations="10" avgMicrosecondsPerInvocation="8626" maxMicrosecondsPerInvocation="30192" standardDeviationMicrosecondsPerInvocation="12230"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

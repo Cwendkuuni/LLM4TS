@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287208810" analysisTimestamp="1714580683937" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT/91_classviewer/ClassInfoTEST/28/com/jstevh/viewer</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="de79164ee25910496c814f8ee191a24c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.jstevh.viewer.ClassInfoTest.testGetFoundMethod()</LongMessage>
+    <Class classname="com.jstevh.viewer.ClassInfoTest" primary="true">
+      <SourceLine classname="com.jstevh.viewer.ClassInfoTest" start="6" end="81" sourcefile="ClassInfoTest.java" sourcepath="com/jstevh/viewer/ClassInfoTest.java">
+        <Message>At ClassInfoTest.java:[lines 6-81]</Message>
+      </SourceLine>
+      <Message>In class com.jstevh.viewer.ClassInfoTest</Message>
+    </Class>
+    <Method classname="com.jstevh.viewer.ClassInfoTest" name="testGetFoundMethod" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.jstevh.viewer.ClassInfoTest" start="76" end="81" startBytecode="0" endBytecode="20" sourcefile="ClassInfoTest.java" sourcepath="com/jstevh/viewer/ClassInfoTest.java"/>
+      <Message>In method com.jstevh.viewer.ClassInfoTest.testGetFoundMethod()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="15" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="com.jstevh.viewer.ClassInfoTest" primary="true" start="77" end="77" startBytecode="14" endBytecode="14" sourcefile="ClassInfoTest.java" sourcepath="com/jstevh/viewer/ClassInfoTest.java">
+      <Message>At ClassInfoTest.java:[line 77]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>com.jstevh.viewer.ClassInfo</MissingClass>
+    <MissingClass>com.jstevh.viewer.MethodData</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:48 +0200" total_classes="1" referenced_classes="11" total_bugs="1" total_size="56" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.13" clock_seconds="3.47" peak_mbytes="190.60" alloc_mbytes="7104.00" gc_seconds="0.21" priority_2="1">
+    <FileStats path="com/jstevh/viewer/ClassInfoTest.java" bugCount="1" size="56" bugHash="5eb07718421a0259e1630444365b2e21"/>
+    <PackageStats package="com.jstevh.viewer" total_bugs="1" total_types="1" total_size="56" priority_2="1">
+      <ClassStats class="com.jstevh.viewer.ClassInfoTest" sourceFile="ClassInfoTest.java" interface="false" size="56" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="629" invocations="316" avgMicrosecondsPerInvocation="1992" maxMicrosecondsPerInvocation="48842" standardDeviationMicrosecondsPerInvocation="5919"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="237" invocations="11" avgMicrosecondsPerInvocation="21616" maxMicrosecondsPerInvocation="221395" standardDeviationMicrosecondsPerInvocation="63204"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="189" invocations="69" avgMicrosecondsPerInvocation="2751" maxMicrosecondsPerInvocation="28365" standardDeviationMicrosecondsPerInvocation="5986"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="140" invocations="11" avgMicrosecondsPerInvocation="12778" maxMicrosecondsPerInvocation="57108" standardDeviationMicrosecondsPerInvocation="20607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="119" invocations="11" avgMicrosecondsPerInvocation="10828" maxMicrosecondsPerInvocation="39143" standardDeviationMicrosecondsPerInvocation="13433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="107" invocations="11" avgMicrosecondsPerInvocation="9801" maxMicrosecondsPerInvocation="44804" standardDeviationMicrosecondsPerInvocation="14817"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="85" invocations="11" avgMicrosecondsPerInvocation="7768" maxMicrosecondsPerInvocation="41403" standardDeviationMicrosecondsPerInvocation="12021"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="85" invocations="12" avgMicrosecondsPerInvocation="7084" maxMicrosecondsPerInvocation="64077" standardDeviationMicrosecondsPerInvocation="17217"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="80" invocations="280" avgMicrosecondsPerInvocation="286" maxMicrosecondsPerInvocation="13104" standardDeviationMicrosecondsPerInvocation="1088"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="74" invocations="12" avgMicrosecondsPerInvocation="6186" maxMicrosecondsPerInvocation="67387" standardDeviationMicrosecondsPerInvocation="18468"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="72" invocations="12" avgMicrosecondsPerInvocation="6032" maxMicrosecondsPerInvocation="27880" standardDeviationMicrosecondsPerInvocation="7493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="70" invocations="28" avgMicrosecondsPerInvocation="2531" maxMicrosecondsPerInvocation="38992" standardDeviationMicrosecondsPerInvocation="7429"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="68" invocations="11" avgMicrosecondsPerInvocation="6198" maxMicrosecondsPerInvocation="46982" standardDeviationMicrosecondsPerInvocation="13059"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="62" invocations="12" avgMicrosecondsPerInvocation="5244" maxMicrosecondsPerInvocation="16046" standardDeviationMicrosecondsPerInvocation="5238"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

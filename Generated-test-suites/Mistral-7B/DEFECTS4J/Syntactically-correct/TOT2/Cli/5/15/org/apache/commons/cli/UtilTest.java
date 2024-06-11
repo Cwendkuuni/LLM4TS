@@ -1,0 +1,87 @@
+package org.junit.tests.apache.commons.cli;
+
+import org.apache.commons.cli.Util;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingHyphens() {
+        String input = "--str";
+        String expectedOutput = "str";
+        String output = Util.stripLeadingHyphens(input);
+        assertEquals(expectedOutput, output);
+
+        input = "str";
+        expectedOutput = "str";
+        output = Util.stripLeadingHyphens(input);
+        assertEquals(expectedOutput, output);
+
+        input = "str--";
+        expectedOutput = "str";
+        output = Util.stripLeadingHyphens(input);
+        assertEquals(expectedOutput, output);
+
+        input = "---str";
+        expectedOutput = "str";
+        output = Util.stripLeadingHyphens(input);
+        assertEquals(expectedOutput, output);
+
+        input = "";
+        expectedOutput = "";
+        output = Util.stripLeadingHyphens(input);
+        assertEquals(expectedOutput, output);
+
+        // Edge case: empty string with a hyphen in the middle
+        input = "--";
+        expectedOutput = "";
+        output = Util.stripLeadingHyphens(input);
+        assertEquals(expectedOutput, output);
+
+        // Exception handling: null input
+        assertNull(Util.stripLeadingHyphens(null));
+
+        // Exception handling: empty string with a hyphen at the end
+        input = "--";
+        expectedOutput = "";
+        output = Util.stripLeadingHyphens(input);
+        assertEquals(expectedOutput, output);
+    }
+
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        String input = "\"one two\"";
+        String expectedOutput = "one two";
+        String output = Util.stripLeadingAndTrailingQuotes(input);
+        assertEquals(expectedOutput, output);
+
+        input = "one two";
+        expectedOutput = "one two";
+        output = Util.stripLeadingAndTrailingQuotes(input);
+        assertEquals(expectedOutput, output);
+
+        input = "\"one two\"";
+        expectedOutput = "one two";
+        output = Util.stripLeadingAndTrailingQuotes(input);
+        assertEquals(expectedOutput, output);
+
+        input = "\"\"";
+        expectedOutput = "";
+        output = Util.stripLeadingAndTrailingQuotes(input);
+        assertEquals(expectedOutput, output);
+
+        input = "\"one two\"\""; // double quotes
+        expectedOutput = "one two";
+        output = Util.stripLeadingAndTrailingQuotes(input);
+        assertEquals(expectedOutput, output);
+
+        // Edge case: empty string with quotes in the middle
+        input = "\"\"one two\"\"";
+        expectedOutput = "one two";
+        output = Util.stripLeadingAndTrailingQuotes(input);
+        assertEquals(expectedOutput, output);
+
+        // Exception handling: null input
+        assertNull(Util.stripLeadingAndTrailingQuotes(null));
+    }
+}

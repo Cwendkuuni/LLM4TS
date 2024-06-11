@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420554773" analysisTimestamp="1714576769407" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/COT/Jsoup/58/1/org/jsoup</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="1f43e9b784a3888e8120c1e51225af" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testCleanWithBaseUriAndWhitelist()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testCleanWithBaseUriAndWhitelist" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="108" end="113" startBytecode="0" endBytecode="11" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testCleanWithBaseUriAndWhitelist()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="18" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="111" end="111" startBytecode="16" endBytecode="16" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 111]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="cd9bfcf157838c8a54a34e282849b30" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testCleanWithBaseUriWhitelistAndOutputSettings()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testCleanWithBaseUriWhitelistAndOutputSettings" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="125" end="132" startBytecode="0" endBytecode="20" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testCleanWithBaseUriWhitelistAndOutputSettings()</Message>
+    </Method>
+    <LocalVariable name="?" register="5" pc="36" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 5</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="130" end="130" startBytecode="34" endBytecode="34" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 130]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="d422d4657dd39d98d882a8de2530acfc" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testCleanWithWhitelist()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testCleanWithWhitelist" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="117" end="121" startBytecode="0" endBytecode="8" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testCleanWithWhitelist()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="13" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="119" end="119" startBytecode="12" endBytecode="12" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 119]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="fe0cabea316c33165d199c44f42b77ed" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testConnect()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testConnect" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="42" end="45" startBytecode="0" endBytecode="5" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testConnect()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="43" end="43" startBytecode="7" endBytecode="7" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 43]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="21c8d5c6af16be19435032144ad9efbc" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testIsValid()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testIsValid" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="136" end="140" startBytecode="0" endBytecode="8" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testIsValid()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="13" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="138" end="138" startBytecode="12" endBytecode="12" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 138]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="7c4688a8bb2f7e4af8822b76b7e2b5a2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testParse()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="18" end="22" startBytecode="0" endBytecode="8" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testParse()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="12" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="20" end="20" startBytecode="11" endBytecode="11" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 20]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="c02ceba4dc4ae1a61b5973224f2c8b5e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testParseBodyFragmentWithBaseUri()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testParseBodyFragmentWithBaseUri" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="85" end="89" startBytecode="0" endBytecode="8" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testParseBodyFragmentWithBaseUri()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="12" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="87" end="87" startBytecode="11" endBytecode="11" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 87]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="c8e7481edbe2c3d455f0e0a2e934c186" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testParseBodyFragmentWithoutBaseUri()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testParseBodyFragmentWithoutBaseUri" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="93" end="96" startBytecode="0" endBytecode="5" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testParseBodyFragmentWithoutBaseUri()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="94" end="94" startBytecode="7" endBytecode="7" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 94]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="1bd34b9cd34a4bdf60d949bf15f4e4ef" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testParseFromFile()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testParseFromFile" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="58" end="62" startBytecode="0" endBytecode="11" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testParseFromFile()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="19" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="60" end="60" startBytecode="18" endBytecode="18" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 60]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="bb22f9362436f89971a2f6d76f0f9b22" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testParseFromFileWithCharsetName()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testParseFromFileWithCharsetName" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="49" end="54" startBytecode="0" endBytecode="14" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testParseFromFileWithCharsetName()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="52" end="52" startBytecode="22" endBytecode="22" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 52]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="1b15492ed415faa927a6fb18d56df3d8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testParseFromInputStreamWithCharsetName()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testParseFromInputStreamWithCharsetName" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="66" end="71" startBytecode="0" endBytecode="14" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testParseFromInputStreamWithCharsetName()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="69" end="69" startBytecode="22" endBytecode="22" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 69]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="c6b5a8c9796724d6dfd60424cc253d7d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testParseFromInputStreamWithParser()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testParseFromInputStreamWithParser" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="75" end="81" startBytecode="0" endBytecode="17" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testParseFromInputStreamWithParser()</Message>
+    </Method>
+    <LocalVariable name="?" register="5" pc="31" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 5</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="79" end="79" startBytecode="29" endBytecode="29" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 79]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="c8bb80193df4abb58172ac521156f224" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testParseURL()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testParseURL" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="100" end="104" startBytecode="0" endBytecode="11" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testParseURL()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="20" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="102" end="102" startBytecode="19" endBytecode="19" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 102]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="e528b4f6f439c750f6e368c6d329c171" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testParseWithParser()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testParseWithParser" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="26" end="31" startBytecode="0" endBytecode="11" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testParseWithParser()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="18" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="29" end="29" startBytecode="16" endBytecode="16" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 29]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="54eb1a5ac32c9b7d7b58ee162b41aa4e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.JsoupTest.testParseWithoutBaseUri()</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testParseWithoutBaseUri" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="35" end="38" startBytecode="0" endBytecode="5" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testParseWithoutBaseUri()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="36" end="36" startBytecode="7" endBytecode="7" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+      <Message>At JsoupTest.java:[line 36]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="a15b034a815aa0403027214d7c2f00b4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>org.jsoup.JsoupTest.testParseFromInputStreamWithParser() may fail to clean up java.io.InputStream on checked exception</LongMessage>
+    <Class classname="org.jsoup.JsoupTest" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="14" end="140" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java">
+        <Message>At JsoupTest.java:[lines 14-140]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.JsoupTest</Message>
+    </Class>
+    <Method classname="org.jsoup.JsoupTest" name="testParseFromInputStreamWithParser" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.JsoupTest" start="75" end="81" startBytecode="0" endBytecode="75" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java"/>
+      <Message>In method org.jsoup.JsoupTest.testParseFromInputStreamWithParser()</Message>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" start="45" end="364" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java">
+        <Message>At InputStream.java:[lines 45-364]</Message>
+      </SourceLine>
+      <Message>Reference type java.io.InputStream</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="org.jsoup.JsoupTest" primary="true" start="75" end="75" startBytecode="6" endBytecode="6" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at JsoupTest.java:[line 75] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="org.jsoup.JsoupTest" start="76" end="76" startBytecode="10" endBytecode="10" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at JsoupTest.java:[line 76]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jsoup.JsoupTest" start="77" end="77" startBytecode="13" endBytecode="13" sourcefile="JsoupTest.java" sourcepath="org/jsoup/JsoupTest.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at JsoupTest.java:[line 77]</Message>
+    </SourceLine>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {InputStream x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="EXPERIMENTAL">
+    <Description>Experimental</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" abbrev="OBL" category="EXPERIMENTAL">
+    <ShortDescription>Method may fail to clean up stream or resource on checked exception</ShortDescription>
+    <Details><![CDATA[
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          For sending feedback, check:
+          </p>
+          <ul>
+            <li><a href="https://github.com/spotbugs/spotbugs/blob/master/.github/CONTRIBUTING.md">contributing guideline</a></li>
+            <li><a href="https://github.com/spotbugs/discuss/issues?q=">mailinglist</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>
+          (<a href="https://people.eecs.berkeley.edu/~necula/Papers/rte_oopsla04.pdf">PDF</a>),
+          for a description of the analysis technique.
+          </p>
+          
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="OBL">
+    <Description>Unsatisfied obligation to clean up stream or resource</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="5">
+    <MissingClass>org.jsoup.Jsoup</MissingClass>
+    <MissingClass>org.jsoup.nodes.Document</MissingClass>
+    <MissingClass>org.jsoup.nodes.Document$OutputSettings</MissingClass>
+    <MissingClass>org.jsoup.parser.Parser</MissingClass>
+    <MissingClass>org.jsoup.safety.Whitelist</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:15:54 +0100" total_classes="1" referenced_classes="14" total_bugs="16" total_size="84" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.91" clock_seconds="5.22" peak_mbytes="191.06" alloc_mbytes="7104.00" gc_seconds="0.18" priority_2="16">
+    <FileStats path="org/jsoup/JsoupTest.java" bugCount="16" size="84" bugHash="feb5f828468cefe517c7e4accd4cc3b5"/>
+    <PackageStats package="org.jsoup" total_bugs="16" total_types="1" total_size="84" priority_2="16">
+      <ClassStats class="org.jsoup.JsoupTest" sourceFile="JsoupTest.java" interface="false" size="84" bugs="16" priority_2="16"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="646" invocations="349" avgMicrosecondsPerInvocation="1852" maxMicrosecondsPerInvocation="81057" standardDeviationMicrosecondsPerInvocation="6467"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="292" invocations="14" avgMicrosecondsPerInvocation="20880" maxMicrosecondsPerInvocation="64082" standardDeviationMicrosecondsPerInvocation="24631"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="255" invocations="14" avgMicrosecondsPerInvocation="18255" maxMicrosecondsPerInvocation="212385" standardDeviationMicrosecondsPerInvocation="54415"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="224" invocations="14" avgMicrosecondsPerInvocation="16026" maxMicrosecondsPerInvocation="79343" standardDeviationMicrosecondsPerInvocation="24852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="203" invocations="310" avgMicrosecondsPerInvocation="654" maxMicrosecondsPerInvocation="33347" standardDeviationMicrosecondsPerInvocation="3246"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="169" invocations="37" avgMicrosecondsPerInvocation="4585" maxMicrosecondsPerInvocation="87005" standardDeviationMicrosecondsPerInvocation="14481"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="149" invocations="84" avgMicrosecondsPerInvocation="1779" maxMicrosecondsPerInvocation="38938" standardDeviationMicrosecondsPerInvocation="5115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="141" invocations="14" avgMicrosecondsPerInvocation="10132" maxMicrosecondsPerInvocation="53853" standardDeviationMicrosecondsPerInvocation="14001"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="136" invocations="16" avgMicrosecondsPerInvocation="8503" maxMicrosecondsPerInvocation="96408" standardDeviationMicrosecondsPerInvocation="22923"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="118" invocations="16" avgMicrosecondsPerInvocation="7411" maxMicrosecondsPerInvocation="94776" standardDeviationMicrosecondsPerInvocation="22768"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="117" invocations="16" avgMicrosecondsPerInvocation="7371" maxMicrosecondsPerInvocation="48445" standardDeviationMicrosecondsPerInvocation="12483"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="83" invocations="1" avgMicrosecondsPerInvocation="83882" maxMicrosecondsPerInvocation="83882" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="75" invocations="16" avgMicrosecondsPerInvocation="4735" maxMicrosecondsPerInvocation="36781" standardDeviationMicrosecondsPerInvocation="9074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="74" invocations="352" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="20981" standardDeviationMicrosecondsPerInvocation="1379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="74" invocations="14" avgMicrosecondsPerInvocation="5299" maxMicrosecondsPerInvocation="27917" standardDeviationMicrosecondsPerInvocation="8951"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="64" invocations="14" avgMicrosecondsPerInvocation="4629" maxMicrosecondsPerInvocation="49845" standardDeviationMicrosecondsPerInvocation="12660"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

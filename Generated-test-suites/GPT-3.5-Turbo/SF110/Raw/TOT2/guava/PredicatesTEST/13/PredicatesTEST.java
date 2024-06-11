@@ -1,0 +1,33 @@
+import org.junit.Test;
+import static org.junit.Assert.*;
+import com.google.common.base.Predicates;
+
+public class PredicatesTest {
+
+    @Test
+    public void testAlwaysTrue() {
+        assertTrue(Predicates.alwaysTrue().apply("test"));
+        assertFalse(Predicates.alwaysTrue().apply(null));
+    }
+
+    @Test
+    public void testAlwaysFalse() {
+        assertFalse(Predicates.alwaysFalse().apply("test"));
+        assertTrue(Predicates.alwaysFalse().apply(null));
+    }
+
+    @Test
+    public void testIsNull() {
+        assertTrue(Predicates.isNull().apply(null));
+        assertFalse(Predicates.isNull().apply("test"));
+    }
+
+    @Test
+    public void testNotNull() {
+        assertTrue(Predicates.notNull().apply("test"));
+        assertFalse(Predicates.notNull().apply(null));
+    }
+
+    // Add more test cases for other methods in the Predicates class
+
+}

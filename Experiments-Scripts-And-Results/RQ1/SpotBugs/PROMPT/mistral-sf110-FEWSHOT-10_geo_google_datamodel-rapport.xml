@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287216238" analysisTimestamp="1714576294856" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/FEWSHOT/21_geo-google/GeoStatusCodeTEST/10/geo/google/datamodel</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>geo.google.datamodel.GeoStatusCode</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:56 +0200" total_classes="1" referenced_classes="10" total_bugs="0" total_size="20" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.50" clock_seconds="3.45" peak_mbytes="188.96" alloc_mbytes="7104.00" gc_seconds="0.23">
+    <FileStats path="geo/google/datamodel/GeoStatusCodeTest.java" bugCount="0" size="20"/>
+    <PackageStats package="geo.google.datamodel" total_bugs="0" total_types="1" total_size="20">
+      <ClassStats class="geo.google.datamodel.GeoStatusCodeTest" sourceFile="GeoStatusCodeTest.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="551" invocations="308" avgMicrosecondsPerInvocation="1790" maxMicrosecondsPerInvocation="71554" standardDeviationMicrosecondsPerInvocation="6632"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="266" invocations="10" avgMicrosecondsPerInvocation="26615" maxMicrosecondsPerInvocation="258008" standardDeviationMicrosecondsPerInvocation="77137"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="123" invocations="4" avgMicrosecondsPerInvocation="30930" maxMicrosecondsPerInvocation="121710" standardDeviationMicrosecondsPerInvocation="52414"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="114" invocations="273" avgMicrosecondsPerInvocation="419" maxMicrosecondsPerInvocation="36948" standardDeviationMicrosecondsPerInvocation="2535"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="104" invocations="27" avgMicrosecondsPerInvocation="3874" maxMicrosecondsPerInvocation="48655" standardDeviationMicrosecondsPerInvocation="10454"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="104" invocations="10" avgMicrosecondsPerInvocation="10402" maxMicrosecondsPerInvocation="38451" standardDeviationMicrosecondsPerInvocation="12503"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="91" invocations="61" avgMicrosecondsPerInvocation="1493" maxMicrosecondsPerInvocation="8752" standardDeviationMicrosecondsPerInvocation="2322"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="78" invocations="10" avgMicrosecondsPerInvocation="7858" maxMicrosecondsPerInvocation="30312" standardDeviationMicrosecondsPerInvocation="8939"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="72" invocations="310" avgMicrosecondsPerInvocation="234" maxMicrosecondsPerInvocation="16512" standardDeviationMicrosecondsPerInvocation="1317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="72" invocations="10" avgMicrosecondsPerInvocation="7214" maxMicrosecondsPerInvocation="33291" standardDeviationMicrosecondsPerInvocation="11206"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="70" invocations="4" avgMicrosecondsPerInvocation="17652" maxMicrosecondsPerInvocation="38303" standardDeviationMicrosecondsPerInvocation="16228"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="62" invocations="4" avgMicrosecondsPerInvocation="15675" maxMicrosecondsPerInvocation="52659" standardDeviationMicrosecondsPerInvocation="21372"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

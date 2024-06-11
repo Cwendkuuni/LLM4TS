@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756323052" analysisTimestamp="1714594943586" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/twitter4j/TwitterBaseImplTEST/29/twitter4j</Jar>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="33f609d239cd3cdc781a02787dc67867" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : twitter4j.TwitterBaseImplTest.twitterBaseImpl</LongMessage>
+    <Class classname="twitter4j.TwitterBaseImplTest" primary="true">
+      <SourceLine classname="twitter4j.TwitterBaseImplTest" start="5" end="41" sourcefile="TwitterBaseImplTest.java" sourcepath="twitter4j/TwitterBaseImplTest.java">
+        <Message>At TwitterBaseImplTest.java:[lines 5-41]</Message>
+      </SourceLine>
+      <Message>In class twitter4j.TwitterBaseImplTest</Message>
+    </Class>
+    <Field classname="twitter4j.TwitterBaseImplTest" name="twitterBaseImpl" signature="Ltwitter4j/TwitterBaseImpl;" isStatic="false" primary="true">
+      <SourceLine classname="twitter4j.TwitterBaseImplTest" sourcefile="TwitterBaseImplTest.java" sourcepath="twitter4j/TwitterBaseImplTest.java">
+        <Message>In TwitterBaseImplTest.java</Message>
+      </SourceLine>
+      <Message>Field twitter4j.TwitterBaseImplTest.twitterBaseImpl</Message>
+    </Field>
+    <SourceLine classname="twitter4j.TwitterBaseImplTest" sourcefile="TwitterBaseImplTest.java" sourcepath="twitter4j/TwitterBaseImplTest.java" synthetic="true">
+      <Message>In TwitterBaseImplTest.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="UUF_UNUSED_FIELD" abbrev="UuF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais utilisé. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UuF">
+    <Description>Champ inutilisé</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:23 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="14" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.22" clock_seconds="1.37" peak_mbytes="188.40" alloc_mbytes="7104.00" gc_seconds="0.14" priority_2="1">
+    <FileStats path="twitter4j/TwitterBaseImplTest.java" bugCount="1" size="14" bugHash="eadee4bd85c1a0042c638a7554d4895a"/>
+    <PackageStats package="twitter4j" total_bugs="1" total_types="1" total_size="14" priority_2="1">
+      <ClassStats class="twitter4j.TwitterBaseImplTest" sourceFile="TwitterBaseImplTest.java" interface="false" size="14" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="218" invocations="293" avgMicrosecondsPerInvocation="746" maxMicrosecondsPerInvocation="27406" standardDeviationMicrosecondsPerInvocation="2130"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="164" invocations="9" avgMicrosecondsPerInvocation="18264" maxMicrosecondsPerInvocation="137278" standardDeviationMicrosecondsPerInvocation="42283"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="51" invocations="23" avgMicrosecondsPerInvocation="2223" maxMicrosecondsPerInvocation="33676" standardDeviationMicrosecondsPerInvocation="6973"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="47" invocations="258" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="16701" standardDeviationMicrosecondsPerInvocation="1061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="45" invocations="9" avgMicrosecondsPerInvocation="5098" maxMicrosecondsPerInvocation="17739" standardDeviationMicrosecondsPerInvocation="6650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="39" invocations="39" avgMicrosecondsPerInvocation="1020" maxMicrosecondsPerInvocation="5617" standardDeviationMicrosecondsPerInvocation="1113"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="35" invocations="6" avgMicrosecondsPerInvocation="5966" maxMicrosecondsPerInvocation="34502" standardDeviationMicrosecondsPerInvocation="12766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="27" invocations="9" avgMicrosecondsPerInvocation="3039" maxMicrosecondsPerInvocation="22539" standardDeviationMicrosecondsPerInvocation="6929"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="22" invocations="9" avgMicrosecondsPerInvocation="2531" maxMicrosecondsPerInvocation="16332" standardDeviationMicrosecondsPerInvocation="4985"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="21" invocations="295" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="1454" standardDeviationMicrosecondsPerInvocation="103"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

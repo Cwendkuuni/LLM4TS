@@ -1,0 +1,38 @@
+package com.google.javascript.rhino.jstype;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class NamedTypeTest {
+
+    @Test
+    public void testGetReferencedType() {
+        NamedType namedType = new NamedType(null, "reference", "sourceName", 1, 1);
+        assertNull(namedType.getReferencedType());
+    }
+
+    @Test
+    public void testGetReferenceName() {
+        NamedType namedType = new NamedType(null, "reference", "sourceName", 1, 1);
+        assertEquals("reference", namedType.getReferenceName());
+    }
+
+    @Test
+    public void testHasReferenceName() {
+        NamedType namedType = new NamedType(null, "reference", "sourceName", 1, 1);
+        assertTrue(namedType.hasReferenceName());
+    }
+
+    @Test
+    public void testIsNominalType() {
+        NamedType namedType = new NamedType(null, "reference", "sourceName", 1, 1);
+        assertTrue(namedType.isNominalType());
+    }
+
+    @Test
+    public void testIsNamedType() {
+        NamedType namedType = new NamedType(null, "reference", "sourceName", 1, 1);
+        assertTrue(namedType.isNamedType());
+    }
+
+}

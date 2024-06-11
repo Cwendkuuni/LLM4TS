@@ -1,0 +1,67 @@
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class TimeOfDayTest {
+    
+    @Test
+    public void testConstructorWithIntegers() {
+        TimeOfDay time = new TimeOfDay(12, 30);
+        assertEquals(new Integer(12), time.getHours());
+        assertEquals(new Integer(30), time.getMinutes());
+    }
+    
+    @Test
+    public void testConstructorWithString() {
+        TimeOfDay time = new TimeOfDay("10:15");
+        assertEquals(new Integer(10), time.getHours());
+        assertEquals(new Integer(15), time.getMinutes());
+    }
+    
+    @Test
+    public void testCompareTo() {
+        TimeOfDay time1 = new TimeOfDay(8, 45);
+        TimeOfDay time2 = new TimeOfDay(8, 45);
+        
+        assertEquals(0, time1.compareTo(time2));
+        
+        TimeOfDay time3 = new TimeOfDay(6, 30);
+        TimeOfDay time4 = new TimeOfDay(8, 0);
+        
+        assertEquals(-1, time3.compareTo(time4));
+        assertEquals(1, time4.compareTo(time3));
+    }
+    
+    @Test
+    public void testGetHours() {
+        TimeOfDay time = new TimeOfDay(5, 45);
+        assertEquals(new Integer(5), time.getHours());
+    }
+    
+    @Test
+    public void testGetMinutes() {
+        TimeOfDay time = new TimeOfDay(5, 45);
+        assertEquals(new Integer(45), time.getMinutes());
+    }
+    
+    @Test
+    public void testToString() {
+        TimeOfDay time = new TimeOfDay(9, 20);
+        assertEquals("9:20", time.toString());
+    }
+    
+    @Test
+    public void testHashCode() {
+        TimeOfDay time = new TimeOfDay(8, 0);
+        assertEquals(800, time.hashCode());
+    }
+    
+    @Test
+    public void testEquals() {
+        TimeOfDay time1 = new TimeOfDay(8, 0);
+        TimeOfDay time2 = new TimeOfDay(8, 0);
+        TimeOfDay time3 = new TimeOfDay(6, 30);
+        
+        assertTrue(time1.equals(time2));
+        assertFalse(time1.equals(time3));
+    }
+}

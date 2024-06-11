@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287206054" analysisTimestamp="1714571938717" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/COT/commons-lang/NumericEntityUnescaperTEST/14/org/apache/commons/lang3/text/translate</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="d97de54955264f1aad2884fd6262d3d3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_EntityWithoutSemiColonWithErrorOption()</LongMessage>
+    <Class classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="12" end="109" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+        <Message>At NumericEntityUnescaperTest.java:[lines 12-109]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" name="testTranslate_EntityWithoutSemiColonWithErrorOption" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="73" end="78" startBytecode="0" endBytecode="27" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java"/>
+      <Message>In method org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_EntityWithoutSemiColonWithErrorOption()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="45" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true" start="76" end="76" startBytecode="43" endBytecode="43" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+      <Message>At NumericEntityUnescaperTest.java:[line 76]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="b3bf9b9e41dcabb6ed36bf25ef0e989e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_InvalidEntity()</LongMessage>
+    <Class classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="12" end="109" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+        <Message>At NumericEntityUnescaperTest.java:[lines 12-109]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" name="testTranslate_InvalidEntity" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="104" end="109" startBytecode="0" endBytecode="23" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java"/>
+      <Message>In method org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_InvalidEntity()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="39" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true" start="107" end="107" startBytecode="37" endBytecode="37" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+      <Message>At NumericEntityUnescaperTest.java:[line 107]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="8c4368e06cd1bf325a9896b9ba9dc8b9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_EntityWithSemiColon() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="12" end="109" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+        <Message>At NumericEntityUnescaperTest.java:[lines 12-109]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" name="testTranslate_EntityWithSemiColon" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="51" end="58" startBytecode="0" endBytecode="124" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java"/>
+      <Message>In method org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_EntityWithSemiColon()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true" start="52" end="52" startBytecode="14" endBytecode="14" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+      <Message>At NumericEntityUnescaperTest.java:[line 52]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="c5a0da4637018fe147414e2d2e6cf9d9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_EntityWithoutSemiColon() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="12" end="109" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+        <Message>At NumericEntityUnescaperTest.java:[lines 12-109]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" name="testTranslate_EntityWithoutSemiColon" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="62" end="69" startBytecode="0" endBytecode="124" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java"/>
+      <Message>In method org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_EntityWithoutSemiColon()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true" start="63" end="63" startBytecode="14" endBytecode="14" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+      <Message>At NumericEntityUnescaperTest.java:[line 63]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="99c706c3b21d6a74cba6a4d4bb24590a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_EntityWithoutSemiColonWithErrorOption() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="12" end="109" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+        <Message>At NumericEntityUnescaperTest.java:[lines 12-109]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" name="testTranslate_EntityWithoutSemiColonWithErrorOption" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="73" end="78" startBytecode="0" endBytecode="94" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java"/>
+      <Message>In method org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_EntityWithoutSemiColonWithErrorOption()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true" start="74" end="74" startBytecode="14" endBytecode="14" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+      <Message>At NumericEntityUnescaperTest.java:[line 74]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="72cc063129de7976d1f6def75b2287ab" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_HexEntity() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="12" end="109" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+        <Message>At NumericEntityUnescaperTest.java:[lines 12-109]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" name="testTranslate_HexEntity" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="82" end="89" startBytecode="0" endBytecode="124" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java"/>
+      <Message>In method org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_HexEntity()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true" start="83" end="83" startBytecode="14" endBytecode="14" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+      <Message>At NumericEntityUnescaperTest.java:[line 83]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="e86f7dd2282f7e67e0d0df6bd962e2cb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_InvalidEntity() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="12" end="109" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+        <Message>At NumericEntityUnescaperTest.java:[lines 12-109]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" name="testTranslate_InvalidEntity" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="104" end="109" startBytecode="0" endBytecode="88" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java"/>
+      <Message>In method org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_InvalidEntity()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true" start="105" end="105" startBytecode="14" endBytecode="14" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+      <Message>At NumericEntityUnescaperTest.java:[line 105]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="b592cf9c5c1e3d535d0e82edb9935b9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_OctalEntity() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="12" end="109" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+        <Message>At NumericEntityUnescaperTest.java:[lines 12-109]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" name="testTranslate_OctalEntity" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="93" end="100" startBytecode="0" endBytecode="124" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java"/>
+      <Message>In method org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslate_OctalEntity()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true" start="94" end="94" startBytecode="14" endBytecode="14" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+      <Message>At NumericEntityUnescaperTest.java:[line 94]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_STRING_CTOR" abbrev="Dm" category="PERFORMANCE">
+    <ShortDescription>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortDescription>
+    <Details><![CDATA[
+
+<p>Utiliser le constructeur <code>java.lang.String(String)</code> gaspille de la mémoire puisque l'objet ainsi construit serait fonctionnellement identique à la chaîne passée en paramètre. Utilisez juste la chaîne en argument directement.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.apache.commons.lang3.text.translate.NumericEntityUnescaper</MissingClass>
+    <MissingClass>org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:46 +0200" total_classes="1" referenced_classes="14" total_bugs="8" total_size="79" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.22" clock_seconds="6.59" peak_mbytes="191.93" alloc_mbytes="7104.00" gc_seconds="0.17" priority_2="8">
+    <FileStats path="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java" bugCount="8" size="79" bugHash="e667c5d0737baab945685d450e33c050"/>
+    <PackageStats package="org.apache.commons.lang3.text.translate" total_bugs="8" total_types="1" total_size="79" priority_2="8">
+      <ClassStats class="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" sourceFile="NumericEntityUnescaperTest.java" interface="false" size="79" bugs="8" priority_2="8"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="917" invocations="324" avgMicrosecondsPerInvocation="2831" maxMicrosecondsPerInvocation="122088" standardDeviationMicrosecondsPerInvocation="10661"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="348" invocations="14" avgMicrosecondsPerInvocation="24878" maxMicrosecondsPerInvocation="188016" standardDeviationMicrosecondsPerInvocation="48633"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="319" invocations="67" avgMicrosecondsPerInvocation="4763" maxMicrosecondsPerInvocation="45142" standardDeviationMicrosecondsPerInvocation="10411"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="277" invocations="14" avgMicrosecondsPerInvocation="19839" maxMicrosecondsPerInvocation="85932" standardDeviationMicrosecondsPerInvocation="29094"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="243" invocations="33" avgMicrosecondsPerInvocation="7378" maxMicrosecondsPerInvocation="92574" standardDeviationMicrosecondsPerInvocation="21336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="152" invocations="10" avgMicrosecondsPerInvocation="15202" maxMicrosecondsPerInvocation="118378" standardDeviationMicrosecondsPerInvocation="34892"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="140" invocations="14" avgMicrosecondsPerInvocation="10020" maxMicrosecondsPerInvocation="54221" standardDeviationMicrosecondsPerInvocation="14959"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="133" invocations="14" avgMicrosecondsPerInvocation="9531" maxMicrosecondsPerInvocation="44162" standardDeviationMicrosecondsPerInvocation="14718"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="130" invocations="10" avgMicrosecondsPerInvocation="13087" maxMicrosecondsPerInvocation="62003" standardDeviationMicrosecondsPerInvocation="20225"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="126" invocations="10" avgMicrosecondsPerInvocation="12635" maxMicrosecondsPerInvocation="70427" standardDeviationMicrosecondsPerInvocation="20101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="122" invocations="10" avgMicrosecondsPerInvocation="12245" maxMicrosecondsPerInvocation="58926" standardDeviationMicrosecondsPerInvocation="18627"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="122" invocations="287" avgMicrosecondsPerInvocation="426" maxMicrosecondsPerInvocation="36056" standardDeviationMicrosecondsPerInvocation="2537"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="114" invocations="14" avgMicrosecondsPerInvocation="8176" maxMicrosecondsPerInvocation="52288" standardDeviationMicrosecondsPerInvocation="17422"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="113" invocations="10" avgMicrosecondsPerInvocation="11323" maxMicrosecondsPerInvocation="80613" standardDeviationMicrosecondsPerInvocation="23500"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="102" invocations="10" avgMicrosecondsPerInvocation="10203" maxMicrosecondsPerInvocation="35666" standardDeviationMicrosecondsPerInvocation="11322"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="101" invocations="10" avgMicrosecondsPerInvocation="10150" maxMicrosecondsPerInvocation="53177" standardDeviationMicrosecondsPerInvocation="16831"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

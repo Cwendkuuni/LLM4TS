@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287210586" analysisTimestamp="1714582766417" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/1_tullibee/ComboLegTEST/4/com/ib/client</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.ib.client.ComboLeg</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:50 +0200" total_classes="1" referenced_classes="10" total_bugs="0" total_size="13" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.77" clock_seconds="3.06" peak_mbytes="189.53" alloc_mbytes="7104.00" gc_seconds="0.20">
+    <FileStats path="com/ib/client/ComboLegTest.java" bugCount="0" size="13"/>
+    <PackageStats package="com.ib.client" total_bugs="0" total_types="1" total_size="13">
+      <ClassStats class="com.ib.client.ComboLegTest" sourceFile="ComboLegTest.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="540" invocations="308" avgMicrosecondsPerInvocation="1755" maxMicrosecondsPerInvocation="39429" standardDeviationMicrosecondsPerInvocation="5407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="297" invocations="10" avgMicrosecondsPerInvocation="29713" maxMicrosecondsPerInvocation="230131" standardDeviationMicrosecondsPerInvocation="67852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="135" invocations="26" avgMicrosecondsPerInvocation="5202" maxMicrosecondsPerInvocation="58507" standardDeviationMicrosecondsPerInvocation="13077"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="125" invocations="10" avgMicrosecondsPerInvocation="12542" maxMicrosecondsPerInvocation="60078" standardDeviationMicrosecondsPerInvocation="18663"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="118" invocations="59" avgMicrosecondsPerInvocation="2015" maxMicrosecondsPerInvocation="21680" standardDeviationMicrosecondsPerInvocation="3842"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="88" invocations="2" avgMicrosecondsPerInvocation="44189" maxMicrosecondsPerInvocation="83663" standardDeviationMicrosecondsPerInvocation="39474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="81" invocations="2" avgMicrosecondsPerInvocation="40796" maxMicrosecondsPerInvocation="52188" standardDeviationMicrosecondsPerInvocation="11392"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="70" invocations="10" avgMicrosecondsPerInvocation="7023" maxMicrosecondsPerInvocation="17307" standardDeviationMicrosecondsPerInvocation="6740"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="69" invocations="10" avgMicrosecondsPerInvocation="6926" maxMicrosecondsPerInvocation="42181" standardDeviationMicrosecondsPerInvocation="12800"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="68" invocations="10" avgMicrosecondsPerInvocation="6872" maxMicrosecondsPerInvocation="45943" standardDeviationMicrosecondsPerInvocation="14163"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="62" invocations="273" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="13124" standardDeviationMicrosecondsPerInvocation="1074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="54" invocations="2" avgMicrosecondsPerInvocation="27116" maxMicrosecondsPerInvocation="53847" standardDeviationMicrosecondsPerInvocation="26731"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

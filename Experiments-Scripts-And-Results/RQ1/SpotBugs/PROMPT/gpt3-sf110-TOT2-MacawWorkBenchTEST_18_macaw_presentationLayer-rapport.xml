@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756315468" analysisTimestamp="1714594319042" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/69_lhamacaw/MacawWorkBenchTEST/18/macaw/presentationLayer</Jar>
+  </Project>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="db1105b34d5b417c1efec2691d32894d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in macaw.presentationLayer.MacawWorkBenchTest.testEditConstants()</LongMessage>
+    <Class classname="macaw.presentationLayer.MacawWorkBenchTest" primary="true">
+      <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" start="7" end="66" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java">
+        <Message>At MacawWorkBenchTest.java:[lines 7-66]</Message>
+      </SourceLine>
+      <Message>In class macaw.presentationLayer.MacawWorkBenchTest</Message>
+    </Class>
+    <Method classname="macaw.presentationLayer.MacawWorkBenchTest" name="testEditConstants" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" start="20" end="30" startBytecode="0" endBytecode="104" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java"/>
+      <Message>In method macaw.presentationLayer.MacawWorkBenchTest.testEditConstants()</Message>
+    </Method>
+    <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" primary="true" start="27" end="27" startBytecode="34" endBytecode="34" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java">
+      <Message>At MacawWorkBenchTest.java:[line 27]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="f98948bb57e342d116a2e412de20d585" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in macaw.presentationLayer.MacawWorkBenchTest.testEditVariables()</LongMessage>
+    <Class classname="macaw.presentationLayer.MacawWorkBenchTest" primary="true">
+      <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" start="7" end="66" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java">
+        <Message>At MacawWorkBenchTest.java:[lines 7-66]</Message>
+      </SourceLine>
+      <Message>In class macaw.presentationLayer.MacawWorkBenchTest</Message>
+    </Class>
+    <Method classname="macaw.presentationLayer.MacawWorkBenchTest" name="testEditVariables" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" start="35" end="45" startBytecode="0" endBytecode="104" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java"/>
+      <Message>In method macaw.presentationLayer.MacawWorkBenchTest.testEditVariables()</Message>
+    </Method>
+    <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" primary="true" start="42" end="42" startBytecode="34" endBytecode="34" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java">
+      <Message>At MacawWorkBenchTest.java:[line 42]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="4d2b01a5b763764e3b315d40df8c1f11" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in macaw.presentationLayer.MacawWorkBenchTest.testExportVariableData()</LongMessage>
+    <Class classname="macaw.presentationLayer.MacawWorkBenchTest" primary="true">
+      <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" start="7" end="66" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java">
+        <Message>At MacawWorkBenchTest.java:[lines 7-66]</Message>
+      </SourceLine>
+      <Message>In class macaw.presentationLayer.MacawWorkBenchTest</Message>
+    </Class>
+    <Method classname="macaw.presentationLayer.MacawWorkBenchTest" name="testExportVariableData" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" start="50" end="60" startBytecode="0" endBytecode="104" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java"/>
+      <Message>In method macaw.presentationLayer.MacawWorkBenchTest.testExportVariableData()</Message>
+    </Method>
+    <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" primary="true" start="57" end="57" startBytecode="34" endBytecode="34" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java">
+      <Message>At MacawWorkBenchTest.java:[line 57]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DCN_NULLPOINTER_EXCEPTION" abbrev="DCN" category="STYLE">
+    <ShortDescription>NullPointerException caught</ShortDescription>
+    <Details><![CDATA[
+   
+<p>
+According to SEI Cert rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">ERR08-J</a> NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
+<p>
+This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+  try {
+    String ms[] = m.split(" ");
+    return names.length != 1;
+  } catch (NullPointerException e) {
+    return false;
+  }
+}
+</code></pre>
+<p>
+A compliant solution would use a null-check as in the following example:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+    if (m == null) return false;
+    String ms[] = m.split(" ");
+    return names.length != 1;
+}
+</code></pre>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DCN">
+    <Description>Don&apos;t Catch NullPointer Exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>macaw.presentationLayer.MacawWorkBench</MissingClass>
+    <MissingClass>macaw.system.SessionProperties</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:15 +0100" total_classes="1" referenced_classes="11" total_bugs="3" total_size="35" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.51" clock_seconds="1.31" peak_mbytes="189.73" alloc_mbytes="7104.00" gc_seconds="0.12" priority_2="3">
+    <FileStats path="macaw/presentationLayer/MacawWorkBenchTest.java" bugCount="3" size="35" bugHash="0c62287de0d0358956008921606c7baa"/>
+    <PackageStats package="macaw.presentationLayer" total_bugs="3" total_types="1" total_size="35" priority_2="3">
+      <ClassStats class="macaw.presentationLayer.MacawWorkBenchTest" sourceFile="MacawWorkBenchTest.java" interface="false" size="35" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="186" invocations="310" avgMicrosecondsPerInvocation="603" maxMicrosecondsPerInvocation="15893" standardDeviationMicrosecondsPerInvocation="1346"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="172" invocations="63" avgMicrosecondsPerInvocation="2730" maxMicrosecondsPerInvocation="123367" standardDeviationMicrosecondsPerInvocation="15348"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="49" invocations="11" avgMicrosecondsPerInvocation="4513" maxMicrosecondsPerInvocation="14018" standardDeviationMicrosecondsPerInvocation="5200"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="38" invocations="6" avgMicrosecondsPerInvocation="6341" maxMicrosecondsPerInvocation="33582" standardDeviationMicrosecondsPerInvocation="12224"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="33" invocations="27" avgMicrosecondsPerInvocation="1230" maxMicrosecondsPerInvocation="16550" standardDeviationMicrosecondsPerInvocation="3210"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="32" invocations="6" avgMicrosecondsPerInvocation="5485" maxMicrosecondsPerInvocation="19488" standardDeviationMicrosecondsPerInvocation="6317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="30" invocations="273" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="1643" standardDeviationMicrosecondsPerInvocation="202"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="29" invocations="11" avgMicrosecondsPerInvocation="2643" maxMicrosecondsPerInvocation="13453" standardDeviationMicrosecondsPerInvocation="3779"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="24" invocations="6" avgMicrosecondsPerInvocation="4119" maxMicrosecondsPerInvocation="12358" standardDeviationMicrosecondsPerInvocation="3945"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="22" invocations="6" avgMicrosecondsPerInvocation="3713" maxMicrosecondsPerInvocation="12474" standardDeviationMicrosecondsPerInvocation="4091"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="21" invocations="11" avgMicrosecondsPerInvocation="1973" maxMicrosecondsPerInvocation="13425" standardDeviationMicrosecondsPerInvocation="3763"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="21" invocations="6" avgMicrosecondsPerInvocation="3608" maxMicrosecondsPerInvocation="13638" standardDeviationMicrosecondsPerInvocation="4604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="20" invocations="11" avgMicrosecondsPerInvocation="1844" maxMicrosecondsPerInvocation="8077" standardDeviationMicrosecondsPerInvocation="2376"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="18" invocations="1" avgMicrosecondsPerInvocation="18714" maxMicrosecondsPerInvocation="18714" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="18" invocations="312" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="700" standardDeviationMicrosecondsPerInvocation="50"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

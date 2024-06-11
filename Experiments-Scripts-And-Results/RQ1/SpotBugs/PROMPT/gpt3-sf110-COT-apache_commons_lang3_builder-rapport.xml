@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360739999" analysisTimestamp="1714572394401" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/commons-lang/CompareToBuilderTEST/29/org/apache/commons/lang3/builder</Jar>
+  </Project>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="6a3b189da70eb9ba9c0df780ec247991" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionCompare_nullObject()</LongMessage>
+    <Class classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="6" end="59" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+        <Message>At CompareToBuilderTest.java:[lines 6-59]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.builder.CompareToBuilderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.builder.CompareToBuilderTest" name="testReflectionCompare_nullObject" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="26" end="34" startBytecode="0" endBytecode="114" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java"/>
+      <Message>In method org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionCompare_nullObject()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true" start="31" end="31" startBytecode="29" endBytecode="29" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+      <Message>At CompareToBuilderTest.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DCN_NULLPOINTER_EXCEPTION" abbrev="DCN" category="STYLE">
+    <ShortDescription>NullPointerException caught</ShortDescription>
+    <Details><![CDATA[
+   
+<p>
+According to SEI Cert rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">ERR08-J</a> NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
+<p>
+This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+  try {
+    String ms[] = m.split(" ");
+    return names.length != 1;
+  } catch (NullPointerException e) {
+    return false;
+  }
+}
+</code></pre>
+<p>
+A compliant solution would use a null-check as in the following example:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+    if (m == null) return false;
+    String ms[] = m.split(" ");
+    return names.length != 1;
+}
+</code></pre>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DCN">
+    <Description>Don&apos;t Catch NullPointer Exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.apache.commons.lang3.builder.CompareToBuilder</MissingClass>
+    <MissingClass>org.apache.commons.lang3.builder.CompareToBuilderTest$1A</MissingClass>
+    <MissingClass>org.apache.commons.lang3.builder.CompareToBuilderTest$1B</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:38:59 +0100" total_classes="1" referenced_classes="12" total_bugs="1" total_size="37" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.20" clock_seconds="4.65" peak_mbytes="189.85" alloc_mbytes="7104.00" gc_seconds="0.17" priority_2="1">
+    <FileStats path="org/apache/commons/lang3/builder/CompareToBuilderTest.java" bugCount="1" size="37" bugHash="c7287d0340b261dd11e1a10ad7801d9f"/>
+    <PackageStats package="org.apache.commons.lang3.builder" total_bugs="1" total_types="1" total_size="37" priority_2="1">
+      <ClassStats class="org.apache.commons.lang3.builder.CompareToBuilderTest" sourceFile="CompareToBuilderTest.java" interface="false" size="37" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="664" invocations="311" avgMicrosecondsPerInvocation="2135" maxMicrosecondsPerInvocation="70675" standardDeviationMicrosecondsPerInvocation="6762"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="259" invocations="12" avgMicrosecondsPerInvocation="21638" maxMicrosecondsPerInvocation="198846" standardDeviationMicrosecondsPerInvocation="54463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="226" invocations="12" avgMicrosecondsPerInvocation="18882" maxMicrosecondsPerInvocation="71889" standardDeviationMicrosecondsPerInvocation="26118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="194" invocations="63" avgMicrosecondsPerInvocation="3089" maxMicrosecondsPerInvocation="36197" standardDeviationMicrosecondsPerInvocation="6763"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="186" invocations="273" avgMicrosecondsPerInvocation="682" maxMicrosecondsPerInvocation="36692" standardDeviationMicrosecondsPerInvocation="2947"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="165" invocations="6" avgMicrosecondsPerInvocation="27610" maxMicrosecondsPerInvocation="161521" standardDeviationMicrosecondsPerInvocation="59892"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="119" invocations="12" avgMicrosecondsPerInvocation="9937" maxMicrosecondsPerInvocation="52488" standardDeviationMicrosecondsPerInvocation="16361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="116" invocations="12" avgMicrosecondsPerInvocation="9706" maxMicrosecondsPerInvocation="37217" standardDeviationMicrosecondsPerInvocation="13520"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="102" invocations="26" avgMicrosecondsPerInvocation="3923" maxMicrosecondsPerInvocation="52098" standardDeviationMicrosecondsPerInvocation="10386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="100" invocations="313" avgMicrosecondsPerInvocation="319" maxMicrosecondsPerInvocation="24139" standardDeviationMicrosecondsPerInvocation="1815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="79" invocations="12" avgMicrosecondsPerInvocation="6652" maxMicrosecondsPerInvocation="30151" standardDeviationMicrosecondsPerInvocation="9963"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="78" invocations="12" avgMicrosecondsPerInvocation="6525" maxMicrosecondsPerInvocation="23472" standardDeviationMicrosecondsPerInvocation="8538"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="77" invocations="6" avgMicrosecondsPerInvocation="12872" maxMicrosecondsPerInvocation="37054" standardDeviationMicrosecondsPerInvocation="14221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="73" invocations="6" avgMicrosecondsPerInvocation="12179" maxMicrosecondsPerInvocation="49877" standardDeviationMicrosecondsPerInvocation="17400"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

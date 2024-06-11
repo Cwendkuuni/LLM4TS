@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287206006" analysisTimestamp="1714573769805" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/COT/99_newzgrabber/NewzgrabberTEST/8/Newzgrabber</Jar>
+  </Project>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="17d3bef2b115995ea20325465aac0883" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique Newzgrabber.Newzgrabber.verbose depuis la méthode d&apos;une instance Newzgrabber.NewzgrabberTest.testNewzgrabberMain()</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="10" end="65" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 10-65]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testNewzgrabberMain" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="62" end="65" startBytecode="0" endBytecode="65" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testNewzgrabberMain()</Message>
+    </Method>
+    <Field classname="Newzgrabber.Newzgrabber" name="verbose" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="Newzgrabber.Newzgrabber">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field Newzgrabber.Newzgrabber.verbose</Message>
+    </Field>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="63" end="63" startBytecode="13" endBytecode="13" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 63]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" abbrev="ST" category="STYLE">
+    <ShortDescription>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortDescription>
+    <Details><![CDATA[
+
+<p>La méthode de l'instance écrit la valeur d'un champ statique. Cela peut être difficile à gérer si plusieurs instances ont la possibilité d'écrire cette valeur et cela ressemble surtout à une mauvaise pratique.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ST">
+    <Description>Mauvaise utilisation de champs statiques</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>Newzgrabber.Newzgrabber</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:46 +0200" total_classes="1" referenced_classes="13" total_bugs="1" total_size="40" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.34" clock_seconds="6.42" peak_mbytes="191.73" alloc_mbytes="7104.00" gc_seconds="0.31" priority_2="1">
+    <FileStats path="Newzgrabber/NewzgrabberTest.java" bugCount="1" size="40" bugHash="ed66ca9b30929459f2883b28dfb3acb4"/>
+    <PackageStats package="Newzgrabber" total_bugs="1" total_types="1" total_size="40" priority_2="1">
+      <ClassStats class="Newzgrabber.NewzgrabberTest" sourceFile="NewzgrabberTest.java" interface="false" size="40" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1318" invocations="461" avgMicrosecondsPerInvocation="2859" maxMicrosecondsPerInvocation="99422" standardDeviationMicrosecondsPerInvocation="8980"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="424" invocations="13" avgMicrosecondsPerInvocation="32626" maxMicrosecondsPerInvocation="130015" standardDeviationMicrosecondsPerInvocation="36595"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="375" invocations="13" avgMicrosecondsPerInvocation="28863" maxMicrosecondsPerInvocation="350330" standardDeviationMicrosecondsPerInvocation="92840"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="346" invocations="114" avgMicrosecondsPerInvocation="3035" maxMicrosecondsPerInvocation="28930" standardDeviationMicrosecondsPerInvocation="6570"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="343" invocations="13" avgMicrosecondsPerInvocation="26457" maxMicrosecondsPerInvocation="169422" standardDeviationMicrosecondsPerInvocation="43937"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="199" invocations="425" avgMicrosecondsPerInvocation="470" maxMicrosecondsPerInvocation="48741" standardDeviationMicrosecondsPerInvocation="3006"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="163" invocations="13" avgMicrosecondsPerInvocation="12558" maxMicrosecondsPerInvocation="44275" standardDeviationMicrosecondsPerInvocation="15104"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="135" invocations="10" avgMicrosecondsPerInvocation="13542" maxMicrosecondsPerInvocation="126274" standardDeviationMicrosecondsPerInvocation="37616"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="117" invocations="13" avgMicrosecondsPerInvocation="9070" maxMicrosecondsPerInvocation="35665" standardDeviationMicrosecondsPerInvocation="12048"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="116" invocations="13" avgMicrosecondsPerInvocation="8983" maxMicrosecondsPerInvocation="40932" standardDeviationMicrosecondsPerInvocation="14579"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="108" invocations="13" avgMicrosecondsPerInvocation="8346" maxMicrosecondsPerInvocation="63255" standardDeviationMicrosecondsPerInvocation="17019"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="106" invocations="36" avgMicrosecondsPerInvocation="2970" maxMicrosecondsPerInvocation="51280" standardDeviationMicrosecondsPerInvocation="8937"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="102" invocations="1" avgMicrosecondsPerInvocation="102123" maxMicrosecondsPerInvocation="102123" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,58 @@
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class StdTypeResolverBuilderTest {
+
+    @Test
+    public void testInit() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.init(JsonTypeInfo.Id.CLASS, new ClassNameIdResolver());
+        assertEquals(JsonTypeInfo.Id.CLASS, builder._idType);
+        assertNotNull(builder._customIdResolver);
+        assertEquals(JsonTypeInfo.Id.CLASS.getDefaultPropertyName(), builder._typeProperty);
+    }
+
+    @Test
+    public void testBuildTypeSerializer() {
+        StdTypeResolverBuilder builder = StdTypeResolverBuilder.noTypeInfoBuilder();
+        TypeSerializer typeSerializer = builder.buildTypeSerializer(new SerializationConfig(), TypeFactory.defaultInstance().constructType(String.class), null);
+        assertNull(typeSerializer);
+    }
+
+    @Test
+    public void testBuildTypeDeserializer() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.init(JsonTypeInfo.Id.CLASS, new ClassNameIdResolver());
+        builder.inclusion(JsonTypeInfo.As.EXISTING_PROPERTY);
+        TypeDeserializer typeDeserializer = builder.buildTypeDeserializer(new DeserializationConfig(), TypeFactory.defaultInstance().constructType(String.class), null);
+        assertNotNull(typeDeserializer);
+    }
+
+    @Test
+    public void testInclusion() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.inclusion(JsonTypeInfo.As.WRAPPER_ARRAY);
+        assertEquals(JsonTypeInfo.As.WRAPPER_ARRAY, builder._includeAs);
+    }
+
+    @Test
+    public void testTypeProperty() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.typeProperty("type");
+        assertEquals("type", builder._typeProperty);
+    }
+
+    @Test
+    public void testDefaultImpl() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.defaultImpl(String.class);
+        assertEquals(String.class, builder._defaultImpl);
+    }
+
+    @Test
+    public void testTypeIdVisibility() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.typeIdVisibility(true);
+        assertTrue(builder._typeIdVisible);
+    }
+}

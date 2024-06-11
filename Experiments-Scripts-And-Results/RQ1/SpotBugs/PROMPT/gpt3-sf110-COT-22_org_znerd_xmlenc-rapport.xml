@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360741643" analysisTimestamp="1714571571506" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/xmlenc/XMLEncoderTEST/22/org/znerd/xmlenc</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="16bad17e328c840870a64f93f41bd881" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.znerd.xmlenc.XMLEncoderTest.xmlEncoder</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="27" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-27]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Field classname="org.znerd.xmlenc.XMLEncoderTest" name="xmlEncoder" signature="Lorg/znerd/xmlenc/XMLEncoder;" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>In XMLEncoderTest.java</Message>
+      </SourceLine>
+      <Message>Field org.znerd.xmlenc.XMLEncoderTest.xmlEncoder</Message>
+    </Field>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="13" end="13" startBytecode="6" endBytecode="6" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.znerd.xmlenc.XMLEncoder</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:01 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="12" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.20" clock_seconds="2.82" peak_mbytes="189.10" alloc_mbytes="7104.00" gc_seconds="0.15" priority_2="1">
+    <FileStats path="org/znerd/xmlenc/XMLEncoderTest.java" bugCount="1" size="12" bugHash="1d9a1e0a80d855d64e1ad6934fe26afe"/>
+    <PackageStats package="org.znerd.xmlenc" total_bugs="1" total_types="1" total_size="12" priority_2="1">
+      <ClassStats class="org.znerd.xmlenc.XMLEncoderTest" sourceFile="XMLEncoderTest.java" interface="false" size="12" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="438" invocations="309" avgMicrosecondsPerInvocation="1420" maxMicrosecondsPerInvocation="28447" standardDeviationMicrosecondsPerInvocation="4197"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="181" invocations="11" avgMicrosecondsPerInvocation="16528" maxMicrosecondsPerInvocation="171848" standardDeviationMicrosecondsPerInvocation="49135"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="126" invocations="61" avgMicrosecondsPerInvocation="2079" maxMicrosecondsPerInvocation="38561" standardDeviationMicrosecondsPerInvocation="5641"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="119" invocations="275" avgMicrosecondsPerInvocation="435" maxMicrosecondsPerInvocation="36047" standardDeviationMicrosecondsPerInvocation="2706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="108" invocations="4" avgMicrosecondsPerInvocation="27119" maxMicrosecondsPerInvocation="91537" standardDeviationMicrosecondsPerInvocation="37576"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="103" invocations="4" avgMicrosecondsPerInvocation="25806" maxMicrosecondsPerInvocation="88367" standardDeviationMicrosecondsPerInvocation="36482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="100" invocations="11" avgMicrosecondsPerInvocation="9164" maxMicrosecondsPerInvocation="47715" standardDeviationMicrosecondsPerInvocation="14029"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="92" invocations="311" avgMicrosecondsPerInvocation="298" maxMicrosecondsPerInvocation="44146" standardDeviationMicrosecondsPerInvocation="2656"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="82" invocations="11" avgMicrosecondsPerInvocation="7506" maxMicrosecondsPerInvocation="49717" standardDeviationMicrosecondsPerInvocation="14788"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="80" invocations="11" avgMicrosecondsPerInvocation="7323" maxMicrosecondsPerInvocation="39479" standardDeviationMicrosecondsPerInvocation="12728"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="73" invocations="28" avgMicrosecondsPerInvocation="2636" maxMicrosecondsPerInvocation="36869" standardDeviationMicrosecondsPerInvocation="7808"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="54" invocations="11" avgMicrosecondsPerInvocation="4977" maxMicrosecondsPerInvocation="22695" standardDeviationMicrosecondsPerInvocation="7693"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

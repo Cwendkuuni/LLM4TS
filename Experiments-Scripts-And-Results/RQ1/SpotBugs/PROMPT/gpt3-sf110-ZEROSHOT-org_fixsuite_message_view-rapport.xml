@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360750788" analysisTimestamp="1714607071218" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/74_fixsuite/TreeViewTEST/29/org/fixsuite/message/view</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="21b4e9ee408d31228c2a11dcae5758e0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type java.awt.BorderLayout in org.fixsuite.message.view.TreeViewTest.testInitGUI() at TreeViewTest.java:[line 24] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Ljava/awt/BorderLayout;">
+      <SourceLine classname="java.awt.BorderLayout" start="352" end="885" sourcefile="BorderLayout.java" sourcepath="java/awt/BorderLayout.java">
+        <Message>At BorderLayout.java:[lines 352-885]</Message>
+      </SourceLine>
+      <Message>Type java.awt.BorderLayout</Message>
+    </Type>
+    <Class classname="org.fixsuite.message.view.TreeViewTest" primary="true">
+      <SourceLine classname="org.fixsuite.message.view.TreeViewTest" start="11" end="117" sourcefile="TreeViewTest.java" sourcepath="org/fixsuite/message/view/TreeViewTest.java">
+        <Message>At TreeViewTest.java:[lines 11-117]</Message>
+      </SourceLine>
+      <Message>In class org.fixsuite.message.view.TreeViewTest</Message>
+    </Class>
+    <Method classname="org.fixsuite.message.view.TreeViewTest" name="testInitGUI" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.fixsuite.message.view.TreeViewTest" start="24" end="44" startBytecode="0" endBytecode="251" sourcefile="TreeViewTest.java" sourcepath="org/fixsuite/message/view/TreeViewTest.java"/>
+      <Message>In method org.fixsuite.message.view.TreeViewTest.testInitGUI()</Message>
+    </Method>
+    <SourceLine classname="org.fixsuite.message.view.TreeViewTest" primary="true" start="24" end="24" startBytecode="10" endBytecode="10" sourcefile="TreeViewTest.java" sourcepath="org/fixsuite/message/view/TreeViewTest.java">
+      <Message>At TreeViewTest.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.fixsuite.message.Library</MissingClass>
+    <MissingClass>org.fixsuite.message.view.TreeView</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:10 +0100" total_classes="1" referenced_classes="20" total_bugs="1" total_size="46" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="8.02" clock_seconds="2.48" peak_mbytes="192.72" alloc_mbytes="7104.00" gc_seconds="0.16" priority_2="1">
+    <FileStats path="org/fixsuite/message/view/TreeViewTest.java" bugCount="1" size="46" bugHash="1dc351eb8aec67c4b4bc1e05fef4d14b"/>
+    <PackageStats package="org.fixsuite.message.view" total_bugs="1" total_types="1" total_size="46" priority_2="1">
+      <ClassStats class="org.fixsuite.message.view.TreeViewTest" sourceFile="TreeViewTest.java" interface="false" size="46" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="430" invocations="597" avgMicrosecondsPerInvocation="720" maxMicrosecondsPerInvocation="28693" standardDeviationMicrosecondsPerInvocation="2417"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="332" invocations="20" avgMicrosecondsPerInvocation="16601" maxMicrosecondsPerInvocation="188707" standardDeviationMicrosecondsPerInvocation="40517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="169" invocations="20" avgMicrosecondsPerInvocation="8497" maxMicrosecondsPerInvocation="34889" standardDeviationMicrosecondsPerInvocation="9774"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="66" invocations="127" avgMicrosecondsPerInvocation="523" maxMicrosecondsPerInvocation="7701" standardDeviationMicrosecondsPerInvocation="824"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="65" invocations="50" avgMicrosecondsPerInvocation="1312" maxMicrosecondsPerInvocation="27822" standardDeviationMicrosecondsPerInvocation="4083"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="62" invocations="560" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="11287" standardDeviationMicrosecondsPerInvocation="538"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="59" invocations="600" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="15223" standardDeviationMicrosecondsPerInvocation="638"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="58" invocations="20" avgMicrosecondsPerInvocation="2948" maxMicrosecondsPerInvocation="10845" standardDeviationMicrosecondsPerInvocation="3263"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="44" invocations="15" avgMicrosecondsPerInvocation="2964" maxMicrosecondsPerInvocation="41128" standardDeviationMicrosecondsPerInvocation="10208"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="41" invocations="3" avgMicrosecondsPerInvocation="13902" maxMicrosecondsPerInvocation="40532" standardDeviationMicrosecondsPerInvocation="18832"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="38" invocations="20" avgMicrosecondsPerInvocation="1922" maxMicrosecondsPerInvocation="21413" standardDeviationMicrosecondsPerInvocation="4741"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="36" invocations="20" avgMicrosecondsPerInvocation="1841" maxMicrosecondsPerInvocation="24121" standardDeviationMicrosecondsPerInvocation="5483"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="30" invocations="20" avgMicrosecondsPerInvocation="1546" maxMicrosecondsPerInvocation="10121" standardDeviationMicrosecondsPerInvocation="2287"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="30" invocations="20" avgMicrosecondsPerInvocation="1523" maxMicrosecondsPerInvocation="10242" standardDeviationMicrosecondsPerInvocation="2406"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

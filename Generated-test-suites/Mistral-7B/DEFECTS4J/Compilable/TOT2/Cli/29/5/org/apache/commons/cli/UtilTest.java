@@ -1,0 +1,34 @@
+package org.apache.commons.cli;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class UtilTest {
+
+    @Test
+    public void testStripLeadingHyphens() {
+        String input = "--test";
+        String expectedOutput = "test";
+        String output = Util.stripLeadingHyphens(input);
+        assertEquals(expectedOutput, output);
+    }
+
+    /**
+     * Test for empty string.
+     */
+    @Test
+    public void testStripLeadingHyphensEmptyString() {
+        String input = "";
+        String expectedOutput = "";
+        String output = Util.stripLeadingHyphens(input);
+        assertEquals(expectedOutput, output);
+    }
+
+    /**
+     * Test for null input.
+     */
+    @Test(expected = NullPointerException.class)
+    public void testStripLeadingHyphensNullInput() {
+        String input = null;
+        Util.stripLeadingHyphens(input);
+    }
+}

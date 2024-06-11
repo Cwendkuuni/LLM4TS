@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287208190" analysisTimestamp="1714580665973" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT/68_biblestudy/QueueTEST/26/bible/util</Jar>
+  </Project>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="bd939b7951090e315e88d8961888629a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>bible.util.QueueTest.testMaxCapacity() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="bible.util.QueueTest" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="7" end="73" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+        <Message>At QueueTest.java:[lines 7-73]</Message>
+      </SourceLine>
+      <Message>In class bible.util.QueueTest</Message>
+    </Class>
+    <Method classname="bible.util.QueueTest" name="testMaxCapacity" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="38" end="43" startBytecode="0" endBytecode="104" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java"/>
+      <Message>In method bible.util.QueueTest.testMaxCapacity()</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="bible.util.QueueTest" primary="true" start="40" end="40" startBytecode="23" endBytecode="23" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+      <Message>At QueueTest.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_NUMBER_CTOR" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient Number constructor; use static valueOf instead</ShortDescription>
+    <Details><![CDATA[
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>bible.util.Queue</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:48 +0200" total_classes="1" referenced_classes="10" total_bugs="1" total_size="54" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.13" clock_seconds="3.16" peak_mbytes="190.33" alloc_mbytes="7104.00" gc_seconds="0.23" priority_2="1">
+    <FileStats path="bible/util/QueueTest.java" bugCount="1" size="54" bugHash="b716a1be0ce6315eed2b7476ae841dda"/>
+    <PackageStats package="bible.util" total_bugs="1" total_types="1" total_size="54" priority_2="1">
+      <ClassStats class="bible.util.QueueTest" sourceFile="QueueTest.java" interface="false" size="54" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="534" invocations="314" avgMicrosecondsPerInvocation="1701" maxMicrosecondsPerInvocation="53550" standardDeviationMicrosecondsPerInvocation="6041"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="272" invocations="10" avgMicrosecondsPerInvocation="27223" maxMicrosecondsPerInvocation="266403" standardDeviationMicrosecondsPerInvocation="79731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="127" invocations="279" avgMicrosecondsPerInvocation="457" maxMicrosecondsPerInvocation="22928" standardDeviationMicrosecondsPerInvocation="2335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="109" invocations="10" avgMicrosecondsPerInvocation="10936" maxMicrosecondsPerInvocation="40379" standardDeviationMicrosecondsPerInvocation="13092"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="93" invocations="8" avgMicrosecondsPerInvocation="11650" maxMicrosecondsPerInvocation="67095" standardDeviationMicrosecondsPerInvocation="22023"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="92" invocations="29" avgMicrosecondsPerInvocation="3188" maxMicrosecondsPerInvocation="52119" standardDeviationMicrosecondsPerInvocation="10474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="77" invocations="8" avgMicrosecondsPerInvocation="9720" maxMicrosecondsPerInvocation="45677" standardDeviationMicrosecondsPerInvocation="14758"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="63" invocations="50" avgMicrosecondsPerInvocation="1277" maxMicrosecondsPerInvocation="13205" standardDeviationMicrosecondsPerInvocation="2237"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="61" invocations="10" avgMicrosecondsPerInvocation="6173" maxMicrosecondsPerInvocation="20934" standardDeviationMicrosecondsPerInvocation="7212"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="54" invocations="8" avgMicrosecondsPerInvocation="6764" maxMicrosecondsPerInvocation="32458" standardDeviationMicrosecondsPerInvocation="10130"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="53" invocations="10" avgMicrosecondsPerInvocation="5361" maxMicrosecondsPerInvocation="41426" standardDeviationMicrosecondsPerInvocation="12108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="50" invocations="279" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="32314" standardDeviationMicrosecondsPerInvocation="2102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="47" invocations="10" avgMicrosecondsPerInvocation="4796" maxMicrosecondsPerInvocation="39766" standardDeviationMicrosecondsPerInvocation="11688"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="46" invocations="10" avgMicrosecondsPerInvocation="4684" maxMicrosecondsPerInvocation="27561" standardDeviationMicrosecondsPerInvocation="8437"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="46" invocations="8" avgMicrosecondsPerInvocation="5784" maxMicrosecondsPerInvocation="29265" standardDeviationMicrosecondsPerInvocation="8997"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

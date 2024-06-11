@@ -1,0 +1,112 @@
+package org.jsoup.nodes;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class FormElementTest {
+
+    private FormElement formElement;
+
+    @Before
+    public void setUp() {
+        formElement = new FormElement(Tag.valueOf("form"), "http://example.com", new Attributes());
+    }
+
+    @After
+    public void tearDown() {
+        formElement = null;
+    }
+
+    @Test
+    public void testElements() {
+        assertNotNull(formElement.elements());
+        assertEquals(0, formElement.elements().size());
+    }
+
+    @Test
+    public void testAddElement() {
+        Element element1 = new Element(Tag.valueOf("input"), "http://example.com", new Attributes());
+        Element element2 = new Element(Tag.valueOf("select"), "http://example.com", new Attributes());
+
+        assertEquals(formElement, formElement.addElement(element1));
+        assertEquals(formElement, formElement.addElement(element2));
+
+        assertEquals(2, formElement.elements().size());
+        assertTrue(formElement.elements().contains(element1));
+        assertTrue(formElement.elements().contains(element2));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testSubmitWithNoActionAttribute() {
+        formElement.submit();
+    }
+
+    @Test
+    public void testSubmitWithGetMethod() {
+        formElement.attr("method", "GET");
+
+        Connection connection = formElement.submit();
+
+        assertNotNull(connection);
+        assertEquals("http://example.com", connection.request().url().toString());
+        assertEquals(Connection.Method.GET, connection.request().method());
+    }
+
+    @Test
+    public void testSubmitWithPostMethod() {
+        formElement.attr("method", "POST");
+
+        Connection connection = formElement.submit();
+
+        assertNotNull(connection);
+        assertEquals("http://example.com", connection.request().url().toString());
+        assertEquals(Connection.Method.POST, connection.request().method());
+    }
+
+    @Test
+    public void testFormData() {
+        Element input1 = new Element(Tag.valueOf("input"), "http://example.com", new Attributes());
+        input1.attr("name", "username");
+        input1.val("john");
+
+        Element input2 = new Element(Tag.valueOf("input"), "http://example.com", new Attributes());
+        input2.attr("name", "password");
+        input2.val("pass123");
+
+        Element select = new Element(Tag.valueOf("select"), "http://example.com", new Attributes());
+        Element option1 = new Element(Tag.valueOf("option"), "http://example.com", new Attributes());
+        option1.val("option1");
+        Element option2 = new Element(Tag.valueOf("option"), "http://example.com", new Attributes());
+        option2.val("option2");
+        select.appendChild(option1);
+        select.appendChild(option2);
+
+        formElement.addElement(input1);
+        formElement.addElement(input2);
+        formElement.addElement(select);
+
+        List<Connection.KeyVal> formData = formElement.formData();
+
+        assertEquals(3, formData.size());
+        assertEquals("username", formData.get(0).key());
+        assertEquals("john", formData.get(0).value());
+        assertEquals("password", formData.get(1).key());
+        assertEquals("pass123", formData.get(1).value());
+        assertEquals("select", formData.get(2).key());
+        assertEquals("option1", formData.get(2).value());
+    }
+
+    @Test
+    public void testEquals() {
+        FormElement formElement1 = new FormElement(Tag.valueOf("form"), "http://example.com", new Attributes());
+        FormElement formElement2 = new FormElement(Tag.valueOf("form"), "http://example.com", new Attributes());
+
+        assertFalse(formElement.equals(null));
+        assertTrue(formElement.equals(formElement));
+        assertTrue(formElement.equals(formElement1));
+        assertTrue(formElement1.equals(formElement2));
+    }
+}

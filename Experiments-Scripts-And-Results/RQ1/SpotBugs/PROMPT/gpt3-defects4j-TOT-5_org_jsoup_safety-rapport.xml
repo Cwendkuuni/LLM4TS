@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420565497" analysisTimestamp="1714594603394" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT/Jsoup/58/5/org/jsoup/safety</Jar>
+  </Project>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="345b4f65990836ef4419b28207d86140" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in org.jsoup.safety.CleanerTest.testClean()</LongMessage>
+    <Class classname="org.jsoup.safety.CleanerTest" primary="true">
+      <SourceLine classname="org.jsoup.safety.CleanerTest" start="15" end="79" sourcefile="CleanerTest.java" sourcepath="org/jsoup/safety/CleanerTest.java">
+        <Message>At CleanerTest.java:[lines 15-79]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.safety.CleanerTest</Message>
+    </Class>
+    <Method classname="org.jsoup.safety.CleanerTest" name="testClean" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.safety.CleanerTest" start="27" end="54" startBytecode="0" endBytecode="315" sourcefile="CleanerTest.java" sourcepath="org/jsoup/safety/CleanerTest.java"/>
+      <Message>In method org.jsoup.safety.CleanerTest.testClean()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.safety.CleanerTest" primary="true" start="51" end="51" startBytecode="157" endBytecode="157" sourcefile="CleanerTest.java" sourcepath="org/jsoup/safety/CleanerTest.java">
+      <Message>At CleanerTest.java:[line 51]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="6c47574374b6265939578bf5c1121c9d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in org.jsoup.safety.CleanerTest.testIsValid()</LongMessage>
+    <Class classname="org.jsoup.safety.CleanerTest" primary="true">
+      <SourceLine classname="org.jsoup.safety.CleanerTest" start="15" end="79" sourcefile="CleanerTest.java" sourcepath="org/jsoup/safety/CleanerTest.java">
+        <Message>At CleanerTest.java:[lines 15-79]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.safety.CleanerTest</Message>
+    </Class>
+    <Method classname="org.jsoup.safety.CleanerTest" name="testIsValid" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.safety.CleanerTest" start="59" end="79" startBytecode="0" endBytecode="191" sourcefile="CleanerTest.java" sourcepath="org/jsoup/safety/CleanerTest.java"/>
+      <Message>In method org.jsoup.safety.CleanerTest.testIsValid()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.safety.CleanerTest" primary="true" start="76" end="76" startBytecode="63" endBytecode="63" sourcefile="CleanerTest.java" sourcepath="org/jsoup/safety/CleanerTest.java">
+      <Message>At CleanerTest.java:[line 76]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DCN_NULLPOINTER_EXCEPTION" abbrev="DCN" category="STYLE">
+    <ShortDescription>NullPointerException caught</ShortDescription>
+    <Details><![CDATA[
+   
+<p>
+According to SEI Cert rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">ERR08-J</a> NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
+<p>
+This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+  try {
+    String ms[] = m.split(" ");
+    return names.length != 1;
+  } catch (NullPointerException e) {
+    return false;
+  }
+}
+</code></pre>
+<p>
+A compliant solution would use a null-check as in the following example:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+    if (m == null) return false;
+    String ms[] = m.split(" ");
+    return names.length != 1;
+}
+</code></pre>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DCN">
+    <Description>Don&apos;t Catch NullPointer Exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="7">
+    <MissingClass>org.jsoup.nodes.Document</MissingClass>
+    <MissingClass>org.jsoup.nodes.Element</MissingClass>
+    <MissingClass>org.jsoup.parser.Parser</MissingClass>
+    <MissingClass>org.jsoup.safety.Cleaner</MissingClass>
+    <MissingClass>org.jsoup.safety.Whitelist</MissingClass>
+    <MissingClass>org.jsoup.select.Elements</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:05 +0100" total_classes="1" referenced_classes="12" total_bugs="2" total_size="44" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.62" clock_seconds="2.00" peak_mbytes="190.33" alloc_mbytes="7104.00" gc_seconds="0.19" priority_2="2">
+    <FileStats path="org/jsoup/safety/CleanerTest.java" bugCount="2" size="44" bugHash="61d52796498f6d7296748a0462afd93c"/>
+    <PackageStats package="org.jsoup.safety" total_bugs="2" total_types="1" total_size="44" priority_2="2">
+      <ClassStats class="org.jsoup.safety.CleanerTest" sourceFile="CleanerTest.java" interface="false" size="44" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="374" invocations="321" avgMicrosecondsPerInvocation="1168" maxMicrosecondsPerInvocation="33121" standardDeviationMicrosecondsPerInvocation="3711"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="211" invocations="12" avgMicrosecondsPerInvocation="17642" maxMicrosecondsPerInvocation="201959" standardDeviationMicrosecondsPerInvocation="55584"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="80" invocations="12" avgMicrosecondsPerInvocation="6699" maxMicrosecondsPerInvocation="34178" standardDeviationMicrosecondsPerInvocation="10123"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="70" invocations="279" avgMicrosecondsPerInvocation="250" maxMicrosecondsPerInvocation="21178" standardDeviationMicrosecondsPerInvocation="1413"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="64" invocations="12" avgMicrosecondsPerInvocation="5396" maxMicrosecondsPerInvocation="34583" standardDeviationMicrosecondsPerInvocation="9556"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="53" invocations="61" avgMicrosecondsPerInvocation="884" maxMicrosecondsPerInvocation="6630" standardDeviationMicrosecondsPerInvocation="1168"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="49" invocations="33" avgMicrosecondsPerInvocation="1489" maxMicrosecondsPerInvocation="25190" standardDeviationMicrosecondsPerInvocation="4568"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="39" invocations="4" avgMicrosecondsPerInvocation="9945" maxMicrosecondsPerInvocation="37281" standardDeviationMicrosecondsPerInvocation="15785"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="34" invocations="323" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="9494" standardDeviationMicrosecondsPerInvocation="535"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="33" invocations="12" avgMicrosecondsPerInvocation="2796" maxMicrosecondsPerInvocation="20915" standardDeviationMicrosecondsPerInvocation="5624"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="32" invocations="12" avgMicrosecondsPerInvocation="2720" maxMicrosecondsPerInvocation="14582" standardDeviationMicrosecondsPerInvocation="4520"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="29" invocations="12" avgMicrosecondsPerInvocation="2448" maxMicrosecondsPerInvocation="21008" standardDeviationMicrosecondsPerInvocation="5656"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

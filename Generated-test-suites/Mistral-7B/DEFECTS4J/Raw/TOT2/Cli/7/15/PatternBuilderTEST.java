@@ -1,0 +1,13 @@
+import org.junit.Assert;
+import org.junit.Test;
+import org.apache.commons.cli2.Option;
+
+public class PatternBuilderTest {
+
+    @Test
+    public void testCreateEmptyBuilder() {
+        PatternBuilder builder = new PatternBuilder();
+        Option option = builder.create();
+        Assert.assertNotNull(option);
+    }
+}

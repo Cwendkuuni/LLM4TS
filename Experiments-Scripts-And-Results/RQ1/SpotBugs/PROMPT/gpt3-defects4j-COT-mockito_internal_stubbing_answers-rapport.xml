@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420558989" analysisTimestamp="1714585978186" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/COT/Mockito/9/16/org/mockito/internal/stubbing/answers</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="e1584ee97f68afcf8a1df607535cc4b9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.answers.CallsRealMethodsTest.testAnswer()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.answers.CallsRealMethodsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.answers.CallsRealMethodsTest" start="6" end="26" sourcefile="CallsRealMethodsTest.java" sourcepath="org/mockito/internal/stubbing/answers/CallsRealMethodsTest.java">
+        <Message>At CallsRealMethodsTest.java:[lines 6-26]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.answers.CallsRealMethodsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.answers.CallsRealMethodsTest" name="testAnswer" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.answers.CallsRealMethodsTest" start="10" end="26" startBytecode="0" endBytecode="4" sourcefile="CallsRealMethodsTest.java" sourcepath="org/mockito/internal/stubbing/answers/CallsRealMethodsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.answers.CallsRealMethodsTest.testAnswer()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.answers.CallsRealMethodsTest" primary="true" start="10" end="10" startBytecode="7" endBytecode="7" sourcefile="CallsRealMethodsTest.java" sourcepath="org/mockito/internal/stubbing/answers/CallsRealMethodsTest.java">
+      <Message>At CallsRealMethodsTest.java:[line 10]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.mockito.internal.stubbing.answers.CallsRealMethods</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:15:58 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="6" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.32" clock_seconds="2.96" peak_mbytes="188.65" alloc_mbytes="7104.00" gc_seconds="0.22" priority_1="1">
+    <FileStats path="org/mockito/internal/stubbing/answers/CallsRealMethodsTest.java" bugCount="1" size="6" bugHash="3e0a5f1c775099c63f0cd124b5471158"/>
+    <PackageStats package="org.mockito.internal.stubbing.answers" total_bugs="1" total_types="1" total_size="6" priority_1="1">
+      <ClassStats class="org.mockito.internal.stubbing.answers.CallsRealMethodsTest" sourceFile="CallsRealMethodsTest.java" interface="false" size="6" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="549" invocations="292" avgMicrosecondsPerInvocation="1882" maxMicrosecondsPerInvocation="42153" standardDeviationMicrosecondsPerInvocation="5324"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="323" invocations="9" avgMicrosecondsPerInvocation="35912" maxMicrosecondsPerInvocation="225288" standardDeviationMicrosecondsPerInvocation="68968"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="193" invocations="9" avgMicrosecondsPerInvocation="21498" maxMicrosecondsPerInvocation="46843" standardDeviationMicrosecondsPerInvocation="20030"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="133" invocations="35" avgMicrosecondsPerInvocation="3824" maxMicrosecondsPerInvocation="44307" standardDeviationMicrosecondsPerInvocation="9636"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="73" invocations="2" avgMicrosecondsPerInvocation="36543" maxMicrosecondsPerInvocation="68459" standardDeviationMicrosecondsPerInvocation="31916"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="70" invocations="258" avgMicrosecondsPerInvocation="273" maxMicrosecondsPerInvocation="16339" standardDeviationMicrosecondsPerInvocation="1370"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="69" invocations="9" avgMicrosecondsPerInvocation="7776" maxMicrosecondsPerInvocation="28608" standardDeviationMicrosecondsPerInvocation="10977"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="65" invocations="23" avgMicrosecondsPerInvocation="2851" maxMicrosecondsPerInvocation="36491" standardDeviationMicrosecondsPerInvocation="8085"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="64" invocations="9" avgMicrosecondsPerInvocation="7117" maxMicrosecondsPerInvocation="24311" standardDeviationMicrosecondsPerInvocation="8430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="54" invocations="2" avgMicrosecondsPerInvocation="27478" maxMicrosecondsPerInvocation="54526" standardDeviationMicrosecondsPerInvocation="27047"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

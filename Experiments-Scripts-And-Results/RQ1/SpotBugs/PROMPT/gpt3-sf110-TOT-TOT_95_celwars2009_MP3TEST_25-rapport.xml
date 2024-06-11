@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360743411" analysisTimestamp="1714590226581" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/95_celwars2009/MP3TEST/25</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b47e4b3f3f6022057fb429838dff5ef0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode MP3Test.testConstructor_NullFilename()</LongMessage>
+    <Class classname="MP3Test" primary="true">
+      <SourceLine classname="MP3Test" start="12" end="61" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>At MP3Test.java:[lines 12-61]</Message>
+      </SourceLine>
+      <Message>In class MP3Test</Message>
+    </Class>
+    <Method classname="MP3Test" name="testConstructor_NullFilename" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MP3Test" start="25" end="26" startBytecode="0" endBytecode="5" sourcefile="MP3Test.java" sourcepath="MP3Test.java"/>
+      <Message>In method MP3Test.testConstructor_NullFilename()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="9" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="MP3Test" primary="true" start="25" end="25" startBytecode="8" endBytecode="8" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+      <Message>At MP3Test.java:[line 25]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" instanceHash="b58e53a07b66fef31354dd838cf655d5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="253">
+    <ShortMessage>Method ignores exceptional return value</ShortMessage>
+    <LongMessage>Exceptional return value of java.io.File.createNewFile() ignored in MP3Test.testRun_EmptyFile()</LongMessage>
+    <Class classname="MP3Test" primary="true">
+      <SourceLine classname="MP3Test" start="12" end="61" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>At MP3Test.java:[lines 12-61]</Message>
+      </SourceLine>
+      <Message>In class MP3Test</Message>
+    </Class>
+    <Method classname="MP3Test" name="testRun_EmptyFile" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MP3Test" start="49" end="61" startBytecode="0" endBytecode="91" sourcefile="MP3Test.java" sourcepath="MP3Test.java"/>
+      <Message>In method MP3Test.testRun_EmptyFile()</Message>
+    </Method>
+    <Method classname="java.io.File" name="createNewFile" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1018" end="1023" startBytecode="0" endBytecode="98" sourcefile="File.java" sourcepath="java/io/File.java"/>
+      <Message>Called method java.io.File.createNewFile()</Message>
+    </Method>
+    <SourceLine classname="MP3Test" primary="true" start="51" end="51" startBytecode="13" endBytecode="13" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+      <Message>At MP3Test.java:[line 51]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" instanceHash="a89ebe4a7ffe1c3eba7f84fc93c74f8e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="253">
+    <ShortMessage>Method ignores exceptional return value</ShortMessage>
+    <LongMessage>Exceptional return value of java.io.File.delete() ignored in MP3Test.testRun_EmptyFile()</LongMessage>
+    <Class classname="MP3Test" primary="true">
+      <SourceLine classname="MP3Test" start="12" end="61" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>At MP3Test.java:[lines 12-61]</Message>
+      </SourceLine>
+      <Message>In class MP3Test</Message>
+    </Class>
+    <Method classname="MP3Test" name="testRun_EmptyFile" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MP3Test" start="49" end="61" startBytecode="0" endBytecode="91" sourcefile="MP3Test.java" sourcepath="MP3Test.java"/>
+      <Message>In method MP3Test.testRun_EmptyFile()</Message>
+    </Method>
+    <Method classname="java.io.File" name="delete" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1045" end="1052" startBytecode="0" endBytecode="91" sourcefile="File.java" sourcepath="java/io/File.java"/>
+      <Message>Called method java.io.File.delete()</Message>
+    </Method>
+    <SourceLine classname="MP3Test" primary="true" start="60" end="60" startBytecode="35" endBytecode="35" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+      <Message>At MP3Test.java:[line 60]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="ca4070b8670b3551b54aea6124c165f4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ non lu : devrait-il être statique ?</ShortMessage>
+    <LongMessage>Champ non lu : MP3Test.invalidFilename devrait-il être statique ?</LongMessage>
+    <Class classname="MP3Test" primary="true">
+      <SourceLine classname="MP3Test" start="12" end="61" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>At MP3Test.java:[lines 12-61]</Message>
+      </SourceLine>
+      <Message>In class MP3Test</Message>
+    </Class>
+    <Field classname="MP3Test" name="invalidFilename" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="MP3Test" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>In MP3Test.java</Message>
+      </SourceLine>
+      <Message>Field MP3Test.invalidFilename</Message>
+    </Field>
+    <SourceLine classname="MP3Test" primary="true" start="15" end="15" startBytecode="13" endBytecode="13" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+      <Message>At MP3Test.java:[line 15]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="f23938aa2e2f23829bc53a443220f48f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ non lu : devrait-il être statique ?</ShortMessage>
+    <LongMessage>Champ non lu : MP3Test.validFilename devrait-il être statique ?</LongMessage>
+    <Class classname="MP3Test" primary="true">
+      <SourceLine classname="MP3Test" start="12" end="61" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>At MP3Test.java:[lines 12-61]</Message>
+      </SourceLine>
+      <Message>In class MP3Test</Message>
+    </Class>
+    <Field classname="MP3Test" name="validFilename" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="MP3Test" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>In MP3Test.java</Message>
+      </SourceLine>
+      <Message>Field MP3Test.validFilename</Message>
+    </Field>
+    <SourceLine classname="MP3Test" primary="true" start="14" end="14" startBytecode="7" endBytecode="7" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+      <Message>At MP3Test.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="SS_SHOULD_BE_STATIC" abbrev="SS" category="PERFORMANCE">
+    <ShortDescription>Champ non lu : devrait-il être statique ?</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette classe contient un champ d'instance <code>final</code> qui est initialisé par une valeur statique déterminée à la compilation. Envisagez de rendre ce champ <code>static</code>.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" abbrev="RV" category="BAD_PRACTICE" cweid="253">
+    <ShortDescription>Method ignores exceptional return value</ShortDescription>
+    <Details><![CDATA[
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SS">
+    <Description>Champ non lu qui devrait être statique ?</Description>
+  </BugCode>
+  <BugCode abbrev="RV" cweid="440">
+    <Description>Valeur de retour d&apos;une méthode mal utilisée</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>MP3</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:03 +0100" total_classes="1" referenced_classes="13" total_bugs="5" total_size="32" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.88" clock_seconds="2.25" peak_mbytes="190.40" alloc_mbytes="7104.00" gc_seconds="0.18" priority_2="4" priority_1="1">
+    <FileStats path="MP3Test.java" bugCount="5" size="32" bugHash="f63294360c9792444fd69782eea5753b"/>
+    <PackageStats package="" total_bugs="5" total_types="1" total_size="32" priority_2="4" priority_1="1">
+      <ClassStats class="MP3Test" sourceFile="MP3Test.java" interface="false" size="32" bugs="5" priority_2="4" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="348" invocations="329" avgMicrosecondsPerInvocation="1059" maxMicrosecondsPerInvocation="26499" standardDeviationMicrosecondsPerInvocation="3325"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="282" invocations="69" avgMicrosecondsPerInvocation="4088" maxMicrosecondsPerInvocation="181246" standardDeviationMicrosecondsPerInvocation="21763"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="139" invocations="13" avgMicrosecondsPerInvocation="10738" maxMicrosecondsPerInvocation="32542" standardDeviationMicrosecondsPerInvocation="11621"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="85" invocations="33" avgMicrosecondsPerInvocation="2581" maxMicrosecondsPerInvocation="46884" standardDeviationMicrosecondsPerInvocation="9091"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="81" invocations="13" avgMicrosecondsPerInvocation="6299" maxMicrosecondsPerInvocation="27327" standardDeviationMicrosecondsPerInvocation="8666"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="73" invocations="6" avgMicrosecondsPerInvocation="12254" maxMicrosecondsPerInvocation="68273" standardDeviationMicrosecondsPerInvocation="25062"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="62" invocations="293" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="15130" standardDeviationMicrosecondsPerInvocation="1077"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="58" invocations="331" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="18527" standardDeviationMicrosecondsPerInvocation="1266"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="58" invocations="6" avgMicrosecondsPerInvocation="9685" maxMicrosecondsPerInvocation="53564" standardDeviationMicrosecondsPerInvocation="19627"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="57" invocations="13" avgMicrosecondsPerInvocation="4408" maxMicrosecondsPerInvocation="27693" standardDeviationMicrosecondsPerInvocation="8648"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="47" invocations="13" avgMicrosecondsPerInvocation="3628" maxMicrosecondsPerInvocation="18279" standardDeviationMicrosecondsPerInvocation="5686"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="38" invocations="6" avgMicrosecondsPerInvocation="6416" maxMicrosecondsPerInvocation="25131" standardDeviationMicrosecondsPerInvocation="8670"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

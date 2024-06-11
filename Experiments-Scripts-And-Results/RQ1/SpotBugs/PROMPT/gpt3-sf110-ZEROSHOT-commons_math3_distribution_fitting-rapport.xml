@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360752320" analysisTimestamp="1714604819005" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/commons-math/MultivariateNormalMixtureExpectationMaximizationTEST/26/org/apache/commons/math3/distribution/fitting</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="523037f32ac1fc538e949b889a90f4dc" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximizationTest.testEstimate()</LongMessage>
+    <Class classname="org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximizationTest" primary="true">
+      <SourceLine classname="org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximizationTest" start="12" end="70" sourcefile="MultivariateNormalMixtureExpectationMaximizationTest.java" sourcepath="org/apache/commons/math3/distribution/fitting/MultivariateNormalMixtureExpectationMaximizationTest.java">
+        <Message>At MultivariateNormalMixtureExpectationMaximizationTest.java:[lines 12-70]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximizationTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximizationTest" name="testEstimate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximizationTest" start="42" end="48" startBytecode="0" endBytecode="43" sourcefile="MultivariateNormalMixtureExpectationMaximizationTest.java" sourcepath="org/apache/commons/math3/distribution/fitting/MultivariateNormalMixtureExpectationMaximizationTest.java"/>
+      <Message>In method org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximizationTest.testEstimate()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="59" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximizationTest" primary="true" start="45" end="45" startBytecode="58" endBytecode="58" sourcefile="MultivariateNormalMixtureExpectationMaximizationTest.java" sourcepath="org/apache/commons/math3/distribution/fitting/MultivariateNormalMixtureExpectationMaximizationTest.java">
+      <Message>At MultivariateNormalMixtureExpectationMaximizationTest.java:[line 45]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.apache.commons.math3.distribution.MixtureMultivariateNormalDistribution</MissingClass>
+    <MissingClass>org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximization</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:12 +0100" total_classes="1" referenced_classes="12" total_bugs="1" total_size="36" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.25" clock_seconds="1.97" peak_mbytes="191.34" alloc_mbytes="7104.00" gc_seconds="0.14" priority_2="1">
+    <FileStats path="org/apache/commons/math3/distribution/fitting/MultivariateNormalMixtureExpectationMaximizationTest.java" bugCount="1" size="36" bugHash="08b77fd93de6403344883ccb2da9eb82"/>
+    <PackageStats package="org.apache.commons.math3.distribution.fitting" total_bugs="1" total_types="1" total_size="36" priority_2="1">
+      <ClassStats class="org.apache.commons.math3.distribution.fitting.MultivariateNormalMixtureExpectationMaximizationTest" sourceFile="MultivariateNormalMixtureExpectationMaximizationTest.java" interface="false" size="36" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="228" invocations="320" avgMicrosecondsPerInvocation="712" maxMicrosecondsPerInvocation="17914" standardDeviationMicrosecondsPerInvocation="1924"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="181" invocations="12" avgMicrosecondsPerInvocation="15152" maxMicrosecondsPerInvocation="162796" standardDeviationMicrosecondsPerInvocation="44558"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="86" invocations="52" avgMicrosecondsPerInvocation="1671" maxMicrosecondsPerInvocation="17540" standardDeviationMicrosecondsPerInvocation="3496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="74" invocations="12" avgMicrosecondsPerInvocation="6221" maxMicrosecondsPerInvocation="25046" standardDeviationMicrosecondsPerInvocation="8114"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="70" invocations="12" avgMicrosecondsPerInvocation="5838" maxMicrosecondsPerInvocation="24957" standardDeviationMicrosecondsPerInvocation="8099"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="62" invocations="6" avgMicrosecondsPerInvocation="10453" maxMicrosecondsPerInvocation="43156" standardDeviationMicrosecondsPerInvocation="15009"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="48" invocations="12" avgMicrosecondsPerInvocation="4049" maxMicrosecondsPerInvocation="34038" standardDeviationMicrosecondsPerInvocation="9324"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="45" invocations="283" avgMicrosecondsPerInvocation="161" maxMicrosecondsPerInvocation="10952" standardDeviationMicrosecondsPerInvocation="691"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="40" invocations="6" avgMicrosecondsPerInvocation="6713" maxMicrosecondsPerInvocation="35302" standardDeviationMicrosecondsPerInvocation="12836"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="39" invocations="6" avgMicrosecondsPerInvocation="6518" maxMicrosecondsPerInvocation="20226" standardDeviationMicrosecondsPerInvocation="6403"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="38" invocations="12" avgMicrosecondsPerInvocation="3229" maxMicrosecondsPerInvocation="15043" standardDeviationMicrosecondsPerInvocation="5305"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="37" invocations="33" avgMicrosecondsPerInvocation="1148" maxMicrosecondsPerInvocation="23245" standardDeviationMicrosecondsPerInvocation="4006"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="34" invocations="12" avgMicrosecondsPerInvocation="2890" maxMicrosecondsPerInvocation="18371" standardDeviationMicrosecondsPerInvocation="5009"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="33" invocations="6" avgMicrosecondsPerInvocation="5583" maxMicrosecondsPerInvocation="15086" standardDeviationMicrosecondsPerInvocation="4610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="30" invocations="11" avgMicrosecondsPerInvocation="2732" maxMicrosecondsPerInvocation="29076" standardDeviationMicrosecondsPerInvocation="8333"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="28" invocations="6" avgMicrosecondsPerInvocation="4670" maxMicrosecondsPerInvocation="12939" standardDeviationMicrosecondsPerInvocation="3767"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="27" invocations="6" avgMicrosecondsPerInvocation="4516" maxMicrosecondsPerInvocation="17772" standardDeviationMicrosecondsPerInvocation="5952"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

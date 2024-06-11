@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360744259" analysisTimestamp="1714592078870" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/guava/Utf8TEST/9/com/google/common/base</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="1087e96ced139aeecca85c1d55f69dae" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.google.common.base.Utf8Test.testEncodedLength_withUtf8Characters_returnsUtf8Length(): String.getBytes()</LongMessage>
+    <Class classname="com.google.common.base.Utf8Test" primary="true">
+      <SourceLine classname="com.google.common.base.Utf8Test" start="5" end="100" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/Utf8Test.java">
+        <Message>At Utf8Test.java:[lines 5-100]</Message>
+      </SourceLine>
+      <Message>In class com.google.common.base.Utf8Test</Message>
+    </Class>
+    <Method classname="com.google.common.base.Utf8Test" name="testEncodedLength_withUtf8Characters_returnsUtf8Length" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.common.base.Utf8Test" start="34" end="41" startBytecode="0" endBytecode="55" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/Utf8Test.java"/>
+      <Message>In method com.google.common.base.Utf8Test.testEncodedLength_withUtf8Characters_returnsUtf8Length()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.google.common.base.Utf8Test" primary="true" start="40" end="40" startBytecode="9" endBytecode="9" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/Utf8Test.java">
+      <Message>At Utf8Test.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.google.common.base.Utf8</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:04 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="42" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.57" clock_seconds="2.21" peak_mbytes="190.89" alloc_mbytes="7104.00" gc_seconds="0.20" priority_1="1">
+    <FileStats path="com/google/common/base/Utf8Test.java" bugCount="1" size="42" bugHash="5ea118968e0de6ccc10ee9a77fda44a9"/>
+    <PackageStats package="com.google.common.base" total_bugs="1" total_types="1" total_size="42" priority_1="1">
+      <ClassStats class="com.google.common.base.Utf8Test" sourceFile="Utf8Test.java" interface="false" size="42" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="320" invocations="318" avgMicrosecondsPerInvocation="1008" maxMicrosecondsPerInvocation="23911" standardDeviationMicrosecondsPerInvocation="2827"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="227" invocations="11" avgMicrosecondsPerInvocation="20681" maxMicrosecondsPerInvocation="207435" standardDeviationMicrosecondsPerInvocation="59189"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="95" invocations="11" avgMicrosecondsPerInvocation="8706" maxMicrosecondsPerInvocation="24978" standardDeviationMicrosecondsPerInvocation="9463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="88" invocations="28" avgMicrosecondsPerInvocation="3154" maxMicrosecondsPerInvocation="46846" standardDeviationMicrosecondsPerInvocation="9425"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="68" invocations="66" avgMicrosecondsPerInvocation="1044" maxMicrosecondsPerInvocation="10678" standardDeviationMicrosecondsPerInvocation="1783"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="56" invocations="11" avgMicrosecondsPerInvocation="5154" maxMicrosecondsPerInvocation="19698" standardDeviationMicrosecondsPerInvocation="6854"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="54" invocations="9" avgMicrosecondsPerInvocation="6094" maxMicrosecondsPerInvocation="39817" standardDeviationMicrosecondsPerInvocation="12126"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="50" invocations="281" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="5761" standardDeviationMicrosecondsPerInvocation="590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="38" invocations="320" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="12835" standardDeviationMicrosecondsPerInvocation="721"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="36" invocations="11" avgMicrosecondsPerInvocation="3304" maxMicrosecondsPerInvocation="18186" standardDeviationMicrosecondsPerInvocation="5147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="35" invocations="9" avgMicrosecondsPerInvocation="3922" maxMicrosecondsPerInvocation="25792" standardDeviationMicrosecondsPerInvocation="7763"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="35" invocations="11" avgMicrosecondsPerInvocation="3191" maxMicrosecondsPerInvocation="22482" standardDeviationMicrosecondsPerInvocation="6228"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="34" invocations="11" avgMicrosecondsPerInvocation="3162" maxMicrosecondsPerInvocation="12580" standardDeviationMicrosecondsPerInvocation="4367"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

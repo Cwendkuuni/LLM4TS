@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287214998" analysisTimestamp="1714582344734" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/jdom/XMLOutputterTEST/17/org/jdom2/output</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="641be88703cc5e4c32f230a9171ac37a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testOutputDocument()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="8" end="20" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 8-20]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputDocument" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="11" end="20" startBytecode="0" endBytecode="34" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputDocument()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="11" end="11" startBytecode="7" endBytecode="7" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 11]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="1545f8eb86de26a59f2358dd74157ee1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.jdom2.output.XMLOutputterTest.testOutputDocument(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="8" end="20" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 8-20]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputDocument" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="11" end="20" startBytecode="0" endBytecode="131" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputDocument()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="18" end="18" startBytecode="59" endBytecode="59" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 18]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.jdom2.Document</MissingClass>
+    <MissingClass>org.jdom2.Element</MissingClass>
+    <MissingClass>org.jdom2.output.XMLOutputter</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:54 +0200" total_classes="1" referenced_classes="13" total_bugs="2" total_size="14" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.62" clock_seconds="3.28" peak_mbytes="189.94" alloc_mbytes="7104.00" gc_seconds="0.19" priority_1="2">
+    <FileStats path="org/jdom2/output/XMLOutputterTest.java" bugCount="2" size="14" bugHash="f95a3d0760a8b213a0950ac7706657e3"/>
+    <PackageStats package="org.jdom2.output" total_bugs="2" total_types="1" total_size="14" priority_1="2">
+      <ClassStats class="org.jdom2.output.XMLOutputterTest" sourceFile="XMLOutputterTest.java" interface="false" size="14" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="527" invocations="312" avgMicrosecondsPerInvocation="1689" maxMicrosecondsPerInvocation="33189" standardDeviationMicrosecondsPerInvocation="4903"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="380" invocations="13" avgMicrosecondsPerInvocation="29294" maxMicrosecondsPerInvocation="218235" standardDeviationMicrosecondsPerInvocation="58416"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="149" invocations="60" avgMicrosecondsPerInvocation="2499" maxMicrosecondsPerInvocation="24804" standardDeviationMicrosecondsPerInvocation="5155"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="127" invocations="34" avgMicrosecondsPerInvocation="3742" maxMicrosecondsPerInvocation="70597" standardDeviationMicrosecondsPerInvocation="13883"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="121" invocations="2" avgMicrosecondsPerInvocation="60761" maxMicrosecondsPerInvocation="113953" standardDeviationMicrosecondsPerInvocation="53192"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="101" invocations="13" avgMicrosecondsPerInvocation="7819" maxMicrosecondsPerInvocation="46240" standardDeviationMicrosecondsPerInvocation="11987"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="75" invocations="13" avgMicrosecondsPerInvocation="5829" maxMicrosecondsPerInvocation="23407" standardDeviationMicrosecondsPerInvocation="8840"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="73" invocations="275" avgMicrosecondsPerInvocation="267" maxMicrosecondsPerInvocation="10072" standardDeviationMicrosecondsPerInvocation="1078"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="60" invocations="314" avgMicrosecondsPerInvocation="191" maxMicrosecondsPerInvocation="12938" standardDeviationMicrosecondsPerInvocation="1110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="52" invocations="13" avgMicrosecondsPerInvocation="4005" maxMicrosecondsPerInvocation="20312" standardDeviationMicrosecondsPerInvocation="6164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="47" invocations="13" avgMicrosecondsPerInvocation="3625" maxMicrosecondsPerInvocation="21921" standardDeviationMicrosecondsPerInvocation="7225"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

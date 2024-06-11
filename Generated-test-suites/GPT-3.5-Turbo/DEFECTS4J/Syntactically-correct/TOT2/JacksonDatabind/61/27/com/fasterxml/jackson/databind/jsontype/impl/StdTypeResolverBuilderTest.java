@@ -1,0 +1,66 @@
+package com.fasterxml.jackson.databind.jsontype.impl;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class StdTypeResolverBuilderTest {
+
+    @Test
+    public void testInit() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.init(JsonTypeInfo.Id.CLASS, new ClassNameIdResolver());
+        
+        assertEquals(JsonTypeInfo.Id.CLASS, builder._idType);
+        assertNotNull(builder._customIdResolver);
+        assertEquals("className", builder._typeProperty);
+    }
+
+    @Test
+    public void testBuildTypeSerializer() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.init(JsonTypeInfo.Id.NONE, null);
+        
+        assertNull(builder.buildTypeSerializer(null, null, null));
+    }
+
+    @Test
+    public void testBuildTypeDeserializer() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.init(JsonTypeInfo.Id.NONE, null);
+        
+        assertNull(builder.buildTypeDeserializer(null, null, null));
+    }
+
+    @Test
+    public void testInclusion() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.inclusion(JsonTypeInfo.As.EXTERNAL_PROPERTY);
+        
+        assertEquals(JsonTypeInfo.As.EXTERNAL_PROPERTY, builder._includeAs);
+    }
+
+    @Test
+    public void testTypeProperty() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.typeProperty("customType");
+        
+        assertEquals("customType", builder._typeProperty);
+    }
+
+    @Test
+    public void testDefaultImpl() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.defaultImpl(String.class);
+        
+        assertEquals(String.class, builder._defaultImpl);
+    }
+
+    @Test
+    public void testTypeIdVisibility() {
+        StdTypeResolverBuilder builder = new StdTypeResolverBuilder();
+        builder.typeIdVisibility(true);
+        
+        assertTrue(builder._typeIdVisible);
+    }
+
+}

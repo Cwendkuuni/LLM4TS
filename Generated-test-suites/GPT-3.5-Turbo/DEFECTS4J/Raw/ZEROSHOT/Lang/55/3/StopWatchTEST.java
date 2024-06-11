@@ -1,0 +1,80 @@
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class StopWatchTest {
+
+  @Test
+  public void testStart() {
+    StopWatch stopWatch = new StopWatch();
+    stopWatch.start();
+    assertEquals(StopWatch.STATE_RUNNING, stopWatch.getRunningState());
+  }
+
+  @Test
+  public void testStop() {
+    StopWatch stopWatch = new StopWatch();
+    stopWatch.start();
+    stopWatch.stop();
+    assertEquals(StopWatch.STATE_STOPPED, stopWatch.getRunningState());
+  }
+
+  @Test
+  public void testReset() {
+    StopWatch stopWatch = new StopWatch();
+    stopWatch.start();
+    stopWatch.stop();
+    stopWatch.reset();
+    assertEquals(StopWatch.STATE_UNSTARTED, stopWatch.getRunningState());
+  }
+
+  @Test
+  public void testSplit() {
+    StopWatch stopWatch = new StopWatch();
+    stopWatch.start();
+    stopWatch.split();
+    assertEquals(StopWatch.STATE_SPLIT, stopWatch.getSplitState());
+  }
+
+  @Test
+  public void testUnsplit() {
+    StopWatch stopWatch = new StopWatch();
+    stopWatch.start();
+    stopWatch.split();
+    stopWatch.unsplit();
+    assertEquals(StopWatch.STATE_UNSPLIT, stopWatch.getSplitState());
+  }
+
+  @Test
+  public void testSuspend() {
+    StopWatch stopWatch = new StopWatch();
+    stopWatch.start();
+    stopWatch.suspend();
+    assertEquals(StopWatch.STATE_SUSPENDED, stopWatch.getRunningState());
+  }
+
+  @Test
+  public void testResume() {
+    StopWatch stopWatch = new StopWatch();
+    stopWatch.start();
+    stopWatch.suspend();
+    stopWatch.resume();
+    assertEquals(StopWatch.STATE_RUNNING, stopWatch.getRunningState());
+  }
+
+  @Test
+  public void testGetTime() {
+    StopWatch stopWatch = new StopWatch();
+    stopWatch.start();
+    stopWatch.stop();
+    assertEquals(stopWatch.getStopTime() - stopWatch.getStartTime(), stopWatch.getTime());
+  }
+
+  @Test
+  public void testGetSplitTime() {
+    StopWatch stopWatch = new StopWatch();
+    stopWatch.start();
+    stopWatch.split();
+    assertEquals(stopWatch.getStopTime() - stopWatch.getStartTime(), stopWatch.getSplitTime());
+  }
+
+}

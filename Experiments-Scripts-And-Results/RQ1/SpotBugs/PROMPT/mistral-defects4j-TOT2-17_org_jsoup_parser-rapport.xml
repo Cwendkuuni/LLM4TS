@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713290017685" analysisTimestamp="1714580786501" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/DEFECTS4J/AVEC-PACKAGE_GLOBAL/Defects4J-generated-tests/TOT2/Jsoup/52/17/org/jsoup/parser</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="a6f3b17abd0b0b69759b17f8eca88aa9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.XmlTreeBuilderTest.testInitialiseParse()</LongMessage>
+    <Class classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="7" end="61" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+        <Message>At XmlTreeBuilderTest.java:[lines 7-61]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.XmlTreeBuilderTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.XmlTreeBuilderTest" name="testInitialiseParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="11" end="13" startBytecode="0" endBytecode="4" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java"/>
+      <Message>In method org.jsoup.parser.XmlTreeBuilderTest.testInitialiseParse()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true" start="11" end="11" startBytecode="7" endBytecode="7" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+      <Message>At XmlTreeBuilderTest.java:[line 11]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="11d4639ad3fdb876a0bc957904b49c8c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.XmlTreeBuilderTest.testInsertCharacter()</LongMessage>
+    <Class classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="7" end="61" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+        <Message>At XmlTreeBuilderTest.java:[lines 7-61]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.XmlTreeBuilderTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.XmlTreeBuilderTest" name="testInsertCharacter" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="41" end="43" startBytecode="0" endBytecode="4" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java"/>
+      <Message>In method org.jsoup.parser.XmlTreeBuilderTest.testInsertCharacter()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true" start="41" end="41" startBytecode="7" endBytecode="7" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+      <Message>At XmlTreeBuilderTest.java:[line 41]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="9d98a9366491bfa7f6e85111e2b97084" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.XmlTreeBuilderTest.testInsertComment()</LongMessage>
+    <Class classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="7" end="61" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+        <Message>At XmlTreeBuilderTest.java:[lines 7-61]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.XmlTreeBuilderTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.XmlTreeBuilderTest" name="testInsertComment" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="35" end="37" startBytecode="0" endBytecode="4" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java"/>
+      <Message>In method org.jsoup.parser.XmlTreeBuilderTest.testInsertComment()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true" start="35" end="35" startBytecode="7" endBytecode="7" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+      <Message>At XmlTreeBuilderTest.java:[line 35]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="a0df3acf279bb54f91350d5faa57065f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.XmlTreeBuilderTest.testInsertDoctype()</LongMessage>
+    <Class classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="7" end="61" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+        <Message>At XmlTreeBuilderTest.java:[lines 7-61]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.XmlTreeBuilderTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.XmlTreeBuilderTest" name="testInsertDoctype" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="47" end="49" startBytecode="0" endBytecode="4" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java"/>
+      <Message>In method org.jsoup.parser.XmlTreeBuilderTest.testInsertDoctype()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true" start="47" end="47" startBytecode="7" endBytecode="7" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+      <Message>At XmlTreeBuilderTest.java:[line 47]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="a0d70f25d00df3475c2bef0ba5dc23e8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.XmlTreeBuilderTest.testInsertNode()</LongMessage>
+    <Class classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="7" end="61" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+        <Message>At XmlTreeBuilderTest.java:[lines 7-61]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.XmlTreeBuilderTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.XmlTreeBuilderTest" name="testInsertNode" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="23" end="25" startBytecode="0" endBytecode="4" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java"/>
+      <Message>In method org.jsoup.parser.XmlTreeBuilderTest.testInsertNode()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true" start="23" end="23" startBytecode="7" endBytecode="7" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+      <Message>At XmlTreeBuilderTest.java:[line 23]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="e266e8eaec26a6c8b1c742646e4e10fa" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.XmlTreeBuilderTest.testInsertStartTag()</LongMessage>
+    <Class classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="7" end="61" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+        <Message>At XmlTreeBuilderTest.java:[lines 7-61]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.XmlTreeBuilderTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.XmlTreeBuilderTest" name="testInsertStartTag" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="29" end="31" startBytecode="0" endBytecode="4" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java"/>
+      <Message>In method org.jsoup.parser.XmlTreeBuilderTest.testInsertStartTag()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true" start="29" end="29" startBytecode="7" endBytecode="7" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+      <Message>At XmlTreeBuilderTest.java:[line 29]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="c80c91fdb5823316bd7cc30003463b4b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.XmlTreeBuilderTest.testParseFragment()</LongMessage>
+    <Class classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="7" end="61" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+        <Message>At XmlTreeBuilderTest.java:[lines 7-61]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.XmlTreeBuilderTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.XmlTreeBuilderTest" name="testParseFragment" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="59" end="61" startBytecode="0" endBytecode="4" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java"/>
+      <Message>In method org.jsoup.parser.XmlTreeBuilderTest.testParseFragment()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true" start="59" end="59" startBytecode="7" endBytecode="7" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+      <Message>At XmlTreeBuilderTest.java:[line 59]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="4db87b131a08cd32efcca5832dfc8159" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.XmlTreeBuilderTest.testPopStackToClose()</LongMessage>
+    <Class classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="7" end="61" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+        <Message>At XmlTreeBuilderTest.java:[lines 7-61]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.XmlTreeBuilderTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.XmlTreeBuilderTest" name="testPopStackToClose" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="53" end="55" startBytecode="0" endBytecode="4" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java"/>
+      <Message>In method org.jsoup.parser.XmlTreeBuilderTest.testPopStackToClose()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true" start="53" end="53" startBytecode="7" endBytecode="7" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+      <Message>At XmlTreeBuilderTest.java:[line 53]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="af285816307fb1dcfcbbd780e8ce8dd2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.XmlTreeBuilderTest.testProcess()</LongMessage>
+    <Class classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="7" end="61" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+        <Message>At XmlTreeBuilderTest.java:[lines 7-61]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.XmlTreeBuilderTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.XmlTreeBuilderTest" name="testProcess" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" start="17" end="19" startBytecode="0" endBytecode="4" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java"/>
+      <Message>In method org.jsoup.parser.XmlTreeBuilderTest.testProcess()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.XmlTreeBuilderTest" primary="true" start="17" end="17" startBytecode="7" endBytecode="7" sourcefile="XmlTreeBuilderTest.java" sourcepath="org/jsoup/parser/XmlTreeBuilderTest.java">
+      <Message>At XmlTreeBuilderTest.java:[line 17]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.jsoup.parser.XmlTreeBuilder</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:53:37 +0200" total_classes="1" referenced_classes="9" total_bugs="9" total_size="30" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.31" clock_seconds="2.75" peak_mbytes="188.98" alloc_mbytes="7104.00" gc_seconds="0.22" priority_1="9">
+    <FileStats path="org/jsoup/parser/XmlTreeBuilderTest.java" bugCount="9" size="30" bugHash="46a6bfcf15ca3b24a45d898543385406"/>
+    <PackageStats package="org.jsoup.parser" total_bugs="9" total_types="1" total_size="30" priority_1="9">
+      <ClassStats class="org.jsoup.parser.XmlTreeBuilderTest" sourceFile="XmlTreeBuilderTest.java" interface="false" size="30" bugs="9" priority_1="9"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="459" invocations="292" avgMicrosecondsPerInvocation="1573" maxMicrosecondsPerInvocation="38868" standardDeviationMicrosecondsPerInvocation="4829"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="246" invocations="9" avgMicrosecondsPerInvocation="27390" maxMicrosecondsPerInvocation="241750" standardDeviationMicrosecondsPerInvocation="75790"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="137" invocations="43" avgMicrosecondsPerInvocation="3197" maxMicrosecondsPerInvocation="50141" standardDeviationMicrosecondsPerInvocation="8360"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="111" invocations="258" avgMicrosecondsPerInvocation="432" maxMicrosecondsPerInvocation="24084" standardDeviationMicrosecondsPerInvocation="2251"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="86" invocations="9" avgMicrosecondsPerInvocation="9611" maxMicrosecondsPerInvocation="38865" standardDeviationMicrosecondsPerInvocation="13809"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="85" invocations="294" avgMicrosecondsPerInvocation="290" maxMicrosecondsPerInvocation="30521" standardDeviationMicrosecondsPerInvocation="2455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="82" invocations="1" avgMicrosecondsPerInvocation="82538" maxMicrosecondsPerInvocation="82538" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="75" invocations="9" avgMicrosecondsPerInvocation="8427" maxMicrosecondsPerInvocation="41491" standardDeviationMicrosecondsPerInvocation="14998"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="70" invocations="9" avgMicrosecondsPerInvocation="7853" maxMicrosecondsPerInvocation="29328" standardDeviationMicrosecondsPerInvocation="10998"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="67" invocations="10" avgMicrosecondsPerInvocation="6751" maxMicrosecondsPerInvocation="51033" standardDeviationMicrosecondsPerInvocation="15442"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="67" invocations="9" avgMicrosecondsPerInvocation="7464" maxMicrosecondsPerInvocation="33239" standardDeviationMicrosecondsPerInvocation="11158"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

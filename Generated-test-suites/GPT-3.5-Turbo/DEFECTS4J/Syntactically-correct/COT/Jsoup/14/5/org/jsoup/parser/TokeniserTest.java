@@ -1,0 +1,204 @@
+import static org.junit.Assert.*;
+import org.junit.Test;
+import org.mockito.Mockito;
+import org.jsoup.nodes.Entities;
+import org.jsoup.helper.Validate;
+
+public class TokeniserTest {
+
+    @Test
+    public void testRead() {
+        CharacterReader reader = Mockito.mock(CharacterReader.class);
+        Tokeniser tokeniser = new Tokeniser(reader);
+        Token token = tokeniser.read();
+        assertNull(token);
+    }
+
+    @Test
+    public void testEmit() {
+        Token tagToken = new Token.Tag();
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        tokeniser.emit(tagToken);
+        assertEquals(tagToken, tokeniser.emitPending);
+    }
+
+    @Test
+    public void testEmitString() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        tokeniser.emit("Test");
+        assertEquals("Test", tokeniser.charBuffer.toString());
+    }
+
+    @Test
+    public void testEmitChar() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        tokeniser.emit('c');
+        assertEquals("c", tokeniser.charBuffer.toString());
+    }
+
+    @Test
+    public void testGetState() {
+        CharacterReader reader = Mockito.mock(CharacterReader.class);
+        TokeniserState state = TokeniserState.Data;
+        Tokeniser tokeniser = new Tokeniser(reader);
+        tokeniser.transition(state);
+        assertEquals(state, tokeniser.getState());
+    }
+
+    @Test
+    public void testTransition() {
+        CharacterReader reader = Mockito.mock(CharacterReader.class);
+        Tokeniser tokeniser = new Tokeniser(reader);
+        TokeniserState state = TokeniserState.RCDATA;
+        tokeniser.transition(state);
+        assertEquals(state, tokeniser.getState());
+    }
+
+    @Test
+    public void testAdvanceTransition() {
+        CharacterReader reader = Mockito.mock(CharacterReader.class);
+        Tokeniser tokeniser = new Tokeniser(reader);
+        TokeniserState state = TokeniserState.RCDATA;
+        tokeniser.advanceTransition(state);
+        Mockito.verify(reader).advance();
+        assertEquals(state, tokeniser.getState());
+    }
+
+    @Test
+    public void testAcknowledgeSelfClosingFlag() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        tokeniser.acknowledgeSelfClosingFlag();
+        assertTrue(tokeniser.selfClosingFlagAcknowledged);
+    }
+
+    @Test
+    public void testConsumeCharacterReference() {
+        CharacterReader reader = Mockito.mock(CharacterReader.class);
+        Tokeniser tokeniser = new Tokeniser(reader);
+        Character additionalAllowedCharacter = null;
+        boolean inAttribute = false;
+        Character result = tokeniser.consumeCharacterReference(additionalAllowedCharacter, inAttribute);
+        assertNull(result);
+    }
+
+    @Test
+    public void testCreateTagPending() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        boolean start = true;
+        Token.Tag tag = tokeniser.createTagPending(start);
+        assertTrue(tag instanceof Token.StartTag);
+    }
+
+    @Test
+    public void testEmitTagPending() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        Token.Tag tag = Mockito.mock(Token.Tag.class);
+        tokeniser.tagPending = tag;
+        tokeniser.emitTagPending();
+        Mockito.verify(tag).finaliseTag();
+        Mockito.verify(tokeniser).emit(tag);
+    }
+
+    @Test
+    public void testCreateCommentPending() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        tokeniser.createCommentPending();
+        assertTrue(tokeniser.commentPending instanceof Token.Comment);
+    }
+
+    @Test
+    public void testEmitCommentPending() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        Token.Comment comment = Mockito.mock(Token.Comment.class);
+        tokeniser.commentPending = comment;
+        tokeniser.emitCommentPending();
+        Mockito.verify(tokeniser).emit(comment);
+    }
+
+    @Test
+    public void testCreateDoctypePending() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        tokeniser.createDoctypePending();
+        assertTrue(tokeniser.doctypePending instanceof Token.Doctype);
+    }
+
+    @Test
+    public void testEmitDoctypePending() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        Token.Doctype doctype = Mockito.mock(Token.Doctype.class);
+        tokeniser.doctypePending = doctype;
+        tokeniser.emitDoctypePending();
+        Mockito.verify(tokeniser).emit(doctype);
+    }
+
+    @Test
+    public void testCreateTempBuffer() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        tokeniser.createTempBuffer();
+        assertTrue(tokeniser.dataBuffer instanceof StringBuilder);
+    }
+
+    @Test
+    public void testIsAppropriateEndTagToken() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        tokeniser.tagPending = new Token.StartTag();
+        tokeniser.lastStartTag = new Token.StartTag();
+        assertTrue(tokeniser.isAppropriateEndTagToken());
+    }
+
+    @Test
+    public void testIsTrackErrors() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        assertTrue(tokeniser.isTrackErrors());
+    }
+
+    @Test
+    public void testSetTrackErrors() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        boolean trackErrors = false;
+        tokeniser.setTrackErrors(trackErrors);
+        assertFalse(tokeniser.isTrackErrors());
+    }
+
+    @Test
+    public void testError() {
+        CharacterReader reader = Mockito.mock(CharacterReader.class);
+        Tokeniser tokeniser = new Tokeniser(reader);
+        TokeniserState state = TokeniserState.Data;
+        tokeniser.error(state);
+        Mockito.verify(reader).current();
+        Mockito.verify(reader).pos();
+        assertTrue(tokeniser.trackErrors);
+    }
+
+    @Test
+    public void testEofError() {
+        CharacterReader reader = Mockito.mock(CharacterReader.class);
+        Tokeniser tokeniser = new Tokeniser(reader);
+        TokeniserState state = TokeniserState.Data;
+        tokeniser.eofError(state);
+        Mockito.verify(reader).pos();
+        assertTrue(tokeniser.trackErrors);
+    }
+
+    @Test
+    public void testCharacterReferenceError() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        tokeniser.characterReferenceError();
+        assertTrue(tokeniser.trackErrors);
+    }
+
+    @Test
+    public void testErrorString() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        String errorMsg = "Unexpected character";
+        tokeniser.error(errorMsg);
+        assertTrue(tokeniser.trackErrors);
+    }
+
+    @Test
+    public void testCurrentNodeInHtmlNS() {
+        Tokeniser tokeniser = new Tokeniser(Mockito.mock(CharacterReader.class));
+        assertTrue(tokeniser.currentNodeInHtmlNS());
+    }
+}

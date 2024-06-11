@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360739595" analysisTimestamp="1714578352282" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/98_trans-locator/FoxHuntFrameTEST/6/Joshua/FoxHunt</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="15bd9de401fc2f9dab3cab563ce05f5e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type String in Joshua.FoxHunt.FoxHuntFrameTest.testGetValueAt() at FoxHuntFrameTest.java:[line 56] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Ljava/lang/String;">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java">
+        <Message>At String.java:[lines 111-3141]</Message>
+      </SourceLine>
+      <Message>Type String</Message>
+    </Type>
+    <Class classname="Joshua.FoxHunt.FoxHuntFrameTest" primary="true">
+      <SourceLine classname="Joshua.FoxHunt.FoxHuntFrameTest" start="5" end="71" sourcefile="FoxHuntFrameTest.java" sourcepath="Joshua/FoxHunt/FoxHuntFrameTest.java">
+        <Message>At FoxHuntFrameTest.java:[lines 5-71]</Message>
+      </SourceLine>
+      <Message>In class Joshua.FoxHunt.FoxHuntFrameTest</Message>
+    </Class>
+    <Method classname="Joshua.FoxHunt.FoxHuntFrameTest" name="testGetValueAt" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Joshua.FoxHunt.FoxHuntFrameTest" start="52" end="57" startBytecode="0" endBytecode="84" sourcefile="FoxHuntFrameTest.java" sourcepath="Joshua/FoxHunt/FoxHuntFrameTest.java"/>
+      <Message>In method Joshua.FoxHunt.FoxHuntFrameTest.testGetValueAt()</Message>
+    </Method>
+    <SourceLine classname="Joshua.FoxHunt.FoxHuntFrameTest" primary="true" start="56" end="56" startBytecode="37" endBytecode="37" sourcefile="FoxHuntFrameTest.java" sourcepath="Joshua/FoxHunt/FoxHuntFrameTest.java">
+      <Message>At FoxHuntFrameTest.java:[line 56]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>Joshua.FoxHunt.FoxHuntFrame</MissingClass>
+    <MissingClass>Joshua.FoxHunt.FoxHuntFrame$FoxTableModel</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:38:59 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="41" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.93" clock_seconds="3.38" peak_mbytes="189.66" alloc_mbytes="7104.00" gc_seconds="0.26" priority_2="1">
+    <FileStats path="Joshua/FoxHunt/FoxHuntFrameTest.java" bugCount="1" size="41" bugHash="0be9ab7d855b92d275e1653b4dc65730"/>
+    <PackageStats package="Joshua.FoxHunt" total_bugs="1" total_types="1" total_size="41" priority_2="1">
+      <ClassStats class="Joshua.FoxHunt.FoxHuntFrameTest" sourceFile="FoxHuntFrameTest.java" interface="false" size="41" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="431" invocations="309" avgMicrosecondsPerInvocation="1396" maxMicrosecondsPerInvocation="35113" standardDeviationMicrosecondsPerInvocation="4096"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="339" invocations="10" avgMicrosecondsPerInvocation="33953" maxMicrosecondsPerInvocation="307194" standardDeviationMicrosecondsPerInvocation="91272"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="161" invocations="66" avgMicrosecondsPerInvocation="2440" maxMicrosecondsPerInvocation="22222" standardDeviationMicrosecondsPerInvocation="5287"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="121" invocations="9" avgMicrosecondsPerInvocation="13522" maxMicrosecondsPerInvocation="119220" standardDeviationMicrosecondsPerInvocation="37370"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="105" invocations="10" avgMicrosecondsPerInvocation="10521" maxMicrosecondsPerInvocation="31553" standardDeviationMicrosecondsPerInvocation="11992"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="90" invocations="10" avgMicrosecondsPerInvocation="9067" maxMicrosecondsPerInvocation="38970" standardDeviationMicrosecondsPerInvocation="12689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="89" invocations="311" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="36104" standardDeviationMicrosecondsPerInvocation="2186"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="80" invocations="9" avgMicrosecondsPerInvocation="8898" maxMicrosecondsPerInvocation="51465" standardDeviationMicrosecondsPerInvocation="16051"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="75" invocations="28" avgMicrosecondsPerInvocation="2683" maxMicrosecondsPerInvocation="50802" standardDeviationMicrosecondsPerInvocation="9479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="65" invocations="10" avgMicrosecondsPerInvocation="6520" maxMicrosecondsPerInvocation="40842" standardDeviationMicrosecondsPerInvocation="11709"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="61" invocations="10" avgMicrosecondsPerInvocation="6162" maxMicrosecondsPerInvocation="15279" standardDeviationMicrosecondsPerInvocation="6158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="61" invocations="9" avgMicrosecondsPerInvocation="6789" maxMicrosecondsPerInvocation="39707" standardDeviationMicrosecondsPerInvocation="12338"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="55" invocations="273" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="16725" standardDeviationMicrosecondsPerInvocation="1038"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="54" invocations="10" avgMicrosecondsPerInvocation="5457" maxMicrosecondsPerInvocation="27380" standardDeviationMicrosecondsPerInvocation="9204"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="53" invocations="10" avgMicrosecondsPerInvocation="5308" maxMicrosecondsPerInvocation="18944" standardDeviationMicrosecondsPerInvocation="7499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="49" invocations="10" avgMicrosecondsPerInvocation="4901" maxMicrosecondsPerInvocation="39795" standardDeviationMicrosecondsPerInvocation="11725"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

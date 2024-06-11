@@ -1,0 +1,91 @@
+package org.apache.commons.cli;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class OptionGroupTest {
+
+    private OptionGroup optionGroup;
+
+    @Before
+    public void setUp() {
+        optionGroup = new OptionGroup();
+    }
+
+    @Test
+    public void testAddOption() {
+        Option option = new Option("a", "add", false, "Add option");
+        OptionGroup result = optionGroup.addOption(option);
+        assertTrue(result.getOptions().contains(option));
+    }
+
+    @Test
+    public void testGetNames() {
+        Option option1 = new Option("a", "add", false, "Add option");
+        Option option2 = new Option("r", "remove", false, "Remove option");
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        assertTrue(optionGroup.getNames().contains("a"));
+        assertTrue(optionGroup.getNames().contains("r"));
+    }
+
+    @Test
+    public void testGetOptions() {
+        Option option1 = new Option("a", "add", false, "Add option");
+        Option option2 = new Option("r", "remove", false, "Remove option");
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        assertTrue(optionGroup.getOptions().contains(option1));
+        assertTrue(optionGroup.getOptions().contains(option2));
+    }
+
+    @Test
+    public void testSetSelected() throws AlreadySelectedException {
+        Option option1 = new Option("a", "add", false, "Add option");
+        Option option2 = new Option("r", "remove", false, "Remove option");
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        optionGroup.setSelected(option1); 
+        assertEquals(option1.getKey(), optionGroup.getSelected());
+        optionGroup.setSelected(option2); 
+        assertEquals(option2.getKey(), optionGroup.getSelected());
+    }
+
+    @Test(expected = AlreadySelectedException.class)
+    public void testSetSelectedAlreadySelected() throws AlreadySelectedException {
+        Option option1 = new Option("a", "add", false, "Add option");
+        Option option2 = new Option("r", "remove", false, "Remove option");
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        optionGroup.setSelected(option1); 
+        optionGroup.setSelected(option2); 
+    }
+
+    @Test
+    public void testGetSelected() throws AlreadySelectedException {
+        Option option1 = new Option("a", "add", false, "Add option");
+        Option option2 = new Option("r", "remove", false, "Remove option");
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        optionGroup.setSelected(option1); 
+        assertEquals(option1.getKey(), optionGroup.getSelected());
+    }
+
+    @Test
+    public void testSetRequired() {
+        optionGroup.setRequired(true); 
+        assertTrue(optionGroup.isRequired());
+        optionGroup.setRequired(false); 
+        assertFalse(optionGroup.isRequired());
+    }
+
+    @Test
+    public void testToString() {
+        Option option1 = new Option("a", "add", false, "Add option");
+        Option option2 = new Option("r", "remove", false, "Remove option");
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        String expected = "[-a Add option, -r Remove option]";
+        assertEquals(expected, optionGroup.toString());
+    }
+}

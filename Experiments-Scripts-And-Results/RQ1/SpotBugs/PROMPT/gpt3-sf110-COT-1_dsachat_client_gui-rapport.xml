@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360737203" analysisTimestamp="1714579841278" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/12_dsachat/InternalChatFrameTEST/1/dsachat/client/gui</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="264ad03fe1797cb83d50ea5f2ff38dcf" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : dsachat.client.gui.InternalChatFrameTest.internalChatFrame</LongMessage>
+    <Class classname="dsachat.client.gui.InternalChatFrameTest" primary="true">
+      <SourceLine classname="dsachat.client.gui.InternalChatFrameTest" start="6" end="80" sourcefile="InternalChatFrameTest.java" sourcepath="dsachat/client/gui/InternalChatFrameTest.java">
+        <Message>At InternalChatFrameTest.java:[lines 6-80]</Message>
+      </SourceLine>
+      <Message>In class dsachat.client.gui.InternalChatFrameTest</Message>
+    </Class>
+    <Field classname="dsachat.client.gui.InternalChatFrameTest" name="internalChatFrame" signature="Ldsachat/client/gui/InternalChatFrame;" isStatic="false" primary="true">
+      <SourceLine classname="dsachat.client.gui.InternalChatFrameTest" sourcefile="InternalChatFrameTest.java" sourcepath="dsachat/client/gui/InternalChatFrameTest.java">
+        <Message>In InternalChatFrameTest.java</Message>
+      </SourceLine>
+      <Message>Field dsachat.client.gui.InternalChatFrameTest.internalChatFrame</Message>
+    </Field>
+    <SourceLine classname="dsachat.client.gui.InternalChatFrameTest" primary="true" start="12" end="12" startBytecode="15" endBytecode="15" sourcefile="InternalChatFrameTest.java" sourcepath="dsachat/client/gui/InternalChatFrameTest.java">
+      <Message>At InternalChatFrameTest.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>dsachat.client.gui.InternalChatFrame</MissingClass>
+    <MissingClass>dsachat.client.gui.MainFrame</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:38:57 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="29" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.75" clock_seconds="3.11" peak_mbytes="189.64" alloc_mbytes="7104.00" gc_seconds="0.16" priority_2="1">
+    <FileStats path="dsachat/client/gui/InternalChatFrameTest.java" bugCount="1" size="29" bugHash="eb62804edafa91bf445a25f0cd7cb9a8"/>
+    <PackageStats package="dsachat.client.gui" total_bugs="1" total_types="1" total_size="29" priority_2="1">
+      <ClassStats class="dsachat.client.gui.InternalChatFrameTest" sourceFile="InternalChatFrameTest.java" interface="false" size="29" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="459" invocations="294" avgMicrosecondsPerInvocation="1562" maxMicrosecondsPerInvocation="45828" standardDeviationMicrosecondsPerInvocation="5130"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="281" invocations="9" avgMicrosecondsPerInvocation="31226" maxMicrosecondsPerInvocation="176504" standardDeviationMicrosecondsPerInvocation="53760"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="159" invocations="258" avgMicrosecondsPerInvocation="618" maxMicrosecondsPerInvocation="52288" standardDeviationMicrosecondsPerInvocation="4470"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="156" invocations="24" avgMicrosecondsPerInvocation="6517" maxMicrosecondsPerInvocation="63675" standardDeviationMicrosecondsPerInvocation="15613"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="96" invocations="9" avgMicrosecondsPerInvocation="10671" maxMicrosecondsPerInvocation="38768" standardDeviationMicrosecondsPerInvocation="15299"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="93" invocations="46" avgMicrosecondsPerInvocation="2030" maxMicrosecondsPerInvocation="27909" standardDeviationMicrosecondsPerInvocation="4576"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="74" invocations="13" avgMicrosecondsPerInvocation="5764" maxMicrosecondsPerInvocation="72806" standardDeviationMicrosecondsPerInvocation="19356"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="58" invocations="13" avgMicrosecondsPerInvocation="4509" maxMicrosecondsPerInvocation="54572" standardDeviationMicrosecondsPerInvocation="14458"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="53" invocations="9" avgMicrosecondsPerInvocation="5896" maxMicrosecondsPerInvocation="31936" standardDeviationMicrosecondsPerInvocation="10574"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="49" invocations="9" avgMicrosecondsPerInvocation="5466" maxMicrosecondsPerInvocation="19570" standardDeviationMicrosecondsPerInvocation="7865"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="46" invocations="9" avgMicrosecondsPerInvocation="5162" maxMicrosecondsPerInvocation="39907" standardDeviationMicrosecondsPerInvocation="12328"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="43" invocations="3" avgMicrosecondsPerInvocation="14417" maxMicrosecondsPerInvocation="43232" standardDeviationMicrosecondsPerInvocation="20375"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="41" invocations="13" avgMicrosecondsPerInvocation="3196" maxMicrosecondsPerInvocation="39748" standardDeviationMicrosecondsPerInvocation="10552"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

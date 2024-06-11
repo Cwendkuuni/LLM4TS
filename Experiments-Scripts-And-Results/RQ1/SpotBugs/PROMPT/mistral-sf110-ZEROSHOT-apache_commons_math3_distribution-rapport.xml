@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287218742" analysisTimestamp="1714587484654" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/ZEROSHOT/commons-math/HypergeometricDistributionTEST/22/org/apache/commons/math3/distribution</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="9">
+    <MissingClass>org.apache.commons.math3.distribution.HypergeometricDistribution</MissingClass>
+    <MissingClass>org.apache.commons.math3.exception.MathIllegalNumberException</MissingClass>
+    <MissingClass>org.apache.commons.math3.exception.NotPositiveException</MissingClass>
+    <MissingClass>org.apache.commons.math3.exception.NotStrictlyPositiveException</MissingClass>
+    <MissingClass>org.apache.commons.math3.exception.NumberIsTooLargeException</MissingClass>
+    <MissingClass>org.apache.commons.math3.exception.NumberIsTooSmallException</MissingClass>
+    <MissingClass>org.apache.commons.math3.random.RandomGenerator</MissingClass>
+    <MissingClass>org.apache.commons.math3.random.Well19937c</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:58 +0200" total_classes="1" referenced_classes="9" total_bugs="0" total_size="74" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.53" clock_seconds="2.78" peak_mbytes="190.99" alloc_mbytes="7104.00" gc_seconds="0.20">
+    <FileStats path="org/apache/commons/math3/distribution/HypergeometricDistributionTest.java" bugCount="0" size="74"/>
+    <PackageStats package="org.apache.commons.math3.distribution" total_bugs="0" total_types="1" total_size="74">
+      <ClassStats class="org.apache.commons.math3.distribution.HypergeometricDistributionTest" sourceFile="HypergeometricDistributionTest.java" interface="false" size="74" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="354" invocations="300" avgMicrosecondsPerInvocation="1180" maxMicrosecondsPerInvocation="33796" standardDeviationMicrosecondsPerInvocation="3632"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="252" invocations="9" avgMicrosecondsPerInvocation="28108" maxMicrosecondsPerInvocation="241820" standardDeviationMicrosecondsPerInvocation="75589"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="142" invocations="9" avgMicrosecondsPerInvocation="15814" maxMicrosecondsPerInvocation="70238" standardDeviationMicrosecondsPerInvocation="22668"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="117" invocations="47" avgMicrosecondsPerInvocation="2498" maxMicrosecondsPerInvocation="34179" standardDeviationMicrosecondsPerInvocation="5837"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="90" invocations="24" avgMicrosecondsPerInvocation="3786" maxMicrosecondsPerInvocation="77913" standardDeviationMicrosecondsPerInvocation="15489"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="83" invocations="19" avgMicrosecondsPerInvocation="4409" maxMicrosecondsPerInvocation="29515" standardDeviationMicrosecondsPerInvocation="7213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="72" invocations="1" avgMicrosecondsPerInvocation="72359" maxMicrosecondsPerInvocation="72359" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="70" invocations="9" avgMicrosecondsPerInvocation="7855" maxMicrosecondsPerInvocation="27292" standardDeviationMicrosecondsPerInvocation="9979"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="68" invocations="258" avgMicrosecondsPerInvocation="267" maxMicrosecondsPerInvocation="16705" standardDeviationMicrosecondsPerInvocation="1485"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="64" invocations="14" avgMicrosecondsPerInvocation="4606" maxMicrosecondsPerInvocation="57142" standardDeviationMicrosecondsPerInvocation="14608"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="64" invocations="14" avgMicrosecondsPerInvocation="4583" maxMicrosecondsPerInvocation="38000" standardDeviationMicrosecondsPerInvocation="10250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="57" invocations="1" avgMicrosecondsPerInvocation="57512" maxMicrosecondsPerInvocation="57512" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="56" invocations="9" avgMicrosecondsPerInvocation="6308" maxMicrosecondsPerInvocation="45336" standardDeviationMicrosecondsPerInvocation="13946"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="43" invocations="9" avgMicrosecondsPerInvocation="4816" maxMicrosecondsPerInvocation="33075" standardDeviationMicrosecondsPerInvocation="10199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="37" invocations="14" avgMicrosecondsPerInvocation="2668" maxMicrosecondsPerInvocation="13463" standardDeviationMicrosecondsPerInvocation="3764"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="36" invocations="302" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="9044" standardDeviationMicrosecondsPerInvocation="606"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

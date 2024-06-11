@@ -1,0 +1,249 @@
+package net.sf.javaml.core;
+
+import static org.junit.Assert.*;
+
+import java.util.*;
+
+import org.junit.Test;
+
+public class DenseInstanceTest {
+
+    @Test
+    public void testConstructorWithDoubleArray() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        assertEquals(3, denseInstance.noAttributes());
+        assertArrayEquals(attributes, denseInstance.attributes, 0.0);
+    }
+
+    @Test
+    public void testConstructorWithDoubleArrayAndClassValue() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        Object classValue = "class1";
+        DenseInstance denseInstance = new DenseInstance(attributes, classValue);
+        assertEquals(3, denseInstance.noAttributes());
+        assertArrayEquals(attributes, denseInstance.attributes, 0.0);
+        assertEquals(classValue, denseInstance.classValue());
+    }
+
+    @Test
+    public void testConstructorWithEmptyDoubleArray() {
+        DenseInstance denseInstance = new DenseInstance(new double[0]);
+        assertEquals(0, denseInstance.noAttributes());
+        assertArrayEquals(new double[0], denseInstance.attributes, 0.0);
+    }
+
+    @Test
+    public void testValue() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        assertEquals(1.0, denseInstance.value(0), 0.0);
+        assertEquals(2.0, denseInstance.value(1), 0.0);
+        assertEquals(3.0, denseInstance.value(2), 0.0);
+    }
+
+    @Test
+    public void testClear() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        denseInstance.clear();
+        assertEquals(0, denseInstance.noAttributes());
+        assertArrayEquals(new double[0], denseInstance.attributes, 0.0);
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void testContainsKeyWithNegativeKey() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        denseInstance.containsKey(-1);
+    }
+
+    @Test
+    public void testContainsKeyWithValidKey() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        assertTrue(denseInstance.containsKey(0));
+        assertTrue(denseInstance.containsKey(1));
+        assertTrue(denseInstance.containsKey(2));
+    }
+
+    @Test
+    public void testContainsValue() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        assertEquals(1.0, denseInstance.attributes[0], 0.0);
+        assertEquals(true, denseInstance.containsValue(1.0));
+        assertEquals(false, denseInstance.containsValue(4.0));
+    }
+
+    @Test
+    public void testEntrySet() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        Set<Map.Entry<Integer, Double>> entrySet = denseInstance.entrySet();
+        assertEquals(3, entrySet.size());
+        for (Map.Entry<Integer, Double> entry : entrySet) {
+            assertEquals(entry.getKey(), entry.getValue().intValue());
+        }
+    }
+
+    @Test
+    public void testGet() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        assertEquals(1.0, denseInstance.get(0), 0.0);
+        assertEquals(2.0, denseInstance.get(1), 0.0);
+        assertEquals(3.0, denseInstance.get(2), 0.0);
+    }
+
+    @Test
+    public void testIsEmpty() {
+        double[] attributes = new double[0];
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        assertTrue(denseInstance.isEmpty());
+
+        attributes = new double[]{1.0};
+        denseInstance = new DenseInstance(attributes);
+        assertFalse(denseInstance.isEmpty());
+    }
+
+    @Test
+    public void testKeySet() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        SortedSet<Integer> keySet = denseInstance.keySet();
+        assertEquals(3, keySet.size());
+        for (int i = 0; i < 3; i++) {
+            assertEquals(i, keySet.iterator().next());
+        }
+    }
+
+    @Test
+    public void testPut() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        double newValue = 4.0;
+        int index = 1;
+        denseInstance.put(index, newValue);
+        assertEquals(4.0, denseInstance.attributes[index], 0.0);
+    }
+
+    @Test
+    public void testPutAll() {
+        double[] originalAttributes = new double[]{1.0, 2.0, 3.0};
+        double[] newAttributes = new double[]{4.0, 5.0, 6.0};
+        DenseInstance denseInstance = new DenseInstance(originalAttributes);
+        DenseInstance newDenseInstance = new DenseInstance(newAttributes);
+        denseInstance.putAll(newDenseInstance.entrySet());
+        assertEquals(6, denseInstance.noAttributes());
+        assertArrayEquals(new double[6], denseInstance.attributes, 0.0);
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void testRemove() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        denseInstance.remove(0);
+    }
+
+    @Test
+    public void testSize() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        assertEquals(3, denseInstance.noAttributes());
+    }
+
+    @Test
+    public void testValues() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        List<Double> values = new ArrayList<>();
+        values.addAll(denseInstance.values());
+        assertEquals(3, values.size());
+        for (int i = 0; i < 3; i++) {
+            assertEquals(Double.valueOf(attributes[i]), values.get(i));
+        }
+    }
+
+    @Test
+    public void testNoAttributes() {
+        double[] attributes = new double[0];
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        assertEquals(0, denseInstance.noAttributes());
+
+        attributes = new double[]{1.0};
+        denseInstance = new DenseInstance(attributes);
+        assertEquals(1, denseInstance.noAttributes());
+
+        attributes = new double[]{1.0, 2.0, 3.0};
+        denseInstance = new DenseInstance(attributes);
+        assertEquals(3, denseInstance.noAttributes());
+    }
+
+    @Test
+    public void testToString() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        Object classValue = "class1";
+        DenseInstance denseInstance = new DenseInstance(attributes, classValue);
+        assertEquals("{" + Arrays.toString(attributes) + ";" + classValue + "}", denseInstance.toString());
+    }
+
+    @Test
+    public void testRemoveAttribute() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        denseInstance.removeAttribute(1);
+        assertEquals(2, denseInstance.noAttributes());
+        assertArrayEquals(new double[2], denseInstance.attributes, 0.0);
+    }
+
+    @Test
+    public void testHashCode() {
+        double[] attributes1 = new double[]{1.0, 2.0, 3.0};
+        double[] attributes2 = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance1 = new DenseInstance(attributes1);
+        DenseInstance denseInstance2 = new DenseInstance(attributes2);
+        assertEquals(denseInstance1.hashCode(), denseInstance2.hashCode());
+
+        double[] attributes3 = new double[]{1.0, 2.0, 4.0};
+        DenseInstance denseInstance3 = new DenseInstance(attributes3);
+        assertNotEquals(denseInstance1.hashCode(), denseInstance3.hashCode());
+    }
+
+    @Test
+    public void testEquals() {
+        double[] attributes1 = new double[]{1.0, 2.0, 3.0};
+        double[] attributes2 = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance1 = new DenseInstance(attributes1);
+        DenseInstance denseInstance2 = new DenseInstance(attributes2);
+        assertTrue(denseInstance1.equals(denseInstance2));
+
+        double[] attributes3 = new double[]{1.0, 2.0, 4.0};
+        DenseInstance denseInstance3 = new DenseInstance(attributes3);
+        assertFalse(denseInstance1.equals(denseInstance3));
+
+        DenseInstance denseInstance4 = new DenseInstance(attributes1);
+        assertTrue(denseInstance1.equals(denseInstance4));
+    }
+
+    @Test
+    public void testCopy() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        DenseInstance copy = denseInstance.copy();
+        assertEquals(3, copy.noAttributes());
+        assertArrayEquals(attributes, copy.attributes, 0.0);
+    }
+
+    @Test
+    public void testRemoveAttributes() {
+        double[] attributes = new double[]{1.0, 2.0, 3.0, 4.0, 5.0};
+        DenseInstance denseInstance = new DenseInstance(attributes);
+        Set<Integer> indices = new HashSet<>();
+        indices.add(1);
+        indices.add(3);
+        denseInstance.removeAttributes(indices);
+        assertEquals(3, denseInstance.noAttributes());
+        assertArrayEquals(new double[3], denseInstance.attributes, 0.0);
+    }
+}

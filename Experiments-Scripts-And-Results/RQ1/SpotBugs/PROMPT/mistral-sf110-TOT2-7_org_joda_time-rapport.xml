@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287215206" analysisTimestamp="1714582514369" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/joda/PartialTEST/7/org/joda/time</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="1dfddc787f97f18be4294cee4763e4a3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.joda.time.PartialTest.testPartialConstruction()</LongMessage>
+    <Class classname="org.joda.time.PartialTest" primary="true">
+      <SourceLine classname="org.joda.time.PartialTest" start="6" end="14" sourcefile="PartialTest.java" sourcepath="org/joda/time/PartialTest.java">
+        <Message>At PartialTest.java:[lines 6-14]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.PartialTest</Message>
+    </Class>
+    <Method classname="org.joda.time.PartialTest" name="testPartialConstruction" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.PartialTest" start="10" end="14" startBytecode="0" endBytecode="10" sourcefile="PartialTest.java" sourcepath="org/joda/time/PartialTest.java"/>
+      <Message>In method org.joda.time.PartialTest.testPartialConstruction()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="17" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.joda.time.PartialTest" primary="true" start="12" end="12" startBytecode="16" endBytecode="16" sourcefile="PartialTest.java" sourcepath="org/joda/time/PartialTest.java">
+      <Message>At PartialTest.java:[line 12]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.joda.time.DateTimeFieldType</MissingClass>
+    <MissingClass>org.joda.time.Partial</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:55 +0200" total_classes="1" referenced_classes="9" total_bugs="1" total_size="8" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.20" clock_seconds="2.71" peak_mbytes="188.95" alloc_mbytes="7104.00" gc_seconds="0.25" priority_1="1">
+    <FileStats path="org/joda/time/PartialTest.java" bugCount="1" size="8" bugHash="e9c6f6036c14d3ee2e85447baba06800"/>
+    <PackageStats package="org.joda.time" total_bugs="1" total_types="1" total_size="8" priority_1="1">
+      <ClassStats class="org.joda.time.PartialTest" sourceFile="PartialTest.java" interface="false" size="8" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="584" invocations="293" avgMicrosecondsPerInvocation="1994" maxMicrosecondsPerInvocation="60532" standardDeviationMicrosecondsPerInvocation="6789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="326" invocations="9" avgMicrosecondsPerInvocation="36296" maxMicrosecondsPerInvocation="269307" standardDeviationMicrosecondsPerInvocation="83206"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="119" invocations="9" avgMicrosecondsPerInvocation="13272" maxMicrosecondsPerInvocation="34241" standardDeviationMicrosecondsPerInvocation="12988"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="105" invocations="9" avgMicrosecondsPerInvocation="11725" maxMicrosecondsPerInvocation="64922" standardDeviationMicrosecondsPerInvocation="20061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="87" invocations="35" avgMicrosecondsPerInvocation="2491" maxMicrosecondsPerInvocation="18157" standardDeviationMicrosecondsPerInvocation="4437"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="80" invocations="2" avgMicrosecondsPerInvocation="40197" maxMicrosecondsPerInvocation="75066" standardDeviationMicrosecondsPerInvocation="34869"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="68" invocations="23" avgMicrosecondsPerInvocation="2962" maxMicrosecondsPerInvocation="40597" standardDeviationMicrosecondsPerInvocation="8587"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="65" invocations="2" avgMicrosecondsPerInvocation="32617" maxMicrosecondsPerInvocation="64113" standardDeviationMicrosecondsPerInvocation="31496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="48" invocations="295" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="12500" standardDeviationMicrosecondsPerInvocation="1015"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="47" invocations="258" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="10188" standardDeviationMicrosecondsPerInvocation="767"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

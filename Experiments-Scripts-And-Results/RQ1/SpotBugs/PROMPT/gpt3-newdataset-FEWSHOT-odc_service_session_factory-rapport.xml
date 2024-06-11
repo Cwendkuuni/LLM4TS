@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711194555767" analysisTimestamp="1714574910886" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V3/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/FEWSHOT/Odc/18/22/com/oceanbase/odc/service/session/factory</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="c1bdd931102702e08fddaf6fb47a44d5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.service.session.factory.OBConsoleDataSourceFactoryTest.testGetJdbcUrl()</LongMessage>
+    <Class classname="com.oceanbase.odc.service.session.factory.OBConsoleDataSourceFactoryTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.session.factory.OBConsoleDataSourceFactoryTest" start="17" end="36" sourcefile="OBConsoleDataSourceFactoryTest.java" sourcepath="com/oceanbase/odc/service/session/factory/OBConsoleDataSourceFactoryTest.java">
+        <Message>At OBConsoleDataSourceFactoryTest.java:[lines 17-36]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.session.factory.OBConsoleDataSourceFactoryTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.service.session.factory.OBConsoleDataSourceFactoryTest" name="testGetJdbcUrl" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.session.factory.OBConsoleDataSourceFactoryTest" start="21" end="26" startBytecode="0" endBytecode="14" sourcefile="OBConsoleDataSourceFactoryTest.java" sourcepath="com/oceanbase/odc/service/session/factory/OBConsoleDataSourceFactoryTest.java"/>
+      <Message>In method com.oceanbase.odc.service.session.factory.OBConsoleDataSourceFactoryTest.testGetJdbcUrl()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="27" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.service.session.factory.OBConsoleDataSourceFactoryTest" primary="true" start="24" end="24" startBytecode="26" endBytecode="26" sourcefile="OBConsoleDataSourceFactoryTest.java" sourcepath="com/oceanbase/odc/service/session/factory/OBConsoleDataSourceFactoryTest.java">
+      <Message>At OBConsoleDataSourceFactoryTest.java:[line 24]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>com.oceanbase.odc.service.connection.model.ConnectionConfig</MissingClass>
+    <MissingClass>com.oceanbase.odc.service.session.factory.OBConsoleDataSourceFactory</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.mockito.Mockito</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sat, 23 Mar 2024 12:49:15 +0100" total_classes="1" referenced_classes="12" total_bugs="1" total_size="14" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.62" clock_seconds="4.79" peak_mbytes="189.51" alloc_mbytes="7104.00" gc_seconds="0.19" priority_2="1">
+    <FileStats path="com/oceanbase/odc/service/session/factory/OBConsoleDataSourceFactoryTest.java" bugCount="1" size="14" bugHash="4d933cf210545218e8f2e3c1c72ed30f"/>
+    <PackageStats package="com.oceanbase.odc.service.session.factory" total_bugs="1" total_types="1" total_size="14" priority_2="1">
+      <ClassStats class="com.oceanbase.odc.service.session.factory.OBConsoleDataSourceFactoryTest" sourceFile="OBConsoleDataSourceFactoryTest.java" interface="false" size="14" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="791" invocations="318" avgMicrosecondsPerInvocation="2489" maxMicrosecondsPerInvocation="60865" standardDeviationMicrosecondsPerInvocation="7262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="263" invocations="60" avgMicrosecondsPerInvocation="4397" maxMicrosecondsPerInvocation="57691" standardDeviationMicrosecondsPerInvocation="10208"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="243" invocations="12" avgMicrosecondsPerInvocation="20282" maxMicrosecondsPerInvocation="214111" standardDeviationMicrosecondsPerInvocation="58827"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="232" invocations="12" avgMicrosecondsPerInvocation="19338" maxMicrosecondsPerInvocation="57985" standardDeviationMicrosecondsPerInvocation="23857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="184" invocations="29" avgMicrosecondsPerInvocation="6364" maxMicrosecondsPerInvocation="81854" standardDeviationMicrosecondsPerInvocation="16190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="151" invocations="3" avgMicrosecondsPerInvocation="50574" maxMicrosecondsPerInvocation="135574" standardDeviationMicrosecondsPerInvocation="60107"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="126" invocations="281" avgMicrosecondsPerInvocation="451" maxMicrosecondsPerInvocation="21316" standardDeviationMicrosecondsPerInvocation="2032"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="125" invocations="12" avgMicrosecondsPerInvocation="10499" maxMicrosecondsPerInvocation="59205" standardDeviationMicrosecondsPerInvocation="18648"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="117" invocations="12" avgMicrosecondsPerInvocation="9757" maxMicrosecondsPerInvocation="29659" standardDeviationMicrosecondsPerInvocation="11781"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="106" invocations="5" avgMicrosecondsPerInvocation="21393" maxMicrosecondsPerInvocation="40481" standardDeviationMicrosecondsPerInvocation="15442"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="98" invocations="321" avgMicrosecondsPerInvocation="305" maxMicrosecondsPerInvocation="10938" standardDeviationMicrosecondsPerInvocation="1361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="95" invocations="3" avgMicrosecondsPerInvocation="31762" maxMicrosecondsPerInvocation="87391" standardDeviationMicrosecondsPerInvocation="39361"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

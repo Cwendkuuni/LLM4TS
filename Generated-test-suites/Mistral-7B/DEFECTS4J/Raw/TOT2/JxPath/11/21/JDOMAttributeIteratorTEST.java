@@ -1,0 +1,19 @@
+import org.apache.commons.jxpath.ri.model.NodePointer;
+import org.apache.commons.jxpath.ri.QName;
+import org.jdom.Element;
+import org.jdom.Namespace;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class JDOMAttributeIteratorTest {
+
+    @Test
+    public void testJDOMAttributeIteratorConstructor() {
+        NodePointer parent = new NodePointer(new Element("root"));
+        QName name = new QName("", "testAttribute");
+        JDOMAttributeIterator iterator = new JDOMAttributeIterator(parent, name);
+        assertNotNull(iterator);
+    }
+
+    // Add test cases for other methods here
+}

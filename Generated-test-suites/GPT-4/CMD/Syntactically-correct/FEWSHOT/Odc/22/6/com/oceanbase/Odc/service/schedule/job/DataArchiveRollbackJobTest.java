@@ -1,0 +1,47 @@
+/*
+ * Copyright (c) 2023 OceanBase.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.oceanbase.odc.service.schedule.job;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.util.Optional;
+import org.junit.Test;
+import org.quartz.JobExecutionContext;
+import org.mockito.Mockito;
+
+public class DataArchiveRollbackJobTest {
+
+    @Test
+    public void testExecute() {
+        DataArchiveRollbackJob job = new DataArchiveRollbackJob();
+
+        JobExecutionContext context = Mockito.mock(JobExecutionContext.class);
+        Mockito.when(context.getResult()).thenReturn(new ScheduleTaskEntity());
+
+        ScheduleTaskEntity taskEntity = (ScheduleTaskEntity) context.getResult();
+        DataArchiveRollbackParameters rollbackParameters = new DataArchiveRollbackParameters();
+        taskEntity.setParametersJson(JsonUtils.toJson(rollbackParameters));
+
+        Optional<ScheduleTaskEntity> dataArchiveTaskOption = Optional.of(new ScheduleTaskEntity());
+
+        job.execute(context);
+
+        assertTrue(jobThread.isAlive());
+        assertEquals(JobType.ROLLBACK, taskUnits.get(0).getJobType());
+        assertEquals(TaskStatus.DONE, taskUnits.get(0).getStatus());
+    }
+}

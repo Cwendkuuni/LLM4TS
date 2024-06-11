@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711017765639" analysisTimestamp="1714574245073" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V4/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/TOT/Odc/3/23/com/oceanbase/odc/config</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="a7c2fe657f98a4fb4ca59f00295f2bf1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.springframework.security.crypto.password.PasswordEncoder in com.oceanbase.odc.config.BeanConfigurationTest.testPasswordEncoderBeanExistence() at BeanConfigurationTest.java:[line 23] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/springframework/security/crypto/password/PasswordEncoder;">
+      <SourceLine classname="org.springframework.security.crypto.password.PasswordEncoder">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.springframework.security.crypto.password.PasswordEncoder</Message>
+    </Type>
+    <Class classname="com.oceanbase.odc.config.BeanConfigurationTest" primary="true" classAnnotationNames="org.junit.runner.RunWith,org.springframework.boot.test.context.SpringBootTest">
+      <SourceLine classname="com.oceanbase.odc.config.BeanConfigurationTest" start="15" end="29" sourcefile="BeanConfigurationTest.java" sourcepath="com/oceanbase/odc/config/BeanConfigurationTest.java">
+        <Message>At BeanConfigurationTest.java:[lines 15-29]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.config.BeanConfigurationTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.config.BeanConfigurationTest" name="testPasswordEncoderBeanExistence" signature="()V" isStatic="false" primary="true" classAnnotationNames="org.junit.runner.RunWith,org.springframework.boot.test.context.SpringBootTest">
+      <SourceLine classname="com.oceanbase.odc.config.BeanConfigurationTest" start="22" end="24" startBytecode="0" endBytecode="63" sourcefile="BeanConfigurationTest.java" sourcepath="com/oceanbase/odc/config/BeanConfigurationTest.java"/>
+      <Message>In method com.oceanbase.odc.config.BeanConfigurationTest.testPasswordEncoderBeanExistence()</Message>
+    </Method>
+    <SourceLine classname="com.oceanbase.odc.config.BeanConfigurationTest" primary="true" start="23" end="23" startBytecode="28" endBytecode="28" sourcefile="BeanConfigurationTest.java" sourcepath="com/oceanbase/odc/config/BeanConfigurationTest.java">
+      <Message>At BeanConfigurationTest.java:[line 23]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.springframework.context.ApplicationContext</MissingClass>
+    <MissingClass>org.springframework.security.crypto.password.PasswordEncoder</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 21 Mar 2024 11:42:45 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="11" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.60" clock_seconds="4.65" peak_mbytes="189.80" alloc_mbytes="7104.00" gc_seconds="0.18" priority_2="1">
+    <FileStats path="com/oceanbase/odc/config/BeanConfigurationTest.java" bugCount="1" size="11" bugHash="19eb7ed24404f3e57f0dd2c21735cfdb"/>
+    <PackageStats package="com.oceanbase.odc.config" total_bugs="1" total_types="1" total_size="11" priority_2="1">
+      <ClassStats class="com.oceanbase.odc.config.BeanConfigurationTest" sourceFile="BeanConfigurationTest.java" interface="false" size="11" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="652" invocations="312" avgMicrosecondsPerInvocation="2090" maxMicrosecondsPerInvocation="56548" standardDeviationMicrosecondsPerInvocation="5669"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="278" invocations="60" avgMicrosecondsPerInvocation="4640" maxMicrosecondsPerInvocation="35172" standardDeviationMicrosecondsPerInvocation="7573"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="248" invocations="10" avgMicrosecondsPerInvocation="24874" maxMicrosecondsPerInvocation="205480" standardDeviationMicrosecondsPerInvocation="60662"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="224" invocations="10" avgMicrosecondsPerInvocation="22448" maxMicrosecondsPerInvocation="60489" standardDeviationMicrosecondsPerInvocation="23092"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="158" invocations="3" avgMicrosecondsPerInvocation="52825" maxMicrosecondsPerInvocation="156104" standardDeviationMicrosecondsPerInvocation="73034"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="140" invocations="26" avgMicrosecondsPerInvocation="5413" maxMicrosecondsPerInvocation="52219" standardDeviationMicrosecondsPerInvocation="11819"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="126" invocations="10" avgMicrosecondsPerInvocation="12613" maxMicrosecondsPerInvocation="49322" standardDeviationMicrosecondsPerInvocation="14895"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="121" invocations="10" avgMicrosecondsPerInvocation="12170" maxMicrosecondsPerInvocation="51006" standardDeviationMicrosecondsPerInvocation="16905"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="114" invocations="273" avgMicrosecondsPerInvocation="418" maxMicrosecondsPerInvocation="10930" standardDeviationMicrosecondsPerInvocation="1459"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="95" invocations="10" avgMicrosecondsPerInvocation="9592" maxMicrosecondsPerInvocation="31884" standardDeviationMicrosecondsPerInvocation="12082"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="91" invocations="3" avgMicrosecondsPerInvocation="30637" maxMicrosecondsPerInvocation="88725" standardDeviationMicrosecondsPerInvocation="41074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="90" invocations="10" avgMicrosecondsPerInvocation="9005" maxMicrosecondsPerInvocation="52316" standardDeviationMicrosecondsPerInvocation="16965"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="77" invocations="10" avgMicrosecondsPerInvocation="7757" maxMicrosecondsPerInvocation="19520" standardDeviationMicrosecondsPerInvocation="7887"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

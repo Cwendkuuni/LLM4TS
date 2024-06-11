@@ -1,0 +1,33 @@
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class CaverphoneTest {
+
+    @Test
+    public void testCaverphone() {
+        Caverphone caverphone = new Caverphone();
+        String result = caverphone.caverphone("test");
+        assertEquals("1111111111", result);
+    }
+
+    @Test
+    public void testEncode() throws EncoderException {
+        Caverphone caverphone = new Caverphone();
+        String result = (String) caverphone.encode("test");
+        assertEquals("1111111111", result);
+    }
+
+    @Test
+    public void testEncodeString() {
+        Caverphone caverphone = new Caverphone();
+        String result = caverphone.encode("test");
+        assertEquals("1111111111", result);
+    }
+
+    @Test
+    public void testIsCaverphoneEqual() {
+        Caverphone caverphone = new Caverphone();
+        boolean result = caverphone.isCaverphoneEqual("test1", "test2");
+        assertFalse(result);
+    }
+}

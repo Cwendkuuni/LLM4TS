@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420582285" analysisTimestamp="1714613551669" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/ZEROSHOT/Compress/33/4/org/apache/commons/compress/compressors</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="c8a7aa61e1e9abe9c50d162b8983f42c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.compressors.CompressorStreamFactoryTest.testCreateCompressorInputStream(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" start="7" end="65" sourcefile="CompressorStreamFactoryTest.java" sourcepath="org/apache/commons/compress/compressors/CompressorStreamFactoryTest.java">
+        <Message>At CompressorStreamFactoryTest.java:[lines 7-65]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.compressors.CompressorStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" name="testCreateCompressorInputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" start="13" end="31" startBytecode="0" endBytecode="208" sourcefile="CompressorStreamFactoryTest.java" sourcepath="org/apache/commons/compress/compressors/CompressorStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.compressors.CompressorStreamFactoryTest.testCreateCompressorInputStream()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" primary="true" start="13" end="13" startBytecode="2" endBytecode="2" sourcefile="CompressorStreamFactoryTest.java" sourcepath="org/apache/commons/compress/compressors/CompressorStreamFactoryTest.java">
+      <Message>At CompressorStreamFactoryTest.java:[line 13]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" start="23" end="23" startBytecode="57" endBytecode="57" sourcefile="CompressorStreamFactoryTest.java" sourcepath="org/apache/commons/compress/compressors/CompressorStreamFactoryTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompressorStreamFactoryTest.java:[line 23]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="c48ae65edbfdd534f1a1aeb0d8d24265" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.compressors.CompressorStreamFactoryTest.testCreateCompressorOutputStream(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" start="7" end="65" sourcefile="CompressorStreamFactoryTest.java" sourcepath="org/apache/commons/compress/compressors/CompressorStreamFactoryTest.java">
+        <Message>At CompressorStreamFactoryTest.java:[lines 7-65]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.compressors.CompressorStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" name="testCreateCompressorOutputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" start="37" end="65" startBytecode="0" endBytecode="321" sourcefile="CompressorStreamFactoryTest.java" sourcepath="org/apache/commons/compress/compressors/CompressorStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.compressors.CompressorStreamFactoryTest.testCreateCompressorOutputStream()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" primary="true" start="37" end="37" startBytecode="2" endBytecode="2" sourcefile="CompressorStreamFactoryTest.java" sourcepath="org/apache/commons/compress/compressors/CompressorStreamFactoryTest.java">
+      <Message>At CompressorStreamFactoryTest.java:[line 37]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" start="52" end="52" startBytecode="94" endBytecode="94" sourcefile="CompressorStreamFactoryTest.java" sourcepath="org/apache/commons/compress/compressors/CompressorStreamFactoryTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompressorStreamFactoryTest.java:[line 52]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.apache.commons.compress.compressors.CompressorInputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.compressors.CompressorOutputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.compressors.CompressorStreamFactory</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:22 +0100" total_classes="1" referenced_classes="15" total_bugs="2" total_size="49" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.87" clock_seconds="1.07" peak_mbytes="190.78" alloc_mbytes="7104.00" gc_seconds="0.10" priority_1="2">
+    <FileStats path="org/apache/commons/compress/compressors/CompressorStreamFactoryTest.java" bugCount="2" size="49" bugHash="d69f619340326bff42efdeec8b3bbdc0"/>
+    <PackageStats package="org.apache.commons.compress.compressors" total_bugs="2" total_types="1" total_size="49" priority_1="2">
+      <ClassStats class="org.apache.commons.compress.compressors.CompressorStreamFactoryTest" sourceFile="CompressorStreamFactoryTest.java" interface="false" size="49" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="167" invocations="315" avgMicrosecondsPerInvocation="533" maxMicrosecondsPerInvocation="14128" standardDeviationMicrosecondsPerInvocation="1275"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="113" invocations="15" avgMicrosecondsPerInvocation="7598" maxMicrosecondsPerInvocation="103616" standardDeviationMicrosecondsPerInvocation="25676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="46" invocations="15" avgMicrosecondsPerInvocation="3068" maxMicrosecondsPerInvocation="14423" standardDeviationMicrosecondsPerInvocation="4170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="37" invocations="63" avgMicrosecondsPerInvocation="596" maxMicrosecondsPerInvocation="4181" standardDeviationMicrosecondsPerInvocation="845"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="34" invocations="36" avgMicrosecondsPerInvocation="947" maxMicrosecondsPerInvocation="21422" standardDeviationMicrosecondsPerInvocation="3552"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="25" invocations="277" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="1430" standardDeviationMicrosecondsPerInvocation="175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="24" invocations="15" avgMicrosecondsPerInvocation="1631" maxMicrosecondsPerInvocation="6593" standardDeviationMicrosecondsPerInvocation="1929"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="22" invocations="3" avgMicrosecondsPerInvocation="7623" maxMicrosecondsPerInvocation="20922" standardDeviationMicrosecondsPerInvocation="9415"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="18" invocations="15" avgMicrosecondsPerInvocation="1257" maxMicrosecondsPerInvocation="6417" standardDeviationMicrosecondsPerInvocation="1706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="18" invocations="15" avgMicrosecondsPerInvocation="1256" maxMicrosecondsPerInvocation="9037" standardDeviationMicrosecondsPerInvocation="2290"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="17" invocations="15" avgMicrosecondsPerInvocation="1144" maxMicrosecondsPerInvocation="6392" standardDeviationMicrosecondsPerInvocation="1885"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="16" invocations="317" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="965" standardDeviationMicrosecondsPerInvocation="62"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="13" invocations="3" avgMicrosecondsPerInvocation="4666" maxMicrosecondsPerInvocation="9715" standardDeviationMicrosecondsPerInvocation="3571"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="12" invocations="3" avgMicrosecondsPerInvocation="4276" maxMicrosecondsPerInvocation="9947" standardDeviationMicrosecondsPerInvocation="4136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="12" invocations="15" avgMicrosecondsPerInvocation="804" maxMicrosecondsPerInvocation="5962" standardDeviationMicrosecondsPerInvocation="1478"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

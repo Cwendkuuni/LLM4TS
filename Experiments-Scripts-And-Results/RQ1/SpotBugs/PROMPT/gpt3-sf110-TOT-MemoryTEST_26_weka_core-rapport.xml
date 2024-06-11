@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360741739" analysisTimestamp="1714591919911" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/107_weka/MemoryTEST/26/weka/core</Jar>
+  </Project>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="576693246a8da7b2ceda1a165eedf1de" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique weka.core.Memory.m_Enabled depuis la méthode d&apos;une instance weka.core.MemoryTest.testIsEnabled()</LongMessage>
+    <Class classname="weka.core.MemoryTest" primary="true">
+      <SourceLine classname="weka.core.MemoryTest" start="7" end="128" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java">
+        <Message>At MemoryTest.java:[lines 7-128]</Message>
+      </SourceLine>
+      <Message>In class weka.core.MemoryTest</Message>
+    </Class>
+    <Method classname="weka.core.MemoryTest" name="testIsEnabled" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.core.MemoryTest" start="11" end="20" startBytecode="0" endBytecode="74" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java"/>
+      <Message>In method weka.core.MemoryTest.testIsEnabled()</Message>
+    </Method>
+    <Field classname="weka.core.Memory" name="m_Enabled" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="weka.core.Memory">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field weka.core.Memory.m_Enabled</Message>
+    </Field>
+    <SourceLine classname="weka.core.MemoryTest" primary="true" start="14" end="14" startBytecode="9" endBytecode="9" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java">
+      <Message>At MemoryTest.java:[line 14]</Message>
+    </SourceLine>
+    <SourceLine classname="weka.core.MemoryTest" start="18" end="18" startBytecode="20" endBytecode="20" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at MemoryTest.java:[line 18]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="746218920f7dcaf740ac71c12c7de3d0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique weka.core.Memory.m_Enabled depuis la méthode d&apos;une instance weka.core.MemoryTest.testIsOutOfMemory()</LongMessage>
+    <Class classname="weka.core.MemoryTest" primary="true">
+      <SourceLine classname="weka.core.MemoryTest" start="7" end="128" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java">
+        <Message>At MemoryTest.java:[lines 7-128]</Message>
+      </SourceLine>
+      <Message>In class weka.core.MemoryTest</Message>
+    </Class>
+    <Method classname="weka.core.MemoryTest" name="testIsOutOfMemory" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.core.MemoryTest" start="74" end="94" startBytecode="0" endBytecode="167" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java"/>
+      <Message>In method weka.core.MemoryTest.testIsOutOfMemory()</Message>
+    </Method>
+    <Field classname="weka.core.Memory" name="m_Enabled" signature="Z" isStatic="true" primary="true">
+      <SourceLine classname="weka.core.Memory">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field weka.core.Memory.m_Enabled</Message>
+    </Field>
+    <SourceLine classname="weka.core.MemoryTest" primary="true" start="77" end="77" startBytecode="9" endBytecode="9" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java">
+      <Message>At MemoryTest.java:[line 77]</Message>
+    </SourceLine>
+    <SourceLine classname="weka.core.MemoryTest" start="84" end="84" startBytecode="38" endBytecode="38" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at MemoryTest.java:[line 84]</Message>
+    </SourceLine>
+    <SourceLine classname="weka.core.MemoryTest" start="90" end="90" startBytecode="63" endBytecode="63" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at MemoryTest.java:[line 90]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" abbrev="ST" category="STYLE">
+    <ShortDescription>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortDescription>
+    <Details><![CDATA[
+
+<p>La méthode de l'instance écrit la valeur d'un champ statique. Cela peut être difficile à gérer si plusieurs instances ont la possibilité d'écrire cette valeur et cela ressemble surtout à une mauvaise pratique.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ST">
+    <Description>Mauvaise utilisation de champs statiques</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>weka.core.Memory</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:01 +0100" total_classes="1" referenced_classes="11" total_bugs="2" total_size="72" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.16" clock_seconds="1.70" peak_mbytes="191.79" alloc_mbytes="7104.00" gc_seconds="0.16" priority_1="2">
+    <FileStats path="weka/core/MemoryTest.java" bugCount="2" size="72" bugHash="66f692d04b286144df563c763514f96c"/>
+    <PackageStats package="weka.core" total_bugs="2" total_types="1" total_size="72" priority_1="2">
+      <ClassStats class="weka.core.MemoryTest" sourceFile="MemoryTest.java" interface="false" size="72" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="283" invocations="318" avgMicrosecondsPerInvocation="890" maxMicrosecondsPerInvocation="26970" standardDeviationMicrosecondsPerInvocation="2829"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="219" invocations="11" avgMicrosecondsPerInvocation="19996" maxMicrosecondsPerInvocation="171789" standardDeviationMicrosecondsPerInvocation="48280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="58" invocations="71" avgMicrosecondsPerInvocation="827" maxMicrosecondsPerInvocation="6634" standardDeviationMicrosecondsPerInvocation="1149"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="48" invocations="283" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="11346" standardDeviationMicrosecondsPerInvocation="773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="44" invocations="30" avgMicrosecondsPerInvocation="1472" maxMicrosecondsPerInvocation="22642" standardDeviationMicrosecondsPerInvocation="4277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="36" invocations="13" avgMicrosecondsPerInvocation="2770" maxMicrosecondsPerInvocation="32946" standardDeviationMicrosecondsPerInvocation="8715"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="34" invocations="11" avgMicrosecondsPerInvocation="3175" maxMicrosecondsPerInvocation="12036" standardDeviationMicrosecondsPerInvocation="3335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="23" invocations="11" avgMicrosecondsPerInvocation="2140" maxMicrosecondsPerInvocation="12844" standardDeviationMicrosecondsPerInvocation="3596"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="23" invocations="11" avgMicrosecondsPerInvocation="2130" maxMicrosecondsPerInvocation="8714" standardDeviationMicrosecondsPerInvocation="2531"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="22" invocations="11" avgMicrosecondsPerInvocation="2082" maxMicrosecondsPerInvocation="8063" standardDeviationMicrosecondsPerInvocation="2684"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="22" invocations="13" avgMicrosecondsPerInvocation="1750" maxMicrosecondsPerInvocation="14501" standardDeviationMicrosecondsPerInvocation="3701"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="21" invocations="320" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="1110" standardDeviationMicrosecondsPerInvocation="89"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="18" invocations="1" avgMicrosecondsPerInvocation="18997" maxMicrosecondsPerInvocation="18997" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="17" invocations="13" avgMicrosecondsPerInvocation="1374" maxMicrosecondsPerInvocation="11205" standardDeviationMicrosecondsPerInvocation="2857"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

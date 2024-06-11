@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360752120" analysisTimestamp="1714604597380" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/commons-math/HypergeometricDistributionTEST/14/org/apache/commons/math3/distribution</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="86c63566f7e73075e1d24a533de62401" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.math3.distribution.HypergeometricDistributionTest.testInvalidArguments()</LongMessage>
+    <Class classname="org.apache.commons.math3.distribution.HypergeometricDistributionTest" primary="true">
+      <SourceLine classname="org.apache.commons.math3.distribution.HypergeometricDistributionTest" start="6" end="75" sourcefile="HypergeometricDistributionTest.java" sourcepath="org/apache/commons/math3/distribution/HypergeometricDistributionTest.java">
+        <Message>At HypergeometricDistributionTest.java:[lines 6-75]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.distribution.HypergeometricDistributionTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.distribution.HypergeometricDistributionTest" name="testInvalidArguments" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.distribution.HypergeometricDistributionTest" start="74" end="75" startBytecode="0" endBytecode="7" sourcefile="HypergeometricDistributionTest.java" sourcepath="org/apache/commons/math3/distribution/HypergeometricDistributionTest.java"/>
+      <Message>In method org.apache.commons.math3.distribution.HypergeometricDistributionTest.testInvalidArguments()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="12" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.distribution.HypergeometricDistributionTest" primary="true" start="74" end="74" startBytecode="11" endBytecode="11" sourcefile="HypergeometricDistributionTest.java" sourcepath="org/apache/commons/math3/distribution/HypergeometricDistributionTest.java">
+      <Message>At HypergeometricDistributionTest.java:[line 74]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.apache.commons.math3.distribution.HypergeometricDistribution</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:12 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="54" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.48" clock_seconds="2.14" peak_mbytes="190.24" alloc_mbytes="7104.00" gc_seconds="0.19" priority_1="1">
+    <FileStats path="org/apache/commons/math3/distribution/HypergeometricDistributionTest.java" bugCount="1" size="54" bugHash="853b4f9f50677789d1df8a3b383b3c0e"/>
+    <PackageStats package="org.apache.commons.math3.distribution" total_bugs="1" total_types="1" total_size="54" priority_1="1">
+      <ClassStats class="org.apache.commons.math3.distribution.HypergeometricDistributionTest" sourceFile="HypergeometricDistributionTest.java" interface="false" size="54" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="303" invocations="293" avgMicrosecondsPerInvocation="1035" maxMicrosecondsPerInvocation="27211" standardDeviationMicrosecondsPerInvocation="2887"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="191" invocations="9" avgMicrosecondsPerInvocation="21313" maxMicrosecondsPerInvocation="191692" standardDeviationMicrosecondsPerInvocation="60238"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="91" invocations="9" avgMicrosecondsPerInvocation="10119" maxMicrosecondsPerInvocation="40743" standardDeviationMicrosecondsPerInvocation="13782"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="79" invocations="258" avgMicrosecondsPerInvocation="306" maxMicrosecondsPerInvocation="16139" standardDeviationMicrosecondsPerInvocation="1368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="76" invocations="9" avgMicrosecondsPerInvocation="8527" maxMicrosecondsPerInvocation="30798" standardDeviationMicrosecondsPerInvocation="10255"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="75" invocations="43" avgMicrosecondsPerInvocation="1748" maxMicrosecondsPerInvocation="17686" standardDeviationMicrosecondsPerInvocation="3414"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="67" invocations="10" avgMicrosecondsPerInvocation="6703" maxMicrosecondsPerInvocation="61339" standardDeviationMicrosecondsPerInvocation="18227"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="49" invocations="24" avgMicrosecondsPerInvocation="2082" maxMicrosecondsPerInvocation="25862" standardDeviationMicrosecondsPerInvocation="5474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="43" invocations="10" avgMicrosecondsPerInvocation="4351" maxMicrosecondsPerInvocation="24962" standardDeviationMicrosecondsPerInvocation="7293"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="41" invocations="9" avgMicrosecondsPerInvocation="4612" maxMicrosecondsPerInvocation="20299" standardDeviationMicrosecondsPerInvocation="6964"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="40" invocations="9" avgMicrosecondsPerInvocation="4474" maxMicrosecondsPerInvocation="19315" standardDeviationMicrosecondsPerInvocation="6890"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="34" invocations="10" avgMicrosecondsPerInvocation="3471" maxMicrosecondsPerInvocation="22622" standardDeviationMicrosecondsPerInvocation="6616"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="32" invocations="9" avgMicrosecondsPerInvocation="3588" maxMicrosecondsPerInvocation="15091" standardDeviationMicrosecondsPerInvocation="5859"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="31" invocations="10" avgMicrosecondsPerInvocation="3160" maxMicrosecondsPerInvocation="16588" standardDeviationMicrosecondsPerInvocation="4770"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

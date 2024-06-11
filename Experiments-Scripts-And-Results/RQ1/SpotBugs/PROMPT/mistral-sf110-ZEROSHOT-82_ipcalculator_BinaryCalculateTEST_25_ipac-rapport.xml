@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287218550" analysisTimestamp="1714587437039" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/ZEROSHOT/82_ipcalculator/BinaryCalculateTEST/25/ipac</Jar>
+  </Project>
+  <BugInstance type="EC_UNRELATED_TYPES" priority="1" rank="1" abbrev="EC" category="CORRECTNESS" instanceHash="b9afbd53b30af8d18780943cd07a2534" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Appel de equals() comparant des types différents</ShortMessage>
+    <LongMessage>Appel de equals() comparant des types différents dans ipac.BinaryCalculateTest.testCalculate()</LongMessage>
+    <Class classname="ipac.BinaryCalculateTest" primary="true">
+      <SourceLine classname="ipac.BinaryCalculateTest" start="5" end="56" sourcefile="BinaryCalculateTest.java" sourcepath="ipac/BinaryCalculateTest.java">
+        <Message>At BinaryCalculateTest.java:[lines 5-56]</Message>
+      </SourceLine>
+      <Message>In class ipac.BinaryCalculateTest</Message>
+    </Class>
+    <Method classname="ipac.BinaryCalculateTest" name="testCalculate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="ipac.BinaryCalculateTest" start="49" end="56" startBytecode="0" endBytecode="30" sourcefile="BinaryCalculateTest.java" sourcepath="ipac/BinaryCalculateTest.java"/>
+      <Message>In method ipac.BinaryCalculateTest.testCalculate()</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java">
+        <Message>At Integer.java:[lines 52-1590]</Message>
+      </SourceLine>
+      <Message>Actual type Integer</Message>
+    </Type>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java">
+        <Message>At String.java:[lines 111-3141]</Message>
+      </SourceLine>
+      <Message>Expected String</Message>
+    </Type>
+    <Method classname="java.math.BigInteger" name="intValue" signature="()I" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.math.BigInteger" start="4011" end="4013" startBytecode="0" endBytecode="41" sourcefile="BigInteger.java" sourcepath="java/math/BigInteger.java"/>
+      <Message>Return value of java.math.BigInteger.intValue() of type int</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="53" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <Method classname="java.lang.String" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.String" start="977" end="995" startBytecode="0" endBytecode="208" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>String.equals(Object) used to determine equality</Message>
+    </Method>
+    <Method classname="org.junit.Assert" name="assertEquals" signature="(Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="org.junit.Assert"/>
+      <Message>Called method org.junit.Assert.assertEquals(Object, Object)</Message>
+    </Method>
+    <SourceLine classname="ipac.BinaryCalculateTest" primary="true" start="55" end="55" startBytecode="56" endBytecode="56" sourcefile="BinaryCalculateTest.java" sourcepath="ipac/BinaryCalculateTest.java">
+      <Message>At BinaryCalculateTest.java:[line 55]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="EC_UNRELATED_TYPES" abbrev="EC" category="CORRECTNESS">
+    <ShortDescription>Appel de equals() comparant des types différents</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette méthode appelle <code>equals(Object)</code> pour deux références de type différents, sans sous-classe commune. Les objets comparés ne sont donc probablement pas de la même classe à l'éxécution (au moins que certaines classes de l'application n'aient pas été analysées ou qu'il y ait des chargements dynamiques). D'après le contrat de <code>equals()</code>, les objets de classes différentes devraient toujours être inégaux, c'est pourquoi la comparaison a de fortes chances de toujours renvoyer <code>false</code> à l'exécution.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EC">
+    <Description>Comparaison par equals() suspecte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>ipac.BinaryCalculate</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:58 +0200" total_classes="1" referenced_classes="11" total_bugs="1" total_size="44" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.15" clock_seconds="2.38" peak_mbytes="190.91" alloc_mbytes="7104.00" gc_seconds="0.15" priority_1="1">
+    <FileStats path="ipac/BinaryCalculateTest.java" bugCount="1" size="44" bugHash="1fb2921cb2333542fbaa1df787f68968"/>
+    <PackageStats package="ipac" total_bugs="1" total_types="1" total_size="44" priority_1="1">
+      <ClassStats class="ipac.BinaryCalculateTest" sourceFile="BinaryCalculateTest.java" interface="false" size="44" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="397" invocations="322" avgMicrosecondsPerInvocation="1235" maxMicrosecondsPerInvocation="48397" standardDeviationMicrosecondsPerInvocation="4407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="274" invocations="11" avgMicrosecondsPerInvocation="24982" maxMicrosecondsPerInvocation="247916" standardDeviationMicrosecondsPerInvocation="70555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="231" invocations="123" avgMicrosecondsPerInvocation="1885" maxMicrosecondsPerInvocation="27823" standardDeviationMicrosecondsPerInvocation="3896"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="92" invocations="284" avgMicrosecondsPerInvocation="325" maxMicrosecondsPerInvocation="16059" standardDeviationMicrosecondsPerInvocation="1551"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="60" invocations="324" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="20140" standardDeviationMicrosecondsPerInvocation="1427"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="51" invocations="29" avgMicrosecondsPerInvocation="1791" maxMicrosecondsPerInvocation="28709" standardDeviationMicrosecondsPerInvocation="5423"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="47" invocations="11" avgMicrosecondsPerInvocation="4357" maxMicrosecondsPerInvocation="19763" standardDeviationMicrosecondsPerInvocation="6042"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="46" invocations="11" avgMicrosecondsPerInvocation="4224" maxMicrosecondsPerInvocation="21940" standardDeviationMicrosecondsPerInvocation="6957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="44" invocations="6" avgMicrosecondsPerInvocation="7440" maxMicrosecondsPerInvocation="34794" standardDeviationMicrosecondsPerInvocation="12387"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="41" invocations="11" avgMicrosecondsPerInvocation="3814" maxMicrosecondsPerInvocation="23810" standardDeviationMicrosecondsPerInvocation="6626"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="40" invocations="11" avgMicrosecondsPerInvocation="3664" maxMicrosecondsPerInvocation="33876" standardDeviationMicrosecondsPerInvocation="9592"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="36" invocations="6" avgMicrosecondsPerInvocation="6162" maxMicrosecondsPerInvocation="34300" standardDeviationMicrosecondsPerInvocation="12592"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

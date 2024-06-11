@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360744975" analysisTimestamp="1714590268568" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/twitter4j/ExceptionDiagnosisTEST/3/twitter4j</Jar>
+  </Project>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="d53f277986b4ce3714f54e1714ab64c0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in twitter4j.ExceptionDiagnosisTest.testConstructorWithThrowable()</LongMessage>
+    <Class classname="twitter4j.ExceptionDiagnosisTest" primary="true">
+      <SourceLine classname="twitter4j.ExceptionDiagnosisTest" start="5" end="74" sourcefile="ExceptionDiagnosisTest.java" sourcepath="twitter4j/ExceptionDiagnosisTest.java">
+        <Message>At ExceptionDiagnosisTest.java:[lines 5-74]</Message>
+      </SourceLine>
+      <Message>In class twitter4j.ExceptionDiagnosisTest</Message>
+    </Class>
+    <Method classname="twitter4j.ExceptionDiagnosisTest" name="testConstructorWithThrowable" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="twitter4j.ExceptionDiagnosisTest" start="10" end="17" startBytecode="0" endBytecode="108" sourcefile="ExceptionDiagnosisTest.java" sourcepath="twitter4j/ExceptionDiagnosisTest.java"/>
+      <Message>In method twitter4j.ExceptionDiagnosisTest.testConstructorWithThrowable()</Message>
+    </Method>
+    <SourceLine classname="twitter4j.ExceptionDiagnosisTest" primary="true" start="11" end="11" startBytecode="8" endBytecode="8" sourcefile="ExceptionDiagnosisTest.java" sourcepath="twitter4j/ExceptionDiagnosisTest.java">
+      <Message>At ExceptionDiagnosisTest.java:[line 11]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DCN_NULLPOINTER_EXCEPTION" abbrev="DCN" category="STYLE">
+    <ShortDescription>NullPointerException caught</ShortDescription>
+    <Details><![CDATA[
+   
+<p>
+According to SEI Cert rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">ERR08-J</a> NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
+<p>
+This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+  try {
+    String ms[] = m.split(" ");
+    return names.length != 1;
+  } catch (NullPointerException e) {
+    return false;
+  }
+}
+</code></pre>
+<p>
+A compliant solution would use a null-check as in the following example:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+    if (m == null) return false;
+    String ms[] = m.split(" ");
+    return names.length != 1;
+}
+</code></pre>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DCN">
+    <Description>Don&apos;t Catch NullPointer Exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>twitter4j.ExceptionDiagnosis</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:04 +0100" total_classes="1" referenced_classes="15" total_bugs="1" total_size="48" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.31" clock_seconds="1.86" peak_mbytes="190.04" alloc_mbytes="7104.00" gc_seconds="0.21" priority_2="1">
+    <FileStats path="twitter4j/ExceptionDiagnosisTest.java" bugCount="1" size="48" bugHash="cefd0062930667e213837b6a498d4a36"/>
+    <PackageStats package="twitter4j" total_bugs="1" total_types="1" total_size="48" priority_2="1">
+      <ClassStats class="twitter4j.ExceptionDiagnosisTest" sourceFile="ExceptionDiagnosisTest.java" interface="false" size="48" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="248" invocations="315" avgMicrosecondsPerInvocation="787" maxMicrosecondsPerInvocation="18894" standardDeviationMicrosecondsPerInvocation="1885"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="209" invocations="15" avgMicrosecondsPerInvocation="13976" maxMicrosecondsPerInvocation="209470" standardDeviationMicrosecondsPerInvocation="52247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="98" invocations="64" avgMicrosecondsPerInvocation="1534" maxMicrosecondsPerInvocation="22369" standardDeviationMicrosecondsPerInvocation="3783"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="93" invocations="15" avgMicrosecondsPerInvocation="6264" maxMicrosecondsPerInvocation="36693" standardDeviationMicrosecondsPerInvocation="10607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="52" invocations="13" avgMicrosecondsPerInvocation="4008" maxMicrosecondsPerInvocation="19056" standardDeviationMicrosecondsPerInvocation="4662"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="47" invocations="280" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="9937" standardDeviationMicrosecondsPerInvocation="644"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="43" invocations="15" avgMicrosecondsPerInvocation="2890" maxMicrosecondsPerInvocation="18021" standardDeviationMicrosecondsPerInvocation="5305"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="40" invocations="7" avgMicrosecondsPerInvocation="5821" maxMicrosecondsPerInvocation="36853" standardDeviationMicrosecondsPerInvocation="12695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="40" invocations="30" avgMicrosecondsPerInvocation="1354" maxMicrosecondsPerInvocation="21469" standardDeviationMicrosecondsPerInvocation="3989"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="38" invocations="13" avgMicrosecondsPerInvocation="2939" maxMicrosecondsPerInvocation="14061" standardDeviationMicrosecondsPerInvocation="3413"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="35" invocations="15" avgMicrosecondsPerInvocation="2371" maxMicrosecondsPerInvocation="21743" standardDeviationMicrosecondsPerInvocation="5350"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="29" invocations="7" avgMicrosecondsPerInvocation="4152" maxMicrosecondsPerInvocation="10233" standardDeviationMicrosecondsPerInvocation="3426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="28" invocations="7" avgMicrosecondsPerInvocation="4073" maxMicrosecondsPerInvocation="12041" standardDeviationMicrosecondsPerInvocation="3573"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="27" invocations="7" avgMicrosecondsPerInvocation="3887" maxMicrosecondsPerInvocation="13492" standardDeviationMicrosecondsPerInvocation="4158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="24" invocations="15" avgMicrosecondsPerInvocation="1614" maxMicrosecondsPerInvocation="11578" standardDeviationMicrosecondsPerInvocation="3066"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

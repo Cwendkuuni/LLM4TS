@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420562929" analysisTimestamp="1714597205437" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT/Compress/33/18/org/apache/commons/compress/compressors/deflate</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="bb4f7cbdea8b0d80fc0a18bf3c62f339" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest.testAvailable()</LongMessage>
+    <Class classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" start="6" end="79" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java">
+        <Message>At DeflateCompressorInputStreamTest.java:[lines 6-79]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" name="testAvailable" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" start="66" end="79" startBytecode="0" endBytecode="15" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java"/>
+      <Message>In method org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest.testAvailable()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" primary="true" start="68" end="68" startBytecode="23" endBytecode="23" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java">
+      <Message>At DeflateCompressorInputStreamTest.java:[line 68]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="aafd315b1c87e3480cf1caf948c1b91d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest.testRead()</LongMessage>
+    <Class classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" start="6" end="79" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java">
+        <Message>At DeflateCompressorInputStreamTest.java:[lines 6-79]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" name="testRead" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" start="11" end="24" startBytecode="0" endBytecode="15" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java"/>
+      <Message>In method org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest.testRead()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" primary="true" start="13" end="13" startBytecode="23" endBytecode="23" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java">
+      <Message>At DeflateCompressorInputStreamTest.java:[line 13]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="1b11e67ce12f02acc3dbc55d190f9f7c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest.testReadWithBuffer()</LongMessage>
+    <Class classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" start="6" end="79" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java">
+        <Message>At DeflateCompressorInputStreamTest.java:[lines 6-79]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" name="testReadWithBuffer" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" start="29" end="43" startBytecode="0" endBytecode="22" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java"/>
+      <Message>In method org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest.testReadWithBuffer()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="35" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" primary="true" start="32" end="32" startBytecode="33" endBytecode="33" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java">
+      <Message>At DeflateCompressorInputStreamTest.java:[line 32]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="449b708eff21fdf05320f7a9a0da1cc0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest.testSkip()</LongMessage>
+    <Class classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" start="6" end="79" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java">
+        <Message>At DeflateCompressorInputStreamTest.java:[lines 6-79]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" name="testSkip" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" start="48" end="61" startBytecode="0" endBytecode="16" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java"/>
+      <Message>In method org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest.testSkip()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="27" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" primary="true" start="50" end="50" startBytecode="26" endBytecode="26" sourcefile="DeflateCompressorInputStreamTest.java" sourcepath="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java">
+      <Message>At DeflateCompressorInputStreamTest.java:[line 50]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:02 +0100" total_classes="1" referenced_classes="13" total_bugs="4" total_size="28" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.53" clock_seconds="2.11" peak_mbytes="190.23" alloc_mbytes="7104.00" gc_seconds="0.10" priority_2="4">
+    <FileStats path="org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStreamTest.java" bugCount="4" size="28" bugHash="51b2c4a0aaee56f1abb838469614939c"/>
+    <PackageStats package="org.apache.commons.compress.compressors.deflate" total_bugs="4" total_types="1" total_size="28" priority_2="4">
+      <ClassStats class="org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStreamTest" sourceFile="DeflateCompressorInputStreamTest.java" interface="false" size="28" bugs="4" priority_2="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="334" invocations="324" avgMicrosecondsPerInvocation="1032" maxMicrosecondsPerInvocation="45767" standardDeviationMicrosecondsPerInvocation="3478"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="210" invocations="13" avgMicrosecondsPerInvocation="16187" maxMicrosecondsPerInvocation="109984" standardDeviationMicrosecondsPerInvocation="29277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="96" invocations="64" avgMicrosecondsPerInvocation="1511" maxMicrosecondsPerInvocation="17806" standardDeviationMicrosecondsPerInvocation="2905"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="93" invocations="290" avgMicrosecondsPerInvocation="322" maxMicrosecondsPerInvocation="14893" standardDeviationMicrosecondsPerInvocation="1477"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="79" invocations="13" avgMicrosecondsPerInvocation="6131" maxMicrosecondsPerInvocation="31785" standardDeviationMicrosecondsPerInvocation="9339"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="71" invocations="30" avgMicrosecondsPerInvocation="2377" maxMicrosecondsPerInvocation="26027" standardDeviationMicrosecondsPerInvocation="5605"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="52" invocations="326" avgMicrosecondsPerInvocation="161" maxMicrosecondsPerInvocation="13855" standardDeviationMicrosecondsPerInvocation="990"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="38" invocations="13" avgMicrosecondsPerInvocation="2973" maxMicrosecondsPerInvocation="16856" standardDeviationMicrosecondsPerInvocation="4930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="38" invocations="5" avgMicrosecondsPerInvocation="7689" maxMicrosecondsPerInvocation="33818" standardDeviationMicrosecondsPerInvocation="13127"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="35" invocations="13" avgMicrosecondsPerInvocation="2767" maxMicrosecondsPerInvocation="13993" standardDeviationMicrosecondsPerInvocation="3703"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="33" invocations="13" avgMicrosecondsPerInvocation="2608" maxMicrosecondsPerInvocation="18060" standardDeviationMicrosecondsPerInvocation="4794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="33" invocations="5" avgMicrosecondsPerInvocation="6761" maxMicrosecondsPerInvocation="15712" standardDeviationMicrosecondsPerInvocation="6052"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="33" invocations="5" avgMicrosecondsPerInvocation="6623" maxMicrosecondsPerInvocation="23996" standardDeviationMicrosecondsPerInvocation="8974"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

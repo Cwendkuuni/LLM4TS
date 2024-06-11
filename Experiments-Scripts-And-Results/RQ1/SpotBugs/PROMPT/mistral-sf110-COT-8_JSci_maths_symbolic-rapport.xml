@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287206450" analysisTimestamp="1714573361038" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/COT/jsci/SimpleCharStreamTEST/8/JSci/maths/symbolic</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="ec2c46ac1bdf2539f8256958a30570ab" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.example.junit.SimpleCharStreamTest.testGetImage()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testGetImage" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="117" end="120" startBytecode="0" endBytecode="16" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testGetImage()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="22" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="117" end="117" startBytecode="21" endBytecode="21" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 117]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="24fd6657a5791c507eeb044d9c297533" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.example.junit.SimpleCharStreamTest.testGetSuffix()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testGetSuffix" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="124" end="127" startBytecode="0" endBytecode="20" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testGetSuffix()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="22" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="124" end="124" startBytecode="21" endBytecode="21" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 124]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="adfea908a3532d9ec3144378861bc5b4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.example.junit.SimpleCharStreamTest.testBeginTokenWithIOException()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testBeginTokenWithIOException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="26" end="29" startBytecode="0" endBytecode="19" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testBeginTokenWithIOException()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="36" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="28" end="28" startBytecode="35" endBytecode="35" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 28]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="540918ac4af9cd697b0516257211af04" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.example.junit.SimpleCharStreamTest.testReInit()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testReInit" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="108" end="113" startBytecode="0" endBytecode="32" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testReInit()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="28" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="109" end="109" startBytecode="27" endBytecode="27" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 109]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="bfdf09df858b9c0312bbc6e6cc6836fb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.example.junit.SimpleCharStreamTest.testAdjustBeginLineColumn(): String.getBytes()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testAdjustBeginLineColumn" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="139" end="145" startBytecode="0" endBytecode="103" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testAdjustBeginLineColumn()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="139" end="139" startBytecode="10" endBytecode="10" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 139]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="c211773eaa2444240bf42dee1a954279" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.example.junit.SimpleCharStreamTest.testBackup(): String.getBytes()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testBackup" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="99" end="104" startBytecode="0" endBytecode="91" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testBackup()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="99" end="99" startBytecode="10" endBytecode="10" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 99]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="e7649019e6b4f526a745a9d7e95b94b8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.example.junit.SimpleCharStreamTest.testBeginToken(): String.getBytes()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testBeginToken" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="17" end="22" startBytecode="0" endBytecode="91" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testBeginToken()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="17" end="17" startBytecode="10" endBytecode="10" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="1bfcfc23276afe2c99792addc83b0d0a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.example.junit.SimpleCharStreamTest.testBeginTokenWithIOException(): String.getBytes()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testBeginTokenWithIOException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="26" end="29" startBytecode="0" endBytecode="72" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testBeginTokenWithIOException()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="26" end="26" startBytecode="10" endBytecode="10" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 26]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="7d9388388486ee594a9b93b8f05646b2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.example.junit.SimpleCharStreamTest.testDone(): String.getBytes()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testDone" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="131" end="135" startBytecode="0" endBytecode="79" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testDone()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="131" end="131" startBytecode="10" endBytecode="10" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 131]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="b348bd398f9285ea6e35e3e5d124afc3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.example.junit.SimpleCharStreamTest.testGetImage(): String.getBytes()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testGetImage" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="117" end="120" startBytecode="0" endBytecode="68" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testGetImage()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="117" end="117" startBytecode="10" endBytecode="10" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 117]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="1ce59fa4595495d525d144030fc93092" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.example.junit.SimpleCharStreamTest.testGetLineAndColumn(): String.getBytes()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testGetLineAndColumn" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="63" end="95" startBytecode="0" endBytecode="304" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testGetLineAndColumn()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="63" end="63" startBytecode="10" endBytecode="10" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 63]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="d38cf59132aec8e46a508faa4db736a7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.example.junit.SimpleCharStreamTest.testGetSuffix(): String.getBytes()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testGetSuffix" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="124" end="127" startBytecode="0" endBytecode="77" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testGetSuffix()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="124" end="124" startBytecode="10" endBytecode="10" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 124]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="d39db1028b1b5cae854fb7aaa54fc32d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.example.junit.SimpleCharStreamTest.testReInit(): String.getBytes()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testReInit" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="108" end="113" startBytecode="0" endBytecode="104" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testReInit()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="108" end="108" startBytecode="10" endBytecode="10" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 108]</Message>
+    </SourceLine>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="110" end="110" startBytecode="35" endBytecode="35" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at SimpleCharStreamTest.java:[line 110]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="91d76141486f1f2609e2d4b83b866252" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.example.junit.SimpleCharStreamTest.testReadChar(): String.getBytes()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testReadChar" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="44" end="59" startBytecode="0" endBytecode="166" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testReadChar()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="44" end="44" startBytecode="10" endBytecode="10" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 44]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="2c8d7330e881895399a4a9a1e1a4a80d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.example.junit.SimpleCharStreamTest.testUpdateLineColumn(): String.getBytes()</LongMessage>
+    <Class classname="com.example.junit.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="11" end="145" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 11-145]</Message>
+      </SourceLine>
+      <Message>In class com.example.junit.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="com.example.junit.SimpleCharStreamTest" name="testUpdateLineColumn" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.example.junit.SimpleCharStreamTest" start="33" end="40" startBytecode="0" endBytecode="114" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java"/>
+      <Message>In method com.example.junit.SimpleCharStreamTest.testUpdateLineColumn()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="com.example.junit.SimpleCharStreamTest" primary="true" start="33" end="33" startBytecode="10" endBytecode="10" sourcefile="SimpleCharStreamTest.java" sourcepath="com/example/junit/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 33]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>JSci.maths.symbolic.SimpleCharStream</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:46 +0200" total_classes="1" referenced_classes="14" total_bugs="15" total_size="102" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.56" clock_seconds="6.01" peak_mbytes="191.97" alloc_mbytes="7104.00" gc_seconds="0.24" priority_2="2" priority_1="13">
+    <FileStats path="com/example/junit/SimpleCharStreamTest.java" bugCount="15" size="102" bugHash="c14602117538447cc94fb46df7afcd76"/>
+    <PackageStats package="com.example.junit" total_bugs="15" total_types="1" total_size="102" priority_2="2" priority_1="13">
+      <ClassStats class="com.example.junit.SimpleCharStreamTest" sourceFile="SimpleCharStreamTest.java" interface="false" size="102" bugs="15" priority_2="2" priority_1="13"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1029" invocations="314" avgMicrosecondsPerInvocation="3278" maxMicrosecondsPerInvocation="86270" standardDeviationMicrosecondsPerInvocation="10094"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="316" invocations="14" avgMicrosecondsPerInvocation="22596" maxMicrosecondsPerInvocation="273065" standardDeviationMicrosecondsPerInvocation="70033"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="246" invocations="14" avgMicrosecondsPerInvocation="17600" maxMicrosecondsPerInvocation="68068" standardDeviationMicrosecondsPerInvocation="21510"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="213" invocations="278" avgMicrosecondsPerInvocation="766" maxMicrosecondsPerInvocation="37972" standardDeviationMicrosecondsPerInvocation="3632"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="145" invocations="32" avgMicrosecondsPerInvocation="4561" maxMicrosecondsPerInvocation="97623" standardDeviationMicrosecondsPerInvocation="17336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="143" invocations="12" avgMicrosecondsPerInvocation="11987" maxMicrosecondsPerInvocation="111304" standardDeviationMicrosecondsPerInvocation="30416"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="137" invocations="12" avgMicrosecondsPerInvocation="11421" maxMicrosecondsPerInvocation="97083" standardDeviationMicrosecondsPerInvocation="26191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="134" invocations="14" avgMicrosecondsPerInvocation="9617" maxMicrosecondsPerInvocation="47110" standardDeviationMicrosecondsPerInvocation="14363"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="134" invocations="316" avgMicrosecondsPerInvocation="424" maxMicrosecondsPerInvocation="22029" standardDeviationMicrosecondsPerInvocation="2222"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="134" invocations="72" avgMicrosecondsPerInvocation="1862" maxMicrosecondsPerInvocation="20330" standardDeviationMicrosecondsPerInvocation="3894"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="113" invocations="12" avgMicrosecondsPerInvocation="9482" maxMicrosecondsPerInvocation="32977" standardDeviationMicrosecondsPerInvocation="9694"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="102" invocations="12" avgMicrosecondsPerInvocation="8523" maxMicrosecondsPerInvocation="25430" standardDeviationMicrosecondsPerInvocation="8634"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="99" invocations="12" avgMicrosecondsPerInvocation="8328" maxMicrosecondsPerInvocation="29019" standardDeviationMicrosecondsPerInvocation="10426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="97" invocations="14" avgMicrosecondsPerInvocation="6951" maxMicrosecondsPerInvocation="36546" standardDeviationMicrosecondsPerInvocation="12303"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="89" invocations="12" avgMicrosecondsPerInvocation="7440" maxMicrosecondsPerInvocation="51724" standardDeviationMicrosecondsPerInvocation="14022"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="85" invocations="12" avgMicrosecondsPerInvocation="7086" maxMicrosecondsPerInvocation="41669" standardDeviationMicrosecondsPerInvocation="12816"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="74" invocations="14" avgMicrosecondsPerInvocation="5344" maxMicrosecondsPerInvocation="39346" standardDeviationMicrosecondsPerInvocation="11789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="72" invocations="14" avgMicrosecondsPerInvocation="5192" maxMicrosecondsPerInvocation="37947" standardDeviationMicrosecondsPerInvocation="11661"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

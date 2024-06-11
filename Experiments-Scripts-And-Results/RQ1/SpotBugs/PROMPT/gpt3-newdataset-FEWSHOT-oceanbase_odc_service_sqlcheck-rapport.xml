@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711194555763" analysisTimestamp="1714574898473" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V3/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/FEWSHOT/Odc/18/16/com/oceanbase/odc/service/sqlcheck</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="cb41257f7a87316bef6627784bafe6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest.sqlCheckService</LongMessage>
+    <Class classname="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" start="13" end="60" sourcefile="SqlCheckServiceTest.java" sourcepath="com/oceanbase/odc/service/sqlcheck/SqlCheckServiceTest.java">
+        <Message>At SqlCheckServiceTest.java:[lines 13-60]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest</Message>
+    </Class>
+    <Field classname="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" name="sqlCheckService" signature="Lcom/oceanbase/odc/service/sqlcheck/SqlCheckService;" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" sourcefile="SqlCheckServiceTest.java" sourcepath="com/oceanbase/odc/service/sqlcheck/SqlCheckServiceTest.java">
+        <Message>In SqlCheckServiceTest.java</Message>
+      </SourceLine>
+      <Message>Field com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest.sqlCheckService</Message>
+    </Field>
+    <SourceLine classname="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" primary="true" start="19" end="19" startBytecode="8" endBytecode="8" sourcefile="SqlCheckServiceTest.java" sourcepath="com/oceanbase/odc/service/sqlcheck/SqlCheckServiceTest.java">
+      <Message>At SqlCheckServiceTest.java:[line 19]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>com.oceanbase.odc.service.sqlcheck.SqlCheckService</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sat, 23 Mar 2024 12:49:15 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="17" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.24" clock_seconds="4.63" peak_mbytes="189.05" alloc_mbytes="7104.00" gc_seconds="0.19" priority_2="1">
+    <FileStats path="com/oceanbase/odc/service/sqlcheck/SqlCheckServiceTest.java" bugCount="1" size="17" bugHash="9a7a578c1cb3a2b1cecae8fab58d07f0"/>
+    <PackageStats package="com.oceanbase.odc.service.sqlcheck" total_bugs="1" total_types="1" total_size="17" priority_2="1">
+      <ClassStats class="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" sourceFile="SqlCheckServiceTest.java" interface="false" size="17" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="657" invocations="293" avgMicrosecondsPerInvocation="2244" maxMicrosecondsPerInvocation="55620" standardDeviationMicrosecondsPerInvocation="6982"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="238" invocations="9" avgMicrosecondsPerInvocation="26467" maxMicrosecondsPerInvocation="204805" standardDeviationMicrosecondsPerInvocation="63719"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="225" invocations="7" avgMicrosecondsPerInvocation="32216" maxMicrosecondsPerInvocation="199829" standardDeviationMicrosecondsPerInvocation="68971"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="218" invocations="40" avgMicrosecondsPerInvocation="5467" maxMicrosecondsPerInvocation="68991" standardDeviationMicrosecondsPerInvocation="12016"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="190" invocations="9" avgMicrosecondsPerInvocation="21124" maxMicrosecondsPerInvocation="72203" standardDeviationMicrosecondsPerInvocation="28088"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="166" invocations="258" avgMicrosecondsPerInvocation="643" maxMicrosecondsPerInvocation="25864" standardDeviationMicrosecondsPerInvocation="2913"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="133" invocations="9" avgMicrosecondsPerInvocation="14871" maxMicrosecondsPerInvocation="74309" standardDeviationMicrosecondsPerInvocation="23505"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="110" invocations="24" avgMicrosecondsPerInvocation="4590" maxMicrosecondsPerInvocation="61876" standardDeviationMicrosecondsPerInvocation="12753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="109" invocations="9" avgMicrosecondsPerInvocation="12220" maxMicrosecondsPerInvocation="42160" standardDeviationMicrosecondsPerInvocation="14536"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="98" invocations="295" avgMicrosecondsPerInvocation="334" maxMicrosecondsPerInvocation="48726" standardDeviationMicrosecondsPerInvocation="2991"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="98" invocations="258" avgMicrosecondsPerInvocation="379" maxMicrosecondsPerInvocation="48045" standardDeviationMicrosecondsPerInvocation="3625"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="66" invocations="9" avgMicrosecondsPerInvocation="7369" maxMicrosecondsPerInvocation="27819" standardDeviationMicrosecondsPerInvocation="10804"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

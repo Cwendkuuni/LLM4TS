@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420550077" analysisTimestamp="1714585080480" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/COT/Compress/26/13/org/apache/commons/compress/utils</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="431ef9937bb5a06db10d90580b461a44" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.utils.IOUtilsTest.testCloseQuietly(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="5" end="96" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+        <Message>At IOUtilsTest.java:[lines 5-96]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.utils.IOUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.utils.IOUtilsTest" name="testCloseQuietly" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="91" end="96" startBytecode="0" endBytecode="85" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.utils.IOUtilsTest.testCloseQuietly()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true" start="91" end="91" startBytecode="6" endBytecode="6" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+      <Message>At IOUtilsTest.java:[line 91]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="d18bf2d9a4e682a5644afeb00771168e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.utils.IOUtilsTest.testCopy(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="5" end="96" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+        <Message>At IOUtilsTest.java:[lines 5-96]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.utils.IOUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.utils.IOUtilsTest" name="testCopy" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="10" end="19" startBytecode="0" endBytecode="110" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.utils.IOUtilsTest.testCopy()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true" start="10" end="10" startBytecode="2" endBytecode="2" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+      <Message>At IOUtilsTest.java:[line 10]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="27f511b4fe4da8a7b1f665227fd12237" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.utils.IOUtilsTest.testCopyWithBufferSize(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="5" end="96" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+        <Message>At IOUtilsTest.java:[lines 5-96]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.utils.IOUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.utils.IOUtilsTest" name="testCopyWithBufferSize" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="24" end="34" startBytecode="0" endBytecode="120" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.utils.IOUtilsTest.testCopyWithBufferSize()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true" start="24" end="24" startBytecode="2" endBytecode="2" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+      <Message>At IOUtilsTest.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="b2fb21b09afaba74c826311784dc2473" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.utils.IOUtilsTest.testReadFully(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="5" end="96" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+        <Message>At IOUtilsTest.java:[lines 5-96]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.utils.IOUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.utils.IOUtilsTest" name="testReadFully" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="52" end="60" startBytecode="0" endBytecode="89" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.utils.IOUtilsTest.testReadFully()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true" start="52" end="52" startBytecode="2" endBytecode="2" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+      <Message>At IOUtilsTest.java:[line 52]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="3f5a93656e8fa6022ef1c41bda5140a0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.utils.IOUtilsTest.testReadFullyWithOffsetAndLen(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="5" end="96" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+        <Message>At IOUtilsTest.java:[lines 5-96]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.utils.IOUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.utils.IOUtilsTest" name="testReadFullyWithOffsetAndLen" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="65" end="75" startBytecode="0" endBytecode="111" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.utils.IOUtilsTest.testReadFullyWithOffsetAndLen()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true" start="65" end="65" startBytecode="2" endBytecode="2" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+      <Message>At IOUtilsTest.java:[line 65]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="74" end="74" startBytecode="48" endBytecode="48" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at IOUtilsTest.java:[line 74]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="39e898a6a874424148e730f5d1eb63b9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.utils.IOUtilsTest.testSkip(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="5" end="96" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+        <Message>At IOUtilsTest.java:[lines 5-96]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.utils.IOUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.utils.IOUtilsTest" name="testSkip" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="39" end="47" startBytecode="0" endBytecode="91" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.utils.IOUtilsTest.testSkip()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true" start="39" end="39" startBytecode="2" endBytecode="2" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+      <Message>At IOUtilsTest.java:[line 39]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="d466cd3842edf5693beb47ce515197cf" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.utils.IOUtilsTest.testToByteArray(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="5" end="96" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+        <Message>At IOUtilsTest.java:[lines 5-96]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.utils.IOUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.utils.IOUtilsTest" name="testToByteArray" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" start="80" end="86" startBytecode="0" endBytecode="65" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.utils.IOUtilsTest.testToByteArray()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.utils.IOUtilsTest" primary="true" start="80" end="80" startBytecode="2" endBytecode="2" sourcefile="IOUtilsTest.java" sourcepath="org/apache/commons/compress/utils/IOUtilsTest.java">
+      <Message>At IOUtilsTest.java:[line 80]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.apache.commons.compress.utils.IOUtils</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:15:50 +0100" total_classes="1" referenced_classes="16" total_bugs="7" total_size="59" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.57" clock_seconds="3.25" peak_mbytes="190.41" alloc_mbytes="7104.00" gc_seconds="0.15" priority_1="7">
+    <FileStats path="org/apache/commons/compress/utils/IOUtilsTest.java" bugCount="7" size="59" bugHash="2b7ca57ff77fb6c5e1bae6308841a9f6"/>
+    <PackageStats package="org.apache.commons.compress.utils" total_bugs="7" total_types="1" total_size="59" priority_1="7">
+      <ClassStats class="org.apache.commons.compress.utils.IOUtilsTest" sourceFile="IOUtilsTest.java" interface="false" size="59" bugs="7" priority_1="7"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="420" invocations="313" avgMicrosecondsPerInvocation="1344" maxMicrosecondsPerInvocation="35580" standardDeviationMicrosecondsPerInvocation="4579"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="177" invocations="68" avgMicrosecondsPerInvocation="2604" maxMicrosecondsPerInvocation="26545" standardDeviationMicrosecondsPerInvocation="5074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="171" invocations="16" avgMicrosecondsPerInvocation="10695" maxMicrosecondsPerInvocation="79428" standardDeviationMicrosecondsPerInvocation="20766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="159" invocations="16" avgMicrosecondsPerInvocation="9973" maxMicrosecondsPerInvocation="154081" standardDeviationMicrosecondsPerInvocation="37212"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="110" invocations="35" avgMicrosecondsPerInvocation="3147" maxMicrosecondsPerInvocation="59531" standardDeviationMicrosecondsPerInvocation="10746"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="102" invocations="8" avgMicrosecondsPerInvocation="12835" maxMicrosecondsPerInvocation="53324" standardDeviationMicrosecondsPerInvocation="17629"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="100" invocations="277" avgMicrosecondsPerInvocation="363" maxMicrosecondsPerInvocation="24907" standardDeviationMicrosecondsPerInvocation="2002"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="79" invocations="16" avgMicrosecondsPerInvocation="4976" maxMicrosecondsPerInvocation="28450" standardDeviationMicrosecondsPerInvocation="9204"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="78" invocations="8" avgMicrosecondsPerInvocation="9871" maxMicrosecondsPerInvocation="22235" standardDeviationMicrosecondsPerInvocation="7833"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="63" invocations="8" avgMicrosecondsPerInvocation="7998" maxMicrosecondsPerInvocation="58776" standardDeviationMicrosecondsPerInvocation="19201"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="63" invocations="8" avgMicrosecondsPerInvocation="7930" maxMicrosecondsPerInvocation="30689" standardDeviationMicrosecondsPerInvocation="9243"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="63" invocations="16" avgMicrosecondsPerInvocation="3962" maxMicrosecondsPerInvocation="29037" standardDeviationMicrosecondsPerInvocation="7478"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="62" invocations="1" avgMicrosecondsPerInvocation="62562" maxMicrosecondsPerInvocation="62562" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadEndOfStreamCheck" totalMilliseconds="56" invocations="1" avgMicrosecondsPerInvocation="56468" maxMicrosecondsPerInvocation="56468" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="47" invocations="8" avgMicrosecondsPerInvocation="5916" maxMicrosecondsPerInvocation="14899" standardDeviationMicrosecondsPerInvocation="5416"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="43" invocations="16" avgMicrosecondsPerInvocation="2691" maxMicrosecondsPerInvocation="28874" standardDeviationMicrosecondsPerInvocation="7005"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="37" invocations="8" avgMicrosecondsPerInvocation="4710" maxMicrosecondsPerInvocation="16413" standardDeviationMicrosecondsPerInvocation="5118"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

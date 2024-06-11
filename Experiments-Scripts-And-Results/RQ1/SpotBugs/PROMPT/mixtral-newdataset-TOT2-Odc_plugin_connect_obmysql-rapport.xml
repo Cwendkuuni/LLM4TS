@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713887944855" analysisTimestamp="1714572049597" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MIXTRAL8x7B/MIXTRAL8x7B_FOR_NEW_DATASET/NewDataset-generated-tests/TOT2/Odc/19/4/com/oceanbase/Odc/plugin/connect/obmysql</Jar>
+  </Project>
+  <BugInstance type="DMI_CONSTANT_DB_PASSWORD" priority="2" rank="7" abbrev="Dm" category="SECURITY" instanceHash="1640bc16d4529e8546f5fee17e1228d4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="259">
+    <ShortMessage>Hardcoded constant database password</ShortMessage>
+    <LongMessage>Hardcoded constant database password in com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.setUp()</LongMessage>
+    <Class classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="14" end="104" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+        <Message>At OBMySQLSessionExtensionTest.java:[lines 14-104]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" name="setUp" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="20" end="24" startBytecode="0" endBytecode="12" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java"/>
+      <Message>In method com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.setUp()</Message>
+    </Method>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true" start="23" end="23" startBytecode="13" endBytecode="13" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+      <Message>At OBMySQLSessionExtensionTest.java:[line 23]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DMI_CONSTANT_DB_PASSWORD" priority="2" rank="7" abbrev="Dm" category="SECURITY" instanceHash="32fc00bffb8cbe251e64f43f5b2ea410" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="259">
+    <ShortMessage>Hardcoded constant database password</ShortMessage>
+    <LongMessage>Hardcoded constant database password in com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.testGetCurrentSchemaWithNoSchema()</LongMessage>
+    <Class classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="14" end="104" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+        <Message>At OBMySQLSessionExtensionTest.java:[lines 14-104]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" name="testGetCurrentSchemaWithNoSchema" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="99" end="104" startBytecode="0" endBytecode="18" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java"/>
+      <Message>In method com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.testGetCurrentSchemaWithNoSchema()</Message>
+    </Method>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true" start="100" end="100" startBytecode="8" endBytecode="8" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+      <Message>At OBMySQLSessionExtensionTest.java:[line 100]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="SECURITY">
+    <Description>Security</Description>
+  </BugCategory>
+  <BugPattern type="DMI_CONSTANT_DB_PASSWORD" abbrev="Dm" category="SECURITY" cweid="259">
+    <ShortDescription>Hardcoded constant database password</ShortDescription>
+    <Details><![CDATA[
+      
+    <p>This code creates a database connect using a hardcoded, constant password. Anyone with access to either the source code or the compiled code can
+    easily learn the password.
+</p>
+
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtension</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 23 Apr 2024 17:59:04 +0200" total_classes="1" referenced_classes="13" total_bugs="2" total_size="67" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.55" clock_seconds="5.75" peak_mbytes="191.20" alloc_mbytes="7104.00" gc_seconds="0.25" priority_2="2">
+    <FileStats path="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java" bugCount="2" size="67" bugHash="a18821196668bf10e42415a8c4177f76"/>
+    <PackageStats package="com.oceanbase.odc.plugin.connect.obmysql" total_bugs="2" total_types="1" total_size="67" priority_2="2">
+      <ClassStats class="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" sourceFile="OBMySQLSessionExtensionTest.java" interface="false" size="67" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="835" invocations="329" avgMicrosecondsPerInvocation="2538" maxMicrosecondsPerInvocation="70511" standardDeviationMicrosecondsPerInvocation="7462"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="542" invocations="13" avgMicrosecondsPerInvocation="41712" maxMicrosecondsPerInvocation="318684" standardDeviationMicrosecondsPerInvocation="83839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="222" invocations="75" avgMicrosecondsPerInvocation="2961" maxMicrosecondsPerInvocation="32723" standardDeviationMicrosecondsPerInvocation="6803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="199" invocations="292" avgMicrosecondsPerInvocation="684" maxMicrosecondsPerInvocation="28914" standardDeviationMicrosecondsPerInvocation="3226"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="187" invocations="13" avgMicrosecondsPerInvocation="14398" maxMicrosecondsPerInvocation="75922" standardDeviationMicrosecondsPerInvocation="23945"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="167" invocations="13" avgMicrosecondsPerInvocation="12859" maxMicrosecondsPerInvocation="64084" standardDeviationMicrosecondsPerInvocation="18536"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="145" invocations="31" avgMicrosecondsPerInvocation="4696" maxMicrosecondsPerInvocation="94585" standardDeviationMicrosecondsPerInvocation="16760"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="144" invocations="13" avgMicrosecondsPerInvocation="11090" maxMicrosecondsPerInvocation="93671" standardDeviationMicrosecondsPerInvocation="24714"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="143" invocations="13" avgMicrosecondsPerInvocation="11048" maxMicrosecondsPerInvocation="32060" standardDeviationMicrosecondsPerInvocation="11250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="119" invocations="13" avgMicrosecondsPerInvocation="9217" maxMicrosecondsPerInvocation="108317" standardDeviationMicrosecondsPerInvocation="28667"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="105" invocations="13" avgMicrosecondsPerInvocation="8081" maxMicrosecondsPerInvocation="94921" standardDeviationMicrosecondsPerInvocation="25075"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="100" invocations="13" avgMicrosecondsPerInvocation="7733" maxMicrosecondsPerInvocation="66268" standardDeviationMicrosecondsPerInvocation="18192"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="91" invocations="331" avgMicrosecondsPerInvocation="277" maxMicrosecondsPerInvocation="12341" standardDeviationMicrosecondsPerInvocation="1297"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="88" invocations="13" avgMicrosecondsPerInvocation="6794" maxMicrosecondsPerInvocation="23879" standardDeviationMicrosecondsPerInvocation="7485"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="75" invocations="13" avgMicrosecondsPerInvocation="5839" maxMicrosecondsPerInvocation="61209" standardDeviationMicrosecondsPerInvocation="16051"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="68" invocations="13" avgMicrosecondsPerInvocation="5307" maxMicrosecondsPerInvocation="55462" standardDeviationMicrosecondsPerInvocation="14555"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

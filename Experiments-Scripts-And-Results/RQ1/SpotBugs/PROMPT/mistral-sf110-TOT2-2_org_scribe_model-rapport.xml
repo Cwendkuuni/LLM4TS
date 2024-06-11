@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287215294" analysisTimestamp="1714586287502" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/scribe/VerifierTEST/2/org/scribe/model</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.scribe.model.Verifier</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:55 +0200" total_classes="1" referenced_classes="10" total_bugs="0" total_size="15" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.25" clock_seconds="2.81" peak_mbytes="189.28" alloc_mbytes="7104.00" gc_seconds="0.17">
+    <FileStats path="org/scribe/model/VerifierTest.java" bugCount="0" size="15"/>
+    <PackageStats package="org.scribe.model" total_bugs="0" total_types="1" total_size="15">
+      <ClassStats class="org.scribe.model.VerifierTest" sourceFile="VerifierTest.java" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="448" invocations="308" avgMicrosecondsPerInvocation="1457" maxMicrosecondsPerInvocation="38159" standardDeviationMicrosecondsPerInvocation="4806"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="245" invocations="10" avgMicrosecondsPerInvocation="24589" maxMicrosecondsPerInvocation="193265" standardDeviationMicrosecondsPerInvocation="56808"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="151" invocations="10" avgMicrosecondsPerInvocation="15112" maxMicrosecondsPerInvocation="64578" standardDeviationMicrosecondsPerInvocation="20478"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="126" invocations="60" avgMicrosecondsPerInvocation="2101" maxMicrosecondsPerInvocation="42539" standardDeviationMicrosecondsPerInvocation="5773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="107" invocations="10" avgMicrosecondsPerInvocation="10779" maxMicrosecondsPerInvocation="34874" standardDeviationMicrosecondsPerInvocation="13466"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="76" invocations="27" avgMicrosecondsPerInvocation="2843" maxMicrosecondsPerInvocation="27664" standardDeviationMicrosecondsPerInvocation="7074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="74" invocations="3" avgMicrosecondsPerInvocation="24838" maxMicrosecondsPerInvocation="71296" standardDeviationMicrosecondsPerInvocation="32872"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="55" invocations="10" avgMicrosecondsPerInvocation="5500" maxMicrosecondsPerInvocation="23609" standardDeviationMicrosecondsPerInvocation="9125"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="53" invocations="273" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="12188" standardDeviationMicrosecondsPerInvocation="971"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="51" invocations="3" avgMicrosecondsPerInvocation="17146" maxMicrosecondsPerInvocation="38736" standardDeviationMicrosecondsPerInvocation="15619"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="45" invocations="10" avgMicrosecondsPerInvocation="4586" maxMicrosecondsPerInvocation="33774" standardDeviationMicrosecondsPerInvocation="9821"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

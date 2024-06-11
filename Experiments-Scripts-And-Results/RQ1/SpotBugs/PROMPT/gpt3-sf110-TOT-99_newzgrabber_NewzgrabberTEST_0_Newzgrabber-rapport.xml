@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360743503" analysisTimestamp="1714592456094" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/99_newzgrabber/NewzgrabberTEST/0/Newzgrabber</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="f95132f7b7369ee1aa425706cad5f752" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in Newzgrabber.NewzgrabberTest.testUpdateIni(): new java.io.FileReader(String)</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="6" end="60" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 6-60]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testUpdateIni" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="33" end="53" startBytecode="0" endBytecode="280" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testUpdateIni()</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(String)</Message>
+    </Method>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="40" end="40" startBytecode="34" endBytecode="34" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" instanceHash="ec0fd131507e24b7ca75fc21d5902467" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode peut ne pas fermer un flux</ShortMessage>
+    <LongMessage>La méthode Newzgrabber.NewzgrabberTest.testUpdateIni() peut ne pas fermer un flux</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="6" end="60" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 6-60]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testUpdateIni" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="33" end="53" startBytecode="0" endBytecode="48" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testUpdateIni()</Message>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader" start="66" end="249" sourcefile="Reader.java" sourcepath="java/io/Reader.java">
+        <Message>At Reader.java:[lines 66-249]</Message>
+      </SourceLine>
+      <Message>Need to close java.io.Reader </Message>
+    </Type>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="40" end="40" startBytecode="25" endBytecode="25" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" instanceHash="5969ccbe8a0ec0ee826a87b8c12c362e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="253">
+    <ShortMessage>Method ignores exceptional return value</ShortMessage>
+    <LongMessage>Exceptional return value of java.io.File.delete() ignored in Newzgrabber.NewzgrabberTest.tearDown()</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="6" end="60" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 6-60]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="tearDown" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="58" end="60" startBytecode="0" endBytecode="47" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.tearDown()</Message>
+    </Method>
+    <Method classname="java.io.File" name="delete" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1045" end="1052" startBytecode="0" endBytecode="91" sourcefile="File.java" sourcepath="java/io/File.java"/>
+      <Message>Called method java.io.File.delete()</Message>
+    </Method>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="59" end="59" startBytecode="11" endBytecode="11" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 59]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="OS_OPEN_STREAM" abbrev="OS" category="BAD_PRACTICE">
+    <ShortDescription>La méthode peut ne pas fermer un flux</ShortDescription>
+    <Details><![CDATA[
+
+<p>La méthode crée un objet de flux d'E/S, ne l'assigne à aucun champ, ne le passe à aucune méthode, ne le renvoit pas et ne semble pas le fermer dans tous les chemins d'exécution. Ceci peut entraîner le blocage d'un descripteur de fichier. C'est généralement une bonne idée d'utiliser un bloc <code>finally</code> pour s'assurer de la fermeture des flux.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" abbrev="RV" category="BAD_PRACTICE" cweid="253">
+    <ShortDescription>Method ignores exceptional return value</ShortDescription>
+    <Details><![CDATA[
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="OS">
+    <Description>Flux pas toujours fermé dans les différents chemins d&apos;éxécution</Description>
+  </BugCode>
+  <BugCode abbrev="RV" cweid="440">
+    <Description>Valeur de retour d&apos;une méthode mal utilisée</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>Newzgrabber.Newzgrabber</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:03 +0100" total_classes="1" referenced_classes="17" total_bugs="3" total_size="38" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.04" clock_seconds="1.94" peak_mbytes="191.02" alloc_mbytes="7104.00" gc_seconds="0.15" priority_2="2" priority_1="1">
+    <FileStats path="Newzgrabber/NewzgrabberTest.java" bugCount="3" size="38" bugHash="172424b4e8fd815706cdb3950a86cb4b"/>
+    <PackageStats package="Newzgrabber" total_bugs="3" total_types="1" total_size="38" priority_2="2" priority_1="1">
+      <ClassStats class="Newzgrabber.NewzgrabberTest" sourceFile="NewzgrabberTest.java" interface="false" size="38" bugs="3" priority_2="2" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="285" invocations="361" avgMicrosecondsPerInvocation="790" maxMicrosecondsPerInvocation="24642" standardDeviationMicrosecondsPerInvocation="2554"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="252" invocations="76" avgMicrosecondsPerInvocation="3319" maxMicrosecondsPerInvocation="155745" standardDeviationMicrosecondsPerInvocation="17787"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="98" invocations="17" avgMicrosecondsPerInvocation="5771" maxMicrosecondsPerInvocation="15957" standardDeviationMicrosecondsPerInvocation="5446"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="80" invocations="17" avgMicrosecondsPerInvocation="4761" maxMicrosecondsPerInvocation="18122" standardDeviationMicrosecondsPerInvocation="5579"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="50" invocations="7" avgMicrosecondsPerInvocation="7154" maxMicrosecondsPerInvocation="21095" standardDeviationMicrosecondsPerInvocation="7522"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="47" invocations="17" avgMicrosecondsPerInvocation="2773" maxMicrosecondsPerInvocation="22513" standardDeviationMicrosecondsPerInvocation="5413"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="44" invocations="37" avgMicrosecondsPerInvocation="1212" maxMicrosecondsPerInvocation="20973" standardDeviationMicrosecondsPerInvocation="3485"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="43" invocations="323" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="13323" standardDeviationMicrosecondsPerInvocation="753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="40" invocations="6" avgMicrosecondsPerInvocation="6757" maxMicrosecondsPerInvocation="36702" standardDeviationMicrosecondsPerInvocation="13398"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="38" invocations="6" avgMicrosecondsPerInvocation="6486" maxMicrosecondsPerInvocation="35181" standardDeviationMicrosecondsPerInvocation="12846"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="37" invocations="7" avgMicrosecondsPerInvocation="5327" maxMicrosecondsPerInvocation="13386" standardDeviationMicrosecondsPerInvocation="4968"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="32" invocations="17" avgMicrosecondsPerInvocation="1937" maxMicrosecondsPerInvocation="13752" standardDeviationMicrosecondsPerInvocation="3412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="30" invocations="17" avgMicrosecondsPerInvocation="1786" maxMicrosecondsPerInvocation="16151" standardDeviationMicrosecondsPerInvocation="3771"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="26" invocations="363" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="3101" standardDeviationMicrosecondsPerInvocation="172"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,152 @@
+
+####First step run evosuite on class to generate test case
+$EVOSUITECLI -class org.apache.commons.cli.CommandLine -projectCP ${CLASS_DIR} -generateMOSuite -Dalgorithm=DynaMOSA -base_dir=${OUTPUT_DIR} -Dsearch_budget=${TIME_IN_SECONDS} -Dreport_dir=${OUTPUT_DIR} -Dstopping_condition=MaxTime  -Dcriterion=BRANCH:METHOD:LINE -Dshow_progress=false >> ${project}_${elt}_fixed-${iter}.txt
+
+base directory must be create before using
+
+
+
+
+#####Second step compile generated test
+
+
+find ${OUTPUT}/ -type f -name "*.java" | xargs javac -classpath ${PROJECTS_PATH_CLASS_DIR}:${EVOSUITE_PATH}:${JUNIT_PATH}:${HAMCREST_CORE_PATH}:${SL4J_PATH} > ${OUTPUT}/${project}_${elt}-test-compilation-result-${iter}.txt
+    	
+########Third step run test for bug detection	
+for class in "${Cli_class_list[@]}"; do
+	java -classpath ${PROJECTS_CLASS_DIR_TO_TEST}:${EVOSUITE_PATH}:${JUNIT_PATH}:${HAMCREST_CORE_PATH}:${SL4J_PATH}:${OUTPUT} org.junit.runner.JUnitCore ${class} >> ${OUTPUT}/${project}_${elt}-test-result-${iter}.txt 
+done 
+
+
+
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export EVOSUITE="java -jar $PWD/evosuite-master-1.2.1-SNAPSHOT.jar"
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+
+com.ib.client.ExecutionFilter
+
+$EVOSUITE -class com.ib.client.ExecutionFilter -projectCP ${CLASS_DIR} -generateMOSuite -Dalgorithm=DynaMOSA -base_dir=${OUTPUT_DIR} -Dsearch_budget=${TIME_IN_SECONDS} -Dreport_dir=${OUTPUT_DIR} -Dstopping_condition=MaxTime  -Dcriterion=BRANCH:METHOD:LINE -Dshow_progress=false >> ${project}_${elt}_fixed-${iter}.txt
+
+
+com.ib.client.ExecutionFilter $PWD/1_tulibee/com/ib/client
+
+$EVOSUITE -class com.ib.client.ExecutionFilter -projectCP $PWD/1_tulibee/com/ib/client -generateMOSuite -Dalgorithm=DynaMOSA -base_dir=$PWD/output -Dsearch_budget=180 -Dreport_dir=$PWD/output -Dstopping_condition=MaxTime  -Dcriterion=BRANCH:METHOD:LINE -Dshow_progress=false >> log_output.txt
+
+$EVOSUITE -class com.ib.client.ExecutionFilter -projectCP /media/wendkuuni/VMs/CHATGPT/SF110/1_tullibee/com/ib/client -generateMOSuite -Dalgorithm=DynaMOSA -base_dir=$PWD/output -Dsearch_budget=180 -Dreport_dir=$PWD/output -Dstopping_condition=MaxTime -Dcriterion=BRANCH:METHOD:LINE -Dshow_progress=false 
+
+
+
+#entire jar
+$EVOSUITE -target $PWD/1_tulibee/tullibee.jar -generateMOSuite -Dalgorithm=DynaMOSA -base_dir=$PWD/output -Dsearch_budget=60 -Dreport_dir=$PWD/output -Dstopping_condition=MaxTime -Dcriterion=BRANCH:METHOD:LINE -Dshow_progress=false	
+
+$EVOSUITE -target $PWD/1_tulibee/commons-cli-1.5.0.jar -generateMOSuite -Dalgorithm=DynaMOSA -base_dir=$PWD/output -Dsearch_budget=60 -Dreport_dir=$PWD/output -Dstopping_condition=MaxTime -Dcriterion=BRANCH:METHOD:LINE -Dshow_progress=false	
+
+
+
+
+
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export EVOSUITE="java -jar $PWD/evosuite-master-1.2.1-SNAPSHOT.jar"
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+
+
+####Jar okk
+$EVOSUITE -target commons-cli-1.5.0.jar  -generateMOSuite -Dalgorithm=DynaMOSA -Dcriterion=BRANCH:METHOD:LINE -DOUTPUT_DIR=resultats -Dsearch_budget=180 -Dstopping_condition=MaxTime
+
+$EVOSUITE -target tullibee.jar  -generateMOSuite -Dalgorithm=DynaMOSA -Dcriterion=BRANCH:METHOD:LINE -DOUTPUT_DIR=resultats -Dsearch_budget=180 -Dstopping_condition=MaxTime
+
+###Class okk
+
+mkdir resultats
+com.ib.client.ExecutionFilter
+
+$EVOSUITE -class com.ib.client.ExecutionFilter -projectCP $PWD -generateMOSuite -Dalgorithm=DynaMOSA -base_dir=resultats -Dsearch_budget=180 -Dreport_dir=resultats -Dstopping_condition=MaxTime  -Dcriterion=BRANCH:METHOD:LINE -Dshow_progress=false
+
+
+$EVOSUITE -class com.fasterxml.jackson.databind.deser.std.FromStringDeserializer -projectCP JacksonDatabind/42/ -generateMOSuite -Dalgorithm=DynaMOSA -base_dir=resultats -Dsearch_budget=10 -Dreport_dir=resultats -Dstopping_condition=MaxTime  -Dcriterion=BRANCH:METHOD:LINE -Dshow_progress=false
+
+
+$EVOSUITE -class org.apache.commons.cli.CommandLine -projectCP $PWD/Cli/1/:$PWD/JARS/ -generateMOSuite -Dalgorithm=DynaMOSA -base_dir=resultats -Dsearch_budget=10 -Dreport_dir=resultats -Dstopping_condition=MaxTime  -Dcriterion=BRANCH:METHOD:LINE -Dshow_progress=false
+
+
+############################okkk bon
+$EVOSUITE -class org.apache.commons.cli.CommandLine -projectCP /home/wendkuuni/OUTPUT_BUGGY/Cli/Cli_1_buggy/target/classes:$PWD/JARS/ -generateMOSuite -Dalgorithm=DynaMOSA -base_dir=resultats -Dsearch_budget=10 -Dreport_dir=resultats -Dstopping_condition=MaxTime  -Dcriterion=BRANCH:METHOD:LINE -Dshow_progress=false
+
+
+
+cp -r /home/wendkuuni/OUTPUT_BUGGY/Cli/Cli_1_buggy/target/classes/org/apache/commons/cli /home/wendkuuni/EVOSUITE/LLMS-PROJECT/Defects4J/Cli/1/org/apache/commons/
+############################
+
+############################ okk bon aussi
+$EVOSUITE -class org.apache.commons.cli.CommandLine -projectCP $PWD/Cli/1:$PWD/JARS/ -generateMOSuite -Dalgorithm=DynaMOSA -base_dir=resultats -Dsearch_budget=10 -Dreport_dir=resultats -Dstopping_condition=MaxTime  -Dcriterion=BRANCH:METHOD:LINE -Dshow_progress=false
+
+############################
+
+#closure 
+CLASS_DIR=$CURRENT_DIR/OUTPUT_FIXED/${project}/${project}_${elt}_fixed/build/classes/com
+codec
+CLASS_DIR=$CURRENT_DIR/OUTPUT_FIXED/${project}/${project}_${elt}_fixed/target/classes
+collections
+CLASS_DIR=$CURRENT_DIR/OUTPUT_FIXED/${project}/${project}_${elt}_fixed/target/classes
+compress
+CLASS_DIR=$CURRENT_DIR/OUTPUT_FIXED/${project}/${project}_${elt}_fixed/target/classes
+csv
+CLASS_DIR=$CURRENT_DIR/OUTPUT_FIXED/${project}/${project}_${elt}_fixed/target/classes
+gson
+jacksoncore
+jacksondatabind
+jacksonxml
+jsoup
+jxpath
+lang
+math
+time
+
+#Mockito
+CLASS_DIR=$CURRENT_DIR/OUTPUT_FIXED/${project}/${project}_${elt}_fixed/build/classes/main
+
+
+#############################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

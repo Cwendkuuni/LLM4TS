@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360739387" analysisTimestamp="1714581747981" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/8_gfarcegestionfa/OracleIdentiteDaoTEST/26/fr/unice/gfarce/dao</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="c5a11d906b1b133a866ecec32fec1cd5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode fr.unice.gfarce.dao.OracleIdentiteDaoTest.testFind()</LongMessage>
+    <Class classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" primary="true">
+      <SourceLine classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" start="8" end="98" sourcefile="OracleIdentiteDaoTest.java" sourcepath="fr/unice/gfarce/dao/OracleIdentiteDaoTest.java">
+        <Message>At OracleIdentiteDaoTest.java:[lines 8-98]</Message>
+      </SourceLine>
+      <Message>In class fr.unice.gfarce.dao.OracleIdentiteDaoTest</Message>
+    </Class>
+    <Method classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" name="testFind" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" start="54" end="66" startBytecode="0" endBytecode="22" sourcefile="OracleIdentiteDaoTest.java" sourcepath="fr/unice/gfarce/dao/OracleIdentiteDaoTest.java"/>
+      <Message>In method fr.unice.gfarce.dao.OracleIdentiteDaoTest.testFind()</Message>
+    </Method>
+    <LocalVariable name="?" register="7" pc="41" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 7</Message>
+    </LocalVariable>
+    <SourceLine classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" primary="true" start="62" end="62" startBytecode="39" endBytecode="39" sourcefile="OracleIdentiteDaoTest.java" sourcepath="fr/unice/gfarce/dao/OracleIdentiteDaoTest.java">
+      <Message>At OracleIdentiteDaoTest.java:[line 62]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="2d3454e6e5d4044e22b13be5241bae9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode fr.unice.gfarce.dao.OracleIdentiteDaoTest.testFindCandidat()</LongMessage>
+    <Class classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" primary="true">
+      <SourceLine classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" start="8" end="98" sourcefile="OracleIdentiteDaoTest.java" sourcepath="fr/unice/gfarce/dao/OracleIdentiteDaoTest.java">
+        <Message>At OracleIdentiteDaoTest.java:[lines 8-98]</Message>
+      </SourceLine>
+      <Message>In class fr.unice.gfarce.dao.OracleIdentiteDaoTest</Message>
+    </Class>
+    <Method classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" name="testFindCandidat" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" start="71" end="82" startBytecode="0" endBytecode="19" sourcefile="OracleIdentiteDaoTest.java" sourcepath="fr/unice/gfarce/dao/OracleIdentiteDaoTest.java"/>
+      <Message>In method fr.unice.gfarce.dao.OracleIdentiteDaoTest.testFindCandidat()</Message>
+    </Method>
+    <LocalVariable name="?" register="6" pc="34" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 6</Message>
+    </LocalVariable>
+    <SourceLine classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" primary="true" start="78" end="78" startBytecode="32" endBytecode="32" sourcefile="OracleIdentiteDaoTest.java" sourcepath="fr/unice/gfarce/dao/OracleIdentiteDaoTest.java">
+      <Message>At OracleIdentiteDaoTest.java:[line 78]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="ec990434ee53efbd3030a4926239e76e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode fr.unice.gfarce.dao.OracleIdentiteDaoTest.testFindRespForm()</LongMessage>
+    <Class classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" primary="true">
+      <SourceLine classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" start="8" end="98" sourcefile="OracleIdentiteDaoTest.java" sourcepath="fr/unice/gfarce/dao/OracleIdentiteDaoTest.java">
+        <Message>At OracleIdentiteDaoTest.java:[lines 8-98]</Message>
+      </SourceLine>
+      <Message>In class fr.unice.gfarce.dao.OracleIdentiteDaoTest</Message>
+    </Class>
+    <Method classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" name="testFindRespForm" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" start="87" end="98" startBytecode="0" endBytecode="19" sourcefile="OracleIdentiteDaoTest.java" sourcepath="fr/unice/gfarce/dao/OracleIdentiteDaoTest.java"/>
+      <Message>In method fr.unice.gfarce.dao.OracleIdentiteDaoTest.testFindRespForm()</Message>
+    </Method>
+    <LocalVariable name="?" register="6" pc="34" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 6</Message>
+    </LocalVariable>
+    <SourceLine classname="fr.unice.gfarce.dao.OracleIdentiteDaoTest" primary="true" start="94" end="94" startBytecode="32" endBytecode="32" sourcefile="OracleIdentiteDaoTest.java" sourcepath="fr/unice/gfarce/dao/OracleIdentiteDaoTest.java">
+      <Message>At OracleIdentiteDaoTest.java:[line 94]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>fr.unice.gfarce.dao.OracleIdentiteDao</MissingClass>
+    <MissingClass>fr.unice.gfarce.identity.Identite</MissingClass>
+    <MissingClass>fr.unice.gfarce.identity.Identite$TypeIdentite</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:38:59 +0100" total_classes="1" referenced_classes="12" total_bugs="3" total_size="45" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.40" clock_seconds="3.86" peak_mbytes="190.29" alloc_mbytes="7104.00" gc_seconds="0.21" priority_2="3">
+    <FileStats path="fr/unice/gfarce/dao/OracleIdentiteDaoTest.java" bugCount="3" size="45" bugHash="8261106a9fe3750600e68d0bcfc4b415"/>
+    <PackageStats package="fr.unice.gfarce.dao" total_bugs="3" total_types="1" total_size="45" priority_2="3">
+      <ClassStats class="fr.unice.gfarce.dao.OracleIdentiteDaoTest" sourceFile="OracleIdentiteDaoTest.java" interface="false" size="45" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="686" invocations="341" avgMicrosecondsPerInvocation="2011" maxMicrosecondsPerInvocation="28063" standardDeviationMicrosecondsPerInvocation="5136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="428" invocations="12" avgMicrosecondsPerInvocation="35738" maxMicrosecondsPerInvocation="255890" standardDeviationMicrosecondsPerInvocation="69885"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="179" invocations="78" avgMicrosecondsPerInvocation="2305" maxMicrosecondsPerInvocation="34047" standardDeviationMicrosecondsPerInvocation="5652"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="166" invocations="12" avgMicrosecondsPerInvocation="13862" maxMicrosecondsPerInvocation="82376" standardDeviationMicrosecondsPerInvocation="24271"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="143" invocations="12" avgMicrosecondsPerInvocation="11984" maxMicrosecondsPerInvocation="58692" standardDeviationMicrosecondsPerInvocation="17482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="105" invocations="31" avgMicrosecondsPerInvocation="3410" maxMicrosecondsPerInvocation="32007" standardDeviationMicrosecondsPerInvocation="7314"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="92" invocations="343" avgMicrosecondsPerInvocation="269" maxMicrosecondsPerInvocation="24113" standardDeviationMicrosecondsPerInvocation="1903"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="76" invocations="303" avgMicrosecondsPerInvocation="252" maxMicrosecondsPerInvocation="16351" standardDeviationMicrosecondsPerInvocation="1338"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="70" invocations="7" avgMicrosecondsPerInvocation="10127" maxMicrosecondsPerInvocation="68520" standardDeviationMicrosecondsPerInvocation="23842"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="68" invocations="7" avgMicrosecondsPerInvocation="9808" maxMicrosecondsPerInvocation="48660" standardDeviationMicrosecondsPerInvocation="16115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="61" invocations="12" avgMicrosecondsPerInvocation="5103" maxMicrosecondsPerInvocation="29808" standardDeviationMicrosecondsPerInvocation="9253"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="60" invocations="7" avgMicrosecondsPerInvocation="8635" maxMicrosecondsPerInvocation="37944" standardDeviationMicrosecondsPerInvocation="13118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="52" invocations="7" avgMicrosecondsPerInvocation="7544" maxMicrosecondsPerInvocation="47905" standardDeviationMicrosecondsPerInvocation="16479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="49" invocations="12" avgMicrosecondsPerInvocation="4085" maxMicrosecondsPerInvocation="26671" standardDeviationMicrosecondsPerInvocation="7797"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

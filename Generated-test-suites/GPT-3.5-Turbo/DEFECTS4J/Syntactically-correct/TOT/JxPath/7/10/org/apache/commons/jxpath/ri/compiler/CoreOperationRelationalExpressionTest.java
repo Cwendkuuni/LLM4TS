@@ -1,0 +1,31 @@
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class CoreOperationRelationalExpressionTest {
+
+    @Test
+    public void testGetPrecedence() {
+        CoreOperationRelationalExpression expression = new CoreOperationRelationalExpression(null);
+        int result = expression.getPrecedence();
+
+        assertEquals(3, result);
+    }
+
+    @Test
+    public void testIsSymmetric() {
+        CoreOperationRelationalExpression expression = new CoreOperationRelationalExpression(null);
+        boolean result = expression.isSymmetric();
+
+        assertFalse(result);
+    }
+
+    @Test
+    public void testConstructor() {
+        Expression[] args = new Expression[2];
+        CoreOperationRelationalExpression expression = new CoreOperationRelationalExpression(args);
+
+        assertNotNull(expression);
+        assertArrayEquals(args, expression.getArgs());
+    }
+
+}

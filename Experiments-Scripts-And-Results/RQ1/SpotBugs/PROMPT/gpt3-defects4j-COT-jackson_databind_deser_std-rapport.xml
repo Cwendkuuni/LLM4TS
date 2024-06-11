@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420552365" analysisTimestamp="1714572427898" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/COT/JacksonDatabind/39/28/com/fasterxml/jackson/databind/deser/std</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="82947b3b9800f79081dc3b71d6ca0652" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest.testDeserialize()</LongMessage>
+    <Class classname="com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest" start="5" end="21" sourcefile="NullifyingDeserializerTest.java" sourcepath="com/fasterxml/jackson/databind/deser/std/NullifyingDeserializerTest.java">
+        <Message>At NullifyingDeserializerTest.java:[lines 5-21]</Message>
+      </SourceLine>
+      <Message>In class com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest</Message>
+    </Class>
+    <Method classname="com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest" name="testDeserialize" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest" start="9" end="13" startBytecode="0" endBytecode="4" sourcefile="NullifyingDeserializerTest.java" sourcepath="com/fasterxml/jackson/databind/deser/std/NullifyingDeserializerTest.java"/>
+      <Message>In method com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest.testDeserialize()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest" primary="true" start="9" end="9" startBytecode="7" endBytecode="7" sourcefile="NullifyingDeserializerTest.java" sourcepath="com/fasterxml/jackson/databind/deser/std/NullifyingDeserializerTest.java">
+      <Message>At NullifyingDeserializerTest.java:[line 9]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="67b807e9bb6bf64d1e7f72d0dc07a7b2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest.testDeserializeWithType()</LongMessage>
+    <Class classname="com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest" start="5" end="21" sourcefile="NullifyingDeserializerTest.java" sourcepath="com/fasterxml/jackson/databind/deser/std/NullifyingDeserializerTest.java">
+        <Message>At NullifyingDeserializerTest.java:[lines 5-21]</Message>
+      </SourceLine>
+      <Message>In class com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest</Message>
+    </Class>
+    <Method classname="com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest" name="testDeserializeWithType" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest" start="17" end="21" startBytecode="0" endBytecode="4" sourcefile="NullifyingDeserializerTest.java" sourcepath="com/fasterxml/jackson/databind/deser/std/NullifyingDeserializerTest.java"/>
+      <Message>In method com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest.testDeserializeWithType()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest" primary="true" start="17" end="17" startBytecode="7" endBytecode="7" sourcefile="NullifyingDeserializerTest.java" sourcepath="com/fasterxml/jackson/databind/deser/std/NullifyingDeserializerTest.java">
+      <Message>At NullifyingDeserializerTest.java:[line 17]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>com.fasterxml.jackson.databind.deser.std.NullifyingDeserializer</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:15:52 +0100" total_classes="1" referenced_classes="9" total_bugs="2" total_size="9" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.82" clock_seconds="3.97" peak_mbytes="188.81" alloc_mbytes="7104.00" gc_seconds="0.17" priority_1="2">
+    <FileStats path="com/fasterxml/jackson/databind/deser/std/NullifyingDeserializerTest.java" bugCount="2" size="9" bugHash="bd13890d012f77a8e0d6b4c00a6c623d"/>
+    <PackageStats package="com.fasterxml.jackson.databind.deser.std" total_bugs="2" total_types="1" total_size="9" priority_1="2">
+      <ClassStats class="com.fasterxml.jackson.databind.deser.std.NullifyingDeserializerTest" sourceFile="NullifyingDeserializerTest.java" interface="false" size="9" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="603" invocations="292" avgMicrosecondsPerInvocation="2065" maxMicrosecondsPerInvocation="52901" standardDeviationMicrosecondsPerInvocation="5883"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="217" invocations="9" avgMicrosecondsPerInvocation="24136" maxMicrosecondsPerInvocation="73015" standardDeviationMicrosecondsPerInvocation="29150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="205" invocations="9" avgMicrosecondsPerInvocation="22886" maxMicrosecondsPerInvocation="201305" standardDeviationMicrosecondsPerInvocation="63084"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="187" invocations="36" avgMicrosecondsPerInvocation="5212" maxMicrosecondsPerInvocation="41166" standardDeviationMicrosecondsPerInvocation="9943"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="158" invocations="3" avgMicrosecondsPerInvocation="52801" maxMicrosecondsPerInvocation="147139" standardDeviationMicrosecondsPerInvocation="66856"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="155" invocations="9" avgMicrosecondsPerInvocation="17226" maxMicrosecondsPerInvocation="89281" standardDeviationMicrosecondsPerInvocation="28351"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="148" invocations="9" avgMicrosecondsPerInvocation="16495" maxMicrosecondsPerInvocation="82034" standardDeviationMicrosecondsPerInvocation="26907"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="104" invocations="258" avgMicrosecondsPerInvocation="404" maxMicrosecondsPerInvocation="27339" standardDeviationMicrosecondsPerInvocation="2083"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="100" invocations="23" avgMicrosecondsPerInvocation="4358" maxMicrosecondsPerInvocation="71664" standardDeviationMicrosecondsPerInvocation="14726"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="98" invocations="1" avgMicrosecondsPerInvocation="98267" maxMicrosecondsPerInvocation="98267" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="81" invocations="9" avgMicrosecondsPerInvocation="9104" maxMicrosecondsPerInvocation="48997" standardDeviationMicrosecondsPerInvocation="16729"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="78" invocations="9" avgMicrosecondsPerInvocation="8763" maxMicrosecondsPerInvocation="48024" standardDeviationMicrosecondsPerInvocation="14765"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="75" invocations="3" avgMicrosecondsPerInvocation="25268" maxMicrosecondsPerInvocation="74721" standardDeviationMicrosecondsPerInvocation="34968"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

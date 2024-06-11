@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420567625" analysisTimestamp="1714599019424" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT/Math/78/23/org/apache/commons/math/ode/events</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="f37abb6ad905205b634549ee048512ee" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.apache.commons.math.ode.events.EventStateTest.eventState</LongMessage>
+    <Class classname="org.apache.commons.math.ode.events.EventStateTest" primary="true">
+      <SourceLine classname="org.apache.commons.math.ode.events.EventStateTest" start="6" end="60" sourcefile="EventStateTest.java" sourcepath="org/apache/commons/math/ode/events/EventStateTest.java">
+        <Message>At EventStateTest.java:[lines 6-60]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.ode.events.EventStateTest</Message>
+    </Class>
+    <Field classname="org.apache.commons.math.ode.events.EventStateTest" name="eventState" signature="Lorg/apache/commons/math/ode/events/EventState;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.ode.events.EventStateTest" sourcefile="EventStateTest.java" sourcepath="org/apache/commons/math/ode/events/EventStateTest.java">
+        <Message>In EventStateTest.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.math.ode.events.EventStateTest.eventState</Message>
+    </Field>
+    <SourceLine classname="org.apache.commons.math.ode.events.EventStateTest" primary="true" start="29" end="29" startBytecode="24" endBytecode="24" sourcefile="EventStateTest.java" sourcepath="org/apache/commons/math/ode/events/EventStateTest.java">
+      <Message>At EventStateTest.java:[line 29]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.apache.commons.math.ode.events.EventHandler</MissingClass>
+    <MissingClass>org.apache.commons.math.ode.events.EventState</MissingClass>
+    <MissingClass>org.apache.commons.math.ode.events.EventStateTest$1</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:07 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="23" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.50" clock_seconds="1.59" peak_mbytes="189.72" alloc_mbytes="7104.00" gc_seconds="0.12" priority_2="1">
+    <FileStats path="org/apache/commons/math/ode/events/EventStateTest.java" bugCount="1" size="23" bugHash="bff8d284d720909ee707438491f8e9d4"/>
+    <PackageStats package="org.apache.commons.math.ode.events" total_bugs="1" total_types="1" total_size="23" priority_2="1">
+      <ClassStats class="org.apache.commons.math.ode.events.EventStateTest" sourceFile="EventStateTest.java" interface="false" size="23" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="283" invocations="311" avgMicrosecondsPerInvocation="910" maxMicrosecondsPerInvocation="25990" standardDeviationMicrosecondsPerInvocation="2619"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="201" invocations="64" avgMicrosecondsPerInvocation="3147" maxMicrosecondsPerInvocation="126810" standardDeviationMicrosecondsPerInvocation="15791"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="82" invocations="10" avgMicrosecondsPerInvocation="8283" maxMicrosecondsPerInvocation="39969" standardDeviationMicrosecondsPerInvocation="11930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="58" invocations="26" avgMicrosecondsPerInvocation="2261" maxMicrosecondsPerInvocation="22051" standardDeviationMicrosecondsPerInvocation="5541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="41" invocations="10" avgMicrosecondsPerInvocation="4170" maxMicrosecondsPerInvocation="20023" standardDeviationMicrosecondsPerInvocation="7351"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="38" invocations="273" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="8578" standardDeviationMicrosecondsPerInvocation="550"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="35" invocations="10" avgMicrosecondsPerInvocation="3529" maxMicrosecondsPerInvocation="26537" standardDeviationMicrosecondsPerInvocation="7746"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="34" invocations="10" avgMicrosecondsPerInvocation="3483" maxMicrosecondsPerInvocation="13297" standardDeviationMicrosecondsPerInvocation="4714"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="34" invocations="7" avgMicrosecondsPerInvocation="4956" maxMicrosecondsPerInvocation="32407" standardDeviationMicrosecondsPerInvocation="11214"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="28" invocations="10" avgMicrosecondsPerInvocation="2890" maxMicrosecondsPerInvocation="12008" standardDeviationMicrosecondsPerInvocation="3515"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="23" invocations="7" avgMicrosecondsPerInvocation="3350" maxMicrosecondsPerInvocation="18722" standardDeviationMicrosecondsPerInvocation="6291"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

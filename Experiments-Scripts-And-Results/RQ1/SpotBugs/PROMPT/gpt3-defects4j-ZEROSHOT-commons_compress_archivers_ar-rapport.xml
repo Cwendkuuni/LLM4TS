@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420582017" analysisTimestamp="1714613606006" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/ZEROSHOT/Compress/2/11/org/apache/commons/compress/archivers/ar</Jar>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="21f1227b8ed9fc929eb717ee42855e33" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest.arArchiveInputStream</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest" start="5" end="47" sourcefile="ArArchiveInputStreamTest.java" sourcepath="org/apache/commons/compress/archivers/ar/ArArchiveInputStreamTest.java">
+        <Message>At ArArchiveInputStreamTest.java:[lines 5-47]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest</Message>
+    </Class>
+    <Field classname="org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest" name="arArchiveInputStream" signature="Lorg/apache/commons/compress/archivers/ar/ArArchiveInputStream;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest" sourcefile="ArArchiveInputStreamTest.java" sourcepath="org/apache/commons/compress/archivers/ar/ArArchiveInputStreamTest.java">
+        <Message>In ArArchiveInputStreamTest.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest.arArchiveInputStream</Message>
+    </Field>
+    <SourceLine classname="org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest" sourcefile="ArArchiveInputStreamTest.java" sourcepath="org/apache/commons/compress/archivers/ar/ArArchiveInputStreamTest.java" synthetic="true">
+      <Message>In ArArchiveInputStreamTest.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="UUF_UNUSED_FIELD" abbrev="UuF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais utilisé. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UuF">
+    <Description>Champ inutilisé</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:22 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="20" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="3.02" clock_seconds="0.66" peak_mbytes="189.70" alloc_mbytes="7104.00" gc_seconds="0.04" priority_2="1">
+    <FileStats path="org/apache/commons/compress/archivers/ar/ArArchiveInputStreamTest.java" bugCount="1" size="20" bugHash="6cccadb77ffffe141c83a638fd0e4a44"/>
+    <PackageStats package="org.apache.commons.compress.archivers.ar" total_bugs="1" total_types="1" total_size="20" priority_2="1">
+      <ClassStats class="org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest" sourceFile="ArArchiveInputStreamTest.java" interface="false" size="20" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="104" invocations="292" avgMicrosecondsPerInvocation="359" maxMicrosecondsPerInvocation="10126" standardDeviationMicrosecondsPerInvocation="892"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="52" invocations="9" avgMicrosecondsPerInvocation="5853" maxMicrosecondsPerInvocation="43502" standardDeviationMicrosecondsPerInvocation="13490"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="24" invocations="9" avgMicrosecondsPerInvocation="2737" maxMicrosecondsPerInvocation="9479" standardDeviationMicrosecondsPerInvocation="3508"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="22" invocations="9" avgMicrosecondsPerInvocation="2500" maxMicrosecondsPerInvocation="21623" standardDeviationMicrosecondsPerInvocation="6763"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="21" invocations="42" avgMicrosecondsPerInvocation="505" maxMicrosecondsPerInvocation="2717" standardDeviationMicrosecondsPerInvocation="576"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="19" invocations="23" avgMicrosecondsPerInvocation="835" maxMicrosecondsPerInvocation="11842" standardDeviationMicrosecondsPerInvocation="2430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="16" invocations="9" avgMicrosecondsPerInvocation="1807" maxMicrosecondsPerInvocation="8249" standardDeviationMicrosecondsPerInvocation="2543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="15" invocations="258" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="1164" standardDeviationMicrosecondsPerInvocation="122"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="11" invocations="9" avgMicrosecondsPerInvocation="1251" maxMicrosecondsPerInvocation="5341" standardDeviationMicrosecondsPerInvocation="1669"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

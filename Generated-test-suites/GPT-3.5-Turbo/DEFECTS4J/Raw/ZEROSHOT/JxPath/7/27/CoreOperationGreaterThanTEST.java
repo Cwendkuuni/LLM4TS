@@ -1,0 +1,31 @@
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class CoreOperationGreaterThanTest {
+
+    @Test
+    public void testComputeValue() {
+        Expression arg1 = new Expression();
+        Expression arg2 = new Expression();
+        
+        CoreOperationGreaterThan operation = new CoreOperationGreaterThan(arg1, arg2);
+        
+        EvalContext context = new EvalContext();
+        
+        Object result = operation.computeValue(context);
+        
+        assertEquals(Boolean.FALSE, result);
+    }
+    
+    @Test
+    public void testGetSymbol() {
+        Expression arg1 = new Expression();
+        Expression arg2 = new Expression();
+        
+        CoreOperationGreaterThan operation = new CoreOperationGreaterThan(arg1, arg2);
+        
+        String symbol = operation.getSymbol();
+        
+        assertEquals(">", symbol);
+    }
+}

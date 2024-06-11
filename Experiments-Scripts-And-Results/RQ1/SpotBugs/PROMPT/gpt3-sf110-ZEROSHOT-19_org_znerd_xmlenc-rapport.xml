@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360753856" analysisTimestamp="1714602075253" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/xmlenc/XMLEncoderTEST/19/org/znerd/xmlenc</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="989447f766ab6270b1e9e49d7cc0a5fe" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.znerd.xmlenc.XMLEncoderTest.testGetEncoderInvalidEncoding()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="72" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-72]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testGetEncoderInvalidEncoding" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="23" end="24" startBytecode="0" endBytecode="3" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testGetEncoderInvalidEncoding()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="6" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="23" end="23" startBytecode="5" endBytecode="5" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 23]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="10d1fea0bb21b768fb205af125ce6697" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.znerd.xmlenc.XMLEncoderTest.testGetEncoderNullEncoding()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="72" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-72]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testGetEncoderNullEncoding" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="18" end="19" startBytecode="0" endBytecode="3" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testGetEncoderNullEncoding()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="5" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="18" end="18" startBytecode="4" endBytecode="4" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 18]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.znerd.xmlenc.XMLEncoder</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:13 +0100" total_classes="1" referenced_classes="14" total_bugs="2" total_size="51" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.76" clock_seconds="1.44" peak_mbytes="190.19" alloc_mbytes="7104.00" gc_seconds="0.08" priority_2="2">
+    <FileStats path="org/znerd/xmlenc/XMLEncoderTest.java" bugCount="2" size="51" bugHash="c8df6089881e6a040228b9b232461cea"/>
+    <PackageStats package="org.znerd.xmlenc" total_bugs="2" total_types="1" total_size="51" priority_2="2">
+      <ClassStats class="org.znerd.xmlenc.XMLEncoderTest" sourceFile="XMLEncoderTest.java" interface="false" size="51" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="253" invocations="311" avgMicrosecondsPerInvocation="814" maxMicrosecondsPerInvocation="34150" standardDeviationMicrosecondsPerInvocation="2687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="118" invocations="14" avgMicrosecondsPerInvocation="8446" maxMicrosecondsPerInvocation="86678" standardDeviationMicrosecondsPerInvocation="21912"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="68" invocations="14" avgMicrosecondsPerInvocation="4896" maxMicrosecondsPerInvocation="17610" standardDeviationMicrosecondsPerInvocation="6446"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="62" invocations="66" avgMicrosecondsPerInvocation="939" maxMicrosecondsPerInvocation="10191" standardDeviationMicrosecondsPerInvocation="1561"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="42" invocations="33" avgMicrosecondsPerInvocation="1300" maxMicrosecondsPerInvocation="22802" standardDeviationMicrosecondsPerInvocation="4033"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="39" invocations="9" avgMicrosecondsPerInvocation="4412" maxMicrosecondsPerInvocation="32433" standardDeviationMicrosecondsPerInvocation="9973"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="30" invocations="276" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="1589" standardDeviationMicrosecondsPerInvocation="197"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="25" invocations="9" avgMicrosecondsPerInvocation="2804" maxMicrosecondsPerInvocation="18396" standardDeviationMicrosecondsPerInvocation="5515"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="23" invocations="14" avgMicrosecondsPerInvocation="1706" maxMicrosecondsPerInvocation="15104" standardDeviationMicrosecondsPerInvocation="3835"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="23" invocations="14" avgMicrosecondsPerInvocation="1644" maxMicrosecondsPerInvocation="8563" standardDeviationMicrosecondsPerInvocation="2348"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="20" invocations="14" avgMicrosecondsPerInvocation="1445" maxMicrosecondsPerInvocation="6996" standardDeviationMicrosecondsPerInvocation="2134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="20" invocations="313" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="542" standardDeviationMicrosecondsPerInvocation="48"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="18" invocations="9" avgMicrosecondsPerInvocation="2084" maxMicrosecondsPerInvocation="11427" standardDeviationMicrosecondsPerInvocation="3314"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="17" invocations="9" avgMicrosecondsPerInvocation="1976" maxMicrosecondsPerInvocation="11801" standardDeviationMicrosecondsPerInvocation="3477"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,10 @@
+import static org.junit.Assert.*;
+ import org.apache.commons.compress.archivers.CpioArchiveEntry;
+ import org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream;
+ import org.apache.commons.compress.utils.CpioConstants;
+ import org.apache.commons.compress.utils.CpioUtil;
+ import org.junit.Test;
+ import java.io.ByteArrayOutputStream;
+ import java.io.File;
+ import java.io.FileOutputStream;
+ import java.io.IOException;

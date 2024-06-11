@@ -1,0 +1,66 @@
+import org.junit.Assert;
+import org.junit.Test;
+
+public class TimeOfDayTest {
+
+    @Test
+    public void testConstructor() {
+        TimeOfDay time1 = new TimeOfDay(6, 30);
+        Assert.assertEquals(Integer.valueOf(6), time1.getHours());
+        Assert.assertEquals(Integer.valueOf(30), time1.getMinutes());
+
+        TimeOfDay time2 = new TimeOfDay("11:45");
+        Assert.assertEquals(Integer.valueOf(11), time2.getHours());
+        Assert.assertEquals(Integer.valueOf(45), time2.getMinutes());
+    }
+
+    @Test
+    public void testCompareTo() {
+        TimeOfDay time1 = new TimeOfDay(6, 30);
+        TimeOfDay time2 = new TimeOfDay(11, 45);
+        TimeOfDay time3 = new TimeOfDay(6, 30);
+        TimeOfDay time4 = new TimeOfDay(6, 45);
+
+        Assert.assertTrue(time1.compareTo(time2) < 0);
+        Assert.assertTrue(time2.compareTo(time1) > 0);
+        Assert.assertTrue(time1.compareTo(time3) == 0);
+        Assert.assertTrue(time1.compareTo(time4) < 0);
+        Assert.assertTrue(time4.compareTo(time1) > 0);
+    }
+
+    @Test
+    public void testGetHours() {
+        TimeOfDay time = new TimeOfDay(6, 30);
+        Assert.assertEquals(Integer.valueOf(6), time.getHours());
+    }
+
+    @Test
+    public void testGetMinutes() {
+        TimeOfDay time = new TimeOfDay(6, 30);
+        Assert.assertEquals(Integer.valueOf(30), time.getMinutes());
+    }
+
+    @Test
+    public void testToString() {
+        TimeOfDay time = new TimeOfDay(6, 30);
+        Assert.assertEquals("6:30", time.toString());
+    }
+
+    @Test
+    public void testHashCode() {
+        TimeOfDay time1 = new TimeOfDay(6, 30);
+        TimeOfDay time2 = new TimeOfDay(6, 30);
+
+        Assert.assertEquals(time1.hashCode(), time2.hashCode());
+    }
+
+    @Test
+    public void testEquals() {
+        TimeOfDay time1 = new TimeOfDay(6, 30);
+        TimeOfDay time2 = new TimeOfDay(6, 30);
+        TimeOfDay time3 = new TimeOfDay(11, 45);
+
+        Assert.assertTrue(time1.equals(time2));
+        Assert.assertFalse(time1.equals(time3));
+    }
+}

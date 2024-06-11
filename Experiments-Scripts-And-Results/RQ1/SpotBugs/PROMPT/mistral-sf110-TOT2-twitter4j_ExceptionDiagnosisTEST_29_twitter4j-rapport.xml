@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287215758" analysisTimestamp="1714582038526" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/twitter4j/ExceptionDiagnosisTEST/29/twitter4j</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="2668e26950a61217c3fcc202b7ffd255" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode twitter4j.ExceptionDiagnosisTest.testNullThrowable()</LongMessage>
+    <Class classname="twitter4j.ExceptionDiagnosisTest" primary="true">
+      <SourceLine classname="twitter4j.ExceptionDiagnosisTest" start="5" end="33" sourcefile="ExceptionDiagnosisTest.java" sourcepath="twitter4j/ExceptionDiagnosisTest.java">
+        <Message>At ExceptionDiagnosisTest.java:[lines 5-33]</Message>
+      </SourceLine>
+      <Message>In class twitter4j.ExceptionDiagnosisTest</Message>
+    </Class>
+    <Method classname="twitter4j.ExceptionDiagnosisTest" name="testNullThrowable" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="twitter4j.ExceptionDiagnosisTest" start="16" end="17" startBytecode="0" endBytecode="5" sourcefile="ExceptionDiagnosisTest.java" sourcepath="twitter4j/ExceptionDiagnosisTest.java"/>
+      <Message>In method twitter4j.ExceptionDiagnosisTest.testNullThrowable()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="9" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="twitter4j.ExceptionDiagnosisTest" primary="true" start="16" end="16" startBytecode="8" endBytecode="8" sourcefile="ExceptionDiagnosisTest.java" sourcepath="twitter4j/ExceptionDiagnosisTest.java">
+      <Message>At ExceptionDiagnosisTest.java:[line 16]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>twitter4j.ExceptionDiagnosis</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:55 +0200" total_classes="1" referenced_classes="11" total_bugs="1" total_size="23" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.84" clock_seconds="3.56" peak_mbytes="190.11" alloc_mbytes="7104.00" gc_seconds="0.21" priority_1="1">
+    <FileStats path="twitter4j/ExceptionDiagnosisTest.java" bugCount="1" size="23" bugHash="eb8a3aef4ba3eddab47352ec1b3399fe"/>
+    <PackageStats package="twitter4j" total_bugs="1" total_types="1" total_size="23" priority_1="1">
+      <ClassStats class="twitter4j.ExceptionDiagnosisTest" sourceFile="ExceptionDiagnosisTest.java" interface="false" size="23" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="625" invocations="315" avgMicrosecondsPerInvocation="1986" maxMicrosecondsPerInvocation="43247" standardDeviationMicrosecondsPerInvocation="5952"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="266" invocations="11" avgMicrosecondsPerInvocation="24246" maxMicrosecondsPerInvocation="237083" standardDeviationMicrosecondsPerInvocation="67542"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="149" invocations="11" avgMicrosecondsPerInvocation="13561" maxMicrosecondsPerInvocation="45237" standardDeviationMicrosecondsPerInvocation="17011"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="146" invocations="62" avgMicrosecondsPerInvocation="2370" maxMicrosecondsPerInvocation="35867" standardDeviationMicrosecondsPerInvocation="6108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="116" invocations="279" avgMicrosecondsPerInvocation="417" maxMicrosecondsPerInvocation="30195" standardDeviationMicrosecondsPerInvocation="2354"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="114" invocations="11" avgMicrosecondsPerInvocation="10370" maxMicrosecondsPerInvocation="55421" standardDeviationMicrosecondsPerInvocation="19334"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="88" invocations="28" avgMicrosecondsPerInvocation="3154" maxMicrosecondsPerInvocation="36014" standardDeviationMicrosecondsPerInvocation="8030"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="83" invocations="11" avgMicrosecondsPerInvocation="7561" maxMicrosecondsPerInvocation="32986" standardDeviationMicrosecondsPerInvocation="10708"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="79" invocations="5" avgMicrosecondsPerInvocation="15877" maxMicrosecondsPerInvocation="55597" standardDeviationMicrosecondsPerInvocation="20202"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="72" invocations="5" avgMicrosecondsPerInvocation="14539" maxMicrosecondsPerInvocation="59018" standardDeviationMicrosecondsPerInvocation="22578"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="66" invocations="11" avgMicrosecondsPerInvocation="6076" maxMicrosecondsPerInvocation="38110" standardDeviationMicrosecondsPerInvocation="12089"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="66" invocations="5" avgMicrosecondsPerInvocation="13221" maxMicrosecondsPerInvocation="61184" standardDeviationMicrosecondsPerInvocation="23991"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="57" invocations="5" avgMicrosecondsPerInvocation="11421" maxMicrosecondsPerInvocation="28918" standardDeviationMicrosecondsPerInvocation="13203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="57" invocations="5" avgMicrosecondsPerInvocation="11411" maxMicrosecondsPerInvocation="27810" standardDeviationMicrosecondsPerInvocation="12862"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

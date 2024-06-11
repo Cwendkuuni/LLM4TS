@@ -1,0 +1,44 @@
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+        assertEquals("", Util.stripLeadingHyphens(""));
+        assertEquals("abc", Util.stripLeadingHyphens("abc"));
+        assertEquals("--", Util.stripLeadingHyphens("--"));
+        assertEquals("-", Util.stripLeadingHyphens("-"));
+        assertEquals("--ab", Util.stripLeadingHyphens("--ab"));
+        assertEquals("--ab--", Util.stripLeadingHyphens("--ab--"));
+        assertEquals("--ab--cd", Util.stripLeadingHyphens("--ab--cd"));
+    }
+
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes("\"foo\""));
+        assertEquals("foo bar", Util.stripLeadingAndTrailingQuotes("\"foo bar\""));
+        assertEquals("foo and bar", Util.stripLeadingAndTrailingQuotes("\"foo and bar\""));
+        assertEquals("", Util.stripLeadingAndTrailingQuotes(""));
+        assertEquals("\"foo\"", Util.stripLeadingAndTrailingQuotes("\"\"foo\"\""));
+        assertEquals("\"foo bar\"", Util.stripLeadingAndTrailingQuotes("\"foo bar\""));
+        assertEquals("\"foo bar and baz\"", Util.stripLeadingAndTrailingQuotes("\"foo bar and baz\""));
+        assertEquals("\"--foo\"", Util.stripLeadingAndTrailingQuotes("\"--foo\""));
+        assertEquals("\"--foo--\"", Util.stripLeadingAndTrailingQuotes("\"--foo--\""));
+        assertEquals("\"--foo--bar\"", Util.stripLeadingAndTrailingQuotes("\"--foo--bar\""));
+    }
+
+    @Test
+    public void testEmptyStringArray() {
+        String[] array = Util.EMPTY_STRING_ARRAY;
+        assertEquals(0, array.length);
+    }
+}

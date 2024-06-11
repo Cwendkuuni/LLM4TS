@@ -1,0 +1,69 @@
+package org.scribe.model;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
+
+import org.junit.Test;
+
+public class OAuthConfigTest {
+    @Test
+    public void testConstructorWithTwoArguments() {
+        OAuthConfig config = new OAuthConfig("key", "secret");
+        assertEquals("key", config.getApiKey());
+        assertEquals("secret", config.getApiSecret());
+        assertEquals("oob", config.getCallback());
+        assertEquals(SignatureType.Header, config.getSignatureType());
+        assertNull(config.getScope());
+        assertFalse(config.hasScope());
+    }
+    
+    @Test
+    public void testConstructorWithFiveArguments() {
+        SignatureType type = SignatureType.QueryString;
+        OAuthConfig config = new OAuthConfig("key", "secret", "callback", type, "scope");
+        assertEquals("key", config.getApiKey());
+        assertEquals("secret", config.getApiSecret());
+        assertEquals("callback", config.getCallback());
+        assertEquals(type, config.getSignatureType());
+        assertEquals("scope", config.getScope());
+        assertTrue(config.hasScope());
+    }
+    
+    @Test
+    public void testGetApiKey() {
+        OAuthConfig config = new OAuthConfig("key", "secret");
+        assertEquals("key", config.getApiKey());
+    }
+    
+    @Test
+    public void testGetApiSecret() {
+        OAuthConfig config = new OAuthConfig("key", "secret");
+        assertEquals("secret", config.getApiSecret());
+    }
+    
+    @Test
+    public void testGetCallback() {
+        OAuthConfig config = new OAuthConfig("key", "secret");
+        assertEquals("oob", config.getCallback());
+    }
+    
+    @Test
+    public void testGetSignatureType() {
+        OAuthConfig config = new OAuthConfig("key", "secret");
+        assertEquals(SignatureType.Header, config.getSignatureType());
+    }
+    
+    @Test
+    public void testGetScope() {
+        OAuthConfig config = new OAuthConfig("key", "secret");
+        assertNull(config.getScope());
+    }
+    
+    @Test
+    public void testHasScope() {
+        OAuthConfig config = new OAuthConfig("key", "secret");
+        assertFalse(config.hasScope());
+    }
+}

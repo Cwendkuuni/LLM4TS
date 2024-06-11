@@ -1,0 +1,144 @@
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertThrows;
+import static org.junit.Assert.assertTrue;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.junit.Test;
+
+public class OptionGroupTest {
+
+    @Test
+    public void testAddOption() {
+        OptionGroup group = new OptionGroup();
+
+        Option option1 = new Option("option1", "description1");
+        Option option2 = new Option("option2", "description2");
+
+        group.addOption(option1);
+        group.addOption(option2);
+
+        Collection<Option> options = group.getOptions();
+        assertEquals(2, options.size());
+        assertTrue(options.contains(option1));
+        assertTrue(options.contains(option2));
+    }
+
+    @Test
+    public void testGetNames() {
+        OptionGroup group = new OptionGroup();
+
+        Option option1 = new Option("option1", "description1");
+        Option option2 = new Option("option2", "description2");
+
+        group.addOption(option1);
+        group.addOption(option2);
+
+        Collection<String> names = group.getNames();
+        assertEquals(2, names.size());
+        assertTrue(names.contains("option1"));
+        assertTrue(names.contains("option2"));
+    }
+
+    @Test
+    public void testSetSelectedNull() {
+        OptionGroup group = new OptionGroup();
+
+        Option option1 = new Option("option1", "description1");
+        Option option2 = new Option("option2", "description2");
+
+        group.addOption(option1);
+        group.addOption(option2);
+
+        group.setSelected(null);
+        assertNull(group.getSelected());
+    }
+
+    @Test
+    public void testSetSelectedSameOption() {
+        OptionGroup group = new OptionGroup();
+
+        Option option1 = new Option("option1", "description1");
+        Option option2 = new Option("option2", "description2");
+
+        group.addOption(option1);
+        group.addOption(option2);
+
+        group.setSelected(option1);
+        assertEquals("option1", group.getSelected());
+
+        group.setSelected(option1);
+        assertEquals("option1", group.getSelected());
+    }
+
+    @Test
+    public void testSetSelectedDifferentOption() {
+        OptionGroup group = new OptionGroup();
+
+        Option option1 = new Option("option1", "description1");
+        Option option2 = new Option("option2", "description2");
+
+        group.addOption(option1);
+        group.addOption(option2);
+
+        group.setSelected(option2);
+        assertEquals("option2", group.getSelected());
+
+        group.setSelected(option1);
+        assertThrows(AlreadySelectedException.class, () -> group.setSelected(option1));
+    }
+
+    @Test
+    public void testSetSelectedNullAfterSelected() {
+        OptionGroup group = new OptionGroup();
+
+        Option option1 = new Option("option1", "description1");
+        Option option2 = new Option("option2", "description2");
+
+        group.addOption(option1);
+        group.addOption(option2);
+
+        group.setSelected(option1);
+        assertEquals("option1", group.getSelected());
+
+        group.setSelected(null);
+        assertNull(group.getSelected());
+    }
+
+    @Test
+    public void testIsRequiredFalse() {
+        OptionGroup group = new OptionGroup();
+        group.setRequired(false);
+        assertFalse(group.isRequired());
+    }
+
+    @Test
+    public void testIsRequiredTrue() {
+        OptionGroup group = new OptionGroup();
+        group.setRequired(true);
+        assertTrue(group.isRequired());
+    }
+
+    @Test
+    public void testToString() {
+        OptionGroup group = new OptionGroup();
+
+        Option option1 = new Option("option1", "description1");
+        Option option2 = new Option("option2", "description2");
+
+        group.addOption(option1);
+        group.addOption(option2);
+
+        String expected = "[--option1 description1, --option2 description2]";
+        assertEquals(expected, group.toString());
+    }
+}

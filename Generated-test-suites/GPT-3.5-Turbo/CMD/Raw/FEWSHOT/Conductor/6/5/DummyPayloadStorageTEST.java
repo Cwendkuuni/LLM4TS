@@ -1,0 +1,34 @@
+package com.netflix.conductor.core.storage;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+
+import org.junit.Test;
+
+public class DummyPayloadStorageTest {
+
+    @Test
+    public void testGetLocation() {
+        DummyPayloadStorage storage = new DummyPayloadStorage();
+        ExternalStorageLocation location = storage.getLocation(Operation.READ, PayloadType.TASK_INPUT, "test/path");
+        assertNull(location);
+    }
+
+    @Test
+    public void testUpload() {
+        DummyPayloadStorage storage = new DummyPayloadStorage();
+        InputStream inputStream = new ByteArrayInputStream("test payload".getBytes());
+        storage.upload("test/path", inputStream, 12);
+        // Add assertions if needed
+    }
+
+    @Test
+    public void testDownload() {
+        DummyPayloadStorage storage = new DummyPayloadStorage();
+        InputStream downloadedPayload = storage.download("test/path");
+        assertNull(downloadedPayload);
+    }
+}

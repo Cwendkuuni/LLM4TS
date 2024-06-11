@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756239772" analysisTimestamp="1714609454190" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/Mockito/14/6/org/mockito/internal</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="92967814a32f06a9d1af1b8c62685ea7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.mockito.internal.MockHandlerTest.mockHandler</LongMessage>
+    <Class classname="org.mockito.internal.MockHandlerTest" primary="true">
+      <SourceLine classname="org.mockito.internal.MockHandlerTest" start="6" end="43" sourcefile="MockHandlerTest.java" sourcepath="org/mockito/internal/MockHandlerTest.java">
+        <Message>At MockHandlerTest.java:[lines 6-43]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.MockHandlerTest</Message>
+    </Class>
+    <Field classname="org.mockito.internal.MockHandlerTest" name="mockHandler" signature="Lorg/mockito/internal/MockHandler;" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.MockHandlerTest" sourcefile="MockHandlerTest.java" sourcepath="org/mockito/internal/MockHandlerTest.java">
+        <Message>In MockHandlerTest.java</Message>
+      </SourceLine>
+      <Message>Field org.mockito.internal.MockHandlerTest.mockHandler</Message>
+    </Field>
+    <SourceLine classname="org.mockito.internal.MockHandlerTest" primary="true" start="12" end="12" startBytecode="8" endBytecode="8" sourcefile="MockHandlerTest.java" sourcepath="org/mockito/internal/MockHandlerTest.java">
+      <Message>At MockHandlerTest.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.mockito.internal.MockHandler</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:03:59 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="17" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="3.15" clock_seconds="0.71" peak_mbytes="190.41" alloc_mbytes="7104.00" gc_seconds="0.03" priority_2="1">
+    <FileStats path="org/mockito/internal/MockHandlerTest.java" bugCount="1" size="17" bugHash="7d8471566921115736d4295fe7a7bb45"/>
+    <PackageStats package="org.mockito.internal" total_bugs="1" total_types="1" total_size="17" priority_2="1">
+      <ClassStats class="org.mockito.internal.MockHandlerTest" sourceFile="MockHandlerTest.java" interface="false" size="17" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="157" invocations="293" avgMicrosecondsPerInvocation="538" maxMicrosecondsPerInvocation="35495" standardDeviationMicrosecondsPerInvocation="2299"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="25" invocations="9" avgMicrosecondsPerInvocation="2841" maxMicrosecondsPerInvocation="9485" standardDeviationMicrosecondsPerInvocation="3555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="23" invocations="7" avgMicrosecondsPerInvocation="3304" maxMicrosecondsPerInvocation="21766" standardDeviationMicrosecondsPerInvocation="7541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="22" invocations="24" avgMicrosecondsPerInvocation="921" maxMicrosecondsPerInvocation="13917" standardDeviationMicrosecondsPerInvocation="2807"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="21" invocations="40" avgMicrosecondsPerInvocation="533" maxMicrosecondsPerInvocation="2801" standardDeviationMicrosecondsPerInvocation="547"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="18" invocations="9" avgMicrosecondsPerInvocation="2096" maxMicrosecondsPerInvocation="9379" standardDeviationMicrosecondsPerInvocation="2871"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="18" invocations="258" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="1429" standardDeviationMicrosecondsPerInvocation="143"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="11" invocations="9" avgMicrosecondsPerInvocation="1309" maxMicrosecondsPerInvocation="7637" standardDeviationMicrosecondsPerInvocation="2335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="11" invocations="295" avgMicrosecondsPerInvocation="39" maxMicrosecondsPerInvocation="577" standardDeviationMicrosecondsPerInvocation="41"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="11" invocations="9" avgMicrosecondsPerInvocation="1268" maxMicrosecondsPerInvocation="5415" standardDeviationMicrosecondsPerInvocation="1699"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

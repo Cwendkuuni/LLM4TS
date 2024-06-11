@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420558813" analysisTimestamp="1714585439930" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/COT/Mockito/21/28/org/mockito/internal/creation/instance</Jar>
+  </Project>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="7025048a4a51b9e6b6a641c463e8728b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.mockito.internal.creation.instance.ConstructorInstantiatorTest.testNewInstanceWithInvalidOuterClass() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" primary="true">
+      <SourceLine classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" start="6" end="36" sourcefile="ConstructorInstantiatorTest.java" sourcepath="org/mockito/internal/creation/instance/ConstructorInstantiatorTest.java">
+        <Message>At ConstructorInstantiatorTest.java:[lines 6-36]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.creation.instance.ConstructorInstantiatorTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" name="testNewInstanceWithInvalidOuterClass" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" start="27" end="30" startBytecode="0" endBytecode="62" sourcefile="ConstructorInstantiatorTest.java" sourcepath="org/mockito/internal/creation/instance/ConstructorInstantiatorTest.java"/>
+      <Message>In method org.mockito.internal.creation.instance.ConstructorInstantiatorTest.testNewInstanceWithInvalidOuterClass()</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" primary="true" start="27" end="27" startBytecode="6" endBytecode="6" sourcefile="ConstructorInstantiatorTest.java" sourcepath="org/mockito/internal/creation/instance/ConstructorInstantiatorTest.java">
+      <Message>At ConstructorInstantiatorTest.java:[line 27]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_NUMBER_CTOR" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient Number constructor; use static valueOf instead</ShortDescription>
+    <Details><![CDATA[
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.mockito.internal.creation.instance.ClassWithConstructorParams</MissingClass>
+    <MissingClass>org.mockito.internal.creation.instance.ConstructorInstantiator</MissingClass>
+    <MissingClass>org.mockito.internal.creation.instance.SampleClass</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:15:58 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="25" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.05" clock_seconds="3.65" peak_mbytes="189.72" alloc_mbytes="7104.00" gc_seconds="0.26" priority_2="1">
+    <FileStats path="org/mockito/internal/creation/instance/ConstructorInstantiatorTest.java" bugCount="1" size="25" bugHash="5bcf94c5a5258ee460a19562f4d9f65a"/>
+    <PackageStats package="org.mockito.internal.creation.instance" total_bugs="1" total_types="1" total_size="25" priority_2="1">
+      <ClassStats class="org.mockito.internal.creation.instance.ConstructorInstantiatorTest" sourceFile="ConstructorInstantiatorTest.java" interface="false" size="25" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="542" invocations="299" avgMicrosecondsPerInvocation="1814" maxMicrosecondsPerInvocation="52416" standardDeviationMicrosecondsPerInvocation="5236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="289" invocations="9" avgMicrosecondsPerInvocation="32204" maxMicrosecondsPerInvocation="279884" standardDeviationMicrosecondsPerInvocation="87583"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="249" invocations="9" avgMicrosecondsPerInvocation="27670" maxMicrosecondsPerInvocation="95064" standardDeviationMicrosecondsPerInvocation="34445"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="146" invocations="38" avgMicrosecondsPerInvocation="3859" maxMicrosecondsPerInvocation="38368" standardDeviationMicrosecondsPerInvocation="8797"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="129" invocations="26" avgMicrosecondsPerInvocation="4986" maxMicrosecondsPerInvocation="68980" standardDeviationMicrosecondsPerInvocation="14857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="112" invocations="5" avgMicrosecondsPerInvocation="22450" maxMicrosecondsPerInvocation="105724" standardDeviationMicrosecondsPerInvocation="41645"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="109" invocations="262" avgMicrosecondsPerInvocation="417" maxMicrosecondsPerInvocation="16644" standardDeviationMicrosecondsPerInvocation="1946"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="108" invocations="9" avgMicrosecondsPerInvocation="12060" maxMicrosecondsPerInvocation="58262" standardDeviationMicrosecondsPerInvocation="18590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="101" invocations="301" avgMicrosecondsPerInvocation="338" maxMicrosecondsPerInvocation="35282" standardDeviationMicrosecondsPerInvocation="2395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="85" invocations="5" avgMicrosecondsPerInvocation="17031" maxMicrosecondsPerInvocation="67265" standardDeviationMicrosecondsPerInvocation="25452"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="83" invocations="5" avgMicrosecondsPerInvocation="16600" maxMicrosecondsPerInvocation="79038" standardDeviationMicrosecondsPerInvocation="31229"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

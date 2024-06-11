@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360745832" analysisTimestamp="1714586360389" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/FEWSHOT/41_follow/SearchableTextPaneTEST/26/ghm/follow/search</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="18b116f8b46a39914181c3315f3e937d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode ghm.follow.search.SearchableTextPaneTest.testGetScrollableTracksViewportWidth()</LongMessage>
+    <Class classname="ghm.follow.search.SearchableTextPaneTest" primary="true">
+      <SourceLine classname="ghm.follow.search.SearchableTextPaneTest" start="17" end="97" sourcefile="SearchableTextPaneTest.java" sourcepath="ghm/follow/search/SearchableTextPaneTest.java">
+        <Message>At SearchableTextPaneTest.java:[lines 17-97]</Message>
+      </SourceLine>
+      <Message>In class ghm.follow.search.SearchableTextPaneTest</Message>
+    </Class>
+    <Method classname="ghm.follow.search.SearchableTextPaneTest" name="testGetScrollableTracksViewportWidth" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="ghm.follow.search.SearchableTextPaneTest" start="39" end="41" startBytecode="0" endBytecode="4" sourcefile="SearchableTextPaneTest.java" sourcepath="ghm/follow/search/SearchableTextPaneTest.java"/>
+      <Message>In method ghm.follow.search.SearchableTextPaneTest.testGetScrollableTracksViewportWidth()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="ghm.follow.search.SearchableTextPaneTest" primary="true" start="39" end="39" startBytecode="7" endBytecode="7" sourcefile="SearchableTextPaneTest.java" sourcepath="ghm/follow/search/SearchableTextPaneTest.java">
+      <Message>At SearchableTextPaneTest.java:[line 39]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>ghm.follow.search.SearchableTextPane</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:05 +0100" total_classes="1" referenced_classes="17" total_bugs="1" total_size="48" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.41" clock_seconds="4.24" peak_mbytes="193.00" alloc_mbytes="7104.00" gc_seconds="0.21" priority_2="1">
+    <FileStats path="ghm/follow/search/SearchableTextPaneTest.java" bugCount="1" size="48" bugHash="7ed89c17762bb2394d4c288f9ff255ce"/>
+    <PackageStats package="ghm.follow.search" total_bugs="1" total_types="1" total_size="48" priority_2="1">
+      <ClassStats class="ghm.follow.search.SearchableTextPaneTest" sourceFile="SearchableTextPaneTest.java" interface="false" size="48" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="790" invocations="576" avgMicrosecondsPerInvocation="1372" maxMicrosecondsPerInvocation="68354" standardDeviationMicrosecondsPerInvocation="5653"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="405" invocations="134" avgMicrosecondsPerInvocation="3029" maxMicrosecondsPerInvocation="222855" standardDeviationMicrosecondsPerInvocation="19389"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="300" invocations="17" avgMicrosecondsPerInvocation="17667" maxMicrosecondsPerInvocation="106590" standardDeviationMicrosecondsPerInvocation="31100"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="234" invocations="17" avgMicrosecondsPerInvocation="13773" maxMicrosecondsPerInvocation="121723" standardDeviationMicrosecondsPerInvocation="29192"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="172" invocations="541" avgMicrosecondsPerInvocation="318" maxMicrosecondsPerInvocation="32166" standardDeviationMicrosecondsPerInvocation="2284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="137" invocations="43" avgMicrosecondsPerInvocation="3195" maxMicrosecondsPerInvocation="66304" standardDeviationMicrosecondsPerInvocation="10623"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="119" invocations="17" avgMicrosecondsPerInvocation="7019" maxMicrosecondsPerInvocation="47925" standardDeviationMicrosecondsPerInvocation="13999"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="98" invocations="17" avgMicrosecondsPerInvocation="5776" maxMicrosecondsPerInvocation="40684" standardDeviationMicrosecondsPerInvocation="11162"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="86" invocations="9" avgMicrosecondsPerInvocation="9639" maxMicrosecondsPerInvocation="78502" standardDeviationMicrosecondsPerInvocation="24386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="78" invocations="17" avgMicrosecondsPerInvocation="4626" maxMicrosecondsPerInvocation="42434" standardDeviationMicrosecondsPerInvocation="11731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="72" invocations="9" avgMicrosecondsPerInvocation="8072" maxMicrosecondsPerInvocation="54358" standardDeviationMicrosecondsPerInvocation="17074"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

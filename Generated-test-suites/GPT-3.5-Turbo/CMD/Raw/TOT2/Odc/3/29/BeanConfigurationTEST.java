@@ -1,0 +1,33 @@
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+public class BeanConfigurationTest {
+
+    @Test
+    public void testPasswordEncoder() {
+        BeanConfiguration beanConfiguration = new BeanConfiguration();
+        assertNotNull(beanConfiguration.passwordEncoder());
+    }
+
+    @Test
+    public void testObjectMapper() {
+        BeanConfiguration beanConfiguration = new BeanConfiguration();
+        assertNotNull(beanConfiguration.objectMapper(new SensitivePropertyHandler()));
+    }
+
+    @Test
+    public void testDefaultHttpFirewall() {
+        BeanConfiguration beanConfiguration = new BeanConfiguration();
+        assertNotNull(beanConfiguration.defaultHttpFirewall());
+    }
+
+    @Test
+    public void testNullCloudMetadataClient() {
+        BeanConfiguration.NullCloudMetadataClient nullCloudMetadataClient = new BeanConfiguration.NullCloudMetadataClient();
+        assertTrue(nullCloudMetadataClient.supportsCloudMetadata());
+    }
+
+}

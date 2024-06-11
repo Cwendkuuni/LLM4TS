@@ -1,0 +1,27 @@
+package com.oceanbase.odc.service.onlineschemachange.rename;
+
+import static org.junit.Assert.*;
+
+import com.oceanbase.odc.core.shared.constant.TaskStatus;
+import com.oceanbase.odc.service.onlineschemachange.rename.SwapTableUtil;
+import com.oceanbase.odc.service.onlineschemachange.model.FullVerificationResult;
+import com.oceanbase.odc.service.onlineschemachange.model.SwapTableType;
+import org.junit.Test;
+
+public class SwapTableUtilTest {
+  
+  @Test
+  public void testIsSwapTableEnable() {
+    SwapTableType swapTableType = SwapTableType.MANUAL;
+    TaskStatus taskStatus = TaskStatus.RUNNING;
+    Double fullTransferProgressPercentage = 100.0;
+    FullVerificationResult fullVerificationResult = FullVerificationResult.CONSISTENT;
+    boolean manualSwapTableStarted = false;
+
+    assertTrue(SwapTableUtil.isSwapTableEnable(swapTableType, taskStatus, fullTransferProgressPercentage, fullVerificationResult, manualSwapTableStarted));
+    
+    fullTransferProgressPercentage = 99.9;
+    
+    assertFalse(SwapTableUtil.isSwapTableEnable(swapTableType, taskStatus, fullTransferProgressPercentage, fullVerificationResult, manualSwapTableStarted));
+  }
+}

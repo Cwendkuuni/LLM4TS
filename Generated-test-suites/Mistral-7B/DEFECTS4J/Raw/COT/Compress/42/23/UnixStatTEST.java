@@ -1,0 +1,71 @@
+import org.apache.commons.compress.archivers.zip.UnixStat;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class UnixStatTest {
+
+    @Test
+    public void testLinkFlag() {
+        int actual = UnixStat.LINK_FLAG;
+        int expected = 0120000;
+        assertEquals("Link flag value is incorrect", expected, actual);
+    }
+
+    @Test
+    public void testFileFlag() {
+        int actual = UnixStat.FILE_FLAG;
+        int expected = 0100000;
+        assertEquals("File flag value is incorrect", expected, actual);
+    }
+
+    @Test
+    public void testDirFlag() {
+        int actual = UnixStat.DIR_FLAG;
+        int expected = 040000;
+        assertEquals("Dir flag value is incorrect", expected, actual);
+    }
+
+    @Test
+    public void testDefaultLinkPerm() {
+        int actual = UnixStat.DEFAULT_LINK_PERM;
+        int expected = 0777;
+        assertEquals("Default link permission value is incorrect", expected, actual);
+    }
+
+    @Test
+    public void testDefaultDirPerm() {
+        int actual = UnixStat.DEFAULT_DIR_PERM;
+        int expected = 0755;
+        assertEquals("Default directory permission value is incorrect", expected, actual);
+    }
+
+    @Test
+    public void testDefaultFilePerm() {
+        int actual = UnixStat.DEFAULT_FILE_PERM;
+        int expected = 0644;
+        assertEquals("Default file permission value is incorrect", expected, actual);
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testInvalidPermMaskValue() {
+        UnixStat unixStat = new UnixStat() {
+            @Override
+            public int PERM_MASK() {
+                return 0;
+            }
+        };
+        try {
+            int perm = unixStat.PERM_MASK() & 1;
+            fail("Illegal state exception should be thrown when PERM_MASK is 0");
+        } catch (IllegalStateException e) {
+            // Expected exception
+        }
+    }
+
+    @Test
+    public void testPermMaskValue() {
+        int actual = UnixStat.PERM_MASK();
+        int expected = 07777;
+        assertEquals("PERM_MASK value is incorrect", expected, actual);
+    }
+}

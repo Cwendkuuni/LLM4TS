@@ -1,0 +1,63 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Going to generate test cases for class: freemind.extensions.ExportHook
+* Starting Client-0
+* Connecting to master process on port 12437
+* Analyzing classpath: 
+  - /home/wendkuuni/EVOSUITE/LLMS-PROJECT/SF110/105_freemind/
+* Finished analyzing classpath
+* Generating tests for class freemind.extensions.ExportHook
+* Test criteria:
+  - Branch Coverage
+  - Top-Level Method Coverage
+  - Line Coverage
+* Total number of test goals for DYNAMOSA: 117
+* Using seed 1706657462676
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 46 / 117
+[MASTER] 00:31:15.055 [logback-1] WARN  FunctionalMockStatement - Problem with class freemind.modes.mindmapmode.MindMapController: java.lang.NoClassDefFoundError: freemind/controller/actions/generated/instance/XmlAction
+* Search finished after 187s and 1486 generations, 292481 statements, best individual has fitness: 64.0
+* Minimizing test suite
+[MASTER] 00:35:54.093 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 34%
+* Total number of goals: 29
+* Number of covered goals: 10
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 10
+* Number of covered goals: 10
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 50%
+* Total number of goals: 78
+* Number of covered goals: 39
+* Generated 21 tests with total length 177
+* Resulting test suite's coverage: 41% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 6%
+[MASTER] 00:36:54.434 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Compiling and checking tests
+[MASTER] 00:37:35.563 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class freemind.main.Tools
+[MASTER] 00:37:35.570 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown while loading method  __STATIC_RESET() for class freemind.main.FreeMind
+[MASTER] 00:37:45.094 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.runners.model.TestTimedOutException: test timed out after 4000 milliseconds
+[MASTER] 00:37:45.094 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ExportHook exportHook0 = new ExportHook();
+exportHook0.copyFromFile(" JPw=", " JPw=", " JPw=");
+exportHook0.createBufferedImage();
+
+[MASTER] 00:37:54.237 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.runners.model.TestTimedOutException: test timed out after 4000 milliseconds
+[MASTER] 00:37:54.237 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ExportHook exportHook0 = new ExportHook();
+String string0 = "l/iz{[K/q*S,@";
+exportHook0.copyFromFile("l/iz{[K/q*S,@", "l/iz{[K/q*S,@", "l/iz{[K/q*S,@");
+
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         execute /usr/bin/xprop: 1
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing tests to file
+* Writing JUnit test case 'ExportHook_ESTest' to evosuite-tests
+* Done!
+
+* Computation finished

@@ -1,0 +1,125 @@
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class CodeConsumerTest {
+  
+  @Test
+  public void testStartSourceMapping() {
+    // Test code for startSourceMapping method
+  }
+  
+  @Test
+  public void testEndSourceMapping() {
+    // Test code for endSourceMapping method
+  }
+  
+  @Test
+  public void testContinueProcessing() {
+    // Test code for continueProcessing method
+  }
+  
+  @Test
+  public void testGetLastChar() {
+    // Test code for getLastChar method
+  }
+  
+  @Test
+  public void testAppend() {
+    // Test code for append method
+  }
+  
+  @Test
+  public void testAppendBlockStart() {
+    // Test code for appendBlockStart method
+  }
+  
+  @Test
+  public void testAppendBlockEnd() {
+    // Test code for appendBlockEnd method
+  }
+  
+  @Test
+  public void testStartNewLine() {
+    // Test code for startNewLine method
+  }
+  
+  @Test
+  public void testMaybeLineBreak() {
+    // Test code for maybeLineBreak method
+  }
+  
+  @Test
+  public void testMaybeCutLine() {
+    // Test code for maybeCutLine method
+  }
+  
+  @Test
+  public void testEndLine() {
+    // Test code for endLine method
+  }
+  
+  @Test
+  public void testNotePreferredLineBreak() {
+    // Test code for notePreferredLineBreak method
+  }
+  
+  @Test
+  public void testBeginBlock() {
+    // Test code for beginBlock method
+  }
+  
+  @Test
+  public void testEndBlock() {
+    // Test code for endBlock method
+  }
+  
+  @Test
+  public void testListSeparator() {
+    // Test code for listSeparator method
+  }
+  
+  @Test
+  public void testEndStatement() {
+    // Test code for endStatement method
+  }
+  
+  @Test
+  public void testMaybeEndStatement() {
+    // Test code for maybeEndStatement method
+  }
+  
+  @Test
+  public void testEndFunction() {
+    // Test code for endFunction method
+  }
+  
+  @Test
+  public void testBeginCaseBody() {
+    // Test code for beginCaseBody method
+  }
+  
+  @Test
+  public void testEndCaseBody() {
+    // Test code for endCaseBody method
+  }
+  
+  @Test
+  public void testAdd() {
+    // Test code for add method
+  }
+  
+  @Test
+  public void testAppendOp() {
+    // Test code for appendOp method
+  }
+  
+  @Test
+  public void testAddOp() {
+    // Test code for addOp method
+  }
+  
+  @Test
+  public void testAddNumber() {
+    // Test code for addNumber method
+  }
+}

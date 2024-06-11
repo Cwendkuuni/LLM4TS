@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756234732" analysisTimestamp="1714602023785" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/Jsoup/52/0/org/jsoup/helper</Jar>
+  </Project>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="3f85827a109ba3aa1eeb4c1f826a059" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>org.jsoup.helper.DataUtilTest.testLoadInputStreamWithParser() may fail to clean up java.io.InputStream on checked exception</LongMessage>
+    <Class classname="org.jsoup.helper.DataUtilTest" primary="true">
+      <SourceLine classname="org.jsoup.helper.DataUtilTest" start="13" end="59" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java">
+        <Message>At DataUtilTest.java:[lines 13-59]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.helper.DataUtilTest</Message>
+    </Class>
+    <Method classname="org.jsoup.helper.DataUtilTest" name="testLoadInputStreamWithParser" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.helper.DataUtilTest" start="37" end="44" startBytecode="0" endBytecode="84" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java"/>
+      <Message>In method org.jsoup.helper.DataUtilTest.testLoadInputStreamWithParser()</Message>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" start="45" end="364" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java">
+        <Message>At InputStream.java:[lines 45-364]</Message>
+      </SourceLine>
+      <Message>Reference type java.io.InputStream</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="org.jsoup.helper.DataUtilTest" primary="true" start="37" end="37" startBytecode="6" endBytecode="6" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at DataUtilTest.java:[line 37] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="org.jsoup.helper.DataUtilTest" start="38" end="38" startBytecode="10" endBytecode="10" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at DataUtilTest.java:[line 38]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jsoup.helper.DataUtilTest" start="39" end="39" startBytecode="13" endBytecode="13" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at DataUtilTest.java:[line 39]</Message>
+    </SourceLine>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {InputStream x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugCategory category="EXPERIMENTAL">
+    <Description>Experimental</Description>
+  </BugCategory>
+  <BugPattern type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" abbrev="OBL" category="EXPERIMENTAL">
+    <ShortDescription>Method may fail to clean up stream or resource on checked exception</ShortDescription>
+    <Details><![CDATA[
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          For sending feedback, check:
+          </p>
+          <ul>
+            <li><a href="https://github.com/spotbugs/spotbugs/blob/master/.github/CONTRIBUTING.md">contributing guideline</a></li>
+            <li><a href="https://github.com/spotbugs/discuss/issues?q=">mailinglist</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>
+          (<a href="https://people.eecs.berkeley.edu/~necula/Papers/rte_oopsla04.pdf">PDF</a>),
+          for a description of the analysis technique.
+          </p>
+          
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="OBL">
+    <Description>Unsatisfied obligation to clean up stream or resource</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.jsoup.helper.DataUtil</MissingClass>
+    <MissingClass>org.jsoup.parser.Parser</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:03:54 +0100" total_classes="1" referenced_classes="13" total_bugs="1" total_size="31" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.52" clock_seconds="1.33" peak_mbytes="190.55" alloc_mbytes="7104.00" gc_seconds="0.05" priority_2="1">
+    <FileStats path="org/jsoup/helper/DataUtilTest.java" bugCount="1" size="31" bugHash="32aaa4021182479aa0e2664533fbb499"/>
+    <PackageStats package="org.jsoup.helper" total_bugs="1" total_types="1" total_size="31" priority_2="1">
+      <ClassStats class="org.jsoup.helper.DataUtilTest" sourceFile="DataUtilTest.java" interface="false" size="31" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="255" invocations="329" avgMicrosecondsPerInvocation="777" maxMicrosecondsPerInvocation="34548" standardDeviationMicrosecondsPerInvocation="2731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="88" invocations="31" avgMicrosecondsPerInvocation="2839" maxMicrosecondsPerInvocation="55153" standardDeviationMicrosecondsPerInvocation="10156"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="53" invocations="13" avgMicrosecondsPerInvocation="4110" maxMicrosecondsPerInvocation="15837" standardDeviationMicrosecondsPerInvocation="5177"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="47" invocations="72" avgMicrosecondsPerInvocation="663" maxMicrosecondsPerInvocation="5579" standardDeviationMicrosecondsPerInvocation="933"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="32" invocations="292" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="2029" standardDeviationMicrosecondsPerInvocation="229"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="30" invocations="13" avgMicrosecondsPerInvocation="2383" maxMicrosecondsPerInvocation="10117" standardDeviationMicrosecondsPerInvocation="2836"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="29" invocations="7" avgMicrosecondsPerInvocation="4196" maxMicrosecondsPerInvocation="26916" standardDeviationMicrosecondsPerInvocation="9294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="22" invocations="13" avgMicrosecondsPerInvocation="1733" maxMicrosecondsPerInvocation="9244" standardDeviationMicrosecondsPerInvocation="2515"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="20" invocations="13" avgMicrosecondsPerInvocation="1594" maxMicrosecondsPerInvocation="12330" standardDeviationMicrosecondsPerInvocation="3218"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="19" invocations="331" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="793" standardDeviationMicrosecondsPerInvocation="55"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="18" invocations="13" avgMicrosecondsPerInvocation="1426" maxMicrosecondsPerInvocation="7015" standardDeviationMicrosecondsPerInvocation="2125"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="17" invocations="7" avgMicrosecondsPerInvocation="2468" maxMicrosecondsPerInvocation="13888" standardDeviationMicrosecondsPerInvocation="4683"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="15" invocations="7" avgMicrosecondsPerInvocation="2264" maxMicrosecondsPerInvocation="8014" standardDeviationMicrosecondsPerInvocation="2770"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

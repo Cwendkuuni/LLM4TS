@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420563633" analysisTimestamp="1714597577534" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT/Compress/8/14/org/apache/commons/compress/archivers/tar</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="adc64d2de097325e78c972d959e75e34" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.compress.archivers.tar.TarUtilsTest.testParseOctal()</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="5" end="181" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+        <Message>At TarUtilsTest.java:[lines 5-181]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.tar.TarUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" name="testParseOctal" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="10" end="27" startBytecode="0" endBytecode="37" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.tar.TarUtilsTest.testParseOctal()</Message>
+    </Method>
+    <LocalVariable name="?" register="7" pc="73" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 7</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true" start="22" end="22" startBytecode="61" endBytecode="61" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+      <Message>At TarUtilsTest.java:[line 22]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.EXCEPTION_HANDLER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="89150a437afc2e0d145ff6993927cc2f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.archivers.tar.TarUtilsTest.testComputeCheckSum(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="5" end="181" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+        <Message>At TarUtilsTest.java:[lines 5-181]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.tar.TarUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" name="testComputeCheckSum" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="168" end="181" startBytecode="0" endBytecode="115" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.tar.TarUtilsTest.testComputeCheckSum()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true" start="168" end="168" startBytecode="2" endBytecode="2" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+      <Message>At TarUtilsTest.java:[line 168]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="8ec51a8495310a36be2cdbdc44739e69" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatCheckSumOctalBytes(): new String(byte[])</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="5" end="181" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+        <Message>At TarUtilsTest.java:[lines 5-181]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.tar.TarUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" name="testFormatCheckSumOctalBytes" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="144" end="163" startBytecode="0" endBytecode="214" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatCheckSumOctalBytes()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="566" end="567" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method new String(byte[])</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true" start="147" end="147" startBytecode="31" endBytecode="31" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+      <Message>At TarUtilsTest.java:[line 147]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="153" end="153" startBytecode="68" endBytecode="68" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at TarUtilsTest.java:[line 153]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="44a7dd6635c8142c954769da574a19ba" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatLongOctalBytes(): new String(byte[])</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="5" end="181" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+        <Message>At TarUtilsTest.java:[lines 5-181]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.tar.TarUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" name="testFormatLongOctalBytes" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="120" end="139" startBytecode="0" endBytecode="214" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatLongOctalBytes()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="566" end="567" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method new String(byte[])</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true" start="123" end="123" startBytecode="31" endBytecode="31" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+      <Message>At TarUtilsTest.java:[line 123]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="129" end="129" startBytecode="68" endBytecode="68" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at TarUtilsTest.java:[line 129]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="c838c73944e554e8656832dd7655765e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatNameBytes(): new String(byte[])</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="5" end="181" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+        <Message>At TarUtilsTest.java:[lines 5-181]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.tar.TarUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" name="testFormatNameBytes" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="50" end="69" startBytecode="0" endBytecode="212" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatNameBytes()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="566" end="567" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method new String(byte[])</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true" start="54" end="54" startBytecode="32" endBytecode="32" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+      <Message>At TarUtilsTest.java:[line 54]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="61" end="61" startBytecode="77" endBytecode="77" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at TarUtilsTest.java:[line 61]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="68" end="68" startBytecode="122" endBytecode="122" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at TarUtilsTest.java:[line 68]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="5d55268103f894371d4283f708967066" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatOctalBytes(): new String(byte[])</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="5" end="181" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+        <Message>At TarUtilsTest.java:[lines 5-181]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.tar.TarUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" name="testFormatOctalBytes" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="96" end="115" startBytecode="0" endBytecode="214" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatOctalBytes()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="566" end="567" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method new String(byte[])</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true" start="99" end="99" startBytecode="31" endBytecode="31" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+      <Message>At TarUtilsTest.java:[line 99]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="105" end="105" startBytecode="68" endBytecode="68" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at TarUtilsTest.java:[line 105]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="3b1c638eb8f61bea7517e6bf99c10059" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatUnsignedOctalString(): new String(byte[])</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="5" end="181" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+        <Message>At TarUtilsTest.java:[lines 5-181]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.tar.TarUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" name="testFormatUnsignedOctalString" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="74" end="91" startBytecode="0" endBytecode="180" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatUnsignedOctalString()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="566" end="567" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method new String(byte[])</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true" start="76" end="76" startBytecode="22" endBytecode="22" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+      <Message>At TarUtilsTest.java:[line 76]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="81" end="81" startBytecode="48" endBytecode="48" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at TarUtilsTest.java:[line 81]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="512e4980abe8e6834e2eeda5ec90036e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.archivers.tar.TarUtilsTest.testParseName(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="5" end="181" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+        <Message>At TarUtilsTest.java:[lines 5-181]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.tar.TarUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" name="testParseName" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="32" end="45" startBytecode="0" endBytecode="127" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.tar.TarUtilsTest.testParseName()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true" start="32" end="32" startBytecode="2" endBytecode="2" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+      <Message>At TarUtilsTest.java:[line 32]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="37" end="37" startBytecode="22" endBytecode="22" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at TarUtilsTest.java:[line 37]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="42" end="42" startBytecode="44" endBytecode="44" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at TarUtilsTest.java:[line 42]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="fc467768ad156795d8bd6e4f65cbf38e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.archivers.tar.TarUtilsTest.testParseOctal(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="5" end="181" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+        <Message>At TarUtilsTest.java:[lines 5-181]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.tar.TarUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" name="testParseOctal" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="10" end="27" startBytecode="0" endBytecode="179" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.tar.TarUtilsTest.testParseOctal()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true" start="10" end="10" startBytecode="2" endBytecode="2" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+      <Message>At TarUtilsTest.java:[line 10]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="15" end="15" startBytecode="23" endBytecode="23" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at TarUtilsTest.java:[line 15]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="21" end="21" startBytecode="47" endBytecode="47" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at TarUtilsTest.java:[line 21]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.apache.commons.compress.archivers.tar.TarUtils</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:03 +0100" total_classes="1" referenced_classes="10" total_bugs="9" total_size="113" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.90" clock_seconds="1.91" peak_mbytes="191.78" alloc_mbytes="7104.00" gc_seconds="0.12" priority_2="1" priority_1="8">
+    <FileStats path="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" bugCount="9" size="113" bugHash="1611e9eb005be6cfc96594b79c4e52c5"/>
+    <PackageStats package="org.apache.commons.compress.archivers.tar" total_bugs="9" total_types="1" total_size="113" priority_2="1" priority_1="8">
+      <ClassStats class="org.apache.commons.compress.archivers.tar.TarUtilsTest" sourceFile="TarUtilsTest.java" interface="false" size="113" bugs="9" priority_2="1" priority_1="8"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="206" invocations="10" avgMicrosecondsPerInvocation="20642" maxMicrosecondsPerInvocation="142878" standardDeviationMicrosecondsPerInvocation="41645"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="197" invocations="312" avgMicrosecondsPerInvocation="633" maxMicrosecondsPerInvocation="13193" standardDeviationMicrosecondsPerInvocation="1354"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="71" invocations="14" avgMicrosecondsPerInvocation="5122" maxMicrosecondsPerInvocation="32686" standardDeviationMicrosecondsPerInvocation="8395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="66" invocations="10" avgMicrosecondsPerInvocation="6630" maxMicrosecondsPerInvocation="16167" standardDeviationMicrosecondsPerInvocation="6290"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="55" invocations="27" avgMicrosecondsPerInvocation="2056" maxMicrosecondsPerInvocation="22166" standardDeviationMicrosecondsPerInvocation="4941"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="53" invocations="9" avgMicrosecondsPerInvocation="5998" maxMicrosecondsPerInvocation="18752" standardDeviationMicrosecondsPerInvocation="6642"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="51" invocations="66" avgMicrosecondsPerInvocation="773" maxMicrosecondsPerInvocation="4650" standardDeviationMicrosecondsPerInvocation="952"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="44" invocations="10" avgMicrosecondsPerInvocation="4495" maxMicrosecondsPerInvocation="19569" standardDeviationMicrosecondsPerInvocation="6013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="43" invocations="9" avgMicrosecondsPerInvocation="4817" maxMicrosecondsPerInvocation="18594" standardDeviationMicrosecondsPerInvocation="5662"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="40" invocations="10" avgMicrosecondsPerInvocation="4071" maxMicrosecondsPerInvocation="14936" standardDeviationMicrosecondsPerInvocation="4984"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="40" invocations="9" avgMicrosecondsPerInvocation="4488" maxMicrosecondsPerInvocation="35895" standardDeviationMicrosecondsPerInvocation="11117"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="35" invocations="14" avgMicrosecondsPerInvocation="2568" maxMicrosecondsPerInvocation="13035" standardDeviationMicrosecondsPerInvocation="2969"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="32" invocations="10" avgMicrosecondsPerInvocation="3283" maxMicrosecondsPerInvocation="16537" standardDeviationMicrosecondsPerInvocation="5460"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="30" invocations="274" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="1764" standardDeviationMicrosecondsPerInvocation="205"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="27" invocations="1" avgMicrosecondsPerInvocation="27397" maxMicrosecondsPerInvocation="27397" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="26" invocations="1" avgMicrosecondsPerInvocation="26945" maxMicrosecondsPerInvocation="26945" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="26" invocations="10" avgMicrosecondsPerInvocation="2628" maxMicrosecondsPerInvocation="12881" standardDeviationMicrosecondsPerInvocation="3782"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="25" invocations="314" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="5046" standardDeviationMicrosecondsPerInvocation="284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="24" invocations="10" avgMicrosecondsPerInvocation="2485" maxMicrosecondsPerInvocation="14869" standardDeviationMicrosecondsPerInvocation="4271"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287216298" analysisTimestamp="1714577163397" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/FEWSHOT/39_diffi/StringIncrementorTEST/9/de/beiri22/stringincrementor</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>de.beiri22.stringincrementor.StringIncrementor</MissingClass>
+    <MissingClass>de.beiri22.stringincrementor.relativestring.RelativeString</MissingClass>
+    <MissingClass>de.beiri22.stringincrementor.relativestring.StringLink</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:56 +0200" total_classes="1" referenced_classes="12" total_bugs="0" total_size="103" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.02" clock_seconds="4.55" peak_mbytes="190.96" alloc_mbytes="7104.00" gc_seconds="0.20">
+    <FileStats path="de/beiri22/stringincrementor/test/StringIncrementorTest.java" bugCount="0" size="103"/>
+    <PackageStats package="de.beiri22.stringincrementor.test" total_bugs="0" total_types="1" total_size="103">
+      <ClassStats class="de.beiri22.stringincrementor.test.StringIncrementorTest" sourceFile="StringIncrementorTest.java" interface="false" size="103" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="491" invocations="337" avgMicrosecondsPerInvocation="1459" maxMicrosecondsPerInvocation="34233" standardDeviationMicrosecondsPerInvocation="4137"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="305" invocations="12" avgMicrosecondsPerInvocation="25435" maxMicrosecondsPerInvocation="218408" standardDeviationMicrosecondsPerInvocation="59888"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="223" invocations="70" avgMicrosecondsPerInvocation="3197" maxMicrosecondsPerInvocation="43247" standardDeviationMicrosecondsPerInvocation="7707"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="207" invocations="12" avgMicrosecondsPerInvocation="17305" maxMicrosecondsPerInvocation="55590" standardDeviationMicrosecondsPerInvocation="19518"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="143" invocations="11" avgMicrosecondsPerInvocation="13007" maxMicrosecondsPerInvocation="38663" standardDeviationMicrosecondsPerInvocation="15245"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="139" invocations="11" avgMicrosecondsPerInvocation="12692" maxMicrosecondsPerInvocation="41555" standardDeviationMicrosecondsPerInvocation="14062"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="138" invocations="12" avgMicrosecondsPerInvocation="11525" maxMicrosecondsPerInvocation="39846" standardDeviationMicrosecondsPerInvocation="12937"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="128" invocations="340" avgMicrosecondsPerInvocation="377" maxMicrosecondsPerInvocation="24167" standardDeviationMicrosecondsPerInvocation="2172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="109" invocations="11" avgMicrosecondsPerInvocation="9968" maxMicrosecondsPerInvocation="34539" standardDeviationMicrosecondsPerInvocation="12858"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="108" invocations="11" avgMicrosecondsPerInvocation="9857" maxMicrosecondsPerInvocation="103618" standardDeviationMicrosecondsPerInvocation="29651"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="108" invocations="11" avgMicrosecondsPerInvocation="9823" maxMicrosecondsPerInvocation="68976" standardDeviationMicrosecondsPerInvocation="20430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="100" invocations="34" avgMicrosecondsPerInvocation="2945" maxMicrosecondsPerInvocation="52107" standardDeviationMicrosecondsPerInvocation="9843"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="91" invocations="300" avgMicrosecondsPerInvocation="304" maxMicrosecondsPerInvocation="18423" standardDeviationMicrosecondsPerInvocation="1426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="81" invocations="1" avgMicrosecondsPerInvocation="81292" maxMicrosecondsPerInvocation="81292" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="76" invocations="12" avgMicrosecondsPerInvocation="6368" maxMicrosecondsPerInvocation="23654" standardDeviationMicrosecondsPerInvocation="9349"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="72" invocations="12" avgMicrosecondsPerInvocation="6000" maxMicrosecondsPerInvocation="24101" standardDeviationMicrosecondsPerInvocation="8247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="64" invocations="12" avgMicrosecondsPerInvocation="5404" maxMicrosecondsPerInvocation="27087" standardDeviationMicrosecondsPerInvocation="8256"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="62" invocations="11" avgMicrosecondsPerInvocation="5665" maxMicrosecondsPerInvocation="37277" standardDeviationMicrosecondsPerInvocation="10674"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

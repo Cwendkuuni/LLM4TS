@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711017766815" analysisTimestamp="1714574051406" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V4/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/FEWSHOT/Odc/19/15/com/oceanbase/odc/core/datasource</Jar>
+  </Project>
+  <BugInstance type="BC_VACUOUS_INSTANCEOF" priority="2" rank="17" abbrev="BC" category="STYLE" instanceHash="5b4691a50834d509c589c1e46875807f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="571">
+    <ShortMessage>instanceof renverra toujours vrai</ShortMessage>
+    <LongMessage>instanceof renverra toujours vrai dans com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest.testGetConnection(), puisque chaque java.sql.Connection est une instance de SingleConnectionDataSourceTest.java:[line 40]</LongMessage>
+    <Class classname="com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest" start="13" end="60" sourcefile="SingleConnectionDataSourceTest.java" sourcepath="com/oceanbase/odc/core/datasource/SingleConnectionDataSourceTest.java">
+        <Message>At SingleConnectionDataSourceTest.java:[lines 13-60]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest" name="testGetConnection" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest" start="38" end="41" startBytecode="0" endBytecode="9" sourcefile="SingleConnectionDataSourceTest.java" sourcepath="com/oceanbase/odc/core/datasource/SingleConnectionDataSourceTest.java"/>
+      <Message>In method com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest.testGetConnection()</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/Connection;" role="TYPE_FOUND">
+      <SourceLine classname="java.sql.Connection" sourcefile="Connection.java" sourcepath="java/sql/Connection.java">
+        <Message>In Connection.java</Message>
+      </SourceLine>
+      <Message>Actual type java.sql.Connection</Message>
+    </Type>
+    <Type descriptor="Ljava/sql/Connection;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.sql.Connection" sourcefile="Connection.java" sourcepath="java/sql/Connection.java">
+        <Message>In Connection.java</Message>
+      </SourceLine>
+      <Message>Expected java.sql.Connection</Message>
+    </Type>
+    <SourceLine classname="com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest" primary="true" start="40" end="40" startBytecode="13" endBytecode="13" sourcefile="SingleConnectionDataSourceTest.java" sourcepath="com/oceanbase/odc/core/datasource/SingleConnectionDataSourceTest.java">
+      <Message>At SingleConnectionDataSourceTest.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="c57bb176301f11bb56b23aae784f8e0d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type java.sql.Connection in com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest.testGetConnection() at SingleConnectionDataSourceTest.java:[line 40] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Ljava/sql/Connection;">
+      <SourceLine classname="java.sql.Connection" sourcefile="Connection.java" sourcepath="java/sql/Connection.java">
+        <Message>In Connection.java</Message>
+      </SourceLine>
+      <Message>Type java.sql.Connection</Message>
+    </Type>
+    <Class classname="com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest" start="13" end="60" sourcefile="SingleConnectionDataSourceTest.java" sourcepath="com/oceanbase/odc/core/datasource/SingleConnectionDataSourceTest.java">
+        <Message>At SingleConnectionDataSourceTest.java:[lines 13-60]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest" name="testGetConnection" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest" start="38" end="41" startBytecode="0" endBytecode="55" sourcefile="SingleConnectionDataSourceTest.java" sourcepath="com/oceanbase/odc/core/datasource/SingleConnectionDataSourceTest.java"/>
+      <Message>In method com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest.testGetConnection()</Message>
+    </Method>
+    <SourceLine classname="com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest" primary="true" start="40" end="40" startBytecode="16" endBytecode="16" sourcefile="SingleConnectionDataSourceTest.java" sourcepath="com/oceanbase/odc/core/datasource/SingleConnectionDataSourceTest.java">
+      <Message>At SingleConnectionDataSourceTest.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="BC_VACUOUS_INSTANCEOF" abbrev="BC" category="STYLE" cweid="571">
+    <ShortDescription>instanceof renverra toujours vrai</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce test <code>instanceof</code> renverra toujours vrai. Même s'il est sûr, assurez-vous qu'il ne s'agit pas d'une erreur logique ou d'une mauvaise compréhension.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="BC">
+    <Description>Mauvais transtypages de références</Description>
+  </BugCode>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.oceanbase.odc.core.datasource.SingleConnectionDataSource</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 21 Mar 2024 11:42:46 +0100" total_classes="1" referenced_classes="14" total_bugs="2" total_size="35" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.03" clock_seconds="5.11" peak_mbytes="190.05" alloc_mbytes="7104.00" gc_seconds="0.22" priority_2="2">
+    <FileStats path="com/oceanbase/odc/core/datasource/SingleConnectionDataSourceTest.java" bugCount="2" size="35" bugHash="1b9dcf5457cbb25ed8fea1ed189436f9"/>
+    <PackageStats package="com.oceanbase.odc.core.datasource" total_bugs="2" total_types="1" total_size="35" priority_2="2">
+      <ClassStats class="com.oceanbase.odc.core.datasource.SingleConnectionDataSourceTest" sourceFile="SingleConnectionDataSourceTest.java" interface="false" size="35" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="678" invocations="325" avgMicrosecondsPerInvocation="2087" maxMicrosecondsPerInvocation="54915" standardDeviationMicrosecondsPerInvocation="5906"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="295" invocations="14" avgMicrosecondsPerInvocation="21074" maxMicrosecondsPerInvocation="245666" standardDeviationMicrosecondsPerInvocation="62720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="245" invocations="65" avgMicrosecondsPerInvocation="3783" maxMicrosecondsPerInvocation="49077" standardDeviationMicrosecondsPerInvocation="8979"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="208" invocations="14" avgMicrosecondsPerInvocation="14875" maxMicrosecondsPerInvocation="90906" standardDeviationMicrosecondsPerInvocation="25010"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="168" invocations="32" avgMicrosecondsPerInvocation="5262" maxMicrosecondsPerInvocation="84770" standardDeviationMicrosecondsPerInvocation="15602"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="146" invocations="14" avgMicrosecondsPerInvocation="10465" maxMicrosecondsPerInvocation="55426" standardDeviationMicrosecondsPerInvocation="15258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="146" invocations="288" avgMicrosecondsPerInvocation="507" maxMicrosecondsPerInvocation="17759" standardDeviationMicrosecondsPerInvocation="1952"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="142" invocations="7" avgMicrosecondsPerInvocation="20386" maxMicrosecondsPerInvocation="74723" standardDeviationMicrosecondsPerInvocation="27763"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="119" invocations="7" avgMicrosecondsPerInvocation="17057" maxMicrosecondsPerInvocation="112691" standardDeviationMicrosecondsPerInvocation="39060"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="114" invocations="14" avgMicrosecondsPerInvocation="8152" maxMicrosecondsPerInvocation="45970" standardDeviationMicrosecondsPerInvocation="15013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="94" invocations="7" avgMicrosecondsPerInvocation="13527" maxMicrosecondsPerInvocation="50509" standardDeviationMicrosecondsPerInvocation="15685"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="93" invocations="14" avgMicrosecondsPerInvocation="6701" maxMicrosecondsPerInvocation="28656" standardDeviationMicrosecondsPerInvocation="9709"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="87" invocations="7" avgMicrosecondsPerInvocation="12432" maxMicrosecondsPerInvocation="41658" standardDeviationMicrosecondsPerInvocation="13174"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="86" invocations="14" avgMicrosecondsPerInvocation="6174" maxMicrosecondsPerInvocation="61589" standardDeviationMicrosecondsPerInvocation="15904"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="71" invocations="327" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="23166" standardDeviationMicrosecondsPerInvocation="1476"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="58" invocations="7" avgMicrosecondsPerInvocation="8413" maxMicrosecondsPerInvocation="36356" standardDeviationMicrosecondsPerInvocation="11763"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

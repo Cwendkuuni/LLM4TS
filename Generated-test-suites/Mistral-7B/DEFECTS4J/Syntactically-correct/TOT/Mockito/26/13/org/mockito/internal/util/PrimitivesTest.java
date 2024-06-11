@@ -1,0 +1,21 @@
+import org.junit.Test;
+import org.junit.Assert.*;
+import org.mockito.internal.util.Primitives;
+
+public class PrimitivesTest {
+    @Test
+    public void testPrimitiveTypeOf() {
+        Class<Integer> intClass = Integer.class;
+        Class<Integer> expected = Integer.TYPE;
+        Class<Integer> actual = Primitives.primitiveTypeOf(intClass);
+
+        // Test for primitive type
+        assertTrue(intClass.isPrimitive());
+        assertEquals(expected, actual);
+
+        // Test for non-primitive type
+        Class<String> stringClass = String.class;
+        assertFalse(stringClass.isPrimitive());
+        assertNull(Primitives.primitiveTypeOf(stringClass));
+    }
+}

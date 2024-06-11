@@ -1,0 +1,25 @@
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class CollapseVariableDeclarationsTest {
+
+    @Test
+    public void testCollapseVariableDeclarations() {
+        CollapseVariableDeclarations collapseVariableDeclarations = new CollapseVariableDeclarations();
+      
+        // Test case 1: Empty variables
+        String input1 = "var a;\nvar b = 1;\nvar c = 2;";
+        String expectedOutput1 = "var a, b = 1, c = 2;";
+        String actualOutput1 = collapseVariableDeclarations.collapseVariableDeclarations(input1);
+        assertEquals(expectedOutput1, actualOutput1);
+        
+        // Test case 2: Variables with assignments
+        String input2 = "a = true;\nb = true;\nvar c = true;";
+        String expectedOutput2 = "var c = b = a = true;";
+        String actualOutput2 = collapseVariableDeclarations.collapseVariableDeclarations(input2);
+        assertEquals(expectedOutput2, actualOutput2);
+    }
+}
+

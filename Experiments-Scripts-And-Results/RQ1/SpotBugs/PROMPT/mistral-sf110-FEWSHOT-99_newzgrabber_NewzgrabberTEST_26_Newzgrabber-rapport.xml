@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287216466" analysisTimestamp="1714576367461" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/FEWSHOT/99_newzgrabber/NewzgrabberTEST/26/Newzgrabber</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="baa947a0b32a3264053810fc9f3c3b22" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode Newzgrabber.NewzgrabberTest.testNewzgrabberWithTitle()</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="6" end="64" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testNewzgrabberWithTitle" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="32" end="35" startBytecode="0" endBytecode="7" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testNewzgrabberWithTitle()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="12" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="33" end="33" startBytecode="11" endBytecode="11" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 33]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="cd7f4cbff927fee34506a6eb6ec18ba4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode Newzgrabber.NewzgrabberTest.testNewzgrabberWithoutTitle()</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="6" end="64" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testNewzgrabberWithoutTitle" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="40" end="42" startBytecode="0" endBytecode="4" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testNewzgrabberWithoutTitle()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="40" end="40" startBytecode="7" endBytecode="7" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 40]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="7ca0c799870de06ee3b8317d71924cd0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode Newzgrabber.NewzgrabberTest.testSetupBasicSystem()</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="6" end="64" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testSetupBasicSystem" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="54" end="56" startBytecode="0" endBytecode="4" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testSetupBasicSystem()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="54" end="54" startBytecode="7" endBytecode="7" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 54]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="1c3d2244588715d12d0b7004d0d9c2ba" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode Newzgrabber.NewzgrabberTest.testWindowClosing()</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="6" end="64" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testWindowClosing" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="47" end="49" startBytecode="0" endBytecode="4" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testWindowClosing()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="47" end="47" startBytecode="7" endBytecode="7" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 47]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>Newzgrabber.Newzgrabber</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:56 +0200" total_classes="1" referenced_classes="10" total_bugs="4" total_size="34" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.05" clock_seconds="4.17" peak_mbytes="190.22" alloc_mbytes="7104.00" gc_seconds="0.21" priority_1="4">
+    <FileStats path="Newzgrabber/NewzgrabberTest.java" bugCount="4" size="34" bugHash="7e3f65ee3ba7ca40e3c7b4a8f1fa14ff"/>
+    <PackageStats package="Newzgrabber" total_bugs="4" total_types="1" total_size="34" priority_1="4">
+      <ClassStats class="Newzgrabber.NewzgrabberTest" sourceFile="NewzgrabberTest.java" interface="false" size="34" bugs="4" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="773" invocations="315" avgMicrosecondsPerInvocation="2455" maxMicrosecondsPerInvocation="53592" standardDeviationMicrosecondsPerInvocation="7130"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="286" invocations="10" avgMicrosecondsPerInvocation="28687" maxMicrosecondsPerInvocation="262168" standardDeviationMicrosecondsPerInvocation="78026"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="190" invocations="10" avgMicrosecondsPerInvocation="19083" maxMicrosecondsPerInvocation="66767" standardDeviationMicrosecondsPerInvocation="24158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="160" invocations="65" avgMicrosecondsPerInvocation="2470" maxMicrosecondsPerInvocation="21988" standardDeviationMicrosecondsPerInvocation="4676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="128" invocations="279" avgMicrosecondsPerInvocation="459" maxMicrosecondsPerInvocation="18284" standardDeviationMicrosecondsPerInvocation="1930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="121" invocations="317" avgMicrosecondsPerInvocation="384" maxMicrosecondsPerInvocation="31329" standardDeviationMicrosecondsPerInvocation="2309"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="111" invocations="27" avgMicrosecondsPerInvocation="4140" maxMicrosecondsPerInvocation="60476" standardDeviationMicrosecondsPerInvocation="11846"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="99" invocations="8" avgMicrosecondsPerInvocation="12452" maxMicrosecondsPerInvocation="96021" standardDeviationMicrosecondsPerInvocation="31594"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="80" invocations="10" avgMicrosecondsPerInvocation="8072" maxMicrosecondsPerInvocation="35734" standardDeviationMicrosecondsPerInvocation="11457"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="80" invocations="10" avgMicrosecondsPerInvocation="8065" maxMicrosecondsPerInvocation="50751" standardDeviationMicrosecondsPerInvocation="15319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="79" invocations="8" avgMicrosecondsPerInvocation="9923" maxMicrosecondsPerInvocation="61005" standardDeviationMicrosecondsPerInvocation="19890"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="67" invocations="10" avgMicrosecondsPerInvocation="6779" maxMicrosecondsPerInvocation="27971" standardDeviationMicrosecondsPerInvocation="9465"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="66" invocations="10" avgMicrosecondsPerInvocation="6653" maxMicrosecondsPerInvocation="40211" standardDeviationMicrosecondsPerInvocation="11806"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

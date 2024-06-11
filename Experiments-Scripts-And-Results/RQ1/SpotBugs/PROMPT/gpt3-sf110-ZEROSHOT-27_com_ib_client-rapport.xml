@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360749192" analysisTimestamp="1714603814617" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/1_tullibee/ComboLegTEST/27/com/ib/client</Jar>
+  </Project>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="d496b80ee4e246eb6b77666ff60a24ba" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>com.ib.client.ComboLegTest.testEquals() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="com.ib.client.ComboLegTest" primary="true">
+      <SourceLine classname="com.ib.client.ComboLegTest" start="6" end="68" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java">
+        <Message>At ComboLegTest.java:[lines 6-68]</Message>
+      </SourceLine>
+      <Message>In class com.ib.client.ComboLegTest</Message>
+    </Class>
+    <Method classname="com.ib.client.ComboLegTest" name="testEquals" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.ib.client.ComboLegTest" start="10" end="32" startBytecode="0" endBytecode="194" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java"/>
+      <Message>In method com.ib.client.ComboLegTest.testEquals()</Message>
+    </Method>
+    <SourceLine classname="com.ib.client.ComboLegTest" primary="true" start="31" end="31" startBytecode="121" endBytecode="121" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java">
+      <Message>At ComboLegTest.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_STRING_CTOR" abbrev="Dm" category="PERFORMANCE">
+    <ShortDescription>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortDescription>
+    <Details><![CDATA[
+
+<p>Utiliser le constructeur <code>java.lang.String(String)</code> gaspille de la mémoire puisque l'objet ainsi construit serait fonctionnellement identique à la chaîne passée en paramètre. Utilisez juste la chaîne en argument directement.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.ib.client.ComboLeg</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:09 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="45" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.66" clock_seconds="1.89" peak_mbytes="190.48" alloc_mbytes="7104.00" gc_seconds="0.23" priority_2="1">
+    <FileStats path="com/ib/client/ComboLegTest.java" bugCount="1" size="45" bugHash="f695ee07dc928ef7fa44c84ff120a88b"/>
+    <PackageStats package="com.ib.client" total_bugs="1" total_types="1" total_size="45" priority_2="1">
+      <ClassStats class="com.ib.client.ComboLegTest" sourceFile="ComboLegTest.java" interface="false" size="45" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="311" invocations="62" avgMicrosecondsPerInvocation="5029" maxMicrosecondsPerInvocation="233908" standardDeviationMicrosecondsPerInvocation="29370"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="301" invocations="309" avgMicrosecondsPerInvocation="975" maxMicrosecondsPerInvocation="32184" standardDeviationMicrosecondsPerInvocation="3023"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="73" invocations="10" avgMicrosecondsPerInvocation="7311" maxMicrosecondsPerInvocation="23023" standardDeviationMicrosecondsPerInvocation="7796"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="39" invocations="273" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="4286" standardDeviationMicrosecondsPerInvocation="368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="39" invocations="5" avgMicrosecondsPerInvocation="7977" maxMicrosecondsPerInvocation="37262" standardDeviationMicrosecondsPerInvocation="14650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="39" invocations="10" avgMicrosecondsPerInvocation="3934" maxMicrosecondsPerInvocation="24926" standardDeviationMicrosecondsPerInvocation="7292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="39" invocations="10" avgMicrosecondsPerInvocation="3928" maxMicrosecondsPerInvocation="14173" standardDeviationMicrosecondsPerInvocation="4022"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="38" invocations="10" avgMicrosecondsPerInvocation="3885" maxMicrosecondsPerInvocation="15978" standardDeviationMicrosecondsPerInvocation="5004"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="38" invocations="27" avgMicrosecondsPerInvocation="1429" maxMicrosecondsPerInvocation="21054" standardDeviationMicrosecondsPerInvocation="4050"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="32" invocations="1" avgMicrosecondsPerInvocation="32026" maxMicrosecondsPerInvocation="32026" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="30" invocations="5" avgMicrosecondsPerInvocation="6156" maxMicrosecondsPerInvocation="12724" standardDeviationMicrosecondsPerInvocation="4870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="29" invocations="5" avgMicrosecondsPerInvocation="5833" maxMicrosecondsPerInvocation="16385" standardDeviationMicrosecondsPerInvocation="5562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="25" invocations="10" avgMicrosecondsPerInvocation="2539" maxMicrosecondsPerInvocation="15286" standardDeviationMicrosecondsPerInvocation="4422"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="25" invocations="5" avgMicrosecondsPerInvocation="5003" maxMicrosecondsPerInvocation="15375" standardDeviationMicrosecondsPerInvocation="5328"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

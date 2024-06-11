@@ -1,0 +1,58 @@
+* EvoSuite 1.2.1-SNAPSHOT
+* Going to generate test cases for class: jgaapGUI
+* Starting Client-0
+* Connecting to master process on port 18964
+* Analyzing classpath: 
+  - /home/wendkuuni/EVOSUITE/LLMS-PROJECT/SF110/100_jgaap/
+* Finished analyzing classpath
+* Generating tests for class jgaapGUI
+* Test criteria:
+  - Branch Coverage
+  - Top-Level Method Coverage
+  - Line Coverage
+* Total number of test goals for DYNAMOSA: 265
+* Using seed 1706657267032
+* Starting evolution
+* Initial Number of Goals in DynaMOSA = 207 / 265
+[MASTER] 00:27:51.699 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.RowFilter<M, I>.ComparisonType : Type points to itself
+[MASTER] 00:27:55.393 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 00:28:08.736 [logback-1] WARN  TestCluster - Failed to check cache for java.time.temporal.TemporalQuery<R> : Type points to itself
+[MASTER] 00:28:20.302 [logback-1] WARN  TestCluster - Failed to check cache for javax.swing.JLayer<V> : Type points to itself
+[MASTER] 00:28:24.731 [logback-1] WARN  CastClassManager - Nothing is assignable after adding javax.swing.JLayer<V> for type Variable V with bounds [class java.awt.Component] of declaration JLayer. The owner var map is {}
+[MASTER] 00:30:22.828 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 181s and 1095 generations, 510153 statements, best individual has fitness: 17.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 83%
+* Total number of goals: 23
+* Number of covered goals: 19
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 95%
+* Total number of goals: 239
+* Number of covered goals: 226
+* Generated 10 tests with total length 32
+* Resulting test suite's coverage: 92% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 7%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /tmp/+~JT9009914241280926210.tmp: 1
+         write /tmp/+~JT2219843165604415622.tmp: 1
+         write /tmp/+~JT5509099500053408621.tmp: 1
+         and other 2 cases of action/name for this exception class
+  - java.net.URLPermission: 
+         *:* http://www.someFakeButWellFormedURL.org/fooExample: 5
+         *:* http://www.someFakeButWellFormedURL.org/CreateEventSet: 1
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing tests to file
+* Writing JUnit test case 'jgaapGUI_ESTest' to evosuite-tests
+* Done!
+
+* Computation finished

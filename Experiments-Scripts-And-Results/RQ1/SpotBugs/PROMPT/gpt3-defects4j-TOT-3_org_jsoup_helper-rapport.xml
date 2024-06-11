@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420565637" analysisTimestamp="1714593843384" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT/Jsoup/74/3/org/jsoup/helper</Jar>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="bf904ce59268470726d113d3cd521b34" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>Une méthode expose sa représentation interne en incorporant une référence à un objet modifiable</ShortMessage>
+    <LongMessage>La méthode new org.jsoup.helper.StringUtilTest(String[]) risque d&apos;exposer sa représentation interne en stockant un objet externe modifiable dans org.jsoup.helper.StringUtilTest.strings</LongMessage>
+    <Class classname="org.jsoup.helper.StringUtilTest" primary="true" classAnnotationNames="org.junit.runner.RunWith">
+      <SourceLine classname="org.jsoup.helper.StringUtilTest" start="20" end="188" sourcefile="StringUtilTest.java" sourcepath="org/jsoup/helper/StringUtilTest.java">
+        <Message>At StringUtilTest.java:[lines 20-188]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.helper.StringUtilTest</Message>
+    </Class>
+    <Method classname="org.jsoup.helper.StringUtilTest" name="&lt;init&gt;" signature="([Ljava/lang/String;)V" isStatic="false" primary="true" classAnnotationNames="org.junit.runner.RunWith">
+      <SourceLine classname="org.jsoup.helper.StringUtilTest" start="30" end="32" startBytecode="0" endBytecode="41" sourcefile="StringUtilTest.java" sourcepath="org/jsoup/helper/StringUtilTest.java"/>
+      <Message>In method new org.jsoup.helper.StringUtilTest(String[])</Message>
+    </Method>
+    <Field classname="org.jsoup.helper.StringUtilTest" name="strings" signature="[Ljava/lang/String;" isStatic="false" primary="true" classAnnotationNames="org.junit.runner.RunWith">
+      <SourceLine classname="org.jsoup.helper.StringUtilTest" sourcefile="StringUtilTest.java" sourcepath="org/jsoup/helper/StringUtilTest.java">
+        <Message>In StringUtilTest.java</Message>
+      </SourceLine>
+      <Message>Field org.jsoup.helper.StringUtilTest.strings</Message>
+    </Field>
+    <LocalVariable name="?" register="1" pc="6" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.helper.StringUtilTest" primary="true" start="31" end="31" startBytecode="6" endBytecode="6" sourcefile="StringUtilTest.java" sourcepath="org/jsoup/helper/StringUtilTest.java">
+      <Message>At StringUtilTest.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>Une méthode expose sa représentation interne en incorporant une référence à un objet modifiable</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce code stocke une référence à un objet externe modifiable dans la représentation interne de l'objet. Si des instances sont accédées par du code non fiable, et que des modifications non vérifiées peuvent compromettre la sécurité ou d'autres propriétés importantes, vous devez faire autre chose. Stocker une copie de l'objet est une meilleur approche dans de nombreuses situations.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EI2">
+    <Description>Stockage d&apos;une référence vers un objet modifiable</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.jsoup.helper.StringUtil</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.junit.runners.Parameterized</MissingClass>
+    <MissingClass>org.junit.runners.Parameterized$Parameters</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:05 +0100" total_classes="1" referenced_classes="17" total_bugs="1" total_size="114" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.89" clock_seconds="2.43" peak_mbytes="192.37" alloc_mbytes="7104.00" gc_seconds="0.14" priority_2="1">
+    <FileStats path="org/jsoup/helper/StringUtilTest.java" bugCount="1" size="114" bugHash="61abf5e6c9f370bba45ed65a51c42fae"/>
+    <PackageStats package="org.jsoup.helper" total_bugs="1" total_types="1" total_size="114" priority_2="1">
+      <ClassStats class="org.jsoup.helper.StringUtilTest" sourceFile="StringUtilTest.java" interface="false" size="114" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="327" invocations="387" avgMicrosecondsPerInvocation="845" maxMicrosecondsPerInvocation="28867" standardDeviationMicrosecondsPerInvocation="2878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="211" invocations="17" avgMicrosecondsPerInvocation="12458" maxMicrosecondsPerInvocation="155102" standardDeviationMicrosecondsPerInvocation="36196"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="121" invocations="152" avgMicrosecondsPerInvocation="801" maxMicrosecondsPerInvocation="17733" standardDeviationMicrosecondsPerInvocation="2438"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="112" invocations="17" avgMicrosecondsPerInvocation="6636" maxMicrosecondsPerInvocation="25826" standardDeviationMicrosecondsPerInvocation="9052"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="82" invocations="17" avgMicrosecondsPerInvocation="4874" maxMicrosecondsPerInvocation="28732" standardDeviationMicrosecondsPerInvocation="7864"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="77" invocations="17" avgMicrosecondsPerInvocation="4547" maxMicrosecondsPerInvocation="16031" standardDeviationMicrosecondsPerInvocation="5086"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="71" invocations="41" avgMicrosecondsPerInvocation="1732" maxMicrosecondsPerInvocation="23476" standardDeviationMicrosecondsPerInvocation="4993"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="69" invocations="17" avgMicrosecondsPerInvocation="4104" maxMicrosecondsPerInvocation="27592" standardDeviationMicrosecondsPerInvocation="6837"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="68" invocations="17" avgMicrosecondsPerInvocation="4006" maxMicrosecondsPerInvocation="34235" standardDeviationMicrosecondsPerInvocation="8839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="63" invocations="17" avgMicrosecondsPerInvocation="3754" maxMicrosecondsPerInvocation="22976" standardDeviationMicrosecondsPerInvocation="5566"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="57" invocations="347" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="9483" standardDeviationMicrosecondsPerInvocation="751"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="53" invocations="17" avgMicrosecondsPerInvocation="3131" maxMicrosecondsPerInvocation="22916" standardDeviationMicrosecondsPerInvocation="6246"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindReturnRef" totalMilliseconds="52" invocations="1" avgMicrosecondsPerInvocation="52271" maxMicrosecondsPerInvocation="52271" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="50" invocations="17" avgMicrosecondsPerInvocation="2973" maxMicrosecondsPerInvocation="17387" standardDeviationMicrosecondsPerInvocation="5162"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="49" invocations="17" avgMicrosecondsPerInvocation="2909" maxMicrosecondsPerInvocation="39161" standardDeviationMicrosecondsPerInvocation="9107"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="45" invocations="17" avgMicrosecondsPerInvocation="2693" maxMicrosecondsPerInvocation="16558" standardDeviationMicrosecondsPerInvocation="3674"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756321548" analysisTimestamp="1714595493842" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/jdom/NamespaceStackTEST/11/org/jdom2/util</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="d4596b119d2aa1dc4bf3923ca6a8c677" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.util.NamespaceStackTest.testAddedForward()</LongMessage>
+    <Class classname="org.jdom2.util.NamespaceStackTest" primary="true">
+      <SourceLine classname="org.jdom2.util.NamespaceStackTest" start="7" end="66" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java">
+        <Message>At NamespaceStackTest.java:[lines 7-66]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.util.NamespaceStackTest</Message>
+    </Class>
+    <Method classname="org.jdom2.util.NamespaceStackTest" name="testAddedForward" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.util.NamespaceStackTest" start="40" end="44" startBytecode="0" endBytecode="13" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java"/>
+      <Message>In method org.jdom2.util.NamespaceStackTest.testAddedForward()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="26" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.util.NamespaceStackTest" primary="true" start="42" end="42" startBytecode="25" endBytecode="25" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java">
+      <Message>At NamespaceStackTest.java:[line 42]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="49f76d09d523ba380e3893c0b064385f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.util.NamespaceStackTest.testAddedReverse()</LongMessage>
+    <Class classname="org.jdom2.util.NamespaceStackTest" primary="true">
+      <SourceLine classname="org.jdom2.util.NamespaceStackTest" start="7" end="66" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java">
+        <Message>At NamespaceStackTest.java:[lines 7-66]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.util.NamespaceStackTest</Message>
+    </Class>
+    <Method classname="org.jdom2.util.NamespaceStackTest" name="testAddedReverse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.util.NamespaceStackTest" start="48" end="52" startBytecode="0" endBytecode="13" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java"/>
+      <Message>In method org.jdom2.util.NamespaceStackTest.testAddedReverse()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="26" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.util.NamespaceStackTest" primary="true" start="50" end="50" startBytecode="25" endBytecode="25" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java">
+      <Message>At NamespaceStackTest.java:[line 50]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="36a9c7cc9e4d8ece67491127eba45b0b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.util.NamespaceStackTest.testGetScope()</LongMessage>
+    <Class classname="org.jdom2.util.NamespaceStackTest" primary="true">
+      <SourceLine classname="org.jdom2.util.NamespaceStackTest" start="7" end="66" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java">
+        <Message>At NamespaceStackTest.java:[lines 7-66]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.util.NamespaceStackTest</Message>
+    </Class>
+    <Method classname="org.jdom2.util.NamespaceStackTest" name="testGetScope" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.util.NamespaceStackTest" start="56" end="59" startBytecode="0" endBytecode="7" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java"/>
+      <Message>In method org.jdom2.util.NamespaceStackTest.testGetScope()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="13" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.util.NamespaceStackTest" primary="true" start="57" end="57" startBytecode="12" endBytecode="12" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java">
+      <Message>At NamespaceStackTest.java:[line 57]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="efca1adb3b207c1a65d8fd51f953fe95" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.util.NamespaceStackTest.testIsInScope()</LongMessage>
+    <Class classname="org.jdom2.util.NamespaceStackTest" primary="true">
+      <SourceLine classname="org.jdom2.util.NamespaceStackTest" start="7" end="66" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java">
+        <Message>At NamespaceStackTest.java:[lines 7-66]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.util.NamespaceStackTest</Message>
+    </Class>
+    <Method classname="org.jdom2.util.NamespaceStackTest" name="testIsInScope" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.util.NamespaceStackTest" start="63" end="66" startBytecode="0" endBytecode="8" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java"/>
+      <Message>In method org.jdom2.util.NamespaceStackTest.testIsInScope()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="16" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.util.NamespaceStackTest" primary="true" start="64" end="64" startBytecode="15" endBytecode="15" sourcefile="NamespaceStackTest.java" sourcepath="org/jdom2/util/NamespaceStackTest.java">
+      <Message>At NamespaceStackTest.java:[line 64]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="5">
+    <MissingClass>org.jdom2.Attribute</MissingClass>
+    <MissingClass>org.jdom2.Element</MissingClass>
+    <MissingClass>org.jdom2.Namespace</MissingClass>
+    <MissingClass>org.jdom2.util.NamespaceStack</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:21 +0100" total_classes="1" referenced_classes="11" total_bugs="4" total_size="39" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.86" clock_seconds="2.01" peak_mbytes="190.34" alloc_mbytes="7104.00" gc_seconds="0.10" priority_2="4">
+    <FileStats path="org/jdom2/util/NamespaceStackTest.java" bugCount="4" size="39" bugHash="2670a314e1eebe05b70638c77e4054e6"/>
+    <PackageStats package="org.jdom2.util" total_bugs="4" total_types="1" total_size="39" priority_2="4">
+      <ClassStats class="org.jdom2.util.NamespaceStackTest" sourceFile="NamespaceStackTest.java" interface="false" size="39" bugs="4" priority_2="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="346" invocations="313" avgMicrosecondsPerInvocation="1105" maxMicrosecondsPerInvocation="25554" standardDeviationMicrosecondsPerInvocation="2861"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="146" invocations="11" avgMicrosecondsPerInvocation="13325" maxMicrosecondsPerInvocation="116913" standardDeviationMicrosecondsPerInvocation="32928"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="115" invocations="11" avgMicrosecondsPerInvocation="10486" maxMicrosecondsPerInvocation="41893" standardDeviationMicrosecondsPerInvocation="13960"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="97" invocations="67" avgMicrosecondsPerInvocation="1450" maxMicrosecondsPerInvocation="22178" standardDeviationMicrosecondsPerInvocation="2956"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="61" invocations="11" avgMicrosecondsPerInvocation="5560" maxMicrosecondsPerInvocation="28693" standardDeviationMicrosecondsPerInvocation="8191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="61" invocations="27" avgMicrosecondsPerInvocation="2259" maxMicrosecondsPerInvocation="30755" standardDeviationMicrosecondsPerInvocation="6110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="46" invocations="275" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="4549" standardDeviationMicrosecondsPerInvocation="473"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="44" invocations="11" avgMicrosecondsPerInvocation="4034" maxMicrosecondsPerInvocation="28821" standardDeviationMicrosecondsPerInvocation="8124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="44" invocations="9" avgMicrosecondsPerInvocation="4898" maxMicrosecondsPerInvocation="41373" standardDeviationMicrosecondsPerInvocation="12899"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="35" invocations="9" avgMicrosecondsPerInvocation="3918" maxMicrosecondsPerInvocation="22028" standardDeviationMicrosecondsPerInvocation="6575"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="33" invocations="315" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="2521" standardDeviationMicrosecondsPerInvocation="233"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="31" invocations="11" avgMicrosecondsPerInvocation="2856" maxMicrosecondsPerInvocation="16281" standardDeviationMicrosecondsPerInvocation="4608"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="30" invocations="11" avgMicrosecondsPerInvocation="2736" maxMicrosecondsPerInvocation="11671" standardDeviationMicrosecondsPerInvocation="3763"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="27" invocations="9" avgMicrosecondsPerInvocation="3094" maxMicrosecondsPerInvocation="20322" standardDeviationMicrosecondsPerInvocation="6120"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

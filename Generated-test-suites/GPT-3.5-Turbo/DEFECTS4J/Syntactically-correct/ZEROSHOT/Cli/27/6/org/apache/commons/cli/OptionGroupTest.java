@@ -1,0 +1,98 @@
+import org.apache.commons.cli.AlreadySelectedException;
+import org.apache.commons.cli.Option;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.Collection;
+
+import static org.junit.Assert.*;
+
+public class OptionGroupTest {
+    
+    private OptionGroup optionGroup;
+    private Option option1;
+    private Option option2;
+    
+    @Before
+    public void setUp() {
+        optionGroup = new OptionGroup();
+        option1 = new Option("a", "option1");
+        option2 = new Option("b", "option2");
+    }
+    
+    @Test
+    public void testAddOption() {
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        
+        Collection<String> names = optionGroup.getNames();
+        
+        assertTrue(names.contains("a"));
+        assertTrue(names.contains("b"));
+    }
+    
+    @Test
+    public void testGetOptions() {
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        
+        Collection<Option> options = optionGroup.getOptions();
+        
+        assertTrue(options.contains(option1));
+        assertTrue(options.contains(option2));
+    }
+    
+    @Test
+    public void testSetSelected() {
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        
+        try {
+            optionGroup.setSelected(option1);
+        } catch (AlreadySelectedException e) {
+            fail("Exception should not be thrown");
+        }
+        
+        assertEquals("a", optionGroup.getSelected());
+    }
+    
+    @Test(expected = AlreadySelectedException.class)
+    public void testSetSelectedWithAlreadySelectedOption() throws AlreadySelectedException {
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        optionGroup.setSelected(option1);
+        optionGroup.setSelected(option2);
+    }
+    
+    @Test
+    public void testGetSelected() {
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        
+        try {
+            optionGroup.setSelected(option2);
+        } catch (AlreadySelectedException e) {
+            fail("Exception should not be thrown");
+        }
+        
+        assertEquals("b", optionGroup.getSelected());
+    }
+    
+    @Test
+    public void testSetRequired() {
+        optionGroup.setRequired(true);
+        
+        assertTrue(optionGroup.isRequired());
+    }
+    
+    @Test
+    public void testToString() {
+        optionGroup.addOption(option1);
+        optionGroup.addOption(option2);
+        
+        String expected = "[--option1 Option1, --option2 Option2]";
+        String actual = optionGroup.toString();
+        
+        assertEquals(expected, actual);
+    }
+}

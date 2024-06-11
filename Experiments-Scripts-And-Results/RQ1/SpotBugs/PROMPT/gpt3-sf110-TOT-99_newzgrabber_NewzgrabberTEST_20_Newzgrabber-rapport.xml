@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360743515" analysisTimestamp="1714592469578" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/99_newzgrabber/NewzgrabberTEST/20/Newzgrabber</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="fe8ac270d86090495a3b5f52ab3c19f5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in Newzgrabber.NewzgrabberTest.testMain(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="7" end="120" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 7-120]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testMain" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="115" end="120" startBytecode="0" endBytecode="107" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testMain()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="119" end="119" startBytecode="57" endBytecode="57" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 119]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="40924edc541fb0a62be1a5c1b58e97b1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in Newzgrabber.NewzgrabberTest.testMain(): new java.io.PrintStream(OutputStream)</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="7" end="120" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 7-120]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testMain" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="115" end="120" startBytecode="0" endBytecode="107" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testMain()</Message>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+      <Message>Called method new java.io.PrintStream(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="116" end="116" startBytecode="13" endBytecode="13" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 116]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="3aaa9ee74a0a806839808a91fe76e1e7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in Newzgrabber.NewzgrabberTest.testWindowClosing(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="7" end="120" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 7-120]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testWindowClosing" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="94" end="101" startBytecode="0" endBytecode="91" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testWindowClosing()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="99" end="99" startBytecode="37" endBytecode="37" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 99]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="d3d867cd7544ea046015c593e13f7638" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in Newzgrabber.NewzgrabberTest.testWindowClosing(): new java.io.PrintStream(OutputStream)</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="7" end="120" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 7-120]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testWindowClosing" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="94" end="101" startBytecode="0" endBytecode="91" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testWindowClosing()</Message>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+      <Message>Called method new java.io.PrintStream(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="96" end="96" startBytecode="21" endBytecode="21" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 96]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>Newzgrabber.Newzgrabber</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:03 +0100" total_classes="1" referenced_classes="17" total_bugs="4" total_size="70" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.20" clock_seconds="1.51" peak_mbytes="190.94" alloc_mbytes="7104.00" gc_seconds="0.10" priority_1="4">
+    <FileStats path="Newzgrabber/NewzgrabberTest.java" bugCount="4" size="70" bugHash="1d63d910575f528f0ea4eba085922a1b"/>
+    <PackageStats package="Newzgrabber" total_bugs="4" total_types="1" total_size="70" priority_1="4">
+      <ClassStats class="Newzgrabber.NewzgrabberTest" sourceFile="NewzgrabberTest.java" interface="false" size="70" bugs="4" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="245" invocations="379" avgMicrosecondsPerInvocation="648" maxMicrosecondsPerInvocation="28366" standardDeviationMicrosecondsPerInvocation="1980"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="98" invocations="17" avgMicrosecondsPerInvocation="5790" maxMicrosecondsPerInvocation="98267" standardDeviationMicrosecondsPerInvocation="23119"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="60" invocations="17" avgMicrosecondsPerInvocation="3548" maxMicrosecondsPerInvocation="17205" standardDeviationMicrosecondsPerInvocation="4395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="46" invocations="40" avgMicrosecondsPerInvocation="1153" maxMicrosecondsPerInvocation="25358" standardDeviationMicrosecondsPerInvocation="4007"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="43" invocations="17" avgMicrosecondsPerInvocation="2570" maxMicrosecondsPerInvocation="10587" standardDeviationMicrosecondsPerInvocation="2761"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="39" invocations="14" avgMicrosecondsPerInvocation="2815" maxMicrosecondsPerInvocation="35821" standardDeviationMicrosecondsPerInvocation="9158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="39" invocations="79" avgMicrosecondsPerInvocation="495" maxMicrosecondsPerInvocation="4481" standardDeviationMicrosecondsPerInvocation="699"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="36" invocations="342" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="1669" standardDeviationMicrosecondsPerInvocation="213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="30" invocations="1" avgMicrosecondsPerInvocation="30095" maxMicrosecondsPerInvocation="30095" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="25" invocations="14" avgMicrosecondsPerInvocation="1811" maxMicrosecondsPerInvocation="14242" standardDeviationMicrosecondsPerInvocation="3486"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="25" invocations="17" avgMicrosecondsPerInvocation="1471" maxMicrosecondsPerInvocation="10020" standardDeviationMicrosecondsPerInvocation="2311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="24" invocations="17" avgMicrosecondsPerInvocation="1453" maxMicrosecondsPerInvocation="8271" standardDeviationMicrosecondsPerInvocation="2288"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="22" invocations="14" avgMicrosecondsPerInvocation="1640" maxMicrosecondsPerInvocation="12097" standardDeviationMicrosecondsPerInvocation="2944"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="22" invocations="381" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="779" standardDeviationMicrosecondsPerInvocation="50"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="21" invocations="17" avgMicrosecondsPerInvocation="1274" maxMicrosecondsPerInvocation="12234" standardDeviationMicrosecondsPerInvocation="2831"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="21" invocations="1" avgMicrosecondsPerInvocation="21005" maxMicrosecondsPerInvocation="21005" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="20" invocations="17" avgMicrosecondsPerInvocation="1215" maxMicrosecondsPerInvocation="11110" standardDeviationMicrosecondsPerInvocation="2543"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

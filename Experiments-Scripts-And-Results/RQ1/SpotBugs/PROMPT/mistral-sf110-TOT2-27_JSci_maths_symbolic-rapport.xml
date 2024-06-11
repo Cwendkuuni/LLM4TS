@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287215226" analysisTimestamp="1714585645593" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/jsci/SimpleCharStreamTEST/27/JSci/maths/symbolic</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="dcdeb1f0989c1b8e96d4d95e19e6e42d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode JSci.maths.symbolic.SimpleCharStreamTest.testIOException()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="10" end="157" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 10-157]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testIOException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="145" end="149" startBytecode="0" endBytecode="27" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testIOException()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="56" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="148" end="148" startBytecode="55" endBytecode="55" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 148]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="a06086c1e8dc9ac508651d2b38fc3f6b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in JSci.maths.symbolic.SimpleCharStreamTest.setUp(): String.getBytes()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="10" end="157" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 10-157]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="setUp" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="19" end="20" startBytecode="0" endBytecode="56" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.setUp()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="19" end="19" startBytecode="11" endBytecode="11" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 19]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="c944bd955c836ca7e79a23dd0affba35" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="10" end="157" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 10-157]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testFillBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="131" end="141" startBytecode="0" endBytecode="161" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="138" end="138" startBytecode="68" endBytecode="68" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 138]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="dba4de341c42672b3acb81844d0e58d9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff(): String.getBytes()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="10" end="157" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 10-157]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testFillBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="131" end="141" startBytecode="0" endBytecode="161" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="132" end="132" startBytecode="19" endBytecode="19" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 132]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="ba6bf862a48aceb885022ce3c2059464" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in JSci.maths.symbolic.SimpleCharStreamTest.testGetImage(): String.getBytes()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="10" end="157" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 10-157]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testGetImage" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="153" end="157" startBytecode="0" endBytecode="85" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testGetImage()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="153" end="153" startBytecode="11" endBytecode="11" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 153]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="44eb1db7f82bbc49620be9594d692766" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in JSci.maths.symbolic.SimpleCharStreamTest.testIOException(): String.getBytes()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="10" end="157" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 10-157]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testIOException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="145" end="149" startBytecode="0" endBytecode="96" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testIOException()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="145" end="145" startBytecode="11" endBytecode="11" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 145]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>JSci.maths.symbolic.SimpleCharStream</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:55 +0200" total_classes="1" referenced_classes="15" total_bugs="6" total_size="101" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.21" clock_seconds="3.94" peak_mbytes="193.18" alloc_mbytes="7104.00" gc_seconds="0.25" priority_2="1" priority_1="5">
+    <FileStats path="JSci/maths/symbolic/SimpleCharStreamTest.java" bugCount="6" size="101" bugHash="8ca31d44bafd66381276131b4583c9c2"/>
+    <PackageStats package="JSci.maths.symbolic" total_bugs="6" total_types="1" total_size="101" priority_2="1" priority_1="5">
+      <ClassStats class="JSci.maths.symbolic.SimpleCharStreamTest" sourceFile="SimpleCharStreamTest.java" interface="false" size="101" bugs="6" priority_2="1" priority_1="5"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="552" invocations="316" avgMicrosecondsPerInvocation="1747" maxMicrosecondsPerInvocation="38915" standardDeviationMicrosecondsPerInvocation="5174"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteSuppressedWarnings" totalMilliseconds="288" invocations="15" avgMicrosecondsPerInvocation="19206" maxMicrosecondsPerInvocation="285172" standardDeviationMicrosecondsPerInvocation="71082"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="261" invocations="15" avgMicrosecondsPerInvocation="17447" maxMicrosecondsPerInvocation="123427" standardDeviationMicrosecondsPerInvocation="31154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="147" invocations="85" avgMicrosecondsPerInvocation="1737" maxMicrosecondsPerInvocation="34177" standardDeviationMicrosecondsPerInvocation="4755"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="118" invocations="15" avgMicrosecondsPerInvocation="7894" maxMicrosecondsPerInvocation="38297" standardDeviationMicrosecondsPerInvocation="10067"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="115" invocations="15" avgMicrosecondsPerInvocation="7714" maxMicrosecondsPerInvocation="83516" standardDeviationMicrosecondsPerInvocation="21109"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="109" invocations="34" avgMicrosecondsPerInvocation="3222" maxMicrosecondsPerInvocation="61704" standardDeviationMicrosecondsPerInvocation="11063"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="78" invocations="15" avgMicrosecondsPerInvocation="5232" maxMicrosecondsPerInvocation="23740" standardDeviationMicrosecondsPerInvocation="8191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="78" invocations="15" avgMicrosecondsPerInvocation="5226" maxMicrosecondsPerInvocation="26515" standardDeviationMicrosecondsPerInvocation="7885"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="69" invocations="15" avgMicrosecondsPerInvocation="4656" maxMicrosecondsPerInvocation="31812" standardDeviationMicrosecondsPerInvocation="9252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="66" invocations="15" avgMicrosecondsPerInvocation="4457" maxMicrosecondsPerInvocation="36369" standardDeviationMicrosecondsPerInvocation="8764"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="63" invocations="15" avgMicrosecondsPerInvocation="4227" maxMicrosecondsPerInvocation="32568" standardDeviationMicrosecondsPerInvocation="9760"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="63" invocations="15" avgMicrosecondsPerInvocation="4219" maxMicrosecondsPerInvocation="35980" standardDeviationMicrosecondsPerInvocation="9483"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="62" invocations="15" avgMicrosecondsPerInvocation="4158" maxMicrosecondsPerInvocation="27947" standardDeviationMicrosecondsPerInvocation="8992"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="59" invocations="279" avgMicrosecondsPerInvocation="214" maxMicrosecondsPerInvocation="12787" standardDeviationMicrosecondsPerInvocation="907"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="56" invocations="318" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="20116" standardDeviationMicrosecondsPerInvocation="1247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="55" invocations="15" avgMicrosecondsPerInvocation="3716" maxMicrosecondsPerInvocation="25432" standardDeviationMicrosecondsPerInvocation="6440"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="52" invocations="15" avgMicrosecondsPerInvocation="3507" maxMicrosecondsPerInvocation="15152" standardDeviationMicrosecondsPerInvocation="4456"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="51" invocations="15" avgMicrosecondsPerInvocation="3452" maxMicrosecondsPerInvocation="39384" standardDeviationMicrosecondsPerInvocation="9719"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="46" invocations="1" avgMicrosecondsPerInvocation="46871" maxMicrosecondsPerInvocation="46871" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
