@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756229868" analysisTimestamp="1714609052605" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/Gson/17/17/com/google/gson</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="4fd25d353e6a07c41b8fe9445726868" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.gson.DefaultDateTypeAdapterTest.testDeserializeBlankString()</LongMessage>
+    <Class classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="14" end="56" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+        <Message>At DefaultDateTypeAdapterTest.java:[lines 14-56]</Message>
+      </SourceLine>
+      <Message>In class com.google.gson.DefaultDateTypeAdapterTest</Message>
+    </Class>
+    <Method classname="com.google.gson.DefaultDateTypeAdapterTest" name="testDeserializeBlankString" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="46" end="49" startBytecode="0" endBytecode="5" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java"/>
+      <Message>In method com.google.gson.DefaultDateTypeAdapterTest.testDeserializeBlankString()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true" start="46" end="46" startBytecode="9" endBytecode="9" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+      <Message>At DefaultDateTypeAdapterTest.java:[line 46]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="23de7cb41bee54a6c78848e4a534ead7" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.gson.DefaultDateTypeAdapterTest.testReadDate()</LongMessage>
+    <Class classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="14" end="56" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+        <Message>At DefaultDateTypeAdapterTest.java:[lines 14-56]</Message>
+      </SourceLine>
+      <Message>In class com.google.gson.DefaultDateTypeAdapterTest</Message>
+    </Class>
+    <Method classname="com.google.gson.DefaultDateTypeAdapterTest" name="testReadDate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="32" end="35" startBytecode="0" endBytecode="5" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java"/>
+      <Message>In method com.google.gson.DefaultDateTypeAdapterTest.testReadDate()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true" start="32" end="32" startBytecode="9" endBytecode="9" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+      <Message>At DefaultDateTypeAdapterTest.java:[line 32]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="251f35330ecde8d3aae67b4a4755a05e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.gson.DefaultDateTypeAdapterTest.testReadInvalidDate()</LongMessage>
+    <Class classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="14" end="56" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+        <Message>At DefaultDateTypeAdapterTest.java:[lines 14-56]</Message>
+      </SourceLine>
+      <Message>In class com.google.gson.DefaultDateTypeAdapterTest</Message>
+    </Class>
+    <Method classname="com.google.gson.DefaultDateTypeAdapterTest" name="testReadInvalidDate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="39" end="42" startBytecode="0" endBytecode="5" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java"/>
+      <Message>In method com.google.gson.DefaultDateTypeAdapterTest.testReadInvalidDate()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true" start="39" end="39" startBytecode="9" endBytecode="9" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+      <Message>At DefaultDateTypeAdapterTest.java:[line 39]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="9962c661c80cac9982d12a47ac522d2e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.gson.DefaultDateTypeAdapterTest.testToString()</LongMessage>
+    <Class classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="14" end="56" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+        <Message>At DefaultDateTypeAdapterTest.java:[lines 14-56]</Message>
+      </SourceLine>
+      <Message>In class com.google.gson.DefaultDateTypeAdapterTest</Message>
+    </Class>
+    <Method classname="com.google.gson.DefaultDateTypeAdapterTest" name="testToString" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="53" end="56" startBytecode="0" endBytecode="5" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java"/>
+      <Message>In method com.google.gson.DefaultDateTypeAdapterTest.testToString()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true" start="53" end="53" startBytecode="9" endBytecode="9" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+      <Message>At DefaultDateTypeAdapterTest.java:[line 53]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="f0fd2de6545424281d42931acb93abd6" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.gson.DefaultDateTypeAdapterTest.testWriteDate()</LongMessage>
+    <Class classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="14" end="56" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+        <Message>At DefaultDateTypeAdapterTest.java:[lines 14-56]</Message>
+      </SourceLine>
+      <Message>In class com.google.gson.DefaultDateTypeAdapterTest</Message>
+    </Class>
+    <Method classname="com.google.gson.DefaultDateTypeAdapterTest" name="testWriteDate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="25" end="28" startBytecode="0" endBytecode="5" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java"/>
+      <Message>In method com.google.gson.DefaultDateTypeAdapterTest.testWriteDate()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true" start="25" end="25" startBytecode="9" endBytecode="9" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+      <Message>At DefaultDateTypeAdapterTest.java:[line 25]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="96175bea56a1eaa71b3d7d698aa7567b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.gson.DefaultDateTypeAdapterTest.testWriteNullDate()</LongMessage>
+    <Class classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="14" end="56" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+        <Message>At DefaultDateTypeAdapterTest.java:[lines 14-56]</Message>
+      </SourceLine>
+      <Message>In class com.google.gson.DefaultDateTypeAdapterTest</Message>
+    </Class>
+    <Method classname="com.google.gson.DefaultDateTypeAdapterTest" name="testWriteNullDate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" start="18" end="21" startBytecode="0" endBytecode="5" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java"/>
+      <Message>In method com.google.gson.DefaultDateTypeAdapterTest.testWriteNullDate()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.gson.DefaultDateTypeAdapterTest" primary="true" start="18" end="18" startBytecode="9" endBytecode="9" sourcefile="DefaultDateTypeAdapterTest.java" sourcepath="com/google/gson/DefaultDateTypeAdapterTest.java">
+      <Message>At DefaultDateTypeAdapterTest.java:[line 18]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>com.google.gson.DefaultDateTypeAdapter</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:03:49 +0100" total_classes="1" referenced_classes="11" total_bugs="6" total_size="21" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.22" clock_seconds="0.99" peak_mbytes="190.35" alloc_mbytes="7104.00" gc_seconds="0.05" priority_1="6">
+    <FileStats path="com/google/gson/DefaultDateTypeAdapterTest.java" bugCount="6" size="21" bugHash="7a6e915548ae583bceceb2d125f564f7"/>
+    <PackageStats package="com.google.gson" total_bugs="6" total_types="1" total_size="21" priority_1="6">
+      <ClassStats class="com.google.gson.DefaultDateTypeAdapterTest" sourceFile="DefaultDateTypeAdapterTest.java" interface="false" size="21" bugs="6" priority_1="6"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="161" invocations="312" avgMicrosecondsPerInvocation="519" maxMicrosecondsPerInvocation="11575" standardDeviationMicrosecondsPerInvocation="1089"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="52" invocations="11" avgMicrosecondsPerInvocation="4760" maxMicrosecondsPerInvocation="52244" standardDeviationMicrosecondsPerInvocation="15015"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="43" invocations="11" avgMicrosecondsPerInvocation="3953" maxMicrosecondsPerInvocation="15693" standardDeviationMicrosecondsPerInvocation="4986"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="34" invocations="7" avgMicrosecondsPerInvocation="4921" maxMicrosecondsPerInvocation="32253" standardDeviationMicrosecondsPerInvocation="11172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="31" invocations="41" avgMicrosecondsPerInvocation="776" maxMicrosecondsPerInvocation="7165" standardDeviationMicrosecondsPerInvocation="1303"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="31" invocations="27" avgMicrosecondsPerInvocation="1152" maxMicrosecondsPerInvocation="18653" standardDeviationMicrosecondsPerInvocation="3531"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="29" invocations="11" avgMicrosecondsPerInvocation="2696" maxMicrosecondsPerInvocation="10403" standardDeviationMicrosecondsPerInvocation="3384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="24" invocations="278" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="1181" standardDeviationMicrosecondsPerInvocation="150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="20" invocations="7" avgMicrosecondsPerInvocation="2986" maxMicrosecondsPerInvocation="11101" standardDeviationMicrosecondsPerInvocation="4291"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="18" invocations="1" avgMicrosecondsPerInvocation="18663" maxMicrosecondsPerInvocation="18663" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="18" invocations="11" avgMicrosecondsPerInvocation="1641" maxMicrosecondsPerInvocation="9597" standardDeviationMicrosecondsPerInvocation="2667"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="17" invocations="11" avgMicrosecondsPerInvocation="1575" maxMicrosecondsPerInvocation="11779" standardDeviationMicrosecondsPerInvocation="3300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="16" invocations="314" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="707" standardDeviationMicrosecondsPerInvocation="49"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="16" invocations="7" avgMicrosecondsPerInvocation="2342" maxMicrosecondsPerInvocation="14679" standardDeviationMicrosecondsPerInvocation="5036"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

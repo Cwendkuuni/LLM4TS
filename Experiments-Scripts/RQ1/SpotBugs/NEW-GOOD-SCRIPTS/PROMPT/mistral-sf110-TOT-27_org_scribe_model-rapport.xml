@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287209590" analysisTimestamp="1714580455644" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT/scribe/TokenTEST/27/org/scribe/model</Jar>
+  </Project>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="a05b6e9a100f67ca863f0a3732c18270" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ non lu : devrait-il être statique ?</ShortMessage>
+    <LongMessage>Champ non lu : org.scribe.model.TokenTest.testRawResponse devrait-il être statique ?</LongMessage>
+    <Class classname="org.scribe.model.TokenTest" primary="true">
+      <SourceLine classname="org.scribe.model.TokenTest" start="5" end="64" sourcefile="TokenTest.java" sourcepath="org/scribe/model/TokenTest.java">
+        <Message>At TokenTest.java:[lines 5-64]</Message>
+      </SourceLine>
+      <Message>In class org.scribe.model.TokenTest</Message>
+    </Class>
+    <Field classname="org.scribe.model.TokenTest" name="testRawResponse" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="org.scribe.model.TokenTest" sourcefile="TokenTest.java" sourcepath="org/scribe/model/TokenTest.java">
+        <Message>In TokenTest.java</Message>
+      </SourceLine>
+      <Message>Field org.scribe.model.TokenTest.testRawResponse</Message>
+    </Field>
+    <SourceLine classname="org.scribe.model.TokenTest" primary="true" start="9" end="9" startBytecode="19" endBytecode="19" sourcefile="TokenTest.java" sourcepath="org/scribe/model/TokenTest.java">
+      <Message>At TokenTest.java:[line 9]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="8b256f807b79c41381314262aea0e750" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ non lu : devrait-il être statique ?</ShortMessage>
+    <LongMessage>Champ non lu : org.scribe.model.TokenTest.testSecret devrait-il être statique ?</LongMessage>
+    <Class classname="org.scribe.model.TokenTest" primary="true">
+      <SourceLine classname="org.scribe.model.TokenTest" start="5" end="64" sourcefile="TokenTest.java" sourcepath="org/scribe/model/TokenTest.java">
+        <Message>At TokenTest.java:[lines 5-64]</Message>
+      </SourceLine>
+      <Message>In class org.scribe.model.TokenTest</Message>
+    </Class>
+    <Field classname="org.scribe.model.TokenTest" name="testSecret" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="org.scribe.model.TokenTest" sourcefile="TokenTest.java" sourcepath="org/scribe/model/TokenTest.java">
+        <Message>In TokenTest.java</Message>
+      </SourceLine>
+      <Message>Field org.scribe.model.TokenTest.testSecret</Message>
+    </Field>
+    <SourceLine classname="org.scribe.model.TokenTest" primary="true" start="8" end="8" startBytecode="13" endBytecode="13" sourcefile="TokenTest.java" sourcepath="org/scribe/model/TokenTest.java">
+      <Message>At TokenTest.java:[line 8]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="3a08903e7e7a1496e004232c873db94" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ non lu : devrait-il être statique ?</ShortMessage>
+    <LongMessage>Champ non lu : org.scribe.model.TokenTest.testToken devrait-il être statique ?</LongMessage>
+    <Class classname="org.scribe.model.TokenTest" primary="true">
+      <SourceLine classname="org.scribe.model.TokenTest" start="5" end="64" sourcefile="TokenTest.java" sourcepath="org/scribe/model/TokenTest.java">
+        <Message>At TokenTest.java:[lines 5-64]</Message>
+      </SourceLine>
+      <Message>In class org.scribe.model.TokenTest</Message>
+    </Class>
+    <Field classname="org.scribe.model.TokenTest" name="testToken" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="org.scribe.model.TokenTest" sourcefile="TokenTest.java" sourcepath="org/scribe/model/TokenTest.java">
+        <Message>In TokenTest.java</Message>
+      </SourceLine>
+      <Message>Field org.scribe.model.TokenTest.testToken</Message>
+    </Field>
+    <SourceLine classname="org.scribe.model.TokenTest" primary="true" start="7" end="7" startBytecode="7" endBytecode="7" sourcefile="TokenTest.java" sourcepath="org/scribe/model/TokenTest.java">
+      <Message>At TokenTest.java:[line 7]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="SS_SHOULD_BE_STATIC" abbrev="SS" category="PERFORMANCE">
+    <ShortDescription>Champ non lu : devrait-il être statique ?</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette classe contient un champ d'instance <code>final</code> qui est initialisé par une valeur statique déterminée à la compilation. Envisagez de rendre ce champ <code>static</code>.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SS">
+    <Description>Champ non lu qui devrait être statique ?</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.scribe.model.Token</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:49 +0200" total_classes="1" referenced_classes="11" total_bugs="3" total_size="46" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.55" clock_seconds="3.44" peak_mbytes="190.15" alloc_mbytes="7104.00" gc_seconds="0.23" priority_2="3">
+    <FileStats path="org/scribe/model/TokenTest.java" bugCount="3" size="46" bugHash="218354ef657536ed9b3ebc49b1c615bb"/>
+    <PackageStats package="org.scribe.model" total_bugs="3" total_types="1" total_size="46" priority_2="3">
+      <ClassStats class="org.scribe.model.TokenTest" sourceFile="TokenTest.java" interface="false" size="46" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="520" invocations="308" avgMicrosecondsPerInvocation="1688" maxMicrosecondsPerInvocation="51052" standardDeviationMicrosecondsPerInvocation="5566"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="264" invocations="11" avgMicrosecondsPerInvocation="24051" maxMicrosecondsPerInvocation="231750" standardDeviationMicrosecondsPerInvocation="66051"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="162" invocations="64" avgMicrosecondsPerInvocation="2533" maxMicrosecondsPerInvocation="30669" standardDeviationMicrosecondsPerInvocation="6067"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="143" invocations="11" avgMicrosecondsPerInvocation="13067" maxMicrosecondsPerInvocation="57814" standardDeviationMicrosecondsPerInvocation="18750"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="116" invocations="11" avgMicrosecondsPerInvocation="10574" maxMicrosecondsPerInvocation="32711" standardDeviationMicrosecondsPerInvocation="13071"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="99" invocations="7" avgMicrosecondsPerInvocation="14240" maxMicrosecondsPerInvocation="89895" standardDeviationMicrosecondsPerInvocation="30909"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="89" invocations="273" avgMicrosecondsPerInvocation="326" maxMicrosecondsPerInvocation="17707" standardDeviationMicrosecondsPerInvocation="1708"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="85" invocations="27" avgMicrosecondsPerInvocation="3152" maxMicrosecondsPerInvocation="59033" standardDeviationMicrosecondsPerInvocation="11144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="60" invocations="7" avgMicrosecondsPerInvocation="8596" maxMicrosecondsPerInvocation="21357" standardDeviationMicrosecondsPerInvocation="7350"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="59" invocations="1" avgMicrosecondsPerInvocation="59411" maxMicrosecondsPerInvocation="59411" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="57" invocations="310" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="20483" standardDeviationMicrosecondsPerInvocation="1374"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="52" invocations="11" avgMicrosecondsPerInvocation="4805" maxMicrosecondsPerInvocation="30435" standardDeviationMicrosecondsPerInvocation="8976"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="52" invocations="7" avgMicrosecondsPerInvocation="7477" maxMicrosecondsPerInvocation="24404" standardDeviationMicrosecondsPerInvocation="8902"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="47" invocations="11" avgMicrosecondsPerInvocation="4275" maxMicrosecondsPerInvocation="24192" standardDeviationMicrosecondsPerInvocation="7125"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="45" invocations="11" avgMicrosecondsPerInvocation="4166" maxMicrosecondsPerInvocation="29826" standardDeviationMicrosecondsPerInvocation="8270"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

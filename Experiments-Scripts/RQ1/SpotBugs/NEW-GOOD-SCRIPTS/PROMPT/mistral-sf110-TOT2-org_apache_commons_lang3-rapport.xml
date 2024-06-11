@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287213658" analysisTimestamp="1714581395384" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/commons-lang/ValidateTEST/14/org/apache/commons/lang3</Jar>
+  </Project>
+  <BugInstance type="CNT_ROUGH_CONSTANT_VALUE" priority="2" rank="16" abbrev="CNT" category="BAD_PRACTICE" instanceHash="327e72e5b5c6fd066a0d1783e769c193" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Rough value of known constant found</ShortMessage>
+    <LongMessage>Rough value of Math.PI found: 3.14</LongMessage>
+    <Class classname="org.apache.commons.lang3.test.ValidateTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.test.ValidateTest" start="10" end="199" sourcefile="ValidateTest.java" sourcepath="org/apache/commons/lang3/test/ValidateTest.java">
+        <Message>At ValidateTest.java:[lines 10-199]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.test.ValidateTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.test.ValidateTest" name="testIsTrue" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.test.ValidateTest" start="15" end="29" startBytecode="0" endBytecode="127" sourcefile="ValidateTest.java" sourcepath="org/apache/commons/lang3/test/ValidateTest.java"/>
+      <Message>In method org.apache.commons.lang3.test.ValidateTest.testIsTrue()</Message>
+    </Method>
+    <String value="3.14">
+      <Message>Value 3.14</Message>
+    </String>
+    <String value="Math.PI">
+      <Message>Value Math.PI</Message>
+    </String>
+    <SourceLine classname="org.apache.commons.lang3.test.ValidateTest" primary="true" start="19" end="19" startBytecode="16" endBytecode="16" sourcefile="ValidateTest.java" sourcepath="org/apache/commons/lang3/test/ValidateTest.java">
+      <Message>At ValidateTest.java:[line 19]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="CNT_ROUGH_CONSTANT_VALUE" abbrev="CNT" category="BAD_PRACTICE">
+    <ShortDescription>Rough value of known constant found</ShortDescription>
+    <Details><![CDATA[
+      
+    <p>It's recommended to use the predefined library constant for code clarity and better precision.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="CNT">
+    <Description>Rough value of known constant</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.apache.commons.lang3.Validate</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:53 +0200" total_classes="1" referenced_classes="18" total_bugs="1" total_size="129" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="8.04" clock_seconds="3.85" peak_mbytes="191.87" alloc_mbytes="7104.00" gc_seconds="0.20" priority_2="1">
+    <FileStats path="org/apache/commons/lang3/test/ValidateTest.java" bugCount="1" size="129" bugHash="dbe2106a4c3d7bee200257804d1dcd1c"/>
+    <PackageStats package="org.apache.commons.lang3.test" total_bugs="1" total_types="1" total_size="129" priority_2="1">
+      <ClassStats class="org.apache.commons.lang3.test.ValidateTest" sourceFile="ValidateTest.java" interface="false" size="129" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="655" invocations="412" avgMicrosecondsPerInvocation="1591" maxMicrosecondsPerInvocation="62347" standardDeviationMicrosecondsPerInvocation="6352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="351" invocations="18" avgMicrosecondsPerInvocation="19504" maxMicrosecondsPerInvocation="267863" standardDeviationMicrosecondsPerInvocation="60800"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="248" invocations="18" avgMicrosecondsPerInvocation="13815" maxMicrosecondsPerInvocation="88258" standardDeviationMicrosecondsPerInvocation="21126"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="136" invocations="374" avgMicrosecondsPerInvocation="363" maxMicrosecondsPerInvocation="22432" standardDeviationMicrosecondsPerInvocation="1915"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="135" invocations="37" avgMicrosecondsPerInvocation="3657" maxMicrosecondsPerInvocation="49101" standardDeviationMicrosecondsPerInvocation="10937"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="123" invocations="178" avgMicrosecondsPerInvocation="692" maxMicrosecondsPerInvocation="23629" standardDeviationMicrosecondsPerInvocation="2740"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="99" invocations="29" avgMicrosecondsPerInvocation="3443" maxMicrosecondsPerInvocation="74147" standardDeviationMicrosecondsPerInvocation="13501"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="86" invocations="30" avgMicrosecondsPerInvocation="2886" maxMicrosecondsPerInvocation="16648" standardDeviationMicrosecondsPerInvocation="4550"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="85" invocations="29" avgMicrosecondsPerInvocation="2961" maxMicrosecondsPerInvocation="57515" standardDeviationMicrosecondsPerInvocation="10352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="67" invocations="29" avgMicrosecondsPerInvocation="2333" maxMicrosecondsPerInvocation="30325" standardDeviationMicrosecondsPerInvocation="5536"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="60" invocations="18" avgMicrosecondsPerInvocation="3370" maxMicrosecondsPerInvocation="28114" standardDeviationMicrosecondsPerInvocation="7311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="59" invocations="29" avgMicrosecondsPerInvocation="2047" maxMicrosecondsPerInvocation="24080" standardDeviationMicrosecondsPerInvocation="5673"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="54" invocations="415" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="10028" standardDeviationMicrosecondsPerInvocation="719"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="43" invocations="18" avgMicrosecondsPerInvocation="2408" maxMicrosecondsPerInvocation="33742" standardDeviationMicrosecondsPerInvocation="7635"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<Dataset name="mistral-newdataset">
+  <Total>
+    <Bugs>2</Bugs>
+    <Classes>8</Classes>
+  </Total>
+  <Prompts>
+    <Prompt name="FEWSHOT">
+      <Bugs>0</Bugs>
+      <Classes>1</Classes>
+      <BugsInstances/>
+    </Prompt>
+    <Prompt name="TOT">
+      <Bugs>2</Bugs>
+      <Classes>1</Classes>
+      <BugsInstances>
+        <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" category="BAD_PRACTICE"/>
+      </BugsInstances>
+      <BugRank rank="16" count="2"/>
+    </Prompt>
+    <Prompt name="TOT2">
+      <Bugs>0</Bugs>
+      <Classes>6</Classes>
+      <BugsInstances/>
+    </Prompt>
+  </Prompts>
+</Dataset>

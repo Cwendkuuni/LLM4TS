@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360747160" analysisTimestamp="1714586595484" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/FEWSHOT/commons-collections/SequencesComparatorTEST/22/org/apache/commons/collections4/sequence</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="6907d2b46a62623f33d1ca9010b80644" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.collections4.sequence.SequencesComparatorTest.testGetScript()</LongMessage>
+    <Class classname="org.apache.commons.collections4.sequence.SequencesComparatorTest" primary="true">
+      <SourceLine classname="org.apache.commons.collections4.sequence.SequencesComparatorTest" start="13" end="65" sourcefile="SequencesComparatorTest.java" sourcepath="org/apache/commons/collections4/sequence/SequencesComparatorTest.java">
+        <Message>At SequencesComparatorTest.java:[lines 13-65]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.collections4.sequence.SequencesComparatorTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.collections4.sequence.SequencesComparatorTest" name="testGetScript" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.collections4.sequence.SequencesComparatorTest" start="62" end="65" startBytecode="0" endBytecode="11" sourcefile="SequencesComparatorTest.java" sourcepath="org/apache/commons/collections4/sequence/SequencesComparatorTest.java"/>
+      <Message>In method org.apache.commons.collections4.sequence.SequencesComparatorTest.testGetScript()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="21" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.collections4.sequence.SequencesComparatorTest" primary="true" start="63" end="63" startBytecode="20" endBytecode="20" sourcefile="SequencesComparatorTest.java" sourcepath="org/apache/commons/collections4/sequence/SequencesComparatorTest.java">
+      <Message>At SequencesComparatorTest.java:[line 63]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="5">
+    <MissingClass>org.apache.commons.collections4.Equator</MissingClass>
+    <MissingClass>org.apache.commons.collections4.functors.DefaultEquator</MissingClass>
+    <MissingClass>org.apache.commons.collections4.sequence.SequencesComparator</MissingClass>
+    <MissingClass>org.apache.commons.collections4.sequence.SequencesComparatorTest$1</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:07 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="32" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.74" clock_seconds="2.81" peak_mbytes="189.94" alloc_mbytes="7104.00" gc_seconds="0.15" priority_2="1">
+    <FileStats path="org/apache/commons/collections4/sequence/SequencesComparatorTest.java" bugCount="1" size="32" bugHash="f016e19125f01ea92e185fbf23e72e50"/>
+    <PackageStats package="org.apache.commons.collections4.sequence" total_bugs="1" total_types="1" total_size="32" priority_2="1">
+      <ClassStats class="org.apache.commons.collections4.sequence.SequencesComparatorTest" sourceFile="SequencesComparatorTest.java" interface="false" size="32" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="518" invocations="317" avgMicrosecondsPerInvocation="1635" maxMicrosecondsPerInvocation="60375" standardDeviationMicrosecondsPerInvocation="5753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="197" invocations="11" avgMicrosecondsPerInvocation="17921" maxMicrosecondsPerInvocation="191971" standardDeviationMicrosecondsPerInvocation="55043"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="157" invocations="51" avgMicrosecondsPerInvocation="3088" maxMicrosecondsPerInvocation="32802" standardDeviationMicrosecondsPerInvocation="7034"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="142" invocations="11" avgMicrosecondsPerInvocation="12992" maxMicrosecondsPerInvocation="54623" standardDeviationMicrosecondsPerInvocation="18944"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="107" invocations="277" avgMicrosecondsPerInvocation="388" maxMicrosecondsPerInvocation="19788" standardDeviationMicrosecondsPerInvocation="2038"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="86" invocations="11" avgMicrosecondsPerInvocation="7895" maxMicrosecondsPerInvocation="31275" standardDeviationMicrosecondsPerInvocation="10160"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="78" invocations="31" avgMicrosecondsPerInvocation="2532" maxMicrosecondsPerInvocation="33210" standardDeviationMicrosecondsPerInvocation="7314"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="60" invocations="11" avgMicrosecondsPerInvocation="5538" maxMicrosecondsPerInvocation="28635" standardDeviationMicrosecondsPerInvocation="10010"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="54" invocations="319" avgMicrosecondsPerInvocation="170" maxMicrosecondsPerInvocation="16965" standardDeviationMicrosecondsPerInvocation="1088"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="48" invocations="5" avgMicrosecondsPerInvocation="9752" maxMicrosecondsPerInvocation="42989" standardDeviationMicrosecondsPerInvocation="16724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="47" invocations="5" avgMicrosecondsPerInvocation="9498" maxMicrosecondsPerInvocation="23842" standardDeviationMicrosecondsPerInvocation="9018"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="40" invocations="5" avgMicrosecondsPerInvocation="8065" maxMicrosecondsPerInvocation="16854" standardDeviationMicrosecondsPerInvocation="6021"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="38" invocations="11" avgMicrosecondsPerInvocation="3538" maxMicrosecondsPerInvocation="23746" standardDeviationMicrosecondsPerInvocation="6692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="37" invocations="5" avgMicrosecondsPerInvocation="7538" maxMicrosecondsPerInvocation="22722" standardDeviationMicrosecondsPerInvocation="8228"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

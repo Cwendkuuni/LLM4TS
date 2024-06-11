@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287212138" analysisTimestamp="1714583272963" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/82_ipcalculator/BinaryCalculateTEST/17/ipac</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>ipac.BinaryCalculate</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:52 +0200" total_classes="1" referenced_classes="10" total_bugs="0" total_size="11" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.78" clock_seconds="3.20" peak_mbytes="189.52" alloc_mbytes="7104.00" gc_seconds="0.32">
+    <FileStats path="ipac/BinaryCalculateTest.java" bugCount="0" size="11"/>
+    <PackageStats package="ipac" total_bugs="0" total_types="1" total_size="11">
+      <ClassStats class="ipac.BinaryCalculateTest" sourceFile="BinaryCalculateTest.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="499" invocations="308" avgMicrosecondsPerInvocation="1623" maxMicrosecondsPerInvocation="40542" standardDeviationMicrosecondsPerInvocation="5034"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="479" invocations="10" avgMicrosecondsPerInvocation="47994" maxMicrosecondsPerInvocation="332178" standardDeviationMicrosecondsPerInvocation="96150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="119" invocations="59" avgMicrosecondsPerInvocation="2030" maxMicrosecondsPerInvocation="26932" standardDeviationMicrosecondsPerInvocation="4939"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="91" invocations="273" avgMicrosecondsPerInvocation="335" maxMicrosecondsPerInvocation="20299" standardDeviationMicrosecondsPerInvocation="1572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="86" invocations="10" avgMicrosecondsPerInvocation="8609" maxMicrosecondsPerInvocation="44552" standardDeviationMicrosecondsPerInvocation="15817"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="74" invocations="10" avgMicrosecondsPerInvocation="7489" maxMicrosecondsPerInvocation="53566" standardDeviationMicrosecondsPerInvocation="15816"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="70" invocations="10" avgMicrosecondsPerInvocation="7034" maxMicrosecondsPerInvocation="26972" standardDeviationMicrosecondsPerInvocation="9878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="70" invocations="2" avgMicrosecondsPerInvocation="35140" maxMicrosecondsPerInvocation="68641" standardDeviationMicrosecondsPerInvocation="33501"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="69" invocations="10" avgMicrosecondsPerInvocation="6949" maxMicrosecondsPerInvocation="48918" standardDeviationMicrosecondsPerInvocation="14212"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="66" invocations="2" avgMicrosecondsPerInvocation="33059" maxMicrosecondsPerInvocation="64789" standardDeviationMicrosecondsPerInvocation="31729"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="63" invocations="27" avgMicrosecondsPerInvocation="2343" maxMicrosecondsPerInvocation="31792" standardDeviationMicrosecondsPerInvocation="7052"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

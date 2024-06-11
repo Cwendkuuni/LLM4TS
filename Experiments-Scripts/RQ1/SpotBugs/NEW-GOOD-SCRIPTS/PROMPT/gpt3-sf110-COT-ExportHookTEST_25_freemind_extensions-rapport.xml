@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360737019" analysisTimestamp="1714581105828" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/105_freemind/ExportHookTEST/25/freemind/extensions</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="c801f330522589e3601460d5f04c8118" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode freemind.extensions.ExportHookTest.testChooseFile()</LongMessage>
+    <Class classname="freemind.extensions.ExportHookTest" primary="true">
+      <SourceLine classname="freemind.extensions.ExportHookTest" start="5" end="17" sourcefile="ExportHookTest.java" sourcepath="freemind/extensions/ExportHookTest.java">
+        <Message>At ExportHookTest.java:[lines 5-17]</Message>
+      </SourceLine>
+      <Message>In class freemind.extensions.ExportHookTest</Message>
+    </Class>
+    <Method classname="freemind.extensions.ExportHookTest" name="testChooseFile" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="freemind.extensions.ExportHookTest" start="10" end="17" startBytecode="0" endBytecode="4" sourcefile="ExportHookTest.java" sourcepath="freemind/extensions/ExportHookTest.java"/>
+      <Message>In method freemind.extensions.ExportHookTest.testChooseFile()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="freemind.extensions.ExportHookTest" primary="true" start="10" end="10" startBytecode="7" endBytecode="7" sourcefile="ExportHookTest.java" sourcepath="freemind/extensions/ExportHookTest.java">
+      <Message>At ExportHookTest.java:[line 10]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>freemind.extensions.ExportHook</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:38:57 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="6" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.88" clock_seconds="3.06" peak_mbytes="188.98" alloc_mbytes="7104.00" gc_seconds="0.18" priority_1="1">
+    <FileStats path="freemind/extensions/ExportHookTest.java" bugCount="1" size="6" bugHash="3f0faa63f94bcea6266588972f7215ba"/>
+    <PackageStats package="freemind.extensions" total_bugs="1" total_types="1" total_size="6" priority_1="1">
+      <ClassStats class="freemind.extensions.ExportHookTest" sourceFile="ExportHookTest.java" interface="false" size="6" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="589" invocations="292" avgMicrosecondsPerInvocation="2019" maxMicrosecondsPerInvocation="64226" standardDeviationMicrosecondsPerInvocation="7168"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="236" invocations="9" avgMicrosecondsPerInvocation="26312" maxMicrosecondsPerInvocation="231006" standardDeviationMicrosecondsPerInvocation="72377"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="176" invocations="35" avgMicrosecondsPerInvocation="5037" maxMicrosecondsPerInvocation="29880" standardDeviationMicrosecondsPerInvocation="8460"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="92" invocations="23" avgMicrosecondsPerInvocation="4032" maxMicrosecondsPerInvocation="45144" standardDeviationMicrosecondsPerInvocation="10596"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="84" invocations="9" avgMicrosecondsPerInvocation="9436" maxMicrosecondsPerInvocation="32902" standardDeviationMicrosecondsPerInvocation="11424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="83" invocations="9" avgMicrosecondsPerInvocation="9253" maxMicrosecondsPerInvocation="27847" standardDeviationMicrosecondsPerInvocation="11078"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="79" invocations="2" avgMicrosecondsPerInvocation="39809" maxMicrosecondsPerInvocation="78546" standardDeviationMicrosecondsPerInvocation="38737"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="62" invocations="9" avgMicrosecondsPerInvocation="6925" maxMicrosecondsPerInvocation="39452" standardDeviationMicrosecondsPerInvocation="12156"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="61" invocations="258" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="16773" standardDeviationMicrosecondsPerInvocation="1244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="59" invocations="9" avgMicrosecondsPerInvocation="6582" maxMicrosecondsPerInvocation="47140" standardDeviationMicrosecondsPerInvocation="14623"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="54" invocations="9" avgMicrosecondsPerInvocation="6052" maxMicrosecondsPerInvocation="49449" standardDeviationMicrosecondsPerInvocation="15367"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

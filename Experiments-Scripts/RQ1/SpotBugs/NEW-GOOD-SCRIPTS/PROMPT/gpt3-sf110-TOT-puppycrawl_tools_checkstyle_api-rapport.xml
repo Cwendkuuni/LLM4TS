@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360743595" analysisTimestamp="1714591219543" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/checkstyle/FileTextTEST/6/com/puppycrawl/tools/checkstyle/api</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="11f2c2002235c6700522137876a12ff9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.puppycrawl.tools.checkstyle.api.FileTextTest.testFileTextFileNotFound()</LongMessage>
+    <Class classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" primary="true">
+      <SourceLine classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" start="8" end="94" sourcefile="FileTextTest.java" sourcepath="com/puppycrawl/tools/checkstyle/api/FileTextTest.java">
+        <Message>At FileTextTest.java:[lines 8-94]</Message>
+      </SourceLine>
+      <Message>In class com.puppycrawl.tools.checkstyle.api.FileTextTest</Message>
+    </Class>
+    <Method classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" name="testFileTextFileNotFound" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" start="89" end="94" startBytecode="0" endBytecode="14" sourcefile="FileTextTest.java" sourcepath="com/puppycrawl/tools/checkstyle/api/FileTextTest.java"/>
+      <Message>In method com.puppycrawl.tools.checkstyle.api.FileTextTest.testFileTextFileNotFound()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="28" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" primary="true" start="93" end="93" startBytecode="27" endBytecode="27" sourcefile="FileTextTest.java" sourcepath="com/puppycrawl/tools/checkstyle/api/FileTextTest.java">
+      <Message>At FileTextTest.java:[line 93]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="fc88d37de1f86bd731b21ae8a0efae2a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in com.puppycrawl.tools.checkstyle.api.FileTextTest.testFileTextTypical(): new java.io.FileWriter(File)</LongMessage>
+    <Class classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" primary="true">
+      <SourceLine classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" start="8" end="94" sourcefile="FileTextTest.java" sourcepath="com/puppycrawl/tools/checkstyle/api/FileTextTest.java">
+        <Message>At FileTextTest.java:[lines 8-94]</Message>
+      </SourceLine>
+      <Message>In class com.puppycrawl.tools.checkstyle.api.FileTextTest</Message>
+    </Class>
+    <Method classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" name="testFileTextTypical" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" start="13" end="49" startBytecode="0" endBytecode="383" sourcefile="FileTextTest.java" sourcepath="com/puppycrawl/tools/checkstyle/api/FileTextTest.java"/>
+      <Message>In method com.puppycrawl.tools.checkstyle.api.FileTextTest.testFileTextTypical()</Message>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+      <Message>Called method new java.io.FileWriter(File)</Message>
+    </Method>
+    <SourceLine classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" primary="true" start="21" end="21" startBytecode="61" endBytecode="61" sourcefile="FileTextTest.java" sourcepath="com/puppycrawl/tools/checkstyle/api/FileTextTest.java">
+      <Message>At FileTextTest.java:[line 21]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="88b521bd46ef98a080a354693a799c33" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>com.puppycrawl.tools.checkstyle.api.FileTextTest.testFileTextTypical() may fail to clean up java.io.Writer on checked exception</LongMessage>
+    <Class classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" primary="true">
+      <SourceLine classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" start="8" end="94" sourcefile="FileTextTest.java" sourcepath="com/puppycrawl/tools/checkstyle/api/FileTextTest.java">
+        <Message>At FileTextTest.java:[lines 8-94]</Message>
+      </SourceLine>
+      <Message>In class com.puppycrawl.tools.checkstyle.api.FileTextTest</Message>
+    </Class>
+    <Method classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" name="testFileTextTypical" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" start="13" end="49" startBytecode="0" endBytecode="383" sourcefile="FileTextTest.java" sourcepath="com/puppycrawl/tools/checkstyle/api/FileTextTest.java"/>
+      <Message>In method com.puppycrawl.tools.checkstyle.api.FileTextTest.testFileTextTypical()</Message>
+    </Method>
+    <Class classname="java.io.Writer" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.Writer" start="50" end="294" sourcefile="Writer.java" sourcepath="java/io/Writer.java">
+        <Message>At Writer.java:[lines 50-294]</Message>
+      </SourceLine>
+      <Message>Reference type java.io.Writer</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" primary="true" start="21" end="21" startBytecode="61" endBytecode="61" sourcefile="FileTextTest.java" sourcepath="com/puppycrawl/tools/checkstyle/api/FileTextTest.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at FileTextTest.java:[line 21] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="com.puppycrawl.tools.checkstyle.api.FileTextTest" start="22" end="22" startBytecode="65" endBytecode="65" sourcefile="FileTextTest.java" sourcepath="com/puppycrawl/tools/checkstyle/api/FileTextTest.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at FileTextTest.java:[line 22]</Message>
+    </SourceLine>
+    <String value="{Writer x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Writer x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="EXPERIMENTAL">
+    <Description>Experimental</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" abbrev="OBL" category="EXPERIMENTAL">
+    <ShortDescription>Method may fail to clean up stream or resource on checked exception</ShortDescription>
+    <Details><![CDATA[
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          For sending feedback, check:
+          </p>
+          <ul>
+            <li><a href="https://github.com/spotbugs/spotbugs/blob/master/.github/CONTRIBUTING.md">contributing guideline</a></li>
+            <li><a href="https://github.com/spotbugs/discuss/issues?q=">mailinglist</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>
+          (<a href="https://people.eecs.berkeley.edu/~necula/Papers/rte_oopsla04.pdf">PDF</a>),
+          for a description of the analysis technique.
+          </p>
+          
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="OBL">
+    <Description>Unsatisfied obligation to clean up stream or resource</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>com.puppycrawl.tools.checkstyle.api.FileText</MissingClass>
+    <MissingClass>com.puppycrawl.tools.checkstyle.api.LineColumn</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:03 +0100" total_classes="1" referenced_classes="17" total_bugs="3" total_size="47" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.41" clock_seconds="2.14" peak_mbytes="192.34" alloc_mbytes="7104.00" gc_seconds="0.17" priority_2="1" priority_1="2">
+    <FileStats path="com/puppycrawl/tools/checkstyle/api/FileTextTest.java" bugCount="3" size="47" bugHash="60c51c88d6038c3542af616ad4d6a410"/>
+    <PackageStats package="com.puppycrawl.tools.checkstyle.api" total_bugs="3" total_types="1" total_size="47" priority_2="1" priority_1="2">
+      <ClassStats class="com.puppycrawl.tools.checkstyle.api.FileTextTest" sourceFile="FileTextTest.java" interface="false" size="47" bugs="3" priority_2="1" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="296" invocations="383" avgMicrosecondsPerInvocation="773" maxMicrosecondsPerInvocation="25543" standardDeviationMicrosecondsPerInvocation="2436"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="194" invocations="17" avgMicrosecondsPerInvocation="11449" maxMicrosecondsPerInvocation="175603" standardDeviationMicrosecondsPerInvocation="41061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="106" invocations="17" avgMicrosecondsPerInvocation="6252" maxMicrosecondsPerInvocation="33184" standardDeviationMicrosecondsPerInvocation="8944"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="84" invocations="72" avgMicrosecondsPerInvocation="1174" maxMicrosecondsPerInvocation="16352" standardDeviationMicrosecondsPerInvocation="2379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="75" invocations="4" avgMicrosecondsPerInvocation="18825" maxMicrosecondsPerInvocation="69628" standardDeviationMicrosecondsPerInvocation="29344"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="64" invocations="17" avgMicrosecondsPerInvocation="3813" maxMicrosecondsPerInvocation="31041" standardDeviationMicrosecondsPerInvocation="7689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="63" invocations="17" avgMicrosecondsPerInvocation="3736" maxMicrosecondsPerInvocation="13920" standardDeviationMicrosecondsPerInvocation="4035"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="54" invocations="40" avgMicrosecondsPerInvocation="1358" maxMicrosecondsPerInvocation="29699" standardDeviationMicrosecondsPerInvocation="4802"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="45" invocations="4" avgMicrosecondsPerInvocation="11410" maxMicrosecondsPerInvocation="21034" standardDeviationMicrosecondsPerInvocation="7329"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="38" invocations="17" avgMicrosecondsPerInvocation="2265" maxMicrosecondsPerInvocation="17028" standardDeviationMicrosecondsPerInvocation="4691"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="37" invocations="4" avgMicrosecondsPerInvocation="9297" maxMicrosecondsPerInvocation="16947" standardDeviationMicrosecondsPerInvocation="7657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="34" invocations="346" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="1652" standardDeviationMicrosecondsPerInvocation="190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="32" invocations="1" avgMicrosecondsPerInvocation="32252" maxMicrosecondsPerInvocation="32252" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="29" invocations="17" avgMicrosecondsPerInvocation="1754" maxMicrosecondsPerInvocation="9828" standardDeviationMicrosecondsPerInvocation="2927"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="29" invocations="17" avgMicrosecondsPerInvocation="1726" maxMicrosecondsPerInvocation="11710" standardDeviationMicrosecondsPerInvocation="2735"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

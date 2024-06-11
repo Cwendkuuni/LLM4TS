@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287218658" analysisTimestamp="1714587035834" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/ZEROSHOT/commons-lang/NumericEntityUnescaperTEST/1/org/apache/commons/lang3/text/translate</Jar>
+  </Project>
+  <BugInstance type="IL_INFINITE_LOOP" priority="1" rank="8" abbrev="IL" category="CORRECTNESS" instanceHash="1f478b56d02ac4161f257d9e1e5a4137" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Boucle apparemment inifinie</ShortMessage>
+    <LongMessage>Il y a apparemment une boucle infinie dans org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslateWithErrorIfNoSemiColonOption()</LongMessage>
+    <Class classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="13" end="141" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+        <Message>At NumericEntityUnescaperTest.java:[lines 13-141]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" name="testTranslateWithErrorIfNoSemiColonOption" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="68" end="77" startBytecode="0" endBytecode="156" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java"/>
+      <Message>In method org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest.testTranslateWithErrorIfNoSemiColonOption()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" primary="true" start="74" end="74" startBytecode="42" endBytecode="42" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java">
+      <Message>At NumericEntityUnescaperTest.java:[line 74]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" start="75" end="75" startBytecode="71" endBytecode="71" sourcefile="NumericEntityUnescaperTest.java" sourcepath="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java" role="SOURCE_LINE_LOOP_BOTTOM">
+      <Message>Loop bottom at NumericEntityUnescaperTest.java:[line 75]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="IL_INFINITE_LOOP" abbrev="IL" category="CORRECTNESS">
+    <ShortDescription>Boucle apparemment inifinie</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette boucle ne semble pas avoir un moyen de se terminer (autrement que, peut être, en déclenchant une exception).</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="IL">
+    <Description>Boucle infinie</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.apache.commons.lang3.text.translate.NumericEntityUnescaper</MissingClass>
+    <MissingClass>org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:58 +0200" total_classes="1" referenced_classes="15" total_bugs="1" total_size="101" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.39" clock_seconds="2.77" peak_mbytes="191.96" alloc_mbytes="7104.00" gc_seconds="0.18" priority_1="1">
+    <FileStats path="org/apache/commons/lang3/text/translate/NumericEntityUnescaperTest.java" bugCount="1" size="101" bugHash="694959a33a5b33b8d5138b84e54351c5"/>
+    <PackageStats package="org.apache.commons.lang3.text.translate" total_bugs="1" total_types="1" total_size="101" priority_1="1">
+      <ClassStats class="org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest" sourceFile="NumericEntityUnescaperTest.java" interface="false" size="101" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="390" invocations="330" avgMicrosecondsPerInvocation="1183" maxMicrosecondsPerInvocation="29671" standardDeviationMicrosecondsPerInvocation="3437"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="197" invocations="15" avgMicrosecondsPerInvocation="13188" maxMicrosecondsPerInvocation="189464" standardDeviationMicrosecondsPerInvocation="47116"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="146" invocations="15" avgMicrosecondsPerInvocation="9743" maxMicrosecondsPerInvocation="30675" standardDeviationMicrosecondsPerInvocation="11043"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="142" invocations="34" avgMicrosecondsPerInvocation="4202" maxMicrosecondsPerInvocation="66113" standardDeviationMicrosecondsPerInvocation="12383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="97" invocations="15" avgMicrosecondsPerInvocation="6493" maxMicrosecondsPerInvocation="22272" standardDeviationMicrosecondsPerInvocation="8409"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="95" invocations="15" avgMicrosecondsPerInvocation="6389" maxMicrosecondsPerInvocation="39319" standardDeviationMicrosecondsPerInvocation="12433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="77" invocations="75" avgMicrosecondsPerInvocation="1028" maxMicrosecondsPerInvocation="9044" standardDeviationMicrosecondsPerInvocation="1518"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="63" invocations="9" avgMicrosecondsPerInvocation="7008" maxMicrosecondsPerInvocation="17049" standardDeviationMicrosecondsPerInvocation="6065"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="62" invocations="15" avgMicrosecondsPerInvocation="4136" maxMicrosecondsPerInvocation="15145" standardDeviationMicrosecondsPerInvocation="5193"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="50" invocations="9" avgMicrosecondsPerInvocation="5581" maxMicrosecondsPerInvocation="41670" standardDeviationMicrosecondsPerInvocation="12816"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="47" invocations="9" avgMicrosecondsPerInvocation="5320" maxMicrosecondsPerInvocation="18687" standardDeviationMicrosecondsPerInvocation="5225"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="47" invocations="15" avgMicrosecondsPerInvocation="3156" maxMicrosecondsPerInvocation="15398" standardDeviationMicrosecondsPerInvocation="4554"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="46" invocations="293" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="6327" standardDeviationMicrosecondsPerInvocation="510"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="45" invocations="9" avgMicrosecondsPerInvocation="5052" maxMicrosecondsPerInvocation="19627" standardDeviationMicrosecondsPerInvocation="5758"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="44" invocations="1" avgMicrosecondsPerInvocation="44064" maxMicrosecondsPerInvocation="44064" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="43" invocations="15" avgMicrosecondsPerInvocation="2922" maxMicrosecondsPerInvocation="19671" standardDeviationMicrosecondsPerInvocation="5013"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

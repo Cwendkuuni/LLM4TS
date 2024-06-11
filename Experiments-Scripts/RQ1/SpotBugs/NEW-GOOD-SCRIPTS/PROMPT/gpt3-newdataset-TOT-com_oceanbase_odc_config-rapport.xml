@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711194554839" analysisTimestamp="1714575966569" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V3/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/TOT/Odc/3/6/com/oceanbase/odc/config</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="231ef0224df14f9eaf066c43faabfad1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder in com.oceanbase.odc.config.BeanConfigurationTest.testPasswordEncoder() at BeanConfigurationTest.java:[line 13] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/springframework/security/crypto/bcrypt/BCryptPasswordEncoder;">
+      <SourceLine classname="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder</Message>
+    </Type>
+    <Class classname="com.oceanbase.odc.config.BeanConfigurationTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.config.BeanConfigurationTest" start="8" end="14" sourcefile="BeanConfigurationTest.java" sourcepath="com/oceanbase/odc/config/BeanConfigurationTest.java">
+        <Message>At BeanConfigurationTest.java:[lines 8-14]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.config.BeanConfigurationTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.config.BeanConfigurationTest" name="testPasswordEncoder" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.config.BeanConfigurationTest" start="12" end="14" startBytecode="0" endBytecode="50" sourcefile="BeanConfigurationTest.java" sourcepath="com/oceanbase/odc/config/BeanConfigurationTest.java"/>
+      <Message>In method com.oceanbase.odc.config.BeanConfigurationTest.testPasswordEncoder()</Message>
+    </Method>
+    <SourceLine classname="com.oceanbase.odc.config.BeanConfigurationTest" primary="true" start="13" end="13" startBytecode="15" endBytecode="15" sourcefile="BeanConfigurationTest.java" sourcepath="com/oceanbase/odc/config/BeanConfigurationTest.java">
+      <Message>At BeanConfigurationTest.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>com.oceanbase.odc.config.BeanConfiguration</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sat, 23 Mar 2024 12:49:14 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="7" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.22" clock_seconds="3.92" peak_mbytes="189.29" alloc_mbytes="7104.00" gc_seconds="0.18" priority_2="1">
+    <FileStats path="com/oceanbase/odc/config/BeanConfigurationTest.java" bugCount="1" size="7" bugHash="897ce78644b1e995d06cbf21eac8723a"/>
+    <PackageStats package="com.oceanbase.odc.config" total_bugs="1" total_types="1" total_size="7" priority_2="1">
+      <ClassStats class="com.oceanbase.odc.config.BeanConfigurationTest" sourceFile="BeanConfigurationTest.java" interface="false" size="7" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="702" invocations="295" avgMicrosecondsPerInvocation="2381" maxMicrosecondsPerInvocation="77972" standardDeviationMicrosecondsPerInvocation="8627"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="228" invocations="9" avgMicrosecondsPerInvocation="25423" maxMicrosecondsPerInvocation="223299" standardDeviationMicrosecondsPerInvocation="69963"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="141" invocations="9" avgMicrosecondsPerInvocation="15760" maxMicrosecondsPerInvocation="65173" standardDeviationMicrosecondsPerInvocation="22907"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="130" invocations="258" avgMicrosecondsPerInvocation="507" maxMicrosecondsPerInvocation="24758" standardDeviationMicrosecondsPerInvocation="2358"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="118" invocations="9" avgMicrosecondsPerInvocation="13176" maxMicrosecondsPerInvocation="63813" standardDeviationMicrosecondsPerInvocation="19920"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="100" invocations="25" avgMicrosecondsPerInvocation="4025" maxMicrosecondsPerInvocation="69770" standardDeviationMicrosecondsPerInvocation="13942"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="99" invocations="35" avgMicrosecondsPerInvocation="2828" maxMicrosecondsPerInvocation="33191" standardDeviationMicrosecondsPerInvocation="6119"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="97" invocations="2" avgMicrosecondsPerInvocation="48514" maxMicrosecondsPerInvocation="95717" standardDeviationMicrosecondsPerInvocation="47203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="96" invocations="2" avgMicrosecondsPerInvocation="48328" maxMicrosecondsPerInvocation="95392" standardDeviationMicrosecondsPerInvocation="47064"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="74" invocations="9" avgMicrosecondsPerInvocation="8298" maxMicrosecondsPerInvocation="31709" standardDeviationMicrosecondsPerInvocation="10511"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="69" invocations="9" avgMicrosecondsPerInvocation="7677" maxMicrosecondsPerInvocation="42889" standardDeviationMicrosecondsPerInvocation="14134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="55" invocations="297" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="17160" standardDeviationMicrosecondsPerInvocation="1088"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756317192" analysisTimestamp="1714594709249" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/95_celwars2009/MP3TEST/16</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="904fd1fa294fd7ef62910f5f623a19e6" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode MP3Test.testMP3IOException()</LongMessage>
+    <Class classname="MP3Test" primary="true">
+      <SourceLine classname="MP3Test" start="4" end="32" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>At MP3Test.java:[lines 4-32]</Message>
+      </SourceLine>
+      <Message>In class MP3Test</Message>
+    </Class>
+    <Method classname="MP3Test" name="testMP3IOException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MP3Test" start="29" end="32" startBytecode="0" endBytecode="5" sourcefile="MP3Test.java" sourcepath="MP3Test.java"/>
+      <Message>In method MP3Test.testMP3IOException()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="MP3Test" primary="true" start="29" end="29" startBytecode="9" endBytecode="9" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+      <Message>At MP3Test.java:[line 29]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="2be92163dfdae010ac8678a82edc546f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode MP3Test.testMP3RuntimeException()</LongMessage>
+    <Class classname="MP3Test" primary="true">
+      <SourceLine classname="MP3Test" start="4" end="32" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>At MP3Test.java:[lines 4-32]</Message>
+      </SourceLine>
+      <Message>In class MP3Test</Message>
+    </Class>
+    <Method classname="MP3Test" name="testMP3RuntimeException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MP3Test" start="22" end="25" startBytecode="0" endBytecode="5" sourcefile="MP3Test.java" sourcepath="MP3Test.java"/>
+      <Message>In method MP3Test.testMP3RuntimeException()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="MP3Test" primary="true" start="22" end="22" startBytecode="9" endBytecode="9" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+      <Message>At MP3Test.java:[line 22]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>MP3</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:17 +0100" total_classes="1" referenced_classes="10" total_bugs="2" total_size="17" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.47" clock_seconds="1.91" peak_mbytes="190.69" alloc_mbytes="7104.00" gc_seconds="0.21" priority_1="2">
+    <FileStats path="MP3Test.java" bugCount="2" size="17" bugHash="7463d5c8a13f69931b1d1b0cadd83a1a"/>
+    <PackageStats package="" total_bugs="2" total_types="1" total_size="17" priority_1="2">
+      <ClassStats class="MP3Test" sourceFile="MP3Test.java" interface="false" size="17" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="284" invocations="10" avgMicrosecondsPerInvocation="28462" maxMicrosecondsPerInvocation="229944" standardDeviationMicrosecondsPerInvocation="68529"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="248" invocations="308" avgMicrosecondsPerInvocation="808" maxMicrosecondsPerInvocation="33713" standardDeviationMicrosecondsPerInvocation="2434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="78" invocations="10" avgMicrosecondsPerInvocation="7883" maxMicrosecondsPerInvocation="32667" standardDeviationMicrosecondsPerInvocation="10210"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="73" invocations="62" avgMicrosecondsPerInvocation="1188" maxMicrosecondsPerInvocation="12408" standardDeviationMicrosecondsPerInvocation="2049"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="72" invocations="10" avgMicrosecondsPerInvocation="7261" maxMicrosecondsPerInvocation="26121" standardDeviationMicrosecondsPerInvocation="9373"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="56" invocations="10" avgMicrosecondsPerInvocation="5633" maxMicrosecondsPerInvocation="39034" standardDeviationMicrosecondsPerInvocation="11451"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="45" invocations="10" avgMicrosecondsPerInvocation="4581" maxMicrosecondsPerInvocation="33739" standardDeviationMicrosecondsPerInvocation="9868"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="43" invocations="272" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="11066" standardDeviationMicrosecondsPerInvocation="704"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="40" invocations="26" avgMicrosecondsPerInvocation="1541" maxMicrosecondsPerInvocation="25305" standardDeviationMicrosecondsPerInvocation="4860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="5" avgMicrosecondsPerInvocation="7481" maxMicrosecondsPerInvocation="35578" standardDeviationMicrosecondsPerInvocation="14056"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="29" invocations="10" avgMicrosecondsPerInvocation="2957" maxMicrosecondsPerInvocation="9147" standardDeviationMicrosecondsPerInvocation="3445"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="28" invocations="5" avgMicrosecondsPerInvocation="5716" maxMicrosecondsPerInvocation="17316" standardDeviationMicrosecondsPerInvocation="6925"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

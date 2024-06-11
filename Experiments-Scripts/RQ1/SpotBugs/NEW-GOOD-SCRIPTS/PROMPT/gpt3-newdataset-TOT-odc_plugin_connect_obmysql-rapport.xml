@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711194554479" analysisTimestamp="1714577033077" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V3/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/TOT/Odc/19/28/com/oceanbase/odc/plugin/connect/obmysql</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="6b303f78e3024d80a513868a479f48bb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.sessionExtension</LongMessage>
+    <Class classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="4" end="26" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+        <Message>At OBMySQLSessionExtensionTest.java:[lines 4-26]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest</Message>
+    </Class>
+    <Field classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" name="sessionExtension" signature="Lcom/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtension;" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+        <Message>In OBMySQLSessionExtensionTest.java</Message>
+      </SourceLine>
+      <Message>Field com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.sessionExtension</Message>
+    </Field>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true" start="6" end="6" startBytecode="12" endBytecode="12" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+      <Message>At OBMySQLSessionExtensionTest.java:[line 6]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtension</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sat, 23 Mar 2024 12:49:14 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="13" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.27" clock_seconds="4.41" peak_mbytes="189.15" alloc_mbytes="7104.00" gc_seconds="0.16" priority_2="1">
+    <FileStats path="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java" bugCount="1" size="13" bugHash="3ddedf754e9ad2d6f453269d2c7d140a"/>
+    <PackageStats package="com.oceanbase.odc.plugin.connect.obmysql" total_bugs="1" total_types="1" total_size="13" priority_2="1">
+      <ClassStats class="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" sourceFile="OBMySQLSessionExtensionTest.java" interface="false" size="13" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="676" invocations="292" avgMicrosecondsPerInvocation="2318" maxMicrosecondsPerInvocation="53837" standardDeviationMicrosecondsPerInvocation="6727"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="247" invocations="9" avgMicrosecondsPerInvocation="27475" maxMicrosecondsPerInvocation="90128" standardDeviationMicrosecondsPerInvocation="35317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="238" invocations="9" avgMicrosecondsPerInvocation="26527" maxMicrosecondsPerInvocation="211838" standardDeviationMicrosecondsPerInvocation="65842"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="196" invocations="9" avgMicrosecondsPerInvocation="21864" maxMicrosecondsPerInvocation="76131" standardDeviationMicrosecondsPerInvocation="28949"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="129" invocations="294" avgMicrosecondsPerInvocation="441" maxMicrosecondsPerInvocation="31270" standardDeviationMicrosecondsPerInvocation="2914"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="115" invocations="5" avgMicrosecondsPerInvocation="23168" maxMicrosecondsPerInvocation="102543" standardDeviationMicrosecondsPerInvocation="39999"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="110" invocations="38" avgMicrosecondsPerInvocation="2900" maxMicrosecondsPerInvocation="17015" standardDeviationMicrosecondsPerInvocation="4981"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="92" invocations="9" avgMicrosecondsPerInvocation="10283" maxMicrosecondsPerInvocation="38482" standardDeviationMicrosecondsPerInvocation="14984"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="92" invocations="5" avgMicrosecondsPerInvocation="18410" maxMicrosecondsPerInvocation="88819" standardDeviationMicrosecondsPerInvocation="35218"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="79" invocations="258" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="28096" standardDeviationMicrosecondsPerInvocation="1979"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="75" invocations="9" avgMicrosecondsPerInvocation="8393" maxMicrosecondsPerInvocation="37868" standardDeviationMicrosecondsPerInvocation="12784"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="71" invocations="24" avgMicrosecondsPerInvocation="2970" maxMicrosecondsPerInvocation="33647" standardDeviationMicrosecondsPerInvocation="8217"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

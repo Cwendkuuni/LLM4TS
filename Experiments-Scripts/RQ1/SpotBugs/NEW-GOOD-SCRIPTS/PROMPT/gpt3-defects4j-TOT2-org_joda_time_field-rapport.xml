@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756240676" analysisTimestamp="1714609967536" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/Time/26/14/org/joda/time/field</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="fff4b31b2f9dac60758129acc270fc31" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.joda.time.field.LenientDateTimeFieldTest.testGetInstance()</LongMessage>
+    <Class classname="org.joda.time.field.LenientDateTimeFieldTest" primary="true">
+      <SourceLine classname="org.joda.time.field.LenientDateTimeFieldTest" start="5" end="41" sourcefile="LenientDateTimeFieldTest.java" sourcepath="org/joda/time/field/LenientDateTimeFieldTest.java">
+        <Message>At LenientDateTimeFieldTest.java:[lines 5-41]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.field.LenientDateTimeFieldTest</Message>
+    </Class>
+    <Method classname="org.joda.time.field.LenientDateTimeFieldTest" name="testGetInstance" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.field.LenientDateTimeFieldTest" start="23" end="25" startBytecode="0" endBytecode="10" sourcefile="LenientDateTimeFieldTest.java" sourcepath="org/joda/time/field/LenientDateTimeFieldTest.java"/>
+      <Message>In method org.joda.time.field.LenientDateTimeFieldTest.testGetInstance()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="10" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.joda.time.field.LenientDateTimeFieldTest" primary="true" start="23" end="23" startBytecode="9" endBytecode="9" sourcefile="LenientDateTimeFieldTest.java" sourcepath="org/joda/time/field/LenientDateTimeFieldTest.java">
+      <Message>At LenientDateTimeFieldTest.java:[line 23]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.joda.time.Chronology</MissingClass>
+    <MissingClass>org.joda.time.DateTimeField</MissingClass>
+    <MissingClass>org.joda.time.field.LenientDateTimeField</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:04:00 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="29" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.35" clock_seconds="0.96" peak_mbytes="189.73" alloc_mbytes="7104.00" gc_seconds="0.06" priority_1="1">
+    <FileStats path="org/joda/time/field/LenientDateTimeFieldTest.java" bugCount="1" size="29" bugHash="2af59d1f2398d126f364cf64e8d65e73"/>
+    <PackageStats package="org.joda.time.field" total_bugs="1" total_types="1" total_size="29" priority_1="1">
+      <ClassStats class="org.joda.time.field.LenientDateTimeFieldTest" sourceFile="LenientDateTimeFieldTest.java" interface="false" size="29" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="150" invocations="295" avgMicrosecondsPerInvocation="510" maxMicrosecondsPerInvocation="11713" standardDeviationMicrosecondsPerInvocation="1172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="72" invocations="9" avgMicrosecondsPerInvocation="8084" maxMicrosecondsPerInvocation="63270" standardDeviationMicrosecondsPerInvocation="19585"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="36" invocations="6" avgMicrosecondsPerInvocation="6125" maxMicrosecondsPerInvocation="32831" standardDeviationMicrosecondsPerInvocation="11963"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="35" invocations="9" avgMicrosecondsPerInvocation="3975" maxMicrosecondsPerInvocation="12757" standardDeviationMicrosecondsPerInvocation="4825"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="34" invocations="39" avgMicrosecondsPerInvocation="892" maxMicrosecondsPerInvocation="4278" standardDeviationMicrosecondsPerInvocation="879"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="25" invocations="258" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="1914" standardDeviationMicrosecondsPerInvocation="198"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="24" invocations="24" avgMicrosecondsPerInvocation="1041" maxMicrosecondsPerInvocation="14278" standardDeviationMicrosecondsPerInvocation="2879"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="24" invocations="9" avgMicrosecondsPerInvocation="2701" maxMicrosecondsPerInvocation="12289" standardDeviationMicrosecondsPerInvocation="3695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="18" invocations="6" avgMicrosecondsPerInvocation="3056" maxMicrosecondsPerInvocation="14572" standardDeviationMicrosecondsPerInvocation="5152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="17" invocations="1" avgMicrosecondsPerInvocation="17692" maxMicrosecondsPerInvocation="17692" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="16" invocations="297" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="459" standardDeviationMicrosecondsPerInvocation="40"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="15" invocations="9" avgMicrosecondsPerInvocation="1716" maxMicrosecondsPerInvocation="6195" standardDeviationMicrosecondsPerInvocation="2032"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="14" invocations="9" avgMicrosecondsPerInvocation="1651" maxMicrosecondsPerInvocation="9840" standardDeviationMicrosecondsPerInvocation="3003"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="14" invocations="6" avgMicrosecondsPerInvocation="2388" maxMicrosecondsPerInvocation="11115" standardDeviationMicrosecondsPerInvocation="3902"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

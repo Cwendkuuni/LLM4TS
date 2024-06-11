@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713290020065" analysisTimestamp="1714586524204" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/DEFECTS4J/AVEC-PACKAGE_GLOBAL/Defects4J-generated-tests/ZEROSHOT/Compress/8/14/org/apache/commons/compress/archivers/tar</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="a7e6cbd299bdcad8b11c021bdc36dfb3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.compress.archivers.tar.TarUtilsTest.testParseOctalInvalidByte()</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="6" end="98" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+        <Message>At TarUtilsTest.java:[lines 6-98]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.tar.TarUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" name="testParseOctalInvalidByte" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="18" end="21" startBytecode="0" endBytecode="55" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.tar.TarUtilsTest.testParseOctalInvalidByte()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="73" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true" start="19" end="19" startBytecode="72" endBytecode="72" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+      <Message>At TarUtilsTest.java:[line 19]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="ce46013ff0342c12893d3ef774e9502c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatNameBytes(): new String(byte[], int, int)</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="6" end="98" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+        <Message>At TarUtilsTest.java:[lines 6-98]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.tar.TarUtilsTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" name="testFormatNameBytes" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" start="33" end="38" startBytecode="0" endBytecode="79" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.tar.TarUtilsTest.testFormatNameBytes()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([BII)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="544" end="547" startBytecode="0" endBytecode="56" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method new String(byte[], int, int)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.tar.TarUtilsTest" primary="true" start="36" end="36" startBytecode="24" endBytecode="24" sourcefile="TarUtilsTest.java" sourcepath="org/apache/commons/compress/archivers/tar/TarUtilsTest.java">
+      <Message>At TarUtilsTest.java:[line 36]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.apache.commons.compress.archivers.tar.TarUtils</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:53:40 +0200" total_classes="1" referenced_classes="10" total_bugs="2" total_size="73" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.30" clock_seconds="3.07" peak_mbytes="191.14" alloc_mbytes="7104.00" gc_seconds="0.18" priority_2="1" priority_1="1">
+    <FileStats path="org/apache/commons/compress/archivers/tar/TarUtilsTest.java" bugCount="2" size="73" bugHash="6edb7138df8fcddc955b3a6a625a63eb"/>
+    <PackageStats package="org.apache.commons.compress.archivers.tar" total_bugs="2" total_types="1" total_size="73" priority_2="1" priority_1="1">
+      <ClassStats class="org.apache.commons.compress.archivers.tar.TarUtilsTest" sourceFile="TarUtilsTest.java" interface="false" size="73" bugs="2" priority_2="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="351" invocations="313" avgMicrosecondsPerInvocation="1124" maxMicrosecondsPerInvocation="29471" standardDeviationMicrosecondsPerInvocation="3395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="279" invocations="10" avgMicrosecondsPerInvocation="27982" maxMicrosecondsPerInvocation="198125" standardDeviationMicrosecondsPerInvocation="57572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="143" invocations="71" avgMicrosecondsPerInvocation="2015" maxMicrosecondsPerInvocation="22078" standardDeviationMicrosecondsPerInvocation="4691"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="106" invocations="10" avgMicrosecondsPerInvocation="10666" maxMicrosecondsPerInvocation="77547" standardDeviationMicrosecondsPerInvocation="22562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="95" invocations="10" avgMicrosecondsPerInvocation="9525" maxMicrosecondsPerInvocation="23179" standardDeviationMicrosecondsPerInvocation="9725"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="90" invocations="10" avgMicrosecondsPerInvocation="9040" maxMicrosecondsPerInvocation="35915" standardDeviationMicrosecondsPerInvocation="10292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="86" invocations="10" avgMicrosecondsPerInvocation="8620" maxMicrosecondsPerInvocation="40371" standardDeviationMicrosecondsPerInvocation="13636"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="85" invocations="10" avgMicrosecondsPerInvocation="8506" maxMicrosecondsPerInvocation="51702" standardDeviationMicrosecondsPerInvocation="14695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="70" invocations="27" avgMicrosecondsPerInvocation="2607" maxMicrosecondsPerInvocation="43734" standardDeviationMicrosecondsPerInvocation="8427"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="70" invocations="1" avgMicrosecondsPerInvocation="70179" maxMicrosecondsPerInvocation="70179" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="64" invocations="10" avgMicrosecondsPerInvocation="6450" maxMicrosecondsPerInvocation="27913" standardDeviationMicrosecondsPerInvocation="8854"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="62" invocations="10" avgMicrosecondsPerInvocation="6255" maxMicrosecondsPerInvocation="23597" standardDeviationMicrosecondsPerInvocation="6190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="55" invocations="10" avgMicrosecondsPerInvocation="5530" maxMicrosecondsPerInvocation="25616" standardDeviationMicrosecondsPerInvocation="8784"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="44" invocations="10" avgMicrosecondsPerInvocation="4499" maxMicrosecondsPerInvocation="15766" standardDeviationMicrosecondsPerInvocation="5383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="44" invocations="275" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="3439" standardDeviationMicrosecondsPerInvocation="382"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="39" invocations="1" avgMicrosecondsPerInvocation="39546" maxMicrosecondsPerInvocation="39546" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="34" invocations="10" avgMicrosecondsPerInvocation="3482" maxMicrosecondsPerInvocation="25038" standardDeviationMicrosecondsPerInvocation="7263"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

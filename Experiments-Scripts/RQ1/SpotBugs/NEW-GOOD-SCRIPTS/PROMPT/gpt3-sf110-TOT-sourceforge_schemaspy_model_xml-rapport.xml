@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360742431" analysisTimestamp="1714591738208" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/36_schemaspy/TableMetaTEST/10/net/sourceforge/schemaspy/model/xml</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="807d7aeb583204333ba1fb444c7d2de1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode net.sourceforge.schemaspy.model.xml.TableMetaTest.testTableMetaConstructor_nullTableNode()</LongMessage>
+    <Class classname="net.sourceforge.schemaspy.model.xml.TableMetaTest" primary="true">
+      <SourceLine classname="net.sourceforge.schemaspy.model.xml.TableMetaTest" start="7" end="109" sourcefile="TableMetaTest.java" sourcepath="net/sourceforge/schemaspy/model/xml/TableMetaTest.java">
+        <Message>At TableMetaTest.java:[lines 7-109]</Message>
+      </SourceLine>
+      <Message>In class net.sourceforge.schemaspy.model.xml.TableMetaTest</Message>
+    </Class>
+    <Method classname="net.sourceforge.schemaspy.model.xml.TableMetaTest" name="testTableMetaConstructor_nullTableNode" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="net.sourceforge.schemaspy.model.xml.TableMetaTest" start="35" end="36" startBytecode="0" endBytecode="5" sourcefile="TableMetaTest.java" sourcepath="net/sourceforge/schemaspy/model/xml/TableMetaTest.java"/>
+      <Message>In method net.sourceforge.schemaspy.model.xml.TableMetaTest.testTableMetaConstructor_nullTableNode()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="9" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="net.sourceforge.schemaspy.model.xml.TableMetaTest" primary="true" start="35" end="35" startBytecode="8" endBytecode="8" sourcefile="TableMetaTest.java" sourcepath="net/sourceforge/schemaspy/model/xml/TableMetaTest.java">
+      <Message>At TableMetaTest.java:[line 35]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>net.sourceforge.schemaspy.model.xml.TableColumnMeta</MissingClass>
+    <MissingClass>net.sourceforge.schemaspy.model.xml.TableMeta</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:02 +0100" total_classes="1" referenced_classes="12" total_bugs="1" total_size="50" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.06" clock_seconds="1.52" peak_mbytes="190.38" alloc_mbytes="7104.00" gc_seconds="0.11" priority_1="1">
+    <FileStats path="net/sourceforge/schemaspy/model/xml/TableMetaTest.java" bugCount="1" size="50" bugHash="6316229b744d8b5c9c92c63599d8f7a2"/>
+    <PackageStats package="net.sourceforge.schemaspy.model.xml" total_bugs="1" total_types="1" total_size="50" priority_1="1">
+      <ClassStats class="net.sourceforge.schemaspy.model.xml.TableMetaTest" sourceFile="TableMetaTest.java" interface="false" size="50" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="231" invocations="320" avgMicrosecondsPerInvocation="723" maxMicrosecondsPerInvocation="18304" standardDeviationMicrosecondsPerInvocation="1911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="110" invocations="12" avgMicrosecondsPerInvocation="9209" maxMicrosecondsPerInvocation="110346" standardDeviationMicrosecondsPerInvocation="30493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="64" invocations="12" avgMicrosecondsPerInvocation="5363" maxMicrosecondsPerInvocation="30507" standardDeviationMicrosecondsPerInvocation="8528"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="52" invocations="32" avgMicrosecondsPerInvocation="1630" maxMicrosecondsPerInvocation="20159" standardDeviationMicrosecondsPerInvocation="4024"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="47" invocations="68" avgMicrosecondsPerInvocation="695" maxMicrosecondsPerInvocation="6571" standardDeviationMicrosecondsPerInvocation="1006"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="39" invocations="9" avgMicrosecondsPerInvocation="4386" maxMicrosecondsPerInvocation="34601" standardDeviationMicrosecondsPerInvocation="10707"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="37" invocations="9" avgMicrosecondsPerInvocation="4172" maxMicrosecondsPerInvocation="29855" standardDeviationMicrosecondsPerInvocation="9104"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="36" invocations="284" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="4919" standardDeviationMicrosecondsPerInvocation="361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="35" invocations="12" avgMicrosecondsPerInvocation="2997" maxMicrosecondsPerInvocation="13137" standardDeviationMicrosecondsPerInvocation="4210"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="30" invocations="1" avgMicrosecondsPerInvocation="30646" maxMicrosecondsPerInvocation="30646" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="30" invocations="12" avgMicrosecondsPerInvocation="2513" maxMicrosecondsPerInvocation="18292" standardDeviationMicrosecondsPerInvocation="4917"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="22" invocations="323" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="1478" standardDeviationMicrosecondsPerInvocation="96"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="20" invocations="12" avgMicrosecondsPerInvocation="1698" maxMicrosecondsPerInvocation="13071" standardDeviationMicrosecondsPerInvocation="3520"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="20" invocations="8" avgMicrosecondsPerInvocation="2519" maxMicrosecondsPerInvocation="10942" standardDeviationMicrosecondsPerInvocation="3300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="19" invocations="11" avgMicrosecondsPerInvocation="1783" maxMicrosecondsPerInvocation="11379" standardDeviationMicrosecondsPerInvocation="3061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="18" invocations="9" avgMicrosecondsPerInvocation="2072" maxMicrosecondsPerInvocation="12170" standardDeviationMicrosecondsPerInvocation="3604"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

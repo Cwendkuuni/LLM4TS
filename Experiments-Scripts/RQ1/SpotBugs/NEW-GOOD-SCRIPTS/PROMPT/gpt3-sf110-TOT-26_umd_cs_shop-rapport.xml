@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360743331" analysisTimestamp="1714591290161" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/85_shop/JSPredicateFormTEST/26/umd/cs/shop</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="7d46c5c880990d29e2278fb4b6b4136d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode umd.cs.shop.JSPredicateFormTest.testJSPredicateForm()</LongMessage>
+    <Class classname="umd.cs.shop.JSPredicateFormTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="6" end="119" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>At JSPredicateFormTest.java:[lines 6-119]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSPredicateFormTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSPredicateFormTest" name="testJSPredicateForm" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="18" end="31" startBytecode="0" endBytecode="21" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java"/>
+      <Message>In method umd.cs.shop.JSPredicateFormTest.testJSPredicateForm()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="12" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" primary="true" start="27" end="27" startBytecode="34" endBytecode="34" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+      <Message>At JSPredicateFormTest.java:[line 27]</Message>
+    </SourceLine>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="19" end="19" startBytecode="11" endBytecode="11" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at JSPredicateFormTest.java:[line 19]</Message>
+    </SourceLine>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="23" end="23" startBytecode="23" endBytecode="23" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at JSPredicateFormTest.java:[line 23]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="2df73262cc57ee1c02fc60547e393529" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : umd.cs.shop.JSPredicateFormTest.jsPredicateForm</LongMessage>
+    <Class classname="umd.cs.shop.JSPredicateFormTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="6" end="119" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>At JSPredicateFormTest.java:[lines 6-119]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSPredicateFormTest</Message>
+    </Class>
+    <Field classname="umd.cs.shop.JSPredicateFormTest" name="jsPredicateForm" signature="Lumd/cs/shop/JSPredicateForm;" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>In JSPredicateFormTest.java</Message>
+      </SourceLine>
+      <Message>Field umd.cs.shop.JSPredicateFormTest.jsPredicateForm</Message>
+    </Field>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" primary="true" start="12" end="12" startBytecode="8" endBytecode="8" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+      <Message>At JSPredicateFormTest.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>umd.cs.shop.JSPredicateForm</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:03 +0100" total_classes="1" referenced_classes="10" total_bugs="2" total_size="31" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.58" clock_seconds="1.84" peak_mbytes="190.56" alloc_mbytes="7104.00" gc_seconds="0.13" priority_2="1" priority_1="1">
+    <FileStats path="umd/cs/shop/JSPredicateFormTest.java" bugCount="2" size="31" bugHash="df1ecdddd4ff17f28a550dc5369cdaef"/>
+    <PackageStats package="umd.cs.shop" total_bugs="2" total_types="1" total_size="31" priority_2="1" priority_1="1">
+      <ClassStats class="umd.cs.shop.JSPredicateFormTest" sourceFile="JSPredicateFormTest.java" interface="false" size="31" bugs="2" priority_2="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="276" invocations="308" avgMicrosecondsPerInvocation="898" maxMicrosecondsPerInvocation="17059" standardDeviationMicrosecondsPerInvocation="2434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="200" invocations="68" avgMicrosecondsPerInvocation="2952" maxMicrosecondsPerInvocation="138027" standardDeviationMicrosecondsPerInvocation="16556"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="93" invocations="10" avgMicrosecondsPerInvocation="9378" maxMicrosecondsPerInvocation="37797" standardDeviationMicrosecondsPerInvocation="11513"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="66" invocations="273" avgMicrosecondsPerInvocation="241" maxMicrosecondsPerInvocation="11353" standardDeviationMicrosecondsPerInvocation="1015"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="60" invocations="26" avgMicrosecondsPerInvocation="2323" maxMicrosecondsPerInvocation="32358" standardDeviationMicrosecondsPerInvocation="6641"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="54" invocations="10" avgMicrosecondsPerInvocation="5457" maxMicrosecondsPerInvocation="44515" standardDeviationMicrosecondsPerInvocation="13079"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="45" invocations="10" avgMicrosecondsPerInvocation="4587" maxMicrosecondsPerInvocation="24323" standardDeviationMicrosecondsPerInvocation="7281"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="45" invocations="10" avgMicrosecondsPerInvocation="4507" maxMicrosecondsPerInvocation="26392" standardDeviationMicrosecondsPerInvocation="7515"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="42" invocations="11" avgMicrosecondsPerInvocation="3876" maxMicrosecondsPerInvocation="40412" standardDeviationMicrosecondsPerInvocation="11560"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="36" invocations="273" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="20490" standardDeviationMicrosecondsPerInvocation="1320"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="35" invocations="1" avgMicrosecondsPerInvocation="35127" maxMicrosecondsPerInvocation="35127" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="30" invocations="10" avgMicrosecondsPerInvocation="3024" maxMicrosecondsPerInvocation="9170" standardDeviationMicrosecondsPerInvocation="3496"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

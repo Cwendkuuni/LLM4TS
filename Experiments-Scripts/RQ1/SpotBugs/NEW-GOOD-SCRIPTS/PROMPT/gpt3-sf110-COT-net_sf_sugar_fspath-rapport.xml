@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360738643" analysisTimestamp="1714583329244" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/60_sugar/FSPathResultTEST/26/net/sf/sugar/fspath</Jar>
+  </Project>
+  <BugInstance type="CNT_ROUGH_CONSTANT_VALUE" priority="2" rank="16" abbrev="CNT" category="BAD_PRACTICE" instanceHash="686c05fdff912870fcf6e9bd5815d886" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Rough value of known constant found</ShortMessage>
+    <LongMessage>Rough value of Math.PI found: 3.14</LongMessage>
+    <Class classname="net.sf.sugar.fspath.FSPathResultTest" primary="true">
+      <SourceLine classname="net.sf.sugar.fspath.FSPathResultTest" start="8" end="92" sourcefile="FSPathResultTest.java" sourcepath="net/sf/sugar/fspath/FSPathResultTest.java">
+        <Message>At FSPathResultTest.java:[lines 8-92]</Message>
+      </SourceLine>
+      <Message>In class net.sf.sugar.fspath.FSPathResultTest</Message>
+    </Class>
+    <Method classname="net.sf.sugar.fspath.FSPathResultTest" name="testGetDouble" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="net.sf.sugar.fspath.FSPathResultTest" start="26" end="29" startBytecode="0" endBytecode="60" sourcefile="FSPathResultTest.java" sourcepath="net/sf/sugar/fspath/FSPathResultTest.java"/>
+      <Message>In method net.sf.sugar.fspath.FSPathResultTest.testGetDouble()</Message>
+    </Method>
+    <String value="3.14">
+      <Message>Value 3.14</Message>
+    </String>
+    <String value="Math.PI">
+      <Message>Value Math.PI</Message>
+    </String>
+    <SourceLine classname="net.sf.sugar.fspath.FSPathResultTest" primary="true" start="26" end="26" startBytecode="0" endBytecode="0" sourcefile="FSPathResultTest.java" sourcepath="net/sf/sugar/fspath/FSPathResultTest.java">
+      <Message>At FSPathResultTest.java:[line 26]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="CNT_ROUGH_CONSTANT_VALUE" priority="2" rank="16" abbrev="CNT" category="BAD_PRACTICE" instanceHash="bf8e7c8c9447a2032bd7941213d9735a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Rough value of known constant found</ShortMessage>
+    <LongMessage>Rough value of Math.PI found: 3.14</LongMessage>
+    <Class classname="net.sf.sugar.fspath.FSPathResultTest" primary="true">
+      <SourceLine classname="net.sf.sugar.fspath.FSPathResultTest" start="8" end="92" sourcefile="FSPathResultTest.java" sourcepath="net/sf/sugar/fspath/FSPathResultTest.java">
+        <Message>At FSPathResultTest.java:[lines 8-92]</Message>
+      </SourceLine>
+      <Message>In class net.sf.sugar.fspath.FSPathResultTest</Message>
+    </Class>
+    <Method classname="net.sf.sugar.fspath.FSPathResultTest" name="testToStringWithDouble" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="net.sf.sugar.fspath.FSPathResultTest" start="68" end="71" startBytecode="0" endBytecode="63" sourcefile="FSPathResultTest.java" sourcepath="net/sf/sugar/fspath/FSPathResultTest.java"/>
+      <Message>In method net.sf.sugar.fspath.FSPathResultTest.testToStringWithDouble()</Message>
+    </Method>
+    <String value="3.14">
+      <Message>Value 3.14</Message>
+    </String>
+    <String value="Math.PI">
+      <Message>Value Math.PI</Message>
+    </String>
+    <SourceLine classname="net.sf.sugar.fspath.FSPathResultTest" primary="true" start="68" end="68" startBytecode="0" endBytecode="0" sourcefile="FSPathResultTest.java" sourcepath="net/sf/sugar/fspath/FSPathResultTest.java">
+      <Message>At FSPathResultTest.java:[line 68]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="CNT_ROUGH_CONSTANT_VALUE" abbrev="CNT" category="BAD_PRACTICE">
+    <ShortDescription>Rough value of known constant found</ShortDescription>
+    <Details><![CDATA[
+      
+    <p>It's recommended to use the predefined library constant for code clarity and better precision.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="CNT">
+    <Description>Rough value of known constant</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>net.sf.sugar.fspath.FSPathResult</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:38:58 +0100" total_classes="1" referenced_classes="15" total_bugs="2" total_size="63" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.89" clock_seconds="3.48" peak_mbytes="190.63" alloc_mbytes="7104.00" gc_seconds="0.21" priority_2="2">
+    <FileStats path="net/sf/sugar/fspath/FSPathResultTest.java" bugCount="2" size="63" bugHash="9eb641a465734284e52c728de05c968f"/>
+    <PackageStats package="net.sf.sugar.fspath" total_bugs="2" total_types="1" total_size="63" priority_2="2">
+      <ClassStats class="net.sf.sugar.fspath.FSPathResultTest" sourceFile="FSPathResultTest.java" interface="false" size="63" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="553" invocations="363" avgMicrosecondsPerInvocation="1524" maxMicrosecondsPerInvocation="47734" standardDeviationMicrosecondsPerInvocation="4848"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="346" invocations="15" avgMicrosecondsPerInvocation="23099" maxMicrosecondsPerInvocation="234967" standardDeviationMicrosecondsPerInvocation="57475"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="167" invocations="15" avgMicrosecondsPerInvocation="11167" maxMicrosecondsPerInvocation="33821" standardDeviationMicrosecondsPerInvocation="12496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="136" invocations="95" avgMicrosecondsPerInvocation="1436" maxMicrosecondsPerInvocation="53679" standardDeviationMicrosecondsPerInvocation="5814"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="120" invocations="328" avgMicrosecondsPerInvocation="366" maxMicrosecondsPerInvocation="30200" standardDeviationMicrosecondsPerInvocation="2271"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="104" invocations="40" avgMicrosecondsPerInvocation="2608" maxMicrosecondsPerInvocation="36955" standardDeviationMicrosecondsPerInvocation="7376"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="99" invocations="15" avgMicrosecondsPerInvocation="6628" maxMicrosecondsPerInvocation="42387" standardDeviationMicrosecondsPerInvocation="12383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="86" invocations="15" avgMicrosecondsPerInvocation="5777" maxMicrosecondsPerInvocation="40809" standardDeviationMicrosecondsPerInvocation="11205"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="75" invocations="13" avgMicrosecondsPerInvocation="5845" maxMicrosecondsPerInvocation="16572" standardDeviationMicrosecondsPerInvocation="6568"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="64" invocations="13" avgMicrosecondsPerInvocation="4937" maxMicrosecondsPerInvocation="55584" standardDeviationMicrosecondsPerInvocation="14678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="61" invocations="15" avgMicrosecondsPerInvocation="4083" maxMicrosecondsPerInvocation="22603" standardDeviationMicrosecondsPerInvocation="6540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="56" invocations="365" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="16039" standardDeviationMicrosecondsPerInvocation="1001"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="52" invocations="13" avgMicrosecondsPerInvocation="4044" maxMicrosecondsPerInvocation="31831" standardDeviationMicrosecondsPerInvocation="8391"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="52" invocations="13" avgMicrosecondsPerInvocation="4041" maxMicrosecondsPerInvocation="34941" standardDeviationMicrosecondsPerInvocation="8986"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

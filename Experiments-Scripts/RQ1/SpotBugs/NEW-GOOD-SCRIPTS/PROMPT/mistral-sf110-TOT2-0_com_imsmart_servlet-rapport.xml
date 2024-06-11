@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287210110" analysisTimestamp="1714584777165" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/11_imsmart/HTMLFilterTEST/0/com/imsmart/servlet</Jar>
+  </Project>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="bae1481ecfce4e68e8fb3751617bd4f5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in com.imsmart.servlet.HTMLFilterTest.testFilterThrowsException()</LongMessage>
+    <Class classname="com.imsmart.servlet.HTMLFilterTest" primary="true">
+      <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" start="6" end="94" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java">
+        <Message>At HTMLFilterTest.java:[lines 6-94]</Message>
+      </SourceLine>
+      <Message>In class com.imsmart.servlet.HTMLFilterTest</Message>
+    </Class>
+    <Method classname="com.imsmart.servlet.HTMLFilterTest" name="testFilterThrowsException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" start="86" end="94" startBytecode="0" endBytecode="117" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java"/>
+      <Message>In method com.imsmart.servlet.HTMLFilterTest.testFilterThrowsException()</Message>
+    </Method>
+    <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" primary="true" start="90" end="90" startBytecode="12" endBytecode="12" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java">
+      <Message>At HTMLFilterTest.java:[line 90]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="cd618a99f33739e25ebc7d53efafcb9b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.imsmart.servlet.HTMLFilterTest.testFilterThrowsException()</LongMessage>
+    <Class classname="com.imsmart.servlet.HTMLFilterTest" primary="true">
+      <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" start="6" end="94" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java">
+        <Message>At HTMLFilterTest.java:[lines 6-94]</Message>
+      </SourceLine>
+      <Message>In class com.imsmart.servlet.HTMLFilterTest</Message>
+    </Class>
+    <Method classname="com.imsmart.servlet.HTMLFilterTest" name="testFilterThrowsException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" start="86" end="94" startBytecode="0" endBytecode="17" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java"/>
+      <Message>In method com.imsmart.servlet.HTMLFilterTest.testFilterThrowsException()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="9" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" primary="true" start="89" end="89" startBytecode="8" endBytecode="8" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java">
+      <Message>At HTMLFilterTest.java:[line 89]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DCN_NULLPOINTER_EXCEPTION" abbrev="DCN" category="STYLE">
+    <ShortDescription>NullPointerException caught</ShortDescription>
+    <Details><![CDATA[
+   
+<p>
+According to SEI Cert rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">ERR08-J</a> NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
+<p>
+This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+  try {
+    String ms[] = m.split(" ");
+    return names.length != 1;
+  } catch (NullPointerException e) {
+    return false;
+  }
+}
+</code></pre>
+<p>
+A compliant solution would use a null-check as in the following example:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+    if (m == null) return false;
+    String ms[] = m.split(" ");
+    return names.length != 1;
+}
+</code></pre>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <BugCode abbrev="DCN">
+    <Description>Don&apos;t Catch NullPointer Exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.imsmart.servlet.HTMLFilter</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:50 +0200" total_classes="1" referenced_classes="11" total_bugs="2" total_size="62" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.88" clock_seconds="3.37" peak_mbytes="189.33" alloc_mbytes="7104.00" gc_seconds="0.26" priority_2="2">
+    <FileStats path="com/imsmart/servlet/HTMLFilterTest.java" bugCount="2" size="62" bugHash="1d3e52f02a86717b19ef3a74162a24c2"/>
+    <PackageStats package="com.imsmart.servlet" total_bugs="2" total_types="1" total_size="62" priority_2="2">
+      <ClassStats class="com.imsmart.servlet.HTMLFilterTest" sourceFile="HTMLFilterTest.java" interface="false" size="62" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="533" invocations="312" avgMicrosecondsPerInvocation="1710" maxMicrosecondsPerInvocation="43183" standardDeviationMicrosecondsPerInvocation="5266"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="317" invocations="11" avgMicrosecondsPerInvocation="28832" maxMicrosecondsPerInvocation="295457" standardDeviationMicrosecondsPerInvocation="84453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="224" invocations="70" avgMicrosecondsPerInvocation="3213" maxMicrosecondsPerInvocation="28184" standardDeviationMicrosecondsPerInvocation="6378"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="128" invocations="11" avgMicrosecondsPerInvocation="11647" maxMicrosecondsPerInvocation="39797" standardDeviationMicrosecondsPerInvocation="14744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="98" invocations="11" avgMicrosecondsPerInvocation="8958" maxMicrosecondsPerInvocation="30215" standardDeviationMicrosecondsPerInvocation="11265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="84" invocations="11" avgMicrosecondsPerInvocation="7722" maxMicrosecondsPerInvocation="35931" standardDeviationMicrosecondsPerInvocation="11849"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="83" invocations="273" avgMicrosecondsPerInvocation="305" maxMicrosecondsPerInvocation="24799" standardDeviationMicrosecondsPerInvocation="1915"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="78" invocations="26" avgMicrosecondsPerInvocation="3033" maxMicrosecondsPerInvocation="36721" standardDeviationMicrosecondsPerInvocation="8704"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="72" invocations="13" avgMicrosecondsPerInvocation="5548" maxMicrosecondsPerInvocation="64368" standardDeviationMicrosecondsPerInvocation="17005"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="70" invocations="11" avgMicrosecondsPerInvocation="6378" maxMicrosecondsPerInvocation="33639" standardDeviationMicrosecondsPerInvocation="9885"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="63" invocations="1" avgMicrosecondsPerInvocation="63708" maxMicrosecondsPerInvocation="63708" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="60" invocations="314" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="16557" standardDeviationMicrosecondsPerInvocation="1186"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="58" invocations="11" avgMicrosecondsPerInvocation="5285" maxMicrosecondsPerInvocation="26564" standardDeviationMicrosecondsPerInvocation="7970"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287210998" analysisTimestamp="1714586662465" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/39_diffi/StringIncrementorTEST/7/de/beiri22/stringincrementor</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="24867719436d6e2cdcfd37850d2adf1c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in de.beiri22.stringincrementor.test.StringIncrementorTest.testLongInput(): new String(byte[])</LongMessage>
+    <Class classname="de.beiri22.stringincrementor.test.StringIncrementorTest" primary="true">
+      <SourceLine classname="de.beiri22.stringincrementor.test.StringIncrementorTest" start="9" end="89" sourcefile="StringIncrementorTest.java" sourcepath="de/beiri22/stringincrementor/test/StringIncrementorTest.java">
+        <Message>At StringIncrementorTest.java:[lines 9-89]</Message>
+      </SourceLine>
+      <Message>In class de.beiri22.stringincrementor.test.StringIncrementorTest</Message>
+    </Class>
+    <Method classname="de.beiri22.stringincrementor.test.StringIncrementorTest" name="testLongInput" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="de.beiri22.stringincrementor.test.StringIncrementorTest" start="71" end="78" startBytecode="0" endBytecode="114" sourcefile="StringIncrementorTest.java" sourcepath="de/beiri22/stringincrementor/test/StringIncrementorTest.java"/>
+      <Message>In method de.beiri22.stringincrementor.test.StringIncrementorTest.testLongInput()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="566" end="567" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method new String(byte[])</Message>
+    </Method>
+    <SourceLine classname="de.beiri22.stringincrementor.test.StringIncrementorTest" primary="true" start="71" end="71" startBytecode="8" endBytecode="8" sourcefile="StringIncrementorTest.java" sourcepath="de/beiri22/stringincrementor/test/StringIncrementorTest.java">
+      <Message>At StringIncrementorTest.java:[line 71]</Message>
+    </SourceLine>
+    <SourceLine classname="de.beiri22.stringincrementor.test.StringIncrementorTest" start="72" end="72" startBytecode="20" endBytecode="20" sourcefile="StringIncrementorTest.java" sourcepath="de/beiri22/stringincrementor/test/StringIncrementorTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at StringIncrementorTest.java:[line 72]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="5f00e103f5cc8a5b9a5ec41b2efc958b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in de.beiri22.stringincrementor.test.StringIncrementorTest.testLongInputPatch(): new String(byte[])</LongMessage>
+    <Class classname="de.beiri22.stringincrementor.test.StringIncrementorTest" primary="true">
+      <SourceLine classname="de.beiri22.stringincrementor.test.StringIncrementorTest" start="9" end="89" sourcefile="StringIncrementorTest.java" sourcepath="de/beiri22/stringincrementor/test/StringIncrementorTest.java">
+        <Message>At StringIncrementorTest.java:[lines 9-89]</Message>
+      </SourceLine>
+      <Message>In class de.beiri22.stringincrementor.test.StringIncrementorTest</Message>
+    </Class>
+    <Method classname="de.beiri22.stringincrementor.test.StringIncrementorTest" name="testLongInputPatch" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="de.beiri22.stringincrementor.test.StringIncrementorTest" start="82" end="89" startBytecode="0" endBytecode="110" sourcefile="StringIncrementorTest.java" sourcepath="de/beiri22/stringincrementor/test/StringIncrementorTest.java"/>
+      <Message>In method de.beiri22.stringincrementor.test.StringIncrementorTest.testLongInputPatch()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="566" end="567" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method new String(byte[])</Message>
+    </Method>
+    <SourceLine classname="de.beiri22.stringincrementor.test.StringIncrementorTest" primary="true" start="82" end="82" startBytecode="8" endBytecode="8" sourcefile="StringIncrementorTest.java" sourcepath="de/beiri22/stringincrementor/test/StringIncrementorTest.java">
+      <Message>At StringIncrementorTest.java:[line 82]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>de.beiri22.stringincrementor.StringIncrementor</MissingClass>
+    <MissingClass>de.beiri22.stringincrementor.relativestring.RelativeString</MissingClass>
+    <MissingClass>de.beiri22.stringincrementor.relativestring.StringLink</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:50 +0200" total_classes="1" referenced_classes="10" total_bugs="2" total_size="63" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.67" clock_seconds="3.13" peak_mbytes="190.10" alloc_mbytes="7104.00" gc_seconds="0.16" priority_1="2">
+    <FileStats path="de/beiri22/stringincrementor/test/StringIncrementorTest.java" bugCount="2" size="63" bugHash="bb85de5c6525a0cd0beebb1fb8173fa0"/>
+    <PackageStats package="de.beiri22.stringincrementor.test" total_bugs="2" total_types="1" total_size="63" priority_1="2">
+      <ClassStats class="de.beiri22.stringincrementor.test.StringIncrementorTest" sourceFile="StringIncrementorTest.java" interface="false" size="63" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="508" invocations="312" avgMicrosecondsPerInvocation="1631" maxMicrosecondsPerInvocation="35422" standardDeviationMicrosecondsPerInvocation="4822"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="281" invocations="10" avgMicrosecondsPerInvocation="28173" maxMicrosecondsPerInvocation="191316" standardDeviationMicrosecondsPerInvocation="55826"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="145" invocations="66" avgMicrosecondsPerInvocation="2208" maxMicrosecondsPerInvocation="27544" standardDeviationMicrosecondsPerInvocation="5121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="141" invocations="9" avgMicrosecondsPerInvocation="15692" maxMicrosecondsPerInvocation="116719" standardDeviationMicrosecondsPerInvocation="36162"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="122" invocations="274" avgMicrosecondsPerInvocation="448" maxMicrosecondsPerInvocation="24080" standardDeviationMicrosecondsPerInvocation="2258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="100" invocations="31" avgMicrosecondsPerInvocation="3228" maxMicrosecondsPerInvocation="32385" standardDeviationMicrosecondsPerInvocation="8409"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="89" invocations="9" avgMicrosecondsPerInvocation="9949" maxMicrosecondsPerInvocation="61588" standardDeviationMicrosecondsPerInvocation="18750"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="89" invocations="10" avgMicrosecondsPerInvocation="8947" maxMicrosecondsPerInvocation="26760" standardDeviationMicrosecondsPerInvocation="10869"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="58" invocations="10" avgMicrosecondsPerInvocation="5875" maxMicrosecondsPerInvocation="24720" standardDeviationMicrosecondsPerInvocation="7309"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="57" invocations="10" avgMicrosecondsPerInvocation="5757" maxMicrosecondsPerInvocation="20755" standardDeviationMicrosecondsPerInvocation="7111"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="54" invocations="9" avgMicrosecondsPerInvocation="6050" maxMicrosecondsPerInvocation="23774" standardDeviationMicrosecondsPerInvocation="7759"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="46" invocations="10" avgMicrosecondsPerInvocation="4679" maxMicrosecondsPerInvocation="20634" standardDeviationMicrosecondsPerInvocation="6482"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

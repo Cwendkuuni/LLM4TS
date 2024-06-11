@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713290015921" analysisTimestamp="1714577395129" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/DEFECTS4J/AVEC-PACKAGE_GLOBAL/Defects4J-generated-tests/TOT/Jsoup/25/28/org/jsoup/parser</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="88787064af224f8215ff1910abfb6194" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.TagTest.testValueOfEmptyName()</LongMessage>
+    <Class classname="org.jsoup.parser.TagTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.TagTest" start="6" end="130" sourcefile="TagTest.java" sourcepath="org/jsoup/parser/TagTest.java">
+        <Message>At TagTest.java:[lines 6-130]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.TagTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.TagTest" name="testValueOfEmptyName" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.TagTest" start="128" end="130" startBytecode="0" endBytecode="5" sourcefile="TagTest.java" sourcepath="org/jsoup/parser/TagTest.java"/>
+      <Message>In method org.jsoup.parser.TagTest.testValueOfEmptyName()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="6" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.TagTest" primary="true" start="128" end="128" startBytecode="5" endBytecode="5" sourcefile="TagTest.java" sourcepath="org/jsoup/parser/TagTest.java">
+      <Message>At TagTest.java:[line 128]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="1e09c6873783027514d9d2dd5e5ffa97" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.parser.TagTest.testValueOfNullName()</LongMessage>
+    <Class classname="org.jsoup.parser.TagTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.TagTest" start="6" end="130" sourcefile="TagTest.java" sourcepath="org/jsoup/parser/TagTest.java">
+        <Message>At TagTest.java:[lines 6-130]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.TagTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.TagTest" name="testValueOfNullName" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.TagTest" start="122" end="124" startBytecode="0" endBytecode="5" sourcefile="TagTest.java" sourcepath="org/jsoup/parser/TagTest.java"/>
+      <Message>In method org.jsoup.parser.TagTest.testValueOfNullName()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="5" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.parser.TagTest" primary="true" start="122" end="122" startBytecode="4" endBytecode="4" sourcefile="TagTest.java" sourcepath="org/jsoup/parser/TagTest.java">
+      <Message>At TagTest.java:[line 122]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.jsoup.parser.Tag</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:53:35 +0200" total_classes="1" referenced_classes="10" total_bugs="2" total_size="91" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.37" clock_seconds="4.03" peak_mbytes="190.53" alloc_mbytes="7104.00" gc_seconds="0.25" priority_2="2">
+    <FileStats path="org/jsoup/parser/TagTest.java" bugCount="2" size="91" bugHash="45844475938bb5c25d78017cdee2f840"/>
+    <PackageStats package="org.jsoup.parser" total_bugs="2" total_types="1" total_size="91" priority_2="2">
+      <ClassStats class="org.jsoup.parser.TagTest" sourceFile="TagTest.java" interface="false" size="91" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="669" invocations="309" avgMicrosecondsPerInvocation="2165" maxMicrosecondsPerInvocation="85938" standardDeviationMicrosecondsPerInvocation="7550"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="278" invocations="10" avgMicrosecondsPerInvocation="27884" maxMicrosecondsPerInvocation="265502" standardDeviationMicrosecondsPerInvocation="79225"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="206" invocations="10" avgMicrosecondsPerInvocation="20616" maxMicrosecondsPerInvocation="65931" standardDeviationMicrosecondsPerInvocation="23865"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="184" invocations="76" avgMicrosecondsPerInvocation="2433" maxMicrosecondsPerInvocation="27968" standardDeviationMicrosecondsPerInvocation="6080"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="146" invocations="19" avgMicrosecondsPerInvocation="7732" maxMicrosecondsPerInvocation="113819" standardDeviationMicrosecondsPerInvocation="25512"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="99" invocations="273" avgMicrosecondsPerInvocation="363" maxMicrosecondsPerInvocation="14524" standardDeviationMicrosecondsPerInvocation="1579"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="98" invocations="10" avgMicrosecondsPerInvocation="9857" maxMicrosecondsPerInvocation="45618" standardDeviationMicrosecondsPerInvocation="13826"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="97" invocations="19" avgMicrosecondsPerInvocation="5118" maxMicrosecondsPerInvocation="75408" standardDeviationMicrosecondsPerInvocation="16760"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="86" invocations="10" avgMicrosecondsPerInvocation="8612" maxMicrosecondsPerInvocation="64701" standardDeviationMicrosecondsPerInvocation="19268"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="85" invocations="27" avgMicrosecondsPerInvocation="3163" maxMicrosecondsPerInvocation="70359" standardDeviationMicrosecondsPerInvocation="13212"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="72" invocations="1" avgMicrosecondsPerInvocation="72357" maxMicrosecondsPerInvocation="72357" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="65" invocations="19" avgMicrosecondsPerInvocation="3432" maxMicrosecondsPerInvocation="36715" standardDeviationMicrosecondsPerInvocation="8425"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="63" invocations="311" avgMicrosecondsPerInvocation="204" maxMicrosecondsPerInvocation="28450" standardDeviationMicrosecondsPerInvocation="1670"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="59" invocations="10" avgMicrosecondsPerInvocation="5995" maxMicrosecondsPerInvocation="47048" standardDeviationMicrosecondsPerInvocation="13769"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="58" invocations="19" avgMicrosecondsPerInvocation="3085" maxMicrosecondsPerInvocation="54603" standardDeviationMicrosecondsPerInvocation="12147"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420564709" analysisTimestamp="1714593804271" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT/Jsoup/21/6/org/jsoup/select</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="b7480cbcc01018681b3c9a6ce5f60e0a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.CombiningEvaluator$Or in org.jsoup.select.QueryParserTest.testParse_commaSeparatedQuery_shouldReturnOrEvaluator() at QueryParserTest.java:[line 34] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/CombiningEvaluator$Or;">
+      <SourceLine classname="org.jsoup.select.CombiningEvaluator$Or">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.CombiningEvaluator$Or</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="7" end="71" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 7-71]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse_commaSeparatedQuery_shouldReturnOrEvaluator" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="33" end="35" startBytecode="0" endBytecode="45" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse_commaSeparatedQuery_shouldReturnOrEvaluator()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="34" end="34" startBytecode="10" endBytecode="10" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 34]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="4725ce24265c112d2e6d98c997e5dbdf" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.CombiningEvaluator$Or in org.jsoup.select.QueryParserTest.testParse_multipleCombosWithComma_shouldReturnOrEvaluator() at QueryParserTest.java:[line 40] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/CombiningEvaluator$Or;">
+      <SourceLine classname="org.jsoup.select.CombiningEvaluator$Or">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.CombiningEvaluator$Or</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="7" end="71" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 7-71]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse_multipleCombosWithComma_shouldReturnOrEvaluator" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="39" end="41" startBytecode="0" endBytecode="45" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse_multipleCombosWithComma_shouldReturnOrEvaluator()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="40" end="40" startBytecode="10" endBytecode="10" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="7187503e7ba81aac35083dde07ff8605" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.StructuralEvaluator$ImmediatePreviousSibling in org.jsoup.select.QueryParserTest.testParse_startsWithCombinator_andComplexQuery_shouldReturnCombinatorEvaluator() at QueryParserTest.java:[line 18] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/StructuralEvaluator$ImmediatePreviousSibling;">
+      <SourceLine classname="org.jsoup.select.StructuralEvaluator$ImmediatePreviousSibling">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.StructuralEvaluator$ImmediatePreviousSibling</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="7" end="71" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 7-71]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse_startsWithCombinator_andComplexQuery_shouldReturnCombinatorEvaluator" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="17" end="19" startBytecode="0" endBytecode="45" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse_startsWithCombinator_andComplexQuery_shouldReturnCombinatorEvaluator()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="18" end="18" startBytecode="10" endBytecode="10" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 18]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="cd312e61f7611fb21e7a9a1e48c635f2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.StructuralEvaluator$Root in org.jsoup.select.QueryParserTest.testParse_startsWithCombinator_shouldReturnRootEvaluator() at QueryParserTest.java:[line 12] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/StructuralEvaluator$Root;">
+      <SourceLine classname="org.jsoup.select.StructuralEvaluator$Root">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.StructuralEvaluator$Root</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="7" end="71" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 7-71]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse_startsWithCombinator_shouldReturnRootEvaluator" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="11" end="13" startBytecode="0" endBytecode="45" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse_startsWithCombinator_shouldReturnRootEvaluator()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="12" end="12" startBytecode="10" endBytecode="10" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="10">
+    <MissingClass>org.jsoup.select.CombiningEvaluator</MissingClass>
+    <MissingClass>org.jsoup.select.CombiningEvaluator$Or</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator</MissingClass>
+    <MissingClass>org.jsoup.select.QueryParser</MissingClass>
+    <MissingClass>org.jsoup.select.Selector</MissingClass>
+    <MissingClass>org.jsoup.select.Selector$SelectorParseException</MissingClass>
+    <MissingClass>org.jsoup.select.StructuralEvaluator</MissingClass>
+    <MissingClass>org.jsoup.select.StructuralEvaluator$ImmediatePreviousSibling</MissingClass>
+    <MissingClass>org.jsoup.select.StructuralEvaluator$Root</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:04 +0100" total_classes="1" referenced_classes="10" total_bugs="4" total_size="43" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.17" clock_seconds="1.20" peak_mbytes="190.11" alloc_mbytes="7104.00" gc_seconds="0.08" priority_2="4">
+    <FileStats path="org/jsoup/select/QueryParserTest.java" bugCount="4" size="43" bugHash="5097c5afd61c16307affc912f0150e1d"/>
+    <PackageStats package="org.jsoup.select" total_bugs="4" total_types="1" total_size="43" priority_2="4">
+      <ClassStats class="org.jsoup.select.QueryParserTest" sourceFile="QueryParserTest.java" interface="false" size="43" bugs="4" priority_2="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="188" invocations="316" avgMicrosecondsPerInvocation="595" maxMicrosecondsPerInvocation="17368" standardDeviationMicrosecondsPerInvocation="1573"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="124" invocations="66" avgMicrosecondsPerInvocation="1892" maxMicrosecondsPerInvocation="76935" standardDeviationMicrosecondsPerInvocation="9358"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="46" invocations="10" avgMicrosecondsPerInvocation="4604" maxMicrosecondsPerInvocation="14808" standardDeviationMicrosecondsPerInvocation="5123"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="38" invocations="9" avgMicrosecondsPerInvocation="4302" maxMicrosecondsPerInvocation="36479" standardDeviationMicrosecondsPerInvocation="11380"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="34" invocations="28" avgMicrosecondsPerInvocation="1229" maxMicrosecondsPerInvocation="14053" standardDeviationMicrosecondsPerInvocation="2911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="28" invocations="10" avgMicrosecondsPerInvocation="2895" maxMicrosecondsPerInvocation="13226" standardDeviationMicrosecondsPerInvocation="3855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="26" invocations="273" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="1112" standardDeviationMicrosecondsPerInvocation="175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="25" invocations="9" avgMicrosecondsPerInvocation="2845" maxMicrosecondsPerInvocation="17640" standardDeviationMicrosecondsPerInvocation="5262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="21" invocations="10" avgMicrosecondsPerInvocation="2125" maxMicrosecondsPerInvocation="8769" standardDeviationMicrosecondsPerInvocation="2626"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="20" invocations="13" avgMicrosecondsPerInvocation="1590" maxMicrosecondsPerInvocation="12980" standardDeviationMicrosecondsPerInvocation="3300"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="19" invocations="10" avgMicrosecondsPerInvocation="1983" maxMicrosecondsPerInvocation="12179" standardDeviationMicrosecondsPerInvocation="3523"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="19" invocations="1" avgMicrosecondsPerInvocation="19153" maxMicrosecondsPerInvocation="19153" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="18" invocations="10" avgMicrosecondsPerInvocation="1818" maxMicrosecondsPerInvocation="7587" standardDeviationMicrosecondsPerInvocation="2414"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="17" invocations="318" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="720" standardDeviationMicrosecondsPerInvocation="52"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

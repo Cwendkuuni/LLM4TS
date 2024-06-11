@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420555125" analysisTimestamp="1714578136136" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/COT/Jsoup/71/16/org/jsoup/select</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="4c56a7ea5775885c1cd7ec2436ef08d5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.select.QueryParserTest.parse_emptyQuery_returnsAllElementsEvaluator()</LongMessage>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="38" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-38]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="parse_emptyQuery_returnsAllElementsEvaluator" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="26" end="30" startBytecode="0" endBytecode="5" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.parse_emptyQuery_returnsAllElementsEvaluator()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="27" end="27" startBytecode="7" endBytecode="7" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 27]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="d9cd93f4170998c9b8d67a1146ee197b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.select.QueryParserTest.parse_invalidQuery_throwsSelectorParseException()</LongMessage>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="38" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-38]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="parse_invalidQuery_throwsSelectorParseException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="18" end="22" startBytecode="0" endBytecode="5" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.parse_invalidQuery_throwsSelectorParseException()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="19" end="19" startBytecode="7" endBytecode="7" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 19]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="ea75d6ed120b6a36ede5ffc4f2371abe" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.select.QueryParserTest.parse_queryWithCombinator_returnsCombingEvaluator()</LongMessage>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="38" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-38]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="parse_queryWithCombinator_returnsCombingEvaluator" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="34" end="38" startBytecode="0" endBytecode="5" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.parse_queryWithCombinator_returnsCombingEvaluator()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="35" end="35" startBytecode="7" endBytecode="7" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 35]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="3a185cda3e84be298cb64451b7471c2c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jsoup.select.QueryParserTest.parse_validQuery_returnsEvaluator()</LongMessage>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="38" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-38]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="parse_validQuery_returnsEvaluator" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="14" startBytecode="0" endBytecode="5" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.parse_validQuery_returnsEvaluator()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="11" end="11" startBytecode="7" endBytecode="7" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 11]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.jsoup.select.QueryParser</MissingClass>
+    <MissingClass>org.jsoup.select.Selector</MissingClass>
+    <MissingClass>org.jsoup.select.Selector$SelectorParseException</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:15:55 +0100" total_classes="1" referenced_classes="10" total_bugs="4" total_size="19" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.73" clock_seconds="3.39" peak_mbytes="189.94" alloc_mbytes="7104.00" gc_seconds="0.20" priority_2="4">
+    <FileStats path="org/jsoup/select/QueryParserTest.java" bugCount="4" size="19" bugHash="9847d40ecfd8e451b2561c6c201be90d"/>
+    <PackageStats package="org.jsoup.select" total_bugs="4" total_types="1" total_size="19" priority_2="4">
+      <ClassStats class="org.jsoup.select.QueryParserTest" sourceFile="QueryParserTest.java" interface="false" size="19" bugs="4" priority_2="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="466" invocations="310" avgMicrosecondsPerInvocation="1504" maxMicrosecondsPerInvocation="51467" standardDeviationMicrosecondsPerInvocation="5037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="271" invocations="10" avgMicrosecondsPerInvocation="27145" maxMicrosecondsPerInvocation="234455" standardDeviationMicrosecondsPerInvocation="69398"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="204" invocations="10" avgMicrosecondsPerInvocation="20445" maxMicrosecondsPerInvocation="80728" standardDeviationMicrosecondsPerInvocation="26567"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="192" invocations="62" avgMicrosecondsPerInvocation="3112" maxMicrosecondsPerInvocation="54856" standardDeviationMicrosecondsPerInvocation="8486"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="140" invocations="10" avgMicrosecondsPerInvocation="14085" maxMicrosecondsPerInvocation="34762" standardDeviationMicrosecondsPerInvocation="14415"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="110" invocations="25" avgMicrosecondsPerInvocation="4439" maxMicrosecondsPerInvocation="49763" standardDeviationMicrosecondsPerInvocation="11137"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="85" invocations="5" avgMicrosecondsPerInvocation="17116" maxMicrosecondsPerInvocation="80766" standardDeviationMicrosecondsPerInvocation="31839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="84" invocations="273" avgMicrosecondsPerInvocation="308" maxMicrosecondsPerInvocation="12745" standardDeviationMicrosecondsPerInvocation="1407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="71" invocations="10" avgMicrosecondsPerInvocation="7185" maxMicrosecondsPerInvocation="31637" standardDeviationMicrosecondsPerInvocation="12074"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="56" invocations="10" avgMicrosecondsPerInvocation="5694" maxMicrosecondsPerInvocation="24633" standardDeviationMicrosecondsPerInvocation="8376"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="56" invocations="312" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="33073" standardDeviationMicrosecondsPerInvocation="1868"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ClassContextClassAnalysisEngine" totalMilliseconds="50" invocations="10" avgMicrosecondsPerInvocation="5033" maxMicrosecondsPerInvocation="50207" standardDeviationMicrosecondsPerInvocation="15058"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

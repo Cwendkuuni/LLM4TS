@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360743303" analysisTimestamp="1714591259495" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/85_shop/JSStateTEST/0/umd/cs/shop</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="f5f9d20bf20c4d93e2bc11f5a7863094" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode umd.cs.shop.JSStateTest.testApplyOp_typicalCase()</LongMessage>
+    <Class classname="umd.cs.shop.JSStateTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSStateTest" start="10" end="101" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java">
+        <Message>At JSStateTest.java:[lines 10-101]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSStateTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSStateTest" name="testApplyOp_typicalCase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSStateTest" start="61" end="69" startBytecode="0" endBytecode="24" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java"/>
+      <Message>In method umd.cs.shop.JSStateTest.testApplyOp_typicalCase()</Message>
+    </Method>
+    <LocalVariable name="?" register="5" pc="47" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 5</Message>
+    </LocalVariable>
+    <SourceLine classname="umd.cs.shop.JSStateTest" primary="true" start="66" end="66" startBytecode="45" endBytecode="45" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java">
+      <Message>At JSStateTest.java:[line 66]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="834b2acac42ec779978c98c50c138b9e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode umd.cs.shop.JSStateTest.testApply_typicalCase()</LongMessage>
+    <Class classname="umd.cs.shop.JSStateTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSStateTest" start="10" end="101" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java">
+        <Message>At JSStateTest.java:[lines 10-101]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSStateTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSStateTest" name="testApply_typicalCase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSStateTest" start="52" end="57" startBytecode="0" endBytecode="9" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java"/>
+      <Message>In method umd.cs.shop.JSStateTest.testApply_typicalCase()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="17" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="umd.cs.shop.JSStateTest" primary="true" start="54" end="54" startBytecode="16" endBytecode="16" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java">
+      <Message>At JSStateTest.java:[line 54]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="cad1e43cc3978b0f5a323c2fef932a67" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode umd.cs.shop.JSStateTest.testSatisfiesAll_typicalCase()</LongMessage>
+    <Class classname="umd.cs.shop.JSStateTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSStateTest" start="10" end="101" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java">
+        <Message>At JSStateTest.java:[lines 10-101]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSStateTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSStateTest" name="testSatisfiesAll_typicalCase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSStateTest" start="84" end="91" startBytecode="0" endBytecode="19" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java"/>
+      <Message>In method umd.cs.shop.JSStateTest.testSatisfiesAll_typicalCase()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="36" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="umd.cs.shop.JSStateTest" primary="true" start="88" end="88" startBytecode="34" endBytecode="34" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java">
+      <Message>At JSStateTest.java:[line 88]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="acba3f3f415cf1e23d1bf90f09d92d5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode umd.cs.shop.JSStateTest.testSatisfiesTAm_typicalCase()</LongMessage>
+    <Class classname="umd.cs.shop.JSStateTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSStateTest" start="10" end="101" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java">
+        <Message>At JSStateTest.java:[lines 10-101]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSStateTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSStateTest" name="testSatisfiesTAm_typicalCase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSStateTest" start="95" end="101" startBytecode="0" endBytecode="15" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java"/>
+      <Message>In method umd.cs.shop.JSStateTest.testSatisfiesTAm_typicalCase()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="28" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="umd.cs.shop.JSStateTest" primary="true" start="98" end="98" startBytecode="27" endBytecode="27" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java">
+      <Message>At JSStateTest.java:[line 98]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="ae6655a08bdfbca41a5bb0b1e0d22b5e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode umd.cs.shop.JSStateTest.testSatisfies_typicalCase()</LongMessage>
+    <Class classname="umd.cs.shop.JSStateTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSStateTest" start="10" end="101" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java">
+        <Message>At JSStateTest.java:[lines 10-101]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSStateTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSStateTest" name="testSatisfies_typicalCase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSStateTest" start="73" end="80" startBytecode="0" endBytecode="19" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java"/>
+      <Message>In method umd.cs.shop.JSStateTest.testSatisfies_typicalCase()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="36" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="umd.cs.shop.JSStateTest" primary="true" start="77" end="77" startBytecode="34" endBytecode="34" sourcefile="JSStateTest.java" sourcepath="umd/cs/shop/JSStateTest.java">
+      <Message>At JSStateTest.java:[line 77]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="8">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>umd.cs.shop.JSListAxioms</MissingClass>
+    <MissingClass>umd.cs.shop.JSListLogicalAtoms</MissingClass>
+    <MissingClass>umd.cs.shop.JSOperator</MissingClass>
+    <MissingClass>umd.cs.shop.JSPlan</MissingClass>
+    <MissingClass>umd.cs.shop.JSPredicateForm</MissingClass>
+    <MissingClass>umd.cs.shop.JSState</MissingClass>
+    <MissingClass>umd.cs.shop.JSSubstitution</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:03 +0100" total_classes="1" referenced_classes="10" total_bugs="5" total_size="57" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.89" clock_seconds="1.48" peak_mbytes="190.67" alloc_mbytes="7104.00" gc_seconds="0.10" priority_2="5">
+    <FileStats path="umd/cs/shop/JSStateTest.java" bugCount="5" size="57" bugHash="b9a563df3851257feef41f04bd38589b"/>
+    <PackageStats package="umd.cs.shop" total_bugs="5" total_types="1" total_size="57" priority_2="5">
+      <ClassStats class="umd.cs.shop.JSStateTest" sourceFile="JSStateTest.java" interface="false" size="57" bugs="5" priority_2="5"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="194" invocations="318" avgMicrosecondsPerInvocation="611" maxMicrosecondsPerInvocation="16094" standardDeviationMicrosecondsPerInvocation="1459"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteCheckReturnValueAnnotations" totalMilliseconds="119" invocations="10" avgMicrosecondsPerInvocation="11907" maxMicrosecondsPerInvocation="117178" standardDeviationMicrosecondsPerInvocation="35090"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="61" invocations="10" avgMicrosecondsPerInvocation="6113" maxMicrosecondsPerInvocation="17974" standardDeviationMicrosecondsPerInvocation="6014"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="48" invocations="67" avgMicrosecondsPerInvocation="717" maxMicrosecondsPerInvocation="4797" standardDeviationMicrosecondsPerInvocation="890"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="42" invocations="10" avgMicrosecondsPerInvocation="4281" maxMicrosecondsPerInvocation="37377" standardDeviationMicrosecondsPerInvocation="11063"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="42" invocations="1" avgMicrosecondsPerInvocation="42440" maxMicrosecondsPerInvocation="42440" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="36" invocations="10" avgMicrosecondsPerInvocation="3662" maxMicrosecondsPerInvocation="20608" standardDeviationMicrosecondsPerInvocation="5884"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="35" invocations="28" avgMicrosecondsPerInvocation="1254" maxMicrosecondsPerInvocation="19858" standardDeviationMicrosecondsPerInvocation="3729"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="35" invocations="10" avgMicrosecondsPerInvocation="3509" maxMicrosecondsPerInvocation="13547" standardDeviationMicrosecondsPerInvocation="3827"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="30" invocations="273" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="2073" standardDeviationMicrosecondsPerInvocation="215"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="27" invocations="10" avgMicrosecondsPerInvocation="2799" maxMicrosecondsPerInvocation="11745" standardDeviationMicrosecondsPerInvocation="3640"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="27" invocations="10" avgMicrosecondsPerInvocation="2770" maxMicrosecondsPerInvocation="15477" standardDeviationMicrosecondsPerInvocation="4529"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="24" invocations="10" avgMicrosecondsPerInvocation="2449" maxMicrosecondsPerInvocation="9363" standardDeviationMicrosecondsPerInvocation="2841"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="23" invocations="10" avgMicrosecondsPerInvocation="2311" maxMicrosecondsPerInvocation="15202" standardDeviationMicrosecondsPerInvocation="4364"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="22" invocations="10" avgMicrosecondsPerInvocation="2271" maxMicrosecondsPerInvocation="15161" standardDeviationMicrosecondsPerInvocation="4318"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="22" invocations="10" avgMicrosecondsPerInvocation="2206" maxMicrosecondsPerInvocation="7442" standardDeviationMicrosecondsPerInvocation="2694"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="21" invocations="10" avgMicrosecondsPerInvocation="2160" maxMicrosecondsPerInvocation="12930" standardDeviationMicrosecondsPerInvocation="3724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="21" invocations="10" avgMicrosecondsPerInvocation="2149" maxMicrosecondsPerInvocation="6776" standardDeviationMicrosecondsPerInvocation="2535"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

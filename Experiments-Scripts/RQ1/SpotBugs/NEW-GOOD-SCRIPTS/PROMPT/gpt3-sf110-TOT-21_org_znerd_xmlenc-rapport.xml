@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360745107" analysisTimestamp="1714589590105" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/xmlenc/XMLEncoderTEST/21/org/znerd/xmlenc</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.znerd.xmlenc.XMLEncoder</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:05 +0100" total_classes="1" referenced_classes="14" total_bugs="0" total_size="40" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.24" clock_seconds="1.87" peak_mbytes="190.40" alloc_mbytes="7104.00" gc_seconds="0.12">
+    <FileStats path="org/znerd/xmlenc/XMLEncoderTest.java" bugCount="0" size="40"/>
+    <PackageStats package="org.znerd.xmlenc" total_bugs="0" total_types="1" total_size="40">
+      <ClassStats class="org.znerd.xmlenc.XMLEncoderTest" sourceFile="XMLEncoderTest.java" interface="false" size="40" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="262" invocations="311" avgMicrosecondsPerInvocation="843" maxMicrosecondsPerInvocation="18315" standardDeviationMicrosecondsPerInvocation="2274"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.Methods" totalMilliseconds="127" invocations="14" avgMicrosecondsPerInvocation="9109" maxMicrosecondsPerInvocation="126010" standardDeviationMicrosecondsPerInvocation="32422"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="103" invocations="14" avgMicrosecondsPerInvocation="7381" maxMicrosecondsPerInvocation="45431" standardDeviationMicrosecondsPerInvocation="12093"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="60" invocations="5" avgMicrosecondsPerInvocation="12189" maxMicrosecondsPerInvocation="27276" standardDeviationMicrosecondsPerInvocation="9983"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="60" invocations="14" avgMicrosecondsPerInvocation="4289" maxMicrosecondsPerInvocation="17955" standardDeviationMicrosecondsPerInvocation="6155"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="60" invocations="33" avgMicrosecondsPerInvocation="1819" maxMicrosecondsPerInvocation="33384" standardDeviationMicrosecondsPerInvocation="5957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="57" invocations="62" avgMicrosecondsPerInvocation="925" maxMicrosecondsPerInvocation="14106" standardDeviationMicrosecondsPerInvocation="1851"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="48" invocations="14" avgMicrosecondsPerInvocation="3473" maxMicrosecondsPerInvocation="20870" standardDeviationMicrosecondsPerInvocation="6397"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="38" invocations="5" avgMicrosecondsPerInvocation="7684" maxMicrosecondsPerInvocation="14531" standardDeviationMicrosecondsPerInvocation="4996"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="5" avgMicrosecondsPerInvocation="7482" maxMicrosecondsPerInvocation="34986" standardDeviationMicrosecondsPerInvocation="13762"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="35" invocations="313" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="12155" standardDeviationMicrosecondsPerInvocation="689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="34" invocations="276" avgMicrosecondsPerInvocation="124" maxMicrosecondsPerInvocation="2065" standardDeviationMicrosecondsPerInvocation="248"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="33" invocations="5" avgMicrosecondsPerInvocation="6653" maxMicrosecondsPerInvocation="15226" standardDeviationMicrosecondsPerInvocation="5841"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="31" invocations="14" avgMicrosecondsPerInvocation="2268" maxMicrosecondsPerInvocation="11304" standardDeviationMicrosecondsPerInvocation="2803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="30" invocations="14" avgMicrosecondsPerInvocation="2203" maxMicrosecondsPerInvocation="8724" standardDeviationMicrosecondsPerInvocation="2698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="29" invocations="1" avgMicrosecondsPerInvocation="29374" maxMicrosecondsPerInvocation="29374" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ReverseDepthFirstSearchFactory" totalMilliseconds="27" invocations="5" avgMicrosecondsPerInvocation="5429" maxMicrosecondsPerInvocation="26609" standardDeviationMicrosecondsPerInvocation="10590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="26" invocations="14" avgMicrosecondsPerInvocation="1902" maxMicrosecondsPerInvocation="18903" standardDeviationMicrosecondsPerInvocation="4796"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

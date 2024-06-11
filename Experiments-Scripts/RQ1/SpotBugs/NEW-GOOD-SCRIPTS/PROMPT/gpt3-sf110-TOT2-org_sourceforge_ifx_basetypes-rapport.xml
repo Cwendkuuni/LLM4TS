@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756316120" analysisTimestamp="1714596178955" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/84_ifx-framework/IFXObjectTEST/9/org/sourceforge/ifx/basetypes</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="ae6202c7765c5de1aad038afa2102b6c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.sourceforge.ifx.basetypes.IFXObjectTest.testEdgeCases()</LongMessage>
+    <Class classname="org.sourceforge.ifx.basetypes.IFXObjectTest" primary="true">
+      <SourceLine classname="org.sourceforge.ifx.basetypes.IFXObjectTest" start="5" end="47" sourcefile="IFXObjectTest.java" sourcepath="org/sourceforge/ifx/basetypes/IFXObjectTest.java">
+        <Message>At IFXObjectTest.java:[lines 5-47]</Message>
+      </SourceLine>
+      <Message>In class org.sourceforge.ifx.basetypes.IFXObjectTest</Message>
+    </Class>
+    <Method classname="org.sourceforge.ifx.basetypes.IFXObjectTest" name="testEdgeCases" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.sourceforge.ifx.basetypes.IFXObjectTest" start="25" end="33" startBytecode="0" endBytecode="16" sourcefile="IFXObjectTest.java" sourcepath="org/sourceforge/ifx/basetypes/IFXObjectTest.java"/>
+      <Message>In method org.sourceforge.ifx.basetypes.IFXObjectTest.testEdgeCases()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="16" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.sourceforge.ifx.basetypes.IFXObjectTest" primary="true" start="26" end="26" startBytecode="15" endBytecode="15" sourcefile="IFXObjectTest.java" sourcepath="org/sourceforge/ifx/basetypes/IFXObjectTest.java">
+      <Message>At IFXObjectTest.java:[line 26]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.sourceforge.ifx.basetypes.IFXObject</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:16 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="28" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.34" clock_seconds="1.78" peak_mbytes="189.72" alloc_mbytes="7104.00" gc_seconds="0.10" priority_1="1">
+    <FileStats path="org/sourceforge/ifx/basetypes/IFXObjectTest.java" bugCount="1" size="28" bugHash="2ec1e54cdaecd455011bb0b5603ca3c5"/>
+    <PackageStats package="org.sourceforge.ifx.basetypes" total_bugs="1" total_types="1" total_size="28" priority_1="1">
+      <ClassStats class="org.sourceforge.ifx.basetypes.IFXObjectTest" sourceFile="IFXObjectTest.java" interface="false" size="28" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="338" invocations="308" avgMicrosecondsPerInvocation="1099" maxMicrosecondsPerInvocation="52905" standardDeviationMicrosecondsPerInvocation="4001"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="182" invocations="62" avgMicrosecondsPerInvocation="2940" maxMicrosecondsPerInvocation="116885" standardDeviationMicrosecondsPerInvocation="14756"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="71" invocations="11" avgMicrosecondsPerInvocation="6505" maxMicrosecondsPerInvocation="22547" standardDeviationMicrosecondsPerInvocation="6975"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="56" invocations="273" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="13877" standardDeviationMicrosecondsPerInvocation="1024"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="42" invocations="11" avgMicrosecondsPerInvocation="3878" maxMicrosecondsPerInvocation="13772" standardDeviationMicrosecondsPerInvocation="4071"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="38" invocations="27" avgMicrosecondsPerInvocation="1438" maxMicrosecondsPerInvocation="22799" standardDeviationMicrosecondsPerInvocation="4396"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="5" avgMicrosecondsPerInvocation="7591" maxMicrosecondsPerInvocation="35807" standardDeviationMicrosecondsPerInvocation="14113"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="33" invocations="11" avgMicrosecondsPerInvocation="3019" maxMicrosecondsPerInvocation="13094" standardDeviationMicrosecondsPerInvocation="3536"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="32" invocations="11" avgMicrosecondsPerInvocation="2979" maxMicrosecondsPerInvocation="18376" standardDeviationMicrosecondsPerInvocation="5208"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="28" invocations="310" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="2294" standardDeviationMicrosecondsPerInvocation="188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="24" invocations="11" avgMicrosecondsPerInvocation="2246" maxMicrosecondsPerInvocation="9669" standardDeviationMicrosecondsPerInvocation="2800"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="21" invocations="1" avgMicrosecondsPerInvocation="21373" maxMicrosecondsPerInvocation="21373" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="20" invocations="5" avgMicrosecondsPerInvocation="4182" maxMicrosecondsPerInvocation="15869" standardDeviationMicrosecondsPerInvocation="5852"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

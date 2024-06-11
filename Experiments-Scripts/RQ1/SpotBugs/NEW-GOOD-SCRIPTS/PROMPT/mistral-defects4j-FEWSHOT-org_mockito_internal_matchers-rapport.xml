@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713290019445" analysisTimestamp="1714576674309" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/DEFECTS4J/AVEC-PACKAGE_GLOBAL/Defects4J-generated-tests/FEWSHOT/Mockito/22/26/org/mockito/internal/matchers</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="6f8dd8f90c57f5dde2ce07cd1f7a70d9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.matchers.EqualityTest.testAreEqual()</LongMessage>
+    <Class classname="org.mockito.internal.matchers.EqualityTest" primary="true">
+      <SourceLine classname="org.mockito.internal.matchers.EqualityTest" start="11" end="148" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java">
+        <Message>At EqualityTest.java:[lines 11-148]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.matchers.EqualityTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.matchers.EqualityTest" name="testAreEqual" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.matchers.EqualityTest" start="15" end="70" startBytecode="0" endBytecode="265" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java"/>
+      <Message>In method org.mockito.internal.matchers.EqualityTest.testAreEqual()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="34" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.matchers.EqualityTest" primary="true" start="18" end="18" startBytecode="32" endBytecode="32" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java">
+      <Message>At EqualityTest.java:[line 18]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="1fc6a32ca6b2a6f0709a8d105b74bdd9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>org.mockito.internal.matchers.EqualityTest.testAreEqual() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="org.mockito.internal.matchers.EqualityTest" primary="true">
+      <SourceLine classname="org.mockito.internal.matchers.EqualityTest" start="11" end="148" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java">
+        <Message>At EqualityTest.java:[lines 11-148]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.matchers.EqualityTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.matchers.EqualityTest" name="testAreEqual" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.matchers.EqualityTest" start="15" end="70" startBytecode="0" endBytecode="603" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java"/>
+      <Message>In method org.mockito.internal.matchers.EqualityTest.testAreEqual()</Message>
+    </Method>
+    <SourceLine classname="org.mockito.internal.matchers.EqualityTest" primary="true" start="34" end="34" startBytecode="120" endBytecode="120" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java">
+      <Message>At EqualityTest.java:[line 34]</Message>
+    </SourceLine>
+    <SourceLine classname="org.mockito.internal.matchers.EqualityTest" start="35" end="35" startBytecode="131" endBytecode="131" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at EqualityTest.java:[line 35]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" instanceHash="3144d3b40cbcb77c07ef2e253e0ee6b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Useless object created</ShortMessage>
+    <LongMessage>Useless object stored in variable var$4 of method org.mockito.internal.matchers.EqualityTest.testAreEqual()</LongMessage>
+    <Class classname="org.mockito.internal.matchers.EqualityTest" primary="true">
+      <SourceLine classname="org.mockito.internal.matchers.EqualityTest" start="11" end="148" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java">
+        <Message>At EqualityTest.java:[lines 11-148]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.matchers.EqualityTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.matchers.EqualityTest" name="testAreEqual" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.matchers.EqualityTest" start="15" end="70" startBytecode="0" endBytecode="603" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java"/>
+      <Message>In method org.mockito.internal.matchers.EqualityTest.testAreEqual()</Message>
+    </Method>
+    <String value="var$4">
+      <Message>Value var$4</Message>
+    </String>
+    <Type descriptor="[Ljava/lang/Object;">
+      <Message>Type Object[]</Message>
+    </Type>
+    <SourceLine classname="org.mockito.internal.matchers.EqualityTest" primary="true" start="18" end="18" startBytecode="19" endBytecode="19" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java">
+      <Message>At EqualityTest.java:[line 18]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="UC_USELESS_OBJECT" abbrev="UC" category="STYLE">
+    <ShortDescription>Useless object created</ShortDescription>
+    <Details><![CDATA[
+
+<p>Our analysis shows that this object is useless.
+It's created and modified, but its value never go outside of the method or produce any side-effect.
+Either there is a mistake and object was intended to be used or it can be removed.</p>
+<p>This analysis rarely produces false-positives. Common false-positive cases include:</p>
+<p>- This object used to implicitly throw some obscure exception.</p>
+<p>- This object used as a stub to generalize the code.</p>
+<p>- This object used to hold strong references to weak/soft-referenced objects.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_STRING_CTOR" abbrev="Dm" category="PERFORMANCE">
+    <ShortDescription>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortDescription>
+    <Details><![CDATA[
+
+<p>Utiliser le constructeur <code>java.lang.String(String)</code> gaspille de la mémoire puisque l'objet ainsi construit serait fonctionnellement identique à la chaîne passée en paramètre. Utilisez juste la chaîne en argument directement.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <BugCode abbrev="UC">
+    <Description>Useless code</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.mockito.internal.matchers.Equality</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:53:39 +0200" total_classes="1" referenced_classes="10" total_bugs="3" total_size="84" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.60" clock_seconds="5.28" peak_mbytes="191.35" alloc_mbytes="7104.00" gc_seconds="0.23" priority_2="3">
+    <FileStats path="org/mockito/internal/matchers/EqualityTest.java" bugCount="3" size="84" bugHash="c0c80b1f0a566750a165b65397389ef3"/>
+    <PackageStats package="org.mockito.internal.matchers" total_bugs="3" total_types="1" total_size="84" priority_2="3">
+      <ClassStats class="org.mockito.internal.matchers.EqualityTest" sourceFile="EqualityTest.java" interface="false" size="84" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="782" invocations="316" avgMicrosecondsPerInvocation="2477" maxMicrosecondsPerInvocation="66064" standardDeviationMicrosecondsPerInvocation="7709"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="324" invocations="10" avgMicrosecondsPerInvocation="32435" maxMicrosecondsPerInvocation="276280" standardDeviationMicrosecondsPerInvocation="81725"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="196" invocations="6" avgMicrosecondsPerInvocation="32826" maxMicrosecondsPerInvocation="153633" standardDeviationMicrosecondsPerInvocation="56146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="196" invocations="10" avgMicrosecondsPerInvocation="19654" maxMicrosecondsPerInvocation="72581" standardDeviationMicrosecondsPerInvocation="24294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="189" invocations="6" avgMicrosecondsPerInvocation="31553" maxMicrosecondsPerInvocation="82435" standardDeviationMicrosecondsPerInvocation="30199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="181" invocations="279" avgMicrosecondsPerInvocation="650" maxMicrosecondsPerInvocation="32371" standardDeviationMicrosecondsPerInvocation="3213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="158" invocations="27" avgMicrosecondsPerInvocation="5863" maxMicrosecondsPerInvocation="64430" standardDeviationMicrosecondsPerInvocation="14204"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="157" invocations="63" avgMicrosecondsPerInvocation="2498" maxMicrosecondsPerInvocation="41237" standardDeviationMicrosecondsPerInvocation="6333"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="144" invocations="318" avgMicrosecondsPerInvocation="453" maxMicrosecondsPerInvocation="28077" standardDeviationMicrosecondsPerInvocation="2595"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="142" invocations="6" avgMicrosecondsPerInvocation="23675" maxMicrosecondsPerInvocation="61202" standardDeviationMicrosecondsPerInvocation="25185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="127" invocations="10" avgMicrosecondsPerInvocation="12795" maxMicrosecondsPerInvocation="83370" standardDeviationMicrosecondsPerInvocation="24654"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="121" invocations="6" avgMicrosecondsPerInvocation="20242" maxMicrosecondsPerInvocation="46156" standardDeviationMicrosecondsPerInvocation="16188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="106" invocations="10" avgMicrosecondsPerInvocation="10632" maxMicrosecondsPerInvocation="35160" standardDeviationMicrosecondsPerInvocation="13852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="103" invocations="6" avgMicrosecondsPerInvocation="17269" maxMicrosecondsPerInvocation="32768" standardDeviationMicrosecondsPerInvocation="12509"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="102" invocations="1" avgMicrosecondsPerInvocation="102488" maxMicrosecondsPerInvocation="102488" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

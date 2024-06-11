@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287218394" analysisTimestamp="1714588331560" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/ZEROSHOT/74_fixsuite/LibraryTEST/11/org/fixsuite/message</Jar>
+  </Project>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" abbrev="RV" category="BAD_PRACTICE" instanceHash="bc25c1e5b0bafecdab734a846364a3a0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="253">
+    <ShortMessage>Method ignores exceptional return value</ShortMessage>
+    <LongMessage>Exceptional return value of java.io.File.mkdirs() ignored in org.fixsuite.message.LibraryTest.setUp()</LongMessage>
+    <Class classname="org.fixsuite.message.LibraryTest" primary="true">
+      <SourceLine classname="org.fixsuite.message.LibraryTest" start="17" end="103" sourcefile="LibraryTest.java" sourcepath="org/fixsuite/message/LibraryTest.java">
+        <Message>At LibraryTest.java:[lines 17-103]</Message>
+      </SourceLine>
+      <Message>In class org.fixsuite.message.LibraryTest</Message>
+    </Class>
+    <Method classname="org.fixsuite.message.LibraryTest" name="setUp" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.fixsuite.message.LibraryTest" start="24" end="26" startBytecode="0" endBytecode="53" sourcefile="LibraryTest.java" sourcepath="org/fixsuite/message/LibraryTest.java"/>
+      <Message>In method org.fixsuite.message.LibraryTest.setUp()</Message>
+    </Method>
+    <Method classname="java.io.File" name="mkdirs" signature="()Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.File" start="1379" end="1393" startBytecode="0" endBytecode="182" sourcefile="File.java" sourcepath="java/io/File.java"/>
+      <Message>Called method java.io.File.mkdirs()</Message>
+    </Method>
+    <SourceLine classname="org.fixsuite.message.LibraryTest" primary="true" start="25" end="25" startBytecode="17" endBytecode="17" sourcefile="LibraryTest.java" sourcepath="org/fixsuite/message/LibraryTest.java">
+      <Message>At LibraryTest.java:[line 25]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" instanceHash="d83b79ec13ac4b29caa24a87362c4e5d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Useless object created</ShortMessage>
+    <LongMessage>Useless object stored in variable var$3 of method org.fixsuite.message.LibraryTest.testLoadFromDirectorySuccess()</LongMessage>
+    <Class classname="org.fixsuite.message.LibraryTest" primary="true">
+      <SourceLine classname="org.fixsuite.message.LibraryTest" start="17" end="103" sourcefile="LibraryTest.java" sourcepath="org/fixsuite/message/LibraryTest.java">
+        <Message>At LibraryTest.java:[lines 17-103]</Message>
+      </SourceLine>
+      <Message>In class org.fixsuite.message.LibraryTest</Message>
+    </Class>
+    <Method classname="org.fixsuite.message.LibraryTest" name="testLoadFromDirectorySuccess" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.fixsuite.message.LibraryTest" start="31" end="49" startBytecode="0" endBytecode="296" sourcefile="LibraryTest.java" sourcepath="org/fixsuite/message/LibraryTest.java"/>
+      <Message>In method org.fixsuite.message.LibraryTest.testLoadFromDirectorySuccess()</Message>
+    </Method>
+    <String value="var$3">
+      <Message>Value var$3</Message>
+    </String>
+    <Type descriptor="Ljava/util/ArrayList;">
+      <SourceLine classname="java.util.ArrayList" start="107" end="1469" sourcefile="ArrayList.java" sourcepath="java/util/ArrayList.java">
+        <Message>At ArrayList.java:[lines 107-1469]</Message>
+      </SourceLine>
+      <Message>Type java.util.ArrayList</Message>
+    </Type>
+    <SourceLine classname="org.fixsuite.message.LibraryTest" primary="true" start="40" end="40" startBytecode="108" endBytecode="108" sourcefile="LibraryTest.java" sourcepath="org/fixsuite/message/LibraryTest.java">
+      <Message>At LibraryTest.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="UC_USELESS_OBJECT" abbrev="UC" category="STYLE">
+    <ShortDescription>Useless object created</ShortDescription>
+    <Details><![CDATA[
+
+<p>Our analysis shows that this object is useless.
+It's created and modified, but its value never go outside of the method or produce any side-effect.
+Either there is a mistake and object was intended to be used or it can be removed.</p>
+<p>This analysis rarely produces false-positives. Common false-positive cases include:</p>
+<p>- This object used to implicitly throw some obscure exception.</p>
+<p>- This object used as a stub to generalize the code.</p>
+<p>- This object used to hold strong references to weak/soft-referenced objects.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" abbrev="RV" category="BAD_PRACTICE" cweid="253">
+    <ShortDescription>Method ignores exceptional return value</ShortDescription>
+    <Details><![CDATA[
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="RV" cweid="440">
+    <Description>Valeur de retour d&apos;une méthode mal utilisée</Description>
+  </BugCode>
+  <BugCode abbrev="UC">
+    <Description>Useless code</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.fixsuite.message.Library</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:58 +0200" total_classes="1" referenced_classes="13" total_bugs="2" total_size="51" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.34" clock_seconds="2.37" peak_mbytes="191.20" alloc_mbytes="7104.00" gc_seconds="0.18" priority_2="2">
+    <FileStats path="org/fixsuite/message/LibraryTest.java" bugCount="2" size="51" bugHash="7902095d24ccf872124ea4c543c64eb7"/>
+    <PackageStats package="org.fixsuite.message" total_bugs="2" total_types="1" total_size="51" priority_2="2">
+      <ClassStats class="org.fixsuite.message.LibraryTest" sourceFile="LibraryTest.java" interface="false" size="51" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="300" invocations="352" avgMicrosecondsPerInvocation="852" maxMicrosecondsPerInvocation="35578" standardDeviationMicrosecondsPerInvocation="2730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="226" invocations="13" avgMicrosecondsPerInvocation="17418" maxMicrosecondsPerInvocation="197708" standardDeviationMicrosecondsPerInvocation="52203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="97" invocations="8" avgMicrosecondsPerInvocation="12149" maxMicrosecondsPerInvocation="44513" standardDeviationMicrosecondsPerInvocation="15456"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="93" invocations="13" avgMicrosecondsPerInvocation="7210" maxMicrosecondsPerInvocation="24323" standardDeviationMicrosecondsPerInvocation="7779"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="86" invocations="85" avgMicrosecondsPerInvocation="1011" maxMicrosecondsPerInvocation="17342" standardDeviationMicrosecondsPerInvocation="2110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="67" invocations="8" avgMicrosecondsPerInvocation="8484" maxMicrosecondsPerInvocation="50588" standardDeviationMicrosecondsPerInvocation="16613"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="63" invocations="13" avgMicrosecondsPerInvocation="4914" maxMicrosecondsPerInvocation="31280" standardDeviationMicrosecondsPerInvocation="8496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="63" invocations="13" avgMicrosecondsPerInvocation="4861" maxMicrosecondsPerInvocation="19382" standardDeviationMicrosecondsPerInvocation="6219"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="57" invocations="8" avgMicrosecondsPerInvocation="7235" maxMicrosecondsPerInvocation="32725" standardDeviationMicrosecondsPerInvocation="10122"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="57" invocations="8" avgMicrosecondsPerInvocation="7140" maxMicrosecondsPerInvocation="33958" standardDeviationMicrosecondsPerInvocation="11487"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="56" invocations="8" avgMicrosecondsPerInvocation="7046" maxMicrosecondsPerInvocation="50528" standardDeviationMicrosecondsPerInvocation="16439"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="54" invocations="315" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="11499" standardDeviationMicrosecondsPerInvocation="721"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="52" invocations="37" avgMicrosecondsPerInvocation="1411" maxMicrosecondsPerInvocation="36199" standardDeviationMicrosecondsPerInvocation="5859"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="34" invocations="13" avgMicrosecondsPerInvocation="2647" maxMicrosecondsPerInvocation="20066" standardDeviationMicrosecondsPerInvocation="5242"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="32" invocations="354" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="9242" standardDeviationMicrosecondsPerInvocation="490"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360753804" analysisTimestamp="1714602017842" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/xmlenc/XMLEncoderTEST/24/org/znerd/xmlenc</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="74882d2345083389cabe6b8d0e28769f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.znerd.xmlenc.XMLEncoderTest.testGetEncoderWithInvalidEncoding()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testGetEncoderWithInvalidEncoding" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="30" end="31" startBytecode="0" endBytecode="3" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testGetEncoderWithInvalidEncoding()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="6" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="30" end="30" startBytecode="5" endBytecode="5" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 30]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="f1589e1830ee4469871c7ca2ba20de9e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.znerd.xmlenc.XMLEncoderTest.testGetEncoderWithNullEncoding()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testGetEncoderWithNullEncoding" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="25" end="26" startBytecode="0" endBytecode="3" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testGetEncoderWithNullEncoding()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="5" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="25" end="25" startBytecode="4" endBytecode="4" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 25]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="5761a2ea7386d79d04d9410d241cb5e0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testAttribute(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testAttribute" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="75" end="83" startBytecode="0" endBytecode="89" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testAttribute()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="82" end="82" startBytecode="39" endBytecode="39" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 82]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="4705fbc0333ceaa8c47fe3154d46a155" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testAttribute(): new java.io.OutputStreamWriter(OutputStream)</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testAttribute" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="75" end="83" startBytecode="0" endBytecode="89" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testAttribute()</Message>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+      <Message>Called method new java.io.OutputStreamWriter(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="76" end="76" startBytecode="13" endBytecode="13" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 76]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="3ed74639c7015da169fdbe75eb1f7eef" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testDeclaration(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testDeclaration" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="40" end="48" startBytecode="0" endBytecode="88" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testDeclaration()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="47" end="47" startBytecode="34" endBytecode="34" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="b1319869a6d2899b0887ae789ce05859" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testDeclaration(): new java.io.OutputStreamWriter(OutputStream)</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testDeclaration" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="40" end="48" startBytecode="0" endBytecode="88" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testDeclaration()</Message>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+      <Message>Called method new java.io.OutputStreamWriter(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="41" end="41" startBytecode="13" endBytecode="13" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 41]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="64251dd6bf890aa3d595a51f199ef6d1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testText(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testText" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="52" end="59" startBytecode="0" endBytecode="85" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testText()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="58" end="58" startBytecode="35" endBytecode="35" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 58]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="2e243efc8e6c1bd980be635df4c20e0c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testText(): new java.io.OutputStreamWriter(OutputStream)</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testText" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="52" end="59" startBytecode="0" endBytecode="85" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testText()</Message>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+      <Message>Called method new java.io.OutputStreamWriter(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="53" end="53" startBytecode="13" endBytecode="13" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 53]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="366cb04b83e689f28c2417098097e23b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testTextWithEscapeAmpersands(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testTextWithEscapeAmpersands" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="87" end="94" startBytecode="0" endBytecode="85" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testTextWithEscapeAmpersands()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="93" end="93" startBytecode="35" endBytecode="35" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 93]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="73925fc2fc4d3367f5ba6a6ac5d15e9e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testTextWithEscapeAmpersands(): new java.io.OutputStreamWriter(OutputStream)</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testTextWithEscapeAmpersands" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="87" end="94" startBytecode="0" endBytecode="85" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testTextWithEscapeAmpersands()</Message>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+      <Message>Called method new java.io.OutputStreamWriter(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="88" end="88" startBytecode="13" endBytecode="13" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 88]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="6d90731cba28ec4909e485b501d0f95e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testTextWithInvalidCharacter(): new java.io.OutputStreamWriter(OutputStream)</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testTextWithInvalidCharacter" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="109" end="114" startBytecode="0" endBytecode="72" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testTextWithInvalidCharacter()</Message>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+      <Message>Called method new java.io.OutputStreamWriter(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="110" end="110" startBytecode="13" endBytecode="13" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 110]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="b4434a0f668b4963e2b2eee7922c029d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testTextWithInvalidCharacterAndEscapeAmpersands(): new java.io.OutputStreamWriter(OutputStream)</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testTextWithInvalidCharacterAndEscapeAmpersands" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="118" end="123" startBytecode="0" endBytecode="73" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testTextWithInvalidCharacterAndEscapeAmpersands()</Message>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+      <Message>Called method new java.io.OutputStreamWriter(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="119" end="119" startBytecode="13" endBytecode="13" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 119]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="9928e6b4010fb858803ba65c44f99b9b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testTextWithInvalidCharacterAndWithoutEscapeAmpersands(): new java.io.OutputStreamWriter(OutputStream)</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testTextWithInvalidCharacterAndWithoutEscapeAmpersands" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="127" end="132" startBytecode="0" endBytecode="73" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testTextWithInvalidCharacterAndWithoutEscapeAmpersands()</Message>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+      <Message>Called method new java.io.OutputStreamWriter(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="128" end="128" startBytecode="13" endBytecode="13" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 128]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="d2fab575fdb4073c3b586baafb220d4f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testTextWithoutEscapeAmpersands(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testTextWithoutEscapeAmpersands" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="98" end="105" startBytecode="0" endBytecode="85" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testTextWithoutEscapeAmpersands()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="104" end="104" startBytecode="35" endBytecode="35" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 104]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="33cfec6f65ee1147f4b8999195dc4949" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testTextWithoutEscapeAmpersands(): new java.io.OutputStreamWriter(OutputStream)</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testTextWithoutEscapeAmpersands" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="98" end="105" startBytecode="0" endBytecode="85" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testTextWithoutEscapeAmpersands()</Message>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+      <Message>Called method new java.io.OutputStreamWriter(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="99" end="99" startBytecode="13" endBytecode="13" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 99]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="a55b7dc9dbc132f63b882dea73a26f2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testWhitespace(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testWhitespace" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="63" end="71" startBytecode="0" endBytecode="84" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testWhitespace()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="70" end="70" startBytecode="34" endBytecode="34" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 70]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="3ed0fb7dedb0805e3fba4ebd00cae3ca" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.znerd.xmlenc.XMLEncoderTest.testWhitespace(): new java.io.OutputStreamWriter(OutputStream)</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="132" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-132]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testWhitespace" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="63" end="71" startBytecode="0" endBytecode="84" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testWhitespace()</Message>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+      <Message>Called method new java.io.OutputStreamWriter(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="64" end="64" startBytecode="13" endBytecode="13" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 64]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.znerd.xmlenc.XMLEncoder</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:13 +0100" total_classes="1" referenced_classes="16" total_bugs="17" total_size="81" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.74" clock_seconds="2.00" peak_mbytes="190.71" alloc_mbytes="7104.00" gc_seconds="0.14" priority_2="2" priority_1="15">
+    <FileStats path="org/znerd/xmlenc/XMLEncoderTest.java" bugCount="17" size="81" bugHash="b23ee1084552072689bdba7e14246979"/>
+    <PackageStats package="org.znerd.xmlenc" total_bugs="17" total_types="1" total_size="81" priority_2="2" priority_1="15">
+      <ClassStats class="org.znerd.xmlenc.XMLEncoderTest" sourceFile="XMLEncoderTest.java" interface="false" size="81" bugs="17" priority_2="2" priority_1="15"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="301" invocations="314" avgMicrosecondsPerInvocation="958" maxMicrosecondsPerInvocation="51838" standardDeviationMicrosecondsPerInvocation="3545"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="170" invocations="16" avgMicrosecondsPerInvocation="10632" maxMicrosecondsPerInvocation="144592" standardDeviationMicrosecondsPerInvocation="34742"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="88" invocations="73" avgMicrosecondsPerInvocation="1218" maxMicrosecondsPerInvocation="20608" standardDeviationMicrosecondsPerInvocation="3190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="80" invocations="16" avgMicrosecondsPerInvocation="5052" maxMicrosecondsPerInvocation="24875" standardDeviationMicrosecondsPerInvocation="7647"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="68" invocations="278" avgMicrosecondsPerInvocation="245" maxMicrosecondsPerInvocation="16455" standardDeviationMicrosecondsPerInvocation="1306"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="66" invocations="16" avgMicrosecondsPerInvocation="4145" maxMicrosecondsPerInvocation="16489" standardDeviationMicrosecondsPerInvocation="5445"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="64" invocations="35" avgMicrosecondsPerInvocation="1841" maxMicrosecondsPerInvocation="26673" standardDeviationMicrosecondsPerInvocation="5011"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="45" invocations="15" avgMicrosecondsPerInvocation="3016" maxMicrosecondsPerInvocation="35552" standardDeviationMicrosecondsPerInvocation="8768"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="38" invocations="16" avgMicrosecondsPerInvocation="2379" maxMicrosecondsPerInvocation="18288" standardDeviationMicrosecondsPerInvocation="5137"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="36" invocations="16" avgMicrosecondsPerInvocation="2307" maxMicrosecondsPerInvocation="22918" standardDeviationMicrosecondsPerInvocation="5519"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="35" invocations="15" avgMicrosecondsPerInvocation="2392" maxMicrosecondsPerInvocation="25028" standardDeviationMicrosecondsPerInvocation="6056"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="32" invocations="16" avgMicrosecondsPerInvocation="2050" maxMicrosecondsPerInvocation="12757" standardDeviationMicrosecondsPerInvocation="3546"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="29" invocations="15" avgMicrosecondsPerInvocation="1936" maxMicrosecondsPerInvocation="14853" standardDeviationMicrosecondsPerInvocation="3641"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="28" invocations="15" avgMicrosecondsPerInvocation="1910" maxMicrosecondsPerInvocation="14584" standardDeviationMicrosecondsPerInvocation="3458"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="28" invocations="15" avgMicrosecondsPerInvocation="1877" maxMicrosecondsPerInvocation="16839" standardDeviationMicrosecondsPerInvocation="4004"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287208710" analysisTimestamp="1714579726979" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT/89_jiggler/ClipTEST/3/jigl/image/ops/levelOps</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="b69c6985b2829df4e254b256c0c3d58d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode jigl.signal.ops.levelOps.ClipTest.testClipConstructorIntInt()</LongMessage>
+    <Class classname="jigl.signal.ops.levelOps.ClipTest" primary="true">
+      <SourceLine classname="jigl.signal.ops.levelOps.ClipTest" start="8" end="43" sourcefile="ClipTest.java" sourcepath="jigl/signal/ops/levelOps/ClipTest.java">
+        <Message>At ClipTest.java:[lines 8-43]</Message>
+      </SourceLine>
+      <Message>In class jigl.signal.ops.levelOps.ClipTest</Message>
+    </Class>
+    <Method classname="jigl.signal.ops.levelOps.ClipTest" name="testClipConstructorIntInt" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="jigl.signal.ops.levelOps.ClipTest" start="12" end="43" startBytecode="0" endBytecode="80" sourcefile="ClipTest.java" sourcepath="jigl/signal/ops/levelOps/ClipTest.java"/>
+      <Message>In method jigl.signal.ops.levelOps.ClipTest.testClipConstructorIntInt()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="148" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="jigl.signal.ops.levelOps.ClipTest" primary="true" start="38" end="38" startBytecode="158" endBytecode="158" sourcefile="ClipTest.java" sourcepath="jigl/signal/ops/levelOps/ClipTest.java">
+      <Message>At ClipTest.java:[line 38]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.EXCEPTION_HANDLER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>jigl.image.ops.SimpleOperator</MissingClass>
+    <MissingClass>jigl.image.ops.levelOps.Clip</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:48 +0200" total_classes="1" referenced_classes="11" total_bugs="1" total_size="27" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.60" clock_seconds="3.25" peak_mbytes="189.83" alloc_mbytes="7104.00" gc_seconds="0.23" priority_2="1">
+    <FileStats path="jigl/signal/ops/levelOps/ClipTest.java" bugCount="1" size="27" bugHash="762563bee233a3339109d747e86cf8ea"/>
+    <PackageStats package="jigl.signal.ops.levelOps" total_bugs="1" total_types="1" total_size="27" priority_2="1">
+      <ClassStats class="jigl.signal.ops.levelOps.ClipTest" sourceFile="ClipTest.java" interface="false" size="27" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="576" invocations="310" avgMicrosecondsPerInvocation="1859" maxMicrosecondsPerInvocation="47001" standardDeviationMicrosecondsPerInvocation="5674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="358" invocations="11" avgMicrosecondsPerInvocation="32608" maxMicrosecondsPerInvocation="281181" standardDeviationMicrosecondsPerInvocation="79813"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="191" invocations="11" avgMicrosecondsPerInvocation="17377" maxMicrosecondsPerInvocation="90526" standardDeviationMicrosecondsPerInvocation="26628"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="142" invocations="274" avgMicrosecondsPerInvocation="521" maxMicrosecondsPerInvocation="38849" standardDeviationMicrosecondsPerInvocation="3269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="106" invocations="59" avgMicrosecondsPerInvocation="1802" maxMicrosecondsPerInvocation="27296" standardDeviationMicrosecondsPerInvocation="4257"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="84" invocations="28" avgMicrosecondsPerInvocation="3014" maxMicrosecondsPerInvocation="43622" standardDeviationMicrosecondsPerInvocation="9294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="84" invocations="11" avgMicrosecondsPerInvocation="7641" maxMicrosecondsPerInvocation="51618" standardDeviationMicrosecondsPerInvocation="14949"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="76" invocations="11" avgMicrosecondsPerInvocation="6974" maxMicrosecondsPerInvocation="43367" standardDeviationMicrosecondsPerInvocation="13244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="72" invocations="2" avgMicrosecondsPerInvocation="36463" maxMicrosecondsPerInvocation="70684" standardDeviationMicrosecondsPerInvocation="34221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="70" invocations="312" avgMicrosecondsPerInvocation="225" maxMicrosecondsPerInvocation="16109" standardDeviationMicrosecondsPerInvocation="1361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="63" invocations="2" avgMicrosecondsPerInvocation="31617" maxMicrosecondsPerInvocation="37155" standardDeviationMicrosecondsPerInvocation="5540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="60" invocations="11" avgMicrosecondsPerInvocation="5515" maxMicrosecondsPerInvocation="29000" standardDeviationMicrosecondsPerInvocation="9288"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

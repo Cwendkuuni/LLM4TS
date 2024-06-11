@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756321912" analysisTimestamp="1714599883455" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/jsci/SimpleCharStreamTEST/16/JSci/maths/symbolic</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="70cbc47ade66824dcec8934746095ad9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in JSci.maths.symbolic.SimpleCharStreamTest.testReInitInputStream(): String.getBytes()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="110" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-110]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testReInitInputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="86" end="88" startBytecode="0" endBytecode="62" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testReInitInputStream()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="86" end="86" startBytecode="6" endBytecode="6" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 86]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="404fa9ebc3f786d4370c4f7a249fdd5d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.bufpos depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testGetImage()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="110" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-110]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testGetImage" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="92" end="96" startBytecode="0" endBytecode="58" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testGetImage()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="bufpos" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.bufpos</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="93" end="93" startBytecode="4" endBytecode="4" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 93]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="1ab444bde51e3b0d0a133364b78acee1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.tokenBegin depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testGetImage()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="110" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-110]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testGetImage" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="92" end="96" startBytecode="0" endBytecode="58" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testGetImage()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="tokenBegin" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.tokenBegin</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="94" end="94" startBytecode="8" endBytecode="8" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 94]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="54ddffe880105299486cec7f0f673040" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.bufpos depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testGetSuffix()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="110" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-110]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testGetSuffix" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="100" end="103" startBytecode="0" endBytecode="72" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testGetSuffix()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="bufpos" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.bufpos</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="101" end="101" startBytecode="25" endBytecode="25" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 101]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" abbrev="ST" category="STYLE">
+    <ShortDescription>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortDescription>
+    <Details><![CDATA[
+
+<p>La méthode de l'instance écrit la valeur d'un champ statique. Cela peut être difficile à gérer si plusieurs instances ont la possibilité d'écrire cette valeur et cela ressemble surtout à une mauvaise pratique.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ST">
+    <Description>Mauvaise utilisation de champs statiques</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>JSci.maths.symbolic.SimpleCharStream</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:21 +0100" total_classes="1" referenced_classes="15" total_bugs="4" total_size="68" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.65" clock_seconds="1.74" peak_mbytes="190.43" alloc_mbytes="7104.00" gc_seconds="0.12" priority_1="4">
+    <FileStats path="JSci/maths/symbolic/SimpleCharStreamTest.java" bugCount="4" size="68" bugHash="ece265880218dead498e786ce9538bbb"/>
+    <PackageStats package="JSci.maths.symbolic" total_bugs="4" total_types="1" total_size="68" priority_1="4">
+      <ClassStats class="JSci.maths.symbolic.SimpleCharStreamTest" sourceFile="SimpleCharStreamTest.java" interface="false" size="68" bugs="4" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="222" invocations="317" avgMicrosecondsPerInvocation="701" maxMicrosecondsPerInvocation="20908" standardDeviationMicrosecondsPerInvocation="1939"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="157" invocations="15" avgMicrosecondsPerInvocation="10470" maxMicrosecondsPerInvocation="123126" standardDeviationMicrosecondsPerInvocation="30261"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="95" invocations="18" avgMicrosecondsPerInvocation="5310" maxMicrosecondsPerInvocation="72811" standardDeviationMicrosecondsPerInvocation="16769"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="85" invocations="15" avgMicrosecondsPerInvocation="5727" maxMicrosecondsPerInvocation="27533" standardDeviationMicrosecondsPerInvocation="8253"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="57" invocations="18" avgMicrosecondsPerInvocation="3196" maxMicrosecondsPerInvocation="24319" standardDeviationMicrosecondsPerInvocation="6025"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="55" invocations="78" avgMicrosecondsPerInvocation="709" maxMicrosecondsPerInvocation="6166" standardDeviationMicrosecondsPerInvocation="1034"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="41" invocations="33" avgMicrosecondsPerInvocation="1260" maxMicrosecondsPerInvocation="21428" standardDeviationMicrosecondsPerInvocation="3809"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="40" invocations="1" avgMicrosecondsPerInvocation="40769" maxMicrosecondsPerInvocation="40769" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="35" invocations="18" avgMicrosecondsPerInvocation="1987" maxMicrosecondsPerInvocation="20803" standardDeviationMicrosecondsPerInvocation="4836"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="32" invocations="281" avgMicrosecondsPerInvocation="116" maxMicrosecondsPerInvocation="1585" standardDeviationMicrosecondsPerInvocation="213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="30" invocations="15" avgMicrosecondsPerInvocation="2059" maxMicrosecondsPerInvocation="9163" standardDeviationMicrosecondsPerInvocation="3205"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="29" invocations="18" avgMicrosecondsPerInvocation="1612" maxMicrosecondsPerInvocation="19331" standardDeviationMicrosecondsPerInvocation="4309"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="25" invocations="18" avgMicrosecondsPerInvocation="1432" maxMicrosecondsPerInvocation="7652" standardDeviationMicrosecondsPerInvocation="2060"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="24" invocations="15" avgMicrosecondsPerInvocation="1657" maxMicrosecondsPerInvocation="9019" standardDeviationMicrosecondsPerInvocation="2365"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="24" invocations="15" avgMicrosecondsPerInvocation="1623" maxMicrosecondsPerInvocation="13025" standardDeviationMicrosecondsPerInvocation="3250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="22" invocations="18" avgMicrosecondsPerInvocation="1254" maxMicrosecondsPerInvocation="12899" standardDeviationMicrosecondsPerInvocation="2854"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287206374" analysisTimestamp="1714573322486" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/COT/guava/Utf8TEST/17/com/google/common/base</Jar>
+  </Project>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="c51fdbd6114446ae5075fc6cc1b31482" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>com.google.common.base.test.Utf8Test.testEncodedLengthWithEmptySequence() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="com.google.common.base.test.Utf8Test" primary="true">
+      <SourceLine classname="com.google.common.base.test.Utf8Test" start="8" end="99" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/test/Utf8Test.java">
+        <Message>At Utf8Test.java:[lines 8-99]</Message>
+      </SourceLine>
+      <Message>In class com.google.common.base.test.Utf8Test</Message>
+    </Class>
+    <Method classname="com.google.common.base.test.Utf8Test" name="testEncodedLengthWithEmptySequence" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.common.base.test.Utf8Test" start="31" end="33" startBytecode="0" endBytecode="51" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/test/Utf8Test.java"/>
+      <Message>In method com.google.common.base.test.Utf8Test.testEncodedLengthWithEmptySequence()</Message>
+    </Method>
+    <SourceLine classname="com.google.common.base.test.Utf8Test" primary="true" start="31" end="31" startBytecode="6" endBytecode="6" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/test/Utf8Test.java">
+      <Message>At Utf8Test.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="1731fe1a07ab80bd21bc58e1db070daf" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>com.google.common.base.test.Utf8Test.testEncodedLengthWithSingleCharacter() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="com.google.common.base.test.Utf8Test" primary="true">
+      <SourceLine classname="com.google.common.base.test.Utf8Test" start="8" end="99" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/test/Utf8Test.java">
+        <Message>At Utf8Test.java:[lines 8-99]</Message>
+      </SourceLine>
+      <Message>In class com.google.common.base.test.Utf8Test</Message>
+    </Class>
+    <Method classname="com.google.common.base.test.Utf8Test" name="testEncodedLengthWithSingleCharacter" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.common.base.test.Utf8Test" start="37" end="39" startBytecode="0" endBytecode="51" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/test/Utf8Test.java"/>
+      <Message>In method com.google.common.base.test.Utf8Test.testEncodedLengthWithSingleCharacter()</Message>
+    </Method>
+    <SourceLine classname="com.google.common.base.test.Utf8Test" primary="true" start="37" end="37" startBytecode="6" endBytecode="6" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/test/Utf8Test.java">
+      <Message>At Utf8Test.java:[line 37]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="9230074bcacd551674d426922913d5b5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>com.google.common.base.test.Utf8Test.testEncodedLengthWithSingleSurrogate() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="com.google.common.base.test.Utf8Test" primary="true">
+      <SourceLine classname="com.google.common.base.test.Utf8Test" start="8" end="99" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/test/Utf8Test.java">
+        <Message>At Utf8Test.java:[lines 8-99]</Message>
+      </SourceLine>
+      <Message>In class com.google.common.base.test.Utf8Test</Message>
+    </Class>
+    <Method classname="com.google.common.base.test.Utf8Test" name="testEncodedLengthWithSingleSurrogate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.common.base.test.Utf8Test" start="43" end="45" startBytecode="0" endBytecode="53" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/test/Utf8Test.java"/>
+      <Message>In method com.google.common.base.test.Utf8Test.testEncodedLengthWithSingleSurrogate()</Message>
+    </Method>
+    <SourceLine classname="com.google.common.base.test.Utf8Test" primary="true" start="43" end="43" startBytecode="6" endBytecode="6" sourcefile="Utf8Test.java" sourcepath="com/google/common/base/test/Utf8Test.java">
+      <Message>At Utf8Test.java:[line 43]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_STRING_CTOR" abbrev="Dm" category="PERFORMANCE">
+    <ShortDescription>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortDescription>
+    <Details><![CDATA[
+
+<p>Utiliser le constructeur <code>java.lang.String(String)</code> gaspille de la mémoire puisque l'objet ainsi construit serait fonctionnellement identique à la chaîne passée en paramètre. Utilisez juste la chaîne en argument directement.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.google.common.base.Utf8</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:46 +0200" total_classes="1" referenced_classes="12" total_bugs="3" total_size="66" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.56" clock_seconds="4.78" peak_mbytes="190.31" alloc_mbytes="7104.00" gc_seconds="0.23" priority_2="3">
+    <FileStats path="com/google/common/base/test/Utf8Test.java" bugCount="3" size="66" bugHash="5f23c77e9e149e39ca1f78bc36dc23ff"/>
+    <PackageStats package="com.google.common.base.test" total_bugs="3" total_types="1" total_size="66" priority_2="3">
+      <ClassStats class="com.google.common.base.test.Utf8Test" sourceFile="Utf8Test.java" interface="false" size="66" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="836" invocations="318" avgMicrosecondsPerInvocation="2629" maxMicrosecondsPerInvocation="76654" standardDeviationMicrosecondsPerInvocation="8095"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="268" invocations="12" avgMicrosecondsPerInvocation="22408" maxMicrosecondsPerInvocation="231020" standardDeviationMicrosecondsPerInvocation="63306"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="255" invocations="69" avgMicrosecondsPerInvocation="3704" maxMicrosecondsPerInvocation="50179" standardDeviationMicrosecondsPerInvocation="9108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="162" invocations="12" avgMicrosecondsPerInvocation="13533" maxMicrosecondsPerInvocation="144198" standardDeviationMicrosecondsPerInvocation="39607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="153" invocations="12" avgMicrosecondsPerInvocation="12764" maxMicrosecondsPerInvocation="67862" standardDeviationMicrosecondsPerInvocation="22932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="137" invocations="30" avgMicrosecondsPerInvocation="4575" maxMicrosecondsPerInvocation="66020" standardDeviationMicrosecondsPerInvocation="12611"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="131" invocations="1" avgMicrosecondsPerInvocation="131402" maxMicrosecondsPerInvocation="131402" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="111" invocations="12" avgMicrosecondsPerInvocation="9259" maxMicrosecondsPerInvocation="42256" standardDeviationMicrosecondsPerInvocation="12850"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="104" invocations="12" avgMicrosecondsPerInvocation="8722" maxMicrosecondsPerInvocation="36879" standardDeviationMicrosecondsPerInvocation="12146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="100" invocations="12" avgMicrosecondsPerInvocation="8384" maxMicrosecondsPerInvocation="44223" standardDeviationMicrosecondsPerInvocation="13496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="93" invocations="12" avgMicrosecondsPerInvocation="7804" maxMicrosecondsPerInvocation="42751" standardDeviationMicrosecondsPerInvocation="12149"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="82" invocations="12" avgMicrosecondsPerInvocation="6887" maxMicrosecondsPerInvocation="50117" standardDeviationMicrosecondsPerInvocation="14730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="81" invocations="12" avgMicrosecondsPerInvocation="6805" maxMicrosecondsPerInvocation="53574" standardDeviationMicrosecondsPerInvocation="14422"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="69" invocations="12" avgMicrosecondsPerInvocation="5784" maxMicrosecondsPerInvocation="30161" standardDeviationMicrosecondsPerInvocation="8502"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="68" invocations="12" avgMicrosecondsPerInvocation="5687" maxMicrosecondsPerInvocation="28319" standardDeviationMicrosecondsPerInvocation="9439"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="66" invocations="321" avgMicrosecondsPerInvocation="205" maxMicrosecondsPerInvocation="20879" standardDeviationMicrosecondsPerInvocation="1337"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

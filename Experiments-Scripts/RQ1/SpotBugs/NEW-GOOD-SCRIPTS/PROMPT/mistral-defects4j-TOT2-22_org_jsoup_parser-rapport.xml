@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713290017517" analysisTimestamp="1714581377763" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/DEFECTS4J/AVEC-PACKAGE_GLOBAL/Defects4J-generated-tests/TOT2/Jsoup/34/22/org/jsoup/parser</Jar>
+  </Project>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="34bea79be6a2f99d895cacfb98566f2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode concatène des chaînes au moyen de + en boucle</ShortMessage>
+    <LongMessage>La méthode org.jsoup.parser.CharacterReaderTest.testConsume() concatène des chaînes au moyen de + en boucle</LongMessage>
+    <Class classname="org.jsoup.parser.CharacterReaderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.CharacterReaderTest" start="6" end="221" sourcefile="CharacterReaderTest.java" sourcepath="org/jsoup/parser/CharacterReaderTest.java">
+        <Message>At CharacterReaderTest.java:[lines 6-221]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.CharacterReaderTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.CharacterReaderTest" name="testConsume" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.CharacterReaderTest" start="32" end="38" startBytecode="0" endBytecode="113" sourcefile="CharacterReaderTest.java" sourcepath="org/jsoup/parser/CharacterReaderTest.java"/>
+      <Message>In method org.jsoup.parser.CharacterReaderTest.testConsume()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.parser.CharacterReaderTest" primary="true" start="35" end="35" startBytecode="20" endBytecode="20" sourcefile="CharacterReaderTest.java" sourcepath="org/jsoup/parser/CharacterReaderTest.java">
+      <Message>At CharacterReaderTest.java:[line 35]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="SBSC_USE_STRINGBUFFER_CONCATENATION" abbrev="SBSC" category="PERFORMANCE">
+    <ShortDescription>La méthode concatène des chaînes au moyen de + en boucle</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette méthode semble construire une <ocde>String</code> en utilisant une concaténation en boucle. A chaque itération, l'objet <code>String</code> est converti en <code>StringBuffer</code>/<code>StringBuilder</code>, complété, puis de nouveau converti en <code>String</code>. Ceci a un coût exponentiel en fonction du nombre d'itérations, puisque la chaîne est recopiée à chaque itération.</p>
+<p>De meilleurs performances peuvent être obtenues en utilisant explicitement <code>StringBuffer</code> (ou <code>StringBuilder</code> en Java 5).</p>
+<p>Par exemple :</p>
+<pre><code>
+// C'est mal !
+String s = "";
+for (int i = 0; i &lt; field.length; ++i) {
+  s = s + field[i];
+}
+
+// C'est mieux...
+StringBuffer buf = new StringBuffer();
+for (int i = 0; i &lt; field.length; ++i) {
+  buf.append(field[i]);
+}
+String s = buf.toString();
+</code></pre>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SBSC">
+    <Description>Concaténation de chaînes au moyen de + dans une boucle</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.jsoup.parser.CharacterReader</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:53:37 +0200" total_classes="1" referenced_classes="11" total_bugs="1" total_size="161" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.86" clock_seconds="3.78" peak_mbytes="192.68" alloc_mbytes="7104.00" gc_seconds="0.22" priority_2="1">
+    <FileStats path="org/jsoup/parser/CharacterReaderTest.java" bugCount="1" size="161" bugHash="80e7dd32c59f74302bed5ba1eba10411"/>
+    <PackageStats package="org.jsoup.parser" total_bugs="1" total_types="1" total_size="161" priority_2="1">
+      <ClassStats class="org.jsoup.parser.CharacterReaderTest" sourceFile="CharacterReaderTest.java" interface="false" size="161" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="580" invocations="316" avgMicrosecondsPerInvocation="1836" maxMicrosecondsPerInvocation="56814" standardDeviationMicrosecondsPerInvocation="5960"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="372" invocations="87" avgMicrosecondsPerInvocation="4286" maxMicrosecondsPerInvocation="227957" standardDeviationMicrosecondsPerInvocation="24487"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="137" invocations="281" avgMicrosecondsPerInvocation="489" maxMicrosecondsPerInvocation="43406" standardDeviationMicrosecondsPerInvocation="3069"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="114" invocations="11" avgMicrosecondsPerInvocation="10414" maxMicrosecondsPerInvocation="40462" standardDeviationMicrosecondsPerInvocation="14105"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="90" invocations="29" avgMicrosecondsPerInvocation="3129" maxMicrosecondsPerInvocation="82204" standardDeviationMicrosecondsPerInvocation="14950"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="88" invocations="29" avgMicrosecondsPerInvocation="3035" maxMicrosecondsPerInvocation="32548" standardDeviationMicrosecondsPerInvocation="6676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="82" invocations="318" avgMicrosecondsPerInvocation="258" maxMicrosecondsPerInvocation="24135" standardDeviationMicrosecondsPerInvocation="1771"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="80" invocations="28" avgMicrosecondsPerInvocation="2871" maxMicrosecondsPerInvocation="35537" standardDeviationMicrosecondsPerInvocation="8245"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="71" invocations="29" avgMicrosecondsPerInvocation="2481" maxMicrosecondsPerInvocation="22885" standardDeviationMicrosecondsPerInvocation="5244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="70" invocations="29" avgMicrosecondsPerInvocation="2425" maxMicrosecondsPerInvocation="25035" standardDeviationMicrosecondsPerInvocation="4990"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="69" invocations="29" avgMicrosecondsPerInvocation="2387" maxMicrosecondsPerInvocation="19730" standardDeviationMicrosecondsPerInvocation="4840"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="59" invocations="11" avgMicrosecondsPerInvocation="5383" maxMicrosecondsPerInvocation="22382" standardDeviationMicrosecondsPerInvocation="7380"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="59" invocations="29" avgMicrosecondsPerInvocation="2040" maxMicrosecondsPerInvocation="21143" standardDeviationMicrosecondsPerInvocation="4400"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="57" invocations="11" avgMicrosecondsPerInvocation="5238" maxMicrosecondsPerInvocation="34680" standardDeviationMicrosecondsPerInvocation="9616"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="50" invocations="29" avgMicrosecondsPerInvocation="1746" maxMicrosecondsPerInvocation="16324" standardDeviationMicrosecondsPerInvocation="3704"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="47" invocations="11" avgMicrosecondsPerInvocation="4307" maxMicrosecondsPerInvocation="35301" standardDeviationMicrosecondsPerInvocation="10025"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="46" invocations="29" avgMicrosecondsPerInvocation="1617" maxMicrosecondsPerInvocation="37565" standardDeviationMicrosecondsPerInvocation="6794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="41" invocations="11" avgMicrosecondsPerInvocation="3801" maxMicrosecondsPerInvocation="25819" standardDeviationMicrosecondsPerInvocation="7176"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

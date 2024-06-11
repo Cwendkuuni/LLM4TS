@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360745135" analysisTimestamp="1714588283170" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/FEWSHOT/100_jgaap/jgaapGUITEST/0</Jar>
+  </Project>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="a9c1802c7b5a3c5d34be862e296f5061" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de classe devant commencer par une majuscule</ShortMessage>
+    <LongMessage>Le nom de la classe jgaapGUITest ne commence pas par une majusucle</LongMessage>
+    <Class classname="jgaapGUITest" primary="true">
+      <SourceLine classname="jgaapGUITest" start="3" end="48" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java">
+        <Message>At jgaapGUITest.java:[lines 3-48]</Message>
+      </SourceLine>
+      <Message>In class jgaapGUITest</Message>
+    </Class>
+    <SourceLine classname="jgaapGUITest" start="3" end="48" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java" synthetic="true">
+      <Message>At jgaapGUITest.java:[lines 3-48]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="NM_CLASS_NAMING_CONVENTION" abbrev="Nm" category="BAD_PRACTICE">
+    <ShortDescription>Nom de classe devant commencer par une majuscule</ShortDescription>
+    <Details><![CDATA[
+
+<p>Les noms de classe doivent être en minuscules avec la première lettre de chaque mot en majuscules. Essayez de conserver vos noms de classes simples et explicites. Utilisez des mots entiers et évitez acronymes et abbréviations (à moins que l'abbréviation soit plus largement utilisée que la forme longue, comme "URL" ou "HTML").</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Nm">
+    <Description>Noms de méthodes ambigus</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:05 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="21" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.68" clock_seconds="1.62" peak_mbytes="188.43" alloc_mbytes="7104.00" gc_seconds="0.13" priority_2="1">
+    <FileStats path="jgaapGUITest.java" bugCount="1" size="21" bugHash="70e30ff51aec1ef25338ec4cb1635a1e"/>
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="21" priority_2="1">
+      <ClassStats class="jgaapGUITest" sourceFile="jgaapGUITest.java" interface="false" size="21" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="240" invocations="291" avgMicrosecondsPerInvocation="827" maxMicrosecondsPerInvocation="26919" standardDeviationMicrosecondsPerInvocation="2289"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="138" invocations="9" avgMicrosecondsPerInvocation="15406" maxMicrosecondsPerInvocation="132972" standardDeviationMicrosecondsPerInvocation="41575"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="87" invocations="10" avgMicrosecondsPerInvocation="8768" maxMicrosecondsPerInvocation="86219" standardDeviationMicrosecondsPerInvocation="25818"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="63" invocations="9" avgMicrosecondsPerInvocation="7060" maxMicrosecondsPerInvocation="34273" standardDeviationMicrosecondsPerInvocation="10594"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="49" invocations="9" avgMicrosecondsPerInvocation="5471" maxMicrosecondsPerInvocation="23726" standardDeviationMicrosecondsPerInvocation="7352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="45" invocations="43" avgMicrosecondsPerInvocation="1068" maxMicrosecondsPerInvocation="4528" standardDeviationMicrosecondsPerInvocation="1185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="39" invocations="293" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="21210" standardDeviationMicrosecondsPerInvocation="1234"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="37" invocations="257" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="3727" standardDeviationMicrosecondsPerInvocation="371"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="34" invocations="23" avgMicrosecondsPerInvocation="1510" maxMicrosecondsPerInvocation="20690" standardDeviationMicrosecondsPerInvocation="4310"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="31" invocations="9" avgMicrosecondsPerInvocation="3533" maxMicrosecondsPerInvocation="16504" standardDeviationMicrosecondsPerInvocation="4982"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="29" invocations="10" avgMicrosecondsPerInvocation="2990" maxMicrosecondsPerInvocation="28522" standardDeviationMicrosecondsPerInvocation="8510"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="27" invocations="10" avgMicrosecondsPerInvocation="2798" maxMicrosecondsPerInvocation="26890" standardDeviationMicrosecondsPerInvocation="8030"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.Naming" totalMilliseconds="23" invocations="1" avgMicrosecondsPerInvocation="23045" maxMicrosecondsPerInvocation="23045" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360748992" analysisTimestamp="1714605163009" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/12_dsachat/HandlerTEST/13/dsachat/server</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="dbeabaf4339d15e57dd189b4d9ce05f2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : dsachat.server.HandlerTest.handler</LongMessage>
+    <Class classname="dsachat.server.HandlerTest" primary="true">
+      <SourceLine classname="dsachat.server.HandlerTest" start="6" end="108" sourcefile="HandlerTest.java" sourcepath="dsachat/server/HandlerTest.java">
+        <Message>At HandlerTest.java:[lines 6-108]</Message>
+      </SourceLine>
+      <Message>In class dsachat.server.HandlerTest</Message>
+    </Class>
+    <Field classname="dsachat.server.HandlerTest" name="handler" signature="Ldsachat/server/Handler;" isStatic="false" primary="true">
+      <SourceLine classname="dsachat.server.HandlerTest" sourcefile="HandlerTest.java" sourcepath="dsachat/server/HandlerTest.java">
+        <Message>In HandlerTest.java</Message>
+      </SourceLine>
+      <Message>Field dsachat.server.HandlerTest.handler</Message>
+    </Field>
+    <SourceLine classname="dsachat.server.HandlerTest" primary="true" start="12" end="12" startBytecode="8" endBytecode="8" sourcefile="HandlerTest.java" sourcepath="dsachat/server/HandlerTest.java">
+      <Message>At HandlerTest.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>dsachat.server.Handler</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:08 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="45" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.51" clock_seconds="1.77" peak_mbytes="192.17" alloc_mbytes="7104.00" gc_seconds="0.12" priority_2="1">
+    <FileStats path="dsachat/server/HandlerTest.java" bugCount="1" size="45" bugHash="8d7c193798060fed4ba3653cec15ecb5"/>
+    <PackageStats package="dsachat.server" total_bugs="1" total_types="1" total_size="45" priority_2="1">
+      <ClassStats class="dsachat.server.HandlerTest" sourceFile="HandlerTest.java" interface="false" size="45" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="336" invocations="293" avgMicrosecondsPerInvocation="1148" maxMicrosecondsPerInvocation="46839" standardDeviationMicrosecondsPerInvocation="4046"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="186" invocations="9" avgMicrosecondsPerInvocation="20739" maxMicrosecondsPerInvocation="147989" standardDeviationMicrosecondsPerInvocation="45713"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="54" invocations="54" avgMicrosecondsPerInvocation="1017" maxMicrosecondsPerInvocation="7745" standardDeviationMicrosecondsPerInvocation="1559"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="50" invocations="9" avgMicrosecondsPerInvocation="5633" maxMicrosecondsPerInvocation="30327" standardDeviationMicrosecondsPerInvocation="9369"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="48" invocations="258" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="14452" standardDeviationMicrosecondsPerInvocation="957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="43" invocations="24" avgMicrosecondsPerInvocation="1810" maxMicrosecondsPerInvocation="21265" standardDeviationMicrosecondsPerInvocation="4892"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="39" invocations="21" avgMicrosecondsPerInvocation="1878" maxMicrosecondsPerInvocation="35781" standardDeviationMicrosecondsPerInvocation="7600"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="37" invocations="9" avgMicrosecondsPerInvocation="4168" maxMicrosecondsPerInvocation="27681" standardDeviationMicrosecondsPerInvocation="8411"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="34" invocations="9" avgMicrosecondsPerInvocation="3830" maxMicrosecondsPerInvocation="27908" standardDeviationMicrosecondsPerInvocation="8573"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="32" invocations="21" avgMicrosecondsPerInvocation="1540" maxMicrosecondsPerInvocation="30311" standardDeviationMicrosecondsPerInvocation="6434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="30" invocations="9" avgMicrosecondsPerInvocation="3431" maxMicrosecondsPerInvocation="26152" standardDeviationMicrosecondsPerInvocation="8068"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="28" invocations="21" avgMicrosecondsPerInvocation="1368" maxMicrosecondsPerInvocation="18235" standardDeviationMicrosecondsPerInvocation="4023"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

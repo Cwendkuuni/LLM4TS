@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360737255" analysisTimestamp="1714579942046" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/12_dsachat/HandlerTEST/26/dsachat/server</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="dbeabaf4339d15e57dd189b4d9ce05f2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : dsachat.server.HandlerTest.handler</LongMessage>
+    <Class classname="dsachat.server.HandlerTest" primary="true">
+      <SourceLine classname="dsachat.server.HandlerTest" start="7" end="98" sourcefile="HandlerTest.java" sourcepath="dsachat/server/HandlerTest.java">
+        <Message>At HandlerTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class dsachat.server.HandlerTest</Message>
+    </Class>
+    <Field classname="dsachat.server.HandlerTest" name="handler" signature="Ldsachat/server/Handler;" isStatic="false" primary="true">
+      <SourceLine classname="dsachat.server.HandlerTest" sourcefile="HandlerTest.java" sourcepath="dsachat/server/HandlerTest.java">
+        <Message>In HandlerTest.java</Message>
+      </SourceLine>
+      <Message>Field dsachat.server.HandlerTest.handler</Message>
+    </Field>
+    <SourceLine classname="dsachat.server.HandlerTest" primary="true" start="13" end="13" startBytecode="8" endBytecode="8" sourcefile="HandlerTest.java" sourcepath="dsachat/server/HandlerTest.java">
+      <Message>At HandlerTest.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>dsachat.server.Handler</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:38:57 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="35" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.54" clock_seconds="3.07" peak_mbytes="189.28" alloc_mbytes="7104.00" gc_seconds="0.18" priority_2="1">
+    <FileStats path="dsachat/server/HandlerTest.java" bugCount="1" size="35" bugHash="b44de311655d56e1175fdfeedaca81a3"/>
+    <PackageStats package="dsachat.server" total_bugs="1" total_types="1" total_size="35" priority_2="1">
+      <ClassStats class="dsachat.server.HandlerTest" sourceFile="HandlerTest.java" interface="false" size="35" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="550" invocations="293" avgMicrosecondsPerInvocation="1878" maxMicrosecondsPerInvocation="67229" standardDeviationMicrosecondsPerInvocation="6322"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="223" invocations="9" avgMicrosecondsPerInvocation="24879" maxMicrosecondsPerInvocation="219298" standardDeviationMicrosecondsPerInvocation="68740"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="149" invocations="9" avgMicrosecondsPerInvocation="16664" maxMicrosecondsPerInvocation="51257" standardDeviationMicrosecondsPerInvocation="20527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="116" invocations="49" avgMicrosecondsPerInvocation="2386" maxMicrosecondsPerInvocation="31756" standardDeviationMicrosecondsPerInvocation="6259"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="110" invocations="9" avgMicrosecondsPerInvocation="12285" maxMicrosecondsPerInvocation="45778" standardDeviationMicrosecondsPerInvocation="14284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="105" invocations="16" avgMicrosecondsPerInvocation="6583" maxMicrosecondsPerInvocation="101316" standardDeviationMicrosecondsPerInvocation="24464"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="87" invocations="9" avgMicrosecondsPerInvocation="9710" maxMicrosecondsPerInvocation="39044" standardDeviationMicrosecondsPerInvocation="14054"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="85" invocations="258" avgMicrosecondsPerInvocation="330" maxMicrosecondsPerInvocation="23655" standardDeviationMicrosecondsPerInvocation="1807"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="82" invocations="24" avgMicrosecondsPerInvocation="3447" maxMicrosecondsPerInvocation="31068" standardDeviationMicrosecondsPerInvocation="8349"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

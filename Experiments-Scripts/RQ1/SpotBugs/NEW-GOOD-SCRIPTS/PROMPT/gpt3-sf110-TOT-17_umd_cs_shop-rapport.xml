@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360743327" analysisTimestamp="1714591285371" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/85_shop/JSPredicateFormTEST/17/umd/cs/shop</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="37ee14b61948feb78ef1626eba2acae6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in umd.cs.shop.JSPredicateFormTest.testPrint(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="umd.cs.shop.JSPredicateFormTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="7" end="114" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>At JSPredicateFormTest.java:[lines 7-114]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSPredicateFormTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSPredicateFormTest" name="testPrint" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="66" end="71" startBytecode="0" endBytecode="86" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java"/>
+      <Message>In method umd.cs.shop.JSPredicateFormTest.testPrint()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" primary="true" start="70" end="70" startBytecode="36" endBytecode="36" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+      <Message>At JSPredicateFormTest.java:[line 70]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="bb2246f7c4fe61661da5a36af2b53dab" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in umd.cs.shop.JSPredicateFormTest.testPrint(): new java.io.PrintStream(OutputStream)</LongMessage>
+    <Class classname="umd.cs.shop.JSPredicateFormTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="7" end="114" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>At JSPredicateFormTest.java:[lines 7-114]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSPredicateFormTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSPredicateFormTest" name="testPrint" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="66" end="71" startBytecode="0" endBytecode="86" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java"/>
+      <Message>In method umd.cs.shop.JSPredicateFormTest.testPrint()</Message>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+      <Message>Called method new java.io.PrintStream(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" primary="true" start="68" end="68" startBytecode="23" endBytecode="23" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+      <Message>At JSPredicateFormTest.java:[line 68]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>umd.cs.shop.JSPredicateForm</MissingClass>
+    <MissingClass>umd.cs.shop.JSSubstitution</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:03 +0100" total_classes="1" referenced_classes="18" total_bugs="2" total_size="80" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.30" clock_seconds="2.27" peak_mbytes="192.14" alloc_mbytes="7104.00" gc_seconds="0.10" priority_1="2">
+    <FileStats path="umd/cs/shop/JSPredicateFormTest.java" bugCount="2" size="80" bugHash="93b82d9e6bad7b2d03842711aef74489"/>
+    <PackageStats package="umd.cs.shop" total_bugs="2" total_types="1" total_size="80" priority_1="2">
+      <ClassStats class="umd.cs.shop.JSPredicateFormTest" sourceFile="JSPredicateFormTest.java" interface="false" size="80" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="336" invocations="346" avgMicrosecondsPerInvocation="971" maxMicrosecondsPerInvocation="26010" standardDeviationMicrosecondsPerInvocation="2810"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteCheckReturnValueAnnotations" totalMilliseconds="102" invocations="18" avgMicrosecondsPerInvocation="5680" maxMicrosecondsPerInvocation="99784" standardDeviationMicrosecondsPerInvocation="22824"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="91" invocations="82" avgMicrosecondsPerInvocation="1115" maxMicrosecondsPerInvocation="10237" standardDeviationMicrosecondsPerInvocation="2227"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="87" invocations="18" avgMicrosecondsPerInvocation="4857" maxMicrosecondsPerInvocation="23677" standardDeviationMicrosecondsPerInvocation="6178"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="68" invocations="39" avgMicrosecondsPerInvocation="1745" maxMicrosecondsPerInvocation="43422" standardDeviationMicrosecondsPerInvocation="6962"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="61" invocations="18" avgMicrosecondsPerInvocation="3424" maxMicrosecondsPerInvocation="20998" standardDeviationMicrosecondsPerInvocation="4845"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="53" invocations="16" avgMicrosecondsPerInvocation="3372" maxMicrosecondsPerInvocation="28255" standardDeviationMicrosecondsPerInvocation="6987"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="51" invocations="18" avgMicrosecondsPerInvocation="2843" maxMicrosecondsPerInvocation="27296" standardDeviationMicrosecondsPerInvocation="8033"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="49" invocations="16" avgMicrosecondsPerInvocation="3118" maxMicrosecondsPerInvocation="36111" standardDeviationMicrosecondsPerInvocation="8653"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="49" invocations="16" avgMicrosecondsPerInvocation="3084" maxMicrosecondsPerInvocation="37055" standardDeviationMicrosecondsPerInvocation="8776"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="48" invocations="18" avgMicrosecondsPerInvocation="2686" maxMicrosecondsPerInvocation="21922" standardDeviationMicrosecondsPerInvocation="4900"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="43" invocations="1" avgMicrosecondsPerInvocation="43464" maxMicrosecondsPerInvocation="43464" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="42" invocations="16" avgMicrosecondsPerInvocation="2655" maxMicrosecondsPerInvocation="13299" standardDeviationMicrosecondsPerInvocation="3894"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="40" invocations="310" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="6039" standardDeviationMicrosecondsPerInvocation="393"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="40" invocations="16" avgMicrosecondsPerInvocation="2509" maxMicrosecondsPerInvocation="17110" standardDeviationMicrosecondsPerInvocation="4880"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="35" invocations="18" avgMicrosecondsPerInvocation="1950" maxMicrosecondsPerInvocation="6681" standardDeviationMicrosecondsPerInvocation="2360"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="30" invocations="16" avgMicrosecondsPerInvocation="1932" maxMicrosecondsPerInvocation="14848" standardDeviationMicrosecondsPerInvocation="4191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="29" invocations="16" avgMicrosecondsPerInvocation="1871" maxMicrosecondsPerInvocation="12287" standardDeviationMicrosecondsPerInvocation="3125"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="28" invocations="1" avgMicrosecondsPerInvocation="28879" maxMicrosecondsPerInvocation="28879" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

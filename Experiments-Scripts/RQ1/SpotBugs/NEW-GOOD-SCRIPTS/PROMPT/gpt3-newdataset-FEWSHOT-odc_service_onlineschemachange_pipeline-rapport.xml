@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711194555947" analysisTimestamp="1714575148153" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V3/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/FEWSHOT/Odc/23/26/com/oceanbase/odc/service/onlineschemachange/pipeline</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="f805f2279e02217f8d3398fd0ed4f0e1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testAdaptResult()</LongMessage>
+    <Class classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="9" end="81" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>At ScheduleCheckOmsProjectValveTest.java:[lines 9-81]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" name="testAdaptResult" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="50" end="54" startBytecode="0" endBytecode="4" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java"/>
+      <Message>In method com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testAdaptResult()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true" start="50" end="50" startBytecode="7" endBytecode="7" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+      <Message>At ScheduleCheckOmsProjectValveTest.java:[line 50]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="deddbd82c2ba0745672c60b61a4d6d80" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testContinueHandleProjectStepResult()</LongMessage>
+    <Class classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="9" end="81" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>At ScheduleCheckOmsProjectValveTest.java:[lines 9-81]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" name="testContinueHandleProjectStepResult" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="32" end="36" startBytecode="0" endBytecode="4" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java"/>
+      <Message>In method com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testContinueHandleProjectStepResult()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true" start="32" end="32" startBytecode="7" endBytecode="7" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+      <Message>At ScheduleCheckOmsProjectValveTest.java:[line 32]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="d52a7783ee30206191db3428b9fd25b7" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testGetHeader()</LongMessage>
+    <Class classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="9" end="81" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>At ScheduleCheckOmsProjectValveTest.java:[lines 9-81]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" name="testGetHeader" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="77" end="81" startBytecode="0" endBytecode="4" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java"/>
+      <Message>In method com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testGetHeader()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true" start="77" end="77" startBytecode="7" endBytecode="7" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+      <Message>At ScheduleCheckOmsProjectValveTest.java:[line 77]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="872b7db558f6060252fcf5fcc4c7b26a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testGetProjectRequest()</LongMessage>
+    <Class classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="9" end="81" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>At ScheduleCheckOmsProjectValveTest.java:[lines 9-81]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" name="testGetProjectRequest" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="59" end="63" startBytecode="0" endBytecode="4" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java"/>
+      <Message>In method com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testGetProjectRequest()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true" start="59" end="59" startBytecode="7" endBytecode="7" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+      <Message>At ScheduleCheckOmsProjectValveTest.java:[line 59]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="c9b45b03a21c16867a201f85eccde4b1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testHandleOmsProjectStepResult()</LongMessage>
+    <Class classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="9" end="81" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>At ScheduleCheckOmsProjectValveTest.java:[lines 9-81]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" name="testHandleOmsProjectStepResult" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="23" end="27" startBytecode="0" endBytecode="4" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java"/>
+      <Message>In method com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testHandleOmsProjectStepResult()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true" start="23" end="23" startBytecode="7" endBytecode="7" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+      <Message>At ScheduleCheckOmsProjectValveTest.java:[line 23]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="d04abf91bb682e9e924d9893f120bd26" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testInvoke()</LongMessage>
+    <Class classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="9" end="81" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>At ScheduleCheckOmsProjectValveTest.java:[lines 9-81]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" name="testInvoke" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="14" end="18" startBytecode="0" endBytecode="4" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java"/>
+      <Message>In method com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testInvoke()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true" start="14" end="14" startBytecode="7" endBytecode="7" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+      <Message>At ScheduleCheckOmsProjectValveTest.java:[line 14]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="fbe6a27183bba8a0e75c2ec6f45ea5e1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testListProjectFullVerifyResult()</LongMessage>
+    <Class classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="9" end="81" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>At ScheduleCheckOmsProjectValveTest.java:[lines 9-81]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" name="testListProjectFullVerifyResult" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="41" end="45" startBytecode="0" endBytecode="4" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java"/>
+      <Message>In method com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testListProjectFullVerifyResult()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true" start="41" end="41" startBytecode="7" endBytecode="7" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+      <Message>At ScheduleCheckOmsProjectValveTest.java:[line 41]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="82392055c30162a5b899fff0621a59e0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testRecordCurrentProgress()</LongMessage>
+    <Class classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="9" end="81" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+        <Message>At ScheduleCheckOmsProjectValveTest.java:[lines 9-81]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" name="testRecordCurrentProgress" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" start="68" end="72" startBytecode="0" endBytecode="4" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java"/>
+      <Message>In method com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest.testRecordCurrentProgress()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" primary="true" start="68" end="68" startBytecode="7" endBytecode="7" sourcefile="ScheduleCheckOmsProjectValveTest.java" sourcepath="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java">
+      <Message>At ScheduleCheckOmsProjectValveTest.java:[line 68]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValve</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sat, 23 Mar 2024 12:49:15 +0100" total_classes="1" referenced_classes="9" total_bugs="8" total_size="27" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.00" clock_seconds="4.80" peak_mbytes="189.70" alloc_mbytes="7104.00" gc_seconds="0.19" priority_1="8">
+    <FileStats path="com/oceanbase/odc/service/onlineschemachange/pipeline/ScheduleCheckOmsProjectValveTest.java" bugCount="8" size="27" bugHash="eabcc61a1d3f8d01ad48de1f17a89909"/>
+    <PackageStats package="com.oceanbase.odc.service.onlineschemachange.pipeline" total_bugs="8" total_types="1" total_size="27" priority_1="8">
+      <ClassStats class="com.oceanbase.odc.service.onlineschemachange.pipeline.ScheduleCheckOmsProjectValveTest" sourceFile="ScheduleCheckOmsProjectValveTest.java" interface="false" size="27" bugs="8" priority_1="8"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="871" invocations="292" avgMicrosecondsPerInvocation="2985" maxMicrosecondsPerInvocation="68857" standardDeviationMicrosecondsPerInvocation="8724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="234" invocations="9" avgMicrosecondsPerInvocation="26012" maxMicrosecondsPerInvocation="227588" standardDeviationMicrosecondsPerInvocation="71272"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="175" invocations="9" avgMicrosecondsPerInvocation="19486" maxMicrosecondsPerInvocation="173416" standardDeviationMicrosecondsPerInvocation="54423"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="172" invocations="42" avgMicrosecondsPerInvocation="4118" maxMicrosecondsPerInvocation="52757" standardDeviationMicrosecondsPerInvocation="11319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="154" invocations="23" avgMicrosecondsPerInvocation="6699" maxMicrosecondsPerInvocation="65202" standardDeviationMicrosecondsPerInvocation="16940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="151" invocations="9" avgMicrosecondsPerInvocation="16877" maxMicrosecondsPerInvocation="65659" standardDeviationMicrosecondsPerInvocation="23692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="137" invocations="258" avgMicrosecondsPerInvocation="532" maxMicrosecondsPerInvocation="32064" standardDeviationMicrosecondsPerInvocation="2608"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="135" invocations="9" avgMicrosecondsPerInvocation="15054" maxMicrosecondsPerInvocation="115080" standardDeviationMicrosecondsPerInvocation="35720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="100" invocations="1" avgMicrosecondsPerInvocation="100567" maxMicrosecondsPerInvocation="100567" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="99" invocations="9" avgMicrosecondsPerInvocation="11021" maxMicrosecondsPerInvocation="43684" standardDeviationMicrosecondsPerInvocation="15342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="86" invocations="9" avgMicrosecondsPerInvocation="9621" maxMicrosecondsPerInvocation="27077" standardDeviationMicrosecondsPerInvocation="11491"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="83" invocations="9" avgMicrosecondsPerInvocation="9249" maxMicrosecondsPerInvocation="56592" standardDeviationMicrosecondsPerInvocation="18300"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

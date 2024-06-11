@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287214978" analysisTimestamp="1714582321346" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/jdom/JDOMResultTEST/25/org/jdom2/transform</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="9630ffeeeb8d6b8156a0f32183f69c62" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.jdom2.transform.JDOMResultTest.factory</LongMessage>
+    <Class classname="org.jdom2.transform.JDOMResultTest" primary="true">
+      <SourceLine classname="org.jdom2.transform.JDOMResultTest" start="7" end="14" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java">
+        <Message>At JDOMResultTest.java:[lines 7-14]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.transform.JDOMResultTest</Message>
+    </Class>
+    <Field classname="org.jdom2.transform.JDOMResultTest" name="factory" signature="Lorg/jdom2/JDOMFactory;" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.transform.JDOMResultTest" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java">
+        <Message>In JDOMResultTest.java</Message>
+      </SourceLine>
+      <Message>Field org.jdom2.transform.JDOMResultTest.factory</Message>
+    </Field>
+    <SourceLine classname="org.jdom2.transform.JDOMResultTest" primary="true" start="13" end="13" startBytecode="8" endBytecode="8" sourcefile="JDOMResultTest.java" sourcepath="org/jdom2/transform/JDOMResultTest.java">
+      <Message>At JDOMResultTest.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.jdom2.DefaultJDOMFactory</MissingClass>
+    <MissingClass>org.jdom2.JDOMFactory</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:54 +0200" total_classes="1" referenced_classes="9" total_bugs="1" total_size="7" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.62" clock_seconds="3.29" peak_mbytes="189.05" alloc_mbytes="7104.00" gc_seconds="0.21" priority_2="1">
+    <FileStats path="org/jdom2/transform/JDOMResultTest.java" bugCount="1" size="7" bugHash="47c3f429b207c3d91de7f67f92a35d90"/>
+    <PackageStats package="org.jdom2.transform" total_bugs="1" total_types="1" total_size="7" priority_2="1">
+      <ClassStats class="org.jdom2.transform.JDOMResultTest" sourceFile="JDOMResultTest.java" interface="false" size="7" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="529" invocations="293" avgMicrosecondsPerInvocation="1807" maxMicrosecondsPerInvocation="54222" standardDeviationMicrosecondsPerInvocation="5770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="253" invocations="9" avgMicrosecondsPerInvocation="28144" maxMicrosecondsPerInvocation="245019" standardDeviationMicrosecondsPerInvocation="76687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="173" invocations="35" avgMicrosecondsPerInvocation="4964" maxMicrosecondsPerInvocation="48040" standardDeviationMicrosecondsPerInvocation="10310"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="148" invocations="9" avgMicrosecondsPerInvocation="16491" maxMicrosecondsPerInvocation="92948" standardDeviationMicrosecondsPerInvocation="29686"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="130" invocations="2" avgMicrosecondsPerInvocation="65070" maxMicrosecondsPerInvocation="128852" standardDeviationMicrosecondsPerInvocation="63782"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="114" invocations="258" avgMicrosecondsPerInvocation="445" maxMicrosecondsPerInvocation="37152" standardDeviationMicrosecondsPerInvocation="2717"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="85" invocations="2" avgMicrosecondsPerInvocation="42609" maxMicrosecondsPerInvocation="84797" standardDeviationMicrosecondsPerInvocation="42188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="82" invocations="9" avgMicrosecondsPerInvocation="9198" maxMicrosecondsPerInvocation="68443" standardDeviationMicrosecondsPerInvocation="21007"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="79" invocations="9" avgMicrosecondsPerInvocation="8812" maxMicrosecondsPerInvocation="30957" standardDeviationMicrosecondsPerInvocation="10414"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="70" invocations="9" avgMicrosecondsPerInvocation="7840" maxMicrosecondsPerInvocation="33560" standardDeviationMicrosecondsPerInvocation="12795"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="62" invocations="24" avgMicrosecondsPerInvocation="2601" maxMicrosecondsPerInvocation="47804" standardDeviationMicrosecondsPerInvocation="9497"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

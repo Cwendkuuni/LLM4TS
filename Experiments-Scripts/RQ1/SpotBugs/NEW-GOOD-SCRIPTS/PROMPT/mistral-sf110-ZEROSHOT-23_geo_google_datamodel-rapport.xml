@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287217818" analysisTimestamp="1714587924974" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/ZEROSHOT/21_geo-google/GeoStatusCodeTEST/23/geo/google/datamodel</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="4ce8cb7d9007a073541392f69f5520b9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode geo.google.datamodel.test.GeoStatusCodeTest.testGetStatusCodeWithInvalidCode()</LongMessage>
+    <Class classname="geo.google.datamodel.test.GeoStatusCodeTest" primary="true">
+      <SourceLine classname="geo.google.datamodel.test.GeoStatusCodeTest" start="9" end="47" sourcefile="GeoStatusCodeTest.java" sourcepath="geo/google/datamodel/test/GeoStatusCodeTest.java">
+        <Message>At GeoStatusCodeTest.java:[lines 9-47]</Message>
+      </SourceLine>
+      <Message>In class geo.google.datamodel.test.GeoStatusCodeTest</Message>
+    </Class>
+    <Method classname="geo.google.datamodel.test.GeoStatusCodeTest" name="testGetStatusCodeWithInvalidCode" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="geo.google.datamodel.test.GeoStatusCodeTest" start="25" end="27" startBytecode="0" endBytecode="5" sourcefile="GeoStatusCodeTest.java" sourcepath="geo/google/datamodel/test/GeoStatusCodeTest.java"/>
+      <Message>In method geo.google.datamodel.test.GeoStatusCodeTest.testGetStatusCodeWithInvalidCode()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="7" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="geo.google.datamodel.test.GeoStatusCodeTest" primary="true" start="25" end="25" startBytecode="6" endBytecode="6" sourcefile="GeoStatusCodeTest.java" sourcepath="geo/google/datamodel/test/GeoStatusCodeTest.java">
+      <Message>At GeoStatusCodeTest.java:[line 25]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>geo.google.datamodel.GeoStatusCode</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:57 +0200" total_classes="1" referenced_classes="10" total_bugs="1" total_size="26" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.73" clock_seconds="2.17" peak_mbytes="190.84" alloc_mbytes="7104.00" gc_seconds="0.16" priority_2="1">
+    <FileStats path="geo/google/datamodel/test/GeoStatusCodeTest.java" bugCount="1" size="26" bugHash="85c7478934ad87f622d6a9fd8eb39d8c"/>
+    <PackageStats package="geo.google.datamodel.test" total_bugs="1" total_types="1" total_size="26" priority_2="1">
+      <ClassStats class="geo.google.datamodel.test.GeoStatusCodeTest" sourceFile="GeoStatusCodeTest.java" interface="false" size="26" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="402" invocations="309" avgMicrosecondsPerInvocation="1301" maxMicrosecondsPerInvocation="32033" standardDeviationMicrosecondsPerInvocation="3770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="237" invocations="65" avgMicrosecondsPerInvocation="3655" maxMicrosecondsPerInvocation="172551" standardDeviationMicrosecondsPerInvocation="21204"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="98" invocations="10" avgMicrosecondsPerInvocation="9834" maxMicrosecondsPerInvocation="36129" standardDeviationMicrosecondsPerInvocation="13214"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="65" invocations="5" avgMicrosecondsPerInvocation="13178" maxMicrosecondsPerInvocation="57710" standardDeviationMicrosecondsPerInvocation="22292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="63" invocations="274" avgMicrosecondsPerInvocation="233" maxMicrosecondsPerInvocation="11276" standardDeviationMicrosecondsPerInvocation="1015"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="56" invocations="26" avgMicrosecondsPerInvocation="2187" maxMicrosecondsPerInvocation="38107" standardDeviationMicrosecondsPerInvocation="7385"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="50" invocations="10" avgMicrosecondsPerInvocation="5060" maxMicrosecondsPerInvocation="40992" standardDeviationMicrosecondsPerInvocation="12041"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="43" invocations="5" avgMicrosecondsPerInvocation="8766" maxMicrosecondsPerInvocation="35806" standardDeviationMicrosecondsPerInvocation="13544"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="41" invocations="10" avgMicrosecondsPerInvocation="4144" maxMicrosecondsPerInvocation="17707" standardDeviationMicrosecondsPerInvocation="5741"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="41" invocations="10" avgMicrosecondsPerInvocation="4100" maxMicrosecondsPerInvocation="22305" standardDeviationMicrosecondsPerInvocation="6438"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="35" invocations="10" avgMicrosecondsPerInvocation="3596" maxMicrosecondsPerInvocation="11337" standardDeviationMicrosecondsPerInvocation="4568"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="31" invocations="5" avgMicrosecondsPerInvocation="6344" maxMicrosecondsPerInvocation="18204" standardDeviationMicrosecondsPerInvocation="6206"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360738987" analysisTimestamp="1714582089557" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/77_io-project/ClientGroupTEST/10/ioproject/server/network</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="40bdf79246dabeba3afbb740e5543a91" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : ioproject.server.network.ClientGroupTest.emptyGroup</LongMessage>
+    <Class classname="ioproject.server.network.ClientGroupTest" primary="true">
+      <SourceLine classname="ioproject.server.network.ClientGroupTest" start="8" end="101" sourcefile="ClientGroupTest.java" sourcepath="ioproject/server/network/ClientGroupTest.java">
+        <Message>At ClientGroupTest.java:[lines 8-101]</Message>
+      </SourceLine>
+      <Message>In class ioproject.server.network.ClientGroupTest</Message>
+    </Class>
+    <Field classname="ioproject.server.network.ClientGroupTest" name="emptyGroup" signature="Lioproject/server/network/ClientGroup;" isStatic="false" primary="true">
+      <SourceLine classname="ioproject.server.network.ClientGroupTest" sourcefile="ClientGroupTest.java" sourcepath="ioproject/server/network/ClientGroupTest.java">
+        <Message>In ClientGroupTest.java</Message>
+      </SourceLine>
+      <Message>Field ioproject.server.network.ClientGroupTest.emptyGroup</Message>
+    </Field>
+    <SourceLine classname="ioproject.server.network.ClientGroupTest" primary="true" start="20" end="20" startBytecode="35" endBytecode="35" sourcefile="ClientGroupTest.java" sourcepath="ioproject/server/network/ClientGroupTest.java">
+      <Message>At ClientGroupTest.java:[line 20]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>ioproject.server.network.Client</MissingClass>
+    <MissingClass>ioproject.server.network.ClientGroup</MissingClass>
+    <MissingClass>ioproject.server.network.ClientHandler</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:38:58 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="71" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.18" clock_seconds="3.54" peak_mbytes="190.56" alloc_mbytes="7104.00" gc_seconds="0.15" priority_2="1">
+    <FileStats path="ioproject/server/network/ClientGroupTest.java" bugCount="1" size="71" bugHash="ef2c9234eb19421e32f3d1729cdf2d39"/>
+    <PackageStats package="ioproject.server.network" total_bugs="1" total_types="1" total_size="71" priority_2="1">
+      <ClassStats class="ioproject.server.network.ClientGroupTest" sourceFile="ClientGroupTest.java" interface="false" size="71" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="488" invocations="314" avgMicrosecondsPerInvocation="1555" maxMicrosecondsPerInvocation="55610" standardDeviationMicrosecondsPerInvocation="5122"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="198" invocations="13" avgMicrosecondsPerInvocation="15280" maxMicrosecondsPerInvocation="192366" standardDeviationMicrosecondsPerInvocation="51124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="194" invocations="71" avgMicrosecondsPerInvocation="2737" maxMicrosecondsPerInvocation="35252" standardDeviationMicrosecondsPerInvocation="6830"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="184" invocations="11" avgMicrosecondsPerInvocation="16767" maxMicrosecondsPerInvocation="166254" standardDeviationMicrosecondsPerInvocation="47407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="105" invocations="11" avgMicrosecondsPerInvocation="9599" maxMicrosecondsPerInvocation="37407" standardDeviationMicrosecondsPerInvocation="12427"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="99" invocations="11" avgMicrosecondsPerInvocation="9063" maxMicrosecondsPerInvocation="33154" standardDeviationMicrosecondsPerInvocation="12168"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="99" invocations="13" avgMicrosecondsPerInvocation="7656" maxMicrosecondsPerInvocation="71582" standardDeviationMicrosecondsPerInvocation="18582"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="92" invocations="13" avgMicrosecondsPerInvocation="7106" maxMicrosecondsPerInvocation="47438" standardDeviationMicrosecondsPerInvocation="11905"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="91" invocations="13" avgMicrosecondsPerInvocation="7059" maxMicrosecondsPerInvocation="25267" standardDeviationMicrosecondsPerInvocation="7528"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="90" invocations="11" avgMicrosecondsPerInvocation="8213" maxMicrosecondsPerInvocation="29592" standardDeviationMicrosecondsPerInvocation="10302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="85" invocations="32" avgMicrosecondsPerInvocation="2682" maxMicrosecondsPerInvocation="58115" standardDeviationMicrosecondsPerInvocation="10177"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="84" invocations="316" avgMicrosecondsPerInvocation="267" maxMicrosecondsPerInvocation="24108" standardDeviationMicrosecondsPerInvocation="1959"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="74" invocations="11" avgMicrosecondsPerInvocation="6802" maxMicrosecondsPerInvocation="26898" standardDeviationMicrosecondsPerInvocation="8883"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="74" invocations="276" avgMicrosecondsPerInvocation="269" maxMicrosecondsPerInvocation="15373" standardDeviationMicrosecondsPerInvocation="1529"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="69" invocations="11" avgMicrosecondsPerInvocation="6278" maxMicrosecondsPerInvocation="25480" standardDeviationMicrosecondsPerInvocation="9001"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

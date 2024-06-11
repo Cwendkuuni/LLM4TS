@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756316556" analysisTimestamp="1714594394387" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/88_jopenchart/DefaultChartTEST/26/de/progra/charting</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="2e8f3e3786175edd8d41ea7c0fddaeb3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode de.progra.charting.DefaultChartTest.testRender()</LongMessage>
+    <Class classname="de.progra.charting.DefaultChartTest" primary="true">
+      <SourceLine classname="de.progra.charting.DefaultChartTest" start="5" end="42" sourcefile="DefaultChartTest.java" sourcepath="de/progra/charting/DefaultChartTest.java">
+        <Message>At DefaultChartTest.java:[lines 5-42]</Message>
+      </SourceLine>
+      <Message>In class de.progra.charting.DefaultChartTest</Message>
+    </Class>
+    <Method classname="de.progra.charting.DefaultChartTest" name="testRender" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="de.progra.charting.DefaultChartTest" start="15" end="18" startBytecode="0" endBytecode="4" sourcefile="DefaultChartTest.java" sourcepath="de/progra/charting/DefaultChartTest.java"/>
+      <Message>In method de.progra.charting.DefaultChartTest.testRender()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="de.progra.charting.DefaultChartTest" primary="true" start="15" end="15" startBytecode="7" endBytecode="7" sourcefile="DefaultChartTest.java" sourcepath="de/progra/charting/DefaultChartTest.java">
+      <Message>At DefaultChartTest.java:[line 15]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>de.progra.charting.DefaultChart</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:16 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="20" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.32" clock_seconds="1.90" peak_mbytes="189.55" alloc_mbytes="7104.00" gc_seconds="0.21" priority_1="1">
+    <FileStats path="de/progra/charting/DefaultChartTest.java" bugCount="1" size="20" bugHash="5324b75ae5d6af649598ab49c5f70baf"/>
+    <PackageStats package="de.progra.charting" total_bugs="1" total_types="1" total_size="20" priority_1="1">
+      <ClassStats class="de.progra.charting.DefaultChartTest" sourceFile="DefaultChartTest.java" interface="false" size="20" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="329" invocations="299" avgMicrosecondsPerInvocation="1102" maxMicrosecondsPerInvocation="30533" standardDeviationMicrosecondsPerInvocation="3434"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="213" invocations="10" avgMicrosecondsPerInvocation="21311" maxMicrosecondsPerInvocation="207297" standardDeviationMicrosecondsPerInvocation="62002"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="95" invocations="10" avgMicrosecondsPerInvocation="9509" maxMicrosecondsPerInvocation="42077" standardDeviationMicrosecondsPerInvocation="14518"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="79" invocations="264" avgMicrosecondsPerInvocation="301" maxMicrosecondsPerInvocation="33330" standardDeviationMicrosecondsPerInvocation="2220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="51" invocations="40" avgMicrosecondsPerInvocation="1293" maxMicrosecondsPerInvocation="17190" standardDeviationMicrosecondsPerInvocation="2778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="49" invocations="7" avgMicrosecondsPerInvocation="7111" maxMicrosecondsPerInvocation="44286" standardDeviationMicrosecondsPerInvocation="15225"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="36" invocations="26" avgMicrosecondsPerInvocation="1393" maxMicrosecondsPerInvocation="23680" standardDeviationMicrosecondsPerInvocation="4575"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="31" invocations="10" avgMicrosecondsPerInvocation="3150" maxMicrosecondsPerInvocation="14163" standardDeviationMicrosecondsPerInvocation="4958"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="27" invocations="10" avgMicrosecondsPerInvocation="2768" maxMicrosecondsPerInvocation="11768" standardDeviationMicrosecondsPerInvocation="3525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="24" invocations="10" avgMicrosecondsPerInvocation="2484" maxMicrosecondsPerInvocation="19425" standardDeviationMicrosecondsPerInvocation="5696"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="24" invocations="7" avgMicrosecondsPerInvocation="3519" maxMicrosecondsPerInvocation="21042" standardDeviationMicrosecondsPerInvocation="7170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="22" invocations="10" avgMicrosecondsPerInvocation="2271" maxMicrosecondsPerInvocation="22617" standardDeviationMicrosecondsPerInvocation="6782"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

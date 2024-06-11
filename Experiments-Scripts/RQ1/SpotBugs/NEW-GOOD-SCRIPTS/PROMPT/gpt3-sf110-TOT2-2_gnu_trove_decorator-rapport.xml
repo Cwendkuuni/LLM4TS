@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756322804" analysisTimestamp="1714595862643" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/trove/TDoubleShortMapDecoratorTEST/2/gnu/trove/decorator</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="e31dda16a6fd778a068100b2be0081e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode gnu.trove.decorator.TDoubleShortMapDecoratorTest.testRemove()</LongMessage>
+    <Class classname="gnu.trove.decorator.TDoubleShortMapDecoratorTest" primary="true">
+      <SourceLine classname="gnu.trove.decorator.TDoubleShortMapDecoratorTest" start="8" end="54" sourcefile="TDoubleShortMapDecoratorTest.java" sourcepath="gnu/trove/decorator/TDoubleShortMapDecoratorTest.java">
+        <Message>At TDoubleShortMapDecoratorTest.java:[lines 8-54]</Message>
+      </SourceLine>
+      <Message>In class gnu.trove.decorator.TDoubleShortMapDecoratorTest</Message>
+    </Class>
+    <Method classname="gnu.trove.decorator.TDoubleShortMapDecoratorTest" name="testRemove" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="gnu.trove.decorator.TDoubleShortMapDecoratorTest" start="26" end="32" startBytecode="0" endBytecode="22" sourcefile="TDoubleShortMapDecoratorTest.java" sourcepath="gnu/trove/decorator/TDoubleShortMapDecoratorTest.java"/>
+      <Message>In method gnu.trove.decorator.TDoubleShortMapDecoratorTest.testRemove()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="29" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="gnu.trove.decorator.TDoubleShortMapDecoratorTest" primary="true" start="30" end="30" startBytecode="27" endBytecode="27" sourcefile="TDoubleShortMapDecoratorTest.java" sourcepath="gnu/trove/decorator/TDoubleShortMapDecoratorTest.java">
+      <Message>At TDoubleShortMapDecoratorTest.java:[line 30]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>gnu.trove.decorator.TDoubleShortMapDecorator</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:22 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="39" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.82" clock_seconds="1.85" peak_mbytes="192.14" alloc_mbytes="7104.00" gc_seconds="0.17" priority_2="1">
+    <FileStats path="gnu/trove/decorator/TDoubleShortMapDecoratorTest.java" bugCount="1" size="39" bugHash="5daa9cdc2e603481c313b4f6aa02c3be"/>
+    <PackageStats package="gnu.trove.decorator" total_bugs="1" total_types="1" total_size="39" priority_2="1">
+      <ClassStats class="gnu.trove.decorator.TDoubleShortMapDecoratorTest" sourceFile="TDoubleShortMapDecoratorTest.java" interface="false" size="39" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="264" invocations="11" avgMicrosecondsPerInvocation="24073" maxMicrosecondsPerInvocation="218545" standardDeviationMicrosecondsPerInvocation="61923"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="258" invocations="297" avgMicrosecondsPerInvocation="871" maxMicrosecondsPerInvocation="21193" standardDeviationMicrosecondsPerInvocation="2220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="66" invocations="39" avgMicrosecondsPerInvocation="1709" maxMicrosecondsPerInvocation="16196" standardDeviationMicrosecondsPerInvocation="2688"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="62" invocations="11" avgMicrosecondsPerInvocation="5691" maxMicrosecondsPerInvocation="41907" standardDeviationMicrosecondsPerInvocation="11760"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="61" invocations="11" avgMicrosecondsPerInvocation="5613" maxMicrosecondsPerInvocation="34582" standardDeviationMicrosecondsPerInvocation="10919"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="48" invocations="6" avgMicrosecondsPerInvocation="8086" maxMicrosecondsPerInvocation="16730" standardDeviationMicrosecondsPerInvocation="6090"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="42" invocations="11" avgMicrosecondsPerInvocation="3821" maxMicrosecondsPerInvocation="19581" standardDeviationMicrosecondsPerInvocation="5875"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="6" avgMicrosecondsPerInvocation="6259" maxMicrosecondsPerInvocation="34810" standardDeviationMicrosecondsPerInvocation="12773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="35" invocations="262" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="2286" standardDeviationMicrosecondsPerInvocation="237"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="35" invocations="27" avgMicrosecondsPerInvocation="1310" maxMicrosecondsPerInvocation="20823" standardDeviationMicrosecondsPerInvocation="3959"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="32" invocations="6" avgMicrosecondsPerInvocation="5459" maxMicrosecondsPerInvocation="16065" standardDeviationMicrosecondsPerInvocation="5393"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="27" invocations="6" avgMicrosecondsPerInvocation="4585" maxMicrosecondsPerInvocation="9121" standardDeviationMicrosecondsPerInvocation="3345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="22" invocations="11" avgMicrosecondsPerInvocation="2040" maxMicrosecondsPerInvocation="11959" standardDeviationMicrosecondsPerInvocation="3678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="22" invocations="6" avgMicrosecondsPerInvocation="3709" maxMicrosecondsPerInvocation="16497" standardDeviationMicrosecondsPerInvocation="5741"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="22" invocations="11" avgMicrosecondsPerInvocation="2008" maxMicrosecondsPerInvocation="21972" standardDeviationMicrosecondsPerInvocation="6313"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

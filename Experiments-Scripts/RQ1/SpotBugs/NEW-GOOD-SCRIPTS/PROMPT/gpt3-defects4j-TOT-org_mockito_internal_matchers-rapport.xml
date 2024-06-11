@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420568001" analysisTimestamp="1714597904759" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT/Mockito/22/26/org/mockito/internal/matchers</Jar>
+  </Project>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="1c248a9ef3b929db2411710605984ec6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>org.mockito.internal.matchers.EqualityTest.testAreEqual_forEqualNonArrayObjects() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="org.mockito.internal.matchers.EqualityTest" primary="true">
+      <SourceLine classname="org.mockito.internal.matchers.EqualityTest" start="6" end="106" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java">
+        <Message>At EqualityTest.java:[lines 6-106]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.matchers.EqualityTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.matchers.EqualityTest" name="testAreEqual_forEqualNonArrayObjects" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.matchers.EqualityTest" start="46" end="50" startBytecode="0" endBytecode="63" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java"/>
+      <Message>In method org.mockito.internal.matchers.EqualityTest.testAreEqual_forEqualNonArrayObjects()</Message>
+    </Method>
+    <SourceLine classname="org.mockito.internal.matchers.EqualityTest" primary="true" start="47" end="47" startBytecode="9" endBytecode="9" sourcefile="EqualityTest.java" sourcepath="org/mockito/internal/matchers/EqualityTest.java">
+      <Message>At EqualityTest.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_STRING_CTOR" abbrev="Dm" category="PERFORMANCE">
+    <ShortDescription>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortDescription>
+    <Details><![CDATA[
+
+<p>Utiliser le constructeur <code>java.lang.String(String)</code> gaspille de la mémoire puisque l'objet ainsi construit serait fonctionnellement identique à la chaîne passée en paramètre. Utilisez juste la chaîne en argument directement.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.mockito.internal.matchers.Equality</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:08 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="77" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.51" clock_seconds="1.87" peak_mbytes="189.93" alloc_mbytes="7104.00" gc_seconds="0.10" priority_2="1">
+    <FileStats path="org/mockito/internal/matchers/EqualityTest.java" bugCount="1" size="77" bugHash="4db58890983992f8314140c059d91d51"/>
+    <PackageStats package="org.mockito.internal.matchers" total_bugs="1" total_types="1" total_size="77" priority_2="1">
+      <ClassStats class="org.mockito.internal.matchers.EqualityTest" sourceFile="EqualityTest.java" interface="false" size="77" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="285" invocations="318" avgMicrosecondsPerInvocation="897" maxMicrosecondsPerInvocation="36919" standardDeviationMicrosecondsPerInvocation="2927"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="241" invocations="10" avgMicrosecondsPerInvocation="24194" maxMicrosecondsPerInvocation="105394" standardDeviationMicrosecondsPerInvocation="35658"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="80" invocations="71" avgMicrosecondsPerInvocation="1140" maxMicrosecondsPerInvocation="17755" standardDeviationMicrosecondsPerInvocation="2646"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="79" invocations="27" avgMicrosecondsPerInvocation="2947" maxMicrosecondsPerInvocation="25226" standardDeviationMicrosecondsPerInvocation="6812"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="64" invocations="279" avgMicrosecondsPerInvocation="231" maxMicrosecondsPerInvocation="17734" standardDeviationMicrosecondsPerInvocation="1174"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="54" invocations="14" avgMicrosecondsPerInvocation="3920" maxMicrosecondsPerInvocation="51698" standardDeviationMicrosecondsPerInvocation="13252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="39" invocations="10" avgMicrosecondsPerInvocation="3949" maxMicrosecondsPerInvocation="14488" standardDeviationMicrosecondsPerInvocation="4890"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="30" invocations="14" avgMicrosecondsPerInvocation="2178" maxMicrosecondsPerInvocation="20213" standardDeviationMicrosecondsPerInvocation="5025"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="29" invocations="10" avgMicrosecondsPerInvocation="2989" maxMicrosecondsPerInvocation="12511" standardDeviationMicrosecondsPerInvocation="3525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="29" invocations="10" avgMicrosecondsPerInvocation="2956" maxMicrosecondsPerInvocation="22246" standardDeviationMicrosecondsPerInvocation="6473"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="27" invocations="10" avgMicrosecondsPerInvocation="2790" maxMicrosecondsPerInvocation="15141" standardDeviationMicrosecondsPerInvocation="4521"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="27" invocations="10" avgMicrosecondsPerInvocation="2738" maxMicrosecondsPerInvocation="22064" standardDeviationMicrosecondsPerInvocation="6476"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="23" invocations="14" avgMicrosecondsPerInvocation="1671" maxMicrosecondsPerInvocation="13937" standardDeviationMicrosecondsPerInvocation="3435"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

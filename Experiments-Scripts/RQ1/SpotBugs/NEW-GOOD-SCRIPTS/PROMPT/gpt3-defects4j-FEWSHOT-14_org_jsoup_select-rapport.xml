@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420573325" analysisTimestamp="1714588566332" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/FEWSHOT/Jsoup/21/14/org/jsoup/select</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="23">
+    <MissingClass>org.jsoup.select.Evaluator</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$Attribute</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValue</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValueContaining</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValueEnding</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValueMatching</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValueNot</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValueStarting</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$Class</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$ContainsOwnText</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$ContainsText</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$Id</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$IndexEquals</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$IndexGreaterThan</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$IndexLessThan</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$Matches</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$MatchesOwn</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$Tag</MissingClass>
+    <MissingClass>org.jsoup.select.QueryParser</MissingClass>
+    <MissingClass>org.jsoup.select.StructuralEvaluator</MissingClass>
+    <MissingClass>org.jsoup.select.StructuralEvaluator$Has</MissingClass>
+    <MissingClass>org.jsoup.select.StructuralEvaluator$Not</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:13 +0100" total_classes="1" referenced_classes="10" total_bugs="0" total_size="79" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.32" clock_seconds="1.82" peak_mbytes="191.63" alloc_mbytes="7104.00" gc_seconds="0.20">
+    <FileStats path="org/jsoup/select/QueryParserTest.java" bugCount="0" size="79"/>
+    <PackageStats package="org.jsoup.select" total_bugs="0" total_types="1" total_size="79">
+      <ClassStats class="org.jsoup.select.QueryParserTest" sourceFile="QueryParserTest.java" interface="false" size="79" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="278" invocations="329" avgMicrosecondsPerInvocation="846" maxMicrosecondsPerInvocation="27020" standardDeviationMicrosecondsPerInvocation="2397"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="225" invocations="10" avgMicrosecondsPerInvocation="22514" maxMicrosecondsPerInvocation="211419" standardDeviationMicrosecondsPerInvocation="62995"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="77" invocations="10" avgMicrosecondsPerInvocation="7787" maxMicrosecondsPerInvocation="23799" standardDeviationMicrosecondsPerInvocation="8740"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="66" invocations="77" avgMicrosecondsPerInvocation="866" maxMicrosecondsPerInvocation="7859" standardDeviationMicrosecondsPerInvocation="1269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="62" invocations="10" avgMicrosecondsPerInvocation="6219" maxMicrosecondsPerInvocation="33698" standardDeviationMicrosecondsPerInvocation="10281"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="50" invocations="10" avgMicrosecondsPerInvocation="5084" maxMicrosecondsPerInvocation="29934" standardDeviationMicrosecondsPerInvocation="8499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="45" invocations="20" avgMicrosecondsPerInvocation="2292" maxMicrosecondsPerInvocation="37224" standardDeviationMicrosecondsPerInvocation="8066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="44" invocations="27" avgMicrosecondsPerInvocation="1630" maxMicrosecondsPerInvocation="22114" standardDeviationMicrosecondsPerInvocation="4616"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="38" invocations="273" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="3339" standardDeviationMicrosecondsPerInvocation="326"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="33" invocations="20" avgMicrosecondsPerInvocation="1676" maxMicrosecondsPerInvocation="22469" standardDeviationMicrosecondsPerInvocation="4778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="32" invocations="20" avgMicrosecondsPerInvocation="1646" maxMicrosecondsPerInvocation="13325" standardDeviationMicrosecondsPerInvocation="3005"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="30" invocations="20" avgMicrosecondsPerInvocation="1524" maxMicrosecondsPerInvocation="11552" standardDeviationMicrosecondsPerInvocation="3264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="30" invocations="10" avgMicrosecondsPerInvocation="3033" maxMicrosecondsPerInvocation="12501" standardDeviationMicrosecondsPerInvocation="3934"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

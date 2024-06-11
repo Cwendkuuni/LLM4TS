@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756239720" analysisTimestamp="1714609281905" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/Mockito/12/24/org/mockito/internal/util/reflection</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="94d4bf2cc902208a1f337cced593fc60" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.util.reflection.GenericMasterTest.testGetGenericTypeWithNestedGenerics()</LongMessage>
+    <Class classname="org.mockito.internal.util.reflection.GenericMasterTest" primary="true">
+      <SourceLine classname="org.mockito.internal.util.reflection.GenericMasterTest" start="8" end="44" sourcefile="GenericMasterTest.java" sourcepath="org/mockito/internal/util/reflection/GenericMasterTest.java">
+        <Message>At GenericMasterTest.java:[lines 8-44]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.util.reflection.GenericMasterTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.util.reflection.GenericMasterTest" name="testGetGenericTypeWithNestedGenerics" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.util.reflection.GenericMasterTest" start="36" end="44" startBytecode="0" endBytecode="10" sourcefile="GenericMasterTest.java" sourcepath="org/mockito/internal/util/reflection/GenericMasterTest.java"/>
+      <Message>In method org.mockito.internal.util.reflection.GenericMasterTest.testGetGenericTypeWithNestedGenerics()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="16" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.util.reflection.GenericMasterTest" primary="true" start="40" end="40" startBytecode="15" endBytecode="15" sourcefile="GenericMasterTest.java" sourcepath="org/mockito/internal/util/reflection/GenericMasterTest.java">
+      <Message>At GenericMasterTest.java:[line 40]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="c05097fff5cc41e7d2b780a23d4ccbc2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.util.reflection.GenericMasterTest.testGetGenericTypeWithParameterizedType()</LongMessage>
+    <Class classname="org.mockito.internal.util.reflection.GenericMasterTest" primary="true">
+      <SourceLine classname="org.mockito.internal.util.reflection.GenericMasterTest" start="8" end="44" sourcefile="GenericMasterTest.java" sourcepath="org/mockito/internal/util/reflection/GenericMasterTest.java">
+        <Message>At GenericMasterTest.java:[lines 8-44]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.util.reflection.GenericMasterTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.util.reflection.GenericMasterTest" name="testGetGenericTypeWithParameterizedType" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.util.reflection.GenericMasterTest" start="12" end="20" startBytecode="0" endBytecode="10" sourcefile="GenericMasterTest.java" sourcepath="org/mockito/internal/util/reflection/GenericMasterTest.java"/>
+      <Message>In method org.mockito.internal.util.reflection.GenericMasterTest.testGetGenericTypeWithParameterizedType()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="16" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.util.reflection.GenericMasterTest" primary="true" start="16" end="16" startBytecode="15" endBytecode="15" sourcefile="GenericMasterTest.java" sourcepath="org/mockito/internal/util/reflection/GenericMasterTest.java">
+      <Message>At GenericMasterTest.java:[line 16]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="7b45c66d9d32285ae037de6cb0230ed" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.util.reflection.GenericMasterTest.testGetGenericTypeWithoutParameterizedType()</LongMessage>
+    <Class classname="org.mockito.internal.util.reflection.GenericMasterTest" primary="true">
+      <SourceLine classname="org.mockito.internal.util.reflection.GenericMasterTest" start="8" end="44" sourcefile="GenericMasterTest.java" sourcepath="org/mockito/internal/util/reflection/GenericMasterTest.java">
+        <Message>At GenericMasterTest.java:[lines 8-44]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.util.reflection.GenericMasterTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.util.reflection.GenericMasterTest" name="testGetGenericTypeWithoutParameterizedType" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.util.reflection.GenericMasterTest" start="24" end="32" startBytecode="0" endBytecode="10" sourcefile="GenericMasterTest.java" sourcepath="org/mockito/internal/util/reflection/GenericMasterTest.java"/>
+      <Message>In method org.mockito.internal.util.reflection.GenericMasterTest.testGetGenericTypeWithoutParameterizedType()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="16" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.util.reflection.GenericMasterTest" primary="true" start="28" end="28" startBytecode="15" endBytecode="15" sourcefile="GenericMasterTest.java" sourcepath="org/mockito/internal/util/reflection/GenericMasterTest.java">
+      <Message>At GenericMasterTest.java:[line 28]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.mockito.internal.util.reflection.GenericMaster</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:03:59 +0100" total_classes="1" referenced_classes="10" total_bugs="3" total_size="18" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.00" clock_seconds="0.94" peak_mbytes="190.31" alloc_mbytes="7104.00" gc_seconds="0.05" priority_2="3">
+    <FileStats path="org/mockito/internal/util/reflection/GenericMasterTest.java" bugCount="3" size="18" bugHash="7b610220fdb2a32700a8c450dc692fc8"/>
+    <PackageStats package="org.mockito.internal.util.reflection" total_bugs="3" total_types="1" total_size="18" priority_2="3">
+      <ClassStats class="org.mockito.internal.util.reflection.GenericMasterTest" sourceFile="GenericMasterTest.java" interface="false" size="18" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="153" invocations="300" avgMicrosecondsPerInvocation="510" maxMicrosecondsPerInvocation="12589" standardDeviationMicrosecondsPerInvocation="1165"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="88" invocations="10" avgMicrosecondsPerInvocation="8877" maxMicrosecondsPerInvocation="63250" standardDeviationMicrosecondsPerInvocation="18458"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="42" invocations="10" avgMicrosecondsPerInvocation="4223" maxMicrosecondsPerInvocation="13335" standardDeviationMicrosecondsPerInvocation="4967"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="25" invocations="26" avgMicrosecondsPerInvocation="964" maxMicrosecondsPerInvocation="12999" standardDeviationMicrosecondsPerInvocation="2561"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="24" invocations="37" avgMicrosecondsPerInvocation="656" maxMicrosecondsPerInvocation="3070" standardDeviationMicrosecondsPerInvocation="724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="24" invocations="4" avgMicrosecondsPerInvocation="6004" maxMicrosecondsPerInvocation="22485" standardDeviationMicrosecondsPerInvocation="9527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="23" invocations="266" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="1429" standardDeviationMicrosecondsPerInvocation="153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="17" invocations="10" avgMicrosecondsPerInvocation="1703" maxMicrosecondsPerInvocation="6462" standardDeviationMicrosecondsPerInvocation="2019"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="16" invocations="302" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="610" standardDeviationMicrosecondsPerInvocation="44"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="15" invocations="1" avgMicrosecondsPerInvocation="15368" maxMicrosecondsPerInvocation="15368" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="15" invocations="10" avgMicrosecondsPerInvocation="1513" maxMicrosecondsPerInvocation="8763" standardDeviationMicrosecondsPerInvocation="2543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="13" invocations="10" avgMicrosecondsPerInvocation="1319" maxMicrosecondsPerInvocation="4809" standardDeviationMicrosecondsPerInvocation="1604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="12" invocations="4" avgMicrosecondsPerInvocation="3077" maxMicrosecondsPerInvocation="10269" standardDeviationMicrosecondsPerInvocation="4160"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

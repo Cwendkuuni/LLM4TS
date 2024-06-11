@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360746924" analysisTimestamp="1714584797107" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/FEWSHOT/95_celwars2009/MP3TEST/29</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="30928cd36934f9df67d8c085fc6b154a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : MP3Test.mp3</LongMessage>
+    <Class classname="MP3Test" primary="true">
+      <SourceLine classname="MP3Test" start="6" end="39" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>At MP3Test.java:[lines 6-39]</Message>
+      </SourceLine>
+      <Message>In class MP3Test</Message>
+    </Class>
+    <Field classname="MP3Test" name="mp3" signature="LMP3;" isStatic="false" primary="true">
+      <SourceLine classname="MP3Test" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>In MP3Test.java</Message>
+      </SourceLine>
+      <Message>Field MP3Test.mp3</Message>
+    </Field>
+    <SourceLine classname="MP3Test" primary="true" start="12" end="12" startBytecode="10" endBytecode="10" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+      <Message>At MP3Test.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>MP3</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:06 +0100" total_classes="1" referenced_classes="19" total_bugs="1" total_size="24" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.79" clock_seconds="2.97" peak_mbytes="190.52" alloc_mbytes="7104.00" gc_seconds="0.16" priority_2="1">
+    <FileStats path="MP3Test.java" bugCount="1" size="24" bugHash="3fb642cfc72e7f1bee169217e66014dd"/>
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="24" priority_2="1">
+      <ClassStats class="MP3Test" sourceFile="MP3Test.java" interface="false" size="24" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="532" invocations="351" avgMicrosecondsPerInvocation="1517" maxMicrosecondsPerInvocation="57746" standardDeviationMicrosecondsPerInvocation="5012"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="195" invocations="19" avgMicrosecondsPerInvocation="10279" maxMicrosecondsPerInvocation="179016" standardDeviationMicrosecondsPerInvocation="39839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="167" invocations="19" avgMicrosecondsPerInvocation="8796" maxMicrosecondsPerInvocation="54774" standardDeviationMicrosecondsPerInvocation="14567"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="144" invocations="99" avgMicrosecondsPerInvocation="1460" maxMicrosecondsPerInvocation="36670" standardDeviationMicrosecondsPerInvocation="4536"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="100" invocations="19" avgMicrosecondsPerInvocation="5272" maxMicrosecondsPerInvocation="41462" standardDeviationMicrosecondsPerInvocation="9790"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="84" invocations="41" avgMicrosecondsPerInvocation="2071" maxMicrosecondsPerInvocation="46145" standardDeviationMicrosecondsPerInvocation="7499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="83" invocations="315" avgMicrosecondsPerInvocation="263" maxMicrosecondsPerInvocation="16203" standardDeviationMicrosecondsPerInvocation="1367"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="80" invocations="19" avgMicrosecondsPerInvocation="4247" maxMicrosecondsPerInvocation="22466" standardDeviationMicrosecondsPerInvocation="6930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="60" invocations="19" avgMicrosecondsPerInvocation="3197" maxMicrosecondsPerInvocation="26719" standardDeviationMicrosecondsPerInvocation="7069"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="54" invocations="19" avgMicrosecondsPerInvocation="2856" maxMicrosecondsPerInvocation="17669" standardDeviationMicrosecondsPerInvocation="5008"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="47" invocations="354" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="15793" standardDeviationMicrosecondsPerInvocation="908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="46" invocations="6" avgMicrosecondsPerInvocation="7794" maxMicrosecondsPerInvocation="18998" standardDeviationMicrosecondsPerInvocation="6882"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="43" invocations="6" avgMicrosecondsPerInvocation="7200" maxMicrosecondsPerInvocation="35185" standardDeviationMicrosecondsPerInvocation="12661"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

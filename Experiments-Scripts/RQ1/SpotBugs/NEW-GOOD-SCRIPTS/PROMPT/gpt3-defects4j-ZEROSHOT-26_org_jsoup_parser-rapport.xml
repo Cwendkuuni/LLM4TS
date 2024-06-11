@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420584561" analysisTimestamp="1714612156444" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/ZEROSHOT/Jsoup/14/26/org/jsoup/parser</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="21821bb7d38e4f823775989ba817fc54" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.jsoup.parser.TokeniserTest.tokeniser</LongMessage>
+    <Class classname="org.jsoup.parser.TokeniserTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.TokeniserTest" start="6" end="132" sourcefile="TokeniserTest.java" sourcepath="org/jsoup/parser/TokeniserTest.java">
+        <Message>At TokeniserTest.java:[lines 6-132]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.TokeniserTest</Message>
+    </Class>
+    <Field classname="org.jsoup.parser.TokeniserTest" name="tokeniser" signature="Lorg/jsoup/parser/Tokeniser;" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.TokeniserTest" sourcefile="TokeniserTest.java" sourcepath="org/jsoup/parser/TokeniserTest.java">
+        <Message>In TokeniserTest.java</Message>
+      </SourceLine>
+      <Message>Field org.jsoup.parser.TokeniserTest.tokeniser</Message>
+    </Field>
+    <SourceLine classname="org.jsoup.parser.TokeniserTest" primary="true" start="11" end="11" startBytecode="9" endBytecode="9" sourcefile="TokeniserTest.java" sourcepath="org/jsoup/parser/TokeniserTest.java">
+      <Message>At TokeniserTest.java:[line 11]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.jsoup.parser.CharacterReader</MissingClass>
+    <MissingClass>org.jsoup.parser.Tokeniser</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:24 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="55" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="3.75" clock_seconds="0.82" peak_mbytes="190.89" alloc_mbytes="7104.00" gc_seconds="0.06" priority_2="1">
+    <FileStats path="org/jsoup/parser/TokeniserTest.java" bugCount="1" size="55" bugHash="54a0535cd0dcc20f78beb2c8809248b0"/>
+    <PackageStats package="org.jsoup.parser" total_bugs="1" total_types="1" total_size="55" priority_2="1">
+      <ClassStats class="org.jsoup.parser.TokeniserTest" sourceFile="TokeniserTest.java" interface="false" size="55" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="132" invocations="294" avgMicrosecondsPerInvocation="452" maxMicrosecondsPerInvocation="12483" standardDeviationMicrosecondsPerInvocation="1131"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="88" invocations="59" avgMicrosecondsPerInvocation="1498" maxMicrosecondsPerInvocation="59692" standardDeviationMicrosecondsPerInvocation="7670"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="32" invocations="9" avgMicrosecondsPerInvocation="3569" maxMicrosecondsPerInvocation="11073" standardDeviationMicrosecondsPerInvocation="4317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="25" invocations="26" avgMicrosecondsPerInvocation="991" maxMicrosecondsPerInvocation="23993" standardDeviationMicrosecondsPerInvocation="4603"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="24" invocations="24" avgMicrosecondsPerInvocation="1000" maxMicrosecondsPerInvocation="15256" standardDeviationMicrosecondsPerInvocation="3080"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="20" invocations="258" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="1700" standardDeviationMicrosecondsPerInvocation="164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="19" invocations="9" avgMicrosecondsPerInvocation="2186" maxMicrosecondsPerInvocation="9490" standardDeviationMicrosecondsPerInvocation="2887"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="14" invocations="9" avgMicrosecondsPerInvocation="1556" maxMicrosecondsPerInvocation="8421" standardDeviationMicrosecondsPerInvocation="2591"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="13" invocations="296" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="491" standardDeviationMicrosecondsPerInvocation="39"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="13" invocations="26" avgMicrosecondsPerInvocation="507" maxMicrosecondsPerInvocation="10912" standardDeviationMicrosecondsPerInvocation="2081"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="12" invocations="9" avgMicrosecondsPerInvocation="1433" maxMicrosecondsPerInvocation="6145" standardDeviationMicrosecondsPerInvocation="1893"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="11" invocations="26" avgMicrosecondsPerInvocation="425" maxMicrosecondsPerInvocation="8307" standardDeviationMicrosecondsPerInvocation="1576"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

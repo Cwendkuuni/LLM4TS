@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420557461" analysisTimestamp="1714586799493" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/COT/Lang/43/28/org/apache/commons/lang/text</Jar>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="b18792d42534b9cff7ebdfdd10ce283e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.apache.commons.lang.text.ExtendedMessageFormatTest.format</LongMessage>
+    <Class classname="org.apache.commons.lang.text.ExtendedMessageFormatTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormatTest" start="6" end="18" sourcefile="ExtendedMessageFormatTest.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormatTest.java">
+        <Message>At ExtendedMessageFormatTest.java:[lines 6-18]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.text.ExtendedMessageFormatTest</Message>
+    </Class>
+    <Field classname="org.apache.commons.lang.text.ExtendedMessageFormatTest" name="format" signature="Lorg/apache/commons/lang/text/ExtendedMessageFormat;" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormatTest" sourcefile="ExtendedMessageFormatTest.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormatTest.java">
+        <Message>In ExtendedMessageFormatTest.java</Message>
+      </SourceLine>
+      <Message>Field org.apache.commons.lang.text.ExtendedMessageFormatTest.format</Message>
+    </Field>
+    <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormatTest" sourcefile="ExtendedMessageFormatTest.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormatTest.java" synthetic="true">
+      <Message>In ExtendedMessageFormatTest.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="UUF_UNUSED_FIELD" abbrev="UuF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais utilisé. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UuF">
+    <Description>Champ inutilisé</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:15:57 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="8" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.97" clock_seconds="2.53" peak_mbytes="190.26" alloc_mbytes="7104.00" gc_seconds="0.19" priority_2="1">
+    <FileStats path="org/apache/commons/lang/text/ExtendedMessageFormatTest.java" bugCount="1" size="8" bugHash="bf9de6c321436479e402b3c2f7c3061f"/>
+    <PackageStats package="org.apache.commons.lang.text" total_bugs="1" total_types="1" total_size="8" priority_2="1">
+      <ClassStats class="org.apache.commons.lang.text.ExtendedMessageFormatTest" sourceFile="ExtendedMessageFormatTest.java" interface="false" size="8" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="579" invocations="292" avgMicrosecondsPerInvocation="1985" maxMicrosecondsPerInvocation="207295" standardDeviationMicrosecondsPerInvocation="12500"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="131" invocations="9" avgMicrosecondsPerInvocation="14646" maxMicrosecondsPerInvocation="77323" standardDeviationMicrosecondsPerInvocation="24727"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="110" invocations="36" avgMicrosecondsPerInvocation="3075" maxMicrosecondsPerInvocation="20468" standardDeviationMicrosecondsPerInvocation="5219"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="105" invocations="258" avgMicrosecondsPerInvocation="408" maxMicrosecondsPerInvocation="21072" standardDeviationMicrosecondsPerInvocation="2220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="100" invocations="9" avgMicrosecondsPerInvocation="11199" maxMicrosecondsPerInvocation="55595" standardDeviationMicrosecondsPerInvocation="17071"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="71" invocations="23" avgMicrosecondsPerInvocation="3100" maxMicrosecondsPerInvocation="41012" standardDeviationMicrosecondsPerInvocation="8776"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="52" invocations="3" avgMicrosecondsPerInvocation="17543" maxMicrosecondsPerInvocation="52062" standardDeviationMicrosecondsPerInvocation="24408"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="48" invocations="9" avgMicrosecondsPerInvocation="5407" maxMicrosecondsPerInvocation="25020" standardDeviationMicrosecondsPerInvocation="8153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="44" invocations="294" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="13168" standardDeviationMicrosecondsPerInvocation="934"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="36" invocations="3" avgMicrosecondsPerInvocation="12208" maxMicrosecondsPerInvocation="34172" standardDeviationMicrosecondsPerInvocation="15558"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756314124" analysisTimestamp="1714598970082" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/47_dvd-homevideo/MenuTEST/10</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="770aad9c39362b7f9afea2640efe8469" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in MenuTest.testRun(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="MenuTest" primary="true">
+      <SourceLine classname="MenuTest" start="5" end="36" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+        <Message>At MenuTest.java:[lines 5-36]</Message>
+      </SourceLine>
+      <Message>In class MenuTest</Message>
+    </Class>
+    <Method classname="MenuTest" name="testRun" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MenuTest" start="32" end="36" startBytecode="0" endBytecode="78" sourcefile="MenuTest.java" sourcepath="MenuTest.java"/>
+      <Message>In method MenuTest.testRun()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="MenuTest" primary="true" start="35" end="35" startBytecode="27" endBytecode="27" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+      <Message>At MenuTest.java:[line 35]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="4d332e2c77bd575c7bd7138afcf64c72" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in MenuTest.testRun(): new java.io.PrintStream(OutputStream)</LongMessage>
+    <Class classname="MenuTest" primary="true">
+      <SourceLine classname="MenuTest" start="5" end="36" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+        <Message>At MenuTest.java:[lines 5-36]</Message>
+      </SourceLine>
+      <Message>In class MenuTest</Message>
+    </Class>
+    <Method classname="MenuTest" name="testRun" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MenuTest" start="32" end="36" startBytecode="0" endBytecode="78" sourcefile="MenuTest.java" sourcepath="MenuTest.java"/>
+      <Message>In method MenuTest.testRun()</Message>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+      <Message>Called method new java.io.PrintStream(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="MenuTest" primary="true" start="33" end="33" startBytecode="13" endBytecode="13" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+      <Message>At MenuTest.java:[line 33]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>GUI</MissingClass>
+    <MissingClass>Menu</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:14 +0100" total_classes="1" referenced_classes="15" total_bugs="2" total_size="23" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.58" clock_seconds="1.70" peak_mbytes="190.01" alloc_mbytes="7104.00" gc_seconds="0.09" priority_1="2">
+    <FileStats path="MenuTest.java" bugCount="2" size="23" bugHash="f7eb6d68adf6073c80b7f9c8636a7d98"/>
+    <PackageStats package="" total_bugs="2" total_types="1" total_size="23" priority_1="2">
+      <ClassStats class="MenuTest" sourceFile="MenuTest.java" interface="false" size="23" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="266" invocations="345" avgMicrosecondsPerInvocation="771" maxMicrosecondsPerInvocation="25731" standardDeviationMicrosecondsPerInvocation="2129"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="137" invocations="15" avgMicrosecondsPerInvocation="9182" maxMicrosecondsPerInvocation="95305" standardDeviationMicrosecondsPerInvocation="23538"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="96" invocations="15" avgMicrosecondsPerInvocation="6449" maxMicrosecondsPerInvocation="21816" standardDeviationMicrosecondsPerInvocation="7906"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="71" invocations="15" avgMicrosecondsPerInvocation="4736" maxMicrosecondsPerInvocation="21835" standardDeviationMicrosecondsPerInvocation="6278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="48" invocations="36" avgMicrosecondsPerInvocation="1355" maxMicrosecondsPerInvocation="25560" standardDeviationMicrosecondsPerInvocation="4276"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="46" invocations="65" avgMicrosecondsPerInvocation="715" maxMicrosecondsPerInvocation="4394" standardDeviationMicrosecondsPerInvocation="803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="39" invocations="6" avgMicrosecondsPerInvocation="6594" maxMicrosecondsPerInvocation="37522" standardDeviationMicrosecondsPerInvocation="13838"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="37" invocations="306" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="2568" standardDeviationMicrosecondsPerInvocation="266"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="36" invocations="15" avgMicrosecondsPerInvocation="2446" maxMicrosecondsPerInvocation="12656" standardDeviationMicrosecondsPerInvocation="4047"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="23" invocations="6" avgMicrosecondsPerInvocation="3962" maxMicrosecondsPerInvocation="8952" standardDeviationMicrosecondsPerInvocation="2983"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="23" invocations="347" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="1447" standardDeviationMicrosecondsPerInvocation="88"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="22" invocations="15" avgMicrosecondsPerInvocation="1493" maxMicrosecondsPerInvocation="6754" standardDeviationMicrosecondsPerInvocation="2103"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="21" invocations="6" avgMicrosecondsPerInvocation="3550" maxMicrosecondsPerInvocation="16665" standardDeviationMicrosecondsPerInvocation="5896"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="20" invocations="6" avgMicrosecondsPerInvocation="3400" maxMicrosecondsPerInvocation="12137" standardDeviationMicrosecondsPerInvocation="4028"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="20" invocations="15" avgMicrosecondsPerInvocation="1345" maxMicrosecondsPerInvocation="10190" standardDeviationMicrosecondsPerInvocation="2534"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420558337" analysisTimestamp="1714587944131" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/COT/Math/84/20/org/apache/commons/math/optimization/direct</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="777da74ec50ddf0b934f1bb604ee5dec" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.math.optimization.direct.MultiDirectionalTest.testMultiDirectional()</LongMessage>
+    <Class classname="org.apache.commons.math.optimization.direct.MultiDirectionalTest" primary="true">
+      <SourceLine classname="org.apache.commons.math.optimization.direct.MultiDirectionalTest" start="5" end="12" sourcefile="MultiDirectionalTest.java" sourcepath="org/apache/commons/math/optimization/direct/MultiDirectionalTest.java">
+        <Message>At MultiDirectionalTest.java:[lines 5-12]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math.optimization.direct.MultiDirectionalTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.math.optimization.direct.MultiDirectionalTest" name="testMultiDirectional" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math.optimization.direct.MultiDirectionalTest" start="9" end="12" startBytecode="0" endBytecode="4" sourcefile="MultiDirectionalTest.java" sourcepath="org/apache/commons/math/optimization/direct/MultiDirectionalTest.java"/>
+      <Message>In method org.apache.commons.math.optimization.direct.MultiDirectionalTest.testMultiDirectional()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math.optimization.direct.MultiDirectionalTest" primary="true" start="9" end="9" startBytecode="7" endBytecode="7" sourcefile="MultiDirectionalTest.java" sourcepath="org/apache/commons/math/optimization/direct/MultiDirectionalTest.java">
+      <Message>At MultiDirectionalTest.java:[line 9]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.apache.commons.math.optimization.direct.MultiDirectional</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:15:58 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="6" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.49" clock_seconds="2.13" peak_mbytes="189.26" alloc_mbytes="7104.00" gc_seconds="0.20" priority_1="1">
+    <FileStats path="org/apache/commons/math/optimization/direct/MultiDirectionalTest.java" bugCount="1" size="6" bugHash="93dd3c5dd811cefcf4c3be69cd57916d"/>
+    <PackageStats package="org.apache.commons.math.optimization.direct" total_bugs="1" total_types="1" total_size="6" priority_1="1">
+      <ClassStats class="org.apache.commons.math.optimization.direct.MultiDirectionalTest" sourceFile="MultiDirectionalTest.java" interface="false" size="6" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="365" invocations="292" avgMicrosecondsPerInvocation="1251" maxMicrosecondsPerInvocation="45815" standardDeviationMicrosecondsPerInvocation="4515"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="276" invocations="35" avgMicrosecondsPerInvocation="7895" maxMicrosecondsPerInvocation="205366" standardDeviationMicrosecondsPerInvocation="34037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="97" invocations="9" avgMicrosecondsPerInvocation="10805" maxMicrosecondsPerInvocation="37625" standardDeviationMicrosecondsPerInvocation="14514"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="57" invocations="9" avgMicrosecondsPerInvocation="6357" maxMicrosecondsPerInvocation="41986" standardDeviationMicrosecondsPerInvocation="12766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="55" invocations="23" avgMicrosecondsPerInvocation="2397" maxMicrosecondsPerInvocation="32268" standardDeviationMicrosecondsPerInvocation="6847"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="54" invocations="258" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="9558" standardDeviationMicrosecondsPerInvocation="862"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="54" invocations="1" avgMicrosecondsPerInvocation="54286" maxMicrosecondsPerInvocation="54286" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="45" invocations="2" avgMicrosecondsPerInvocation="22770" maxMicrosecondsPerInvocation="44436" standardDeviationMicrosecondsPerInvocation="21666"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="37" invocations="294" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="13881" standardDeviationMicrosecondsPerInvocation="808"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="34" invocations="9" avgMicrosecondsPerInvocation="3885" maxMicrosecondsPerInvocation="24894" standardDeviationMicrosecondsPerInvocation="7567"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="32" invocations="9" avgMicrosecondsPerInvocation="3642" maxMicrosecondsPerInvocation="17607" standardDeviationMicrosecondsPerInvocation="5897"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

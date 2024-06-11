@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713290015085" analysisTimestamp="1714572012210" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/DEFECTS4J/AVEC-PACKAGE_GLOBAL/Defects4J-generated-tests/COT/Csv/1/28/org/apache/commons/csv</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="9f3c40460113c53cf00107a909f5473f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.csv.ExtendedBufferedReaderTest.testLookAheadEndOfStream(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="10" end="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+        <Message>At ExtendedBufferedReaderTest.java:[lines 10-90]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.csv.ExtendedBufferedReaderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReaderTest" name="testLookAheadEndOfStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="85" end="90" startBytecode="0" endBytecode="82" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java"/>
+      <Message>In method org.apache.commons.csv.ExtendedBufferedReaderTest.testLookAheadEndOfStream()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true" start="85" end="85" startBytecode="20" endBytecode="20" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+      <Message>At ExtendedBufferedReaderTest.java:[line 85]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="9a715e6b6a6cb3617a93df0cc48e042a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.csv.ExtendedBufferedReaderTest.testLookAheadEndOfStream(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="10" end="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+        <Message>At ExtendedBufferedReaderTest.java:[lines 10-90]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.csv.ExtendedBufferedReaderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReaderTest" name="testLookAheadEndOfStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="85" end="90" startBytecode="0" endBytecode="82" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java"/>
+      <Message>In method org.apache.commons.csv.ExtendedBufferedReaderTest.testLookAheadEndOfStream()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true" start="85" end="85" startBytecode="14" endBytecode="14" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+      <Message>At ExtendedBufferedReaderTest.java:[line 85]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="11dcbec73fd67380b4cdab27e16b28a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.csv.ExtendedBufferedReaderTest.testLookAheadException(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="10" end="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+        <Message>At ExtendedBufferedReaderTest.java:[lines 10-90]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.csv.ExtendedBufferedReaderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReaderTest" name="testLookAheadException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="78" end="81" startBytecode="0" endBytecode="64" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java"/>
+      <Message>In method org.apache.commons.csv.ExtendedBufferedReaderTest.testLookAheadException()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true" start="78" end="78" startBytecode="20" endBytecode="20" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+      <Message>At ExtendedBufferedReaderTest.java:[line 78]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="fb30466ab4680b1bcba108c036154c8d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.csv.ExtendedBufferedReaderTest.testLookAheadException(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="10" end="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+        <Message>At ExtendedBufferedReaderTest.java:[lines 10-90]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.csv.ExtendedBufferedReaderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReaderTest" name="testLookAheadException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="78" end="81" startBytecode="0" endBytecode="64" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java"/>
+      <Message>In method org.apache.commons.csv.ExtendedBufferedReaderTest.testLookAheadException()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true" start="78" end="78" startBytecode="14" endBytecode="14" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+      <Message>At ExtendedBufferedReaderTest.java:[line 78]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="9241956adb065cc1920641753b67feed" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.csv.ExtendedBufferedReaderTest.testRead(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="10" end="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+        <Message>At ExtendedBufferedReaderTest.java:[lines 10-90]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.csv.ExtendedBufferedReaderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReaderTest" name="testRead" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="14" end="31" startBytecode="0" endBytecode="265" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java"/>
+      <Message>In method org.apache.commons.csv.ExtendedBufferedReaderTest.testRead()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true" start="14" end="14" startBytecode="20" endBytecode="20" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+      <Message>At ExtendedBufferedReaderTest.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="ece34120c1c41ae2a0f00421f4bab45a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.csv.ExtendedBufferedReaderTest.testRead(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="10" end="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+        <Message>At ExtendedBufferedReaderTest.java:[lines 10-90]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.csv.ExtendedBufferedReaderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReaderTest" name="testRead" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="14" end="31" startBytecode="0" endBytecode="265" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java"/>
+      <Message>In method org.apache.commons.csv.ExtendedBufferedReaderTest.testRead()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true" start="14" end="14" startBytecode="14" endBytecode="14" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+      <Message>At ExtendedBufferedReaderTest.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="d2be88365b1491f534155bf39ee2319" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.csv.ExtendedBufferedReaderTest.testReadArray(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="10" end="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+        <Message>At ExtendedBufferedReaderTest.java:[lines 10-90]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.csv.ExtendedBufferedReaderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReaderTest" name="testReadArray" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="35" end="58" startBytecode="0" endBytecode="285" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java"/>
+      <Message>In method org.apache.commons.csv.ExtendedBufferedReaderTest.testReadArray()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true" start="35" end="35" startBytecode="20" endBytecode="20" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+      <Message>At ExtendedBufferedReaderTest.java:[line 35]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="e20fad90d966fb47e2220527157caea4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.csv.ExtendedBufferedReaderTest.testReadArray(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="10" end="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+        <Message>At ExtendedBufferedReaderTest.java:[lines 10-90]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.csv.ExtendedBufferedReaderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReaderTest" name="testReadArray" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="35" end="58" startBytecode="0" endBytecode="285" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java"/>
+      <Message>In method org.apache.commons.csv.ExtendedBufferedReaderTest.testReadArray()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true" start="35" end="35" startBytecode="14" endBytecode="14" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+      <Message>At ExtendedBufferedReaderTest.java:[line 35]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="56aa3f64c056c94a2355f8d94eef306e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.csv.ExtendedBufferedReaderTest.testReadLine(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="10" end="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+        <Message>At ExtendedBufferedReaderTest.java:[lines 10-90]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.csv.ExtendedBufferedReaderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReaderTest" name="testReadLine" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="62" end="74" startBytecode="0" endBytecode="153" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java"/>
+      <Message>In method org.apache.commons.csv.ExtendedBufferedReaderTest.testReadLine()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true" start="62" end="62" startBytecode="20" endBytecode="20" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+      <Message>At ExtendedBufferedReaderTest.java:[line 62]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="d680751b016b410d91d551d89575c7e3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.apache.commons.csv.ExtendedBufferedReaderTest.testReadLine(): String.getBytes()</LongMessage>
+    <Class classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="10" end="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+        <Message>At ExtendedBufferedReaderTest.java:[lines 10-90]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.csv.ExtendedBufferedReaderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReaderTest" name="testReadLine" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="62" end="74" startBytecode="0" endBytecode="153" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java"/>
+      <Message>In method org.apache.commons.csv.ExtendedBufferedReaderTest.testReadLine()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true" start="62" end="62" startBytecode="14" endBytecode="14" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+      <Message>At ExtendedBufferedReaderTest.java:[line 62]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_TYPES" priority="1" rank="1" abbrev="EC" category="CORRECTNESS" instanceHash="4de4488b84e51f9e0de44c735fd5af93" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Appel de equals() comparant des types différents</ShortMessage>
+    <LongMessage>Appel de equals() comparant des types différents dans org.apache.commons.csv.ExtendedBufferedReaderTest.testReadLine()</LongMessage>
+    <Class classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="10" end="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+        <Message>At ExtendedBufferedReaderTest.java:[lines 10-90]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.csv.ExtendedBufferedReaderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReaderTest" name="testReadLine" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="62" end="74" startBytecode="0" endBytecode="44" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java"/>
+      <Message>In method org.apache.commons.csv.ExtendedBufferedReaderTest.testReadLine()</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java">
+        <Message>At String.java:[lines 111-3141]</Message>
+      </SourceLine>
+      <Message>Actual type String</Message>
+    </Type>
+    <Type descriptor="Ljava/lang/Integer;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java">
+        <Message>At Integer.java:[lines 52-1590]</Message>
+      </SourceLine>
+      <Message>Expected Integer</Message>
+    </Type>
+    <Method classname="org.apache.commons.csv.ExtendedBufferedReader" name="readLine" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReader"/>
+      <Message>Return value of org.apache.commons.csv.ExtendedBufferedReader.readLine() of type String</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Return value of Integer.valueOf(int) of type Integer</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Integer" start="974" end="977" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Integer.equals(Object) used to determine equality</Message>
+    </Method>
+    <Method classname="org.junit.Assert" name="assertEquals" signature="(Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="org.junit.Assert"/>
+      <Message>Called method org.junit.Assert.assertEquals(Object, Object)</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" primary="true" start="72" end="72" startBytecode="79" endBytecode="79" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java">
+      <Message>At ExtendedBufferedReaderTest.java:[line 72]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.csv.ExtendedBufferedReaderTest" start="73" end="73" startBytecode="90" endBytecode="90" sourcefile="ExtendedBufferedReaderTest.java" sourcepath="org/apache/commons/csv/ExtendedBufferedReaderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at ExtendedBufferedReaderTest.java:[line 73]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="EC_UNRELATED_TYPES" abbrev="EC" category="CORRECTNESS">
+    <ShortDescription>Appel de equals() comparant des types différents</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette méthode appelle <code>equals(Object)</code> pour deux références de type différents, sans sous-classe commune. Les objets comparés ne sont donc probablement pas de la même classe à l'éxécution (au moins que certaines classes de l'application n'aient pas été analysées ou qu'il y ait des chargements dynamiques). D'après le contrat de <code>equals()</code>, les objets de classes différentes devraient toujours être inégaux, c'est pourquoi la comparaison a de fortes chances de toujours renvoyer <code>false</code> à l'exécution.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="EC">
+    <Description>Comparaison par equals() suspecte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.apache.commons.csv.ExtendedBufferedReader</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:53:35 +0200" total_classes="1" referenced_classes="15" total_bugs="11" total_size="61" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.66" clock_seconds="5.22" peak_mbytes="191.08" alloc_mbytes="7104.00" gc_seconds="0.21" priority_1="11">
+    <FileStats path="org/apache/commons/csv/ExtendedBufferedReaderTest.java" bugCount="11" size="61" bugHash="7a1e311bfbedb12a9fd144388f1da04d"/>
+    <PackageStats package="org.apache.commons.csv" total_bugs="11" total_types="1" total_size="61" priority_1="11">
+      <ClassStats class="org.apache.commons.csv.ExtendedBufferedReaderTest" sourceFile="ExtendedBufferedReaderTest.java" interface="false" size="61" bugs="11" priority_1="11"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="838" invocations="318" avgMicrosecondsPerInvocation="2635" maxMicrosecondsPerInvocation="93975" standardDeviationMicrosecondsPerInvocation="8351"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="375" invocations="15" avgMicrosecondsPerInvocation="25015" maxMicrosecondsPerInvocation="248184" standardDeviationMicrosecondsPerInvocation="60942"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="146" invocations="1" avgMicrosecondsPerInvocation="146186" maxMicrosecondsPerInvocation="146186" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="142" invocations="6" avgMicrosecondsPerInvocation="23773" maxMicrosecondsPerInvocation="123950" standardDeviationMicrosecondsPerInvocation="45107"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="140" invocations="6" avgMicrosecondsPerInvocation="23421" maxMicrosecondsPerInvocation="73716" standardDeviationMicrosecondsPerInvocation="25702"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="133" invocations="66" avgMicrosecondsPerInvocation="2026" maxMicrosecondsPerInvocation="19179" standardDeviationMicrosecondsPerInvocation="3812"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="126" invocations="34" avgMicrosecondsPerInvocation="3722" maxMicrosecondsPerInvocation="88928" standardDeviationMicrosecondsPerInvocation="15091"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="105" invocations="282" avgMicrosecondsPerInvocation="372" maxMicrosecondsPerInvocation="18445" standardDeviationMicrosecondsPerInvocation="1936"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="97" invocations="6" avgMicrosecondsPerInvocation="16180" maxMicrosecondsPerInvocation="44670" standardDeviationMicrosecondsPerInvocation="16433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="90" invocations="1" avgMicrosecondsPerInvocation="90907" maxMicrosecondsPerInvocation="90907" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="82" invocations="15" avgMicrosecondsPerInvocation="5471" maxMicrosecondsPerInvocation="27139" standardDeviationMicrosecondsPerInvocation="7319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="80" invocations="6" avgMicrosecondsPerInvocation="13427" maxMicrosecondsPerInvocation="43500" standardDeviationMicrosecondsPerInvocation="15624"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="72" invocations="6" avgMicrosecondsPerInvocation="12147" maxMicrosecondsPerInvocation="36070" standardDeviationMicrosecondsPerInvocation="13276"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue" totalMilliseconds="72" invocations="1" avgMicrosecondsPerInvocation="72514" maxMicrosecondsPerInvocation="72514" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="71" invocations="15" avgMicrosecondsPerInvocation="4768" maxMicrosecondsPerInvocation="27393" standardDeviationMicrosecondsPerInvocation="8626"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="68" invocations="320" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="20608" standardDeviationMicrosecondsPerInvocation="1315"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="67" invocations="6" avgMicrosecondsPerInvocation="11286" maxMicrosecondsPerInvocation="26271" standardDeviationMicrosecondsPerInvocation="9653"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="45" invocations="15" avgMicrosecondsPerInvocation="3015" maxMicrosecondsPerInvocation="24122" standardDeviationMicrosecondsPerInvocation="6253"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="43" invocations="6" avgMicrosecondsPerInvocation="7166" maxMicrosecondsPerInvocation="38269" standardDeviationMicrosecondsPerInvocation="13922"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

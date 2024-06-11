@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287205702" analysisTimestamp="1714572597779" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/COT/82_ipcalculator/BinaryCalculateTEST/3/ipac</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="780781d03ed645bf0c7be0ea6f267903" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode ipac.BinaryCalculateTest.testAddBinaryWithIllegalArgument()</LongMessage>
+    <Class classname="ipac.BinaryCalculateTest" primary="true">
+      <SourceLine classname="ipac.BinaryCalculateTest" start="7" end="61" sourcefile="BinaryCalculateTest.java" sourcepath="ipac/BinaryCalculateTest.java">
+        <Message>At BinaryCalculateTest.java:[lines 7-61]</Message>
+      </SourceLine>
+      <Message>In class ipac.BinaryCalculateTest</Message>
+    </Class>
+    <Method classname="ipac.BinaryCalculateTest" name="testAddBinaryWithIllegalArgument" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="ipac.BinaryCalculateTest" start="22" end="26" startBytecode="0" endBytecode="12" sourcefile="BinaryCalculateTest.java" sourcepath="ipac/BinaryCalculateTest.java"/>
+      <Message>In method ipac.BinaryCalculateTest.testAddBinaryWithIllegalArgument()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="16" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="ipac.BinaryCalculateTest" primary="true" start="24" end="24" startBytecode="15" endBytecode="15" sourcefile="BinaryCalculateTest.java" sourcepath="ipac/BinaryCalculateTest.java">
+      <Message>At BinaryCalculateTest.java:[line 24]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="a969f1185c94059d9301453b079ad620" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode ipac.BinaryCalculateTest.testSubBinaryWithIllegalArgument()</LongMessage>
+    <Class classname="ipac.BinaryCalculateTest" primary="true">
+      <SourceLine classname="ipac.BinaryCalculateTest" start="7" end="61" sourcefile="BinaryCalculateTest.java" sourcepath="ipac/BinaryCalculateTest.java">
+        <Message>At BinaryCalculateTest.java:[lines 7-61]</Message>
+      </SourceLine>
+      <Message>In class ipac.BinaryCalculateTest</Message>
+    </Class>
+    <Method classname="ipac.BinaryCalculateTest" name="testSubBinaryWithIllegalArgument" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="ipac.BinaryCalculateTest" start="39" end="43" startBytecode="0" endBytecode="12" sourcefile="BinaryCalculateTest.java" sourcepath="ipac/BinaryCalculateTest.java"/>
+      <Message>In method ipac.BinaryCalculateTest.testSubBinaryWithIllegalArgument()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="16" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="ipac.BinaryCalculateTest" primary="true" start="41" end="41" startBytecode="15" endBytecode="15" sourcefile="BinaryCalculateTest.java" sourcepath="ipac/BinaryCalculateTest.java">
+      <Message>At BinaryCalculateTest.java:[line 41]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>ipac.BinaryCalculate</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:45 +0200" total_classes="1" referenced_classes="10" total_bugs="2" total_size="45" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.06" clock_seconds="4.28" peak_mbytes="189.47" alloc_mbytes="7104.00" gc_seconds="0.20" priority_2="2">
+    <FileStats path="ipac/BinaryCalculateTest.java" bugCount="2" size="45" bugHash="53e5b95e1cf5e0a1a1c3bb61372943ea"/>
+    <PackageStats package="ipac" total_bugs="2" total_types="1" total_size="45" priority_2="2">
+      <ClassStats class="ipac.BinaryCalculateTest" sourceFile="BinaryCalculateTest.java" interface="false" size="45" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="638" invocations="308" avgMicrosecondsPerInvocation="2074" maxMicrosecondsPerInvocation="40843" standardDeviationMicrosecondsPerInvocation="6106"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="233" invocations="10" avgMicrosecondsPerInvocation="23308" maxMicrosecondsPerInvocation="71377" standardDeviationMicrosecondsPerInvocation="23190"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="232" invocations="10" avgMicrosecondsPerInvocation="23216" maxMicrosecondsPerInvocation="207916" standardDeviationMicrosecondsPerInvocation="61690"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="201" invocations="64" avgMicrosecondsPerInvocation="3147" maxMicrosecondsPerInvocation="41026" standardDeviationMicrosecondsPerInvocation="6537"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="166" invocations="273" avgMicrosecondsPerInvocation="610" maxMicrosecondsPerInvocation="40512" standardDeviationMicrosecondsPerInvocation="3250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="161" invocations="7" avgMicrosecondsPerInvocation="23114" maxMicrosecondsPerInvocation="147328" standardDeviationMicrosecondsPerInvocation="50790"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="131" invocations="10" avgMicrosecondsPerInvocation="13189" maxMicrosecondsPerInvocation="34696" standardDeviationMicrosecondsPerInvocation="13752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="102" invocations="27" avgMicrosecondsPerInvocation="3782" maxMicrosecondsPerInvocation="72408" standardDeviationMicrosecondsPerInvocation="13723"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="97" invocations="10" avgMicrosecondsPerInvocation="9736" maxMicrosecondsPerInvocation="38404" standardDeviationMicrosecondsPerInvocation="13847"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="95" invocations="7" avgMicrosecondsPerInvocation="13634" maxMicrosecondsPerInvocation="72164" standardDeviationMicrosecondsPerInvocation="24226"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="80" invocations="7" avgMicrosecondsPerInvocation="11541" maxMicrosecondsPerInvocation="43726" standardDeviationMicrosecondsPerInvocation="15064"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="79" invocations="7" avgMicrosecondsPerInvocation="11325" maxMicrosecondsPerInvocation="50080" standardDeviationMicrosecondsPerInvocation="16378"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="66" invocations="7" avgMicrosecondsPerInvocation="9497" maxMicrosecondsPerInvocation="17473" standardDeviationMicrosecondsPerInvocation="5543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="61" invocations="310" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="22466" standardDeviationMicrosecondsPerInvocation="1405"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

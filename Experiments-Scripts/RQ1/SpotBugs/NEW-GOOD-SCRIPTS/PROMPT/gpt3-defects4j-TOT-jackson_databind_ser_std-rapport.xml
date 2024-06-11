@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420564317" analysisTimestamp="1714593667839" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT/JacksonDatabind/23/29/com/fasterxml/jackson/databind/ser/std</Jar>
+  </Project>
+  <BugInstance type="UC_USELESS_VOID_METHOD" priority="2" rank="17" abbrev="UC" category="STYLE" instanceHash="8bb6bd441b24d3e538cefad9aa96632d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Useless non-empty void method</ShortMessage>
+    <LongMessage>Method com.fasterxml.jackson.databind.ser.std.NumberSerializersTest.testShortSerializer() seems to be useless</LongMessage>
+    <Class classname="com.fasterxml.jackson.databind.ser.std.NumberSerializersTest" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.databind.ser.std.NumberSerializersTest" start="6" end="64" sourcefile="NumberSerializersTest.java" sourcepath="com/fasterxml/jackson/databind/ser/std/NumberSerializersTest.java">
+        <Message>At NumberSerializersTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class com.fasterxml.jackson.databind.ser.std.NumberSerializersTest</Message>
+    </Class>
+    <Method classname="com.fasterxml.jackson.databind.ser.std.NumberSerializersTest" name="testShortSerializer" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.databind.ser.std.NumberSerializersTest" start="14" end="34" startBytecode="0" endBytecode="64" sourcefile="NumberSerializersTest.java" sourcepath="com/fasterxml/jackson/databind/ser/std/NumberSerializersTest.java"/>
+      <Message>In method com.fasterxml.jackson.databind.ser.std.NumberSerializersTest.testShortSerializer()</Message>
+    </Method>
+    <SourceLine classname="com.fasterxml.jackson.databind.ser.std.NumberSerializersTest" primary="true" start="34" end="34" startBytecode="20" endBytecode="20" sourcefile="NumberSerializersTest.java" sourcepath="com/fasterxml/jackson/databind/ser/std/NumberSerializersTest.java">
+      <Message>At NumberSerializersTest.java:[line 34]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="UC_USELESS_VOID_METHOD" abbrev="UC" category="STYLE">
+    <ShortDescription>Useless non-empty void method</ShortDescription>
+    <Details><![CDATA[
+
+<p>Our analysis shows that this non-empty void method does not actually perform any useful work.
+Please check it: probably there's a mistake in its code or its body can be fully removed.
+</p>
+<p>We are trying to reduce the false positives as much as possible, but in some cases this warning might be wrong.
+Common false-positive cases include:</p>
+<ul>
+<li>The method is intended to trigger loading of some class which may have a side effect.</li>
+<li>The method is intended to implicitly throw some obscure exception.</li>
+</ul>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UC">
+    <Description>Useless code</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:04 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="20" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.73" clock_seconds="1.69" peak_mbytes="189.68" alloc_mbytes="7104.00" gc_seconds="0.16" priority_2="1">
+    <FileStats path="com/fasterxml/jackson/databind/ser/std/NumberSerializersTest.java" bugCount="1" size="20" bugHash="d29a0f5eb313aeac150f1d48af3cae7f"/>
+    <PackageStats package="com.fasterxml.jackson.databind.ser.std" total_bugs="1" total_types="1" total_size="20" priority_2="1">
+      <ClassStats class="com.fasterxml.jackson.databind.ser.std.NumberSerializersTest" sourceFile="NumberSerializersTest.java" interface="false" size="20" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="236" invocations="293" avgMicrosecondsPerInvocation="805" maxMicrosecondsPerInvocation="16758" standardDeviationMicrosecondsPerInvocation="1992"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="171" invocations="10" avgMicrosecondsPerInvocation="17119" maxMicrosecondsPerInvocation="171050" standardDeviationMicrosecondsPerInvocation="51310"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="80" invocations="40" avgMicrosecondsPerInvocation="2014" maxMicrosecondsPerInvocation="21820" standardDeviationMicrosecondsPerInvocation="4570"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="69" invocations="10" avgMicrosecondsPerInvocation="6999" maxMicrosecondsPerInvocation="24242" standardDeviationMicrosecondsPerInvocation="8154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="52" invocations="7" avgMicrosecondsPerInvocation="7486" maxMicrosecondsPerInvocation="50689" standardDeviationMicrosecondsPerInvocation="17643"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="45" invocations="24" avgMicrosecondsPerInvocation="1893" maxMicrosecondsPerInvocation="24094" standardDeviationMicrosecondsPerInvocation="5079"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="43" invocations="260" avgMicrosecondsPerInvocation="166" maxMicrosecondsPerInvocation="10237" standardDeviationMicrosecondsPerInvocation="671"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="35" invocations="10" avgMicrosecondsPerInvocation="3580" maxMicrosecondsPerInvocation="16966" standardDeviationMicrosecondsPerInvocation="5694"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="35" invocations="1" avgMicrosecondsPerInvocation="35766" maxMicrosecondsPerInvocation="35766" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="33" invocations="10" avgMicrosecondsPerInvocation="3309" maxMicrosecondsPerInvocation="14339" standardDeviationMicrosecondsPerInvocation="4583"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="32" invocations="7" avgMicrosecondsPerInvocation="4673" maxMicrosecondsPerInvocation="30873" standardDeviationMicrosecondsPerInvocation="10702"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="29" invocations="10" avgMicrosecondsPerInvocation="2993" maxMicrosecondsPerInvocation="13141" standardDeviationMicrosecondsPerInvocation="3758"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="28" invocations="295" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="6118" standardDeviationMicrosecondsPerInvocation="387"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

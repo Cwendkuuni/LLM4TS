@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2024-05-14T18:33:05.571">
+<file name="/tmp/tmpg7hwdwe9.java">
+<violation beginline="68" endline="68" begincolumn="17" endcolumn="35" rule="CyclomaticComplexity" ruleset="Design" package="com.netflix.conductor.redis.dao" class="RedisEventHandlerDAO" method="updateEventHandler" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'updateEventHandler(EventHandler)' has a cyclomatic complexity of 4.
+</violation>
+<violation beginline="120" endline="120" begincolumn="31" endcolumn="55" rule="CyclomaticComplexity" ruleset="Design" package="com.netflix.conductor.redis.dao" class="RedisEventHandlerDAO" method="getEventHandlersForEvent" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'getEventHandlersForEvent(String, boolean)' has a cyclomatic complexity of 7.
+</violation>
+<violation beginline="140" endline="140" begincolumn="26" endcolumn="41" rule="CyclomaticComplexity" ruleset="Design" package="com.netflix.conductor.redis.dao" class="RedisEventHandlerDAO" method="getEventHandler" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'getEventHandler(String)' has a cyclomatic complexity of 4.
+</violation>
+</file>
+</pmd>

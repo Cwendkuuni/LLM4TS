@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360738899" analysisTimestamp="1714573445591" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/69_lhamacaw/MacawWorkBenchTEST/9/macaw/presentationLayer</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="aedaf8e1e35b5b9d56efcc6f9e7e55e9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : macaw.presentationLayer.MacawWorkBenchTest.macawWorkBench</LongMessage>
+    <Class classname="macaw.presentationLayer.MacawWorkBenchTest" primary="true">
+      <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" start="8" end="46" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java">
+        <Message>At MacawWorkBenchTest.java:[lines 8-46]</Message>
+      </SourceLine>
+      <Message>In class macaw.presentationLayer.MacawWorkBenchTest</Message>
+    </Class>
+    <Field classname="macaw.presentationLayer.MacawWorkBenchTest" name="macawWorkBench" signature="Lmacaw/presentationLayer/MacawWorkBench;" isStatic="false" primary="true">
+      <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java">
+        <Message>In MacawWorkBenchTest.java</Message>
+      </SourceLine>
+      <Message>Field macaw.presentationLayer.MacawWorkBenchTest.macawWorkBench</Message>
+    </Field>
+    <SourceLine classname="macaw.presentationLayer.MacawWorkBenchTest" primary="true" start="15" end="15" startBytecode="9" endBytecode="9" sourcefile="MacawWorkBenchTest.java" sourcepath="macaw/presentationLayer/MacawWorkBenchTest.java">
+      <Message>At MacawWorkBenchTest.java:[line 15]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>macaw.presentationLayer.MacawWorkBench</MissingClass>
+    <MissingClass>macaw.system.SessionProperties</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:38:58 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="18" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.55" clock_seconds="4.00" peak_mbytes="188.96" alloc_mbytes="7104.00" gc_seconds="0.24" priority_2="1">
+    <FileStats path="macaw/presentationLayer/MacawWorkBenchTest.java" bugCount="1" size="18" bugHash="d44327569729d0646ce92df4b86b4de2"/>
+    <PackageStats package="macaw.presentationLayer" total_bugs="1" total_types="1" total_size="18" priority_2="1">
+      <ClassStats class="macaw.presentationLayer.MacawWorkBenchTest" sourceFile="MacawWorkBenchTest.java" interface="false" size="18" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="693" invocations="295" avgMicrosecondsPerInvocation="2351" maxMicrosecondsPerInvocation="59598" standardDeviationMicrosecondsPerInvocation="6715"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="276" invocations="9" avgMicrosecondsPerInvocation="30746" maxMicrosecondsPerInvocation="252736" standardDeviationMicrosecondsPerInvocation="78698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="218" invocations="9" avgMicrosecondsPerInvocation="24241" maxMicrosecondsPerInvocation="134726" standardDeviationMicrosecondsPerInvocation="42460"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="151" invocations="258" avgMicrosecondsPerInvocation="588" maxMicrosecondsPerInvocation="41392" standardDeviationMicrosecondsPerInvocation="3078"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="138" invocations="9" avgMicrosecondsPerInvocation="15439" maxMicrosecondsPerInvocation="53236" standardDeviationMicrosecondsPerInvocation="18831"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="127" invocations="40" avgMicrosecondsPerInvocation="3198" maxMicrosecondsPerInvocation="28317" standardDeviationMicrosecondsPerInvocation="6253"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="123" invocations="24" avgMicrosecondsPerInvocation="5131" maxMicrosecondsPerInvocation="80595" standardDeviationMicrosecondsPerInvocation="16494"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="117" invocations="7" avgMicrosecondsPerInvocation="16746" maxMicrosecondsPerInvocation="115645" standardDeviationMicrosecondsPerInvocation="40377"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="96" invocations="297" avgMicrosecondsPerInvocation="323" maxMicrosecondsPerInvocation="24162" standardDeviationMicrosecondsPerInvocation="1851"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="94" invocations="7" avgMicrosecondsPerInvocation="13473" maxMicrosecondsPerInvocation="93140" standardDeviationMicrosecondsPerInvocation="32524"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="62" invocations="9" avgMicrosecondsPerInvocation="6946" maxMicrosecondsPerInvocation="31007" standardDeviationMicrosecondsPerInvocation="11551"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

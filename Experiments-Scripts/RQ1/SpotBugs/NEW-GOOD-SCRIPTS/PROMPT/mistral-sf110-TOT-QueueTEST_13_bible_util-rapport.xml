@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287208154" analysisTimestamp="1714580630391" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT/68_biblestudy/QueueTEST/13/bible/util</Jar>
+  </Project>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="7d91dcf84b9d5d8814c34ee03cc6116b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique bible.util.QueueTest.queue depuis la méthode d&apos;une instance bible.util.QueueTest.afterEachTest()</LongMessage>
+    <Class classname="bible.util.QueueTest" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="8" end="207" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+        <Message>At QueueTest.java:[lines 8-207]</Message>
+      </SourceLine>
+      <Message>In class bible.util.QueueTest</Message>
+    </Class>
+    <Method classname="bible.util.QueueTest" name="afterEachTest" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="28" end="29" startBytecode="0" endBytecode="32" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java"/>
+      <Message>In method bible.util.QueueTest.afterEachTest()</Message>
+    </Method>
+    <Field classname="bible.util.QueueTest" name="queue" signature="Lbible/util/Queue;" isStatic="true" primary="true">
+      <SourceLine classname="bible.util.QueueTest" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+        <Message>In QueueTest.java</Message>
+      </SourceLine>
+      <Message>Field bible.util.QueueTest.queue</Message>
+    </Field>
+    <SourceLine classname="bible.util.QueueTest" primary="true" start="28" end="28" startBytecode="1" endBytecode="1" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+      <Message>At QueueTest.java:[line 28]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="5a7b2531cf36f3c2e8721b5a64c59967" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique bible.util.QueueTest.queue depuis la méthode d&apos;une instance bible.util.QueueTest.beforeEachTest()</LongMessage>
+    <Class classname="bible.util.QueueTest" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="8" end="207" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+        <Message>At QueueTest.java:[lines 8-207]</Message>
+      </SourceLine>
+      <Message>In class bible.util.QueueTest</Message>
+    </Class>
+    <Method classname="bible.util.QueueTest" name="beforeEachTest" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="23" end="24" startBytecode="0" endBytecode="38" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java"/>
+      <Message>In method bible.util.QueueTest.beforeEachTest()</Message>
+    </Method>
+    <Field classname="bible.util.QueueTest" name="queue" signature="Lbible/util/Queue;" isStatic="true" primary="true">
+      <SourceLine classname="bible.util.QueueTest" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+        <Message>In QueueTest.java</Message>
+      </SourceLine>
+      <Message>Field bible.util.QueueTest.queue</Message>
+    </Field>
+    <SourceLine classname="bible.util.QueueTest" primary="true" start="23" end="23" startBytecode="7" endBytecode="7" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+      <Message>At QueueTest.java:[line 23]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="1e6dfb23a6bd9f3167090f93974fd9c2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique bible.util.QueueTest.queue depuis la méthode d&apos;une instance bible.util.QueueTest.testIsEmpty()</LongMessage>
+    <Class classname="bible.util.QueueTest" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="8" end="207" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+        <Message>At QueueTest.java:[lines 8-207]</Message>
+      </SourceLine>
+      <Message>In class bible.util.QueueTest</Message>
+    </Class>
+    <Method classname="bible.util.QueueTest" name="testIsEmpty" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="34" end="41" startBytecode="0" endBytecode="89" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java"/>
+      <Message>In method bible.util.QueueTest.testIsEmpty()</Message>
+    </Method>
+    <Field classname="bible.util.QueueTest" name="queue" signature="Lbible/util/Queue;" isStatic="true" primary="true">
+      <SourceLine classname="bible.util.QueueTest" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+        <Message>In QueueTest.java</Message>
+      </SourceLine>
+      <Message>Field bible.util.QueueTest.queue</Message>
+    </Field>
+    <SourceLine classname="bible.util.QueueTest" primary="true" start="39" end="39" startBytecode="33" endBytecode="33" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+      <Message>At QueueTest.java:[line 39]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" abbrev="ST" category="STYLE">
+    <ShortDescription>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortDescription>
+    <Details><![CDATA[
+
+<p>La méthode de l'instance écrit la valeur d'un champ statique. Cela peut être difficile à gérer si plusieurs instances ont la possibilité d'écrire cette valeur et cela ressemble surtout à une mauvaise pratique.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ST">
+    <Description>Mauvaise utilisation de champs statiques</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>bible.util.Queue</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:48 +0200" total_classes="1" referenced_classes="12" total_bugs="3" total_size="138" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.28" clock_seconds="3.79" peak_mbytes="191.59" alloc_mbytes="7104.00" gc_seconds="0.20" priority_2="1" priority_1="2">
+    <FileStats path="bible/util/QueueTest.java" bugCount="3" size="138" bugHash="8272aa1c14814bb5c17e662e320126fa"/>
+    <PackageStats package="bible.util" total_bugs="3" total_types="1" total_size="138" priority_2="1" priority_1="2">
+      <ClassStats class="bible.util.QueueTest" sourceFile="QueueTest.java" interface="false" size="138" bugs="3" priority_2="1" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="512" invocations="331" avgMicrosecondsPerInvocation="1548" maxMicrosecondsPerInvocation="49503" standardDeviationMicrosecondsPerInvocation="5226"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="235" invocations="12" avgMicrosecondsPerInvocation="19639" maxMicrosecondsPerInvocation="215237" standardDeviationMicrosecondsPerInvocation="59114"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="184" invocations="79" avgMicrosecondsPerInvocation="2338" maxMicrosecondsPerInvocation="30453" standardDeviationMicrosecondsPerInvocation="5202"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="160" invocations="12" avgMicrosecondsPerInvocation="13368" maxMicrosecondsPerInvocation="69418" standardDeviationMicrosecondsPerInvocation="19474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="134" invocations="31" avgMicrosecondsPerInvocation="4349" maxMicrosecondsPerInvocation="52716" standardDeviationMicrosecondsPerInvocation="11200"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="110" invocations="14" avgMicrosecondsPerInvocation="7879" maxMicrosecondsPerInvocation="34638" standardDeviationMicrosecondsPerInvocation="10567"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="99" invocations="12" avgMicrosecondsPerInvocation="8327" maxMicrosecondsPerInvocation="26415" standardDeviationMicrosecondsPerInvocation="10246"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="96" invocations="292" avgMicrosecondsPerInvocation="329" maxMicrosecondsPerInvocation="16397" standardDeviationMicrosecondsPerInvocation="1699"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="88" invocations="14" avgMicrosecondsPerInvocation="6295" maxMicrosecondsPerInvocation="33078" standardDeviationMicrosecondsPerInvocation="9031"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="83" invocations="14" avgMicrosecondsPerInvocation="5991" maxMicrosecondsPerInvocation="31313" standardDeviationMicrosecondsPerInvocation="9855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="83" invocations="14" avgMicrosecondsPerInvocation="5987" maxMicrosecondsPerInvocation="39360" standardDeviationMicrosecondsPerInvocation="9779"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="82" invocations="12" avgMicrosecondsPerInvocation="6870" maxMicrosecondsPerInvocation="39637" standardDeviationMicrosecondsPerInvocation="11643"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="75" invocations="14" avgMicrosecondsPerInvocation="5370" maxMicrosecondsPerInvocation="27064" standardDeviationMicrosecondsPerInvocation="7633"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="72" invocations="14" avgMicrosecondsPerInvocation="5212" maxMicrosecondsPerInvocation="65665" standardDeviationMicrosecondsPerInvocation="16776"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="72" invocations="12" avgMicrosecondsPerInvocation="6000" maxMicrosecondsPerInvocation="31259" standardDeviationMicrosecondsPerInvocation="11224"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="68" invocations="12" avgMicrosecondsPerInvocation="5687" maxMicrosecondsPerInvocation="25148" standardDeviationMicrosecondsPerInvocation="8270"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="39" invocations="1" avgMicrosecondsPerInvocation="39843" maxMicrosecondsPerInvocation="39843" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="39" invocations="1" avgMicrosecondsPerInvocation="39798" maxMicrosecondsPerInvocation="39798" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="38" invocations="12" avgMicrosecondsPerInvocation="3244" maxMicrosecondsPerInvocation="19233" standardDeviationMicrosecondsPerInvocation="5872"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

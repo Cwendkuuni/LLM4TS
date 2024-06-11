@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287217638" analysisTimestamp="1714587320842" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/ZEROSHOT/1_tullibee/ExecutionFilterTEST/22/com/ib/client</Jar>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="58abe0420de54c8f61cd7361a91be55a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : com.ib.client.ExecutionFilterTest.executionFilter2</LongMessage>
+    <Class classname="com.ib.client.ExecutionFilterTest" primary="true">
+      <SourceLine classname="com.ib.client.ExecutionFilterTest" start="5" end="72" sourcefile="ExecutionFilterTest.java" sourcepath="com/ib/client/ExecutionFilterTest.java">
+        <Message>At ExecutionFilterTest.java:[lines 5-72]</Message>
+      </SourceLine>
+      <Message>In class com.ib.client.ExecutionFilterTest</Message>
+    </Class>
+    <Field classname="com.ib.client.ExecutionFilterTest" name="executionFilter2" signature="Lcom/ib/client/ExecutionFilter;" isStatic="false" primary="true">
+      <SourceLine classname="com.ib.client.ExecutionFilterTest" sourcefile="ExecutionFilterTest.java" sourcepath="com/ib/client/ExecutionFilterTest.java">
+        <Message>In ExecutionFilterTest.java</Message>
+      </SourceLine>
+      <Message>Field com.ib.client.ExecutionFilterTest.executionFilter2</Message>
+    </Field>
+    <SourceLine classname="com.ib.client.ExecutionFilterTest" sourcefile="ExecutionFilterTest.java" sourcepath="com/ib/client/ExecutionFilterTest.java" synthetic="true">
+      <Message>In ExecutionFilterTest.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="UUF_UNUSED_FIELD" abbrev="UuF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais utilisé. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UuF">
+    <Description>Champ inutilisé</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.ib.client.ExecutionFilter</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:57 +0200" total_classes="1" referenced_classes="10" total_bugs="1" total_size="45" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.40" clock_seconds="2.57" peak_mbytes="190.43" alloc_mbytes="7104.00" gc_seconds="0.22" priority_2="1">
+    <FileStats path="com/ib/client/ExecutionFilterTest.java" bugCount="1" size="45" bugHash="56d6d592df82635565136c98a6afba03"/>
+    <PackageStats package="com.ib.client" total_bugs="1" total_types="1" total_size="45" priority_2="1">
+      <ClassStats class="com.ib.client.ExecutionFilterTest" sourceFile="ExecutionFilterTest.java" interface="false" size="45" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="391" invocations="308" avgMicrosecondsPerInvocation="1272" maxMicrosecondsPerInvocation="34992" standardDeviationMicrosecondsPerInvocation="3906"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="268" invocations="10" avgMicrosecondsPerInvocation="26872" maxMicrosecondsPerInvocation="260839" standardDeviationMicrosecondsPerInvocation="77996"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="124" invocations="66" avgMicrosecondsPerInvocation="1882" maxMicrosecondsPerInvocation="27531" standardDeviationMicrosecondsPerInvocation="4191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="90" invocations="10" avgMicrosecondsPerInvocation="9086" maxMicrosecondsPerInvocation="31423" standardDeviationMicrosecondsPerInvocation="11812"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="81" invocations="10" avgMicrosecondsPerInvocation="8132" maxMicrosecondsPerInvocation="38848" standardDeviationMicrosecondsPerInvocation="14121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="75" invocations="27" avgMicrosecondsPerInvocation="2778" maxMicrosecondsPerInvocation="45208" standardDeviationMicrosecondsPerInvocation="8740"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="56" invocations="9" avgMicrosecondsPerInvocation="6288" maxMicrosecondsPerInvocation="24933" standardDeviationMicrosecondsPerInvocation="8922"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="48" invocations="9" avgMicrosecondsPerInvocation="5361" maxMicrosecondsPerInvocation="31573" standardDeviationMicrosecondsPerInvocation="9658"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="47" invocations="273" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="7355" standardDeviationMicrosecondsPerInvocation="578"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="46" invocations="1" avgMicrosecondsPerInvocation="46570" maxMicrosecondsPerInvocation="46570" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="45" invocations="9" avgMicrosecondsPerInvocation="5042" maxMicrosecondsPerInvocation="38866" standardDeviationMicrosecondsPerInvocation="12007"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="43" invocations="9" avgMicrosecondsPerInvocation="4812" maxMicrosecondsPerInvocation="27245" standardDeviationMicrosecondsPerInvocation="8172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="37" invocations="10" avgMicrosecondsPerInvocation="3782" maxMicrosecondsPerInvocation="18065" standardDeviationMicrosecondsPerInvocation="6308"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="37" invocations="10" avgMicrosecondsPerInvocation="3724" maxMicrosecondsPerInvocation="15929" standardDeviationMicrosecondsPerInvocation="5549"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="33" invocations="9" avgMicrosecondsPerInvocation="3735" maxMicrosecondsPerInvocation="12803" standardDeviationMicrosecondsPerInvocation="3961"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

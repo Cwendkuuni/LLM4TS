@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360744515" analysisTimestamp="1714592138602" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/jsci/SimpleCharStreamTEST/23/JSci/maths/symbolic</Jar>
+  </Project>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="af9c38c15fbfdbcaee48562d01f4612c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.available depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testFillBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="45" end="64" startBytecode="0" endBytecode="238" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="available" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.available</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="50" end="50" startBytecode="36" endBytecode="36" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 50]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="31d51271db49907373f2db9e4918d02e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.bufcolumn depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testFillBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="45" end="64" startBytecode="0" endBytecode="238" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="bufcolumn" signature="[I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.bufcolumn</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="48" end="48" startBytecode="23" endBytecode="23" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 48]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="53087c668b28ff62ae8d7b8e49257950" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.buffer depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testFillBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="45" end="64" startBytecode="0" endBytecode="238" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="buffer" signature="[C" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.buffer</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="49" end="49" startBytecode="31" endBytecode="31" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 49]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="1b61fd6b881e9b9223163d6551faedb6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.bufline depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testFillBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="45" end="64" startBytecode="0" endBytecode="238" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="bufline" signature="[I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.bufline</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="47" end="47" startBytecode="15" endBytecode="15" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="8c6658123e30ad58665622f89d9bd4b1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.bufpos depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testFillBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="45" end="64" startBytecode="0" endBytecode="238" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="bufpos" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.bufpos</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="46" end="46" startBytecode="7" endBytecode="7" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 46]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="d5b1e1fe50464c1ba3777084f2439522" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.maxNextCharInd depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testFillBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="45" end="64" startBytecode="0" endBytecode="238" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="maxNextCharInd" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.maxNextCharInd</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="51" end="51" startBytecode="41" endBytecode="41" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 51]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="f392a1d8f1402851e89bbaa4ca2aaa1b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.tokenBegin depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testFillBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="45" end="64" startBytecode="0" endBytecode="238" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testFillBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="tokenBegin" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.tokenBegin</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="45" end="45" startBytecode="2" endBytecode="2" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 45]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="196bc0fd3b810a93e57b4a5cfce2aaa" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.bufcolumn depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testExpandBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testExpandBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="10" end="40" startBytecode="0" endBytecode="278" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testExpandBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="bufcolumn" signature="[I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.bufcolumn</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="17" end="17" startBytecode="37" endBytecode="37" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 17]</Message>
+    </SourceLine>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="31" end="31" startBytecode="113" endBytecode="113" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at SimpleCharStreamTest.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="ccc6ddf1eb91c733be7ac01ec7fbef0b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.buffer depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testExpandBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testExpandBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="10" end="40" startBytecode="0" endBytecode="278" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testExpandBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="buffer" signature="[C" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.buffer</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="18" end="18" startBytecode="45" endBytecode="45" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 18]</Message>
+    </SourceLine>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="32" end="32" startBytecode="121" endBytecode="121" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at SimpleCharStreamTest.java:[line 32]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="a60c90681ea5c25402aaa2a89a9e4eb2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.bufline depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testExpandBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testExpandBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="10" end="40" startBytecode="0" endBytecode="278" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testExpandBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="bufline" signature="[I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.bufline</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="16" end="16" startBytecode="29" endBytecode="29" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 16]</Message>
+    </SourceLine>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="30" end="30" startBytecode="105" endBytecode="105" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at SimpleCharStreamTest.java:[line 30]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="568a06de8834053f879b935b4354e23a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.bufpos depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testExpandBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testExpandBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="10" end="40" startBytecode="0" endBytecode="278" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testExpandBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="bufpos" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.bufpos</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="15" end="15" startBytecode="21" endBytecode="21" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 15]</Message>
+    </SourceLine>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="29" end="29" startBytecode="97" endBytecode="97" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at SimpleCharStreamTest.java:[line 29]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="da8c068a57425e3c24d2fd8b6db5f049" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique JSci.maths.symbolic.SimpleCharStream.tokenBegin depuis la méthode d&apos;une instance JSci.maths.symbolic.SimpleCharStreamTest.testExpandBuff()</LongMessage>
+    <Class classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="6" end="64" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+        <Message>At SimpleCharStreamTest.java:[lines 6-64]</Message>
+      </SourceLine>
+      <Message>In class JSci.maths.symbolic.SimpleCharStreamTest</Message>
+    </Class>
+    <Method classname="JSci.maths.symbolic.SimpleCharStreamTest" name="testExpandBuff" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="10" end="40" startBytecode="0" endBytecode="278" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java"/>
+      <Message>In method JSci.maths.symbolic.SimpleCharStreamTest.testExpandBuff()</Message>
+    </Method>
+    <Field classname="JSci.maths.symbolic.SimpleCharStream" name="tokenBegin" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="JSci.maths.symbolic.SimpleCharStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field JSci.maths.symbolic.SimpleCharStream.tokenBegin</Message>
+    </Field>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" primary="true" start="14" end="14" startBytecode="16" endBytecode="16" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java">
+      <Message>At SimpleCharStreamTest.java:[line 14]</Message>
+    </SourceLine>
+    <SourceLine classname="JSci.maths.symbolic.SimpleCharStreamTest" start="28" end="28" startBytecode="92" endBytecode="92" sourcefile="SimpleCharStreamTest.java" sourcepath="JSci/maths/symbolic/SimpleCharStreamTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at SimpleCharStreamTest.java:[line 28]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" abbrev="ST" category="STYLE">
+    <ShortDescription>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortDescription>
+    <Details><![CDATA[
+
+<p>La méthode de l'instance écrit la valeur d'un champ statique. Cela peut être difficile à gérer si plusieurs instances ont la possibilité d'écrire cette valeur et cela ressemble surtout à une mauvaise pratique.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ST">
+    <Description>Mauvaise utilisation de champs statiques</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>JSci.maths.symbolic.SimpleCharStream</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:04 +0100" total_classes="1" referenced_classes="12" total_bugs="12" total_size="46" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.45" clock_seconds="1.81" peak_mbytes="189.96" alloc_mbytes="7104.00" gc_seconds="0.12" priority_2="5" priority_1="7">
+    <FileStats path="JSci/maths/symbolic/SimpleCharStreamTest.java" bugCount="12" size="46" bugHash="afbf0110c95b08966c2f6761b41e22f1"/>
+    <PackageStats package="JSci.maths.symbolic" total_bugs="12" total_types="1" total_size="46" priority_2="5" priority_1="7">
+      <ClassStats class="JSci.maths.symbolic.SimpleCharStreamTest" sourceFile="SimpleCharStreamTest.java" interface="false" size="46" bugs="12" priority_2="5" priority_1="7"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="244" invocations="311" avgMicrosecondsPerInvocation="786" maxMicrosecondsPerInvocation="24077" standardDeviationMicrosecondsPerInvocation="2175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="138" invocations="12" avgMicrosecondsPerInvocation="11570" maxMicrosecondsPerInvocation="126310" standardDeviationMicrosecondsPerInvocation="34612"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="94" invocations="12" avgMicrosecondsPerInvocation="7847" maxMicrosecondsPerInvocation="50298" standardDeviationMicrosecondsPerInvocation="13773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="78" invocations="60" avgMicrosecondsPerInvocation="1315" maxMicrosecondsPerInvocation="14437" standardDeviationMicrosecondsPerInvocation="2637"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="58" invocations="276" avgMicrosecondsPerInvocation="213" maxMicrosecondsPerInvocation="15600" standardDeviationMicrosecondsPerInvocation="1033"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="52" invocations="30" avgMicrosecondsPerInvocation="1748" maxMicrosecondsPerInvocation="38091" standardDeviationMicrosecondsPerInvocation="6803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="43" invocations="1" avgMicrosecondsPerInvocation="43418" maxMicrosecondsPerInvocation="43418" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="43" invocations="4" avgMicrosecondsPerInvocation="10774" maxMicrosecondsPerInvocation="29982" standardDeviationMicrosecondsPerInvocation="11323"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="42" invocations="4" avgMicrosecondsPerInvocation="10644" maxMicrosecondsPerInvocation="19533" standardDeviationMicrosecondsPerInvocation="7055"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="42" invocations="12" avgMicrosecondsPerInvocation="3529" maxMicrosecondsPerInvocation="24111" standardDeviationMicrosecondsPerInvocation="6428"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="40" invocations="3" avgMicrosecondsPerInvocation="13647" maxMicrosecondsPerInvocation="37439" standardDeviationMicrosecondsPerInvocation="16864"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="3" avgMicrosecondsPerInvocation="12438" maxMicrosecondsPerInvocation="34798" standardDeviationMicrosecondsPerInvocation="15818"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="35" invocations="12" avgMicrosecondsPerInvocation="2936" maxMicrosecondsPerInvocation="17169" standardDeviationMicrosecondsPerInvocation="4923"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="32" invocations="3" avgMicrosecondsPerInvocation="10816" maxMicrosecondsPerInvocation="14116" standardDeviationMicrosecondsPerInvocation="3689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="31" invocations="313" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="8881" standardDeviationMicrosecondsPerInvocation="504"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

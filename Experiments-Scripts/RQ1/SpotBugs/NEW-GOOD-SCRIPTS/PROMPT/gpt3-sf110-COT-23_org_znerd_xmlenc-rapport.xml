@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360741647" analysisTimestamp="1714571580589" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/xmlenc/XMLEncoderTEST/23/org/znerd/xmlenc</Jar>
+  </Project>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="d587f08adb88af74863b7d185600496c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in org.znerd.xmlenc.XMLEncoderTest.testAttribute()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="136" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-136]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testAttribute" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="129" end="136" startBytecode="0" endBytecode="146" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testAttribute()</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="133" end="133" startBytecode="59" endBytecode="59" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 133]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="66cd241be4c49dd031e7efba3e7a29e1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in org.znerd.xmlenc.XMLEncoderTest.testWhitespace()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="136" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-136]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testWhitespace" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="104" end="111" startBytecode="0" endBytecode="149" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testWhitespace()</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="108" end="108" startBytecode="54" endBytecode="54" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 108]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="11ce4eec8f708042e6596c39a5ed171e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in org.znerd.xmlenc.XMLEncoderTest.testWhitespaceCharArray()</LongMessage>
+    <Class classname="org.znerd.xmlenc.XMLEncoderTest" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="8" end="136" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+        <Message>At XMLEncoderTest.java:[lines 8-136]</Message>
+      </SourceLine>
+      <Message>In class org.znerd.xmlenc.XMLEncoderTest</Message>
+    </Class>
+    <Method classname="org.znerd.xmlenc.XMLEncoderTest" name="testWhitespaceCharArray" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" start="116" end="124" startBytecode="0" endBytecode="169" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java"/>
+      <Message>In method org.znerd.xmlenc.XMLEncoderTest.testWhitespaceCharArray()</Message>
+    </Method>
+    <SourceLine classname="org.znerd.xmlenc.XMLEncoderTest" primary="true" start="121" end="121" startBytecode="62" endBytecode="62" sourcefile="XMLEncoderTest.java" sourcepath="org/znerd/xmlenc/XMLEncoderTest.java">
+      <Message>At XMLEncoderTest.java:[line 121]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DCN_NULLPOINTER_EXCEPTION" abbrev="DCN" category="STYLE">
+    <ShortDescription>NullPointerException caught</ShortDescription>
+    <Details><![CDATA[
+   
+<p>
+According to SEI Cert rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">ERR08-J</a> NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
+<p>
+This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+  try {
+    String ms[] = m.split(" ");
+    return names.length != 1;
+  } catch (NullPointerException e) {
+    return false;
+  }
+}
+</code></pre>
+<p>
+A compliant solution would use a null-check as in the following example:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+    if (m == null) return false;
+    String ms[] = m.split(" ");
+    return names.length != 1;
+}
+</code></pre>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DCN">
+    <Description>Don&apos;t Catch NullPointer Exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.znerd.xmlenc.InvalidXMLException</MissingClass>
+    <MissingClass>org.znerd.xmlenc.XMLEncoder</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:01 +0100" total_classes="1" referenced_classes="18" total_bugs="3" total_size="100" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.96" clock_seconds="3.98" peak_mbytes="192.61" alloc_mbytes="7104.00" gc_seconds="0.19" priority_2="3">
+    <FileStats path="org/znerd/xmlenc/XMLEncoderTest.java" bugCount="3" size="100" bugHash="333a22158ede11be30b99290756221e5"/>
+    <PackageStats package="org.znerd.xmlenc" total_bugs="3" total_types="1" total_size="100" priority_2="3">
+      <ClassStats class="org.znerd.xmlenc.XMLEncoderTest" sourceFile="XMLEncoderTest.java" interface="false" size="100" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="434" invocations="312" avgMicrosecondsPerInvocation="1391" maxMicrosecondsPerInvocation="51653" standardDeviationMicrosecondsPerInvocation="4498"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="205" invocations="18" avgMicrosecondsPerInvocation="11424" maxMicrosecondsPerInvocation="205498" standardDeviationMicrosecondsPerInvocation="47069"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="179" invocations="13" avgMicrosecondsPerInvocation="13770" maxMicrosecondsPerInvocation="36557" standardDeviationMicrosecondsPerInvocation="10438"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="145" invocations="18" avgMicrosecondsPerInvocation="8078" maxMicrosecondsPerInvocation="45477" standardDeviationMicrosecondsPerInvocation="12577"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="137" invocations="24" avgMicrosecondsPerInvocation="5723" maxMicrosecondsPerInvocation="46918" standardDeviationMicrosecondsPerInvocation="9616"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="134" invocations="18" avgMicrosecondsPerInvocation="7497" maxMicrosecondsPerInvocation="34878" standardDeviationMicrosecondsPerInvocation="11257"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="134" invocations="24" avgMicrosecondsPerInvocation="5591" maxMicrosecondsPerInvocation="37045" standardDeviationMicrosecondsPerInvocation="8468"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="129" invocations="70" avgMicrosecondsPerInvocation="1855" maxMicrosecondsPerInvocation="55905" standardDeviationMicrosecondsPerInvocation="6750"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="123" invocations="13" avgMicrosecondsPerInvocation="9530" maxMicrosecondsPerInvocation="109566" standardDeviationMicrosecondsPerInvocation="28997"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="92" invocations="13" avgMicrosecondsPerInvocation="7091" maxMicrosecondsPerInvocation="23782" standardDeviationMicrosecondsPerInvocation="7942"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="83" invocations="18" avgMicrosecondsPerInvocation="4660" maxMicrosecondsPerInvocation="27316" standardDeviationMicrosecondsPerInvocation="9432"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="73" invocations="13" avgMicrosecondsPerInvocation="5683" maxMicrosecondsPerInvocation="31442" standardDeviationMicrosecondsPerInvocation="8473"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="73" invocations="34" avgMicrosecondsPerInvocation="2167" maxMicrosecondsPerInvocation="40281" standardDeviationMicrosecondsPerInvocation="7753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="62" invocations="18" avgMicrosecondsPerInvocation="3483" maxMicrosecondsPerInvocation="24531" standardDeviationMicrosecondsPerInvocation="7547"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="60" invocations="13" avgMicrosecondsPerInvocation="4634" maxMicrosecondsPerInvocation="18417" standardDeviationMicrosecondsPerInvocation="5675"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="56" invocations="18" avgMicrosecondsPerInvocation="3115" maxMicrosecondsPerInvocation="25214" standardDeviationMicrosecondsPerInvocation="6138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="48" invocations="276" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="9717" standardDeviationMicrosecondsPerInvocation="655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="39" invocations="66" avgMicrosecondsPerInvocation="605" maxMicrosecondsPerInvocation="38805" standardDeviationMicrosecondsPerInvocation="4738"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="39" invocations="314" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="9538" standardDeviationMicrosecondsPerInvocation="616"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="36" invocations="1" avgMicrosecondsPerInvocation="36429" maxMicrosecondsPerInvocation="36429" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

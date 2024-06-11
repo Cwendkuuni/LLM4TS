@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360746036" analysisTimestamp="1714587929277" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/FEWSHOT/47_dvd-homevideo/CaptureTEST/6</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="91f614327da0002a911b6bb6e66feb40" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : CaptureTest.capture</LongMessage>
+    <Class classname="CaptureTest" primary="true">
+      <SourceLine classname="CaptureTest" start="7" end="29" sourcefile="CaptureTest.java" sourcepath="CaptureTest.java">
+        <Message>At CaptureTest.java:[lines 7-29]</Message>
+      </SourceLine>
+      <Message>In class CaptureTest</Message>
+    </Class>
+    <Field classname="CaptureTest" name="capture" signature="LCapture;" isStatic="false" primary="true">
+      <SourceLine classname="CaptureTest" sourcefile="CaptureTest.java" sourcepath="CaptureTest.java">
+        <Message>In CaptureTest.java</Message>
+      </SourceLine>
+      <Message>Field CaptureTest.capture</Message>
+    </Field>
+    <SourceLine classname="CaptureTest" primary="true" start="13" end="13" startBytecode="8" endBytecode="8" sourcefile="CaptureTest.java" sourcepath="CaptureTest.java">
+      <Message>At CaptureTest.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>Capture</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:06 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="16" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.27" clock_seconds="2.17" peak_mbytes="190.22" alloc_mbytes="7104.00" gc_seconds="0.19" priority_2="1">
+    <FileStats path="CaptureTest.java" bugCount="1" size="16" bugHash="7ee08e87bc8fbd5df357bbff13a94c72"/>
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="16" priority_2="1">
+      <ClassStats class="CaptureTest" sourceFile="CaptureTest.java" interface="false" size="16" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="376" invocations="309" avgMicrosecondsPerInvocation="1218" maxMicrosecondsPerInvocation="27811" standardDeviationMicrosecondsPerInvocation="3510"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="311" invocations="62" avgMicrosecondsPerInvocation="5019" maxMicrosecondsPerInvocation="231569" standardDeviationMicrosecondsPerInvocation="29164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="121" invocations="10" avgMicrosecondsPerInvocation="12133" maxMicrosecondsPerInvocation="44359" standardDeviationMicrosecondsPerInvocation="15188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="75" invocations="5" avgMicrosecondsPerInvocation="15132" maxMicrosecondsPerInvocation="66505" standardDeviationMicrosecondsPerInvocation="25858"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="68" invocations="10" avgMicrosecondsPerInvocation="6813" maxMicrosecondsPerInvocation="33365" standardDeviationMicrosecondsPerInvocation="10375"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="63" invocations="26" avgMicrosecondsPerInvocation="2430" maxMicrosecondsPerInvocation="26384" standardDeviationMicrosecondsPerInvocation="6310"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="61" invocations="272" avgMicrosecondsPerInvocation="225" maxMicrosecondsPerInvocation="14561" standardDeviationMicrosecondsPerInvocation="1010"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="47" invocations="10" avgMicrosecondsPerInvocation="4785" maxMicrosecondsPerInvocation="35188" standardDeviationMicrosecondsPerInvocation="10340"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="42" invocations="311" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="13063" standardDeviationMicrosecondsPerInvocation="795"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="37" invocations="10" avgMicrosecondsPerInvocation="3725" maxMicrosecondsPerInvocation="18956" standardDeviationMicrosecondsPerInvocation="5942"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

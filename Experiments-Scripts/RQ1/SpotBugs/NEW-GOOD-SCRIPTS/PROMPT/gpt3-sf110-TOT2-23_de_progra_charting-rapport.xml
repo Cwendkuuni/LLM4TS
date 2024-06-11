@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756316544" analysisTimestamp="1714594385858" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/88_jopenchart/DefaultChartTEST/23/de/progra/charting</Jar>
+  </Project>
+  <BugInstance type="BC_IMPOSSIBLE_DOWNCAST" priority="1" rank="5" abbrev="BC" category="CORRECTNESS" instanceHash="3a02efbdcd8ef83cbee744638a416b78" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="570">
+    <ShortMessage>Impossible downcast</ShortMessage>
+    <LongMessage>Impossible downcast from Object to java.awt.Graphics2D in de.progra.charting.DefaultChartTest.testRender()</LongMessage>
+    <Class classname="de.progra.charting.DefaultChartTest" primary="true">
+      <SourceLine classname="de.progra.charting.DefaultChartTest" start="6" end="33" sourcefile="DefaultChartTest.java" sourcepath="de/progra/charting/DefaultChartTest.java">
+        <Message>At DefaultChartTest.java:[lines 6-33]</Message>
+      </SourceLine>
+      <Message>In class de.progra.charting.DefaultChartTest</Message>
+    </Class>
+    <Method classname="de.progra.charting.DefaultChartTest" name="testRender" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="de.progra.charting.DefaultChartTest" start="16" end="20" startBytecode="0" endBytecode="14" sourcefile="DefaultChartTest.java" sourcepath="de/progra/charting/DefaultChartTest.java"/>
+      <Message>In method de.progra.charting.DefaultChartTest.testRender()</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/Object;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Object" start="37" end="555" sourcefile="Object.java" sourcepath="java/lang/Object.java">
+        <Message>At Object.java:[lines 37-555]</Message>
+      </SourceLine>
+      <Message>Actual type Object</Message>
+    </Type>
+    <Type descriptor="Ljava/awt/Graphics2D;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.awt.Graphics2D" start="421" end="506" sourcefile="Graphics2D.java" sourcepath="java/awt/Graphics2D.java">
+        <Message>At Graphics2D.java:[lines 421-506]</Message>
+      </SourceLine>
+      <Message>Expected java.awt.Graphics2D</Message>
+    </Type>
+    <Method classname="java.lang.Object" name="&lt;init&gt;" signature="()V" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.lang.Object" start="37" end="37" startBytecode="0" endBytecode="24" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+      <Message>Return value of new Object() of type void</Message>
+    </Method>
+    <SourceLine classname="de.progra.charting.DefaultChartTest" primary="true" start="17" end="17" startBytecode="18" endBytecode="18" sourcefile="DefaultChartTest.java" sourcepath="de/progra/charting/DefaultChartTest.java">
+      <Message>At DefaultChartTest.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="BC_IMPOSSIBLE_DOWNCAST" abbrev="BC" category="CORRECTNESS" cweid="570">
+    <ShortDescription>Impossible downcast</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This cast will always throw a ClassCastException.
+The analysis believes it knows
+the precise type of the value being cast, and the attempt to
+downcast it to a subtype will always fail by throwing a ClassCastException.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="BC">
+    <Description>Mauvais transtypages de références</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>de.progra.charting.CoordSystem</MissingClass>
+    <MissingClass>de.progra.charting.DefaultChart</MissingClass>
+    <MissingClass>de.progra.charting.model.ChartDataModel</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:16 +0100" total_classes="1" referenced_classes="12" total_bugs="1" total_size="21" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.49" clock_seconds="1.97" peak_mbytes="189.78" alloc_mbytes="7104.00" gc_seconds="0.17" priority_1="1">
+    <FileStats path="de/progra/charting/DefaultChartTest.java" bugCount="1" size="21" bugHash="7521085d1e9472406736124233976d32"/>
+    <PackageStats package="de.progra.charting" total_bugs="1" total_types="1" total_size="21" priority_1="1">
+      <ClassStats class="de.progra.charting.DefaultChartTest" sourceFile="DefaultChartTest.java" interface="false" size="21" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="339" invocations="343" avgMicrosecondsPerInvocation="991" maxMicrosecondsPerInvocation="23212" standardDeviationMicrosecondsPerInvocation="2600"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="189" invocations="12" avgMicrosecondsPerInvocation="15805" maxMicrosecondsPerInvocation="178959" standardDeviationMicrosecondsPerInvocation="49203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="118" invocations="62" avgMicrosecondsPerInvocation="1907" maxMicrosecondsPerInvocation="18612" standardDeviationMicrosecondsPerInvocation="3702"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="81" invocations="12" avgMicrosecondsPerInvocation="6769" maxMicrosecondsPerInvocation="22767" standardDeviationMicrosecondsPerInvocation="7217"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="69" invocations="12" avgMicrosecondsPerInvocation="5787" maxMicrosecondsPerInvocation="24980" standardDeviationMicrosecondsPerInvocation="7351"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="68" invocations="32" avgMicrosecondsPerInvocation="2144" maxMicrosecondsPerInvocation="43086" standardDeviationMicrosecondsPerInvocation="7625"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="54" invocations="5" avgMicrosecondsPerInvocation="10962" maxMicrosecondsPerInvocation="47693" standardDeviationMicrosecondsPerInvocation="18368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="52" invocations="5" avgMicrosecondsPerInvocation="10523" maxMicrosecondsPerInvocation="49454" standardDeviationMicrosecondsPerInvocation="19474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="43" invocations="306" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="4891" standardDeviationMicrosecondsPerInvocation="410"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="32" invocations="12" avgMicrosecondsPerInvocation="2747" maxMicrosecondsPerInvocation="11770" standardDeviationMicrosecondsPerInvocation="3705"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="32" invocations="12" avgMicrosecondsPerInvocation="2702" maxMicrosecondsPerInvocation="9946" standardDeviationMicrosecondsPerInvocation="3435"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="31" invocations="345" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="4523" standardDeviationMicrosecondsPerInvocation="267"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="24" invocations="12" avgMicrosecondsPerInvocation="2080" maxMicrosecondsPerInvocation="10638" standardDeviationMicrosecondsPerInvocation="3256"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

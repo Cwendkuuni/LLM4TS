@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711194556099" analysisTimestamp="1714575459091" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V3/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/FEWSHOT/Odc/6/8/com/oceanbase/odc/service/schedule/job</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="5">
+    <MissingClass>com.oceanbase.odc.service.schedule.job.PartitionPlanJob</MissingClass>
+    <MissingClass>com.oceanbase.tools.migrator.common.exception.UnExpectedException</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.quartz.JobExecutionContext</MissingClass>
+    <MissingClass>org.quartz.SchedulerException</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sat, 23 Mar 2024 12:49:16 +0100" total_classes="1" referenced_classes="9" total_bugs="0" total_size="17" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.71" clock_seconds="3.81" peak_mbytes="189.48" alloc_mbytes="7104.00" gc_seconds="0.26">
+    <FileStats path="com/oceanbase/odc/service/schedule/job/PartitionPlanJobTest.java" bugCount="0" size="17"/>
+    <PackageStats package="com.oceanbase.odc.service.schedule.job" total_bugs="0" total_types="1" total_size="17">
+      <ClassStats class="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" sourceFile="PartitionPlanJobTest.java" interface="false" size="17" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="713" invocations="297" avgMicrosecondsPerInvocation="2401" maxMicrosecondsPerInvocation="66591" standardDeviationMicrosecondsPerInvocation="7819"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="404" invocations="9" avgMicrosecondsPerInvocation="44999" maxMicrosecondsPerInvocation="275716" standardDeviationMicrosecondsPerInvocation="84977"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="155" invocations="9" avgMicrosecondsPerInvocation="17320" maxMicrosecondsPerInvocation="72914" standardDeviationMicrosecondsPerInvocation="24779"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="130" invocations="24" avgMicrosecondsPerInvocation="5435" maxMicrosecondsPerInvocation="67689" standardDeviationMicrosecondsPerInvocation="14546"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="125" invocations="3" avgMicrosecondsPerInvocation="41749" maxMicrosecondsPerInvocation="121259" standardDeviationMicrosecondsPerInvocation="56233"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="125" invocations="36" avgMicrosecondsPerInvocation="3477" maxMicrosecondsPerInvocation="33012" standardDeviationMicrosecondsPerInvocation="6837"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="118" invocations="9" avgMicrosecondsPerInvocation="13161" maxMicrosecondsPerInvocation="83507" standardDeviationMicrosecondsPerInvocation="26651"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="91" invocations="258" avgMicrosecondsPerInvocation="353" maxMicrosecondsPerInvocation="9607" standardDeviationMicrosecondsPerInvocation="1183"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="73" invocations="299" avgMicrosecondsPerInvocation="246" maxMicrosecondsPerInvocation="14589" standardDeviationMicrosecondsPerInvocation="1299"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="72" invocations="9" avgMicrosecondsPerInvocation="8056" maxMicrosecondsPerInvocation="48044" standardDeviationMicrosecondsPerInvocation="15262"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

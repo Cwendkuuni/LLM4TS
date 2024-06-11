@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360750828" analysisTimestamp="1714606318567" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/78_caloriecount/SimpleComboBoxTEST/15/com/lts/swing/combobox</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="3a8a16beba03698e8debd120f6ff36b1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type com.lts.swing.combobox.SimpleComboBoxModel in com.lts.swing.combobox.SimpleComboBoxTest.testSetModel() at SimpleComboBoxTest.java:[line 21] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lcom/lts/swing/combobox/SimpleComboBoxModel;">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxModel">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type com.lts.swing.combobox.SimpleComboBoxModel</Message>
+    </Type>
+    <Class classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="7" end="88" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+        <Message>At SimpleComboBoxTest.java:[lines 7-88]</Message>
+      </SourceLine>
+      <Message>In class com.lts.swing.combobox.SimpleComboBoxTest</Message>
+    </Class>
+    <Method classname="com.lts.swing.combobox.SimpleComboBoxTest" name="testSetModel" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="19" end="23" startBytecode="0" endBytecode="80" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java"/>
+      <Message>In method com.lts.swing.combobox.SimpleComboBoxTest.testSetModel()</Message>
+    </Method>
+    <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true" start="21" end="21" startBytecode="26" endBytecode="26" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+      <Message>At SimpleComboBoxTest.java:[line 21]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>com.lts.swing.combobox.SimpleComboBox</MissingClass>
+    <MissingClass>com.lts.swing.combobox.SimpleComboBoxModel</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:10 +0100" total_classes="1" referenced_classes="14" total_bugs="1" total_size="59" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.18" clock_seconds="1.56" peak_mbytes="190.93" alloc_mbytes="7104.00" gc_seconds="0.09" priority_2="1">
+    <FileStats path="com/lts/swing/combobox/SimpleComboBoxTest.java" bugCount="1" size="59" bugHash="71312c831d2360efb1169ccf574dbe14"/>
+    <PackageStats package="com.lts.swing.combobox" total_bugs="1" total_types="1" total_size="59" priority_2="1">
+      <ClassStats class="com.lts.swing.combobox.SimpleComboBoxTest" sourceFile="SimpleComboBoxTest.java" interface="false" size="59" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="218" invocations="316" avgMicrosecondsPerInvocation="692" maxMicrosecondsPerInvocation="18625" standardDeviationMicrosecondsPerInvocation="1554"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="118" invocations="14" avgMicrosecondsPerInvocation="8439" maxMicrosecondsPerInvocation="94357" standardDeviationMicrosecondsPerInvocation="24119"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="78" invocations="14" avgMicrosecondsPerInvocation="5623" maxMicrosecondsPerInvocation="20013" standardDeviationMicrosecondsPerInvocation="6912"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="50" invocations="7" avgMicrosecondsPerInvocation="7164" maxMicrosecondsPerInvocation="33732" standardDeviationMicrosecondsPerInvocation="11885"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="49" invocations="69" avgMicrosecondsPerInvocation="710" maxMicrosecondsPerInvocation="5318" standardDeviationMicrosecondsPerInvocation="914"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="47" invocations="14" avgMicrosecondsPerInvocation="3400" maxMicrosecondsPerInvocation="22677" standardDeviationMicrosecondsPerInvocation="5852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="45" invocations="7" avgMicrosecondsPerInvocation="6479" maxMicrosecondsPerInvocation="29289" standardDeviationMicrosecondsPerInvocation="9753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="39" invocations="33" avgMicrosecondsPerInvocation="1187" maxMicrosecondsPerInvocation="19922" standardDeviationMicrosecondsPerInvocation="3506"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="33" invocations="319" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="6749" standardDeviationMicrosecondsPerInvocation="498"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="33" invocations="279" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="1356" standardDeviationMicrosecondsPerInvocation="199"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="31" invocations="7" avgMicrosecondsPerInvocation="4445" maxMicrosecondsPerInvocation="19539" standardDeviationMicrosecondsPerInvocation="6280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="29" invocations="14" avgMicrosecondsPerInvocation="2142" maxMicrosecondsPerInvocation="9726" standardDeviationMicrosecondsPerInvocation="3188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="26" invocations="14" avgMicrosecondsPerInvocation="1858" maxMicrosecondsPerInvocation="7229" standardDeviationMicrosecondsPerInvocation="2274"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="22" invocations="7" avgMicrosecondsPerInvocation="3257" maxMicrosecondsPerInvocation="12625" standardDeviationMicrosecondsPerInvocation="3931"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="21" invocations="14" avgMicrosecondsPerInvocation="1565" maxMicrosecondsPerInvocation="10463" standardDeviationMicrosecondsPerInvocation="2685"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="21" invocations="7" avgMicrosecondsPerInvocation="3008" maxMicrosecondsPerInvocation="12096" standardDeviationMicrosecondsPerInvocation="3799"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

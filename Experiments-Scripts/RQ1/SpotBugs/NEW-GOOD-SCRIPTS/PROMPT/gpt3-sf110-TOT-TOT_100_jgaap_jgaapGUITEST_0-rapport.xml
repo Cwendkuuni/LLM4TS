@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360741667" analysisTimestamp="1714592151328" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/100_jgaap/jgaapGUITEST/0</Jar>
+  </Project>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="a9c1802c7b5a3c5d34be862e296f5061" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de classe devant commencer par une majuscule</ShortMessage>
+    <LongMessage>Le nom de la classe jgaapGUITest ne commence pas par une majusucle</LongMessage>
+    <Class classname="jgaapGUITest" primary="true">
+      <SourceLine classname="jgaapGUITest" start="4" end="78" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java">
+        <Message>At jgaapGUITest.java:[lines 4-78]</Message>
+      </SourceLine>
+      <Message>In class jgaapGUITest</Message>
+    </Class>
+    <SourceLine classname="jgaapGUITest" start="4" end="78" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java" synthetic="true">
+      <Message>At jgaapGUITest.java:[lines 4-78]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="6e5fa5abab515b9a83048c985ef2399d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : jgaapGUITest.gui</LongMessage>
+    <Class classname="jgaapGUITest" primary="true">
+      <SourceLine classname="jgaapGUITest" start="4" end="78" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java">
+        <Message>At jgaapGUITest.java:[lines 4-78]</Message>
+      </SourceLine>
+      <Message>In class jgaapGUITest</Message>
+    </Class>
+    <Field classname="jgaapGUITest" name="gui" signature="LjgaapGUI;" isStatic="false" primary="true">
+      <SourceLine classname="jgaapGUITest" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java">
+        <Message>In jgaapGUITest.java</Message>
+      </SourceLine>
+      <Message>Field jgaapGUITest.gui</Message>
+    </Field>
+    <SourceLine classname="jgaapGUITest" primary="true" start="10" end="10" startBytecode="8" endBytecode="8" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java">
+      <Message>At jgaapGUITest.java:[line 10]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="NM_CLASS_NAMING_CONVENTION" abbrev="Nm" category="BAD_PRACTICE">
+    <ShortDescription>Nom de classe devant commencer par une majuscule</ShortDescription>
+    <Details><![CDATA[
+
+<p>Les noms de classe doivent être en minuscules avec la première lettre de chaque mot en majuscules. Essayez de conserver vos noms de classes simples et explicites. Utilisez des mots entiers et évitez acronymes et abbréviations (à moins que l'abbréviation soit plus largement utilisée que la forme longue, comme "URL" ou "HTML").</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <BugCode abbrev="Nm">
+    <Description>Noms de méthodes ambigus</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>jgaapGUI</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:01 +0100" total_classes="1" referenced_classes="9" total_bugs="2" total_size="29" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.01" clock_seconds="1.91" peak_mbytes="189.71" alloc_mbytes="7104.00" gc_seconds="0.22" priority_2="2">
+    <FileStats path="jgaapGUITest.java" bugCount="2" size="29" bugHash="0a505b3104767cc30b02ba7a76ac0e57"/>
+    <PackageStats package="" total_bugs="2" total_types="1" total_size="29" priority_2="2">
+      <ClassStats class="jgaapGUITest" sourceFile="jgaapGUITest.java" interface="false" size="29" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="312" invocations="46" avgMicrosecondsPerInvocation="6789" maxMicrosecondsPerInvocation="231085" standardDeviationMicrosecondsPerInvocation="33692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="286" invocations="293" avgMicrosecondsPerInvocation="976" maxMicrosecondsPerInvocation="41411" standardDeviationMicrosecondsPerInvocation="3245"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="89" invocations="9" avgMicrosecondsPerInvocation="9973" maxMicrosecondsPerInvocation="40673" standardDeviationMicrosecondsPerInvocation="12959"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="71" invocations="13" avgMicrosecondsPerInvocation="5477" maxMicrosecondsPerInvocation="67570" standardDeviationMicrosecondsPerInvocation="17940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="50" invocations="24" avgMicrosecondsPerInvocation="2099" maxMicrosecondsPerInvocation="28219" standardDeviationMicrosecondsPerInvocation="5863"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="48" invocations="9" avgMicrosecondsPerInvocation="5420" maxMicrosecondsPerInvocation="30607" standardDeviationMicrosecondsPerInvocation="9111"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="47" invocations="257" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="9074" standardDeviationMicrosecondsPerInvocation="657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="37" invocations="9" avgMicrosecondsPerInvocation="4203" maxMicrosecondsPerInvocation="20000" standardDeviationMicrosecondsPerInvocation="6334"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="30" invocations="9" avgMicrosecondsPerInvocation="3362" maxMicrosecondsPerInvocation="18316" standardDeviationMicrosecondsPerInvocation="5634"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="29" invocations="9" avgMicrosecondsPerInvocation="3328" maxMicrosecondsPerInvocation="10191" standardDeviationMicrosecondsPerInvocation="3127"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

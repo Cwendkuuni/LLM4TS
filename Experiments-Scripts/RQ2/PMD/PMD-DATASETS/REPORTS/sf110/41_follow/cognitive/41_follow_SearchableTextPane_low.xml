@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2024-05-14T17:01:02.118">
+<file name="/tmp/tmpe1gflyhl.java">
+<violation beginline="67" endline="67" begincolumn="16" endcolumn="22" rule="CognitiveComplexity" ruleset="Design" package="ghm.follow.search" class="SearchableTextPane" method="search" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cognitivecomplexity" priority="3">
+The method 'search(String)' has a cognitive complexity of 10, current threshold is 4
+</violation>
+<violation beginline="103" endline="103" begincolumn="30" endcolumn="48" rule="CognitiveComplexity" ruleset="Design" package="ghm.follow.search" class="SearchableTextPane" method="convertWords2Lines" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cognitivecomplexity" priority="3">
+The method 'convertWords2Lines(List&lt;WordResult&gt;)' has a cognitive complexity of 7, current threshold is 4
+</violation>
+</file>
+<error filename="/tmp/tmpe1gflyhl.java" msg="ContextedRuntimeException: java.lang.IllegalArgumentException: Cannot parameterize java/awt/List with [*WordResult], expecting  0 type arguments
+Exception Context:
+	[1:Resolving type of=!debug only! [ClassOrInterfaceType:39:23]List&lt;WordResult&gt;]
+	[2:Resolving type of=!debug only! [VariableDeclaratorId:39:40]searchResults]
+	[3:Resolving type of=!debug only! [MethodCall:39:56]new SearchEngine(flags).search(term, text)]
+	[4:Rule applied on node=!debug only! [MethodDeclaration:32:29]public List&lt;LineResult&gt; highlight(final String term, final int flags) {
+        List&lt;LineResult&gt; lineResults = new ArrayList&lt;LineResult&gt;();(truncated)]
+---------------------------------">
+<![CDATA[org.apache.commons.lang3.exception.ContextedRuntimeException: java.lang.IllegalArgumentException: Cannot parameterize java/awt/List with [*WordResult], expecting  0 type arguments
+Exception Context:
+	[1:Resolving type of=!debug only! [ClassOrInterfaceType:39:23]List<WordResult>]
+	[2:Resolving type of=!debug only! [VariableDeclaratorId:39:40]searchResults]
+	[3:Resolving type of=!debug only! [MethodCall:39:56]new SearchEngine(flags).search(term, text)]
+	[4:Rule applied on node=!debug only! [MethodDeclaration:32:29]public List<LineResult> highlight(final String term, final int flags) {
+        List<LineResult> lineResults = new ArrayList<LineResult>();(truncated)]
+---------------------------------
+	at net.sourceforge.pmd.util.AssertionUtil.contexted(AssertionUtil.java:232)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaTypeNode.getTypeMirror(AbstractJavaTypeNode.java:54)
+	at net.sourceforge.pmd.lang.java.ast.ASTClassOrInterfaceType.getTypeMirror(ASTClassOrInterfaceType.java:34)
+	at net.sourceforge.pmd.lang.java.types.ast.LazyTypeResolver.visit(LazyTypeResolver.java:240)
+	at net.sourceforge.pmd.lang.java.types.ast.LazyTypeResolver.visit(LazyTypeResolver.java:95)
+	at net.sourceforge.pmd.lang.java.ast.ASTVariableDeclaratorId.acceptVisitor(ASTVariableDeclaratorId.java:55)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaTypeNode.getTypeMirror(AbstractJavaTypeNode.java:51)
+	at net.sourceforge.pmd.lang.java.ast.ASTVariableDeclaratorId.getTypeMirror(ASTVariableDeclaratorId.java:45)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaTypeNode.getTypeMirror(AbstractJavaTypeNode.java:39)
+	at net.sourceforge.pmd.lang.java.ast.ASTVariableDeclaratorId.getTypeMirror(ASTVariableDeclaratorId.java:45)
+	at net.sourceforge.pmd.lang.java.types.ast.PolyResolution.contextOf(PolyResolution.java:480)
+	at net.sourceforge.pmd.lang.java.types.ast.PolyResolution.getTopLevelConversionContext(PolyResolution.java:357)
+	at net.sourceforge.pmd.lang.java.types.ast.PolyResolution.computePolyType(PolyResolution.java:106)
+	at net.sourceforge.pmd.lang.java.types.ast.LazyTypeResolver.handlePoly(LazyTypeResolver.java:268)
+	at net.sourceforge.pmd.lang.java.types.ast.LazyTypeResolver.visit(LazyTypeResolver.java:273)
+	at net.sourceforge.pmd.lang.java.types.ast.LazyTypeResolver.visit(LazyTypeResolver.java:95)
+	at net.sourceforge.pmd.lang.java.ast.ASTMethodCall.acceptVisitor(ASTMethodCall.java:75)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaTypeNode.getTypeMirror(AbstractJavaTypeNode.java:51)
+	at net.sourceforge.pmd.lang.java.ast.ASTMethodCall.getTypeMirror(ASTMethodCall.java:22)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaTypeNode.getTypeMirror(AbstractJavaTypeNode.java:39)
+	at net.sourceforge.pmd.lang.java.ast.ASTMethodCall.getTypeMirror(ASTMethodCall.java:22)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaTypeNode.forceTypeResolution(AbstractJavaTypeNode.java:29)
+	at net.sourceforge.pmd.lang.java.ast.AbstractInvocationExpr.getOverloadSelectionInfo(AbstractInvocationExpr.java:27)
+	at net.sourceforge.pmd.lang.java.ast.ASTMethodCall.getOverloadSelectionInfo(ASTMethodCall.java:22)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:245)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:41)
+	at net.sourceforge.pmd.lang.java.ast.ASTMethodCall.acceptVisitor(ASTMethodCall.java:75)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaNode.acceptVisitor(AbstractJavaNode.java:38)
+	at net.sourceforge.pmd.lang.ast.AstVisitorBase.visitChildren(AstVisitorBase.java:31)
+	at net.sourceforge.pmd.lang.ast.AstVisitorBase.visitNode(AstVisitorBase.java:38)
+	at net.sourceforge.pmd.lang.java.ast.JavaVisitor.visitJavaNode(JavaVisitor.java:6)
+	at net.sourceforge.pmd.lang.java.ast.JavaVisitor.visit(JavaVisitor.java:28)
+	at net.sourceforge.pmd.lang.java.ast.ASTVariableDeclarator.acceptVisitor(ASTVariableDeclarator.java:34)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaNode.acceptVisitor(AbstractJavaNode.java:38)
+	at net.sourceforge.pmd.lang.ast.AstVisitorBase.visitChildren(AstVisitorBase.java:31)
+	at net.sourceforge.pmd.lang.ast.AstVisitorBase.visitNode(AstVisitorBase.java:38)
+	at net.sourceforge.pmd.lang.java.ast.JavaVisitor.visitJavaNode(JavaVisitor.java:6)
+	at net.sourceforge.pmd.lang.java.ast.JavaVisitorBase.visitStatement(JavaVisitorBase.java:281)
+	at net.sourceforge.pmd.lang.java.ast.JavaVisitorBase.visit(JavaVisitorBase.java:351)
+	at net.sourceforge.pmd.lang.java.ast.ASTLocalVariableDeclaration.acceptVisitor(ASTLocalVariableDeclaration.java:46)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaNode.acceptVisitor(AbstractJavaNode.java:38)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:226)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:41)
+	at net.sourceforge.pmd.lang.java.ast.ASTBlock.acceptVisitor(ASTBlock.java:31)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaNode.acceptVisitor(AbstractJavaNode.java:38)
+	at net.sourceforge.pmd.lang.ast.AstVisitorBase.visitChildren(AstVisitorBase.java:31)
+	at net.sourceforge.pmd.lang.ast.AstVisitorBase.visitNode(AstVisitorBase.java:38)
+	at net.sourceforge.pmd.lang.java.ast.JavaVisitor.visitJavaNode(JavaVisitor.java:6)
+	at net.sourceforge.pmd.lang.java.ast.JavaVisitorBase.visitStatement(JavaVisitorBase.java:281)
+	at net.sourceforge.pmd.lang.java.ast.JavaVisitorBase.visit(JavaVisitorBase.java:381)
+	at net.sourceforge.pmd.lang.java.ast.ASTTryStatement.acceptVisitor(ASTTryStatement.java:34)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaNode.acceptVisitor(AbstractJavaNode.java:38)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:226)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:41)
+	at net.sourceforge.pmd.lang.java.ast.ASTBlock.acceptVisitor(ASTBlock.java:31)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaNode.acceptVisitor(AbstractJavaNode.java:38)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:158)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:41)
+	at net.sourceforge.pmd.lang.java.ast.ASTIfStatement.acceptVisitor(ASTIfStatement.java:70)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaNode.acceptVisitor(AbstractJavaNode.java:38)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:226)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:41)
+	at net.sourceforge.pmd.lang.java.ast.ASTBlock.acceptVisitor(ASTBlock.java:31)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaNode.acceptVisitor(AbstractJavaNode.java:38)
+	at net.sourceforge.pmd.lang.ast.AstVisitorBase.visitChildren(AstVisitorBase.java:31)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:236)
+	at net.sourceforge.pmd.lang.java.metrics.internal.CognitiveComplexityVisitor.visit(CognitiveComplexityVisitor.java:41)
+	at net.sourceforge.pmd.lang.java.ast.ASTMethodDeclaration.acceptVisitor(ASTMethodDeclaration.java:58)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaNode.acceptVisitor(AbstractJavaNode.java:38)
+	at net.sourceforge.pmd.lang.java.metrics.JavaMetrics.computeCognitive(JavaMetrics.java:470)
+	at net.sourceforge.pmd.lang.metrics.Metric$1.computeFor(Metric.java:154)
+	at net.sourceforge.pmd.lang.metrics.MetricsUtil.computeMetric(MetricsUtil.java:135)
+	at net.sourceforge.pmd.lang.metrics.MetricsUtil.computeMetric(MetricsUtil.java:100)
+	at net.sourceforge.pmd.lang.metrics.MetricsUtil.computeMetric(MetricsUtil.java:81)
+	at net.sourceforge.pmd.lang.java.rule.design.CognitiveComplexityRule.visitMethod(CognitiveComplexityRule.java:56)
+	at net.sourceforge.pmd.lang.java.rule.design.CognitiveComplexityRule.visit(CognitiveComplexityRule.java:43)
+	at net.sourceforge.pmd.lang.java.ast.ASTMethodDeclaration.acceptVisitor(ASTMethodDeclaration.java:58)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaNode.acceptVisitor(AbstractJavaNode.java:38)
+	at net.sourceforge.pmd.lang.java.rule.AbstractJavaRule.apply(AbstractJavaRule.java:24)
+	at net.sourceforge.pmd.lang.rule.AbstractDelegateRule.apply(AbstractDelegateRule.java:232)
+	at net.sourceforge.pmd.lang.rule.internal.RuleApplicator.applyOnIndex(RuleApplicator.java:75)
+	at net.sourceforge.pmd.lang.rule.internal.RuleApplicator.apply(RuleApplicator.java:55)
+	at net.sourceforge.pmd.RuleSets.apply(RuleSets.java:158)
+	at net.sourceforge.pmd.lang.impl.PmdRunnable.processSource(PmdRunnable.java:140)
+	at net.sourceforge.pmd.lang.impl.PmdRunnable.run(PmdRunnable.java:80)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Cannot parameterize java/awt/List with [*WordResult], expecting  0 type arguments
+	at net.sourceforge.pmd.lang.java.types.ClassTypeImpl.invalidTypeArgs(ClassTypeImpl.java:431)
+	at net.sourceforge.pmd.lang.java.types.ClassTypeImpl.validateParams(ClassTypeImpl.java:421)
+	at net.sourceforge.pmd.lang.java.types.ClassTypeImpl.<init>(ClassTypeImpl.java:69)
+	at net.sourceforge.pmd.lang.java.types.ClassTypeImpl.<init>(ClassTypeImpl.java:64)
+	at net.sourceforge.pmd.lang.java.types.TypeSystem.parameterise(TypeSystem.java:522)
+	at net.sourceforge.pmd.lang.java.ast.TypesFromAst.makeFromClassType(TypesFromAst.java:158)
+	at net.sourceforge.pmd.lang.java.ast.TypesFromAst.fromAstImpl(TypesFromAst.java:60)
+	at net.sourceforge.pmd.lang.java.ast.TypesFromAst.fromAst(TypesFromAst.java:53)
+	at net.sourceforge.pmd.lang.java.ast.InternalApiBridge.buildTypeFromAstInternal(InternalApiBridge.java:208)
+	at net.sourceforge.pmd.lang.java.types.ast.LazyTypeResolver.visitType(LazyTypeResolver.java:174)
+	at net.sourceforge.pmd.lang.java.types.ast.LazyTypeResolver.visitType(LazyTypeResolver.java:95)
+	at net.sourceforge.pmd.lang.java.ast.JavaVisitorBase.visitReferenceType(JavaVisitorBase.java:95)
+	at net.sourceforge.pmd.lang.java.ast.JavaVisitorBase.visit(JavaVisitorBase.java:123)
+	at net.sourceforge.pmd.lang.java.ast.ASTClassOrInterfaceType.acceptVisitor(ASTClassOrInterfaceType.java:159)
+	at net.sourceforge.pmd.lang.java.ast.AbstractJavaTypeNode.getTypeMirror(AbstractJavaTypeNode.java:51)
+	... 88 more
+]]>
+</error>
+</pmd>

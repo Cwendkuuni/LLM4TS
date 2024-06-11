@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287215914" analysisTimestamp="1714575784458" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/FEWSHOT/107_weka/ICSSearchAlgorithmTEST/24/weka/classifiers/bayes/net/search/ci</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="73de9c3600c16e6385079a9cf0043729" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearch(): new java.io.FileReader(String)</LongMessage>
+    <Class classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="13" end="56" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+        <Message>At ICSSearchAlgorithmTest.java:[lines 13-56]</Message>
+      </SourceLine>
+      <Message>In class weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest</Message>
+    </Class>
+    <Method classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" name="testSearch" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="44" end="50" startBytecode="0" endBytecode="93" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java"/>
+      <Message>In method weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearch()</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(String)</Message>
+    </Method>
+    <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true" start="45" end="45" startBytecode="18" endBytecode="18" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+      <Message>At ICSSearchAlgorithmTest.java:[line 45]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>weka.classifiers.bayes.BayesNet</MissingClass>
+    <MissingClass>weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithm</MissingClass>
+    <MissingClass>weka.core.Instances</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:55 +0200" total_classes="1" referenced_classes="13" total_bugs="1" total_size="30" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.24" clock_seconds="5.39" peak_mbytes="190.03" alloc_mbytes="7104.00" gc_seconds="0.18" priority_1="1">
+    <FileStats path="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java" bugCount="1" size="30" bugHash="4b2a5e15c8f824d17efcec8d5a8bb44d"/>
+    <PackageStats package="weka.classifiers.bayes.net.search.ci" total_bugs="1" total_types="1" total_size="30" priority_1="1">
+      <ClassStats class="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" sourceFile="ICSSearchAlgorithmTest.java" interface="false" size="30" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="851" invocations="317" avgMicrosecondsPerInvocation="2684" maxMicrosecondsPerInvocation="97498" standardDeviationMicrosecondsPerInvocation="9815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="237" invocations="13" avgMicrosecondsPerInvocation="18233" maxMicrosecondsPerInvocation="220708" standardDeviationMicrosecondsPerInvocation="58472"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="219" invocations="34" avgMicrosecondsPerInvocation="6458" maxMicrosecondsPerInvocation="97957" standardDeviationMicrosecondsPerInvocation="19006"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="191" invocations="13" avgMicrosecondsPerInvocation="14717" maxMicrosecondsPerInvocation="42381" standardDeviationMicrosecondsPerInvocation="17368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="171" invocations="66" avgMicrosecondsPerInvocation="2592" maxMicrosecondsPerInvocation="24433" standardDeviationMicrosecondsPerInvocation="5596"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="168" invocations="280" avgMicrosecondsPerInvocation="600" maxMicrosecondsPerInvocation="18674" standardDeviationMicrosecondsPerInvocation="2319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="147" invocations="7" avgMicrosecondsPerInvocation="21045" maxMicrosecondsPerInvocation="107712" standardDeviationMicrosecondsPerInvocation="36044"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="128" invocations="7" avgMicrosecondsPerInvocation="18426" maxMicrosecondsPerInvocation="97932" standardDeviationMicrosecondsPerInvocation="33873"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="118" invocations="13" avgMicrosecondsPerInvocation="9086" maxMicrosecondsPerInvocation="53073" standardDeviationMicrosecondsPerInvocation="14802"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="100" invocations="13" avgMicrosecondsPerInvocation="7743" maxMicrosecondsPerInvocation="49339" standardDeviationMicrosecondsPerInvocation="14974"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="100" invocations="13" avgMicrosecondsPerInvocation="7699" maxMicrosecondsPerInvocation="40600" standardDeviationMicrosecondsPerInvocation="11247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="87" invocations="319" avgMicrosecondsPerInvocation="274" maxMicrosecondsPerInvocation="20978" standardDeviationMicrosecondsPerInvocation="1701"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="84" invocations="7" avgMicrosecondsPerInvocation="12055" maxMicrosecondsPerInvocation="44761" standardDeviationMicrosecondsPerInvocation="15476"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="81" invocations="7" avgMicrosecondsPerInvocation="11638" maxMicrosecondsPerInvocation="50696" standardDeviationMicrosecondsPerInvocation="16735"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="76" invocations="1" avgMicrosecondsPerInvocation="76493" maxMicrosecondsPerInvocation="76493" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="72" invocations="7" avgMicrosecondsPerInvocation="10416" maxMicrosecondsPerInvocation="45282" standardDeviationMicrosecondsPerInvocation="14689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="69" invocations="1" avgMicrosecondsPerInvocation="69514" maxMicrosecondsPerInvocation="69514" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

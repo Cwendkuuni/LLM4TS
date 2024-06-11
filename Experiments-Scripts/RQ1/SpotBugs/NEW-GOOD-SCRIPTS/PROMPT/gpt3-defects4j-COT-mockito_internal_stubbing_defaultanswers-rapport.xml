@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420558393" analysisTimestamp="1714585944983" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/COT/Mockito/10/6/org/mockito/internal/stubbing/defaultanswers</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="3309508afa59429c3dbafa6103efe433" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testActualParameterizedType()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="6" end="72" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+        <Message>At ReturnsDeepStubsTest.java:[lines 6-72]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" name="testActualParameterizedType" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="46" end="48" startBytecode="0" endBytecode="4" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testActualParameterizedType()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true" start="46" end="46" startBytecode="7" endBytecode="7" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+      <Message>At ReturnsDeepStubsTest.java:[line 46]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="5c3677936829860c759d7d92e624f054" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testAnswer()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="6" end="72" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+        <Message>At ReturnsDeepStubsTest.java:[lines 6-72]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" name="testAnswer" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="10" end="12" startBytecode="0" endBytecode="4" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testAnswer()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true" start="10" end="10" startBytecode="7" endBytecode="7" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+      <Message>At ReturnsDeepStubsTest.java:[line 10]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="ce3a672260eb8366a8ed9bc1b452f2bf" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testDeepStub()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="6" end="72" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+        <Message>At ReturnsDeepStubsTest.java:[lines 6-72]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" name="testDeepStub" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="16" end="18" startBytecode="0" endBytecode="4" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testDeepStub()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true" start="16" end="16" startBytecode="7" endBytecode="7" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+      <Message>At ReturnsDeepStubsTest.java:[line 16]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="1931dcd87d7b590f94210920b612590a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testDeeplyStubbedAnswer()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="6" end="72" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+        <Message>At ReturnsDeepStubsTest.java:[lines 6-72]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" name="testDeeplyStubbedAnswer" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="58" end="60" startBytecode="0" endBytecode="4" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testDeeplyStubbedAnswer()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true" start="58" end="58" startBytecode="7" endBytecode="7" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+      <Message>At ReturnsDeepStubsTest.java:[line 58]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="aed3e731e40b7f8f5e6d30e799d45f21" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testDelegate()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="6" end="72" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+        <Message>At ReturnsDeepStubsTest.java:[lines 6-72]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" name="testDelegate" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="70" end="72" startBytecode="0" endBytecode="4" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testDelegate()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true" start="70" end="70" startBytecode="7" endBytecode="7" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+      <Message>At ReturnsDeepStubsTest.java:[line 70]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="a2785907b2a1886687a5f9ff6275186e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testMockitoCore()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="6" end="72" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+        <Message>At ReturnsDeepStubsTest.java:[lines 6-72]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" name="testMockitoCore" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="64" end="66" startBytecode="0" endBytecode="4" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testMockitoCore()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true" start="64" end="64" startBytecode="7" endBytecode="7" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+      <Message>At ReturnsDeepStubsTest.java:[line 64]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="7086f7a3e949793eb7c1939011ed3460" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testNewDeepStubMock()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="6" end="72" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+        <Message>At ReturnsDeepStubsTest.java:[lines 6-72]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" name="testNewDeepStubMock" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="22" end="24" startBytecode="0" endBytecode="4" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testNewDeepStubMock()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true" start="22" end="22" startBytecode="7" endBytecode="7" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+      <Message>At ReturnsDeepStubsTest.java:[line 22]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="429a45f18c3947c86e9f84b7bde75c13" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testRecordDeepStubAnswer()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="6" end="72" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+        <Message>At ReturnsDeepStubsTest.java:[lines 6-72]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" name="testRecordDeepStubAnswer" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="40" end="42" startBytecode="0" endBytecode="4" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testRecordDeepStubAnswer()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true" start="40" end="40" startBytecode="7" endBytecode="7" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+      <Message>At ReturnsDeepStubsTest.java:[line 40]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="7cc08404adca145e7e65e2b2ea2369e9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testReturnsDeepStubsAnswerUsing()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="6" end="72" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+        <Message>At ReturnsDeepStubsTest.java:[lines 6-72]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" name="testReturnsDeepStubsAnswerUsing" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="34" end="36" startBytecode="0" endBytecode="4" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testReturnsDeepStubsAnswerUsing()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true" start="34" end="34" startBytecode="7" endBytecode="7" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+      <Message>At ReturnsDeepStubsTest.java:[line 34]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="d993b270e0b03aaba85e845ee5c8f99b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testReturnsDeepStubsSerializationFallback()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="6" end="72" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+        <Message>At ReturnsDeepStubsTest.java:[lines 6-72]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" name="testReturnsDeepStubsSerializationFallback" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="52" end="54" startBytecode="0" endBytecode="4" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testReturnsDeepStubsSerializationFallback()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true" start="52" end="52" startBytecode="7" endBytecode="7" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+      <Message>At ReturnsDeepStubsTest.java:[line 52]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="80f8b331fad15f1a25d61ffa169a55e2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testWithSettingsUsing()</LongMessage>
+    <Class classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="6" end="72" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+        <Message>At ReturnsDeepStubsTest.java:[lines 6-72]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" name="testWithSettingsUsing" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" start="28" end="30" startBytecode="0" endBytecode="4" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java"/>
+      <Message>In method org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest.testWithSettingsUsing()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" primary="true" start="28" end="28" startBytecode="7" endBytecode="7" sourcefile="ReturnsDeepStubsTest.java" sourcepath="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java">
+      <Message>At ReturnsDeepStubsTest.java:[line 28]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:15:58 +0100" total_classes="1" referenced_classes="9" total_bugs="11" total_size="36" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.74" clock_seconds="2.85" peak_mbytes="189.37" alloc_mbytes="7104.00" gc_seconds="0.19" priority_1="11">
+    <FileStats path="org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubsTest.java" bugCount="11" size="36" bugHash="70507ff16d3f7f665c3e4e8a32f23ff2"/>
+    <PackageStats package="org.mockito.internal.stubbing.defaultanswers" total_bugs="11" total_types="1" total_size="36" priority_1="11">
+      <ClassStats class="org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsTest" sourceFile="ReturnsDeepStubsTest.java" interface="false" size="36" bugs="11" priority_1="11"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="472" invocations="292" avgMicrosecondsPerInvocation="1617" maxMicrosecondsPerInvocation="43969" standardDeviationMicrosecondsPerInvocation="4952"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="234" invocations="9" avgMicrosecondsPerInvocation="26015" maxMicrosecondsPerInvocation="219960" standardDeviationMicrosecondsPerInvocation="68616"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="154" invocations="9" avgMicrosecondsPerInvocation="17192" maxMicrosecondsPerInvocation="50689" standardDeviationMicrosecondsPerInvocation="19219"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="114" invocations="45" avgMicrosecondsPerInvocation="2546" maxMicrosecondsPerInvocation="25749" standardDeviationMicrosecondsPerInvocation="5934"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="82" invocations="23" avgMicrosecondsPerInvocation="3598" maxMicrosecondsPerInvocation="32399" standardDeviationMicrosecondsPerInvocation="8829"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="80" invocations="9" avgMicrosecondsPerInvocation="8952" maxMicrosecondsPerInvocation="47912" standardDeviationMicrosecondsPerInvocation="14477"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="76" invocations="9" avgMicrosecondsPerInvocation="8462" maxMicrosecondsPerInvocation="26454" standardDeviationMicrosecondsPerInvocation="9733"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="69" invocations="258" avgMicrosecondsPerInvocation="269" maxMicrosecondsPerInvocation="15746" standardDeviationMicrosecondsPerInvocation="1198"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="67" invocations="9" avgMicrosecondsPerInvocation="7533" maxMicrosecondsPerInvocation="26690" standardDeviationMicrosecondsPerInvocation="9872"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="49" invocations="1" avgMicrosecondsPerInvocation="49515" maxMicrosecondsPerInvocation="49515" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="46" invocations="9" avgMicrosecondsPerInvocation="5164" maxMicrosecondsPerInvocation="28445" standardDeviationMicrosecondsPerInvocation="8827"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

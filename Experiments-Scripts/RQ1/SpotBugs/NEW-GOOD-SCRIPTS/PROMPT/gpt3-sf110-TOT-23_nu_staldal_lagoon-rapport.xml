@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360742751" analysisTimestamp="1714591049249" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/52_lagoon/LagoonCLITEST/23/nu/staldal/lagoon</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="bb2cbf43f364a750ad35300f5f9497d0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in nu.staldal.lagoon.LagoonCLITest.testMainWithIncorrectPropertyFile(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="nu.staldal.lagoon.LagoonCLITest" primary="true">
+      <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" start="7" end="41" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java">
+        <Message>At LagoonCLITest.java:[lines 7-41]</Message>
+      </SourceLine>
+      <Message>In class nu.staldal.lagoon.LagoonCLITest</Message>
+    </Class>
+    <Method classname="nu.staldal.lagoon.LagoonCLITest" name="testMainWithIncorrectPropertyFile" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" start="24" end="32" startBytecode="0" endBytecode="86" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java"/>
+      <Message>In method nu.staldal.lagoon.LagoonCLITest.testMainWithIncorrectPropertyFile()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" primary="true" start="31" end="31" startBytecode="36" endBytecode="36" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java">
+      <Message>At LagoonCLITest.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="73cce318f28f50a50ae03959a4379578" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in nu.staldal.lagoon.LagoonCLITest.testMainWithIncorrectPropertyFile(): new java.io.PrintStream(OutputStream)</LongMessage>
+    <Class classname="nu.staldal.lagoon.LagoonCLITest" primary="true">
+      <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" start="7" end="41" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java">
+        <Message>At LagoonCLITest.java:[lines 7-41]</Message>
+      </SourceLine>
+      <Message>In class nu.staldal.lagoon.LagoonCLITest</Message>
+    </Class>
+    <Method classname="nu.staldal.lagoon.LagoonCLITest" name="testMainWithIncorrectPropertyFile" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" start="24" end="32" startBytecode="0" endBytecode="86" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java"/>
+      <Message>In method nu.staldal.lagoon.LagoonCLITest.testMainWithIncorrectPropertyFile()</Message>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+      <Message>Called method new java.io.PrintStream(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" primary="true" start="25" end="25" startBytecode="13" endBytecode="13" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java">
+      <Message>At LagoonCLITest.java:[line 25]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="1f4f081d0aa68fb3631497f218eeae3f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in nu.staldal.lagoon.LagoonCLITest.testMainWithNoArgs(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="nu.staldal.lagoon.LagoonCLITest" primary="true">
+      <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" start="7" end="41" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java">
+        <Message>At LagoonCLITest.java:[lines 7-41]</Message>
+      </SourceLine>
+      <Message>In class nu.staldal.lagoon.LagoonCLITest</Message>
+    </Class>
+    <Method classname="nu.staldal.lagoon.LagoonCLITest" name="testMainWithNoArgs" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" start="11" end="20" startBytecode="0" endBytecode="81" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java"/>
+      <Message>In method nu.staldal.lagoon.LagoonCLITest.testMainWithNoArgs()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" primary="true" start="19" end="19" startBytecode="31" endBytecode="31" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java">
+      <Message>At LagoonCLITest.java:[line 19]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="d8c82855e8611feb1936abdab90c6436" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in nu.staldal.lagoon.LagoonCLITest.testMainWithNoArgs(): new java.io.PrintStream(OutputStream)</LongMessage>
+    <Class classname="nu.staldal.lagoon.LagoonCLITest" primary="true">
+      <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" start="7" end="41" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java">
+        <Message>At LagoonCLITest.java:[lines 7-41]</Message>
+      </SourceLine>
+      <Message>In class nu.staldal.lagoon.LagoonCLITest</Message>
+    </Class>
+    <Method classname="nu.staldal.lagoon.LagoonCLITest" name="testMainWithNoArgs" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" start="11" end="20" startBytecode="0" endBytecode="81" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java"/>
+      <Message>In method nu.staldal.lagoon.LagoonCLITest.testMainWithNoArgs()</Message>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+      <Message>Called method new java.io.PrintStream(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="nu.staldal.lagoon.LagoonCLITest" primary="true" start="12" end="12" startBytecode="13" endBytecode="13" sourcefile="LagoonCLITest.java" sourcepath="nu/staldal/lagoon/LagoonCLITest.java">
+      <Message>At LagoonCLITest.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>nu.staldal.lagoon.LagoonCLI</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:02 +0100" total_classes="1" referenced_classes="14" total_bugs="4" total_size="19" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.68" clock_seconds="1.97" peak_mbytes="190.55" alloc_mbytes="7104.00" gc_seconds="0.19" priority_1="4">
+    <FileStats path="nu/staldal/lagoon/LagoonCLITest.java" bugCount="4" size="19" bugHash="88f3b4ccf488d5cf02dab958e30f7895"/>
+    <PackageStats package="nu.staldal.lagoon" total_bugs="4" total_types="1" total_size="19" priority_1="4">
+      <ClassStats class="nu.staldal.lagoon.LagoonCLITest" sourceFile="LagoonCLITest.java" interface="false" size="19" bugs="4" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="309" invocations="343" avgMicrosecondsPerInvocation="903" maxMicrosecondsPerInvocation="34182" standardDeviationMicrosecondsPerInvocation="3176"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="227" invocations="14" avgMicrosecondsPerInvocation="16238" maxMicrosecondsPerInvocation="191747" standardDeviationMicrosecondsPerInvocation="48828"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="90" invocations="63" avgMicrosecondsPerInvocation="1439" maxMicrosecondsPerInvocation="22855" standardDeviationMicrosecondsPerInvocation="3371"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="85" invocations="14" avgMicrosecondsPerInvocation="6093" maxMicrosecondsPerInvocation="22641" standardDeviationMicrosecondsPerInvocation="7855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="67" invocations="34" avgMicrosecondsPerInvocation="1994" maxMicrosecondsPerInvocation="46505" standardDeviationMicrosecondsPerInvocation="7858"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="58" invocations="4" avgMicrosecondsPerInvocation="14557" maxMicrosecondsPerInvocation="56180" standardDeviationMicrosecondsPerInvocation="24037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="55" invocations="14" avgMicrosecondsPerInvocation="3966" maxMicrosecondsPerInvocation="22743" standardDeviationMicrosecondsPerInvocation="6038"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="53" invocations="307" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="8394" standardDeviationMicrosecondsPerInvocation="637"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="38" invocations="14" avgMicrosecondsPerInvocation="2771" maxMicrosecondsPerInvocation="16740" standardDeviationMicrosecondsPerInvocation="4522"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteCheckReturnValueAnnotations" totalMilliseconds="34" invocations="14" avgMicrosecondsPerInvocation="2496" maxMicrosecondsPerInvocation="32188" standardDeviationMicrosecondsPerInvocation="8238"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="26" invocations="14" avgMicrosecondsPerInvocation="1881" maxMicrosecondsPerInvocation="8576" standardDeviationMicrosecondsPerInvocation="2626"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="26" invocations="4" avgMicrosecondsPerInvocation="6554" maxMicrosecondsPerInvocation="21561" standardDeviationMicrosecondsPerInvocation="8738"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="25" invocations="345" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="3689" standardDeviationMicrosecondsPerInvocation="201"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

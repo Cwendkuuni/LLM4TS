@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360749772" analysisTimestamp="1714602653815" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/45_lotus/PhaseTEST/25/lotus/core/phases</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="67cfd5f1aeb48cd0942e33cdad09eb2e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.CleanupPhase in lotus.core.phases.PhaseTest.testNextPhase_EndOfTurnPhase() at PhaseTest.java:[line 82] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/CleanupPhase;">
+      <SourceLine classname="lotus.core.phases.CleanupPhase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.CleanupPhase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_EndOfTurnPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="80" end="83" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_EndOfTurnPhase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="82" end="82" startBytecode="19" endBytecode="19" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 82]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="63ae56d14a5990fff0be88044ce46e36" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.CombatBeginningPhase in lotus.core.phases.PhaseTest.testNextPhase_Main1Phase() at PhaseTest.java:[line 33] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/CombatBeginningPhase;">
+      <SourceLine classname="lotus.core.phases.CombatBeginningPhase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.CombatBeginningPhase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_Main1Phase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="31" end="34" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_Main1Phase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="33" end="33" startBytecode="19" endBytecode="19" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 33]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="5d85cc66d61d5059f699f84aee909987" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.CombatDamagePhase in lotus.core.phases.PhaseTest.testNextPhase_DeclareBlockersPhase() at PhaseTest.java:[line 54] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/CombatDamagePhase;">
+      <SourceLine classname="lotus.core.phases.CombatDamagePhase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.CombatDamagePhase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_DeclareBlockersPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="52" end="55" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_DeclareBlockersPhase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="54" end="54" startBytecode="19" endBytecode="19" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 54]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="623d925062eebceaf57299c75e743af" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.CombatEndPhase in lotus.core.phases.PhaseTest.testNextPhase_CombatDamagePhase() at PhaseTest.java:[line 61] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/CombatEndPhase;">
+      <SourceLine classname="lotus.core.phases.CombatEndPhase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.CombatEndPhase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_CombatDamagePhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="59" end="62" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_CombatDamagePhase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="61" end="61" startBytecode="19" endBytecode="19" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="8bd87e741caa1a186c26b9744a6b72a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.DeclareAttackersPhase in lotus.core.phases.PhaseTest.testNextPhase_CombatBeginningPhase() at PhaseTest.java:[line 40] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/DeclareAttackersPhase;">
+      <SourceLine classname="lotus.core.phases.DeclareAttackersPhase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.DeclareAttackersPhase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_CombatBeginningPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="38" end="41" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_CombatBeginningPhase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="40" end="40" startBytecode="19" endBytecode="19" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="8db734e2bcce959667452e6c3c135a61" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.DeclareBlockersPhase in lotus.core.phases.PhaseTest.testNextPhase_DeclareAttackersPhase() at PhaseTest.java:[line 47] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/DeclareBlockersPhase;">
+      <SourceLine classname="lotus.core.phases.DeclareBlockersPhase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.DeclareBlockersPhase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_DeclareAttackersPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="45" end="48" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_DeclareAttackersPhase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="47" end="47" startBytecode="19" endBytecode="19" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="e1c86b187702c1f2b1bad35d8eff2886" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.DrawPhase in lotus.core.phases.PhaseTest.testNextPhase_UpkeepPhase() at PhaseTest.java:[line 19] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/DrawPhase;">
+      <SourceLine classname="lotus.core.phases.DrawPhase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.DrawPhase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_UpkeepPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="17" end="20" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_UpkeepPhase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="19" end="19" startBytecode="19" endBytecode="19" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 19]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="4862b145f0848e5e64f64c3ea9fb56b2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.EndOfTurnPhase in lotus.core.phases.PhaseTest.testNextPhase_Main2Phase() at PhaseTest.java:[line 75] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/EndOfTurnPhase;">
+      <SourceLine classname="lotus.core.phases.EndOfTurnPhase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.EndOfTurnPhase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_Main2Phase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="73" end="76" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_Main2Phase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="75" end="75" startBytecode="19" endBytecode="19" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 75]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="3ac1d114060f255be579208384a459c5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.Main1Phase in lotus.core.phases.PhaseTest.testNextPhase_DrawPhase() at PhaseTest.java:[line 26] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/Main1Phase;">
+      <SourceLine classname="lotus.core.phases.Main1Phase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.Main1Phase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_DrawPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="24" end="27" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_DrawPhase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="26" end="26" startBytecode="19" endBytecode="19" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 26]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="6edbf3b2175f56173b595d9d407431cb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.Main2Phase in lotus.core.phases.PhaseTest.testNextPhase_CombatEndPhase() at PhaseTest.java:[line 68] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/Main2Phase;">
+      <SourceLine classname="lotus.core.phases.Main2Phase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.Main2Phase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_CombatEndPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="66" end="69" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_CombatEndPhase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="68" end="68" startBytecode="19" endBytecode="19" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 68]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="42fc1efa78ebc1539affb5f343d31224" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.PlayerChangePhase in lotus.core.phases.PhaseTest.testNextPhase_CleanupPhase() at PhaseTest.java:[line 89] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/PlayerChangePhase;">
+      <SourceLine classname="lotus.core.phases.PlayerChangePhase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.PlayerChangePhase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_CleanupPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="87" end="90" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_CleanupPhase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="89" end="89" startBytecode="19" endBytecode="19" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 89]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="306dc0ee6e8d9875abb119ee2e97edca" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.UntapPhase in lotus.core.phases.PhaseTest.testNextPhase_PlayerChangePhase() at PhaseTest.java:[line 97] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/UntapPhase;">
+      <SourceLine classname="lotus.core.phases.UntapPhase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.UntapPhase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_PlayerChangePhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="94" end="98" startBytecode="0" endBytecode="72" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_PlayerChangePhase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="97" end="97" startBytecode="29" endBytecode="29" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 97]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="aaf97bdc024c1a52bde4ac85418a57dc" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type lotus.core.phases.UpkeepPhase in lotus.core.phases.PhaseTest.testNextPhase_UntapPhase() at PhaseTest.java:[line 12] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Llotus/core/phases/UpkeepPhase;">
+      <SourceLine classname="lotus.core.phases.UpkeepPhase">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type lotus.core.phases.UpkeepPhase</Message>
+    </Type>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_UntapPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="11" end="13" startBytecode="0" endBytecode="44" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_UntapPhase()</Message>
+    </Method>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="12" end="12" startBytecode="9" endBytecode="9" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="b5858ef345b6b94c31b26a5765b3ec38" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_CleanupPhase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_CleanupPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="87" end="90" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_CleanupPhase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="87" end="87" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 87]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="f6d5709c39a04bb645082c369cdfe5bf" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_CombatBeginningPhase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_CombatBeginningPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="38" end="41" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_CombatBeginningPhase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="38" end="38" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 38]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="984559df66013f743dae76e420be7683" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_CombatDamagePhase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_CombatDamagePhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="59" end="62" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_CombatDamagePhase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="59" end="59" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 59]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="d23f31227950e2ceadb6c492662e467c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_CombatEndPhase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_CombatEndPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="66" end="69" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_CombatEndPhase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="66" end="66" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 66]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="1e1549212f850a671cf4c1eb04640e65" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_DeclareAttackersPhase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_DeclareAttackersPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="45" end="48" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_DeclareAttackersPhase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="45" end="45" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 45]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="7415ef36bc3517c9498c7b95c98d3a28" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_DeclareBlockersPhase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_DeclareBlockersPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="52" end="55" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_DeclareBlockersPhase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="52" end="52" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 52]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="449e7f7a2856843b6c3591aa202eff66" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_DrawPhase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_DrawPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="24" end="27" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_DrawPhase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="24" end="24" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="7811d116e7d1a1e20b1b808c9496f34" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_EndOfTurnPhase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_EndOfTurnPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="80" end="83" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_EndOfTurnPhase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="80" end="80" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 80]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="7cecabe87b74f55165711ee0a7c80447" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_Main1Phase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_Main1Phase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="31" end="34" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_Main1Phase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="31" end="31" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="6da0834a427caac9746e8c37166c8e93" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_Main2Phase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_Main2Phase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="73" end="76" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_Main2Phase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="73" end="73" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 73]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="d26639a700d2fe8897d927a49c59eef1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_PlayerChangePhase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_PlayerChangePhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="94" end="98" startBytecode="0" endBytecode="72" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_PlayerChangePhase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="94" end="94" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 94]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="9c2698cb77b1a7213738fd46a9915b92" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.currentPhase depuis la méthode d&apos;une instance lotus.core.phases.PhaseTest.testNextPhase_UpkeepPhase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="98" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-98]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase_UpkeepPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="17" end="20" startBytecode="0" endBytecode="58" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase_UpkeepPhase()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="currentPhase" signature="Llotus/core/phases/Phase;" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.currentPhase</Message>
+    </Field>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="17" end="17" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" abbrev="ST" category="STYLE">
+    <ShortDescription>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortDescription>
+    <Details><![CDATA[
+
+<p>La méthode de l'instance écrit la valeur d'un champ statique. Cela peut être difficile à gérer si plusieurs instances ont la possibilité d'écrire cette valeur et cela ressemble surtout à une mauvaise pratique.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ST">
+    <Description>Mauvaise utilisation de champs statiques</Description>
+  </BugCode>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="16">
+    <MissingClass>lotus.core.Game</MissingClass>
+    <MissingClass>lotus.core.phases.CleanupPhase</MissingClass>
+    <MissingClass>lotus.core.phases.CombatBeginningPhase</MissingClass>
+    <MissingClass>lotus.core.phases.CombatDamagePhase</MissingClass>
+    <MissingClass>lotus.core.phases.CombatEndPhase</MissingClass>
+    <MissingClass>lotus.core.phases.DeclareAttackersPhase</MissingClass>
+    <MissingClass>lotus.core.phases.DeclareBlockersPhase</MissingClass>
+    <MissingClass>lotus.core.phases.DrawPhase</MissingClass>
+    <MissingClass>lotus.core.phases.EndOfTurnPhase</MissingClass>
+    <MissingClass>lotus.core.phases.Main1Phase</MissingClass>
+    <MissingClass>lotus.core.phases.Main2Phase</MissingClass>
+    <MissingClass>lotus.core.phases.Phase</MissingClass>
+    <MissingClass>lotus.core.phases.PlayerChangePhase</MissingClass>
+    <MissingClass>lotus.core.phases.UntapPhase</MissingClass>
+    <MissingClass>lotus.core.phases.UpkeepPhase</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:09 +0100" total_classes="1" referenced_classes="9" total_bugs="25" total_size="68" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.71" clock_seconds="1.76" peak_mbytes="189.75" alloc_mbytes="7104.00" gc_seconds="0.12" priority_2="13" priority_1="12">
+    <FileStats path="lotus/core/phases/PhaseTest.java" bugCount="25" size="68" bugHash="4b19cb92a2968acffd7c73cf5f80b3d0"/>
+    <PackageStats package="lotus.core.phases" total_bugs="25" total_types="1" total_size="68" priority_2="13" priority_1="12">
+      <ClassStats class="lotus.core.phases.PhaseTest" sourceFile="PhaseTest.java" interface="false" size="68" bugs="25" priority_2="13" priority_1="12"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="225" invocations="307" avgMicrosecondsPerInvocation="733" maxMicrosecondsPerInvocation="15968" standardDeviationMicrosecondsPerInvocation="1631"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="158" invocations="9" avgMicrosecondsPerInvocation="17644" maxMicrosecondsPerInvocation="142627" standardDeviationMicrosecondsPerInvocation="44294"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="88" invocations="9" avgMicrosecondsPerInvocation="9807" maxMicrosecondsPerInvocation="25782" standardDeviationMicrosecondsPerInvocation="10677"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="74" invocations="9" avgMicrosecondsPerInvocation="8279" maxMicrosecondsPerInvocation="31337" standardDeviationMicrosecondsPerInvocation="12087"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="62" invocations="47" avgMicrosecondsPerInvocation="1326" maxMicrosecondsPerInvocation="14400" standardDeviationMicrosecondsPerInvocation="2849"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="61" invocations="14" avgMicrosecondsPerInvocation="4426" maxMicrosecondsPerInvocation="58397" standardDeviationMicrosecondsPerInvocation="14975"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="47" invocations="1" avgMicrosecondsPerInvocation="47559" maxMicrosecondsPerInvocation="47559" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="41" invocations="27" avgMicrosecondsPerInvocation="1532" maxMicrosecondsPerInvocation="12575" standardDeviationMicrosecondsPerInvocation="2269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="34" invocations="14" avgMicrosecondsPerInvocation="2494" maxMicrosecondsPerInvocation="19436" standardDeviationMicrosecondsPerInvocation="4720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="34" invocations="37" avgMicrosecondsPerInvocation="920" maxMicrosecondsPerInvocation="21258" standardDeviationMicrosecondsPerInvocation="3502"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="33" invocations="258" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="3584" standardDeviationMicrosecondsPerInvocation="298"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.NonExceptionDominatorsAnalysisFactory" totalMilliseconds="31" invocations="12" avgMicrosecondsPerInvocation="2588" maxMicrosecondsPerInvocation="15405" standardDeviationMicrosecondsPerInvocation="5097"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="30" invocations="9" avgMicrosecondsPerInvocation="3426" maxMicrosecondsPerInvocation="10225" standardDeviationMicrosecondsPerInvocation="3786"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="29" invocations="309" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="4602" standardDeviationMicrosecondsPerInvocation="279"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="26" invocations="14" avgMicrosecondsPerInvocation="1895" maxMicrosecondsPerInvocation="13273" standardDeviationMicrosecondsPerInvocation="3224"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="23" invocations="9" avgMicrosecondsPerInvocation="2578" maxMicrosecondsPerInvocation="13537" standardDeviationMicrosecondsPerInvocation="4205"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

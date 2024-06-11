@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360740483" analysisTimestamp="1714577926990" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/compiler/ExploitAssignsTEST/14/com/google/javascript/jscomp</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b7260944f7b89b4767e4e99e336ff567" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.javascript.jscomp.ExploitAssignsTest.testCollapseAssign()</LongMessage>
+    <Class classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="5" end="41" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+        <Message>At ExploitAssignsTest.java:[lines 5-41]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.ExploitAssignsTest</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.ExploitAssignsTest" name="testCollapseAssign" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="15" end="17" startBytecode="0" endBytecode="4" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java"/>
+      <Message>In method com.google.javascript.jscomp.ExploitAssignsTest.testCollapseAssign()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true" start="15" end="15" startBytecode="7" endBytecode="7" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+      <Message>At ExploitAssignsTest.java:[line 15]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="2810ef25f288c56bed9d5238daf80852" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.javascript.jscomp.ExploitAssignsTest.testCollapseAssignEqualTo()</LongMessage>
+    <Class classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="5" end="41" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+        <Message>At ExploitAssignsTest.java:[lines 5-41]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.ExploitAssignsTest</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.ExploitAssignsTest" name="testCollapseAssignEqualTo" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="27" end="29" startBytecode="0" endBytecode="4" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java"/>
+      <Message>In method com.google.javascript.jscomp.ExploitAssignsTest.testCollapseAssignEqualTo()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true" start="27" end="27" startBytecode="7" endBytecode="7" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+      <Message>At ExploitAssignsTest.java:[line 27]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="a7828babd305eb0edf1f7dd0d0720bf3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.javascript.jscomp.ExploitAssignsTest.testIsCollapsibleValue()</LongMessage>
+    <Class classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="5" end="41" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+        <Message>At ExploitAssignsTest.java:[lines 5-41]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.ExploitAssignsTest</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.ExploitAssignsTest" name="testIsCollapsibleValue" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="21" end="23" startBytecode="0" endBytecode="4" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java"/>
+      <Message>In method com.google.javascript.jscomp.ExploitAssignsTest.testIsCollapsibleValue()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true" start="21" end="21" startBytecode="7" endBytecode="7" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+      <Message>At ExploitAssignsTest.java:[line 21]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="8f412c14d066df48d88ee7a931b4a5f5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.javascript.jscomp.ExploitAssignsTest.testIsNameAssignedTo()</LongMessage>
+    <Class classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="5" end="41" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+        <Message>At ExploitAssignsTest.java:[lines 5-41]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.ExploitAssignsTest</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.ExploitAssignsTest" name="testIsNameAssignedTo" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="39" end="41" startBytecode="0" endBytecode="4" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java"/>
+      <Message>In method com.google.javascript.jscomp.ExploitAssignsTest.testIsNameAssignedTo()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true" start="39" end="39" startBytecode="7" endBytecode="7" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+      <Message>At ExploitAssignsTest.java:[line 39]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="5a4f0a5ef855e3c3b1ca3aaab8ce16e1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.javascript.jscomp.ExploitAssignsTest.testIsSafeReplacement()</LongMessage>
+    <Class classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="5" end="41" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+        <Message>At ExploitAssignsTest.java:[lines 5-41]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.ExploitAssignsTest</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.ExploitAssignsTest" name="testIsSafeReplacement" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="33" end="35" startBytecode="0" endBytecode="4" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java"/>
+      <Message>In method com.google.javascript.jscomp.ExploitAssignsTest.testIsSafeReplacement()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true" start="33" end="33" startBytecode="7" endBytecode="7" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+      <Message>At ExploitAssignsTest.java:[line 33]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b744a9a78cfacbe4a283a83a4d018713" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.javascript.jscomp.ExploitAssignsTest.testOptimizeSubtree()</LongMessage>
+    <Class classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="5" end="41" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+        <Message>At ExploitAssignsTest.java:[lines 5-41]</Message>
+      </SourceLine>
+      <Message>In class com.google.javascript.jscomp.ExploitAssignsTest</Message>
+    </Class>
+    <Method classname="com.google.javascript.jscomp.ExploitAssignsTest" name="testOptimizeSubtree" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" start="9" end="11" startBytecode="0" endBytecode="4" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java"/>
+      <Message>In method com.google.javascript.jscomp.ExploitAssignsTest.testOptimizeSubtree()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.javascript.jscomp.ExploitAssignsTest" primary="true" start="9" end="9" startBytecode="7" endBytecode="7" sourcefile="ExploitAssignsTest.java" sourcepath="com/google/javascript/jscomp/ExploitAssignsTest.java">
+      <Message>At ExploitAssignsTest.java:[line 9]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>com.google.javascript.jscomp.ExploitAssigns</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:00 +0100" total_classes="1" referenced_classes="9" total_bugs="6" total_size="21" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.54" clock_seconds="3.83" peak_mbytes="188.77" alloc_mbytes="7104.00" gc_seconds="0.25" priority_1="6">
+    <FileStats path="com/google/javascript/jscomp/ExploitAssignsTest.java" bugCount="6" size="21" bugHash="ccdf5d0f3ed40b91e411902af0166aba"/>
+    <PackageStats package="com.google.javascript.jscomp" total_bugs="6" total_types="1" total_size="21" priority_1="6">
+      <ClassStats class="com.google.javascript.jscomp.ExploitAssignsTest" sourceFile="ExploitAssignsTest.java" interface="false" size="21" bugs="6" priority_1="6"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="651" invocations="292" avgMicrosecondsPerInvocation="2230" maxMicrosecondsPerInvocation="50312" standardDeviationMicrosecondsPerInvocation="6469"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="275" invocations="9" avgMicrosecondsPerInvocation="30564" maxMicrosecondsPerInvocation="270153" standardDeviationMicrosecondsPerInvocation="84710"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="187" invocations="258" avgMicrosecondsPerInvocation="725" maxMicrosecondsPerInvocation="26914" standardDeviationMicrosecondsPerInvocation="3428"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="169" invocations="7" avgMicrosecondsPerInvocation="24251" maxMicrosecondsPerInvocation="166740" standardDeviationMicrosecondsPerInvocation="58176"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="150" invocations="9" avgMicrosecondsPerInvocation="16733" maxMicrosecondsPerInvocation="84217" standardDeviationMicrosecondsPerInvocation="27273"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="121" invocations="40" avgMicrosecondsPerInvocation="3039" maxMicrosecondsPerInvocation="31722" standardDeviationMicrosecondsPerInvocation="6486"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="111" invocations="9" avgMicrosecondsPerInvocation="12359" maxMicrosecondsPerInvocation="50624" standardDeviationMicrosecondsPerInvocation="17765"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="91" invocations="9" avgMicrosecondsPerInvocation="10197" maxMicrosecondsPerInvocation="43541" standardDeviationMicrosecondsPerInvocation="13991"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="82" invocations="7" avgMicrosecondsPerInvocation="11811" maxMicrosecondsPerInvocation="71463" standardDeviationMicrosecondsPerInvocation="24555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="77" invocations="1" avgMicrosecondsPerInvocation="77097" maxMicrosecondsPerInvocation="77097" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="75" invocations="7" avgMicrosecondsPerInvocation="10748" maxMicrosecondsPerInvocation="35177" standardDeviationMicrosecondsPerInvocation="11980"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="73" invocations="23" avgMicrosecondsPerInvocation="3216" maxMicrosecondsPerInvocation="49254" standardDeviationMicrosecondsPerInvocation="10152"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

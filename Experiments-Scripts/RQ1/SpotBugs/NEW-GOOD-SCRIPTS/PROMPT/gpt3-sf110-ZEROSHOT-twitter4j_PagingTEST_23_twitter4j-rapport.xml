@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360753760" analysisTimestamp="1714603115835" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/twitter4j/PagingTEST/23/twitter4j</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="11832827a35ee590f6ccbac964d074df" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode twitter4j.PagingTest.testInvalidCountConstructor()</LongMessage>
+    <Class classname="twitter4j.PagingTest" primary="true">
+      <SourceLine classname="twitter4j.PagingTest" start="6" end="214" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java">
+        <Message>At PagingTest.java:[lines 6-214]</Message>
+      </SourceLine>
+      <Message>In class twitter4j.PagingTest</Message>
+    </Class>
+    <Method classname="twitter4j.PagingTest" name="testInvalidCountConstructor" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="twitter4j.PagingTest" start="92" end="94" startBytecode="0" endBytecode="7" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java"/>
+      <Message>In method twitter4j.PagingTest.testInvalidCountConstructor()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="11" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="twitter4j.PagingTest" primary="true" start="93" end="93" startBytecode="10" endBytecode="10" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java">
+      <Message>At PagingTest.java:[line 93]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="17ce73d4f151dc79b5f42655ea1e8350" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode twitter4j.PagingTest.testInvalidMaxIdConstructor()</LongMessage>
+    <Class classname="twitter4j.PagingTest" primary="true">
+      <SourceLine classname="twitter4j.PagingTest" start="6" end="214" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java">
+        <Message>At PagingTest.java:[lines 6-214]</Message>
+      </SourceLine>
+      <Message>In class twitter4j.PagingTest</Message>
+    </Class>
+    <Method classname="twitter4j.PagingTest" name="testInvalidMaxIdConstructor" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="twitter4j.PagingTest" start="104" end="106" startBytecode="0" endBytecode="7" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java"/>
+      <Message>In method twitter4j.PagingTest.testInvalidMaxIdConstructor()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="13" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="twitter4j.PagingTest" primary="true" start="105" end="105" startBytecode="12" endBytecode="12" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java">
+      <Message>At PagingTest.java:[line 105]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b313348108b8d340c140ea5907d381be" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode twitter4j.PagingTest.testInvalidPageConstructor()</LongMessage>
+    <Class classname="twitter4j.PagingTest" primary="true">
+      <SourceLine classname="twitter4j.PagingTest" start="6" end="214" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java">
+        <Message>At PagingTest.java:[lines 6-214]</Message>
+      </SourceLine>
+      <Message>In class twitter4j.PagingTest</Message>
+    </Class>
+    <Method classname="twitter4j.PagingTest" name="testInvalidPageConstructor" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="twitter4j.PagingTest" start="86" end="88" startBytecode="0" endBytecode="7" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java"/>
+      <Message>In method twitter4j.PagingTest.testInvalidPageConstructor()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="11" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="twitter4j.PagingTest" primary="true" start="87" end="87" startBytecode="10" endBytecode="10" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java">
+      <Message>At PagingTest.java:[line 87]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="c6e02654bd35c22f28a226cf9545d662" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode twitter4j.PagingTest.testInvalidSinceIdConstructor()</LongMessage>
+    <Class classname="twitter4j.PagingTest" primary="true">
+      <SourceLine classname="twitter4j.PagingTest" start="6" end="214" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java">
+        <Message>At PagingTest.java:[lines 6-214]</Message>
+      </SourceLine>
+      <Message>In class twitter4j.PagingTest</Message>
+    </Class>
+    <Method classname="twitter4j.PagingTest" name="testInvalidSinceIdConstructor" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="twitter4j.PagingTest" start="98" end="100" startBytecode="0" endBytecode="7" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java"/>
+      <Message>In method twitter4j.PagingTest.testInvalidSinceIdConstructor()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="13" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="twitter4j.PagingTest" primary="true" start="99" end="99" startBytecode="12" endBytecode="12" sourcefile="PagingTest.java" sourcepath="twitter4j/PagingTest.java">
+      <Message>At PagingTest.java:[line 99]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>twitter4j.Paging</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:13 +0100" total_classes="1" referenced_classes="12" total_bugs="4" total_size="161" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.51" clock_seconds="1.73" peak_mbytes="192.19" alloc_mbytes="7104.00" gc_seconds="0.11" priority_1="4">
+    <FileStats path="twitter4j/PagingTest.java" bugCount="4" size="161" bugHash="f90583d357a12ce75fb882d206ce47ee"/>
+    <PackageStats package="twitter4j" total_bugs="4" total_types="1" total_size="161" priority_1="4">
+      <ClassStats class="twitter4j.PagingTest" sourceFile="PagingTest.java" interface="false" size="161" bugs="4" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="250" invocations="317" avgMicrosecondsPerInvocation="790" maxMicrosecondsPerInvocation="36823" standardDeviationMicrosecondsPerInvocation="2476"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="203" invocations="88" avgMicrosecondsPerInvocation="2311" maxMicrosecondsPerInvocation="118242" standardDeviationMicrosecondsPerInvocation="12727"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="68" invocations="12" avgMicrosecondsPerInvocation="5717" maxMicrosecondsPerInvocation="17365" standardDeviationMicrosecondsPerInvocation="5827"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="54" invocations="282" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="13860" standardDeviationMicrosecondsPerInvocation="1011"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="54" invocations="26" avgMicrosecondsPerInvocation="2081" maxMicrosecondsPerInvocation="46245" standardDeviationMicrosecondsPerInvocation="8844"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="40" invocations="30" avgMicrosecondsPerInvocation="1355" maxMicrosecondsPerInvocation="22691" standardDeviationMicrosecondsPerInvocation="4117"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="40" invocations="12" avgMicrosecondsPerInvocation="3345" maxMicrosecondsPerInvocation="17875" standardDeviationMicrosecondsPerInvocation="4676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="36" invocations="12" avgMicrosecondsPerInvocation="3040" maxMicrosecondsPerInvocation="12790" standardDeviationMicrosecondsPerInvocation="4000"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="35" invocations="26" avgMicrosecondsPerInvocation="1379" maxMicrosecondsPerInvocation="16302" standardDeviationMicrosecondsPerInvocation="3023"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="31" invocations="12" avgMicrosecondsPerInvocation="2638" maxMicrosecondsPerInvocation="13467" standardDeviationMicrosecondsPerInvocation="4161"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="30" invocations="26" avgMicrosecondsPerInvocation="1166" maxMicrosecondsPerInvocation="6635" standardDeviationMicrosecondsPerInvocation="1356"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="29" invocations="26" avgMicrosecondsPerInvocation="1153" maxMicrosecondsPerInvocation="10889" standardDeviationMicrosecondsPerInvocation="2059"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="29" invocations="26" avgMicrosecondsPerInvocation="1128" maxMicrosecondsPerInvocation="9765" standardDeviationMicrosecondsPerInvocation="1938"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="28" invocations="26" avgMicrosecondsPerInvocation="1104" maxMicrosecondsPerInvocation="12617" standardDeviationMicrosecondsPerInvocation="2337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="27" invocations="26" avgMicrosecondsPerInvocation="1065" maxMicrosecondsPerInvocation="11918" standardDeviationMicrosecondsPerInvocation="2194"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="26" invocations="1" avgMicrosecondsPerInvocation="26241" maxMicrosecondsPerInvocation="26241" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

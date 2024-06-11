@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756321844" analysisTimestamp="1714595714522" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/joda/PartialTEST/3/org/joda/time</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="ecd7344ec02901a83a33c72b625de7ce" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.joda.time.PartialTest.partial</LongMessage>
+    <Class classname="org.joda.time.PartialTest" primary="true">
+      <SourceLine classname="org.joda.time.PartialTest" start="14" end="55" sourcefile="PartialTest.java" sourcepath="org/joda/time/PartialTest.java">
+        <Message>At PartialTest.java:[lines 14-55]</Message>
+      </SourceLine>
+      <Message>In class org.joda.time.PartialTest</Message>
+    </Class>
+    <Field classname="org.joda.time.PartialTest" name="partial" signature="Lorg/joda/time/Partial;" isStatic="false" primary="true">
+      <SourceLine classname="org.joda.time.PartialTest" sourcefile="PartialTest.java" sourcepath="org/joda/time/PartialTest.java">
+        <Message>In PartialTest.java</Message>
+      </SourceLine>
+      <Message>Field org.joda.time.PartialTest.partial</Message>
+    </Field>
+    <SourceLine classname="org.joda.time.PartialTest" primary="true" start="20" end="20" startBytecode="8" endBytecode="8" sourcefile="PartialTest.java" sourcepath="org/joda/time/PartialTest.java">
+      <Message>At PartialTest.java:[line 20]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="5">
+    <MissingClass>org.joda.time.Chronology</MissingClass>
+    <MissingClass>org.joda.time.DateTimeFieldType</MissingClass>
+    <MissingClass>org.joda.time.DateTimeUtils</MissingClass>
+    <MissingClass>org.joda.time.Partial</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:21 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="32" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.76" clock_seconds="1.76" peak_mbytes="191.01" alloc_mbytes="7104.00" gc_seconds="0.12" priority_2="1">
+    <FileStats path="org/joda/time/PartialTest.java" bugCount="1" size="32" bugHash="34bd1c3ce6672603529c94d4175229e4"/>
+    <PackageStats package="org.joda.time" total_bugs="1" total_types="1" total_size="32" priority_2="1">
+      <ClassStats class="org.joda.time.PartialTest" sourceFile="PartialTest.java" interface="false" size="32" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="461" invocations="304" avgMicrosecondsPerInvocation="1518" maxMicrosecondsPerInvocation="125118" standardDeviationMicrosecondsPerInvocation="7956"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="68" invocations="38" avgMicrosecondsPerInvocation="1809" maxMicrosecondsPerInvocation="21216" standardDeviationMicrosecondsPerInvocation="3686"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="68" invocations="9" avgMicrosecondsPerInvocation="7596" maxMicrosecondsPerInvocation="35181" standardDeviationMicrosecondsPerInvocation="11133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="57" invocations="265" avgMicrosecondsPerInvocation="217" maxMicrosecondsPerInvocation="10104" standardDeviationMicrosecondsPerInvocation="811"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="56" invocations="9" avgMicrosecondsPerInvocation="6297" maxMicrosecondsPerInvocation="24611" standardDeviationMicrosecondsPerInvocation="8304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="45" invocations="5" avgMicrosecondsPerInvocation="9155" maxMicrosecondsPerInvocation="43874" standardDeviationMicrosecondsPerInvocation="17361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="42" invocations="26" avgMicrosecondsPerInvocation="1647" maxMicrosecondsPerInvocation="19802" standardDeviationMicrosecondsPerInvocation="4143"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="29" invocations="5" avgMicrosecondsPerInvocation="5872" maxMicrosecondsPerInvocation="19712" standardDeviationMicrosecondsPerInvocation="7278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="29" invocations="5" avgMicrosecondsPerInvocation="5862" maxMicrosecondsPerInvocation="11425" standardDeviationMicrosecondsPerInvocation="4083"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantPoolGenFactory" totalMilliseconds="26" invocations="1" avgMicrosecondsPerInvocation="26437" maxMicrosecondsPerInvocation="26437" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="24" invocations="9" avgMicrosecondsPerInvocation="2711" maxMicrosecondsPerInvocation="16127" standardDeviationMicrosecondsPerInvocation="4901"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="22" invocations="9" avgMicrosecondsPerInvocation="2517" maxMicrosecondsPerInvocation="9598" standardDeviationMicrosecondsPerInvocation="3273"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="21" invocations="306" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="1338" standardDeviationMicrosecondsPerInvocation="94"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="21" invocations="1" avgMicrosecondsPerInvocation="21577" maxMicrosecondsPerInvocation="21577" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="20" invocations="1" avgMicrosecondsPerInvocation="20541" maxMicrosecondsPerInvocation="20541" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

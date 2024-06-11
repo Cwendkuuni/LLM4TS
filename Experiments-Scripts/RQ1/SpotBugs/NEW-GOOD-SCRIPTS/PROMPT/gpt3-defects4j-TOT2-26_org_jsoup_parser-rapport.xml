@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756233664" analysisTimestamp="1714603148096" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/Jsoup/28/26/org/jsoup/parser</Jar>
+  </Project>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="9cdc9902fc782ac9e0788dd55ffaf1ab" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in org.jsoup.parser.ParserTest.testParseInputWithNullHtml()</LongMessage>
+    <Class classname="org.jsoup.parser.ParserTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.ParserTest" start="11" end="50" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java">
+        <Message>At ParserTest.java:[lines 11-50]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.ParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.ParserTest" name="testParseInputWithNullHtml" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.ParserTest" start="41" end="50" startBytecode="0" endBytecode="121" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java"/>
+      <Message>In method org.jsoup.parser.ParserTest.testParseInputWithNullHtml()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.parser.ParserTest" primary="true" start="47" end="47" startBytecode="39" endBytecode="39" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java">
+      <Message>At ParserTest.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DCN_NULLPOINTER_EXCEPTION" abbrev="DCN" category="STYLE">
+    <ShortDescription>NullPointerException caught</ShortDescription>
+    <Details><![CDATA[
+   
+<p>
+According to SEI Cert rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">ERR08-J</a> NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
+<p>
+This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+  try {
+    String ms[] = m.split(" ");
+    return names.length != 1;
+  } catch (NullPointerException e) {
+    return false;
+  }
+}
+</code></pre>
+<p>
+A compliant solution would use a null-check as in the following example:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+    if (m == null) return false;
+    String ms[] = m.split(" ");
+    return names.length != 1;
+}
+</code></pre>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DCN">
+    <Description>Don&apos;t Catch NullPointer Exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="6">
+    <MissingClass>org.jsoup.nodes.Document</MissingClass>
+    <MissingClass>org.jsoup.parser.HtmlTreeBuilder</MissingClass>
+    <MissingClass>org.jsoup.parser.Parser</MissingClass>
+    <MissingClass>org.jsoup.parser.TreeBuilder</MissingClass>
+    <MissingClass>org.jsoup.parser.XmlTreeBuilder</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:03:53 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="26" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.73" clock_seconds="1.56" peak_mbytes="190.55" alloc_mbytes="7104.00" gc_seconds="0.13" priority_2="1">
+    <FileStats path="org/jsoup/parser/ParserTest.java" bugCount="1" size="26" bugHash="6ade74f2e3ddbd1ec667b24ce42fe979"/>
+    <PackageStats package="org.jsoup.parser" total_bugs="1" total_types="1" total_size="26" priority_2="1">
+      <ClassStats class="org.jsoup.parser.ParserTest" sourceFile="ParserTest.java" interface="false" size="26" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="248" invocations="312" avgMicrosecondsPerInvocation="797" maxMicrosecondsPerInvocation="16917" standardDeviationMicrosecondsPerInvocation="2022"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="175" invocations="61" avgMicrosecondsPerInvocation="2871" maxMicrosecondsPerInvocation="131664" standardDeviationMicrosecondsPerInvocation="16648"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="60" invocations="11" avgMicrosecondsPerInvocation="5489" maxMicrosecondsPerInvocation="15602" standardDeviationMicrosecondsPerInvocation="6337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="58" invocations="28" avgMicrosecondsPerInvocation="2083" maxMicrosecondsPerInvocation="32589" standardDeviationMicrosecondsPerInvocation="6273"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="41" invocations="4" avgMicrosecondsPerInvocation="10460" maxMicrosecondsPerInvocation="39333" standardDeviationMicrosecondsPerInvocation="16680"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="40" invocations="273" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="5165" standardDeviationMicrosecondsPerInvocation="411"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="30" invocations="11" avgMicrosecondsPerInvocation="2742" maxMicrosecondsPerInvocation="12929" standardDeviationMicrosecondsPerInvocation="3635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="27" invocations="11" avgMicrosecondsPerInvocation="2491" maxMicrosecondsPerInvocation="9117" standardDeviationMicrosecondsPerInvocation="3253"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="26" invocations="4" avgMicrosecondsPerInvocation="6563" maxMicrosecondsPerInvocation="20632" standardDeviationMicrosecondsPerInvocation="8129"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="25" invocations="314" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="1653" standardDeviationMicrosecondsPerInvocation="144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="23" invocations="11" avgMicrosecondsPerInvocation="2106" maxMicrosecondsPerInvocation="12700" standardDeviationMicrosecondsPerInvocation="3601"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="20" invocations="11" avgMicrosecondsPerInvocation="1901" maxMicrosecondsPerInvocation="8094" standardDeviationMicrosecondsPerInvocation="2609"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="19" invocations="4" avgMicrosecondsPerInvocation="4784" maxMicrosecondsPerInvocation="13947" standardDeviationMicrosecondsPerInvocation="5301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="18" invocations="4" avgMicrosecondsPerInvocation="4672" maxMicrosecondsPerInvocation="15409" standardDeviationMicrosecondsPerInvocation="6220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="17" invocations="4" avgMicrosecondsPerInvocation="4494" maxMicrosecondsPerInvocation="12605" standardDeviationMicrosecondsPerInvocation="4703"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="17" invocations="1" avgMicrosecondsPerInvocation="17037" maxMicrosecondsPerInvocation="17037" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

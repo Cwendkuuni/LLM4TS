@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756237972" analysisTimestamp="1714609675730" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/Lang/43/19/org/apache/commons/lang/text</Jar>
+  </Project>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" instanceHash="73772e53e7af02bf85675855397e8547" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Useless object created</ShortMessage>
+    <LongMessage>Useless object stored in variable var$1 of method org.apache.commons.lang.text.ExtendedMessageFormatTest.testFormatWithCustomFormat()</LongMessage>
+    <Class classname="org.apache.commons.lang.text.ExtendedMessageFormatTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormatTest" start="14" end="105" sourcefile="ExtendedMessageFormatTest.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormatTest.java">
+        <Message>At ExtendedMessageFormatTest.java:[lines 14-105]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang.text.ExtendedMessageFormatTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang.text.ExtendedMessageFormatTest" name="testFormatWithCustomFormat" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormatTest" start="99" end="105" startBytecode="0" endBytecode="110" sourcefile="ExtendedMessageFormatTest.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormatTest.java"/>
+      <Message>In method org.apache.commons.lang.text.ExtendedMessageFormatTest.testFormatWithCustomFormat()</Message>
+    </Method>
+    <String value="var$1">
+      <Message>Value var$1</Message>
+    </String>
+    <Type descriptor="Ljava/util/HashMap;">
+      <SourceLine classname="java.util.HashMap" start="340" end="1821" sourcefile="HashMap.java" sourcepath="java/util/HashMap.java">
+        <Message>At HashMap.java:[lines 340-1821]</Message>
+      </SourceLine>
+      <Message>Type java.util.HashMap</Message>
+    </Type>
+    <SourceLine classname="org.apache.commons.lang.text.ExtendedMessageFormatTest" primary="true" start="99" end="99" startBytecode="4" endBytecode="4" sourcefile="ExtendedMessageFormatTest.java" sourcepath="org/apache/commons/lang/text/ExtendedMessageFormatTest.java">
+      <Message>At ExtendedMessageFormatTest.java:[line 99]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="UC_USELESS_OBJECT" abbrev="UC" category="STYLE">
+    <ShortDescription>Useless object created</ShortDescription>
+    <Details><![CDATA[
+
+<p>Our analysis shows that this object is useless.
+It's created and modified, but its value never go outside of the method or produce any side-effect.
+Either there is a mistake and object was intended to be used or it can be removed.</p>
+<p>This analysis rarely produces false-positives. Common false-positive cases include:</p>
+<p>- This object used to implicitly throw some obscure exception.</p>
+<p>- This object used as a stub to generalize the code.</p>
+<p>- This object used to hold strong references to weak/soft-referenced objects.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UC">
+    <Description>Useless code</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.apache.commons.lang.text.ExtendedMessageFormat</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:03:57 +0100" total_classes="1" referenced_classes="15" total_bugs="1" total_size="68" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.95" clock_seconds="1.08" peak_mbytes="191.45" alloc_mbytes="7104.00" gc_seconds="0.04" priority_2="1">
+    <FileStats path="org/apache/commons/lang/text/ExtendedMessageFormatTest.java" bugCount="1" size="68" bugHash="a741d230f171b73e3f2f3d15628022bf"/>
+    <PackageStats package="org.apache.commons.lang.text" total_bugs="1" total_types="1" total_size="68" priority_2="1">
+      <ClassStats class="org.apache.commons.lang.text.ExtendedMessageFormatTest" sourceFile="ExtendedMessageFormatTest.java" interface="false" size="68" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="168" invocations="360" avgMicrosecondsPerInvocation="468" maxMicrosecondsPerInvocation="18015" standardDeviationMicrosecondsPerInvocation="1238"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="52" invocations="15" avgMicrosecondsPerInvocation="3502" maxMicrosecondsPerInvocation="15164" standardDeviationMicrosecondsPerInvocation="4566"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="50" invocations="97" avgMicrosecondsPerInvocation="525" maxMicrosecondsPerInvocation="4776" standardDeviationMicrosecondsPerInvocation="803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="47" invocations="15" avgMicrosecondsPerInvocation="3183" maxMicrosecondsPerInvocation="43190" standardDeviationMicrosecondsPerInvocation="10749"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="31" invocations="12" avgMicrosecondsPerInvocation="2648" maxMicrosecondsPerInvocation="28259" standardDeviationMicrosecondsPerInvocation="7727"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="30" invocations="35" avgMicrosecondsPerInvocation="883" maxMicrosecondsPerInvocation="17726" standardDeviationMicrosecondsPerInvocation="2977"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="28" invocations="15" avgMicrosecondsPerInvocation="1884" maxMicrosecondsPerInvocation="7414" standardDeviationMicrosecondsPerInvocation="2265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="26" invocations="14" avgMicrosecondsPerInvocation="1882" maxMicrosecondsPerInvocation="14752" standardDeviationMicrosecondsPerInvocation="3591"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="25" invocations="325" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="1265" standardDeviationMicrosecondsPerInvocation="153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="20" invocations="15" avgMicrosecondsPerInvocation="1390" maxMicrosecondsPerInvocation="9372" standardDeviationMicrosecondsPerInvocation="2302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="20" invocations="12" avgMicrosecondsPerInvocation="1682" maxMicrosecondsPerInvocation="11263" standardDeviationMicrosecondsPerInvocation="2911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="19" invocations="12" avgMicrosecondsPerInvocation="1663" maxMicrosecondsPerInvocation="11151" standardDeviationMicrosecondsPerInvocation="2876"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="19" invocations="14" avgMicrosecondsPerInvocation="1403" maxMicrosecondsPerInvocation="11527" standardDeviationMicrosecondsPerInvocation="2814"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="17" invocations="15" avgMicrosecondsPerInvocation="1136" maxMicrosecondsPerInvocation="11302" standardDeviationMicrosecondsPerInvocation="2752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="16" invocations="362" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="584" standardDeviationMicrosecondsPerInvocation="41"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="13" invocations="15" avgMicrosecondsPerInvocation="920" maxMicrosecondsPerInvocation="4195" standardDeviationMicrosecondsPerInvocation="1384"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420574517" analysisTimestamp="1714589292336" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/FEWSHOT/Jsoup/58/2/org/jsoup/parser</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="cb0eb50e50dd3e37c19e895644826560" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.parser.HtmlTreeBuilder in org.jsoup.parser.ParserTest.testGetTreeBuilder() at ParserTest.java:[line 43] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/parser/HtmlTreeBuilder;">
+      <SourceLine classname="org.jsoup.parser.HtmlTreeBuilder">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.parser.HtmlTreeBuilder</Message>
+    </Type>
+    <Class classname="org.jsoup.parser.ParserTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.ParserTest" start="17" end="146" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java">
+        <Message>At ParserTest.java:[lines 17-146]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.ParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.ParserTest" name="testGetTreeBuilder" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.ParserTest" start="39" end="44" startBytecode="0" endBytecode="63" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java"/>
+      <Message>In method org.jsoup.parser.ParserTest.testGetTreeBuilder()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.parser.ParserTest" primary="true" start="43" end="43" startBytecode="24" endBytecode="24" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java">
+      <Message>At ParserTest.java:[line 43]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="3470e42c601c6ad0a562c70063874f96" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.parser.HtmlTreeBuilder in org.jsoup.parser.ParserTest.testHtmlParser() at ParserTest.java:[line 138] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/parser/HtmlTreeBuilder;">
+      <SourceLine classname="org.jsoup.parser.HtmlTreeBuilder">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.parser.HtmlTreeBuilder</Message>
+    </Type>
+    <Class classname="org.jsoup.parser.ParserTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.ParserTest" start="17" end="146" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java">
+        <Message>At ParserTest.java:[lines 17-146]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.ParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.ParserTest" name="testHtmlParser" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.ParserTest" start="136" end="139" startBytecode="0" endBytecode="46" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java"/>
+      <Message>In method org.jsoup.parser.ParserTest.testHtmlParser()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.parser.ParserTest" primary="true" start="138" end="138" startBytecode="11" endBytecode="11" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java">
+      <Message>At ParserTest.java:[line 138]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="94b7bf2277228757ce4b423f50458eee" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.parser.XmlTreeBuilder in org.jsoup.parser.ParserTest.testXmlParser() at ParserTest.java:[line 145] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/parser/XmlTreeBuilder;">
+      <SourceLine classname="org.jsoup.parser.XmlTreeBuilder">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.parser.XmlTreeBuilder</Message>
+    </Type>
+    <Class classname="org.jsoup.parser.ParserTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.ParserTest" start="17" end="146" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java">
+        <Message>At ParserTest.java:[lines 17-146]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.ParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.ParserTest" name="testXmlParser" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.ParserTest" start="143" end="146" startBytecode="0" endBytecode="46" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java"/>
+      <Message>In method org.jsoup.parser.ParserTest.testXmlParser()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.parser.ParserTest" primary="true" start="145" end="145" startBytecode="11" endBytecode="11" sourcefile="ParserTest.java" sourcepath="org/jsoup/parser/ParserTest.java">
+      <Message>At ParserTest.java:[line 145]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="10">
+    <MissingClass>org.jsoup.Jsoup</MissingClass>
+    <MissingClass>org.jsoup.nodes.Document</MissingClass>
+    <MissingClass>org.jsoup.nodes.Element</MissingClass>
+    <MissingClass>org.jsoup.nodes.Node</MissingClass>
+    <MissingClass>org.jsoup.parser.HtmlTreeBuilder</MissingClass>
+    <MissingClass>org.jsoup.parser.ParseSettings</MissingClass>
+    <MissingClass>org.jsoup.parser.Parser</MissingClass>
+    <MissingClass>org.jsoup.parser.TreeBuilder</MissingClass>
+    <MissingClass>org.jsoup.parser.XmlTreeBuilder</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:14 +0100" total_classes="1" referenced_classes="11" total_bugs="3" total_size="77" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.99" clock_seconds="2.39" peak_mbytes="191.69" alloc_mbytes="7104.00" gc_seconds="0.14" priority_2="3">
+    <FileStats path="org/jsoup/parser/ParserTest.java" bugCount="3" size="77" bugHash="6e0b683ac57fd3e59f54ed49b303e753"/>
+    <PackageStats package="org.jsoup.parser" total_bugs="3" total_types="1" total_size="77" priority_2="3">
+      <ClassStats class="org.jsoup.parser.ParserTest" sourceFile="ParserTest.java" interface="false" size="77" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="523" invocations="325" avgMicrosecondsPerInvocation="1609" maxMicrosecondsPerInvocation="145533" standardDeviationMicrosecondsPerInvocation="9031"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="106" invocations="76" avgMicrosecondsPerInvocation="1396" maxMicrosecondsPerInvocation="19460" standardDeviationMicrosecondsPerInvocation="3376"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="85" invocations="11" avgMicrosecondsPerInvocation="7753" maxMicrosecondsPerInvocation="40295" standardDeviationMicrosecondsPerInvocation="11689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="72" invocations="33" avgMicrosecondsPerInvocation="2189" maxMicrosecondsPerInvocation="51903" standardDeviationMicrosecondsPerInvocation="8892"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="59" invocations="17" avgMicrosecondsPerInvocation="3529" maxMicrosecondsPerInvocation="50266" standardDeviationMicrosecondsPerInvocation="11723"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="58" invocations="17" avgMicrosecondsPerInvocation="3465" maxMicrosecondsPerInvocation="34102" standardDeviationMicrosecondsPerInvocation="7773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="53" invocations="17" avgMicrosecondsPerInvocation="3147" maxMicrosecondsPerInvocation="20403" standardDeviationMicrosecondsPerInvocation="5908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="49" invocations="11" avgMicrosecondsPerInvocation="4516" maxMicrosecondsPerInvocation="37560" standardDeviationMicrosecondsPerInvocation="10567"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="44" invocations="17" avgMicrosecondsPerInvocation="2598" maxMicrosecondsPerInvocation="14107" standardDeviationMicrosecondsPerInvocation="3321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="42" invocations="282" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="7156" standardDeviationMicrosecondsPerInvocation="569"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="39" invocations="11" avgMicrosecondsPerInvocation="3582" maxMicrosecondsPerInvocation="16354" standardDeviationMicrosecondsPerInvocation="5051"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="38" invocations="11" avgMicrosecondsPerInvocation="3544" maxMicrosecondsPerInvocation="29082" standardDeviationMicrosecondsPerInvocation="8161"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="37" invocations="327" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="11453" standardDeviationMicrosecondsPerInvocation="682"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="37" invocations="22" avgMicrosecondsPerInvocation="1711" maxMicrosecondsPerInvocation="14379" standardDeviationMicrosecondsPerInvocation="3062"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="35" invocations="11" avgMicrosecondsPerInvocation="3193" maxMicrosecondsPerInvocation="15302" standardDeviationMicrosecondsPerInvocation="4203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="34" invocations="17" avgMicrosecondsPerInvocation="2041" maxMicrosecondsPerInvocation="15391" standardDeviationMicrosecondsPerInvocation="4678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="33" invocations="17" avgMicrosecondsPerInvocation="1982" maxMicrosecondsPerInvocation="12368" standardDeviationMicrosecondsPerInvocation="2945"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420564701" analysisTimestamp="1714593795566" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT/Jsoup/21/22/org/jsoup/select</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="13ecfbbe889a40f352c09dcf1b0d66d0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$AllElements in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 52] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$AllElements;">
+      <SourceLine classname="org.jsoup.select.Evaluator$AllElements">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$AllElements</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="52" end="52" startBytecode="184" endBytecode="184" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 52]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="14df639a9989c80e193ad749ab34f530" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$Attribute in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 24] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$Attribute;">
+      <SourceLine classname="org.jsoup.select.Evaluator$Attribute">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$Attribute</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="24" end="24" startBytecode="65" endBytecode="65" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="ec47d3fbf81de08974608eb83697358f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$AttributeWithValue in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 28] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$AttributeWithValue;">
+      <SourceLine classname="org.jsoup.select.Evaluator$AttributeWithValue">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$AttributeWithValue</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="28" end="28" startBytecode="82" endBytecode="82" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 28]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="1db7beaa40c417347d8f30ba71127234" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$AttributeWithValueContaining in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 44] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$AttributeWithValueContaining;">
+      <SourceLine classname="org.jsoup.select.Evaluator$AttributeWithValueContaining">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$AttributeWithValueContaining</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="44" end="44" startBytecode="150" endBytecode="150" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 44]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="27e21931e9e3f1364b7c9aff0a61a59b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$AttributeWithValueEnding in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 40] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$AttributeWithValueEnding;">
+      <SourceLine classname="org.jsoup.select.Evaluator$AttributeWithValueEnding">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$AttributeWithValueEnding</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="40" end="40" startBytecode="133" endBytecode="133" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="5f8fdbefd065879eca954e6d91870b88" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$AttributeWithValueMatching in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 48] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$AttributeWithValueMatching;">
+      <SourceLine classname="org.jsoup.select.Evaluator$AttributeWithValueMatching">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$AttributeWithValueMatching</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="48" end="48" startBytecode="167" endBytecode="167" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 48]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="a070a8ba1fa1030f9c0a6e7a17f8cdc1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$AttributeWithValueNot in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 32] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$AttributeWithValueNot;">
+      <SourceLine classname="org.jsoup.select.Evaluator$AttributeWithValueNot">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$AttributeWithValueNot</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="32" end="32" startBytecode="99" endBytecode="99" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 32]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="8ba0d1db88fe96d83ab22b46199b8d98" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$AttributeWithValueStarting in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 36] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$AttributeWithValueStarting;">
+      <SourceLine classname="org.jsoup.select.Evaluator$AttributeWithValueStarting">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$AttributeWithValueStarting</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="36" end="36" startBytecode="116" endBytecode="116" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 36]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="a820176d9c8c5f2ac02c3357f0889413" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$Class in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 12] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$Class;">
+      <SourceLine classname="org.jsoup.select.Evaluator$Class">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$Class</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="12" end="12" startBytecode="14" endBytecode="14" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="8f72d6a3baf09047a3ed0fc8b235b83a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$ContainsOwnText in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 76] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$ContainsOwnText;">
+      <SourceLine classname="org.jsoup.select.Evaluator$ContainsOwnText">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$ContainsOwnText</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="76" end="76" startBytecode="286" endBytecode="286" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 76]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="957488279a1722ceff79edb9a0466bef" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$ContainsText in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 72] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$ContainsText;">
+      <SourceLine classname="org.jsoup.select.Evaluator$ContainsText">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$ContainsText</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="72" end="72" startBytecode="269" endBytecode="269" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 72]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="acfc6e678ed7c3663e071821e583e8d4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$Id in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 16] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$Id;">
+      <SourceLine classname="org.jsoup.select.Evaluator$Id">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$Id</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="16" end="16" startBytecode="31" endBytecode="31" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 16]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="516bb4a829d4329b028133527122eb45" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$IndexEquals in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 64] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$IndexEquals;">
+      <SourceLine classname="org.jsoup.select.Evaluator$IndexEquals">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$IndexEquals</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="64" end="64" startBytecode="235" endBytecode="235" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 64]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="bcab73087bc33e336ca28c1f0f835556" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$IndexGreaterThan in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 60] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$IndexGreaterThan;">
+      <SourceLine classname="org.jsoup.select.Evaluator$IndexGreaterThan">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$IndexGreaterThan</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="60" end="60" startBytecode="218" endBytecode="218" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 60]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="34cb21ba7ca32bbcfd69337310de14ee" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$IndexLessThan in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 56] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$IndexLessThan;">
+      <SourceLine classname="org.jsoup.select.Evaluator$IndexLessThan">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$IndexLessThan</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="56" end="56" startBytecode="201" endBytecode="201" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 56]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="56a01650ae3998adc83b51fb2a3eabf8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$Matches in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 80] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$Matches;">
+      <SourceLine classname="org.jsoup.select.Evaluator$Matches">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$Matches</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="80" end="80" startBytecode="303" endBytecode="303" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 80]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="a0654ab20d20033e51b21b43e930741d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$MatchesOwn in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 84] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$MatchesOwn;">
+      <SourceLine classname="org.jsoup.select.Evaluator$MatchesOwn">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$MatchesOwn</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="84" end="84" startBytecode="320" endBytecode="320" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 84]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="f269cd02b6d189b57ad3e83bf71c39bc" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator$Tag in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 20] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator$Tag;">
+      <SourceLine classname="org.jsoup.select.Evaluator$Tag">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator$Tag</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="20" end="20" startBytecode="48" endBytecode="48" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 20]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="e9a1083a26c52f454d18ab651a4d300b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.StructuralEvaluator$Has in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 68] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/StructuralEvaluator$Has;">
+      <SourceLine classname="org.jsoup.select.StructuralEvaluator$Has">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.StructuralEvaluator$Has</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="68" end="68" startBytecode="252" endBytecode="252" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 68]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="8c38963a14b7f544ff5ba3d6fc625326" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.StructuralEvaluator$Not in org.jsoup.select.QueryParserTest.testParse() at QueryParserTest.java:[line 88] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/StructuralEvaluator$Not;">
+      <SourceLine classname="org.jsoup.select.StructuralEvaluator$Not">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.StructuralEvaluator$Not</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="96" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-96]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="10" end="89" startBytecode="0" endBytecode="604" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="88" end="88" startBytecode="337" endBytecode="337" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 88]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="26">
+    <MissingClass>org.jsoup.select.Evaluator</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AllElements</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$Attribute</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValue</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValueContaining</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValueEnding</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValueMatching</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValueNot</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$AttributeWithValueStarting</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$Class</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$ContainsOwnText</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$ContainsText</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$Id</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$IndexEquals</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$IndexGreaterThan</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$IndexLessThan</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$Matches</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$MatchesOwn</MissingClass>
+    <MissingClass>org.jsoup.select.Evaluator$Tag</MissingClass>
+    <MissingClass>org.jsoup.select.QueryParser</MissingClass>
+    <MissingClass>org.jsoup.select.Selector</MissingClass>
+    <MissingClass>org.jsoup.select.Selector$SelectorParseException</MissingClass>
+    <MissingClass>org.jsoup.select.StructuralEvaluator</MissingClass>
+    <MissingClass>org.jsoup.select.StructuralEvaluator$Has</MissingClass>
+    <MissingClass>org.jsoup.select.StructuralEvaluator$Not</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:04 +0100" total_classes="1" referenced_classes="10" total_bugs="20" total_size="70" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.13" clock_seconds="1.55" peak_mbytes="191.77" alloc_mbytes="7104.00" gc_seconds="0.05" priority_2="20">
+    <FileStats path="org/jsoup/select/QueryParserTest.java" bugCount="20" size="70" bugHash="7c98f727b0f58337d0ccc3d81937970e"/>
+    <PackageStats package="org.jsoup.select" total_bugs="20" total_types="1" total_size="70" priority_2="20">
+      <ClassStats class="org.jsoup.select.QueryParserTest" sourceFile="QueryParserTest.java" interface="false" size="70" bugs="20" priority_2="20"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="263" invocations="332" avgMicrosecondsPerInvocation="792" maxMicrosecondsPerInvocation="21767" standardDeviationMicrosecondsPerInvocation="2352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="111" invocations="10" avgMicrosecondsPerInvocation="11158" maxMicrosecondsPerInvocation="59713" standardDeviationMicrosecondsPerInvocation="17867"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="60" invocations="45" avgMicrosecondsPerInvocation="1333" maxMicrosecondsPerInvocation="27025" standardDeviationMicrosecondsPerInvocation="4887"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="51" invocations="60" avgMicrosecondsPerInvocation="854" maxMicrosecondsPerInvocation="4385" standardDeviationMicrosecondsPerInvocation="978"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="46" invocations="10" avgMicrosecondsPerInvocation="4655" maxMicrosecondsPerInvocation="25641" standardDeviationMicrosecondsPerInvocation="7355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="43" invocations="273" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="12085" standardDeviationMicrosecondsPerInvocation="771"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="41" invocations="3" avgMicrosecondsPerInvocation="13907" maxMicrosecondsPerInvocation="36337" standardDeviationMicrosecondsPerInvocation="15860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="34" invocations="3" avgMicrosecondsPerInvocation="11503" maxMicrosecondsPerInvocation="22142" standardDeviationMicrosecondsPerInvocation="8526"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="31" invocations="4" avgMicrosecondsPerInvocation="7887" maxMicrosecondsPerInvocation="15476" standardDeviationMicrosecondsPerInvocation="5807"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="29" invocations="10" avgMicrosecondsPerInvocation="2983" maxMicrosecondsPerInvocation="14346" standardDeviationMicrosecondsPerInvocation="4542"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="28" invocations="3" avgMicrosecondsPerInvocation="9559" maxMicrosecondsPerInvocation="15466" standardDeviationMicrosecondsPerInvocation="6177"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="26" invocations="10" avgMicrosecondsPerInvocation="2686" maxMicrosecondsPerInvocation="13979" standardDeviationMicrosecondsPerInvocation="4053"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="26" invocations="3" avgMicrosecondsPerInvocation="8825" maxMicrosecondsPerInvocation="24380" standardDeviationMicrosecondsPerInvocation="11013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="21" invocations="10" avgMicrosecondsPerInvocation="2159" maxMicrosecondsPerInvocation="12376" standardDeviationMicrosecondsPerInvocation="3612"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

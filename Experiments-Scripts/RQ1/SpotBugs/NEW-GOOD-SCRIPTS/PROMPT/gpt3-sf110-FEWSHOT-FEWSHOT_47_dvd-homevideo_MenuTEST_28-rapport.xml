@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360745996" analysisTimestamp="1714587876311" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/FEWSHOT/47_dvd-homevideo/MenuTEST/28</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="2b4e7ce5a140e5ff848dc34d57f6b810" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode MenuTest.testDVDMainMenu()</LongMessage>
+    <Class classname="MenuTest" primary="true">
+      <SourceLine classname="MenuTest" start="5" end="56" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+        <Message>At MenuTest.java:[lines 5-56]</Message>
+      </SourceLine>
+      <Message>In class MenuTest</Message>
+    </Class>
+    <Method classname="MenuTest" name="testDVDMainMenu" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MenuTest" start="30" end="37" startBytecode="0" endBytecode="20" sourcefile="MenuTest.java" sourcepath="MenuTest.java"/>
+      <Message>In method MenuTest.testDVDMainMenu()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="26" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="MenuTest" primary="true" start="31" end="31" startBytecode="25" endBytecode="25" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+      <Message>At MenuTest.java:[line 31]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" instanceHash="3d0fece09d63b346e1824197f6a3642" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="440">
+    <ShortMessage>Chemin absolu codé en dur dans le code</ShortMessage>
+    <LongMessage>Chemin de fichier codé en dur dans le code de MenuTest.testCreateXML()</LongMessage>
+    <Class classname="MenuTest" primary="true">
+      <SourceLine classname="MenuTest" start="5" end="56" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+        <Message>At MenuTest.java:[lines 5-56]</Message>
+      </SourceLine>
+      <Message>In class MenuTest</Message>
+    </Class>
+    <Method classname="MenuTest" name="testCreateXML" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MenuTest" start="41" end="56" startBytecode="0" endBytecode="39" sourcefile="MenuTest.java" sourcepath="MenuTest.java"/>
+      <Message>In method MenuTest.testCreateXML()</Message>
+    </Method>
+    <String value="/path/to/output/vmgm.xml" role="FILE_NAME">
+      <Message>File name /path/to/output/vmgm.xml</Message>
+    </String>
+    <SourceLine classname="MenuTest" primary="true" start="44" end="44" startBytecode="21" endBytecode="21" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+      <Message>At MenuTest.java:[line 44]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" instanceHash="904a0cb62ba19f6c2cbd534941c5b8f2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="440">
+    <ShortMessage>Chemin absolu codé en dur dans le code</ShortMessage>
+    <LongMessage>Chemin de fichier codé en dur dans le code de MenuTest.testDVDMainMenu()</LongMessage>
+    <Class classname="MenuTest" primary="true">
+      <SourceLine classname="MenuTest" start="5" end="56" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+        <Message>At MenuTest.java:[lines 5-56]</Message>
+      </SourceLine>
+      <Message>In class MenuTest</Message>
+    </Class>
+    <Method classname="MenuTest" name="testDVDMainMenu" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MenuTest" start="30" end="37" startBytecode="0" endBytecode="20" sourcefile="MenuTest.java" sourcepath="MenuTest.java"/>
+      <Message>In method MenuTest.testDVDMainMenu()</Message>
+    </Method>
+    <String value="/path/to/file" role="FILE_NAME">
+      <Message>File name /path/to/file</Message>
+    </String>
+    <SourceLine classname="MenuTest" primary="true" start="30" end="30" startBytecode="6" endBytecode="6" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+      <Message>At MenuTest.java:[line 30]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="99380644917c9f6f039e741f47655c6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in MenuTest.testCreateXML(): new java.io.FileReader(File)</LongMessage>
+    <Class classname="MenuTest" primary="true">
+      <SourceLine classname="MenuTest" start="5" end="56" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+        <Message>At MenuTest.java:[lines 5-56]</Message>
+      </SourceLine>
+      <Message>In class MenuTest</Message>
+    </Class>
+    <Method classname="MenuTest" name="testCreateXML" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MenuTest" start="41" end="56" startBytecode="0" endBytecode="198" sourcefile="MenuTest.java" sourcepath="MenuTest.java"/>
+      <Message>In method MenuTest.testCreateXML()</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(File)</Message>
+    </Method>
+    <SourceLine classname="MenuTest" primary="true" start="47" end="47" startBytecode="41" endBytecode="41" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+      <Message>At MenuTest.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="b4193426fc184a854c0099bb4bf593af" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in MenuTest.testDVDMainMenu(): new java.io.FileWriter(File)</LongMessage>
+    <Class classname="MenuTest" primary="true">
+      <SourceLine classname="MenuTest" start="5" end="56" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+        <Message>At MenuTest.java:[lines 5-56]</Message>
+      </SourceLine>
+      <Message>In class MenuTest</Message>
+    </Class>
+    <Method classname="MenuTest" name="testDVDMainMenu" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MenuTest" start="30" end="37" startBytecode="0" endBytecode="79" sourcefile="MenuTest.java" sourcepath="MenuTest.java"/>
+      <Message>In method MenuTest.testDVDMainMenu()</Message>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+      <Message>Called method new java.io.FileWriter(File)</Message>
+    </Method>
+    <SourceLine classname="MenuTest" primary="true" start="31" end="31" startBytecode="19" endBytecode="19" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+      <Message>At MenuTest.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" instanceHash="5f6a184ac58748c6123eac55bd41f955" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode peut ne pas fermer un flux</ShortMessage>
+    <LongMessage>La méthode MenuTest.testDVDMainMenu() peut ne pas fermer un flux</LongMessage>
+    <Class classname="MenuTest" primary="true">
+      <SourceLine classname="MenuTest" start="5" end="56" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+        <Message>At MenuTest.java:[lines 5-56]</Message>
+      </SourceLine>
+      <Message>In class MenuTest</Message>
+    </Class>
+    <Method classname="MenuTest" name="testDVDMainMenu" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MenuTest" start="30" end="37" startBytecode="0" endBytecode="20" sourcefile="MenuTest.java" sourcepath="MenuTest.java"/>
+      <Message>In method MenuTest.testDVDMainMenu()</Message>
+    </Method>
+    <Type descriptor="Ljava/io/Writer;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Writer" start="50" end="294" sourcefile="Writer.java" sourcepath="java/io/Writer.java">
+        <Message>At Writer.java:[lines 50-294]</Message>
+      </SourceLine>
+      <Message>Need to close java.io.Writer </Message>
+    </Type>
+    <SourceLine classname="MenuTest" primary="true" start="31" end="31" startBytecode="10" endBytecode="10" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+      <Message>At MenuTest.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" instanceHash="19a792927e473c6df384a44162493275" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Useless object created</ShortMessage>
+    <LongMessage>Useless object stored in variable var$5 of method MenuTest.testCreateXML()</LongMessage>
+    <Class classname="MenuTest" primary="true">
+      <SourceLine classname="MenuTest" start="5" end="56" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+        <Message>At MenuTest.java:[lines 5-56]</Message>
+      </SourceLine>
+      <Message>In class MenuTest</Message>
+    </Class>
+    <Method classname="MenuTest" name="testCreateXML" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MenuTest" start="41" end="56" startBytecode="0" endBytecode="198" sourcefile="MenuTest.java" sourcepath="MenuTest.java"/>
+      <Message>In method MenuTest.testCreateXML()</Message>
+    </Method>
+    <String value="var$5">
+      <Message>Value var$5</Message>
+    </String>
+    <Type descriptor="Ljava/lang/StringBuilder;">
+      <SourceLine classname="java.lang.StringBuilder" start="81" end="446" sourcefile="StringBuilder.java" sourcepath="java/lang/StringBuilder.java">
+        <Message>At StringBuilder.java:[lines 81-446]</Message>
+      </SourceLine>
+      <Message>Type StringBuilder</Message>
+    </Type>
+    <SourceLine classname="MenuTest" primary="true" start="49" end="49" startBytecode="52" endBytecode="52" sourcefile="MenuTest.java" sourcepath="MenuTest.java">
+      <Message>At MenuTest.java:[line 49]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DMI_HARDCODED_ABSOLUTE_FILENAME" abbrev="DMI" category="STYLE">
+    <ShortDescription>Chemin absolu codé en dur dans le code</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce code construit un objet <code>File</code> en utilisant un chemin absolu de fichier codé en dur (Ex. : <code>new File("/home/dannyc/workspace/j2ee/src/share/com/sun/enterprise/deployment");)</code>.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="UC_USELESS_OBJECT" abbrev="UC" category="STYLE">
+    <ShortDescription>Useless object created</ShortDescription>
+    <Details><![CDATA[
+
+<p>Our analysis shows that this object is useless.
+It's created and modified, but its value never go outside of the method or produce any side-effect.
+Either there is a mistake and object was intended to be used or it can be removed.</p>
+<p>This analysis rarely produces false-positives. Common false-positive cases include:</p>
+<p>- This object used to implicitly throw some obscure exception.</p>
+<p>- This object used as a stub to generalize the code.</p>
+<p>- This object used to hold strong references to weak/soft-referenced objects.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="OS_OPEN_STREAM" abbrev="OS" category="BAD_PRACTICE">
+    <ShortDescription>La méthode peut ne pas fermer un flux</ShortDescription>
+    <Details><![CDATA[
+
+<p>La méthode crée un objet de flux d'E/S, ne l'assigne à aucun champ, ne le passe à aucune méthode, ne le renvoit pas et ne semble pas le fermer dans tous les chemins d'exécution. Ceci peut entraîner le blocage d'un descripteur de fichier. C'est généralement une bonne idée d'utiliser un bloc <code>finally</code> pour s'assurer de la fermeture des flux.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DMI" cweid="440">
+    <Description>Invocation inutile d&apos;une méthode</Description>
+  </BugCode>
+  <BugCode abbrev="OS">
+    <Description>Flux pas toujours fermé dans les différents chemins d&apos;éxécution</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <BugCode abbrev="UC">
+    <Description>Useless code</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>GUI</MissingClass>
+    <MissingClass>Menu</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:05 +0100" total_classes="1" referenced_classes="18" total_bugs="7" total_size="34" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.00" clock_seconds="2.78" peak_mbytes="191.12" alloc_mbytes="7104.00" gc_seconds="0.24" priority_2="4" priority_1="3">
+    <FileStats path="MenuTest.java" bugCount="7" size="34" bugHash="bf7db78fc82166b3d975362e2a296c81"/>
+    <PackageStats package="" total_bugs="7" total_types="1" total_size="34" priority_2="4" priority_1="3">
+      <ClassStats class="MenuTest" sourceFile="MenuTest.java" interface="false" size="34" bugs="7" priority_2="4" priority_1="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="454" invocations="340" avgMicrosecondsPerInvocation="1336" maxMicrosecondsPerInvocation="37480" standardDeviationMicrosecondsPerInvocation="4068"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="289" invocations="18" avgMicrosecondsPerInvocation="16099" maxMicrosecondsPerInvocation="263986" standardDeviationMicrosecondsPerInvocation="60230"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="135" invocations="77" avgMicrosecondsPerInvocation="1758" maxMicrosecondsPerInvocation="25622" standardDeviationMicrosecondsPerInvocation="4745"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="128" invocations="40" avgMicrosecondsPerInvocation="3221" maxMicrosecondsPerInvocation="45191" standardDeviationMicrosecondsPerInvocation="8430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="93" invocations="18" avgMicrosecondsPerInvocation="5211" maxMicrosecondsPerInvocation="38321" standardDeviationMicrosecondsPerInvocation="9218"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="75" invocations="18" avgMicrosecondsPerInvocation="4185" maxMicrosecondsPerInvocation="31131" standardDeviationMicrosecondsPerInvocation="7523"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="74" invocations="5" avgMicrosecondsPerInvocation="14924" maxMicrosecondsPerInvocation="68779" standardDeviationMicrosecondsPerInvocation="26946"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="68" invocations="5" avgMicrosecondsPerInvocation="13712" maxMicrosecondsPerInvocation="44469" standardDeviationMicrosecondsPerInvocation="15982"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="65" invocations="303" avgMicrosecondsPerInvocation="215" maxMicrosecondsPerInvocation="12265" standardDeviationMicrosecondsPerInvocation="962"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="64" invocations="18" avgMicrosecondsPerInvocation="3560" maxMicrosecondsPerInvocation="21019" standardDeviationMicrosecondsPerInvocation="6722"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="63" invocations="18" avgMicrosecondsPerInvocation="3533" maxMicrosecondsPerInvocation="17243" standardDeviationMicrosecondsPerInvocation="5483"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="55" invocations="343" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="20671" standardDeviationMicrosecondsPerInvocation="1186"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="39" invocations="18" avgMicrosecondsPerInvocation="2187" maxMicrosecondsPerInvocation="29785" standardDeviationMicrosecondsPerInvocation="6734"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="34" invocations="18" avgMicrosecondsPerInvocation="1912" maxMicrosecondsPerInvocation="15842" standardDeviationMicrosecondsPerInvocation="3719"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

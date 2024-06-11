@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756230524" analysisTimestamp="1714604212056" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/JacksonCore/6/14/com/fasterxml/jackson/core</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="5b1fa27d40eff21909e2eb0ada7cc3d2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.fasterxml.jackson.core.JsonPointerTest.testCompileInvalidInput()</LongMessage>
+    <Class classname="com.fasterxml.jackson.core.JsonPointerTest" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.core.JsonPointerTest" start="5" end="64" sourcefile="JsonPointerTest.java" sourcepath="com/fasterxml/jackson/core/JsonPointerTest.java">
+        <Message>At JsonPointerTest.java:[lines 5-64]</Message>
+      </SourceLine>
+      <Message>In class com.fasterxml.jackson.core.JsonPointerTest</Message>
+    </Class>
+    <Method classname="com.fasterxml.jackson.core.JsonPointerTest" name="testCompileInvalidInput" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.core.JsonPointerTest" start="25" end="26" startBytecode="0" endBytecode="3" sourcefile="JsonPointerTest.java" sourcepath="com/fasterxml/jackson/core/JsonPointerTest.java"/>
+      <Message>In method com.fasterxml.jackson.core.JsonPointerTest.testCompileInvalidInput()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="6" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.fasterxml.jackson.core.JsonPointerTest" primary="true" start="25" end="25" startBytecode="5" endBytecode="5" sourcefile="JsonPointerTest.java" sourcepath="com/fasterxml/jackson/core/JsonPointerTest.java">
+      <Message>At JsonPointerTest.java:[line 25]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.fasterxml.jackson.core.JsonPointer</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:03:50 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="41" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.03" clock_seconds="1.54" peak_mbytes="189.51" alloc_mbytes="7104.00" gc_seconds="0.12" priority_2="1">
+    <FileStats path="com/fasterxml/jackson/core/JsonPointerTest.java" bugCount="1" size="41" bugHash="2629ed70c34768985ed6c346b112eec8"/>
+    <PackageStats package="com.fasterxml.jackson.core" total_bugs="1" total_types="1" total_size="41" priority_2="1">
+      <ClassStats class="com.fasterxml.jackson.core.JsonPointerTest" sourceFile="JsonPointerTest.java" interface="false" size="41" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="276" invocations="308" avgMicrosecondsPerInvocation="898" maxMicrosecondsPerInvocation="50649" standardDeviationMicrosecondsPerInvocation="3525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="121" invocations="10" avgMicrosecondsPerInvocation="12115" maxMicrosecondsPerInvocation="121059" standardDeviationMicrosecondsPerInvocation="36314"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="58" invocations="27" avgMicrosecondsPerInvocation="2157" maxMicrosecondsPerInvocation="44541" standardDeviationMicrosecondsPerInvocation="8368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="53" invocations="10" avgMicrosecondsPerInvocation="5380" maxMicrosecondsPerInvocation="16173" standardDeviationMicrosecondsPerInvocation="5554"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="45" invocations="9" avgMicrosecondsPerInvocation="5055" maxMicrosecondsPerInvocation="40413" standardDeviationMicrosecondsPerInvocation="12525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="45" invocations="66" avgMicrosecondsPerInvocation="687" maxMicrosecondsPerInvocation="4022" standardDeviationMicrosecondsPerInvocation="766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="39" invocations="273" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="3456" standardDeviationMicrosecondsPerInvocation="386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="29" invocations="10" avgMicrosecondsPerInvocation="2971" maxMicrosecondsPerInvocation="13340" standardDeviationMicrosecondsPerInvocation="3701"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="28" invocations="9" avgMicrosecondsPerInvocation="3151" maxMicrosecondsPerInvocation="18208" standardDeviationMicrosecondsPerInvocation="5388"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="28" invocations="10" avgMicrosecondsPerInvocation="2827" maxMicrosecondsPerInvocation="9827" standardDeviationMicrosecondsPerInvocation="3572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="21" invocations="9" avgMicrosecondsPerInvocation="2418" maxMicrosecondsPerInvocation="13074" standardDeviationMicrosecondsPerInvocation="3823"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="21" invocations="10" avgMicrosecondsPerInvocation="2122" maxMicrosecondsPerInvocation="5710" standardDeviationMicrosecondsPerInvocation="1859"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="20" invocations="310" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="1498" standardDeviationMicrosecondsPerInvocation="102"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

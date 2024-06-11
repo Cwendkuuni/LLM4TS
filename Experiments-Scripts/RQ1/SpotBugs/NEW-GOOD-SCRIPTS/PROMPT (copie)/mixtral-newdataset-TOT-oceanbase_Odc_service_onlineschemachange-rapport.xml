@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713887944815" analysisTimestamp="1714517325883" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MIXTRAL8x7B/MIXTRAL8x7B_FOR_NEW_DATASET/NewDataset-generated-tests/TOT/Odc/11/15/com/oceanbase/Odc/service/onlineschemachange</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>com.oceanbase.odc.core.shared.constant.OdcConstants</MissingClass>
+    <MissingClass>com.oceanbase.odc.service.onlineschemachange.OnlineSchemaChangeContextHolder</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 23 Apr 2024 17:59:04 +0200" total_classes="1" referenced_classes="13" total_bugs="0" total_size="40" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="2.78" clock_seconds="0.60" peak_mbytes="190.49" alloc_mbytes="7104.00" gc_seconds="0.03">
+    <FileStats path="com/oceanbase/odc/service/onlineschemachange/OnlineSchemaChangeContextHolderTest.java" bugCount="0" size="40"/>
+    <PackageStats package="com.oceanbase.odc.service.onlineschemachange" total_bugs="0" total_types="1" total_size="40">
+      <ClassStats class="com.oceanbase.odc.service.onlineschemachange.OnlineSchemaChangeContextHolderTest" sourceFile="OnlineSchemaChangeContextHolderTest.java" interface="false" size="40" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="92" invocations="329" avgMicrosecondsPerInvocation="282" maxMicrosecondsPerInvocation="7973" standardDeviationMicrosecondsPerInvocation="655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="55" invocations="86" avgMicrosecondsPerInvocation="644" maxMicrosecondsPerInvocation="29339" standardDeviationMicrosecondsPerInvocation="3135"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="28" invocations="13" avgMicrosecondsPerInvocation="2157" maxMicrosecondsPerInvocation="7886" standardDeviationMicrosecondsPerInvocation="2397"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="18" invocations="6" avgMicrosecondsPerInvocation="3099" maxMicrosecondsPerInvocation="17171" standardDeviationMicrosecondsPerInvocation="6295"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="17" invocations="30" avgMicrosecondsPerInvocation="586" maxMicrosecondsPerInvocation="10092" standardDeviationMicrosecondsPerInvocation="1816"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="16" invocations="6" avgMicrosecondsPerInvocation="2809" maxMicrosecondsPerInvocation="13574" standardDeviationMicrosecondsPerInvocation="4858"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="14" invocations="13" avgMicrosecondsPerInvocation="1100" maxMicrosecondsPerInvocation="4633" standardDeviationMicrosecondsPerInvocation="1264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="13" invocations="291" avgMicrosecondsPerInvocation="47" maxMicrosecondsPerInvocation="612" standardDeviationMicrosecondsPerInvocation="88"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="11" invocations="13" avgMicrosecondsPerInvocation="913" maxMicrosecondsPerInvocation="4477" standardDeviationMicrosecondsPerInvocation="1169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="11" invocations="6" avgMicrosecondsPerInvocation="1961" maxMicrosecondsPerInvocation="7793" standardDeviationMicrosecondsPerInvocation="2661"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

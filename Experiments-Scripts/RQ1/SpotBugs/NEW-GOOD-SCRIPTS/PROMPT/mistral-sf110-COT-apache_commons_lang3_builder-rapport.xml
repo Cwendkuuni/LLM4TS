@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287206086" analysisTimestamp="1714571985926" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/COT/commons-lang/CompareToBuilderTEST/28/org/apache/commons/lang3/builder</Jar>
+  </Project>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="61b98ce7e113859ae406d00eb7b5d2fb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.builder.CompareToBuilderTest.testAppend() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="12" end="180" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+        <Message>At CompareToBuilderTest.java:[lines 12-180]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.builder.CompareToBuilderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.builder.CompareToBuilderTest" name="testAppend" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="75" end="168" startBytecode="0" endBytecode="1108" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java"/>
+      <Message>In method org.apache.commons.lang3.builder.CompareToBuilderTest.testAppend()</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true" start="78" end="78" startBytecode="14" endBytecode="14" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+      <Message>At CompareToBuilderTest.java:[line 78]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="81" end="81" startBytecode="44" endBytecode="44" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 81]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="84" end="84" startBytecode="76" endBytecode="76" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 84]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="151" end="151" startBytecode="539" endBytecode="539" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 151]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="152" end="152" startBytecode="578" endBytecode="578" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 152]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="157" end="157" startBytecode="645" endBytecode="645" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 157]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="158" end="158" startBytecode="684" endBytecode="684" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 158]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="163" end="163" startBytecode="753" endBytecode="753" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 163]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="164" end="164" startBytecode="792" endBytecode="792" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 164]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="de2809e33b247fb7eb2ac912a7cd6ab2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionCompare() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="12" end="180" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+        <Message>At CompareToBuilderTest.java:[lines 12-180]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.builder.CompareToBuilderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.builder.CompareToBuilderTest" name="testReflectionCompare" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="16" end="50" startBytecode="0" endBytecode="354" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java"/>
+      <Message>In method org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionCompare()</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true" start="21" end="21" startBytecode="33" endBytecode="33" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+      <Message>At CompareToBuilderTest.java:[line 21]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="22" end="22" startBytecode="42" endBytecode="42" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 22]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="26" end="26" startBytecode="63" endBytecode="63" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 26]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="27" end="27" startBytecode="72" endBytecode="72" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 27]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="31" end="31" startBytecode="95" endBytecode="95" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 31]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="32" end="32" startBytecode="104" endBytecode="104" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 32]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="783f6d23338259052fe09822f5ae590d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionCompareWithDifferentClasses() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="12" end="180" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+        <Message>At CompareToBuilderTest.java:[lines 12-180]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.builder.CompareToBuilderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.builder.CompareToBuilderTest" name="testReflectionCompareWithDifferentClasses" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="61" end="64" startBytecode="0" endBytecode="61" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java"/>
+      <Message>In method org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionCompareWithDifferentClasses()</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true" start="61" end="61" startBytecode="5" endBytecode="5" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+      <Message>At CompareToBuilderTest.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="7e80e3bbdce11782a290e2c8a368bd87" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionCompare() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="12" end="180" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+        <Message>At CompareToBuilderTest.java:[lines 12-180]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.builder.CompareToBuilderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.builder.CompareToBuilderTest" name="testReflectionCompare" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="16" end="50" startBytecode="0" endBytecode="354" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java"/>
+      <Message>In method org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionCompare()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true" start="36" end="36" startBytecode="126" endBytecode="126" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+      <Message>At CompareToBuilderTest.java:[line 36]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="37" end="37" startBytecode="136" endBytecode="136" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 37]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="41" end="41" startBytecode="158" endBytecode="158" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 41]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="42" end="42" startBytecode="168" endBytecode="168" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 42]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="46" end="46" startBytecode="192" endBytecode="192" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 46]</Message>
+    </SourceLine>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="47" end="47" startBytecode="202" endBytecode="202" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at CompareToBuilderTest.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" instanceHash="6acc13d1b347f8d8260391d97f3dade8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortMessage>
+    <LongMessage>org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionCompareWithDifferentClasses() invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</LongMessage>
+    <Class classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="12" end="180" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+        <Message>At CompareToBuilderTest.java:[lines 12-180]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.builder.CompareToBuilderTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.builder.CompareToBuilderTest" name="testReflectionCompareWithDifferentClasses" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" start="61" end="64" startBytecode="0" endBytecode="61" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java"/>
+      <Message>In method org.apache.commons.lang3.builder.CompareToBuilderTest.testReflectionCompareWithDifferentClasses()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.builder.CompareToBuilderTest" primary="true" start="62" end="62" startBytecode="15" endBytecode="15" sourcefile="CompareToBuilderTest.java" sourcepath="org/apache/commons/lang3/builder/CompareToBuilderTest.java">
+      <Message>At CompareToBuilderTest.java:[line 62]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_STRING_CTOR" abbrev="Dm" category="PERFORMANCE">
+    <ShortDescription>La méthode invoque le constructeur inutile String(String) ; utilisez juste l&apos;argument</ShortDescription>
+    <Details><![CDATA[
+
+<p>Utiliser le constructeur <code>java.lang.String(String)</code> gaspille de la mémoire puisque l'objet ainsi construit serait fonctionnellement identique à la chaîne passée en paramètre. Utilisez juste la chaîne en argument directement.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_NUMBER_CTOR" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient Number constructor; use static valueOf instead</ShortDescription>
+    <Details><![CDATA[
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.apache.commons.lang3.builder.CompareToBuilder</MissingClass>
+    <MissingClass>org.apache.commons.lang3.builder.CompareToBuilderTest$1</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:46 +0200" total_classes="1" referenced_classes="11" total_bugs="5" total_size="117" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.16" clock_seconds="5.38" peak_mbytes="191.39" alloc_mbytes="7104.00" gc_seconds="0.17" priority_2="5">
+    <FileStats path="org/apache/commons/lang3/builder/CompareToBuilderTest.java" bugCount="5" size="117" bugHash="60f6109b2e0d4e4aabaf1b236210863c"/>
+    <PackageStats package="org.apache.commons.lang3.builder" total_bugs="5" total_types="1" total_size="117" priority_2="5">
+      <ClassStats class="org.apache.commons.lang3.builder.CompareToBuilderTest" sourceFile="CompareToBuilderTest.java" interface="false" size="117" bugs="5" priority_2="5"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="642" invocations="325" avgMicrosecondsPerInvocation="1975" maxMicrosecondsPerInvocation="84129" standardDeviationMicrosecondsPerInvocation="7070"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="257" invocations="11" avgMicrosecondsPerInvocation="23440" maxMicrosecondsPerInvocation="63770" standardDeviationMicrosecondsPerInvocation="23386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="252" invocations="11" avgMicrosecondsPerInvocation="22961" maxMicrosecondsPerInvocation="211076" standardDeviationMicrosecondsPerInvocation="60334"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="235" invocations="65" avgMicrosecondsPerInvocation="3629" maxMicrosecondsPerInvocation="68925" standardDeviationMicrosecondsPerInvocation="11159"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="196" invocations="8" avgMicrosecondsPerInvocation="24604" maxMicrosecondsPerInvocation="47128" standardDeviationMicrosecondsPerInvocation="19698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="178" invocations="30" avgMicrosecondsPerInvocation="5945" maxMicrosecondsPerInvocation="89036" standardDeviationMicrosecondsPerInvocation="16975"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="173" invocations="288" avgMicrosecondsPerInvocation="602" maxMicrosecondsPerInvocation="24748" standardDeviationMicrosecondsPerInvocation="2513"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="159" invocations="8" avgMicrosecondsPerInvocation="19891" maxMicrosecondsPerInvocation="64562" standardDeviationMicrosecondsPerInvocation="23626"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="149" invocations="11" avgMicrosecondsPerInvocation="13609" maxMicrosecondsPerInvocation="38417" standardDeviationMicrosecondsPerInvocation="14527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="143" invocations="8" avgMicrosecondsPerInvocation="17984" maxMicrosecondsPerInvocation="126980" standardDeviationMicrosecondsPerInvocation="41349"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="137" invocations="8" avgMicrosecondsPerInvocation="17236" maxMicrosecondsPerInvocation="77666" standardDeviationMicrosecondsPerInvocation="25492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="102" invocations="7" avgMicrosecondsPerInvocation="14589" maxMicrosecondsPerInvocation="54680" standardDeviationMicrosecondsPerInvocation="21854"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="97" invocations="11" avgMicrosecondsPerInvocation="8892" maxMicrosecondsPerInvocation="36792" standardDeviationMicrosecondsPerInvocation="13804"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="94" invocations="11" avgMicrosecondsPerInvocation="8578" maxMicrosecondsPerInvocation="25897" standardDeviationMicrosecondsPerInvocation="10593"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="86" invocations="8" avgMicrosecondsPerInvocation="10857" maxMicrosecondsPerInvocation="54364" standardDeviationMicrosecondsPerInvocation="17492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="79" invocations="327" avgMicrosecondsPerInvocation="242" maxMicrosecondsPerInvocation="14878" standardDeviationMicrosecondsPerInvocation="1329"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="74" invocations="7" avgMicrosecondsPerInvocation="10607" maxMicrosecondsPerInvocation="45230" standardDeviationMicrosecondsPerInvocation="16246"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

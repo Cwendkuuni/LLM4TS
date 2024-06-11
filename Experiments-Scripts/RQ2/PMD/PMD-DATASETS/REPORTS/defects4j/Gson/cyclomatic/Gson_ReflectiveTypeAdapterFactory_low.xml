@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2024-05-14T17:46:20.677">
+<file name="/tmp/tmpoxd_8o6u.java">
+<violation beginline="71" endline="71" begincolumn="24" endcolumn="37" rule="CyclomaticComplexity" ruleset="Design" package="com.google.gson.internal.bind" class="ReflectiveTypeAdapterFactory" method="getFieldNames" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'getFieldNames(Field)' has a cyclomatic complexity of 4.
+</violation>
+<violation beginline="141" endline="141" begincolumn="35" endcolumn="49" rule="CyclomaticComplexity" ruleset="Design" package="com.google.gson.internal.bind" class="ReflectiveTypeAdapterFactory" method="getBoundFields" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'getBoundFields(Gson, TypeToken&lt;?&gt;, Class&lt;?&gt;)' has a cyclomatic complexity of 11.
+</violation>
+<violation beginline="203" endline="203" begincolumn="24" endcolumn="28" rule="CyclomaticComplexity" ruleset="Design" package="com.google.gson.internal.bind" class="Adapter" method="read" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'read(JsonReader)' has a cyclomatic complexity of 9.
+</violation>
+<violation beginline="231" endline="231" begincolumn="27" endcolumn="32" rule="CyclomaticComplexity" ruleset="Design" package="com.google.gson.internal.bind" class="Adapter" method="write" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'write(JsonWriter, T)' has a cyclomatic complexity of 6.
+</violation>
+</file>
+</pmd>

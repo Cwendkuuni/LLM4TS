@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360747560" analysisTimestamp="1714587305538" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/FEWSHOT/commons-math/AbstractSimplexTEST/23/org/apache/commons/math3/optim/nonlinear/scalar/noderiv</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="59fc56b1a9d6ba60491501e86119cc3b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest.testConstructorEmptySteps()</LongMessage>
+    <Class classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" start="12" end="270" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java">
+        <Message>At AbstractSimplexTest.java:[lines 12-270]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" name="testConstructorEmptySteps" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" start="68" end="74" startBytecode="0" endBytecode="9" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java"/>
+      <Message>In method org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest.testConstructorEmptySteps()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="14" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" primary="true" start="69" end="69" startBytecode="13" endBytecode="13" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java">
+      <Message>At AbstractSimplexTest.java:[line 69]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="4bdd83d073bc144315dd0578ff625157" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest.testConstructorEqualVertices()</LongMessage>
+    <Class classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" start="12" end="270" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java">
+        <Message>At AbstractSimplexTest.java:[lines 12-270]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" name="testConstructorEqualVertices" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" start="102" end="113" startBytecode="0" endBytecode="60" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java"/>
+      <Message>In method org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest.testConstructorEqualVertices()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="83" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" primary="true" start="108" end="108" startBytecode="82" endBytecode="82" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java">
+      <Message>At AbstractSimplexTest.java:[line 108]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="ede2f04258e85de6e53f630dc6586fa7" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest.testConstructorMismatchedDimensions()</LongMessage>
+    <Class classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" start="12" end="270" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java">
+        <Message>At AbstractSimplexTest.java:[lines 12-270]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" name="testConstructorMismatchedDimensions" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" start="88" end="98" startBytecode="0" endBytecode="39" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java"/>
+      <Message>In method org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest.testConstructorMismatchedDimensions()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="55" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" primary="true" start="93" end="93" startBytecode="54" endBytecode="54" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java">
+      <Message>At AbstractSimplexTest.java:[line 93]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="776ff623d1dee54eb117aaf6b7c082d1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest.testConstructorNegativeSize()</LongMessage>
+    <Class classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" start="12" end="270" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java">
+        <Message>At AbstractSimplexTest.java:[lines 12-270]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" name="testConstructorNegativeSize" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" start="78" end="84" startBytecode="0" endBytecode="9" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java"/>
+      <Message>In method org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest.testConstructorNegativeSize()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="15" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" primary="true" start="79" end="79" startBytecode="14" endBytecode="14" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java">
+      <Message>At AbstractSimplexTest.java:[line 79]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="9f66ccb543ae06a01587cb23870845ef" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest.testConstructorNullSteps()</LongMessage>
+    <Class classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" start="12" end="270" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java">
+        <Message>At AbstractSimplexTest.java:[lines 12-270]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" name="testConstructorNullSteps" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" start="58" end="64" startBytecode="0" endBytecode="8" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java"/>
+      <Message>In method org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest.testConstructorNullSteps()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="12" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" primary="true" start="59" end="59" startBytecode="11" endBytecode="11" sourcefile="AbstractSimplexTest.java" sourcepath="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java">
+      <Message>At AbstractSimplexTest.java:[line 59]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="25">
+    <MissingClass>org.apache.commons.math3.analysis.MultivariateFunction</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.PointValuePair</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplex</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$1</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$10</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$11</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$12</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$13</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$14</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$15</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$16</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$17</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$18</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$19</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$2</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$20</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$21</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$3</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$4</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$5</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$6</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$7</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$8</MissingClass>
+    <MissingClass>org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest$9</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:07 +0100" total_classes="1" referenced_classes="11" total_bugs="5" total_size="96" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.62" clock_seconds="3.31" peak_mbytes="191.78" alloc_mbytes="7104.00" gc_seconds="0.22" priority_1="5">
+    <FileStats path="org/apache/commons/math3/optim/nonlinear/scalar/noderiv/AbstractSimplexTest.java" bugCount="5" size="96" bugHash="6f66c0c0afc339d186f9a3d882a4280c"/>
+    <PackageStats package="org.apache.commons.math3.optim.nonlinear.scalar.noderiv" total_bugs="5" total_types="1" total_size="96" priority_1="5">
+      <ClassStats class="org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplexTest" sourceFile="AbstractSimplexTest.java" interface="false" size="96" bugs="5" priority_1="5"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="399" invocations="335" avgMicrosecondsPerInvocation="1193" maxMicrosecondsPerInvocation="50651" standardDeviationMicrosecondsPerInvocation="4470"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="311" invocations="11" avgMicrosecondsPerInvocation="28355" maxMicrosecondsPerInvocation="242313" standardDeviationMicrosecondsPerInvocation="68131"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="116" invocations="11" avgMicrosecondsPerInvocation="10624" maxMicrosecondsPerInvocation="43517" standardDeviationMicrosecondsPerInvocation="13093"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="109" invocations="18" avgMicrosecondsPerInvocation="6085" maxMicrosecondsPerInvocation="27532" standardDeviationMicrosecondsPerInvocation="7579"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="102" invocations="11" avgMicrosecondsPerInvocation="9319" maxMicrosecondsPerInvocation="53428" standardDeviationMicrosecondsPerInvocation="16945"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="102" invocations="337" avgMicrosecondsPerInvocation="302" maxMicrosecondsPerInvocation="24475" standardDeviationMicrosecondsPerInvocation="2031"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="96" invocations="11" avgMicrosecondsPerInvocation="8796" maxMicrosecondsPerInvocation="37506" standardDeviationMicrosecondsPerInvocation="12638"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="90" invocations="18" avgMicrosecondsPerInvocation="5020" maxMicrosecondsPerInvocation="70968" standardDeviationMicrosecondsPerInvocation="16270"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="89" invocations="18" avgMicrosecondsPerInvocation="4952" maxMicrosecondsPerInvocation="32925" standardDeviationMicrosecondsPerInvocation="9920"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="83" invocations="42" avgMicrosecondsPerInvocation="1988" maxMicrosecondsPerInvocation="49914" standardDeviationMicrosecondsPerInvocation="7937"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="80" invocations="18" avgMicrosecondsPerInvocation="4482" maxMicrosecondsPerInvocation="20985" standardDeviationMicrosecondsPerInvocation="6261"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="79" invocations="18" avgMicrosecondsPerInvocation="4432" maxMicrosecondsPerInvocation="31112" standardDeviationMicrosecondsPerInvocation="8072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="78" invocations="18" avgMicrosecondsPerInvocation="4335" maxMicrosecondsPerInvocation="22652" standardDeviationMicrosecondsPerInvocation="6680"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="74" invocations="52" avgMicrosecondsPerInvocation="1425" maxMicrosecondsPerInvocation="16265" standardDeviationMicrosecondsPerInvocation="3019"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="60" invocations="19" avgMicrosecondsPerInvocation="3206" maxMicrosecondsPerInvocation="30637" standardDeviationMicrosecondsPerInvocation="6771"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

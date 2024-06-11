@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756239804" analysisTimestamp="1714609183677" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/Mockito/16/28/org/mockito/internal</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="3f8a2c4286a79cdb1462fc2beed666ff" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.MockitoCoreTest.testVerify()</LongMessage>
+    <Class classname="org.mockito.internal.MockitoCoreTest" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="16" end="60" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+        <Message>At MockitoCoreTest.java:[lines 16-60]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.MockitoCoreTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.MockitoCoreTest" name="testVerify" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="44" end="51" startBytecode="0" endBytecode="25" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java"/>
+      <Message>In method org.mockito.internal.MockitoCoreTest.testVerify()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="16" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.MockitoCoreTest" primary="true" start="45" end="45" startBytecode="15" endBytecode="15" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+      <Message>At MockitoCoreTest.java:[line 45]</Message>
+    </SourceLine>
+    <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="46" end="46" startBytecode="23" endBytecode="23" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at MockitoCoreTest.java:[line 46]</Message>
+    </SourceLine>
+    <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="47" end="47" startBytecode="31" endBytecode="31" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at MockitoCoreTest.java:[line 47]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="9">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.junit.function.ThrowingRunnable</MissingClass>
+    <MissingClass>org.mockito.MockSettings</MissingClass>
+    <MissingClass>org.mockito.exceptions.Reporter</MissingClass>
+    <MissingClass>org.mockito.internal.MockitoCore</MissingClass>
+    <MissingClass>org.mockito.internal.creation.MockSettingsImpl</MissingClass>
+    <MissingClass>org.mockito.internal.progress.ThreadSafeMockingProgress</MissingClass>
+    <MissingClass>org.mockito.internal.util.MockUtil</MissingClass>
+    <MissingClass>org.mockito.internal.verification.api.VerificationMode</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:03:59 +0100" total_classes="1" referenced_classes="17" total_bugs="1" total_size="32" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.06" clock_seconds="0.90" peak_mbytes="192.28" alloc_mbytes="7104.00" gc_seconds="0.05" priority_1="1">
+    <FileStats path="org/mockito/internal/MockitoCoreTest.java" bugCount="1" size="32" bugHash="5a4bcdb1ef10c761b0194cc65d039100"/>
+    <PackageStats package="org.mockito.internal" total_bugs="1" total_types="1" total_size="32" priority_1="1">
+      <ClassStats class="org.mockito.internal.MockitoCoreTest" sourceFile="MockitoCoreTest.java" interface="false" size="32" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="143" invocations="366" avgMicrosecondsPerInvocation="390" maxMicrosecondsPerInvocation="11074" standardDeviationMicrosecondsPerInvocation="846"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="66" invocations="17" avgMicrosecondsPerInvocation="3894" maxMicrosecondsPerInvocation="54501" standardDeviationMicrosecondsPerInvocation="12678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="47" invocations="17" avgMicrosecondsPerInvocation="2797" maxMicrosecondsPerInvocation="10859" standardDeviationMicrosecondsPerInvocation="3336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="34" invocations="17" avgMicrosecondsPerInvocation="2015" maxMicrosecondsPerInvocation="7289" standardDeviationMicrosecondsPerInvocation="2280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="31" invocations="7" avgMicrosecondsPerInvocation="4471" maxMicrosecondsPerInvocation="28710" standardDeviationMicrosecondsPerInvocation="9904"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="30" invocations="82" avgMicrosecondsPerInvocation="374" maxMicrosecondsPerInvocation="2850" standardDeviationMicrosecondsPerInvocation="490"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="27" invocations="39" avgMicrosecondsPerInvocation="695" maxMicrosecondsPerInvocation="13210" standardDeviationMicrosecondsPerInvocation="2118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="20" invocations="320" avgMicrosecondsPerInvocation="65" maxMicrosecondsPerInvocation="856" standardDeviationMicrosecondsPerInvocation="113"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="18" invocations="7" avgMicrosecondsPerInvocation="2648" maxMicrosecondsPerInvocation="8794" standardDeviationMicrosecondsPerInvocation="3532"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="18" invocations="17" avgMicrosecondsPerInvocation="1078" maxMicrosecondsPerInvocation="5647" standardDeviationMicrosecondsPerInvocation="1413"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="15" invocations="368" avgMicrosecondsPerInvocation="42" maxMicrosecondsPerInvocation="738" standardDeviationMicrosecondsPerInvocation="43"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="14" invocations="7" avgMicrosecondsPerInvocation="2055" maxMicrosecondsPerInvocation="10356" standardDeviationMicrosecondsPerInvocation="3409"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="14" invocations="17" avgMicrosecondsPerInvocation="841" maxMicrosecondsPerInvocation="7893" standardDeviationMicrosecondsPerInvocation="1817"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="13" invocations="7" avgMicrosecondsPerInvocation="1917" maxMicrosecondsPerInvocation="10537" standardDeviationMicrosecondsPerInvocation="3523"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

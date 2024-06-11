@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360751552" analysisTimestamp="1714606364045" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/99_newzgrabber/NewzgrabberTEST/23/Newzgrabber</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="ff1c289ef236720b024a92b4ff3b91af" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode Newzgrabber.NewzgrabberTest.testFindDirectory()</LongMessage>
+    <Class classname="Newzgrabber.NewzgrabberTest" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="7" end="92" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+        <Message>At NewzgrabberTest.java:[lines 7-92]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.NewzgrabberTest</Message>
+    </Class>
+    <Method classname="Newzgrabber.NewzgrabberTest" name="testFindDirectory" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.NewzgrabberTest" start="29" end="31" startBytecode="0" endBytecode="3" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java"/>
+      <Message>In method Newzgrabber.NewzgrabberTest.testFindDirectory()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="6" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="Newzgrabber.NewzgrabberTest" primary="true" start="29" end="29" startBytecode="5" endBytecode="5" sourcefile="NewzgrabberTest.java" sourcepath="Newzgrabber/NewzgrabberTest.java">
+      <Message>At NewzgrabberTest.java:[line 29]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>Newzgrabber.Newzgrabber</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:11 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="48" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.57" clock_seconds="2.09" peak_mbytes="189.57" alloc_mbytes="7104.00" gc_seconds="0.22" priority_2="1">
+    <FileStats path="Newzgrabber/NewzgrabberTest.java" bugCount="1" size="48" bugHash="35f9fefe292fa7ed64144a963b3f1aa4"/>
+    <PackageStats package="Newzgrabber" total_bugs="1" total_types="1" total_size="48" priority_2="1">
+      <ClassStats class="Newzgrabber.NewzgrabberTest" sourceFile="NewzgrabberTest.java" interface="false" size="48" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="295" invocations="337" avgMicrosecondsPerInvocation="876" maxMicrosecondsPerInvocation="23556" standardDeviationMicrosecondsPerInvocation="2676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="225" invocations="165" avgMicrosecondsPerInvocation="1364" maxMicrosecondsPerInvocation="223117" standardDeviationMicrosecondsPerInvocation="17316"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="69" invocations="11" avgMicrosecondsPerInvocation="6352" maxMicrosecondsPerInvocation="31528" standardDeviationMicrosecondsPerInvocation="9523"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="65" invocations="11" avgMicrosecondsPerInvocation="5937" maxMicrosecondsPerInvocation="31228" standardDeviationMicrosecondsPerInvocation="8758"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="58" invocations="71" avgMicrosecondsPerInvocation="830" maxMicrosecondsPerInvocation="19641" standardDeviationMicrosecondsPerInvocation="2342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="53" invocations="28" avgMicrosecondsPerInvocation="1893" maxMicrosecondsPerInvocation="29859" standardDeviationMicrosecondsPerInvocation="5837"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="52" invocations="11" avgMicrosecondsPerInvocation="4794" maxMicrosecondsPerInvocation="23968" standardDeviationMicrosecondsPerInvocation="6852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="47" invocations="14" avgMicrosecondsPerInvocation="3396" maxMicrosecondsPerInvocation="43055" standardDeviationMicrosecondsPerInvocation="11003"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="45" invocations="11" avgMicrosecondsPerInvocation="4159" maxMicrosecondsPerInvocation="21765" standardDeviationMicrosecondsPerInvocation="7595"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="38" invocations="339" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="17942" standardDeviationMicrosecondsPerInvocation="971"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="38" invocations="300" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="2678" standardDeviationMicrosecondsPerInvocation="284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="37" invocations="14" avgMicrosecondsPerInvocation="2684" maxMicrosecondsPerInvocation="15436" standardDeviationMicrosecondsPerInvocation="4278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="36" invocations="14" avgMicrosecondsPerInvocation="2572" maxMicrosecondsPerInvocation="26097" standardDeviationMicrosecondsPerInvocation="6536"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="32" invocations="14" avgMicrosecondsPerInvocation="2342" maxMicrosecondsPerInvocation="23046" standardDeviationMicrosecondsPerInvocation="5752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="25" invocations="14" avgMicrosecondsPerInvocation="1794" maxMicrosecondsPerInvocation="15596" standardDeviationMicrosecondsPerInvocation="3926"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

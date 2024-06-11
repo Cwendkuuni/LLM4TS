@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756316572" analysisTimestamp="1714598494526" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/89_jiggler/ShiftTEST/6/jigl/image/ops</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="9df0faa986a3b1df231b3339d7010150" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode jigl.signal.ops.ShiftTest.testApplyColorImage()</LongMessage>
+    <Class classname="jigl.signal.ops.ShiftTest" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="7" end="49" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+        <Message>At ShiftTest.java:[lines 7-49]</Message>
+      </SourceLine>
+      <Message>In class jigl.signal.ops.ShiftTest</Message>
+    </Class>
+    <Method classname="jigl.signal.ops.ShiftTest" name="testApplyColorImage" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="39" end="42" startBytecode="0" endBytecode="7" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java"/>
+      <Message>In method jigl.signal.ops.ShiftTest.testApplyColorImage()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="11" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="jigl.signal.ops.ShiftTest" primary="true" start="39" end="39" startBytecode="10" endBytecode="10" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+      <Message>At ShiftTest.java:[line 39]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="7c243401562757fbf4193ac5386e7a5a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode jigl.signal.ops.ShiftTest.testApplyGrayImageNoWrap()</LongMessage>
+    <Class classname="jigl.signal.ops.ShiftTest" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="7" end="49" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+        <Message>At ShiftTest.java:[lines 7-49]</Message>
+      </SourceLine>
+      <Message>In class jigl.signal.ops.ShiftTest</Message>
+    </Class>
+    <Method classname="jigl.signal.ops.ShiftTest" name="testApplyGrayImageNoWrap" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="18" end="21" startBytecode="0" endBytecode="7" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java"/>
+      <Message>In method jigl.signal.ops.ShiftTest.testApplyGrayImageNoWrap()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="11" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="jigl.signal.ops.ShiftTest" primary="true" start="18" end="18" startBytecode="10" endBytecode="10" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+      <Message>At ShiftTest.java:[line 18]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="8323ce4dc3853f2fc89a0b054ef5b71d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode jigl.signal.ops.ShiftTest.testApplyGrayImageWrap()</LongMessage>
+    <Class classname="jigl.signal.ops.ShiftTest" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="7" end="49" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+        <Message>At ShiftTest.java:[lines 7-49]</Message>
+      </SourceLine>
+      <Message>In class jigl.signal.ops.ShiftTest</Message>
+    </Class>
+    <Method classname="jigl.signal.ops.ShiftTest" name="testApplyGrayImageWrap" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="11" end="14" startBytecode="0" endBytecode="7" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java"/>
+      <Message>In method jigl.signal.ops.ShiftTest.testApplyGrayImageWrap()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="11" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="jigl.signal.ops.ShiftTest" primary="true" start="11" end="11" startBytecode="10" endBytecode="10" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+      <Message>At ShiftTest.java:[line 11]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="2017e14d18eca253cb2037dc7d8001b9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode jigl.signal.ops.ShiftTest.testApplyRealColorImage()</LongMessage>
+    <Class classname="jigl.signal.ops.ShiftTest" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="7" end="49" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+        <Message>At ShiftTest.java:[lines 7-49]</Message>
+      </SourceLine>
+      <Message>In class jigl.signal.ops.ShiftTest</Message>
+    </Class>
+    <Method classname="jigl.signal.ops.ShiftTest" name="testApplyRealColorImage" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="46" end="49" startBytecode="0" endBytecode="7" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java"/>
+      <Message>In method jigl.signal.ops.ShiftTest.testApplyRealColorImage()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="11" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="jigl.signal.ops.ShiftTest" primary="true" start="46" end="46" startBytecode="10" endBytecode="10" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+      <Message>At ShiftTest.java:[line 46]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b028ed6c55efd8e133d8778b00232aa0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode jigl.signal.ops.ShiftTest.testApplyRealGrayImageNoWrap()</LongMessage>
+    <Class classname="jigl.signal.ops.ShiftTest" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="7" end="49" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+        <Message>At ShiftTest.java:[lines 7-49]</Message>
+      </SourceLine>
+      <Message>In class jigl.signal.ops.ShiftTest</Message>
+    </Class>
+    <Method classname="jigl.signal.ops.ShiftTest" name="testApplyRealGrayImageNoWrap" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="32" end="35" startBytecode="0" endBytecode="7" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java"/>
+      <Message>In method jigl.signal.ops.ShiftTest.testApplyRealGrayImageNoWrap()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="11" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="jigl.signal.ops.ShiftTest" primary="true" start="32" end="32" startBytecode="10" endBytecode="10" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+      <Message>At ShiftTest.java:[line 32]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="6376fa082a14fc8dd66901d949ad1e98" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode jigl.signal.ops.ShiftTest.testApplyRealGrayImageWrap()</LongMessage>
+    <Class classname="jigl.signal.ops.ShiftTest" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="7" end="49" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+        <Message>At ShiftTest.java:[lines 7-49]</Message>
+      </SourceLine>
+      <Message>In class jigl.signal.ops.ShiftTest</Message>
+    </Class>
+    <Method classname="jigl.signal.ops.ShiftTest" name="testApplyRealGrayImageWrap" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="jigl.signal.ops.ShiftTest" start="25" end="28" startBytecode="0" endBytecode="7" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java"/>
+      <Message>In method jigl.signal.ops.ShiftTest.testApplyRealGrayImageWrap()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="11" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="jigl.signal.ops.ShiftTest" primary="true" start="25" end="25" startBytecode="10" endBytecode="10" sourcefile="ShiftTest.java" sourcepath="jigl/signal/ops/ShiftTest.java">
+      <Message>At ShiftTest.java:[line 25]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>jigl.image.ops.Shift</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:16 +0100" total_classes="1" referenced_classes="9" total_bugs="6" total_size="21" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.62" clock_seconds="1.66" peak_mbytes="190.43" alloc_mbytes="7104.00" gc_seconds="0.16" priority_1="6">
+    <FileStats path="jigl/signal/ops/ShiftTest.java" bugCount="6" size="21" bugHash="b0a825428b83c7e9540394eb328bd9c9"/>
+    <PackageStats package="jigl.signal.ops" total_bugs="6" total_types="1" total_size="21" priority_1="6">
+      <ClassStats class="jigl.signal.ops.ShiftTest" sourceFile="ShiftTest.java" interface="false" size="21" bugs="6" priority_1="6"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="273" invocations="292" avgMicrosecondsPerInvocation="936" maxMicrosecondsPerInvocation="34138" standardDeviationMicrosecondsPerInvocation="3120"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="234" invocations="40" avgMicrosecondsPerInvocation="5857" maxMicrosecondsPerInvocation="166828" standardDeviationMicrosecondsPerInvocation="25918"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="54" invocations="9" avgMicrosecondsPerInvocation="6045" maxMicrosecondsPerInvocation="20806" standardDeviationMicrosecondsPerInvocation="7708"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="44" invocations="9" avgMicrosecondsPerInvocation="4910" maxMicrosecondsPerInvocation="25339" standardDeviationMicrosecondsPerInvocation="7614"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="42" invocations="1" avgMicrosecondsPerInvocation="42187" maxMicrosecondsPerInvocation="42187" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="40" invocations="258" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="10246" standardDeviationMicrosecondsPerInvocation="661"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="7" avgMicrosecondsPerInvocation="5385" maxMicrosecondsPerInvocation="35898" standardDeviationMicrosecondsPerInvocation="12461"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="33" invocations="24" avgMicrosecondsPerInvocation="1391" maxMicrosecondsPerInvocation="20190" standardDeviationMicrosecondsPerInvocation="4076"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="31" invocations="9" avgMicrosecondsPerInvocation="3517" maxMicrosecondsPerInvocation="23710" standardDeviationMicrosecondsPerInvocation="7244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="27" invocations="294" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="8524" standardDeviationMicrosecondsPerInvocation="495"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="26" invocations="1" avgMicrosecondsPerInvocation="26995" maxMicrosecondsPerInvocation="26995" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="26" invocations="9" avgMicrosecondsPerInvocation="2913" maxMicrosecondsPerInvocation="9273" standardDeviationMicrosecondsPerInvocation="3179"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUncalledPrivateMethods" totalMilliseconds="25" invocations="1" avgMicrosecondsPerInvocation="25010" maxMicrosecondsPerInvocation="25010" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711017766835" analysisTimestamp="1714574079630" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V4/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/FEWSHOT/Odc/19/6/com/oceanbase/odc/plugin/connect/obmysql</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="fd3eb9fc8a0ef245d9bd633cfc39c4d5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.testGetConnectionId()</LongMessage>
+    <Class classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="18" end="63" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+        <Message>At OBMySQLSessionExtensionTest.java:[lines 18-63]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" name="testGetConnectionId" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="56" end="63" startBytecode="0" endBytecode="35" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java"/>
+      <Message>In method com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.testGetConnectionId()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="58" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true" start="61" end="61" startBytecode="57" endBytecode="57" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+      <Message>At OBMySQLSessionExtensionTest.java:[line 61]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="8">
+    <MissingClass>com.oceanbase.jdbc.OceanBaseConnection</MissingClass>
+    <MissingClass>com.oceanbase.odc.common.util.JdbcOperationsUtil</MissingClass>
+    <MissingClass>com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtension</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.mockito.Mockito</MissingClass>
+    <MissingClass>org.mockito.stubbing.OngoingStubbing</MissingClass>
+    <MissingClass>org.mockito.verification.VerificationMode</MissingClass>
+    <MissingClass>org.springframework.jdbc.core.JdbcOperations</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 21 Mar 2024 11:42:46 +0100" total_classes="1" referenced_classes="13" total_bugs="1" total_size="36" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.20" clock_seconds="5.80" peak_mbytes="191.36" alloc_mbytes="7104.00" gc_seconds="0.33" priority_2="1">
+    <FileStats path="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java" bugCount="1" size="36" bugHash="43fc1e74e0ac2adc1bd089f6bb855a84"/>
+    <PackageStats package="com.oceanbase.odc.plugin.connect.obmysql" total_bugs="1" total_types="1" total_size="36" priority_2="1">
+      <ClassStats class="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" sourceFile="OBMySQLSessionExtensionTest.java" interface="false" size="36" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="764" invocations="328" avgMicrosecondsPerInvocation="2329" maxMicrosecondsPerInvocation="102379" standardDeviationMicrosecondsPerInvocation="8151"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="686" invocations="13" avgMicrosecondsPerInvocation="52800" maxMicrosecondsPerInvocation="402435" standardDeviationMicrosecondsPerInvocation="104110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="311" invocations="69" avgMicrosecondsPerInvocation="4509" maxMicrosecondsPerInvocation="44216" standardDeviationMicrosecondsPerInvocation="9666"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="193" invocations="286" avgMicrosecondsPerInvocation="677" maxMicrosecondsPerInvocation="38599" standardDeviationMicrosecondsPerInvocation="3695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="191" invocations="13" avgMicrosecondsPerInvocation="14750" maxMicrosecondsPerInvocation="94700" standardDeviationMicrosecondsPerInvocation="26635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="166" invocations="6" avgMicrosecondsPerInvocation="27774" maxMicrosecondsPerInvocation="162689" standardDeviationMicrosecondsPerInvocation="60338"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="161" invocations="13" avgMicrosecondsPerInvocation="12434" maxMicrosecondsPerInvocation="63177" standardDeviationMicrosecondsPerInvocation="17457"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="150" invocations="34" avgMicrosecondsPerInvocation="4438" maxMicrosecondsPerInvocation="65077" standardDeviationMicrosecondsPerInvocation="12232"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="140" invocations="13" avgMicrosecondsPerInvocation="10800" maxMicrosecondsPerInvocation="43634" standardDeviationMicrosecondsPerInvocation="14952"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="123" invocations="331" avgMicrosecondsPerInvocation="374" maxMicrosecondsPerInvocation="32769" standardDeviationMicrosecondsPerInvocation="2604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="96" invocations="13" avgMicrosecondsPerInvocation="7401" maxMicrosecondsPerInvocation="42123" standardDeviationMicrosecondsPerInvocation="13318"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="93" invocations="6" avgMicrosecondsPerInvocation="15630" maxMicrosecondsPerInvocation="71168" standardDeviationMicrosecondsPerInvocation="25234"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="90" invocations="6" avgMicrosecondsPerInvocation="15110" maxMicrosecondsPerInvocation="26873" standardDeviationMicrosecondsPerInvocation="10628"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

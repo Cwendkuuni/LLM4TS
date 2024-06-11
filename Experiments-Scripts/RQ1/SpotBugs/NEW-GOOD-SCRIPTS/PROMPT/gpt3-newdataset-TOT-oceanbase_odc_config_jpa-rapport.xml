@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711194554499" analysisTimestamp="1714576616527" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V3/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/TOT/Odc/2/26/com/oceanbase/odc/config/jpa</Jar>
+  </Project>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" instanceHash="40001260f7d4cda87a6c5b6cd84c4ab5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ jamais écrit</ShortMessage>
+    <LongMessage>Champ jamais écrit : com.oceanbase.odc.config.jpa.EnhancedJpaRepositoryTest.entityManager</LongMessage>
+    <Class classname="com.oceanbase.odc.config.jpa.EnhancedJpaRepositoryTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.config.jpa.EnhancedJpaRepositoryTest" start="11" end="31" sourcefile="EnhancedJpaRepositoryTest.java" sourcepath="com/oceanbase/odc/config/jpa/EnhancedJpaRepositoryTest.java">
+        <Message>At EnhancedJpaRepositoryTest.java:[lines 11-31]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.config.jpa.EnhancedJpaRepositoryTest</Message>
+    </Class>
+    <Field classname="com.oceanbase.odc.config.jpa.EnhancedJpaRepositoryTest" name="entityManager" signature="Ljavax/persistence/EntityManager;" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.config.jpa.EnhancedJpaRepositoryTest" sourcefile="EnhancedJpaRepositoryTest.java" sourcepath="com/oceanbase/odc/config/jpa/EnhancedJpaRepositoryTest.java">
+        <Message>In EnhancedJpaRepositoryTest.java</Message>
+      </SourceLine>
+      <Message>Field com.oceanbase.odc.config.jpa.EnhancedJpaRepositoryTest.entityManager</Message>
+    </Field>
+    <SourceLine classname="com.oceanbase.odc.config.jpa.EnhancedJpaRepositoryTest" primary="true" start="17" end="17" startBytecode="6" endBytecode="6" sourcefile="EnhancedJpaRepositoryTest.java" sourcepath="com/oceanbase/odc/config/jpa/EnhancedJpaRepositoryTest.java">
+      <Message>At EnhancedJpaRepositoryTest.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="UWF_UNWRITTEN_FIELD" abbrev="UwF" category="CORRECTNESS">
+    <ShortDescription>Champ jamais écrit</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais alimenté. Toutes les lectures vont renvoyer sa valeur par défaut. Recherchez les erreurs (devrait-il avoir été initialisé ?) ou supprimez le s'il est inutile.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UwF">
+    <Description>Champ jamais alimenté</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>com.oceanbase.odc.config.jpa.EnhancedJpaRepository</MissingClass>
+    <MissingClass>javax.persistence.EntityManager</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.springframework.data.jpa.repository.support.JpaEntityInformation</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sat, 23 Mar 2024 12:49:14 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="16" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.71" clock_seconds="4.68" peak_mbytes="189.43" alloc_mbytes="7104.00" gc_seconds="0.27" priority_2="1">
+    <FileStats path="com/oceanbase/odc/config/jpa/EnhancedJpaRepositoryTest.java" bugCount="1" size="16" bugHash="6bcb7c594926aa433859c05f63ae2598"/>
+    <PackageStats package="com.oceanbase.odc.config.jpa" total_bugs="1" total_types="1" total_size="16" priority_2="1">
+      <ClassStats class="com.oceanbase.odc.config.jpa.EnhancedJpaRepositoryTest" sourceFile="EnhancedJpaRepositoryTest.java" interface="false" size="16" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="909" invocations="297" avgMicrosecondsPerInvocation="3062" maxMicrosecondsPerInvocation="69829" standardDeviationMicrosecondsPerInvocation="9537"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="365" invocations="9" avgMicrosecondsPerInvocation="40645" maxMicrosecondsPerInvocation="318073" standardDeviationMicrosecondsPerInvocation="98731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="179" invocations="258" avgMicrosecondsPerInvocation="695" maxMicrosecondsPerInvocation="45890" standardDeviationMicrosecondsPerInvocation="3457"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="169" invocations="9" avgMicrosecondsPerInvocation="18837" maxMicrosecondsPerInvocation="87334" standardDeviationMicrosecondsPerInvocation="28126"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="161" invocations="4" avgMicrosecondsPerInvocation="40275" maxMicrosecondsPerInvocation="150501" standardDeviationMicrosecondsPerInvocation="63772"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="121" invocations="4" avgMicrosecondsPerInvocation="30479" maxMicrosecondsPerInvocation="102810" standardDeviationMicrosecondsPerInvocation="42329"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="117" invocations="9" avgMicrosecondsPerInvocation="13104" maxMicrosecondsPerInvocation="40342" standardDeviationMicrosecondsPerInvocation="15370"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="115" invocations="9" avgMicrosecondsPerInvocation="12805" maxMicrosecondsPerInvocation="75301" standardDeviationMicrosecondsPerInvocation="24126"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="112" invocations="37" avgMicrosecondsPerInvocation="3030" maxMicrosecondsPerInvocation="33072" standardDeviationMicrosecondsPerInvocation="6884"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="108" invocations="299" avgMicrosecondsPerInvocation="363" maxMicrosecondsPerInvocation="31628" standardDeviationMicrosecondsPerInvocation="2338"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="104" invocations="25" avgMicrosecondsPerInvocation="4160" maxMicrosecondsPerInvocation="51805" standardDeviationMicrosecondsPerInvocation="11532"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

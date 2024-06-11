@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713290015829" analysisTimestamp="1714577027048" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/DEFECTS4J/AVEC-PACKAGE_GLOBAL/Defects4J-generated-tests/TOT/JacksonDatabind/6/28/com/fasterxml/jackson/databind/util</Jar>
+  </Project>
+  <BugInstance type="EC_UNRELATED_TYPES" priority="1" rank="1" abbrev="EC" category="CORRECTNESS" instanceHash="e27f4f4679781d5f0cc99697a4d6492b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Appel de equals() comparant des types différents</ShortMessage>
+    <LongMessage>Appel de equals() comparant des types différents dans com.fasterxml.jackson.databind.util.StdDateFormatTest.testParseISO8601()</LongMessage>
+    <Class classname="com.fasterxml.jackson.databind.util.StdDateFormatTest" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.databind.util.StdDateFormatTest" start="14" end="120" sourcefile="StdDateFormatTest.java" sourcepath="com/fasterxml/jackson/databind/util/StdDateFormatTest.java">
+        <Message>At StdDateFormatTest.java:[lines 14-120]</Message>
+      </SourceLine>
+      <Message>In class com.fasterxml.jackson.databind.util.StdDateFormatTest</Message>
+    </Class>
+    <Method classname="com.fasterxml.jackson.databind.util.StdDateFormatTest" name="testParseISO8601" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.databind.util.StdDateFormatTest" start="18" end="38" startBytecode="0" endBytecode="67" sourcefile="StdDateFormatTest.java" sourcepath="com/fasterxml/jackson/databind/util/StdDateFormatTest.java"/>
+      <Message>In method com.fasterxml.jackson.databind.util.StdDateFormatTest.testParseISO8601()</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/Long;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Long" start="54" end="1615" sourcefile="Long.java" sourcepath="java/lang/Long.java">
+        <Message>At Long.java:[lines 54-1615]</Message>
+      </SourceLine>
+      <Message>Actual type Long</Message>
+    </Type>
+    <Type descriptor="Ljava/util/Date;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.util.Date" start="131" end="1374" sourcefile="Date.java" sourcepath="java/util/Date.java">
+        <Message>At Date.java:[lines 131-1374]</Message>
+      </SourceLine>
+      <Message>Expected java.util.Date</Message>
+    </Type>
+    <Method classname="java.util.Date" name="getTime" signature="()J" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.util.Date" start="885" end="885" startBytecode="0" endBytecode="28" sourcefile="Date.java" sourcepath="java/util/Date.java"/>
+      <Message>Return value of java.util.Date.getTime() of type long</Message>
+    </Method>
+    <Method classname="java.util.Date" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.util.Date" start="177" end="179" startBytecode="0" endBytecode="41" sourcefile="Date.java" sourcepath="java/util/Date.java"/>
+      <Message>Return value of new java.util.Date(long) of type void</Message>
+    </Method>
+    <Method classname="java.util.Date" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.util.Date" start="950" end="950" startBytecode="0" endBytecode="62" sourcefile="Date.java" sourcepath="java/util/Date.java"/>
+      <Message>java.util.Date.equals(Object) used to determine equality</Message>
+    </Method>
+    <Method classname="org.junit.Assert" name="assertEquals" signature="(Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="org.junit.Assert"/>
+      <Message>Called method org.junit.Assert.assertEquals(Object, Object)</Message>
+    </Method>
+    <SourceLine classname="com.fasterxml.jackson.databind.util.StdDateFormatTest" primary="true" start="30" end="30" startBytecode="81" endBytecode="81" sourcefile="StdDateFormatTest.java" sourcepath="com/fasterxml/jackson/databind/util/StdDateFormatTest.java">
+      <Message>At StdDateFormatTest.java:[line 30]</Message>
+    </SourceLine>
+    <SourceLine classname="com.fasterxml.jackson.databind.util.StdDateFormatTest" start="36" end="36" startBytecode="124" endBytecode="124" sourcefile="StdDateFormatTest.java" sourcepath="com/fasterxml/jackson/databind/util/StdDateFormatTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at StdDateFormatTest.java:[line 36]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_TYPES" priority="1" rank="1" abbrev="EC" category="CORRECTNESS" instanceHash="c907dc849319daa2fec7194470c738f0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Appel de equals() comparant des types différents</ShortMessage>
+    <LongMessage>Appel de equals() comparant des types différents dans com.fasterxml.jackson.databind.util.StdDateFormatTest.testParseRFC1123()</LongMessage>
+    <Class classname="com.fasterxml.jackson.databind.util.StdDateFormatTest" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.databind.util.StdDateFormatTest" start="14" end="120" sourcefile="StdDateFormatTest.java" sourcepath="com/fasterxml/jackson/databind/util/StdDateFormatTest.java">
+        <Message>At StdDateFormatTest.java:[lines 14-120]</Message>
+      </SourceLine>
+      <Message>In class com.fasterxml.jackson.databind.util.StdDateFormatTest</Message>
+    </Class>
+    <Method classname="com.fasterxml.jackson.databind.util.StdDateFormatTest" name="testParseRFC1123" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.fasterxml.jackson.databind.util.StdDateFormatTest" start="42" end="56" startBytecode="0" endBytecode="47" sourcefile="StdDateFormatTest.java" sourcepath="com/fasterxml/jackson/databind/util/StdDateFormatTest.java"/>
+      <Message>In method com.fasterxml.jackson.databind.util.StdDateFormatTest.testParseRFC1123()</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/Long;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Long" start="54" end="1615" sourcefile="Long.java" sourcepath="java/lang/Long.java">
+        <Message>At Long.java:[lines 54-1615]</Message>
+      </SourceLine>
+      <Message>Actual type Long</Message>
+    </Type>
+    <Type descriptor="Ljava/util/Date;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.util.Date" start="131" end="1374" sourcefile="Date.java" sourcepath="java/util/Date.java">
+        <Message>At Date.java:[lines 131-1374]</Message>
+      </SourceLine>
+      <Message>Expected java.util.Date</Message>
+    </Type>
+    <Method classname="java.util.Date" name="getTime" signature="()J" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.util.Date" start="885" end="885" startBytecode="0" endBytecode="28" sourcefile="Date.java" sourcepath="java/util/Date.java"/>
+      <Message>Return value of java.util.Date.getTime() of type long</Message>
+    </Method>
+    <Method classname="java.util.Date" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.util.Date" start="177" end="179" startBytecode="0" endBytecode="41" sourcefile="Date.java" sourcepath="java/util/Date.java"/>
+      <Message>Return value of new java.util.Date(long) of type void</Message>
+    </Method>
+    <Method classname="java.util.Date" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.util.Date" start="950" end="950" startBytecode="0" endBytecode="62" sourcefile="Date.java" sourcepath="java/util/Date.java"/>
+      <Message>java.util.Date.equals(Object) used to determine equality</Message>
+    </Method>
+    <Method classname="org.junit.Assert" name="assertEquals" signature="(Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="org.junit.Assert"/>
+      <Message>Called method org.junit.Assert.assertEquals(Object, Object)</Message>
+    </Method>
+    <SourceLine classname="com.fasterxml.jackson.databind.util.StdDateFormatTest" primary="true" start="54" end="54" startBytecode="81" endBytecode="81" sourcefile="StdDateFormatTest.java" sourcepath="com/fasterxml/jackson/databind/util/StdDateFormatTest.java">
+      <Message>At StdDateFormatTest.java:[line 54]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="EC_UNRELATED_TYPES" abbrev="EC" category="CORRECTNESS">
+    <ShortDescription>Appel de equals() comparant des types différents</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette méthode appelle <code>equals(Object)</code> pour deux références de type différents, sans sous-classe commune. Les objets comparés ne sont donc probablement pas de la même classe à l'éxécution (au moins que certaines classes de l'application n'aient pas été analysées ou qu'il y ait des chargements dynamiques). D'après le contrat de <code>equals()</code>, les objets de classes différentes devraient toujours être inégaux, c'est pourquoi la comparaison a de fortes chances de toujours renvoyer <code>false</code> à l'exécution.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EC">
+    <Description>Comparaison par equals() suspecte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.fasterxml.jackson.databind.util.StdDateFormat</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:53:35 +0200" total_classes="1" referenced_classes="17" total_bugs="2" total_size="73" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.48" clock_seconds="4.83" peak_mbytes="191.74" alloc_mbytes="7104.00" gc_seconds="0.23" priority_1="2">
+    <FileStats path="com/fasterxml/jackson/databind/util/StdDateFormatTest.java" bugCount="2" size="73" bugHash="dad7b39e6f7625b6c908ef9ef0385ae0"/>
+    <PackageStats package="com.fasterxml.jackson.databind.util" total_bugs="2" total_types="1" total_size="73" priority_1="2">
+      <ClassStats class="com.fasterxml.jackson.databind.util.StdDateFormatTest" sourceFile="StdDateFormatTest.java" interface="false" size="73" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="784" invocations="371" avgMicrosecondsPerInvocation="2113" maxMicrosecondsPerInvocation="75032" standardDeviationMicrosecondsPerInvocation="6908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="332" invocations="17" avgMicrosecondsPerInvocation="19547" maxMicrosecondsPerInvocation="259171" standardDeviationMicrosecondsPerInvocation="60951"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="319" invocations="17" avgMicrosecondsPerInvocation="18812" maxMicrosecondsPerInvocation="73485" standardDeviationMicrosecondsPerInvocation="19730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="178" invocations="38" avgMicrosecondsPerInvocation="4693" maxMicrosecondsPerInvocation="46418" standardDeviationMicrosecondsPerInvocation="10881"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="153" invocations="17" avgMicrosecondsPerInvocation="9033" maxMicrosecondsPerInvocation="55451" standardDeviationMicrosecondsPerInvocation="14076"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="129" invocations="8" avgMicrosecondsPerInvocation="16217" maxMicrosecondsPerInvocation="84659" standardDeviationMicrosecondsPerInvocation="26354"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="126" invocations="8" avgMicrosecondsPerInvocation="15775" maxMicrosecondsPerInvocation="114053" standardDeviationMicrosecondsPerInvocation="37242"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="116" invocations="17" avgMicrosecondsPerInvocation="6831" maxMicrosecondsPerInvocation="40983" standardDeviationMicrosecondsPerInvocation="11881"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="105" invocations="17" avgMicrosecondsPerInvocation="6203" maxMicrosecondsPerInvocation="45290" standardDeviationMicrosecondsPerInvocation="12371"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="104" invocations="336" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="24706" standardDeviationMicrosecondsPerInvocation="1697"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="97" invocations="8" avgMicrosecondsPerInvocation="12201" maxMicrosecondsPerInvocation="42492" standardDeviationMicrosecondsPerInvocation="14101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="95" invocations="17" avgMicrosecondsPerInvocation="5640" maxMicrosecondsPerInvocation="38278" standardDeviationMicrosecondsPerInvocation="11986"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="87" invocations="77" avgMicrosecondsPerInvocation="1139" maxMicrosecondsPerInvocation="24287" standardDeviationMicrosecondsPerInvocation="3593"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="75" invocations="17" avgMicrosecondsPerInvocation="4458" maxMicrosecondsPerInvocation="26777" standardDeviationMicrosecondsPerInvocation="7157"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="72" invocations="8" avgMicrosecondsPerInvocation="9073" maxMicrosecondsPerInvocation="40044" standardDeviationMicrosecondsPerInvocation="13181"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711194555235" analysisTimestamp="1714578556705" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V3/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/TOT2/Odc/19/14/com/oceanbase/odc/plugin/connect/oboracle</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="a0d593b46184516e0fbe5be306db9aef" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest.testGetConnectionId()</LongMessage>
+    <Class classname="com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest" start="12" end="53" sourcefile="OBOracleSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/oboracle/OBOracleSessionExtensionTest.java">
+        <Message>At OBOracleSessionExtensionTest.java:[lines 12-53]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest" name="testGetConnectionId" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest" start="50" end="53" startBytecode="0" endBytecode="7" sourcefile="OBOracleSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/oboracle/OBOracleSessionExtensionTest.java"/>
+      <Message>In method com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest.testGetConnectionId()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="11" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest" primary="true" start="51" end="51" startBytecode="10" endBytecode="10" sourcefile="OBOracleSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/oboracle/OBOracleSessionExtensionTest.java">
+      <Message>At OBOracleSessionExtensionTest.java:[line 51]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="7dfcd0099539e767e6ae1c39cac2a764" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest.testGetCurrentSchema()</LongMessage>
+    <Class classname="com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest" start="12" end="53" sourcefile="OBOracleSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/oboracle/OBOracleSessionExtensionTest.java">
+        <Message>At OBOracleSessionExtensionTest.java:[lines 12-53]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest" name="testGetCurrentSchema" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest" start="43" end="46" startBytecode="0" endBytecode="7" sourcefile="OBOracleSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/oboracle/OBOracleSessionExtensionTest.java"/>
+      <Message>In method com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest.testGetCurrentSchema()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="11" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest" primary="true" start="44" end="44" startBytecode="10" endBytecode="10" sourcefile="OBOracleSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/oboracle/OBOracleSessionExtensionTest.java">
+      <Message>At OBOracleSessionExtensionTest.java:[line 44]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtension</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sat, 23 Mar 2024 12:49:15 +0100" total_classes="1" referenced_classes="12" total_bugs="2" total_size="28" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.64" clock_seconds="4.08" peak_mbytes="190.40" alloc_mbytes="7104.00" gc_seconds="0.18" priority_2="2">
+    <FileStats path="com/oceanbase/odc/plugin/connect/oboracle/OBOracleSessionExtensionTest.java" bugCount="2" size="28" bugHash="f83bc4814f2c5aca17e545e34bcdaba8"/>
+    <PackageStats package="com.oceanbase.odc.plugin.connect.oboracle" total_bugs="2" total_types="1" total_size="28" priority_2="2">
+      <ClassStats class="com.oceanbase.odc.plugin.connect.oboracle.OBOracleSessionExtensionTest" sourceFile="OBOracleSessionExtensionTest.java" interface="false" size="28" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="645" invocations="316" avgMicrosecondsPerInvocation="2042" maxMicrosecondsPerInvocation="51900" standardDeviationMicrosecondsPerInvocation="6354"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="226" invocations="12" avgMicrosecondsPerInvocation="18845" maxMicrosecondsPerInvocation="210534" standardDeviationMicrosecondsPerInvocation="57855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="170" invocations="64" avgMicrosecondsPerInvocation="2666" maxMicrosecondsPerInvocation="28696" standardDeviationMicrosecondsPerInvocation="5680"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="142" invocations="12" avgMicrosecondsPerInvocation="11884" maxMicrosecondsPerInvocation="56594" standardDeviationMicrosecondsPerInvocation="17849"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="121" invocations="12" avgMicrosecondsPerInvocation="10153" maxMicrosecondsPerInvocation="50549" standardDeviationMicrosecondsPerInvocation="15178"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="120" invocations="29" avgMicrosecondsPerInvocation="4162" maxMicrosecondsPerInvocation="86292" standardDeviationMicrosecondsPerInvocation="15743"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="108" invocations="6" avgMicrosecondsPerInvocation="18129" maxMicrosecondsPerInvocation="106378" standardDeviationMicrosecondsPerInvocation="39468"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="105" invocations="12" avgMicrosecondsPerInvocation="8822" maxMicrosecondsPerInvocation="47195" standardDeviationMicrosecondsPerInvocation="14345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="103" invocations="281" avgMicrosecondsPerInvocation="367" maxMicrosecondsPerInvocation="21332" standardDeviationMicrosecondsPerInvocation="1688"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="85" invocations="6" avgMicrosecondsPerInvocation="14178" maxMicrosecondsPerInvocation="77865" standardDeviationMicrosecondsPerInvocation="28494"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="77" invocations="318" avgMicrosecondsPerInvocation="242" maxMicrosecondsPerInvocation="19858" standardDeviationMicrosecondsPerInvocation="1597"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="73" invocations="1" avgMicrosecondsPerInvocation="73210" maxMicrosecondsPerInvocation="73210" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="70" invocations="12" avgMicrosecondsPerInvocation="5876" maxMicrosecondsPerInvocation="34625" standardDeviationMicrosecondsPerInvocation="11239"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="51" invocations="12" avgMicrosecondsPerInvocation="4275" maxMicrosecondsPerInvocation="20234" standardDeviationMicrosecondsPerInvocation="6922"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360740251" analysisTimestamp="1714579027873" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/commons-math/MultidimensionalCounterTEST/14/org/apache/commons/math3/util</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="cca1562121b2cd7918ab4853b2b95875" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.math3.util.MultidimensionalCounterTest.testConstructorInvalidSize()</LongMessage>
+    <Class classname="org.apache.commons.math3.util.MultidimensionalCounterTest" primary="true">
+      <SourceLine classname="org.apache.commons.math3.util.MultidimensionalCounterTest" start="6" end="100" sourcefile="MultidimensionalCounterTest.java" sourcepath="org/apache/commons/math3/util/MultidimensionalCounterTest.java">
+        <Message>At MultidimensionalCounterTest.java:[lines 6-100]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.util.MultidimensionalCounterTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.util.MultidimensionalCounterTest" name="testConstructorInvalidSize" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.util.MultidimensionalCounterTest" start="19" end="21" startBytecode="0" endBytecode="20" sourcefile="MultidimensionalCounterTest.java" sourcepath="org/apache/commons/math3/util/MultidimensionalCounterTest.java"/>
+      <Message>In method org.apache.commons.math3.util.MultidimensionalCounterTest.testConstructorInvalidSize()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="25" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.util.MultidimensionalCounterTest" primary="true" start="20" end="20" startBytecode="24" endBytecode="24" sourcefile="MultidimensionalCounterTest.java" sourcepath="org/apache/commons/math3/util/MultidimensionalCounterTest.java">
+      <Message>At MultidimensionalCounterTest.java:[line 20]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.apache.commons.math3.exception.OutOfRangeException</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.MultidimensionalCounter</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.MultidimensionalCounter$Iterator</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:00 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="65" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.23" clock_seconds="4.11" peak_mbytes="191.96" alloc_mbytes="7104.00" gc_seconds="0.21" priority_1="1">
+    <FileStats path="org/apache/commons/math3/util/MultidimensionalCounterTest.java" bugCount="1" size="65" bugHash="92d4cebb073e3978d83697d369076f2b"/>
+    <PackageStats package="org.apache.commons.math3.util" total_bugs="1" total_types="1" total_size="65" priority_1="1">
+      <ClassStats class="org.apache.commons.math3.util.MultidimensionalCounterTest" sourceFile="MultidimensionalCounterTest.java" interface="false" size="65" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="691" invocations="313" avgMicrosecondsPerInvocation="2207" maxMicrosecondsPerInvocation="79589" standardDeviationMicrosecondsPerInvocation="7381"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="237" invocations="10" avgMicrosecondsPerInvocation="23734" maxMicrosecondsPerInvocation="229744" standardDeviationMicrosecondsPerInvocation="68676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="227" invocations="10" avgMicrosecondsPerInvocation="22727" maxMicrosecondsPerInvocation="62437" standardDeviationMicrosecondsPerInvocation="22269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="165" invocations="315" avgMicrosecondsPerInvocation="525" maxMicrosecondsPerInvocation="19110" standardDeviationMicrosecondsPerInvocation="2555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="163" invocations="67" avgMicrosecondsPerInvocation="2446" maxMicrosecondsPerInvocation="25502" standardDeviationMicrosecondsPerInvocation="5733"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="128" invocations="9" avgMicrosecondsPerInvocation="14289" maxMicrosecondsPerInvocation="28312" standardDeviationMicrosecondsPerInvocation="9192"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="108" invocations="9" avgMicrosecondsPerInvocation="12005" maxMicrosecondsPerInvocation="77530" standardDeviationMicrosecondsPerInvocation="23851"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="103" invocations="9" avgMicrosecondsPerInvocation="11512" maxMicrosecondsPerInvocation="77565" standardDeviationMicrosecondsPerInvocation="23686"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="94" invocations="27" avgMicrosecondsPerInvocation="3482" maxMicrosecondsPerInvocation="54045" standardDeviationMicrosecondsPerInvocation="11036"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="86" invocations="275" avgMicrosecondsPerInvocation="315" maxMicrosecondsPerInvocation="24401" standardDeviationMicrosecondsPerInvocation="1733"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="83" invocations="9" avgMicrosecondsPerInvocation="9243" maxMicrosecondsPerInvocation="27257" standardDeviationMicrosecondsPerInvocation="10379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="80" invocations="10" avgMicrosecondsPerInvocation="8060" maxMicrosecondsPerInvocation="60212" standardDeviationMicrosecondsPerInvocation="17778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="69" invocations="10" avgMicrosecondsPerInvocation="6946" maxMicrosecondsPerInvocation="37887" standardDeviationMicrosecondsPerInvocation="11821"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="67" invocations="9" avgMicrosecondsPerInvocation="7549" maxMicrosecondsPerInvocation="21320" standardDeviationMicrosecondsPerInvocation="8327"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="64" invocations="10" avgMicrosecondsPerInvocation="6491" maxMicrosecondsPerInvocation="44636" standardDeviationMicrosecondsPerInvocation="13282"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="64" invocations="10" avgMicrosecondsPerInvocation="6419" maxMicrosecondsPerInvocation="21201" standardDeviationMicrosecondsPerInvocation="7323"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

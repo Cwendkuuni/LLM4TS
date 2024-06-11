@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287212694" analysisTimestamp="1714584164235" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/85_shop/JSTermTEST/29/umd/cs/shop</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="4510908903f59f1ee5961b627c4cedc0" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type umd.cs.shop.JSTerm in umd.cs.shop.JSTermTest.testJSTermConstructorNoArgs() at JSTermTest.java:[line 10] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lumd/cs/shop/JSTerm;">
+      <SourceLine classname="umd.cs.shop.JSTerm">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type umd.cs.shop.JSTerm</Message>
+    </Type>
+    <Class classname="umd.cs.shop.JSTermTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSTermTest" start="5" end="11" sourcefile="JSTermTest.java" sourcepath="umd/cs/shop/JSTermTest.java">
+        <Message>At JSTermTest.java:[lines 5-11]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSTermTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSTermTest" name="testJSTermConstructorNoArgs" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSTermTest" start="9" end="11" startBytecode="0" endBytecode="47" sourcefile="JSTermTest.java" sourcepath="umd/cs/shop/JSTermTest.java"/>
+      <Message>In method umd.cs.shop.JSTermTest.testJSTermConstructorNoArgs()</Message>
+    </Method>
+    <SourceLine classname="umd.cs.shop.JSTermTest" primary="true" start="10" end="10" startBytecode="12" endBytecode="12" sourcefile="JSTermTest.java" sourcepath="umd/cs/shop/JSTermTest.java">
+      <Message>At JSTermTest.java:[line 10]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>umd.cs.shop.JSTerm</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:52 +0200" total_classes="1" referenced_classes="9" total_bugs="1" total_size="7" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.38" clock_seconds="2.41" peak_mbytes="189.09" alloc_mbytes="7104.00" gc_seconds="0.16" priority_2="1">
+    <FileStats path="umd/cs/shop/JSTermTest.java" bugCount="1" size="7" bugHash="d2e8866ea380a401d8bfbe4219fa8615"/>
+    <PackageStats package="umd.cs.shop" total_bugs="1" total_types="1" total_size="7" priority_2="1">
+      <ClassStats class="umd.cs.shop.JSTermTest" sourceFile="JSTermTest.java" interface="false" size="7" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="372" invocations="293" avgMicrosecondsPerInvocation="1270" maxMicrosecondsPerInvocation="32519" standardDeviationMicrosecondsPerInvocation="3947"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="209" invocations="9" avgMicrosecondsPerInvocation="23253" maxMicrosecondsPerInvocation="198668" standardDeviationMicrosecondsPerInvocation="62030"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="107" invocations="35" avgMicrosecondsPerInvocation="3075" maxMicrosecondsPerInvocation="28186" standardDeviationMicrosecondsPerInvocation="5399"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="90" invocations="9" avgMicrosecondsPerInvocation="10090" maxMicrosecondsPerInvocation="41838" standardDeviationMicrosecondsPerInvocation="14751"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="88" invocations="24" avgMicrosecondsPerInvocation="3683" maxMicrosecondsPerInvocation="63836" standardDeviationMicrosecondsPerInvocation="12762"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="79" invocations="2" avgMicrosecondsPerInvocation="39685" maxMicrosecondsPerInvocation="74140" standardDeviationMicrosecondsPerInvocation="34455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="72" invocations="258" avgMicrosecondsPerInvocation="282" maxMicrosecondsPerInvocation="20099" standardDeviationMicrosecondsPerInvocation="1533"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="48" invocations="2" avgMicrosecondsPerInvocation="24443" maxMicrosecondsPerInvocation="48145" standardDeviationMicrosecondsPerInvocation="23702"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="43" invocations="9" avgMicrosecondsPerInvocation="4844" maxMicrosecondsPerInvocation="33981" standardDeviationMicrosecondsPerInvocation="10429"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="43" invocations="9" avgMicrosecondsPerInvocation="4799" maxMicrosecondsPerInvocation="28877" standardDeviationMicrosecondsPerInvocation="8699"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="33" invocations="9" avgMicrosecondsPerInvocation="3773" maxMicrosecondsPerInvocation="14057" standardDeviationMicrosecondsPerInvocation="5533"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420586737" analysisTimestamp="1714611264087" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/ZEROSHOT/Jsoup/74/17/org/jsoup/helper</Jar>
+  </Project>
+  <BugInstance type="BC_VACUOUS_INSTANCEOF" priority="2" rank="17" abbrev="BC" category="STYLE" instanceHash="6668d0f3cc34a0664749ba423504f41e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="571">
+    <ShortMessage>instanceof renverra toujours vrai</ShortMessage>
+    <LongMessage>instanceof renverra toujours vrai dans org.jsoup.helper.StringUtilTest.testStringBuilder(), puisque chaque StringBuilder est une instance de StringUtilTest.java:[line 181]</LongMessage>
+    <Class classname="org.jsoup.helper.StringUtilTest" primary="true">
+      <SourceLine classname="org.jsoup.helper.StringUtilTest" start="12" end="182" sourcefile="StringUtilTest.java" sourcepath="org/jsoup/helper/StringUtilTest.java">
+        <Message>At StringUtilTest.java:[lines 12-182]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.helper.StringUtilTest</Message>
+    </Class>
+    <Method classname="org.jsoup.helper.StringUtilTest" name="testStringBuilder" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.helper.StringUtilTest" start="179" end="182" startBytecode="0" endBytecode="7" sourcefile="StringUtilTest.java" sourcepath="org/jsoup/helper/StringUtilTest.java"/>
+      <Message>In method org.jsoup.helper.StringUtilTest.testStringBuilder()</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/StringBuilder;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.StringBuilder" start="81" end="446" sourcefile="StringBuilder.java" sourcepath="java/lang/StringBuilder.java">
+        <Message>At StringBuilder.java:[lines 81-446]</Message>
+      </SourceLine>
+      <Message>Actual type StringBuilder</Message>
+    </Type>
+    <Type descriptor="Ljava/lang/StringBuilder;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.lang.StringBuilder" start="81" end="446" sourcefile="StringBuilder.java" sourcepath="java/lang/StringBuilder.java">
+        <Message>At StringBuilder.java:[lines 81-446]</Message>
+      </SourceLine>
+      <Message>Expected StringBuilder</Message>
+    </Type>
+    <SourceLine classname="org.jsoup.helper.StringUtilTest" primary="true" start="181" end="181" startBytecode="9" endBytecode="9" sourcefile="StringUtilTest.java" sourcepath="org/jsoup/helper/StringUtilTest.java">
+      <Message>At StringUtilTest.java:[line 181]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="89da19d80067d39d0a9862c414684549" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type StringBuilder in org.jsoup.helper.StringUtilTest.testStringBuilder() at StringUtilTest.java:[line 181] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Ljava/lang/StringBuilder;">
+      <SourceLine classname="java.lang.StringBuilder" start="81" end="446" sourcefile="StringBuilder.java" sourcepath="java/lang/StringBuilder.java">
+        <Message>At StringBuilder.java:[lines 81-446]</Message>
+      </SourceLine>
+      <Message>Type StringBuilder</Message>
+    </Type>
+    <Class classname="org.jsoup.helper.StringUtilTest" primary="true">
+      <SourceLine classname="org.jsoup.helper.StringUtilTest" start="12" end="182" sourcefile="StringUtilTest.java" sourcepath="org/jsoup/helper/StringUtilTest.java">
+        <Message>At StringUtilTest.java:[lines 12-182]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.helper.StringUtilTest</Message>
+    </Class>
+    <Method classname="org.jsoup.helper.StringUtilTest" name="testStringBuilder" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.helper.StringUtilTest" start="179" end="182" startBytecode="0" endBytecode="51" sourcefile="StringUtilTest.java" sourcepath="org/jsoup/helper/StringUtilTest.java"/>
+      <Message>In method org.jsoup.helper.StringUtilTest.testStringBuilder()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.helper.StringUtilTest" primary="true" start="181" end="181" startBytecode="12" endBytecode="12" sourcefile="StringUtilTest.java" sourcepath="org/jsoup/helper/StringUtilTest.java">
+      <Message>At StringUtilTest.java:[line 181]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="BC_VACUOUS_INSTANCEOF" abbrev="BC" category="STYLE" cweid="571">
+    <ShortDescription>instanceof renverra toujours vrai</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce test <code>instanceof</code> renverra toujours vrai. Même s'il est sûr, assurez-vous qu'il ne s'agit pas d'une erreur logique ou d'une mauvaise compréhension.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="BC">
+    <Description>Mauvais transtypages de références</Description>
+  </BugCode>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.jsoup.helper.StringUtil</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:26 +0100" total_classes="1" referenced_classes="17" total_bugs="2" total_size="127" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.51" clock_seconds="1.19" peak_mbytes="191.71" alloc_mbytes="7104.00" gc_seconds="0.07" priority_2="2">
+    <FileStats path="org/jsoup/helper/StringUtilTest.java" bugCount="2" size="127" bugHash="06908b8070ec698e90e16acd6d85ec9f"/>
+    <PackageStats package="org.jsoup.helper" total_bugs="2" total_types="1" total_size="127" priority_2="2">
+      <ClassStats class="org.jsoup.helper.StringUtilTest" sourceFile="StringUtilTest.java" interface="false" size="127" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="187" invocations="389" avgMicrosecondsPerInvocation="482" maxMicrosecondsPerInvocation="16969" standardDeviationMicrosecondsPerInvocation="1234"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="74" invocations="17" avgMicrosecondsPerInvocation="4359" maxMicrosecondsPerInvocation="73947" standardDeviationMicrosecondsPerInvocation="17397"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="57" invocations="17" avgMicrosecondsPerInvocation="3397" maxMicrosecondsPerInvocation="15455" standardDeviationMicrosecondsPerInvocation="4282"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="41" invocations="44" avgMicrosecondsPerInvocation="946" maxMicrosecondsPerInvocation="24719" standardDeviationMicrosecondsPerInvocation="3697"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="41" invocations="162" avgMicrosecondsPerInvocation="254" maxMicrosecondsPerInvocation="4583" standardDeviationMicrosecondsPerInvocation="584"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="39" invocations="17" avgMicrosecondsPerInvocation="2338" maxMicrosecondsPerInvocation="8499" standardDeviationMicrosecondsPerInvocation="2564"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="36" invocations="24" avgMicrosecondsPerInvocation="1506" maxMicrosecondsPerInvocation="32353" standardDeviationMicrosecondsPerInvocation="6435"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="28" invocations="353" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="1301" standardDeviationMicrosecondsPerInvocation="169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="23" invocations="17" avgMicrosecondsPerInvocation="1377" maxMicrosecondsPerInvocation="9155" standardDeviationMicrosecondsPerInvocation="2150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="19" invocations="17" avgMicrosecondsPerInvocation="1138" maxMicrosecondsPerInvocation="4332" standardDeviationMicrosecondsPerInvocation="1581"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="19" invocations="391" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="588" standardDeviationMicrosecondsPerInvocation="44"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="18" invocations="17" avgMicrosecondsPerInvocation="1098" maxMicrosecondsPerInvocation="9960" standardDeviationMicrosecondsPerInvocation="2320"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="17" invocations="24" avgMicrosecondsPerInvocation="733" maxMicrosecondsPerInvocation="9930" standardDeviationMicrosecondsPerInvocation="1928"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="16" invocations="24" avgMicrosecondsPerInvocation="703" maxMicrosecondsPerInvocation="6441" standardDeviationMicrosecondsPerInvocation="1225"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="16" invocations="17" avgMicrosecondsPerInvocation="971" maxMicrosecondsPerInvocation="7227" standardDeviationMicrosecondsPerInvocation="1822"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="16" invocations="17" avgMicrosecondsPerInvocation="957" maxMicrosecondsPerInvocation="4430" standardDeviationMicrosecondsPerInvocation="1298"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="14" invocations="25" avgMicrosecondsPerInvocation="578" maxMicrosecondsPerInvocation="7644" standardDeviationMicrosecondsPerInvocation="1451"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713887944859" analysisTimestamp="1714517336898" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MIXTRAL8x7B/MIXTRAL8x7B_FOR_NEW_DATASET/NewDataset-generated-tests/TOT2/Odc/6/26/com/oceanbase/Odc/service/schedule/job</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="ab9ef7484ff3ec6df67ce5e4e3a24bd6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest.partitionPlanTaskService</LongMessage>
+    <Class classname="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" start="30" end="142" sourcefile="PartitionPlanJobTest.java" sourcepath="com/oceanbase/odc/service/schedule/job/PartitionPlanJobTest.java">
+        <Message>At PartitionPlanJobTest.java:[lines 30-142]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest</Message>
+    </Class>
+    <Field classname="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" name="partitionPlanTaskService" signature="Lcom/oceanbase/odc/service/partitionplan/PartitionPlanTaskService;" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" sourcefile="PartitionPlanJobTest.java" sourcepath="com/oceanbase/odc/service/schedule/job/PartitionPlanJobTest.java">
+        <Message>In PartitionPlanJobTest.java</Message>
+      </SourceLine>
+      <Message>Field com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest.partitionPlanTaskService</Message>
+    </Field>
+    <SourceLine classname="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" primary="true" start="46" end="46" startBytecode="37" endBytecode="37" sourcefile="PartitionPlanJobTest.java" sourcepath="com/oceanbase/odc/service/schedule/job/PartitionPlanJobTest.java">
+      <Message>At PartitionPlanJobTest.java:[line 46]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="3106eebb528db257e068bdd552023f75" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest.scheduleService</LongMessage>
+    <Class classname="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" start="30" end="142" sourcefile="PartitionPlanJobTest.java" sourcepath="com/oceanbase/odc/service/schedule/job/PartitionPlanJobTest.java">
+        <Message>At PartitionPlanJobTest.java:[lines 30-142]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest</Message>
+    </Class>
+    <Field classname="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" name="scheduleService" signature="Lcom/oceanbase/odc/service/schedule/ScheduleService;" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" sourcefile="PartitionPlanJobTest.java" sourcepath="com/oceanbase/odc/service/schedule/job/PartitionPlanJobTest.java">
+        <Message>In PartitionPlanJobTest.java</Message>
+      </SourceLine>
+      <Message>Field com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest.scheduleService</Message>
+    </Field>
+    <SourceLine classname="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" primary="true" start="47" end="47" startBytecode="52" endBytecode="52" sourcefile="PartitionPlanJobTest.java" sourcepath="com/oceanbase/odc/service/schedule/job/PartitionPlanJobTest.java">
+      <Message>At PartitionPlanJobTest.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="13">
+    <MissingClass>com.oceanbase.odc.metadb.partitionplan.DatabasePartitionPlanEntity</MissingClass>
+    <MissingClass>com.oceanbase.odc.metadb.partitionplan.TablePartitionPlanEntity</MissingClass>
+    <MissingClass>com.oceanbase.odc.metadb.schedule.ScheduleEntity</MissingClass>
+    <MissingClass>com.oceanbase.odc.service.partitionplan.PartitionPlanService</MissingClass>
+    <MissingClass>com.oceanbase.odc.service.partitionplan.PartitionPlanTaskService</MissingClass>
+    <MissingClass>com.oceanbase.odc.service.schedule.ScheduleService</MissingClass>
+    <MissingClass>com.oceanbase.odc.service.schedule.job.PartitionPlanJob</MissingClass>
+    <MissingClass>org.mockito.Mockito</MissingClass>
+    <MissingClass>org.mockito.stubbing.OngoingStubbing</MissingClass>
+    <MissingClass>org.quartz.JobDataMap</MissingClass>
+    <MissingClass>org.quartz.JobExecutionContext</MissingClass>
+    <MissingClass>org.springframework.context.ApplicationContext</MissingClass>
+    <MissingClass>org.springframework.context.support.ClassPathXmlApplicationContext</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 23 Apr 2024 17:59:04 +0200" total_classes="1" referenced_classes="14" total_bugs="2" total_size="72" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="3.46" clock_seconds="0.75" peak_mbytes="191.55" alloc_mbytes="7104.00" gc_seconds="0.04" priority_2="2">
+    <FileStats path="com/oceanbase/odc/service/schedule/job/PartitionPlanJobTest.java" bugCount="2" size="72" bugHash="1973be3946feaddffd6dde4f6079fadb"/>
+    <PackageStats package="com.oceanbase.odc.service.schedule.job" total_bugs="2" total_types="1" total_size="72" priority_2="2">
+      <ClassStats class="com.oceanbase.odc.service.schedule.job.PartitionPlanJobTest" sourceFile="PartitionPlanJobTest.java" interface="false" size="72" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="108" invocations="342" avgMicrosecondsPerInvocation="318" maxMicrosecondsPerInvocation="10502" standardDeviationMicrosecondsPerInvocation="826"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="50" invocations="345" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="38717" standardDeviationMicrosecondsPerInvocation="2079"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="31" invocations="14" avgMicrosecondsPerInvocation="2265" maxMicrosecondsPerInvocation="8478" standardDeviationMicrosecondsPerInvocation="2574"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="29" invocations="82" avgMicrosecondsPerInvocation="354" maxMicrosecondsPerInvocation="2510" standardDeviationMicrosecondsPerInvocation="421"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="21" invocations="7" avgMicrosecondsPerInvocation="3001" maxMicrosecondsPerInvocation="18921" standardDeviationMicrosecondsPerInvocation="6505"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="19" invocations="45" avgMicrosecondsPerInvocation="438" maxMicrosecondsPerInvocation="11090" standardDeviationMicrosecondsPerInvocation="1665"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="18" invocations="295" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="1018" standardDeviationMicrosecondsPerInvocation="122"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="18" invocations="8" avgMicrosecondsPerInvocation="2270" maxMicrosecondsPerInvocation="6192" standardDeviationMicrosecondsPerInvocation="2127"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="17" invocations="14" avgMicrosecondsPerInvocation="1218" maxMicrosecondsPerInvocation="4956" standardDeviationMicrosecondsPerInvocation="1403"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="14" invocations="7" avgMicrosecondsPerInvocation="2117" maxMicrosecondsPerInvocation="8120" standardDeviationMicrosecondsPerInvocation="2544"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="13" invocations="7" avgMicrosecondsPerInvocation="1953" maxMicrosecondsPerInvocation="7969" standardDeviationMicrosecondsPerInvocation="2529"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="12" invocations="14" avgMicrosecondsPerInvocation="923" maxMicrosecondsPerInvocation="4998" standardDeviationMicrosecondsPerInvocation="1282"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="12" invocations="7" avgMicrosecondsPerInvocation="1788" maxMicrosecondsPerInvocation="3699" standardDeviationMicrosecondsPerInvocation="1291"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="11" invocations="14" avgMicrosecondsPerInvocation="824" maxMicrosecondsPerInvocation="6858" standardDeviationMicrosecondsPerInvocation="1730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="11" invocations="14" avgMicrosecondsPerInvocation="805" maxMicrosecondsPerInvocation="3734" standardDeviationMicrosecondsPerInvocation="1175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="11" invocations="7" avgMicrosecondsPerInvocation="1584" maxMicrosecondsPerInvocation="6003" standardDeviationMicrosecondsPerInvocation="1881"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

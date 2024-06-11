@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0-rc4" timestamp="2024-05-14T17:37:23.071">
+<file name="/tmp/tmpxyzf9s5l.java">
+<violation beginline="58" endline="58" begincolumn="34" endcolumn="66" rule="CognitiveComplexity" ruleset="Design" package="com.fasterxml.jackson.databind.jsontype.impl" class="StdSubtypeResolver" method="collectAndResolveSubtypesByClass" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cognitivecomplexity" priority="3">
+The method 'collectAndResolveSubtypesByClass(MapperConfig&lt;?&gt;, AnnotatedMember, JavaType)' has a cognitive complexity of 10, current threshold is 10
+</violation>
+<violation beginline="200" endline="200" begincolumn="20" endcolumn="38" rule="CognitiveComplexity" ruleset="Design" package="com.fasterxml.jackson.databind.jsontype.impl" class="StdSubtypeResolver" method="_collectAndResolve" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cognitivecomplexity" priority="3">
+The method '_collectAndResolve(AnnotatedClass, NamedType, MapperConfig&lt;?&gt;, AnnotationIntrospector, HashMap&lt;NamedType, NamedType&gt;)' has a cognitive complexity of 14, current threshold is 10
+</violation>
+<violation beginline="238" endline="238" begincolumn="20" endcolumn="46" rule="CognitiveComplexity" ruleset="Design" package="com.fasterxml.jackson.databind.jsontype.impl" class="StdSubtypeResolver" method="_collectAndResolveByTypeId" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0-rc4/pmd_rules_java_design.html#cognitivecomplexity" priority="3">
+The method '_collectAndResolveByTypeId(AnnotatedClass, NamedType, MapperConfig&lt;?&gt;, Set&lt;Class&lt;?&gt;&gt;, Map&lt;String, NamedType&gt;)' has a cognitive complexity of 12, current threshold is 10
+</violation>
+</file>
+</pmd>

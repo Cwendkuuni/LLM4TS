@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420576869" analysisTimestamp="1714592253153" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/FEWSHOT/Mockito/16/1/org/mockito/internal</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="b2c95216a03eeb584499980a514aa298" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type Integer in org.mockito.internal.MockitoCoreTest.testMockWithSettings() at MockitoCoreTest.java:[line 72] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Ljava/lang/Integer;">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java">
+        <Message>At Integer.java:[lines 52-1590]</Message>
+      </SourceLine>
+      <Message>Type Integer</Message>
+    </Type>
+    <Class classname="org.mockito.internal.MockitoCoreTest" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="38" end="246" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+        <Message>At MockitoCoreTest.java:[lines 38-246]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.MockitoCoreTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.MockitoCoreTest" name="testMockWithSettings" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="66" end="73" startBytecode="0" endBytecode="77" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java"/>
+      <Message>In method org.mockito.internal.MockitoCoreTest.testMockWithSettings()</Message>
+    </Method>
+    <SourceLine classname="org.mockito.internal.MockitoCoreTest" primary="true" start="72" end="72" startBytecode="30" endBytecode="30" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+      <Message>At MockitoCoreTest.java:[line 72]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="7a71bff8a418ebfc250417d6bc968cc" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type String in org.mockito.internal.MockitoCoreTest.testMock() at MockitoCoreTest.java:[line 61] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Ljava/lang/String;">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java">
+        <Message>At String.java:[lines 111-3141]</Message>
+      </SourceLine>
+      <Message>Type String</Message>
+    </Type>
+    <Class classname="org.mockito.internal.MockitoCoreTest" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="38" end="246" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+        <Message>At MockitoCoreTest.java:[lines 38-246]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.MockitoCoreTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.MockitoCoreTest" name="testMock" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="54" end="62" startBytecode="0" endBytecode="87" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java"/>
+      <Message>In method org.mockito.internal.MockitoCoreTest.testMock()</Message>
+    </Method>
+    <SourceLine classname="org.mockito.internal.MockitoCoreTest" primary="true" start="61" end="61" startBytecode="36" endBytecode="36" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+      <Message>At MockitoCoreTest.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="39f231aab9c56c3f40b385b731da1e58" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.mockito.InOrder in org.mockito.internal.MockitoCoreTest.testInOrder() at MockitoCoreTest.java:[line 187] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/mockito/InOrder;">
+      <SourceLine classname="org.mockito.InOrder">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.mockito.InOrder</Message>
+    </Type>
+    <Class classname="org.mockito.internal.MockitoCoreTest" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="38" end="246" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+        <Message>At MockitoCoreTest.java:[lines 38-246]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.MockitoCoreTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.MockitoCoreTest" name="testInOrder" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="182" end="188" startBytecode="0" endBytecode="73" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java"/>
+      <Message>In method org.mockito.internal.MockitoCoreTest.testInOrder()</Message>
+    </Method>
+    <SourceLine classname="org.mockito.internal.MockitoCoreTest" primary="true" start="187" end="187" startBytecode="30" endBytecode="30" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+      <Message>At MockitoCoreTest.java:[line 187]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="d1b9e99db227fa10cb8c1c13efd098a1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.mockito.internal.stubbing.StubberImpl in org.mockito.internal.MockitoCoreTest.testDoAnswer() at MockitoCoreTest.java:[line 213] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/mockito/internal/stubbing/StubberImpl;">
+      <SourceLine classname="org.mockito.internal.stubbing.StubberImpl">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.mockito.internal.stubbing.StubberImpl</Message>
+    </Type>
+    <Class classname="org.mockito.internal.MockitoCoreTest" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="38" end="246" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+        <Message>At MockitoCoreTest.java:[lines 38-246]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.MockitoCoreTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.MockitoCoreTest" name="testDoAnswer" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="206" end="214" startBytecode="0" endBytecode="95" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java"/>
+      <Message>In method org.mockito.internal.MockitoCoreTest.testDoAnswer()</Message>
+    </Method>
+    <SourceLine classname="org.mockito.internal.MockitoCoreTest" primary="true" start="213" end="213" startBytecode="44" endBytecode="44" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+      <Message>At MockitoCoreTest.java:[line 213]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="dd54edbcb2b70280d98d798877ca1af1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.mockito.stubbing.VoidMethodStubbable in org.mockito.internal.MockitoCoreTest.testStubVoid() at MockitoCoreTest.java:[line 224] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/mockito/stubbing/VoidMethodStubbable;">
+      <SourceLine classname="org.mockito.stubbing.VoidMethodStubbable">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.mockito.stubbing.VoidMethodStubbable</Message>
+    </Type>
+    <Class classname="org.mockito.internal.MockitoCoreTest" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="38" end="246" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+        <Message>At MockitoCoreTest.java:[lines 38-246]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.MockitoCoreTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.MockitoCoreTest" name="testStubVoid" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="218" end="225" startBytecode="0" endBytecode="79" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java"/>
+      <Message>In method org.mockito.internal.MockitoCoreTest.testStubVoid()</Message>
+    </Method>
+    <SourceLine classname="org.mockito.internal.MockitoCoreTest" primary="true" start="224" end="224" startBytecode="32" endBytecode="32" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+      <Message>At MockitoCoreTest.java:[line 224]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="bfbf98ce2ba90f11d16855815f051b38" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.mockito.internal.MockitoCoreTest.mockUtil</LongMessage>
+    <Class classname="org.mockito.internal.MockitoCoreTest" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="38" end="246" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+        <Message>At MockitoCoreTest.java:[lines 38-246]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.MockitoCoreTest</Message>
+    </Class>
+    <Field classname="org.mockito.internal.MockitoCoreTest" name="mockUtil" signature="Lorg/mockito/internal/util/MockUtil;" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+        <Message>In MockitoCoreTest.java</Message>
+      </SourceLine>
+      <Message>Field org.mockito.internal.MockitoCoreTest.mockUtil</Message>
+    </Field>
+    <SourceLine classname="org.mockito.internal.MockitoCoreTest" primary="true" start="48" end="48" startBytecode="30" endBytecode="30" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+      <Message>At MockitoCoreTest.java:[line 48]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="3cca55475445541bd8ac10f8660805df" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.mockito.internal.MockitoCoreTest.reporter</LongMessage>
+    <Class classname="org.mockito.internal.MockitoCoreTest" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" start="38" end="246" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+        <Message>At MockitoCoreTest.java:[lines 38-246]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.MockitoCoreTest</Message>
+    </Class>
+    <Field classname="org.mockito.internal.MockitoCoreTest" name="reporter" signature="Lorg/mockito/exceptions/Reporter;" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.MockitoCoreTest" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+        <Message>In MockitoCoreTest.java</Message>
+      </SourceLine>
+      <Message>Field org.mockito.internal.MockitoCoreTest.reporter</Message>
+    </Field>
+    <SourceLine classname="org.mockito.internal.MockitoCoreTest" primary="true" start="47" end="47" startBytecode="19" endBytecode="19" sourcefile="MockitoCoreTest.java" sourcepath="org/mockito/internal/MockitoCoreTest.java">
+      <Message>At MockitoCoreTest.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="16">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.mockito.InOrder</MissingClass>
+    <MissingClass>org.mockito.MockSettings</MissingClass>
+    <MissingClass>org.mockito.Mockito</MissingClass>
+    <MissingClass>org.mockito.exceptions.Reporter</MissingClass>
+    <MissingClass>org.mockito.internal.MockitoCore</MissingClass>
+    <MissingClass>org.mockito.internal.progress.IOngoingStubbing</MissingClass>
+    <MissingClass>org.mockito.internal.progress.MockingProgress</MissingClass>
+    <MissingClass>org.mockito.internal.progress.ThreadSafeMockingProgress</MissingClass>
+    <MissingClass>org.mockito.internal.stubbing.OngoingStubbingImpl</MissingClass>
+    <MissingClass>org.mockito.internal.stubbing.StubberImpl</MissingClass>
+    <MissingClass>org.mockito.internal.util.MockUtil</MissingClass>
+    <MissingClass>org.mockito.internal.verification.api.VerificationMode</MissingClass>
+    <MissingClass>org.mockito.stubbing.Answer</MissingClass>
+    <MissingClass>org.mockito.stubbing.OngoingStubbing</MissingClass>
+    <MissingClass>org.mockito.stubbing.VoidMethodStubbable</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:16 +0100" total_classes="1" referenced_classes="11" total_bugs="7" total_size="131" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.17" clock_seconds="2.37" peak_mbytes="192.38" alloc_mbytes="7104.00" gc_seconds="0.23" priority_2="7">
+    <FileStats path="org/mockito/internal/MockitoCoreTest.java" bugCount="7" size="131" bugHash="32836f401b828370a0dcd8ac792c2c8d"/>
+    <PackageStats package="org.mockito.internal" total_bugs="7" total_types="1" total_size="131" priority_2="7">
+      <ClassStats class="org.mockito.internal.MockitoCoreTest" sourceFile="MockitoCoreTest.java" interface="false" size="131" bugs="7" priority_2="7"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="334" invocations="11" avgMicrosecondsPerInvocation="30441" maxMicrosecondsPerInvocation="248328" standardDeviationMicrosecondsPerInvocation="69611"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="321" invocations="337" avgMicrosecondsPerInvocation="953" maxMicrosecondsPerInvocation="30527" standardDeviationMicrosecondsPerInvocation="2873"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="85" invocations="11" avgMicrosecondsPerInvocation="7754" maxMicrosecondsPerInvocation="24627" standardDeviationMicrosecondsPerInvocation="9587"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="79" invocations="83" avgMicrosecondsPerInvocation="953" maxMicrosecondsPerInvocation="11133" standardDeviationMicrosecondsPerInvocation="1882"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="71" invocations="11" avgMicrosecondsPerInvocation="6531" maxMicrosecondsPerInvocation="28161" standardDeviationMicrosecondsPerInvocation="8526"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="54" invocations="37" avgMicrosecondsPerInvocation="1462" maxMicrosecondsPerInvocation="27231" standardDeviationMicrosecondsPerInvocation="4777"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="48" invocations="24" avgMicrosecondsPerInvocation="2023" maxMicrosecondsPerInvocation="38104" standardDeviationMicrosecondsPerInvocation="7559"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="47" invocations="340" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="15386" standardDeviationMicrosecondsPerInvocation="885"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="46" invocations="284" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="10168" standardDeviationMicrosecondsPerInvocation="677"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="46" invocations="24" avgMicrosecondsPerInvocation="1924" maxMicrosecondsPerInvocation="13867" standardDeviationMicrosecondsPerInvocation="3416"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="42" invocations="1" avgMicrosecondsPerInvocation="42691" maxMicrosecondsPerInvocation="42691" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="42" invocations="24" avgMicrosecondsPerInvocation="1765" maxMicrosecondsPerInvocation="21734" standardDeviationMicrosecondsPerInvocation="4191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="36" invocations="1" avgMicrosecondsPerInvocation="36678" maxMicrosecondsPerInvocation="36678" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="35" invocations="11" avgMicrosecondsPerInvocation="3183" maxMicrosecondsPerInvocation="14427" standardDeviationMicrosecondsPerInvocation="4771"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="32" invocations="11" avgMicrosecondsPerInvocation="2970" maxMicrosecondsPerInvocation="13001" standardDeviationMicrosecondsPerInvocation="4753"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

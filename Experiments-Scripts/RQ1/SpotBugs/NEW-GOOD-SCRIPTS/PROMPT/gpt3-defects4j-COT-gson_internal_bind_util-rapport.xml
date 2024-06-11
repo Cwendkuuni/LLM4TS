@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420550861" analysisTimestamp="1714585189989" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/COT/Gson/5/11/com/google/gson/internal/bind/util</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="6615b5f71b08fb045bb0203b9449182c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.google.gson.internal.bind.util.ISO8601UtilsTest.testParse()</LongMessage>
+    <Class classname="com.google.gson.internal.bind.util.ISO8601UtilsTest" primary="true">
+      <SourceLine classname="com.google.gson.internal.bind.util.ISO8601UtilsTest" start="12" end="56" sourcefile="ISO8601UtilsTest.java" sourcepath="com/google/gson/internal/bind/util/ISO8601UtilsTest.java">
+        <Message>At ISO8601UtilsTest.java:[lines 12-56]</Message>
+      </SourceLine>
+      <Message>In class com.google.gson.internal.bind.util.ISO8601UtilsTest</Message>
+    </Class>
+    <Method classname="com.google.gson.internal.bind.util.ISO8601UtilsTest" name="testParse" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.google.gson.internal.bind.util.ISO8601UtilsTest" start="38" end="42" startBytecode="0" endBytecode="16" sourcefile="ISO8601UtilsTest.java" sourcepath="com/google/gson/internal/bind/util/ISO8601UtilsTest.java"/>
+      <Message>In method com.google.gson.internal.bind.util.ISO8601UtilsTest.testParse()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="18" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="com.google.gson.internal.bind.util.ISO8601UtilsTest" primary="true" start="40" end="40" startBytecode="17" endBytecode="17" sourcefile="ISO8601UtilsTest.java" sourcepath="com/google/gson/internal/bind/util/ISO8601UtilsTest.java">
+      <Message>At ISO8601UtilsTest.java:[line 40]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.google.gson.internal.bind.util.ISO8601Utils</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:15:50 +0100" total_classes="1" referenced_classes="16" total_bugs="1" total_size="35" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.39" clock_seconds="3.34" peak_mbytes="190.15" alloc_mbytes="7104.00" gc_seconds="0.18" priority_2="1">
+    <FileStats path="com/google/gson/internal/bind/util/ISO8601UtilsTest.java" bugCount="1" size="35" bugHash="db6b73967a74f65efffd1b92557a1fcd"/>
+    <PackageStats package="com.google.gson.internal.bind.util" total_bugs="1" total_types="1" total_size="35" priority_2="1">
+      <ClassStats class="com.google.gson.internal.bind.util.ISO8601UtilsTest" sourceFile="ISO8601UtilsTest.java" interface="false" size="35" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="510" invocations="347" avgMicrosecondsPerInvocation="1471" maxMicrosecondsPerInvocation="59310" standardDeviationMicrosecondsPerInvocation="5236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="224" invocations="16" avgMicrosecondsPerInvocation="14010" maxMicrosecondsPerInvocation="211740" standardDeviationMicrosecondsPerInvocation="51065"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="152" invocations="16" avgMicrosecondsPerInvocation="9537" maxMicrosecondsPerInvocation="68782" standardDeviationMicrosecondsPerInvocation="16920"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="135" invocations="66" avgMicrosecondsPerInvocation="2048" maxMicrosecondsPerInvocation="38264" standardDeviationMicrosecondsPerInvocation="5250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="118" invocations="7" avgMicrosecondsPerInvocation="16983" maxMicrosecondsPerInvocation="102331" standardDeviationMicrosecondsPerInvocation="35085"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="116" invocations="16" avgMicrosecondsPerInvocation="7309" maxMicrosecondsPerInvocation="57316" standardDeviationMicrosecondsPerInvocation="16949"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="111" invocations="16" avgMicrosecondsPerInvocation="6996" maxMicrosecondsPerInvocation="40463" standardDeviationMicrosecondsPerInvocation="10726"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="86" invocations="35" avgMicrosecondsPerInvocation="2481" maxMicrosecondsPerInvocation="48431" standardDeviationMicrosecondsPerInvocation="8374"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="69" invocations="7" avgMicrosecondsPerInvocation="9905" maxMicrosecondsPerInvocation="39872" standardDeviationMicrosecondsPerInvocation="14778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="69" invocations="16" avgMicrosecondsPerInvocation="4325" maxMicrosecondsPerInvocation="29598" standardDeviationMicrosecondsPerInvocation="8623"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="66" invocations="311" avgMicrosecondsPerInvocation="213" maxMicrosecondsPerInvocation="12280" standardDeviationMicrosecondsPerInvocation="990"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="66" invocations="16" avgMicrosecondsPerInvocation="4137" maxMicrosecondsPerInvocation="35519" standardDeviationMicrosecondsPerInvocation="9000"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="57" invocations="7" avgMicrosecondsPerInvocation="8283" maxMicrosecondsPerInvocation="47815" standardDeviationMicrosecondsPerInvocation="16274"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

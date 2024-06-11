@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756311948" analysisTimestamp="1714598317384" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/11_imsmart/HTMLFilterTEST/18/com/imsmart/servlet</Jar>
+  </Project>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="f6e6e86b2fc3179cd5b2d9d047edb704" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in com.imsmart.servlet.HTMLFilterTest.testFilter_ExceptionHandling()</LongMessage>
+    <Class classname="com.imsmart.servlet.HTMLFilterTest" primary="true">
+      <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" start="5" end="57" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java">
+        <Message>At HTMLFilterTest.java:[lines 5-57]</Message>
+      </SourceLine>
+      <Message>In class com.imsmart.servlet.HTMLFilterTest</Message>
+    </Class>
+    <Method classname="com.imsmart.servlet.HTMLFilterTest" name="testFilter_ExceptionHandling" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" start="50" end="57" startBytecode="0" endBytecode="93" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java"/>
+      <Message>In method com.imsmart.servlet.HTMLFilterTest.testFilter_ExceptionHandling()</Message>
+    </Method>
+    <SourceLine classname="com.imsmart.servlet.HTMLFilterTest" primary="true" start="54" end="54" startBytecode="15" endBytecode="15" sourcefile="HTMLFilterTest.java" sourcepath="com/imsmart/servlet/HTMLFilterTest.java">
+      <Message>At HTMLFilterTest.java:[line 54]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DCN_NULLPOINTER_EXCEPTION" abbrev="DCN" category="STYLE">
+    <ShortDescription>NullPointerException caught</ShortDescription>
+    <Details><![CDATA[
+   
+<p>
+According to SEI Cert rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">ERR08-J</a> NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
+<p>
+This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+  try {
+    String ms[] = m.split(" ");
+    return names.length != 1;
+  } catch (NullPointerException e) {
+    return false;
+  }
+}
+</code></pre>
+<p>
+A compliant solution would use a null-check as in the following example:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+    if (m == null) return false;
+    String ms[] = m.split(" ");
+    return names.length != 1;
+}
+</code></pre>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DCN">
+    <Description>Don&apos;t Catch NullPointer Exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>com.imsmart.servlet.HTMLFilter</MissingClass>
+    <MissingClass>java.lang.invoke.StringConcatFactory</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:11 +0100" total_classes="1" referenced_classes="15" total_bugs="1" total_size="36" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.36" clock_seconds="1.91" peak_mbytes="192.04" alloc_mbytes="7104.00" gc_seconds="0.14" priority_2="1">
+    <FileStats path="com/imsmart/servlet/HTMLFilterTest.java" bugCount="1" size="36" bugHash="923acc7cfd145546a3f8c312127cd66a"/>
+    <PackageStats package="com.imsmart.servlet" total_bugs="1" total_types="1" total_size="36" priority_2="1">
+      <ClassStats class="com.imsmart.servlet.HTMLFilterTest" sourceFile="HTMLFilterTest.java" interface="false" size="36" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="390" invocations="349" avgMicrosecondsPerInvocation="1120" maxMicrosecondsPerInvocation="33162" standardDeviationMicrosecondsPerInvocation="3478"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="190" invocations="15" avgMicrosecondsPerInvocation="12710" maxMicrosecondsPerInvocation="163791" standardDeviationMicrosecondsPerInvocation="40479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="83" invocations="15" avgMicrosecondsPerInvocation="5594" maxMicrosecondsPerInvocation="21703" standardDeviationMicrosecondsPerInvocation="6770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="69" invocations="37" avgMicrosecondsPerInvocation="1875" maxMicrosecondsPerInvocation="27871" standardDeviationMicrosecondsPerInvocation="5024"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="60" invocations="15" avgMicrosecondsPerInvocation="4035" maxMicrosecondsPerInvocation="14578" standardDeviationMicrosecondsPerInvocation="4753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="54" invocations="311" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="14322" standardDeviationMicrosecondsPerInvocation="869"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="50" invocations="83" avgMicrosecondsPerInvocation="607" maxMicrosecondsPerInvocation="5290" standardDeviationMicrosecondsPerInvocation="838"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="48" invocations="15" avgMicrosecondsPerInvocation="3261" maxMicrosecondsPerInvocation="28895" standardDeviationMicrosecondsPerInvocation="7027"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="39" invocations="9" avgMicrosecondsPerInvocation="4356" maxMicrosecondsPerInvocation="36130" standardDeviationMicrosecondsPerInvocation="11239"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="30" invocations="9" avgMicrosecondsPerInvocation="3396" maxMicrosecondsPerInvocation="23751" standardDeviationMicrosecondsPerInvocation="7211"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="24" invocations="351" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="1371" standardDeviationMicrosecondsPerInvocation="87"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="22" invocations="15" avgMicrosecondsPerInvocation="1528" maxMicrosecondsPerInvocation="12857" standardDeviationMicrosecondsPerInvocation="3125"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

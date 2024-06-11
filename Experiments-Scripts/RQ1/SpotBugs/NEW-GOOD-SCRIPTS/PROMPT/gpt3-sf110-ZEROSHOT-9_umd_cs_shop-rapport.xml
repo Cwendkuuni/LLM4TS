@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360751088" analysisTimestamp="1714604551242" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/85_shop/JSTermTEST/9/umd/cs/shop</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="bb4b79a409be1b275606533a918eb014" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode umd.cs.shop.JSTermTest.testJSTermConstructor()</LongMessage>
+    <Class classname="umd.cs.shop.JSTermTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSTermTest" start="6" end="100" sourcefile="JSTermTest.java" sourcepath="umd/cs/shop/JSTermTest.java">
+        <Message>At JSTermTest.java:[lines 6-100]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSTermTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSTermTest" name="testJSTermConstructor" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSTermTest" start="10" end="12" startBytecode="0" endBytecode="13" sourcefile="JSTermTest.java" sourcepath="umd/cs/shop/JSTermTest.java"/>
+      <Message>In method umd.cs.shop.JSTermTest.testJSTermConstructor()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="26" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="umd.cs.shop.JSTermTest" primary="true" start="11" end="11" startBytecode="25" endBytecode="25" sourcefile="JSTermTest.java" sourcepath="umd/cs/shop/JSTermTest.java">
+      <Message>At JSTermTest.java:[line 11]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>umd.cs.shop.JSSubstitution</MissingClass>
+    <MissingClass>umd.cs.shop.JSTerm</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:11 +0100" total_classes="1" referenced_classes="14" total_bugs="1" total_size="67" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.95" clock_seconds="2.07" peak_mbytes="191.07" alloc_mbytes="7104.00" gc_seconds="0.13" priority_1="1">
+    <FileStats path="umd/cs/shop/JSTermTest.java" bugCount="1" size="67" bugHash="dc17b012073f3e280bd811430ab8d530"/>
+    <PackageStats package="umd.cs.shop" total_bugs="1" total_types="1" total_size="67" priority_1="1">
+      <ClassStats class="umd.cs.shop.JSTermTest" sourceFile="JSTermTest.java" interface="false" size="67" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="296" invocations="318" avgMicrosecondsPerInvocation="932" maxMicrosecondsPerInvocation="23029" standardDeviationMicrosecondsPerInvocation="2581"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="259" invocations="14" avgMicrosecondsPerInvocation="18558" maxMicrosecondsPerInvocation="146135" standardDeviationMicrosecondsPerInvocation="36511"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="83" invocations="80" avgMicrosecondsPerInvocation="1038" maxMicrosecondsPerInvocation="40125" standardDeviationMicrosecondsPerInvocation="4466"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="78" invocations="32" avgMicrosecondsPerInvocation="2454" maxMicrosecondsPerInvocation="46513" standardDeviationMicrosecondsPerInvocation="8286"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="70" invocations="14" avgMicrosecondsPerInvocation="5064" maxMicrosecondsPerInvocation="30334" standardDeviationMicrosecondsPerInvocation="8017"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="57" invocations="283" avgMicrosecondsPerInvocation="201" maxMicrosecondsPerInvocation="16180" standardDeviationMicrosecondsPerInvocation="1054"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="49" invocations="16" avgMicrosecondsPerInvocation="3066" maxMicrosecondsPerInvocation="45147" standardDeviationMicrosecondsPerInvocation="10871"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="41" invocations="14" avgMicrosecondsPerInvocation="2939" maxMicrosecondsPerInvocation="19058" standardDeviationMicrosecondsPerInvocation="5499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="38" invocations="320" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="17935" standardDeviationMicrosecondsPerInvocation="999"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="34" invocations="14" avgMicrosecondsPerInvocation="2491" maxMicrosecondsPerInvocation="11568" standardDeviationMicrosecondsPerInvocation="3154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="33" invocations="14" avgMicrosecondsPerInvocation="2416" maxMicrosecondsPerInvocation="9739" standardDeviationMicrosecondsPerInvocation="2978"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="30" invocations="16" avgMicrosecondsPerInvocation="1890" maxMicrosecondsPerInvocation="11049" standardDeviationMicrosecondsPerInvocation="2736"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteUnconditionalParamDerefs" totalMilliseconds="30" invocations="1" avgMicrosecondsPerInvocation="30031" maxMicrosecondsPerInvocation="30031" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="28" invocations="16" avgMicrosecondsPerInvocation="1755" maxMicrosecondsPerInvocation="19896" standardDeviationMicrosecondsPerInvocation="4704"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="25" invocations="14" avgMicrosecondsPerInvocation="1796" maxMicrosecondsPerInvocation="8202" standardDeviationMicrosecondsPerInvocation="2440"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="23" invocations="14" avgMicrosecondsPerInvocation="1704" maxMicrosecondsPerInvocation="20025" standardDeviationMicrosecondsPerInvocation="5169"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

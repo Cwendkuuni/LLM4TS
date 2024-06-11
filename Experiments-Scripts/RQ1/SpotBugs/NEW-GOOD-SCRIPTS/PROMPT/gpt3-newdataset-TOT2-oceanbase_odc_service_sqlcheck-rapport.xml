@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711194555095" analysisTimestamp="1714577589469" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/NEW-DATASET/SORTIES-V3/COMPILED-CLASSES/AVEC-PACKAGE_GLOBAL/TOT2/Odc/18/19/com/oceanbase/odc/service/sqlcheck</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="cb41257f7a87316bef6627784bafe6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest.sqlCheckService</LongMessage>
+    <Class classname="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" start="6" end="73" sourcefile="SqlCheckServiceTest.java" sourcepath="com/oceanbase/odc/service/sqlcheck/SqlCheckServiceTest.java">
+        <Message>At SqlCheckServiceTest.java:[lines 6-73]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest</Message>
+    </Class>
+    <Field classname="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" name="sqlCheckService" signature="Lcom/oceanbase/odc/service/sqlcheck/SqlCheckService;" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" sourcefile="SqlCheckServiceTest.java" sourcepath="com/oceanbase/odc/service/sqlcheck/SqlCheckServiceTest.java">
+        <Message>In SqlCheckServiceTest.java</Message>
+      </SourceLine>
+      <Message>Field com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest.sqlCheckService</Message>
+    </Field>
+    <SourceLine classname="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" primary="true" start="12" end="12" startBytecode="8" endBytecode="8" sourcefile="SqlCheckServiceTest.java" sourcepath="com/oceanbase/odc/service/sqlcheck/SqlCheckServiceTest.java">
+      <Message>At SqlCheckServiceTest.java:[line 12]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>com.oceanbase.odc.service.sqlcheck.SqlCheckService</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sat, 23 Mar 2024 12:49:15 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="17" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.40" clock_seconds="3.73" peak_mbytes="189.52" alloc_mbytes="7104.00" gc_seconds="0.24" priority_2="1">
+    <FileStats path="com/oceanbase/odc/service/sqlcheck/SqlCheckServiceTest.java" bugCount="1" size="17" bugHash="0d94700b8399016590ae42b27a5b45f2"/>
+    <PackageStats package="com.oceanbase.odc.service.sqlcheck" total_bugs="1" total_types="1" total_size="17" priority_2="1">
+      <ClassStats class="com.oceanbase.odc.service.sqlcheck.SqlCheckServiceTest" sourceFile="SqlCheckServiceTest.java" interface="false" size="17" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="674" invocations="293" avgMicrosecondsPerInvocation="2302" maxMicrosecondsPerInvocation="76814" standardDeviationMicrosecondsPerInvocation="7657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="251" invocations="9" avgMicrosecondsPerInvocation="27971" maxMicrosecondsPerInvocation="246786" standardDeviationMicrosecondsPerInvocation="77366"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="179" invocations="9" avgMicrosecondsPerInvocation="19998" maxMicrosecondsPerInvocation="60666" standardDeviationMicrosecondsPerInvocation="24752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="169" invocations="258" avgMicrosecondsPerInvocation="655" maxMicrosecondsPerInvocation="23385" standardDeviationMicrosecondsPerInvocation="2888"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="145" invocations="7" avgMicrosecondsPerInvocation="20718" maxMicrosecondsPerInvocation="143305" standardDeviationMicrosecondsPerInvocation="50047"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="111" invocations="24" avgMicrosecondsPerInvocation="4657" maxMicrosecondsPerInvocation="53492" standardDeviationMicrosecondsPerInvocation="12099"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="89" invocations="9" avgMicrosecondsPerInvocation="9991" maxMicrosecondsPerInvocation="43993" standardDeviationMicrosecondsPerInvocation="14543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="89" invocations="7" avgMicrosecondsPerInvocation="12800" maxMicrosecondsPerInvocation="88434" standardDeviationMicrosecondsPerInvocation="30877"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="87" invocations="40" avgMicrosecondsPerInvocation="2189" maxMicrosecondsPerInvocation="22437" standardDeviationMicrosecondsPerInvocation="4138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="70" invocations="9" avgMicrosecondsPerInvocation="7808" maxMicrosecondsPerInvocation="47738" standardDeviationMicrosecondsPerInvocation="14900"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

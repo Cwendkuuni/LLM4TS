@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360741687" analysisTimestamp="1714591867520" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT/107_weka/MemoryTEST/24/weka/core</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="d7d17cb1bfd07fd36d8fc28055afa586" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode weka.core.MemoryTest.testIsOutOfMemory()</LongMessage>
+    <Class classname="weka.core.MemoryTest" primary="true">
+      <SourceLine classname="weka.core.MemoryTest" start="5" end="132" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java">
+        <Message>At MemoryTest.java:[lines 5-132]</Message>
+      </SourceLine>
+      <Message>In class weka.core.MemoryTest</Message>
+    </Class>
+    <Method classname="weka.core.MemoryTest" name="testIsOutOfMemory" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.core.MemoryTest" start="59" end="76" startBytecode="0" endBytecode="41" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java"/>
+      <Message>In method weka.core.MemoryTest.testIsOutOfMemory()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="38" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="weka.core.MemoryTest" primary="true" start="66" end="66" startBytecode="37" endBytecode="37" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java">
+      <Message>At MemoryTest.java:[line 66]</Message>
+    </SourceLine>
+    <SourceLine classname="weka.core.MemoryTest" start="67" end="67" startBytecode="42" endBytecode="42" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at MemoryTest.java:[line 67]</Message>
+    </SourceLine>
+    <SourceLine classname="weka.core.MemoryTest" start="68" end="68" startBytecode="48" endBytecode="48" sourcefile="MemoryTest.java" sourcepath="weka/core/MemoryTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at MemoryTest.java:[line 68]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>weka.core.Memory</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:01 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="72" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.41" clock_seconds="1.82" peak_mbytes="190.76" alloc_mbytes="7104.00" gc_seconds="0.14" priority_2="1">
+    <FileStats path="weka/core/MemoryTest.java" bugCount="1" size="72" bugHash="a1feaeabfa7a249ae1fa9602f48b6037"/>
+    <PackageStats package="weka.core" total_bugs="1" total_types="1" total_size="72" priority_2="1">
+      <ClassStats class="weka.core.MemoryTest" sourceFile="MemoryTest.java" interface="false" size="72" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="275" invocations="324" avgMicrosecondsPerInvocation="851" maxMicrosecondsPerInvocation="34637" standardDeviationMicrosecondsPerInvocation="2565"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="156" invocations="11" avgMicrosecondsPerInvocation="14271" maxMicrosecondsPerInvocation="137582" standardDeviationMicrosecondsPerInvocation="39062"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="94" invocations="11" avgMicrosecondsPerInvocation="8584" maxMicrosecondsPerInvocation="61657" standardDeviationMicrosecondsPerInvocation="17417"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="88" invocations="71" avgMicrosecondsPerInvocation="1241" maxMicrosecondsPerInvocation="20775" standardDeviationMicrosecondsPerInvocation="2884"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="75" invocations="288" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="16680" standardDeviationMicrosecondsPerInvocation="1429"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="71" invocations="11" avgMicrosecondsPerInvocation="6510" maxMicrosecondsPerInvocation="25870" standardDeviationMicrosecondsPerInvocation="7864"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="45" invocations="11" avgMicrosecondsPerInvocation="4138" maxMicrosecondsPerInvocation="15882" standardDeviationMicrosecondsPerInvocation="4607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="41" invocations="29" avgMicrosecondsPerInvocation="1424" maxMicrosecondsPerInvocation="20984" standardDeviationMicrosecondsPerInvocation="3977"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="38" invocations="13" avgMicrosecondsPerInvocation="2982" maxMicrosecondsPerInvocation="35017" standardDeviationMicrosecondsPerInvocation="9253"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="35" invocations="13" avgMicrosecondsPerInvocation="2716" maxMicrosecondsPerInvocation="22080" standardDeviationMicrosecondsPerInvocation="5622"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="30" invocations="13" avgMicrosecondsPerInvocation="2337" maxMicrosecondsPerInvocation="14542" standardDeviationMicrosecondsPerInvocation="3752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="26" invocations="11" avgMicrosecondsPerInvocation="2399" maxMicrosecondsPerInvocation="26286" standardDeviationMicrosecondsPerInvocation="7553"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="25" invocations="326" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="2675" standardDeviationMicrosecondsPerInvocation="175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="24" invocations="11" avgMicrosecondsPerInvocation="2213" maxMicrosecondsPerInvocation="13741" standardDeviationMicrosecondsPerInvocation="3781"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="23" invocations="13" avgMicrosecondsPerInvocation="1817" maxMicrosecondsPerInvocation="12963" standardDeviationMicrosecondsPerInvocation="3243"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

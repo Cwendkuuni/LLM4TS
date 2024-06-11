@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420571057" analysisTimestamp="1714591892562" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/FEWSHOT/Compress/11/19/org/apache/commons/compress/archivers</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="b3266253102d67436b5f7800df24c108" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.ar.ArArchiveInputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream() at ArchiveStreamFactoryTest.java:[line 26] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/ar/ArArchiveInputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.ar.ArArchiveInputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.ar.ArArchiveInputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveInputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="20" end="53" startBytecode="0" endBytecode="335" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="26" end="26" startBytecode="35" endBytecode="35" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 26]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="47fcd6aab1f2b3d866537aace507077d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.ar.ArArchiveInputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect() at ArchiveStreamFactoryTest.java:[line 117] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/ar/ArArchiveInputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.ar.ArArchiveInputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.ar.ArArchiveInputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveInputStream_autodetect" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="96" end="152" startBytecode="0" endBytecode="520" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="117" end="117" startBytecode="105" endBytecode="105" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 117]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="ffae7ca2ac1a8c1e493cd5890311ff4d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.ar.ArArchiveOutputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveOutputStream() at ArchiveStreamFactoryTest.java:[line 64] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/ar/ArArchiveOutputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.ar.ArArchiveOutputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.ar.ArArchiveOutputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveOutputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="58" end="91" startBytecode="0" endBytecode="332" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveOutputStream()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="64" end="64" startBytecode="32" endBytecode="32" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 64]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="10879a25aad5239046ff251a825fb0ed" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream() at ArchiveStreamFactoryTest.java:[line 42] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/cpio/CpioArchiveInputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveInputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="20" end="53" startBytecode="0" endBytecode="335" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="42" end="42" startBytecode="111" endBytecode="111" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 42]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="e624b9befda72729485afc1232b3d980" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect() at ArchiveStreamFactoryTest.java:[line 124] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/cpio/CpioArchiveInputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveInputStream_autodetect" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="96" end="152" startBytecode="0" endBytecode="520" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="124" end="124" startBytecode="139" endBytecode="139" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 124]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="39ed1d29a68a5a5418a6ab4a280f2b07" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveOutputStream() at ArchiveStreamFactoryTest.java:[line 80] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveOutputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="58" end="91" startBytecode="0" endBytecode="332" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveOutputStream()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="80" end="80" startBytecode="108" endBytecode="108" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 80]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="7beea1b7e8d5843657b622aeaa3f2af3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.dump.DumpArchiveInputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect() at ArchiveStreamFactoryTest.java:[line 131] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/dump/DumpArchiveInputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.dump.DumpArchiveInputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.dump.DumpArchiveInputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveInputStream_autodetect" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="96" end="152" startBytecode="0" endBytecode="520" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="131" end="131" startBytecode="173" endBytecode="173" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 131]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="9be118a2ef8aa4463822e27b3db42718" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.jar.JarArchiveInputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream() at ArchiveStreamFactoryTest.java:[line 38] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/jar/JarArchiveInputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.jar.JarArchiveInputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.jar.JarArchiveInputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveInputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="20" end="53" startBytecode="0" endBytecode="335" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="38" end="38" startBytecode="92" endBytecode="92" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 38]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="8eede0ba1e4dbe0d0670c8b80dbae33d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.jar.JarArchiveInputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect() at ArchiveStreamFactoryTest.java:[line 110] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/jar/JarArchiveInputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.jar.JarArchiveInputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.jar.JarArchiveInputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveInputStream_autodetect" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="96" end="152" startBytecode="0" endBytecode="520" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="110" end="110" startBytecode="71" endBytecode="71" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 110]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="f2dc9ff5de97452e38f5faa9d4b2b982" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.jar.JarArchiveOutputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveOutputStream() at ArchiveStreamFactoryTest.java:[line 76] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/jar/JarArchiveOutputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.jar.JarArchiveOutputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.jar.JarArchiveOutputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveOutputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="58" end="91" startBytecode="0" endBytecode="332" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveOutputStream()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="76" end="76" startBytecode="89" endBytecode="89" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 76]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="fe35212ff8f22871245571c9776ba156" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.tar.TarArchiveInputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream() at ArchiveStreamFactoryTest.java:[line 34] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/tar/TarArchiveInputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarArchiveInputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.tar.TarArchiveInputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveInputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="20" end="53" startBytecode="0" endBytecode="335" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="34" end="34" startBytecode="73" endBytecode="73" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 34]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="22cca5a9975ae19e2d75a3a3dc64cdfc" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.tar.TarArchiveInputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect() at ArchiveStreamFactoryTest.java:[line 138] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/tar/TarArchiveInputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarArchiveInputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.tar.TarArchiveInputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveInputStream_autodetect" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="96" end="152" startBytecode="0" endBytecode="520" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="138" end="138" startBytecode="208" endBytecode="208" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 138]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="bbdada564e16bb01f24791528e47db1b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.tar.TarArchiveOutputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveOutputStream() at ArchiveStreamFactoryTest.java:[line 72] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/tar/TarArchiveOutputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.tar.TarArchiveOutputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.tar.TarArchiveOutputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveOutputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="58" end="91" startBytecode="0" endBytecode="332" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveOutputStream()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="72" end="72" startBytecode="70" endBytecode="70" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 72]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="1bad78349106aaa2f97452b2a599c30c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.zip.ZipArchiveInputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream() at ArchiveStreamFactoryTest.java:[line 30] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/zip/ZipArchiveInputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.zip.ZipArchiveInputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.zip.ZipArchiveInputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveInputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="20" end="53" startBytecode="0" endBytecode="335" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="30" end="30" startBytecode="54" endBytecode="54" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 30]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="af7278e8745726cf6d58de2eca724364" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.zip.ZipArchiveInputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect() at ArchiveStreamFactoryTest.java:[line 103] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/zip/ZipArchiveInputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.zip.ZipArchiveInputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.zip.ZipArchiveInputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveInputStream_autodetect" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="96" end="152" startBytecode="0" endBytecode="520" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveInputStream_autodetect()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="103" end="103" startBytecode="38" endBytecode="38" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 103]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="87241ab1ffcca47d2af7bfd5d42e3ae5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream in org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveOutputStream() at ArchiveStreamFactoryTest.java:[line 68] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/apache/commons/compress/archivers/zip/ZipArchiveOutputStream;">
+      <SourceLine classname="org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream</Message>
+    </Type>
+    <Class classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="16" end="152" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+        <Message>At ArchiveStreamFactoryTest.java:[lines 16-152]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.ArchiveStreamFactoryTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" name="testCreateArchiveOutputStream" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" start="58" end="91" startBytecode="0" endBytecode="332" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.ArchiveStreamFactoryTest.testCreateArchiveOutputStream()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" primary="true" start="68" end="68" startBytecode="51" endBytecode="51" sourcefile="ArchiveStreamFactoryTest.java" sourcepath="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java">
+      <Message>At ArchiveStreamFactoryTest.java:[line 68]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="16">
+    <MissingClass>org.apache.commons.compress.archivers.ArchiveException</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.ArchiveInputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.ArchiveOutputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.ArchiveStreamFactory</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.ar.ArArchiveInputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.ar.ArArchiveOutputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.dump.DumpArchiveInputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.jar.JarArchiveInputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.jar.JarArchiveOutputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.tar.TarArchiveInputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.tar.TarArchiveOutputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.zip.ZipArchiveInputStream</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:11 +0100" total_classes="1" referenced_classes="15" total_bugs="16" total_size="97" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.53" clock_seconds="2.63" peak_mbytes="193.04" alloc_mbytes="7104.00" gc_seconds="0.20" priority_2="16">
+    <FileStats path="org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java" bugCount="16" size="97" bugHash="24ec46fb4c2c0c9d89b24eefc833fa3a"/>
+    <PackageStats package="org.apache.commons.compress.archivers" total_bugs="16" total_types="1" total_size="97" priority_2="16">
+      <ClassStats class="org.apache.commons.compress.archivers.ArchiveStreamFactoryTest" sourceFile="ArchiveStreamFactoryTest.java" interface="false" size="97" bugs="16" priority_2="16"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="336" invocations="326" avgMicrosecondsPerInvocation="1030" maxMicrosecondsPerInvocation="30329" standardDeviationMicrosecondsPerInvocation="3389"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="223" invocations="15" avgMicrosecondsPerInvocation="14874" maxMicrosecondsPerInvocation="216552" standardDeviationMicrosecondsPerInvocation="53906"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="122" invocations="15" avgMicrosecondsPerInvocation="8190" maxMicrosecondsPerInvocation="40512" standardDeviationMicrosecondsPerInvocation="13172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="96" invocations="4" avgMicrosecondsPerInvocation="24030" maxMicrosecondsPerInvocation="56660" standardDeviationMicrosecondsPerInvocation="20698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="83" invocations="64" avgMicrosecondsPerInvocation="1307" maxMicrosecondsPerInvocation="15099" standardDeviationMicrosecondsPerInvocation="2314"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="77" invocations="4" avgMicrosecondsPerInvocation="19490" maxMicrosecondsPerInvocation="38720" standardDeviationMicrosecondsPerInvocation="13336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="66" invocations="277" avgMicrosecondsPerInvocation="240" maxMicrosecondsPerInvocation="17589" standardDeviationMicrosecondsPerInvocation="1228"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="65" invocations="4" avgMicrosecondsPerInvocation="16308" maxMicrosecondsPerInvocation="35979" standardDeviationMicrosecondsPerInvocation="13264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="60" invocations="1" avgMicrosecondsPerInvocation="60638" maxMicrosecondsPerInvocation="60638" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="56" invocations="45" avgMicrosecondsPerInvocation="1255" maxMicrosecondsPerInvocation="30942" standardDeviationMicrosecondsPerInvocation="4865"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="45" invocations="4" avgMicrosecondsPerInvocation="11450" maxMicrosecondsPerInvocation="22363" standardDeviationMicrosecondsPerInvocation="7863"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="40" invocations="15" avgMicrosecondsPerInvocation="2728" maxMicrosecondsPerInvocation="18340" standardDeviationMicrosecondsPerInvocation="4471"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="39" invocations="4" avgMicrosecondsPerInvocation="9919" maxMicrosecondsPerInvocation="18798" standardDeviationMicrosecondsPerInvocation="6171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="35" invocations="7" avgMicrosecondsPerInvocation="5056" maxMicrosecondsPerInvocation="14342" standardDeviationMicrosecondsPerInvocation="3866"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="34" invocations="15" avgMicrosecondsPerInvocation="2272" maxMicrosecondsPerInvocation="16254" standardDeviationMicrosecondsPerInvocation="4084"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="34" invocations="15" avgMicrosecondsPerInvocation="2267" maxMicrosecondsPerInvocation="15342" standardDeviationMicrosecondsPerInvocation="4223"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="31" invocations="1" avgMicrosecondsPerInvocation="31602" maxMicrosecondsPerInvocation="31602" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="28" invocations="15" avgMicrosecondsPerInvocation="1903" maxMicrosecondsPerInvocation="14563" standardDeviationMicrosecondsPerInvocation="3824"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

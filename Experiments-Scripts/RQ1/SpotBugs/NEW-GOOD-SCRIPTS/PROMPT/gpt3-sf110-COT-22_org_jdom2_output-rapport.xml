@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360740919" analysisTimestamp="1714575726021" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/jdom/XMLOutputterTEST/22/org/jdom2/output</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="691862b4c69a280eb107df0fedbec9df" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testClone()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testClone" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="284" end="289" startBytecode="0" endBytecode="7" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testClone()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="13" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="286" end="286" startBytecode="12" endBytecode="12" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 286]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="7aacaf673e174fe89352f4d0a17d5906" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testEscapeAttributeEntities()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testEscapeAttributeEntities" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="264" end="270" startBytecode="0" endBytecode="10" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testEscapeAttributeEntities()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="17" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="267" end="267" startBytecode="16" endBytecode="16" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 267]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="67ebc91a3458833f26fbf8f62273d72d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testEscapeElementEntities()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testEscapeElementEntities" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="274" end="280" startBytecode="0" endBytecode="10" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testEscapeElementEntities()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="17" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="277" end="277" startBytecode="16" endBytecode="16" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 277]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="4a3f9601251314e98c70b16e97abda4e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testOutputElementContentString()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputElementContentString" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="254" end="260" startBytecode="0" endBytecode="13" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputElementContentString()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="257" end="257" startBytecode="23" endBytecode="23" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 257]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="bf4ac5bf29521748e4662a6d40fa67de" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testOutputStringCDATA()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputStringCDATA" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="204" end="210" startBytecode="0" endBytecode="13" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputStringCDATA()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="207" end="207" startBytecode="23" endBytecode="23" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 207]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="ff97e615983d231133278ff84d3757b1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testOutputStringComment()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputStringComment" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="224" end="230" startBytecode="0" endBytecode="13" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputStringComment()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="227" end="227" startBytecode="23" endBytecode="23" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 227]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="21b3aa511a04443e7ceef0c4b8271e01" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testOutputStringDocType()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputStringDocType" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="174" end="180" startBytecode="0" endBytecode="13" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputStringDocType()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="177" end="177" startBytecode="23" endBytecode="23" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 177]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="fcfd04c06b8349500e1f4c87a404b182" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testOutputStringDocument()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputStringDocument" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="164" end="170" startBytecode="0" endBytecode="12" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputStringDocument()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="22" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="167" end="167" startBytecode="21" endBytecode="21" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 167]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="d9285b76ac6a54b28a85118ca3679053" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testOutputStringElement()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputStringElement" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="184" end="190" startBytecode="0" endBytecode="13" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputStringElement()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="187" end="187" startBytecode="23" endBytecode="23" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 187]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="1444a3e2ef4b0dff85df5552f17071a4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testOutputStringEntityRef()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputStringEntityRef" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="244" end="250" startBytecode="0" endBytecode="13" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputStringEntityRef()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="247" end="247" startBytecode="23" endBytecode="23" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 247]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="322010594279b585f07238520253a897" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testOutputStringList()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputStringList" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="194" end="200" startBytecode="0" endBytecode="12" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputStringList()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="22" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="197" end="197" startBytecode="21" endBytecode="21" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 197]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="e254e222b002a7b955e48f555119fe39" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testOutputStringProcessingInstruction()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputStringProcessingInstruction" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="234" end="240" startBytecode="0" endBytecode="14" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputStringProcessingInstruction()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="26" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="237" end="237" startBytecode="25" endBytecode="25" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 237]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="453bd5ebf91242e443fa6d524c576a06" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.XMLOutputterTest.testOutputStringText()</LongMessage>
+    <Class classname="org.jdom2.output.XMLOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="10" end="289" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+        <Message>At XMLOutputterTest.java:[lines 10-289]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.XMLOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.XMLOutputterTest" name="testOutputStringText" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.XMLOutputterTest" start="214" end="220" startBytecode="0" endBytecode="13" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java"/>
+      <Message>In method org.jdom2.output.XMLOutputterTest.testOutputStringText()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="24" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.XMLOutputterTest" primary="true" start="217" end="217" startBytecode="23" endBytecode="23" sourcefile="XMLOutputterTest.java" sourcepath="org/jdom2/output/XMLOutputterTest.java">
+      <Message>At XMLOutputterTest.java:[line 217]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="9">
+    <MissingClass>org.jdom2.CDATA</MissingClass>
+    <MissingClass>org.jdom2.Comment</MissingClass>
+    <MissingClass>org.jdom2.DocType</MissingClass>
+    <MissingClass>org.jdom2.Document</MissingClass>
+    <MissingClass>org.jdom2.Element</MissingClass>
+    <MissingClass>org.jdom2.EntityRef</MissingClass>
+    <MissingClass>org.jdom2.ProcessingInstruction</MissingClass>
+    <MissingClass>org.jdom2.Text</MissingClass>
+    <MissingClass>org.jdom2.output.XMLOutputter</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:00 +0100" total_classes="1" referenced_classes="15" total_bugs="13" total_size="157" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.25" clock_seconds="6.66" peak_mbytes="192.28" alloc_mbytes="7104.00" gc_seconds="0.20" priority_2="13">
+    <FileStats path="org/jdom2/output/XMLOutputterTest.java" bugCount="13" size="157" bugHash="cefac443434a8b9d2f2a1123c32a1963"/>
+    <PackageStats package="org.jdom2.output" total_bugs="13" total_types="1" total_size="157" priority_2="13">
+      <ClassStats class="org.jdom2.output.XMLOutputterTest" sourceFile="XMLOutputterTest.java" interface="false" size="157" bugs="13" priority_2="13"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="934" invocations="334" avgMicrosecondsPerInvocation="2799" maxMicrosecondsPerInvocation="76576" standardDeviationMicrosecondsPerInvocation="8569"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="353" invocations="15" avgMicrosecondsPerInvocation="23540" maxMicrosecondsPerInvocation="87861" standardDeviationMicrosecondsPerInvocation="26637"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="283" invocations="15" avgMicrosecondsPerInvocation="18906" maxMicrosecondsPerInvocation="75301" standardDeviationMicrosecondsPerInvocation="22264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="257" invocations="15" avgMicrosecondsPerInvocation="17149" maxMicrosecondsPerInvocation="210617" standardDeviationMicrosecondsPerInvocation="52456"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="252" invocations="94" avgMicrosecondsPerInvocation="2680" maxMicrosecondsPerInvocation="53424" standardDeviationMicrosecondsPerInvocation="7689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="206" invocations="24" avgMicrosecondsPerInvocation="8601" maxMicrosecondsPerInvocation="78180" standardDeviationMicrosecondsPerInvocation="16073"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="206" invocations="36" avgMicrosecondsPerInvocation="5732" maxMicrosecondsPerInvocation="111180" standardDeviationMicrosecondsPerInvocation="19494"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="205" invocations="24" avgMicrosecondsPerInvocation="8576" maxMicrosecondsPerInvocation="52781" standardDeviationMicrosecondsPerInvocation="12680"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="166" invocations="1" avgMicrosecondsPerInvocation="166859" maxMicrosecondsPerInvocation="166859" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="156" invocations="292" avgMicrosecondsPerInvocation="534" maxMicrosecondsPerInvocation="26030" standardDeviationMicrosecondsPerInvocation="2301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="134" invocations="24" avgMicrosecondsPerInvocation="5606" maxMicrosecondsPerInvocation="37322" standardDeviationMicrosecondsPerInvocation="9528"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="122" invocations="24" avgMicrosecondsPerInvocation="5108" maxMicrosecondsPerInvocation="23447" standardDeviationMicrosecondsPerInvocation="6592"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="114" invocations="15" avgMicrosecondsPerInvocation="7637" maxMicrosecondsPerInvocation="50748" standardDeviationMicrosecondsPerInvocation="13355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="96" invocations="15" avgMicrosecondsPerInvocation="6417" maxMicrosecondsPerInvocation="76229" standardDeviationMicrosecondsPerInvocation="18739"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="95" invocations="336" avgMicrosecondsPerInvocation="284" maxMicrosecondsPerInvocation="25956" standardDeviationMicrosecondsPerInvocation="1965"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="92" invocations="24" avgMicrosecondsPerInvocation="3872" maxMicrosecondsPerInvocation="29080" standardDeviationMicrosecondsPerInvocation="6829"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="78" invocations="24" avgMicrosecondsPerInvocation="3274" maxMicrosecondsPerInvocation="69706" standardDeviationMicrosecondsPerInvocation="13864"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

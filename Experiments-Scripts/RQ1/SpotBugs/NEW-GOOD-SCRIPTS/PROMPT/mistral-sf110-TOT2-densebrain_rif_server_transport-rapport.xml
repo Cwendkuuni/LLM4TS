@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287211278" analysisTimestamp="1714582222945" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/4_rif/WebServiceDescriptorTEST/14/com/densebrain/rif/server/transport</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="1e4a21b3105568a08f411afa159b29bd" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.densebrain.rif.server.transport.WebServiceDescriptorTest.testEquals()</LongMessage>
+    <Class classname="com.densebrain.rif.server.transport.WebServiceDescriptorTest" primary="true">
+      <SourceLine classname="com.densebrain.rif.server.transport.WebServiceDescriptorTest" start="7" end="114" sourcefile="WebServiceDescriptorTest.java" sourcepath="com/densebrain/rif/server/transport/WebServiceDescriptorTest.java">
+        <Message>At WebServiceDescriptorTest.java:[lines 7-114]</Message>
+      </SourceLine>
+      <Message>In class com.densebrain.rif.server.transport.WebServiceDescriptorTest</Message>
+    </Class>
+    <Method classname="com.densebrain.rif.server.transport.WebServiceDescriptorTest" name="testEquals" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.densebrain.rif.server.transport.WebServiceDescriptorTest" start="106" end="114" startBytecode="0" endBytecode="36" sourcefile="WebServiceDescriptorTest.java" sourcepath="com/densebrain/rif/server/transport/WebServiceDescriptorTest.java"/>
+      <Message>In method com.densebrain.rif.server.transport.WebServiceDescriptorTest.testEquals()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="57" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="com.densebrain.rif.server.transport.WebServiceDescriptorTest" primary="true" start="110" end="110" startBytecode="55" endBytecode="55" sourcefile="WebServiceDescriptorTest.java" sourcepath="com/densebrain/rif/server/transport/WebServiceDescriptorTest.java">
+      <Message>At WebServiceDescriptorTest.java:[line 110]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="edd9a29911652417e4a976fc42b93f58" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.densebrain.rif.server.transport.WebServiceDescriptorTest.testHashCode()</LongMessage>
+    <Class classname="com.densebrain.rif.server.transport.WebServiceDescriptorTest" primary="true">
+      <SourceLine classname="com.densebrain.rif.server.transport.WebServiceDescriptorTest" start="7" end="114" sourcefile="WebServiceDescriptorTest.java" sourcepath="com/densebrain/rif/server/transport/WebServiceDescriptorTest.java">
+        <Message>At WebServiceDescriptorTest.java:[lines 7-114]</Message>
+      </SourceLine>
+      <Message>In class com.densebrain.rif.server.transport.WebServiceDescriptorTest</Message>
+    </Class>
+    <Method classname="com.densebrain.rif.server.transport.WebServiceDescriptorTest" name="testHashCode" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.densebrain.rif.server.transport.WebServiceDescriptorTest" start="91" end="102" startBytecode="0" endBytecode="56" sourcefile="WebServiceDescriptorTest.java" sourcepath="com/densebrain/rif/server/transport/WebServiceDescriptorTest.java"/>
+      <Message>In method com.densebrain.rif.server.transport.WebServiceDescriptorTest.testHashCode()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="28" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="com.densebrain.rif.server.transport.WebServiceDescriptorTest" primary="true" start="92" end="92" startBytecode="27" endBytecode="27" sourcefile="WebServiceDescriptorTest.java" sourcepath="com/densebrain/rif/server/transport/WebServiceDescriptorTest.java">
+      <Message>At WebServiceDescriptorTest.java:[line 92]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.densebrain.rif.server.transport.WebServiceDescriptor</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:51 +0200" total_classes="1" referenced_classes="10" total_bugs="2" total_size="77" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.19" clock_seconds="3.60" peak_mbytes="189.74" alloc_mbytes="7104.00" gc_seconds="0.18" priority_1="2">
+    <FileStats path="com/densebrain/rif/server/transport/WebServiceDescriptorTest.java" bugCount="2" size="77" bugHash="174595a8adcadb5ee686e638dd35cf41"/>
+    <PackageStats package="com.densebrain.rif.server.transport" total_bugs="2" total_types="1" total_size="77" priority_1="2">
+      <ClassStats class="com.densebrain.rif.server.transport.WebServiceDescriptorTest" sourceFile="WebServiceDescriptorTest.java" interface="false" size="77" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="616" invocations="308" avgMicrosecondsPerInvocation="2001" maxMicrosecondsPerInvocation="48415" standardDeviationMicrosecondsPerInvocation="6090"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="232" invocations="10" avgMicrosecondsPerInvocation="23259" maxMicrosecondsPerInvocation="208389" standardDeviationMicrosecondsPerInvocation="61930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="153" invocations="10" avgMicrosecondsPerInvocation="15395" maxMicrosecondsPerInvocation="60378" standardDeviationMicrosecondsPerInvocation="19690"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="141" invocations="15" avgMicrosecondsPerInvocation="9451" maxMicrosecondsPerInvocation="117346" standardDeviationMicrosecondsPerInvocation="29014"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="134" invocations="72" avgMicrosecondsPerInvocation="1874" maxMicrosecondsPerInvocation="29136" standardDeviationMicrosecondsPerInvocation="4727"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="119" invocations="14" avgMicrosecondsPerInvocation="8504" maxMicrosecondsPerInvocation="39541" standardDeviationMicrosecondsPerInvocation="13512"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="89" invocations="10" avgMicrosecondsPerInvocation="8999" maxMicrosecondsPerInvocation="45133" standardDeviationMicrosecondsPerInvocation="14389"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="88" invocations="10" avgMicrosecondsPerInvocation="8839" maxMicrosecondsPerInvocation="29016" standardDeviationMicrosecondsPerInvocation="11804"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="84" invocations="10" avgMicrosecondsPerInvocation="8493" maxMicrosecondsPerInvocation="34651" standardDeviationMicrosecondsPerInvocation="12430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="84" invocations="273" avgMicrosecondsPerInvocation="310" maxMicrosecondsPerInvocation="15670" standardDeviationMicrosecondsPerInvocation="1623"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="82" invocations="15" avgMicrosecondsPerInvocation="5475" maxMicrosecondsPerInvocation="37276" standardDeviationMicrosecondsPerInvocation="12091"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="79" invocations="15" avgMicrosecondsPerInvocation="5313" maxMicrosecondsPerInvocation="52582" standardDeviationMicrosecondsPerInvocation="12991"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="75" invocations="27" avgMicrosecondsPerInvocation="2797" maxMicrosecondsPerInvocation="39431" standardDeviationMicrosecondsPerInvocation="7952"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="66" invocations="15" avgMicrosecondsPerInvocation="4427" maxMicrosecondsPerInvocation="24948" standardDeviationMicrosecondsPerInvocation="7647"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="59" invocations="10" avgMicrosecondsPerInvocation="5925" maxMicrosecondsPerInvocation="27583" standardDeviationMicrosecondsPerInvocation="8820"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

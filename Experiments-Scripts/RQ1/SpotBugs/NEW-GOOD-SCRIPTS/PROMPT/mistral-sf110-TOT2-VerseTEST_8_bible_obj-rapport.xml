@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287211734" analysisTimestamp="1714586648091" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/68_biblestudy/VerseTEST/8/bible/obj</Jar>
+  </Project>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="7263bf5c5cf71a5bf9e8cd6f923f14d8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de méthode devant commencer par une minuscule</ShortMessage>
+    <LongMessage>Le nom de la méthode bible.obj.VerseTest.GetIdNegativeTranslationIdTest() ne commence pas par une minuscule</LongMessage>
+    <Class classname="bible.obj.VerseTest" primary="true">
+      <SourceLine classname="bible.obj.VerseTest" start="8" end="21" sourcefile="VerseTest.java" sourcepath="bible/obj/VerseTest.java">
+        <Message>At VerseTest.java:[lines 8-21]</Message>
+      </SourceLine>
+      <Message>In class bible.obj.VerseTest</Message>
+    </Class>
+    <Method classname="bible.obj.VerseTest" name="GetIdNegativeTranslationIdTest" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="bible.obj.VerseTest" start="21" end="21" startBytecode="0" endBytecode="24" sourcefile="VerseTest.java" sourcepath="bible/obj/VerseTest.java"/>
+      <Message>In method bible.obj.VerseTest.GetIdNegativeTranslationIdTest()</Message>
+    </Method>
+    <SourceLine classname="bible.obj.VerseTest" start="21" end="21" startBytecode="0" endBytecode="24" sourcefile="VerseTest.java" sourcepath="bible/obj/VerseTest.java" synthetic="true">
+      <Message>At VerseTest.java:[line 21]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="2256eeb598c78fae2885def1bc1c49a7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de méthode devant commencer par une minuscule</ShortMessage>
+    <LongMessage>Le nom de la méthode bible.obj.VerseTest.NewTest() ne commence pas par une minuscule</LongMessage>
+    <Class classname="bible.obj.VerseTest" primary="true">
+      <SourceLine classname="bible.obj.VerseTest" start="8" end="21" sourcefile="VerseTest.java" sourcepath="bible/obj/VerseTest.java">
+        <Message>At VerseTest.java:[lines 8-21]</Message>
+      </SourceLine>
+      <Message>In class bible.obj.VerseTest</Message>
+    </Class>
+    <Method classname="bible.obj.VerseTest" name="NewTest" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="bible.obj.VerseTest" start="13" end="13" startBytecode="0" endBytecode="24" sourcefile="VerseTest.java" sourcepath="bible/obj/VerseTest.java"/>
+      <Message>In method bible.obj.VerseTest.NewTest()</Message>
+    </Method>
+    <SourceLine classname="bible.obj.VerseTest" start="13" end="13" startBytecode="0" endBytecode="24" sourcefile="VerseTest.java" sourcepath="bible/obj/VerseTest.java" synthetic="true">
+      <Message>At VerseTest.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="NM_METHOD_NAMING_CONVENTION" abbrev="Nm" category="BAD_PRACTICE">
+    <ShortDescription>Nom de méthode devant commencer par une minuscule</ShortDescription>
+    <Details><![CDATA[
+
+<p>Les noms de méthodes devraient être des verbes en minuscules, avec la première lettre des mots, après le premier, en majuscules.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Nm">
+    <Description>Noms de méthodes ambigus</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:51 +0200" total_classes="1" referenced_classes="9" total_bugs="2" total_size="7" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.37" clock_seconds="2.71" peak_mbytes="189.20" alloc_mbytes="7104.00" gc_seconds="0.20" priority_2="2">
+    <FileStats path="bible/obj/VerseTest.java" bugCount="2" size="7" bugHash="2cb5fcd1354198b090ad8ea57512cbb7"/>
+    <PackageStats package="bible.obj" total_bugs="2" total_types="1" total_size="7" priority_2="2">
+      <ClassStats class="bible.obj.VerseTest" sourceFile="VerseTest.java" interface="false" size="7" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="463" invocations="291" avgMicrosecondsPerInvocation="1593" maxMicrosecondsPerInvocation="38627" standardDeviationMicrosecondsPerInvocation="4840"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="219" invocations="9" avgMicrosecondsPerInvocation="24333" maxMicrosecondsPerInvocation="218857" standardDeviationMicrosecondsPerInvocation="68774"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="148" invocations="258" avgMicrosecondsPerInvocation="576" maxMicrosecondsPerInvocation="60081" standardDeviationMicrosecondsPerInvocation="4038"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="109" invocations="9" avgMicrosecondsPerInvocation="12139" maxMicrosecondsPerInvocation="49244" standardDeviationMicrosecondsPerInvocation="16986"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="97" invocations="23" avgMicrosecondsPerInvocation="4248" maxMicrosecondsPerInvocation="70694" standardDeviationMicrosecondsPerInvocation="14430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="97" invocations="9" avgMicrosecondsPerInvocation="10805" maxMicrosecondsPerInvocation="37145" standardDeviationMicrosecondsPerInvocation="13477"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="70" invocations="3" avgMicrosecondsPerInvocation="23651" maxMicrosecondsPerInvocation="69897" standardDeviationMicrosecondsPerInvocation="32702"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="57" invocations="293" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="16320" standardDeviationMicrosecondsPerInvocation="1312"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="46" invocations="36" avgMicrosecondsPerInvocation="1291" maxMicrosecondsPerInvocation="12616" standardDeviationMicrosecondsPerInvocation="2084"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

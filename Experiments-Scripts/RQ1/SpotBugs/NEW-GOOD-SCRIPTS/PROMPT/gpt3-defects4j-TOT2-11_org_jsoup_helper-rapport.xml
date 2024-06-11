@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756234800" analysisTimestamp="1714602086310" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/Jsoup/52/11/org/jsoup/helper</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="c810b2f2bad4231a36c9ada6f3fb877c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in org.jsoup.helper.DataUtilTest.testParseByteData(): String.getBytes()</LongMessage>
+    <Class classname="org.jsoup.helper.DataUtilTest" primary="true">
+      <SourceLine classname="org.jsoup.helper.DataUtilTest" start="17" end="67" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java">
+        <Message>At DataUtilTest.java:[lines 17-67]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.helper.DataUtilTest</Message>
+    </Class>
+    <Method classname="org.jsoup.helper.DataUtilTest" name="testParseByteData" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.helper.DataUtilTest" start="60" end="67" startBytecode="0" endBytecode="83" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java"/>
+      <Message>In method org.jsoup.helper.DataUtilTest.testParseByteData()</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="958" end="958" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.helper.DataUtilTest" primary="true" start="60" end="60" startBytecode="2" endBytecode="2" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java">
+      <Message>At DataUtilTest.java:[line 60]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="ad22d2fa8d0a795d52b319c89d56c297" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>org.jsoup.helper.DataUtilTest.testLoadFromInputStreamWithParser() may fail to clean up java.io.InputStream on checked exception</LongMessage>
+    <Class classname="org.jsoup.helper.DataUtilTest" primary="true">
+      <SourceLine classname="org.jsoup.helper.DataUtilTest" start="17" end="67" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java">
+        <Message>At DataUtilTest.java:[lines 17-67]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.helper.DataUtilTest</Message>
+    </Class>
+    <Method classname="org.jsoup.helper.DataUtilTest" name="testLoadFromInputStreamWithParser" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.helper.DataUtilTest" start="41" end="48" startBytecode="0" endBytecode="82" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java"/>
+      <Message>In method org.jsoup.helper.DataUtilTest.testLoadFromInputStreamWithParser()</Message>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" start="45" end="364" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java">
+        <Message>At InputStream.java:[lines 45-364]</Message>
+      </SourceLine>
+      <Message>Reference type java.io.InputStream</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="org.jsoup.helper.DataUtilTest" primary="true" start="41" end="41" startBytecode="4" endBytecode="4" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at DataUtilTest.java:[line 41] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="org.jsoup.helper.DataUtilTest" start="42" end="42" startBytecode="8" endBytecode="8" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at DataUtilTest.java:[line 42]</Message>
+    </SourceLine>
+    <SourceLine classname="org.jsoup.helper.DataUtilTest" start="43" end="43" startBytecode="11" endBytecode="11" sourcefile="DataUtilTest.java" sourcepath="org/jsoup/helper/DataUtilTest.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at DataUtilTest.java:[line 43]</Message>
+    </SourceLine>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {InputStream x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugCategory category="EXPERIMENTAL">
+    <Description>Experimental</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" abbrev="OBL" category="EXPERIMENTAL">
+    <ShortDescription>Method may fail to clean up stream or resource on checked exception</ShortDescription>
+    <Details><![CDATA[
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          For sending feedback, check:
+          </p>
+          <ul>
+            <li><a href="https://github.com/spotbugs/spotbugs/blob/master/.github/CONTRIBUTING.md">contributing guideline</a></li>
+            <li><a href="https://github.com/spotbugs/discuss/issues?q=">mailinglist</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>
+          (<a href="https://people.eecs.berkeley.edu/~necula/Papers/rte_oopsla04.pdf">PDF</a>),
+          for a description of the analysis technique.
+          </p>
+          
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="OBL">
+    <Description>Unsatisfied obligation to clean up stream or resource</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.jsoup.helper.DataUtil</MissingClass>
+    <MissingClass>org.jsoup.parser.Parser</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:03:54 +0100" total_classes="1" referenced_classes="16" total_bugs="2" total_size="38" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.15" clock_seconds="2.31" peak_mbytes="191.78" alloc_mbytes="7104.00" gc_seconds="0.13" priority_2="1" priority_1="1">
+    <FileStats path="org/jsoup/helper/DataUtilTest.java" bugCount="2" size="38" bugHash="8ff9c3db7ffd7e4f788389a22f6595a4"/>
+    <PackageStats package="org.jsoup.helper" total_bugs="2" total_types="1" total_size="38" priority_2="1" priority_1="1">
+      <ClassStats class="org.jsoup.helper.DataUtilTest" sourceFile="DataUtilTest.java" interface="false" size="38" bugs="2" priority_2="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="326" invocations="345" avgMicrosecondsPerInvocation="945" maxMicrosecondsPerInvocation="29462" standardDeviationMicrosecondsPerInvocation="3120"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="204" invocations="43" avgMicrosecondsPerInvocation="4758" maxMicrosecondsPerInvocation="132506" standardDeviationMicrosecondsPerInvocation="20819"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="115" invocations="16" avgMicrosecondsPerInvocation="7235" maxMicrosecondsPerInvocation="26863" standardDeviationMicrosecondsPerInvocation="8948"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="87" invocations="6" avgMicrosecondsPerInvocation="14638" maxMicrosecondsPerInvocation="78059" standardDeviationMicrosecondsPerInvocation="28544"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="86" invocations="78" avgMicrosecondsPerInvocation="1110" maxMicrosecondsPerInvocation="15295" standardDeviationMicrosecondsPerInvocation="2090"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="79" invocations="16" avgMicrosecondsPerInvocation="4979" maxMicrosecondsPerInvocation="38120" standardDeviationMicrosecondsPerInvocation="9235"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="68" invocations="6" avgMicrosecondsPerInvocation="11366" maxMicrosecondsPerInvocation="41456" standardDeviationMicrosecondsPerInvocation="15448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="53" invocations="16" avgMicrosecondsPerInvocation="3368" maxMicrosecondsPerInvocation="22531" standardDeviationMicrosecondsPerInvocation="6455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="49" invocations="6" avgMicrosecondsPerInvocation="8188" maxMicrosecondsPerInvocation="38820" standardDeviationMicrosecondsPerInvocation="13774"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="42" invocations="6" avgMicrosecondsPerInvocation="7141" maxMicrosecondsPerInvocation="36104" standardDeviationMicrosecondsPerInvocation="12973"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="40" invocations="347" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="15566" standardDeviationMicrosecondsPerInvocation="837"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="38" invocations="6" avgMicrosecondsPerInvocation="6353" maxMicrosecondsPerInvocation="23258" standardDeviationMicrosecondsPerInvocation="8580"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="36" invocations="307" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="1480" standardDeviationMicrosecondsPerInvocation="221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="32" invocations="16" avgMicrosecondsPerInvocation="2029" maxMicrosecondsPerInvocation="8772" standardDeviationMicrosecondsPerInvocation="2856"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteSuppressedWarnings" totalMilliseconds="28" invocations="16" avgMicrosecondsPerInvocation="1766" maxMicrosecondsPerInvocation="24557" standardDeviationMicrosecondsPerInvocation="5892"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

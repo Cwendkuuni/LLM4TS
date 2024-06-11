@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420557777" analysisTimestamp="1714588086765" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/COT/Math/31/9/org/apache/commons/math3/util</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="14">
+    <MissingClass>org.apache.commons.math3.util.ContinuedFraction</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$1</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$10</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$11</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$12</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$2</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$3</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$4</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$5</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$6</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$7</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$8</MissingClass>
+    <MissingClass>org.apache.commons.math3.util.ContinuedFractionTest$9</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:15:57 +0100" total_classes="1" referenced_classes="9" total_bugs="0" total_size="51" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.09" clock_seconds="1.92" peak_mbytes="190.02" alloc_mbytes="7104.00" gc_seconds="0.15">
+    <FileStats path="org/apache/commons/math3/util/ContinuedFractionTest.java" bugCount="0" size="51"/>
+    <PackageStats package="org.apache.commons.math3.util" total_bugs="0" total_types="1" total_size="51">
+      <ClassStats class="org.apache.commons.math3.util.ContinuedFractionTest" sourceFile="ContinuedFractionTest.java" interface="false" size="51" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="304" invocations="305" avgMicrosecondsPerInvocation="998" maxMicrosecondsPerInvocation="18220" standardDeviationMicrosecondsPerInvocation="2679"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="188" invocations="9" avgMicrosecondsPerInvocation="20931" maxMicrosecondsPerInvocation="149380" standardDeviationMicrosecondsPerInvocation="45694"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="75" invocations="40" avgMicrosecondsPerInvocation="1890" maxMicrosecondsPerInvocation="15807" standardDeviationMicrosecondsPerInvocation="3413"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="70" invocations="35" avgMicrosecondsPerInvocation="2002" maxMicrosecondsPerInvocation="46912" standardDeviationMicrosecondsPerInvocation="7872"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="54" invocations="9" avgMicrosecondsPerInvocation="6102" maxMicrosecondsPerInvocation="16912" standardDeviationMicrosecondsPerInvocation="6514"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="39" invocations="7" avgMicrosecondsPerInvocation="5682" maxMicrosecondsPerInvocation="37029" standardDeviationMicrosecondsPerInvocation="12805"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="39" invocations="258" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="6232" standardDeviationMicrosecondsPerInvocation="455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="37" invocations="7" avgMicrosecondsPerInvocation="5426" maxMicrosecondsPerInvocation="17368" standardDeviationMicrosecondsPerInvocation="6399"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="31" invocations="307" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="3856" standardDeviationMicrosecondsPerInvocation="308"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="30" invocations="9" avgMicrosecondsPerInvocation="3360" maxMicrosecondsPerInvocation="25315" standardDeviationMicrosecondsPerInvocation="7815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="27" invocations="9" avgMicrosecondsPerInvocation="3041" maxMicrosecondsPerInvocation="16472" standardDeviationMicrosecondsPerInvocation="4960"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="25" invocations="9" avgMicrosecondsPerInvocation="2835" maxMicrosecondsPerInvocation="9704" standardDeviationMicrosecondsPerInvocation="3187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="24" invocations="7" avgMicrosecondsPerInvocation="3547" maxMicrosecondsPerInvocation="16723" standardDeviationMicrosecondsPerInvocation="5382"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="24" invocations="9" avgMicrosecondsPerInvocation="2741" maxMicrosecondsPerInvocation="14061" standardDeviationMicrosecondsPerInvocation="4508"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="23" invocations="7" avgMicrosecondsPerInvocation="3376" maxMicrosecondsPerInvocation="10509" standardDeviationMicrosecondsPerInvocation="3603"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

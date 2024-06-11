@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287215426" analysisTimestamp="1714586401029" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/scribe/OAuthConfigTEST/15/org/scribe/model</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="3d90152d05f124b16a85a3f81041692f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.scribe.model.OAuthConfigTest.testOAuthConfigWithNullApiKey()</LongMessage>
+    <Class classname="org.scribe.model.OAuthConfigTest" primary="true">
+      <SourceLine classname="org.scribe.model.OAuthConfigTest" start="6" end="102" sourcefile="OAuthConfigTest.java" sourcepath="org/scribe/model/OAuthConfigTest.java">
+        <Message>At OAuthConfigTest.java:[lines 6-102]</Message>
+      </SourceLine>
+      <Message>In class org.scribe.model.OAuthConfigTest</Message>
+    </Class>
+    <Method classname="org.scribe.model.OAuthConfigTest" name="testOAuthConfigWithNullApiKey" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.scribe.model.OAuthConfigTest" start="49" end="51" startBytecode="0" endBytecode="8" sourcefile="OAuthConfigTest.java" sourcepath="org/scribe/model/OAuthConfigTest.java"/>
+      <Message>In method org.scribe.model.OAuthConfigTest.testOAuthConfigWithNullApiKey()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="13" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.scribe.model.OAuthConfigTest" primary="true" start="50" end="50" startBytecode="12" endBytecode="12" sourcefile="OAuthConfigTest.java" sourcepath="org/scribe/model/OAuthConfigTest.java">
+      <Message>At OAuthConfigTest.java:[line 50]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="34eaec90c882cddec547b5614bf7c9b5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.scribe.model.OAuthConfigTest.testOAuthConfigWithNullApiSecret()</LongMessage>
+    <Class classname="org.scribe.model.OAuthConfigTest" primary="true">
+      <SourceLine classname="org.scribe.model.OAuthConfigTest" start="6" end="102" sourcefile="OAuthConfigTest.java" sourcepath="org/scribe/model/OAuthConfigTest.java">
+        <Message>At OAuthConfigTest.java:[lines 6-102]</Message>
+      </SourceLine>
+      <Message>In class org.scribe.model.OAuthConfigTest</Message>
+    </Class>
+    <Method classname="org.scribe.model.OAuthConfigTest" name="testOAuthConfigWithNullApiSecret" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.scribe.model.OAuthConfigTest" start="55" end="57" startBytecode="0" endBytecode="8" sourcefile="OAuthConfigTest.java" sourcepath="org/scribe/model/OAuthConfigTest.java"/>
+      <Message>In method org.scribe.model.OAuthConfigTest.testOAuthConfigWithNullApiSecret()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="13" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.scribe.model.OAuthConfigTest" primary="true" start="56" end="56" startBytecode="12" endBytecode="12" sourcefile="OAuthConfigTest.java" sourcepath="org/scribe/model/OAuthConfigTest.java">
+      <Message>At OAuthConfigTest.java:[line 56]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.scribe.model.OAuthConfig</MissingClass>
+    <MissingClass>org.scribe.model.SignatureType</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:55 +0200" total_classes="1" referenced_classes="10" total_bugs="2" total_size="80" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.80" clock_seconds="3.16" peak_mbytes="190.64" alloc_mbytes="7104.00" gc_seconds="0.20" priority_1="2">
+    <FileStats path="org/scribe/model/OAuthConfigTest.java" bugCount="2" size="80" bugHash="3353ff7ca6b8abf6cea1cf4138ea1b93"/>
+    <PackageStats package="org.scribe.model" total_bugs="2" total_types="1" total_size="80" priority_1="2">
+      <ClassStats class="org.scribe.model.OAuthConfigTest" sourceFile="OAuthConfigTest.java" interface="false" size="80" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="507" invocations="309" avgMicrosecondsPerInvocation="1641" maxMicrosecondsPerInvocation="52472" standardDeviationMicrosecondsPerInvocation="5541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="330" invocations="10" avgMicrosecondsPerInvocation="33015" maxMicrosecondsPerInvocation="228223" standardDeviationMicrosecondsPerInvocation="66430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="114" invocations="65" avgMicrosecondsPerInvocation="1761" maxMicrosecondsPerInvocation="20452" standardDeviationMicrosecondsPerInvocation="3941"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="113" invocations="8" avgMicrosecondsPerInvocation="14128" maxMicrosecondsPerInvocation="99407" standardDeviationMicrosecondsPerInvocation="32313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="82" invocations="273" avgMicrosecondsPerInvocation="301" maxMicrosecondsPerInvocation="19292" standardDeviationMicrosecondsPerInvocation="1626"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="68" invocations="8" avgMicrosecondsPerInvocation="8568" maxMicrosecondsPerInvocation="46580" standardDeviationMicrosecondsPerInvocation="14564"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="67" invocations="26" avgMicrosecondsPerInvocation="2599" maxMicrosecondsPerInvocation="33803" standardDeviationMicrosecondsPerInvocation="7706"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="63" invocations="10" avgMicrosecondsPerInvocation="6367" maxMicrosecondsPerInvocation="27563" standardDeviationMicrosecondsPerInvocation="9590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="61" invocations="8" avgMicrosecondsPerInvocation="7691" maxMicrosecondsPerInvocation="50020" standardDeviationMicrosecondsPerInvocation="16072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="61" invocations="10" avgMicrosecondsPerInvocation="6134" maxMicrosecondsPerInvocation="19960" standardDeviationMicrosecondsPerInvocation="7729"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="54" invocations="311" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="23654" standardDeviationMicrosecondsPerInvocation="1395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="51" invocations="10" avgMicrosecondsPerInvocation="5110" maxMicrosecondsPerInvocation="21880" standardDeviationMicrosecondsPerInvocation="7612"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="51" invocations="8" avgMicrosecondsPerInvocation="6376" maxMicrosecondsPerInvocation="19027" standardDeviationMicrosecondsPerInvocation="6863"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="40" invocations="8" avgMicrosecondsPerInvocation="5098" maxMicrosecondsPerInvocation="23058" standardDeviationMicrosecondsPerInvocation="7216"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="38" invocations="10" avgMicrosecondsPerInvocation="3836" maxMicrosecondsPerInvocation="19951" standardDeviationMicrosecondsPerInvocation="6059"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="36" invocations="8" avgMicrosecondsPerInvocation="4549" maxMicrosecondsPerInvocation="14066" standardDeviationMicrosecondsPerInvocation="4778"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

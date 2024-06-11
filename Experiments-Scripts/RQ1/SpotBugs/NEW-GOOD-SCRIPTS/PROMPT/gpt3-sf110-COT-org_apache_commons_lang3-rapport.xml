@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360740019" analysisTimestamp="1714572443946" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/commons-lang/ValidateTEST/14/org/apache/commons/lang3</Jar>
+  </Project>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="7c6022d2b867339f740d51370f9a91fd" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in org.apache.commons.lang3.ValidateTest.testNotNull()</LongMessage>
+    <Class classname="org.apache.commons.lang3.ValidateTest" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.ValidateTest" start="5" end="54" sourcefile="ValidateTest.java" sourcepath="org/apache/commons/lang3/ValidateTest.java">
+        <Message>At ValidateTest.java:[lines 5-54]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.lang3.ValidateTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ValidateTest" name="testNotNull" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.lang3.ValidateTest" start="29" end="39" startBytecode="0" endBytecode="123" sourcefile="ValidateTest.java" sourcepath="org/apache/commons/lang3/ValidateTest.java"/>
+      <Message>In method org.apache.commons.lang3.ValidateTest.testNotNull()</Message>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ValidateTest" primary="true" start="36" end="36" startBytecode="28" endBytecode="28" sourcefile="ValidateTest.java" sourcepath="org/apache/commons/lang3/ValidateTest.java">
+      <Message>At ValidateTest.java:[line 36]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DCN_NULLPOINTER_EXCEPTION" abbrev="DCN" category="STYLE">
+    <ShortDescription>NullPointerException caught</ShortDescription>
+    <Details><![CDATA[
+   
+<p>
+According to SEI Cert rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">ERR08-J</a> NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
+<p>
+This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+  try {
+    String ms[] = m.split(" ");
+    return names.length != 1;
+  } catch (NullPointerException e) {
+    return false;
+  }
+}
+</code></pre>
+<p>
+A compliant solution would use a null-check as in the following example:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+    if (m == null) return false;
+    String ms[] = m.split(" ");
+    return names.length != 1;
+}
+</code></pre>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DCN">
+    <Description>Don&apos;t Catch NullPointer Exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.apache.commons.lang3.Validate</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:00 +0100" total_classes="1" referenced_classes="11" total_bugs="1" total_size="33" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.57" clock_seconds="4.97" peak_mbytes="189.77" alloc_mbytes="7104.00" gc_seconds="0.23" priority_2="1">
+    <FileStats path="org/apache/commons/lang3/ValidateTest.java" bugCount="1" size="33" bugHash="3cf1960c3b98c8896dbcc64b3a81ac64"/>
+    <PackageStats package="org.apache.commons.lang3" total_bugs="1" total_types="1" total_size="33" priority_2="1">
+      <ClassStats class="org.apache.commons.lang3.ValidateTest" sourceFile="ValidateTest.java" interface="false" size="33" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="839" invocations="315" avgMicrosecondsPerInvocation="2664" maxMicrosecondsPerInvocation="60454" standardDeviationMicrosecondsPerInvocation="8652"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="306" invocations="11" avgMicrosecondsPerInvocation="27904" maxMicrosecondsPerInvocation="276317" standardDeviationMicrosecondsPerInvocation="78734"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="289" invocations="11" avgMicrosecondsPerInvocation="26309" maxMicrosecondsPerInvocation="100981" standardDeviationMicrosecondsPerInvocation="36806"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="189" invocations="26" avgMicrosecondsPerInvocation="7282" maxMicrosecondsPerInvocation="106898" standardDeviationMicrosecondsPerInvocation="21046"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="169" invocations="61" avgMicrosecondsPerInvocation="2784" maxMicrosecondsPerInvocation="30337" standardDeviationMicrosecondsPerInvocation="6229"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="125" invocations="5" avgMicrosecondsPerInvocation="25140" maxMicrosecondsPerInvocation="88444" standardDeviationMicrosecondsPerInvocation="32718"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="113" invocations="11" avgMicrosecondsPerInvocation="10357" maxMicrosecondsPerInvocation="41324" standardDeviationMicrosecondsPerInvocation="13954"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="108" invocations="279" avgMicrosecondsPerInvocation="387" maxMicrosecondsPerInvocation="20004" standardDeviationMicrosecondsPerInvocation="1964"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="101" invocations="4" avgMicrosecondsPerInvocation="25412" maxMicrosecondsPerInvocation="97934" standardDeviationMicrosecondsPerInvocation="41887"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="95" invocations="11" avgMicrosecondsPerInvocation="8670" maxMicrosecondsPerInvocation="46668" standardDeviationMicrosecondsPerInvocation="14037"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="85" invocations="11" avgMicrosecondsPerInvocation="7735" maxMicrosecondsPerInvocation="42527" standardDeviationMicrosecondsPerInvocation="13166"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="78" invocations="317" avgMicrosecondsPerInvocation="247" maxMicrosecondsPerInvocation="17414" standardDeviationMicrosecondsPerInvocation="1383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="78" invocations="4" avgMicrosecondsPerInvocation="19525" maxMicrosecondsPerInvocation="54595" standardDeviationMicrosecondsPerInvocation="21260"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="65" invocations="11" avgMicrosecondsPerInvocation="5927" maxMicrosecondsPerInvocation="32217" standardDeviationMicrosecondsPerInvocation="9263"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

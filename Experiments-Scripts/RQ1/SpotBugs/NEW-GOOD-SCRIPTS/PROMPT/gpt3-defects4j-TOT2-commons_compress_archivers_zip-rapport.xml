@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756227760" analysisTimestamp="1714608884959" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/Compress/19/9/org/apache/commons/compress/archivers/zip</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="57615f2777c4578133038fa92a82370a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest.testParseFromLocalFileData()</LongMessage>
+    <Class classname="org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest" start="6" end="38" sourcefile="Zip64ExtendedInformationExtraFieldTest.java" sourcepath="org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraFieldTest.java">
+        <Message>At Zip64ExtendedInformationExtraFieldTest.java:[lines 6-38]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest" name="testParseFromLocalFileData" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest" start="33" end="38" startBytecode="0" endBytecode="4" sourcefile="Zip64ExtendedInformationExtraFieldTest.java" sourcepath="org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraFieldTest.java"/>
+      <Message>In method org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest.testParseFromLocalFileData()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest" primary="true" start="33" end="33" startBytecode="7" endBytecode="7" sourcefile="Zip64ExtendedInformationExtraFieldTest.java" sourcepath="org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraFieldTest.java">
+      <Message>At Zip64ExtendedInformationExtraFieldTest.java:[line 33]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField</MissingClass>
+    <MissingClass>org.apache.commons.compress.archivers.zip.ZipShort</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:03:47 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="21" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.06" clock_seconds="0.86" peak_mbytes="189.45" alloc_mbytes="7104.00" gc_seconds="0.06" priority_1="1">
+    <FileStats path="org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraFieldTest.java" bugCount="1" size="21" bugHash="7a3d7d057c1a1abf3a7d9c71a2c8c28a"/>
+    <PackageStats package="org.apache.commons.compress.archivers.zip" total_bugs="1" total_types="1" total_size="21" priority_1="1">
+      <ClassStats class="org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest" sourceFile="Zip64ExtendedInformationExtraFieldTest.java" interface="false" size="21" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="121" invocations="294" avgMicrosecondsPerInvocation="414" maxMicrosecondsPerInvocation="9497" standardDeviationMicrosecondsPerInvocation="888"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="85" invocations="25" avgMicrosecondsPerInvocation="3439" maxMicrosecondsPerInvocation="66682" standardDeviationMicrosecondsPerInvocation="13146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="35" invocations="9" avgMicrosecondsPerInvocation="3913" maxMicrosecondsPerInvocation="13635" standardDeviationMicrosecondsPerInvocation="4803"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="32" invocations="5" avgMicrosecondsPerInvocation="6492" maxMicrosecondsPerInvocation="30958" standardDeviationMicrosecondsPerInvocation="12238"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="31" invocations="38" avgMicrosecondsPerInvocation="832" maxMicrosecondsPerInvocation="3004" standardDeviationMicrosecondsPerInvocation="768"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="22" invocations="9" avgMicrosecondsPerInvocation="2516" maxMicrosecondsPerInvocation="12397" standardDeviationMicrosecondsPerInvocation="3726"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="18" invocations="258" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="1097" standardDeviationMicrosecondsPerInvocation="119"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="17" invocations="5" avgMicrosecondsPerInvocation="3537" maxMicrosecondsPerInvocation="14719" standardDeviationMicrosecondsPerInvocation="5603"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="16" invocations="1" avgMicrosecondsPerInvocation="16673" maxMicrosecondsPerInvocation="16673" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="14" invocations="9" avgMicrosecondsPerInvocation="1623" maxMicrosecondsPerInvocation="8176" standardDeviationMicrosecondsPerInvocation="2558"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="13" invocations="5" avgMicrosecondsPerInvocation="2722" maxMicrosecondsPerInvocation="11400" standardDeviationMicrosecondsPerInvocation="4342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="13" invocations="9" avgMicrosecondsPerInvocation="1498" maxMicrosecondsPerInvocation="5812" standardDeviationMicrosecondsPerInvocation="1894"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="13" invocations="296" avgMicrosecondsPerInvocation="44" maxMicrosecondsPerInvocation="441" standardDeviationMicrosecondsPerInvocation="35"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="12" invocations="5" avgMicrosecondsPerInvocation="2597" maxMicrosecondsPerInvocation="10596" standardDeviationMicrosecondsPerInvocation="4006"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

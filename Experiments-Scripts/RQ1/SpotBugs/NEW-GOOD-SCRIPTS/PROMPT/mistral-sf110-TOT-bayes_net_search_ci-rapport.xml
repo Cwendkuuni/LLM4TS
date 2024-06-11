@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287206830" analysisTimestamp="1714579744146" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT/107_weka/ICSSearchAlgorithmTEST/24/weka/classifiers/bayes/net/search/ci</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="a00bc3348def14fa01d98ba46a82d19" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.setUp(): new java.io.FileReader(String)</LongMessage>
+    <Class classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="12" end="85" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+        <Message>At ICSSearchAlgorithmTest.java:[lines 12-85]</Message>
+      </SourceLine>
+      <Message>In class weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest</Message>
+    </Class>
+    <Method classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" name="setUp" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="20" end="26" startBytecode="0" endBytecode="128" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java"/>
+      <Message>In method weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.setUp()</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(String)</Message>
+    </Method>
+    <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true" start="21" end="21" startBytecode="22" endBytecode="22" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+      <Message>At ICSSearchAlgorithmTest.java:[line 21]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="7aa59c5fa6532b9fcb66d1b43f762116" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearchWithMaxCardinalityOne(): new java.io.FileReader(String)</LongMessage>
+    <Class classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="12" end="85" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+        <Message>At ICSSearchAlgorithmTest.java:[lines 12-85]</Message>
+      </SourceLine>
+      <Message>In class weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest</Message>
+    </Class>
+    <Method classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" name="testSearchWithMaxCardinalityOne" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="42" end="50" startBytecode="0" endBytecode="133" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java"/>
+      <Message>In method weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearchWithMaxCardinalityOne()</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(String)</Message>
+    </Method>
+    <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true" start="45" end="45" startBytecode="34" endBytecode="34" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+      <Message>At ICSSearchAlgorithmTest.java:[line 45]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="f9a6775fdd234908198303c8e82043e1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearchWithMaxCardinalityThree(): new java.io.FileReader(String)</LongMessage>
+    <Class classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="12" end="85" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+        <Message>At ICSSearchAlgorithmTest.java:[lines 12-85]</Message>
+      </SourceLine>
+      <Message>In class weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest</Message>
+    </Class>
+    <Method classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" name="testSearchWithMaxCardinalityThree" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="66" end="74" startBytecode="0" endBytecode="133" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java"/>
+      <Message>In method weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearchWithMaxCardinalityThree()</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(String)</Message>
+    </Method>
+    <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true" start="69" end="69" startBytecode="34" endBytecode="34" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+      <Message>At ICSSearchAlgorithmTest.java:[line 69]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="adc20b040e08e20cab9e44ca7056c1c6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearchWithMaxCardinalityTwo(): new java.io.FileReader(String)</LongMessage>
+    <Class classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="12" end="85" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+        <Message>At ICSSearchAlgorithmTest.java:[lines 12-85]</Message>
+      </SourceLine>
+      <Message>In class weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest</Message>
+    </Class>
+    <Method classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" name="testSearchWithMaxCardinalityTwo" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="54" end="62" startBytecode="0" endBytecode="133" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java"/>
+      <Message>In method weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearchWithMaxCardinalityTwo()</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(String)</Message>
+    </Method>
+    <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true" start="57" end="57" startBytecode="34" endBytecode="34" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+      <Message>At ICSSearchAlgorithmTest.java:[line 57]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="a627c1d9c73e073584fa0ac72480edf4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearchWithMaxCardinalityZero(): new java.io.FileReader(String)</LongMessage>
+    <Class classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="12" end="85" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+        <Message>At ICSSearchAlgorithmTest.java:[lines 12-85]</Message>
+      </SourceLine>
+      <Message>In class weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest</Message>
+    </Class>
+    <Method classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" name="testSearchWithMaxCardinalityZero" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="30" end="38" startBytecode="0" endBytecode="130" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java"/>
+      <Message>In method weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearchWithMaxCardinalityZero()</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(String)</Message>
+    </Method>
+    <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true" start="33" end="33" startBytecode="34" endBytecode="34" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+      <Message>At ICSSearchAlgorithmTest.java:[line 33]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="8f3105feab9f121854dd23c36e5f0d3b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearchWithNegativeMaxCardinality(): new java.io.FileReader(String)</LongMessage>
+    <Class classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="12" end="85" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+        <Message>At ICSSearchAlgorithmTest.java:[lines 12-85]</Message>
+      </SourceLine>
+      <Message>In class weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest</Message>
+    </Class>
+    <Method classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" name="testSearchWithNegativeMaxCardinality" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" start="78" end="85" startBytecode="0" endBytecode="113" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java"/>
+      <Message>In method weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest.testSearchWithNegativeMaxCardinality()</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>Called method new java.io.FileReader(String)</Message>
+    </Method>
+    <SourceLine classname="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" primary="true" start="81" end="81" startBytecode="34" endBytecode="34" sourcefile="ICSSearchAlgorithmTest.java" sourcepath="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java">
+      <Message>At ICSSearchAlgorithmTest.java:[line 81]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="5">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>weka.classifiers.bayes.BayesNet</MissingClass>
+    <MissingClass>weka.classifiers.bayes.net.search.SearchAlgorithm</MissingClass>
+    <MissingClass>weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithm</MissingClass>
+    <MissingClass>weka.core.Instances</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:46 +0200" total_classes="1" referenced_classes="13" total_bugs="6" total_size="63" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.39" clock_seconds="3.27" peak_mbytes="190.98" alloc_mbytes="7104.00" gc_seconds="0.21" priority_1="6">
+    <FileStats path="weka/classifiers/bayes/net/search/ci/ICSSearchAlgorithmTest.java" bugCount="6" size="63" bugHash="33d4a9d61973ff0e0c7a72bdba7944fe"/>
+    <PackageStats package="weka.classifiers.bayes.net.search.ci" total_bugs="6" total_types="1" total_size="63" priority_1="6">
+      <ClassStats class="weka.classifiers.bayes.net.search.ci.ICSSearchAlgorithmTest" sourceFile="ICSSearchAlgorithmTest.java" interface="false" size="63" bugs="6" priority_1="6"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="554" invocations="319" avgMicrosecondsPerInvocation="1737" maxMicrosecondsPerInvocation="46150" standardDeviationMicrosecondsPerInvocation="5101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="242" invocations="13" avgMicrosecondsPerInvocation="18658" maxMicrosecondsPerInvocation="231419" standardDeviationMicrosecondsPerInvocation="61445"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="173" invocations="13" avgMicrosecondsPerInvocation="13381" maxMicrosecondsPerInvocation="54091" standardDeviationMicrosecondsPerInvocation="18794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="121" invocations="13" avgMicrosecondsPerInvocation="9375" maxMicrosecondsPerInvocation="41462" standardDeviationMicrosecondsPerInvocation="13826"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="109" invocations="7" avgMicrosecondsPerInvocation="15688" maxMicrosecondsPerInvocation="82237" standardDeviationMicrosecondsPerInvocation="27501"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="94" invocations="65" avgMicrosecondsPerInvocation="1447" maxMicrosecondsPerInvocation="20759" standardDeviationMicrosecondsPerInvocation="3534"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="80" invocations="34" avgMicrosecondsPerInvocation="2363" maxMicrosecondsPerInvocation="56313" standardDeviationMicrosecondsPerInvocation="9556"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="79" invocations="321" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="33543" standardDeviationMicrosecondsPerInvocation="1948"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="71" invocations="13" avgMicrosecondsPerInvocation="5491" maxMicrosecondsPerInvocation="32848" standardDeviationMicrosecondsPerInvocation="11262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="67" invocations="7" avgMicrosecondsPerInvocation="9616" maxMicrosecondsPerInvocation="38205" standardDeviationMicrosecondsPerInvocation="12682"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="62" invocations="280" avgMicrosecondsPerInvocation="223" maxMicrosecondsPerInvocation="12739" standardDeviationMicrosecondsPerInvocation="892"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="56" invocations="7" avgMicrosecondsPerInvocation="8044" maxMicrosecondsPerInvocation="28924" standardDeviationMicrosecondsPerInvocation="9016"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="47" invocations="7" avgMicrosecondsPerInvocation="6845" maxMicrosecondsPerInvocation="19640" standardDeviationMicrosecondsPerInvocation="7771"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="45" invocations="13" avgMicrosecondsPerInvocation="3497" maxMicrosecondsPerInvocation="18782" standardDeviationMicrosecondsPerInvocation="5140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="37" invocations="13" avgMicrosecondsPerInvocation="2876" maxMicrosecondsPerInvocation="22158" standardDeviationMicrosecondsPerInvocation="5731"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

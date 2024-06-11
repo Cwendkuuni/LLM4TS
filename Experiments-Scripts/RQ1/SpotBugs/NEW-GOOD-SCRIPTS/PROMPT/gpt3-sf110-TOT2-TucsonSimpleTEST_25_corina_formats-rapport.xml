@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756313556" analysisTimestamp="1714599112572" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/35_corina/TucsonSimpleTEST/25/corina/formats</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="20cf287fa8f309807500aeb6dbbfa4c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type corina.formats.WrongFiletypeException in corina.formats.TucsonSimpleTest.testLoad() at TucsonSimpleTest.java:[line 29] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lcorina/formats/WrongFiletypeException;">
+      <SourceLine classname="corina.formats.WrongFiletypeException">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type corina.formats.WrongFiletypeException</Message>
+    </Type>
+    <Class classname="corina.formats.TucsonSimpleTest" primary="true">
+      <SourceLine classname="corina.formats.TucsonSimpleTest" start="7" end="31" sourcefile="TucsonSimpleTest.java" sourcepath="corina/formats/TucsonSimpleTest.java">
+        <Message>At TucsonSimpleTest.java:[lines 7-31]</Message>
+      </SourceLine>
+      <Message>In class corina.formats.TucsonSimpleTest</Message>
+    </Class>
+    <Method classname="corina.formats.TucsonSimpleTest" name="testLoad" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="corina.formats.TucsonSimpleTest" start="23" end="31" startBytecode="0" endBytecode="137" sourcefile="TucsonSimpleTest.java" sourcepath="corina/formats/TucsonSimpleTest.java"/>
+      <Message>In method corina.formats.TucsonSimpleTest.testLoad()</Message>
+    </Method>
+    <SourceLine classname="corina.formats.TucsonSimpleTest" primary="true" start="29" end="29" startBytecode="46" endBytecode="46" sourcefile="TucsonSimpleTest.java" sourcepath="corina/formats/TucsonSimpleTest.java">
+      <Message>At TucsonSimpleTest.java:[line 29]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>corina.Sample</MissingClass>
+    <MissingClass>corina.formats.TucsonSimple</MissingClass>
+    <MissingClass>corina.formats.WrongFiletypeException</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:13 +0100" total_classes="1" referenced_classes="14" total_bugs="1" total_size="20" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.44" clock_seconds="1.67" peak_mbytes="190.16" alloc_mbytes="7104.00" gc_seconds="0.12" priority_2="1">
+    <FileStats path="corina/formats/TucsonSimpleTest.java" bugCount="1" size="20" bugHash="e8cb1e50263e81612e0a30120c533eee"/>
+    <PackageStats package="corina.formats" total_bugs="1" total_types="1" total_size="20" priority_2="1">
+      <ClassStats class="corina.formats.TucsonSimpleTest" sourceFile="TucsonSimpleTest.java" interface="false" size="20" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="252" invocations="318" avgMicrosecondsPerInvocation="794" maxMicrosecondsPerInvocation="24850" standardDeviationMicrosecondsPerInvocation="2241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="160" invocations="14" avgMicrosecondsPerInvocation="11441" maxMicrosecondsPerInvocation="129021" standardDeviationMicrosecondsPerInvocation="32722"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="69" invocations="14" avgMicrosecondsPerInvocation="4942" maxMicrosecondsPerInvocation="16400" standardDeviationMicrosecondsPerInvocation="5618"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="66" invocations="281" avgMicrosecondsPerInvocation="235" maxMicrosecondsPerInvocation="13839" standardDeviationMicrosecondsPerInvocation="1078"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="65" invocations="67" avgMicrosecondsPerInvocation="979" maxMicrosecondsPerInvocation="7350" standardDeviationMicrosecondsPerInvocation="1438"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="48" invocations="33" avgMicrosecondsPerInvocation="1482" maxMicrosecondsPerInvocation="29848" standardDeviationMicrosecondsPerInvocation="5166"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="42" invocations="14" avgMicrosecondsPerInvocation="3006" maxMicrosecondsPerInvocation="11884" standardDeviationMicrosecondsPerInvocation="3745"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="4" avgMicrosecondsPerInvocation="9321" maxMicrosecondsPerInvocation="35176" standardDeviationMicrosecondsPerInvocation="14933"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="28" invocations="14" avgMicrosecondsPerInvocation="2062" maxMicrosecondsPerInvocation="9679" standardDeviationMicrosecondsPerInvocation="3101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="27" invocations="1" avgMicrosecondsPerInvocation="27850" maxMicrosecondsPerInvocation="27850" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="25" invocations="4" avgMicrosecondsPerInvocation="6338" maxMicrosecondsPerInvocation="19721" standardDeviationMicrosecondsPerInvocation="7780"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="21" invocations="320" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="799" standardDeviationMicrosecondsPerInvocation="69"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="21" invocations="5" avgMicrosecondsPerInvocation="4312" maxMicrosecondsPerInvocation="13099" standardDeviationMicrosecondsPerInvocation="4480"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="20" invocations="14" avgMicrosecondsPerInvocation="1497" maxMicrosecondsPerInvocation="5894" standardDeviationMicrosecondsPerInvocation="2093"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="20" invocations="4" avgMicrosecondsPerInvocation="5039" maxMicrosecondsPerInvocation="12475" standardDeviationMicrosecondsPerInvocation="4629"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="19" invocations="1" avgMicrosecondsPerInvocation="19305" maxMicrosecondsPerInvocation="19305" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

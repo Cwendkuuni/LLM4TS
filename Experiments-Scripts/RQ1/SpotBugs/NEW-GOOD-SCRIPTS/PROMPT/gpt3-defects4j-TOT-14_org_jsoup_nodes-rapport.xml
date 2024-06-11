@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420565473" analysisTimestamp="1714594978939" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT/Jsoup/57/14/org/jsoup/nodes</Jar>
+  </Project>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="ea8b8cc033ca7fea0da8cb2019968d19" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in org.jsoup.nodes.AttributesTest.testAddAll()</LongMessage>
+    <Class classname="org.jsoup.nodes.AttributesTest" primary="true">
+      <SourceLine classname="org.jsoup.nodes.AttributesTest" start="10" end="284" sourcefile="AttributesTest.java" sourcepath="org/jsoup/nodes/AttributesTest.java">
+        <Message>At AttributesTest.java:[lines 10-284]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.nodes.AttributesTest</Message>
+    </Class>
+    <Method classname="org.jsoup.nodes.AttributesTest" name="testAddAll" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.nodes.AttributesTest" start="165" end="184" startBytecode="0" endBytecode="228" sourcefile="AttributesTest.java" sourcepath="org/jsoup/nodes/AttributesTest.java"/>
+      <Message>In method org.jsoup.nodes.AttributesTest.testAddAll()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.nodes.AttributesTest" primary="true" start="181" end="181" startBytecode="118" endBytecode="118" sourcefile="AttributesTest.java" sourcepath="org/jsoup/nodes/AttributesTest.java">
+      <Message>At AttributesTest.java:[line 181]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="13fc51d9d4f4b4ab8a482f7a63cc22d2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in org.jsoup.nodes.AttributesTest.testPut()</LongMessage>
+    <Class classname="org.jsoup.nodes.AttributesTest" primary="true">
+      <SourceLine classname="org.jsoup.nodes.AttributesTest" start="10" end="284" sourcefile="AttributesTest.java" sourcepath="org/jsoup/nodes/AttributesTest.java">
+        <Message>At AttributesTest.java:[lines 10-284]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.nodes.AttributesTest</Message>
+    </Class>
+    <Method classname="org.jsoup.nodes.AttributesTest" name="testPut" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.nodes.AttributesTest" start="48" end="62" startBytecode="0" endBytecode="148" sourcefile="AttributesTest.java" sourcepath="org/jsoup/nodes/AttributesTest.java"/>
+      <Message>In method org.jsoup.nodes.AttributesTest.testPut()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.nodes.AttributesTest" primary="true" start="59" end="59" startBytecode="68" endBytecode="68" sourcefile="AttributesTest.java" sourcepath="org/jsoup/nodes/AttributesTest.java">
+      <Message>At AttributesTest.java:[line 59]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" abbrev="DCN" category="STYLE" instanceHash="ea7034daa19a3a7b38f46eb9a4494bd6" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>NullPointerException caught</ShortMessage>
+    <LongMessage>Do not catch NullPointerException like in org.jsoup.nodes.AttributesTest.testPutAttribute()</LongMessage>
+    <Class classname="org.jsoup.nodes.AttributesTest" primary="true">
+      <SourceLine classname="org.jsoup.nodes.AttributesTest" start="10" end="284" sourcefile="AttributesTest.java" sourcepath="org/jsoup/nodes/AttributesTest.java">
+        <Message>At AttributesTest.java:[lines 10-284]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.nodes.AttributesTest</Message>
+    </Class>
+    <Method classname="org.jsoup.nodes.AttributesTest" name="testPutAttribute" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.nodes.AttributesTest" start="78" end="89" startBytecode="0" endBytecode="136" sourcefile="AttributesTest.java" sourcepath="org/jsoup/nodes/AttributesTest.java"/>
+      <Message>In method org.jsoup.nodes.AttributesTest.testPutAttribute()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.nodes.AttributesTest" primary="true" start="86" end="86" startBytecode="50" endBytecode="50" sourcefile="AttributesTest.java" sourcepath="org/jsoup/nodes/AttributesTest.java">
+      <Message>At AttributesTest.java:[line 86]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DCN_NULLPOINTER_EXCEPTION" abbrev="DCN" category="STYLE">
+    <ShortDescription>NullPointerException caught</ShortDescription>
+    <Details><![CDATA[
+   
+<p>
+According to SEI Cert rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">ERR08-J</a> NullPointerException should not be caught. Handling NullPointerException is considered an inferior alternative to null-checking.
+<p>
+This non-compliant code catches a NullPointerException to see if an incoming parameter is null:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+  try {
+    String ms[] = m.split(" ");
+    return names.length != 1;
+  } catch (NullPointerException e) {
+    return false;
+  }
+}
+</code></pre>
+<p>
+A compliant solution would use a null-check as in the following example:
+</p>
+<pre><code>
+boolean hasSpace(String m) {
+    if (m == null) return false;
+    String ms[] = m.split(" ");
+    return names.length != 1;
+}
+</code></pre>
+    
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DCN">
+    <Description>Don&apos;t Catch NullPointer Exception</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.jsoup.nodes.Attribute</MissingClass>
+    <MissingClass>org.jsoup.nodes.Attributes</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:05 +0100" total_classes="1" referenced_classes="14" total_bugs="3" total_size="162" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="7.35" clock_seconds="1.81" peak_mbytes="192.92" alloc_mbytes="7104.00" gc_seconds="0.13" priority_2="3">
+    <FileStats path="org/jsoup/nodes/AttributesTest.java" bugCount="3" size="162" bugHash="032a8bbed6a8deed8614b00e89a17cdc"/>
+    <PackageStats package="org.jsoup.nodes" total_bugs="3" total_types="1" total_size="162" priority_2="3">
+      <ClassStats class="org.jsoup.nodes.AttributesTest" sourceFile="AttributesTest.java" interface="false" size="162" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="226" invocations="324" avgMicrosecondsPerInvocation="700" maxMicrosecondsPerInvocation="32947" standardDeviationMicrosecondsPerInvocation="2239"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="218" invocations="14" avgMicrosecondsPerInvocation="15628" maxMicrosecondsPerInvocation="141597" standardDeviationMicrosecondsPerInvocation="35781"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="64" invocations="20" avgMicrosecondsPerInvocation="3223" maxMicrosecondsPerInvocation="13855" standardDeviationMicrosecondsPerInvocation="3703"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="60" invocations="20" avgMicrosecondsPerInvocation="3024" maxMicrosecondsPerInvocation="21452" standardDeviationMicrosecondsPerInvocation="5108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="55" invocations="83" avgMicrosecondsPerInvocation="667" maxMicrosecondsPerInvocation="5096" standardDeviationMicrosecondsPerInvocation="950"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="49" invocations="14" avgMicrosecondsPerInvocation="3550" maxMicrosecondsPerInvocation="20093" standardDeviationMicrosecondsPerInvocation="5545"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="46" invocations="20" avgMicrosecondsPerInvocation="2306" maxMicrosecondsPerInvocation="13286" standardDeviationMicrosecondsPerInvocation="2701"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="45" invocations="287" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="16257" standardDeviationMicrosecondsPerInvocation="969"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="45" invocations="20" avgMicrosecondsPerInvocation="2282" maxMicrosecondsPerInvocation="38789" standardDeviationMicrosecondsPerInvocation="8379"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="41" invocations="20" avgMicrosecondsPerInvocation="2067" maxMicrosecondsPerInvocation="13489" standardDeviationMicrosecondsPerInvocation="2857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="38" invocations="33" avgMicrosecondsPerInvocation="1177" maxMicrosecondsPerInvocation="21412" standardDeviationMicrosecondsPerInvocation="3717"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="38" invocations="20" avgMicrosecondsPerInvocation="1926" maxMicrosecondsPerInvocation="4457" standardDeviationMicrosecondsPerInvocation="936"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="30" invocations="14" avgMicrosecondsPerInvocation="2188" maxMicrosecondsPerInvocation="9911" standardDeviationMicrosecondsPerInvocation="3267"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="28" invocations="20" avgMicrosecondsPerInvocation="1447" maxMicrosecondsPerInvocation="4182" standardDeviationMicrosecondsPerInvocation="1015"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="24" invocations="14" avgMicrosecondsPerInvocation="1753" maxMicrosecondsPerInvocation="8854" standardDeviationMicrosecondsPerInvocation="2699"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="23" invocations="14" avgMicrosecondsPerInvocation="1655" maxMicrosecondsPerInvocation="11543" standardDeviationMicrosecondsPerInvocation="2956"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="21" invocations="326" avgMicrosecondsPerInvocation="65" maxMicrosecondsPerInvocation="1401" standardDeviationMicrosecondsPerInvocation="86"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287206750" analysisTimestamp="1714574150159" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/COT/scribe/TokenTEST/28/org/scribe/model</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="f6877d34f3cd3dca3b0c1413db1b0d3a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.scribe.model.test.TokenTest.testGetSecretEmptyStringAndTokenEmptyString()</LongMessage>
+    <Class classname="org.scribe.model.test.TokenTest" primary="true">
+      <SourceLine classname="org.scribe.model.test.TokenTest" start="8" end="90" sourcefile="TokenTest.java" sourcepath="org/scribe/model/test/TokenTest.java">
+        <Message>At TokenTest.java:[lines 8-90]</Message>
+      </SourceLine>
+      <Message>In class org.scribe.model.test.TokenTest</Message>
+    </Class>
+    <Method classname="org.scribe.model.test.TokenTest" name="testGetSecretEmptyStringAndTokenEmptyString" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.scribe.model.test.TokenTest" start="74" end="77" startBytecode="0" endBytecode="10" sourcefile="TokenTest.java" sourcepath="org/scribe/model/test/TokenTest.java"/>
+      <Message>In method org.scribe.model.test.TokenTest.testGetSecretEmptyStringAndTokenEmptyString()</Message>
+    </Method>
+    <LocalVariable name="?" register="3" pc="16" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 3</Message>
+    </LocalVariable>
+    <SourceLine classname="org.scribe.model.test.TokenTest" primary="true" start="76" end="76" startBytecode="15" endBytecode="15" sourcefile="TokenTest.java" sourcepath="org/scribe/model/test/TokenTest.java">
+      <Message>At TokenTest.java:[line 76]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.scribe.model.Token</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:46 +0200" total_classes="1" referenced_classes="10" total_bugs="1" total_size="62" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.53" clock_seconds="5.01" peak_mbytes="190.76" alloc_mbytes="7104.00" gc_seconds="0.21" priority_1="1">
+    <FileStats path="org/scribe/model/test/TokenTest.java" bugCount="1" size="62" bugHash="6dd8761de54a44a5ba79d2124839140b"/>
+    <PackageStats package="org.scribe.model.test" total_bugs="1" total_types="1" total_size="62" priority_1="1">
+      <ClassStats class="org.scribe.model.test.TokenTest" sourceFile="TokenTest.java" interface="false" size="62" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="604" invocations="308" avgMicrosecondsPerInvocation="1963" maxMicrosecondsPerInvocation="71380" standardDeviationMicrosecondsPerInvocation="6442"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="269" invocations="10" avgMicrosecondsPerInvocation="26968" maxMicrosecondsPerInvocation="247823" standardDeviationMicrosecondsPerInvocation="73717"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="234" invocations="70" avgMicrosecondsPerInvocation="3347" maxMicrosecondsPerInvocation="43519" standardDeviationMicrosecondsPerInvocation="7576"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="217" invocations="273" avgMicrosecondsPerInvocation="796" maxMicrosecondsPerInvocation="44280" standardDeviationMicrosecondsPerInvocation="3834"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="187" invocations="13" avgMicrosecondsPerInvocation="14412" maxMicrosecondsPerInvocation="147148" standardDeviationMicrosecondsPerInvocation="38998"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="177" invocations="10" avgMicrosecondsPerInvocation="17778" maxMicrosecondsPerInvocation="56694" standardDeviationMicrosecondsPerInvocation="21527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="140" invocations="28" avgMicrosecondsPerInvocation="5022" maxMicrosecondsPerInvocation="89125" standardDeviationMicrosecondsPerInvocation="16682"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="128" invocations="10" avgMicrosecondsPerInvocation="12882" maxMicrosecondsPerInvocation="59591" standardDeviationMicrosecondsPerInvocation="18363"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="121" invocations="13" avgMicrosecondsPerInvocation="9345" maxMicrosecondsPerInvocation="63314" standardDeviationMicrosecondsPerInvocation="17061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="120" invocations="13" avgMicrosecondsPerInvocation="9286" maxMicrosecondsPerInvocation="57767" standardDeviationMicrosecondsPerInvocation="15164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="105" invocations="10" avgMicrosecondsPerInvocation="10521" maxMicrosecondsPerInvocation="60047" standardDeviationMicrosecondsPerInvocation="17391"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="97" invocations="10" avgMicrosecondsPerInvocation="9773" maxMicrosecondsPerInvocation="60733" standardDeviationMicrosecondsPerInvocation="18262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="97" invocations="13" avgMicrosecondsPerInvocation="7496" maxMicrosecondsPerInvocation="77091" standardDeviationMicrosecondsPerInvocation="20292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="88" invocations="1" avgMicrosecondsPerInvocation="88128" maxMicrosecondsPerInvocation="88128" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="82" invocations="10" avgMicrosecondsPerInvocation="8282" maxMicrosecondsPerInvocation="33313" standardDeviationMicrosecondsPerInvocation="11634"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="77" invocations="1" avgMicrosecondsPerInvocation="77074" maxMicrosecondsPerInvocation="77074" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="74" invocations="10" avgMicrosecondsPerInvocation="7446" maxMicrosecondsPerInvocation="34072" standardDeviationMicrosecondsPerInvocation="10695"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

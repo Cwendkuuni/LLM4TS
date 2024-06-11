@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287204714" analysisTimestamp="1714572469358" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/COT/1_tullibee/ComboLegTEST/5/com/ib/client</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b31f54f5d391d779513c180a01363a7d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.ib.client.ComboLegTest.testConstructorWithInvalidOpenCloseValue()</LongMessage>
+    <Class classname="com.ib.client.ComboLegTest" primary="true">
+      <SourceLine classname="com.ib.client.ComboLegTest" start="6" end="73" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java">
+        <Message>At ComboLegTest.java:[lines 6-73]</Message>
+      </SourceLine>
+      <Message>In class com.ib.client.ComboLegTest</Message>
+    </Class>
+    <Method classname="com.ib.client.ComboLegTest" name="testConstructorWithInvalidOpenCloseValue" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.ib.client.ComboLegTest" start="67" end="68" startBytecode="0" endBytecode="11" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java"/>
+      <Message>In method com.ib.client.ComboLegTest.testConstructorWithInvalidOpenCloseValue()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="17" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.ib.client.ComboLegTest" primary="true" start="67" end="67" startBytecode="16" endBytecode="16" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java">
+      <Message>At ComboLegTest.java:[line 67]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="c613e21d53f08759b031c74e071a5f07" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.ib.client.ComboLegTest.testConstructorWithNegativeRatio()</LongMessage>
+    <Class classname="com.ib.client.ComboLegTest" primary="true">
+      <SourceLine classname="com.ib.client.ComboLegTest" start="6" end="73" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java">
+        <Message>At ComboLegTest.java:[lines 6-73]</Message>
+      </SourceLine>
+      <Message>In class com.ib.client.ComboLegTest</Message>
+    </Class>
+    <Method classname="com.ib.client.ComboLegTest" name="testConstructorWithNegativeRatio" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.ib.client.ComboLegTest" start="62" end="63" startBytecode="0" endBytecode="11" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java"/>
+      <Message>In method com.ib.client.ComboLegTest.testConstructorWithNegativeRatio()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="18" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.ib.client.ComboLegTest" primary="true" start="62" end="62" startBytecode="17" endBytecode="17" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java">
+      <Message>At ComboLegTest.java:[line 62]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b0a482a3fd2a55f9dbb0d3274574b6e4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.ib.client.ComboLegTest.testConstructorWithNullDesignatedLocation()</LongMessage>
+    <Class classname="com.ib.client.ComboLegTest" primary="true">
+      <SourceLine classname="com.ib.client.ComboLegTest" start="6" end="73" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java">
+        <Message>At ComboLegTest.java:[lines 6-73]</Message>
+      </SourceLine>
+      <Message>In class com.ib.client.ComboLegTest</Message>
+    </Class>
+    <Method classname="com.ib.client.ComboLegTest" name="testConstructorWithNullDesignatedLocation" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.ib.client.ComboLegTest" start="72" end="73" startBytecode="0" endBytecode="11" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java"/>
+      <Message>In method com.ib.client.ComboLegTest.testConstructorWithNullDesignatedLocation()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="17" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.ib.client.ComboLegTest" primary="true" start="72" end="72" startBytecode="16" endBytecode="16" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java">
+      <Message>At ComboLegTest.java:[line 72]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b7bea00cb8cd3ac7cf35dc83d96a7af5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode com.ib.client.ComboLegTest.testConstructorWithNullExchange()</LongMessage>
+    <Class classname="com.ib.client.ComboLegTest" primary="true">
+      <SourceLine classname="com.ib.client.ComboLegTest" start="6" end="73" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java">
+        <Message>At ComboLegTest.java:[lines 6-73]</Message>
+      </SourceLine>
+      <Message>In class com.ib.client.ComboLegTest</Message>
+    </Class>
+    <Method classname="com.ib.client.ComboLegTest" name="testConstructorWithNullExchange" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.ib.client.ComboLegTest" start="57" end="58" startBytecode="0" endBytecode="11" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java"/>
+      <Message>In method com.ib.client.ComboLegTest.testConstructorWithNullExchange()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="15" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="com.ib.client.ComboLegTest" primary="true" start="57" end="57" startBytecode="14" endBytecode="14" sourcefile="ComboLegTest.java" sourcepath="com/ib/client/ComboLegTest.java">
+      <Message>At ComboLegTest.java:[line 57]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.ib.client.ComboLeg</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:44 +0200" total_classes="1" referenced_classes="10" total_bugs="4" total_size="51" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.09" clock_seconds="5.40" peak_mbytes="190.95" alloc_mbytes="7104.00" gc_seconds="0.22" priority_1="4">
+    <FileStats path="com/ib/client/ComboLegTest.java" bugCount="4" size="51" bugHash="35a11c562bf626a9eda7ac5194315b07"/>
+    <PackageStats package="com.ib.client" total_bugs="4" total_types="1" total_size="51" priority_1="4">
+      <ClassStats class="com.ib.client.ComboLegTest" sourceFile="ComboLegTest.java" interface="false" size="51" bugs="4" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="759" invocations="308" avgMicrosecondsPerInvocation="2466" maxMicrosecondsPerInvocation="65056" standardDeviationMicrosecondsPerInvocation="7386"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="280" invocations="10" avgMicrosecondsPerInvocation="28039" maxMicrosecondsPerInvocation="258522" standardDeviationMicrosecondsPerInvocation="76996"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="202" invocations="273" avgMicrosecondsPerInvocation="741" maxMicrosecondsPerInvocation="33906" standardDeviationMicrosecondsPerInvocation="3288"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="197" invocations="10" avgMicrosecondsPerInvocation="19746" maxMicrosecondsPerInvocation="82465" standardDeviationMicrosecondsPerInvocation="26922"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="177" invocations="66" avgMicrosecondsPerInvocation="2694" maxMicrosecondsPerInvocation="24577" standardDeviationMicrosecondsPerInvocation="5069"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="169" invocations="310" avgMicrosecondsPerInvocation="548" maxMicrosecondsPerInvocation="24494" standardDeviationMicrosecondsPerInvocation="2756"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="145" invocations="10" avgMicrosecondsPerInvocation="14530" maxMicrosecondsPerInvocation="53999" standardDeviationMicrosecondsPerInvocation="19181"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="141" invocations="9" avgMicrosecondsPerInvocation="15708" maxMicrosecondsPerInvocation="120297" standardDeviationMicrosecondsPerInvocation="37094"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="136" invocations="27" avgMicrosecondsPerInvocation="5042" maxMicrosecondsPerInvocation="75248" standardDeviationMicrosecondsPerInvocation="15820"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="100" invocations="9" avgMicrosecondsPerInvocation="11131" maxMicrosecondsPerInvocation="22317" standardDeviationMicrosecondsPerInvocation="8401"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="98" invocations="1" avgMicrosecondsPerInvocation="98473" maxMicrosecondsPerInvocation="98473" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="98" invocations="9" avgMicrosecondsPerInvocation="10936" maxMicrosecondsPerInvocation="62910" standardDeviationMicrosecondsPerInvocation="18928"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="93" invocations="9" avgMicrosecondsPerInvocation="10347" maxMicrosecondsPerInvocation="48881" standardDeviationMicrosecondsPerInvocation="15612"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="92" invocations="10" avgMicrosecondsPerInvocation="9214" maxMicrosecondsPerInvocation="52609" standardDeviationMicrosecondsPerInvocation="15269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="77" invocations="10" avgMicrosecondsPerInvocation="7791" maxMicrosecondsPerInvocation="54105" standardDeviationMicrosecondsPerInvocation="15936"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="72" invocations="10" avgMicrosecondsPerInvocation="7253" maxMicrosecondsPerInvocation="26765" standardDeviationMicrosecondsPerInvocation="10431"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="66" invocations="9" avgMicrosecondsPerInvocation="7421" maxMicrosecondsPerInvocation="40532" standardDeviationMicrosecondsPerInvocation="12065"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

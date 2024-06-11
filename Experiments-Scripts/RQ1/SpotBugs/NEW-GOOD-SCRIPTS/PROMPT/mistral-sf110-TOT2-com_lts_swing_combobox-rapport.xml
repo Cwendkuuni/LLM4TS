@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287211886" analysisTimestamp="1714586114925" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/78_caloriecount/SimpleComboBoxTEST/14/com/lts/swing/combobox</Jar>
+  </Project>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="25430889823581e0b21ba5e948f41763" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>com.lts.swing.combobox.SimpleComboBoxTest.testGetSelectedInt() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="6" end="79" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+        <Message>At SimpleComboBoxTest.java:[lines 6-79]</Message>
+      </SourceLine>
+      <Message>In class com.lts.swing.combobox.SimpleComboBoxTest</Message>
+    </Class>
+    <Method classname="com.lts.swing.combobox.SimpleComboBoxTest" name="testGetSelectedInt" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="58" end="66" startBytecode="0" endBytecode="111" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java"/>
+      <Message>In method com.lts.swing.combobox.SimpleComboBoxTest.testGetSelectedInt()</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true" start="59" end="59" startBytecode="21" endBytecode="21" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+      <Message>At SimpleComboBoxTest.java:[line 59]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="f624a1f26d1732d5cd6e796e94d7bd86" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>com.lts.swing.combobox.SimpleComboBoxTest.testGetSelectedLong() invokes inefficient new Long(long) constructor; use Long.valueOf(long) instead</LongMessage>
+    <Class classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="6" end="79" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+        <Message>At SimpleComboBoxTest.java:[lines 6-79]</Message>
+      </SourceLine>
+      <Message>In class com.lts.swing.combobox.SimpleComboBoxTest</Message>
+    </Class>
+    <Method classname="com.lts.swing.combobox.SimpleComboBoxTest" name="testGetSelectedLong" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="71" end="79" startBytecode="0" endBytecode="109" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java"/>
+      <Message>In method com.lts.swing.combobox.SimpleComboBoxTest.testGetSelectedLong()</Message>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="947" end="949" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+      <Message>Called method new Long(long)</Message>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="837" end="840" startBytecode="0" endBytecode="76" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+      <Message>Should call Long.valueOf(long) instead</Message>
+    </Method>
+    <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true" start="72" end="72" startBytecode="21" endBytecode="21" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+      <Message>At SimpleComboBoxTest.java:[line 72]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="5c065606439670c6032f45ce403eeed5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>com.lts.swing.combobox.SimpleComboBoxTest.testGetSelectedValue() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="6" end="79" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+        <Message>At SimpleComboBoxTest.java:[lines 6-79]</Message>
+      </SourceLine>
+      <Message>In class com.lts.swing.combobox.SimpleComboBoxTest</Message>
+    </Class>
+    <Method classname="com.lts.swing.combobox.SimpleComboBoxTest" name="testGetSelectedValue" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="32" end="40" startBytecode="0" endBytecode="104" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java"/>
+      <Message>In method com.lts.swing.combobox.SimpleComboBoxTest.testGetSelectedValue()</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true" start="33" end="33" startBytecode="21" endBytecode="21" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+      <Message>At SimpleComboBoxTest.java:[line 33]</Message>
+    </SourceLine>
+    <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="36" end="36" startBytecode="37" endBytecode="37" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at SimpleComboBoxTest.java:[line 36]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="854a9805bbe20bfc070f321bb3658da4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>com.lts.swing.combobox.SimpleComboBoxTest.testSetSelectedValue() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="6" end="79" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+        <Message>At SimpleComboBoxTest.java:[lines 6-79]</Message>
+      </SourceLine>
+      <Message>In class com.lts.swing.combobox.SimpleComboBoxTest</Message>
+    </Class>
+    <Method classname="com.lts.swing.combobox.SimpleComboBoxTest" name="testSetSelectedValue" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="45" end="53" startBytecode="0" endBytecode="118" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java"/>
+      <Message>In method com.lts.swing.combobox.SimpleComboBoxTest.testSetSelectedValue()</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true" start="46" end="46" startBytecode="21" endBytecode="21" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+      <Message>At SimpleComboBoxTest.java:[line 46]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" instanceHash="ddbcef4163e063191c0f7c66c23add77" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>com.lts.swing.combobox.SimpleComboBoxTest.testSetSelectedValue() invokes inefficient new Long(long) constructor; use Long.valueOf(long) instead</LongMessage>
+    <Class classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="6" end="79" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+        <Message>At SimpleComboBoxTest.java:[lines 6-79]</Message>
+      </SourceLine>
+      <Message>In class com.lts.swing.combobox.SimpleComboBoxTest</Message>
+    </Class>
+    <Method classname="com.lts.swing.combobox.SimpleComboBoxTest" name="testSetSelectedValue" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="45" end="53" startBytecode="0" endBytecode="118" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java"/>
+      <Message>In method com.lts.swing.combobox.SimpleComboBoxTest.testSetSelectedValue()</Message>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(J)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="947" end="949" startBytecode="0" endBytecode="41" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+      <Message>Called method new Long(long)</Message>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(J)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="837" end="840" startBytecode="0" endBytecode="76" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+      <Message>Should call Long.valueOf(long) instead</Message>
+    </Method>
+    <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" primary="true" start="48" end="48" startBytecode="35" endBytecode="35" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java">
+      <Message>At SimpleComboBoxTest.java:[line 48]</Message>
+    </SourceLine>
+    <SourceLine classname="com.lts.swing.combobox.SimpleComboBoxTest" start="49" end="49" startBytecode="48" endBytecode="48" sourcefile="SimpleComboBoxTest.java" sourcepath="com/lts/swing/combobox/SimpleComboBoxTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at SimpleComboBoxTest.java:[line 49]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_NUMBER_CTOR" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient Number constructor; use static valueOf instead</ShortDescription>
+    <Details><![CDATA[
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>com.lts.swing.combobox.SimpleComboBox</MissingClass>
+    <MissingClass>com.lts.swing.combobox.SimpleComboBoxModel</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:51 +0200" total_classes="1" referenced_classes="13" total_bugs="5" total_size="47" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.47" clock_seconds="3.48" peak_mbytes="190.66" alloc_mbytes="7104.00" gc_seconds="0.22" priority_2="5">
+    <FileStats path="com/lts/swing/combobox/SimpleComboBoxTest.java" bugCount="5" size="47" bugHash="b06b9ba79f6a473dbd2347054ec1efa1"/>
+    <PackageStats package="com.lts.swing.combobox" total_bugs="5" total_types="1" total_size="47" priority_2="5">
+      <ClassStats class="com.lts.swing.combobox.SimpleComboBoxTest" sourceFile="SimpleComboBoxTest.java" interface="false" size="47" bugs="5" priority_2="5"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="434" invocations="13" avgMicrosecondsPerInvocation="33401" maxMicrosecondsPerInvocation="241132" standardDeviationMicrosecondsPerInvocation="65176"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="418" invocations="300" avgMicrosecondsPerInvocation="1393" maxMicrosecondsPerInvocation="37057" standardDeviationMicrosecondsPerInvocation="4165"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="121" invocations="45" avgMicrosecondsPerInvocation="2693" maxMicrosecondsPerInvocation="24785" standardDeviationMicrosecondsPerInvocation="5951"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="114" invocations="264" avgMicrosecondsPerInvocation="431" maxMicrosecondsPerInvocation="24474" standardDeviationMicrosecondsPerInvocation="2323"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="106" invocations="30" avgMicrosecondsPerInvocation="3549" maxMicrosecondsPerInvocation="69953" standardDeviationMicrosecondsPerInvocation="12835"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="106" invocations="7" avgMicrosecondsPerInvocation="15170" maxMicrosecondsPerInvocation="87919" standardDeviationMicrosecondsPerInvocation="29890"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="98" invocations="13" avgMicrosecondsPerInvocation="7558" maxMicrosecondsPerInvocation="25839" standardDeviationMicrosecondsPerInvocation="8603"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="86" invocations="13" avgMicrosecondsPerInvocation="6619" maxMicrosecondsPerInvocation="43239" standardDeviationMicrosecondsPerInvocation="13844"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="86" invocations="13" avgMicrosecondsPerInvocation="6617" maxMicrosecondsPerInvocation="48395" standardDeviationMicrosecondsPerInvocation="13367"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="78" invocations="7" avgMicrosecondsPerInvocation="11233" maxMicrosecondsPerInvocation="50587" standardDeviationMicrosecondsPerInvocation="16505"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="75" invocations="303" avgMicrosecondsPerInvocation="247" maxMicrosecondsPerInvocation="25232" standardDeviationMicrosecondsPerInvocation="1966"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="62" invocations="7" avgMicrosecondsPerInvocation="8973" maxMicrosecondsPerInvocation="54753" standardDeviationMicrosecondsPerInvocation="18691"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="61" invocations="7" avgMicrosecondsPerInvocation="8809" maxMicrosecondsPerInvocation="36552" standardDeviationMicrosecondsPerInvocation="12082"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NumberConstructor" totalMilliseconds="55" invocations="1" avgMicrosecondsPerInvocation="55873" maxMicrosecondsPerInvocation="55873" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="54" invocations="7" avgMicrosecondsPerInvocation="7794" maxMicrosecondsPerInvocation="32047" standardDeviationMicrosecondsPerInvocation="11410"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteAnnotationRetention" totalMilliseconds="54" invocations="13" avgMicrosecondsPerInvocation="4195" maxMicrosecondsPerInvocation="51512" standardDeviationMicrosecondsPerInvocation="13662"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420585345" analysisTimestamp="1714612096020" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/ZEROSHOT/Jsoup/34/7/org/jsoup/parser</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="b45aaa2d81ca01df19c41f9017373c5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.jsoup.parser.CharacterReaderTest.characterReader</LongMessage>
+    <Class classname="org.jsoup.parser.CharacterReaderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.CharacterReaderTest" start="9" end="15" sourcefile="CharacterReaderTest.java" sourcepath="org/jsoup/parser/CharacterReaderTest.java">
+        <Message>At CharacterReaderTest.java:[lines 9-15]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.CharacterReaderTest</Message>
+    </Class>
+    <Field classname="org.jsoup.parser.CharacterReaderTest" name="characterReader" signature="Lorg/jsoup/parser/CharacterReader;" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.CharacterReaderTest" sourcefile="CharacterReaderTest.java" sourcepath="org/jsoup/parser/CharacterReaderTest.java">
+        <Message>In CharacterReaderTest.java</Message>
+      </SourceLine>
+      <Message>Field org.jsoup.parser.CharacterReaderTest.characterReader</Message>
+    </Field>
+    <SourceLine classname="org.jsoup.parser.CharacterReaderTest" primary="true" start="14" end="14" startBytecode="10" endBytecode="10" sourcefile="CharacterReaderTest.java" sourcepath="org/jsoup/parser/CharacterReaderTest.java">
+      <Message>At CharacterReaderTest.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.jsoup.parser.CharacterReader</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:25 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="7" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.16" clock_seconds="0.92" peak_mbytes="190.17" alloc_mbytes="7104.00" gc_seconds="0.04" priority_2="1">
+    <FileStats path="org/jsoup/parser/CharacterReaderTest.java" bugCount="1" size="7" bugHash="56c9e42781ea85f3f904d30880574969"/>
+    <PackageStats package="org.jsoup.parser" total_bugs="1" total_types="1" total_size="7" priority_2="1">
+      <ClassStats class="org.jsoup.parser.CharacterReaderTest" sourceFile="CharacterReaderTest.java" interface="false" size="7" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="175" invocations="307" avgMicrosecondsPerInvocation="571" maxMicrosecondsPerInvocation="15105" standardDeviationMicrosecondsPerInvocation="1361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="83" invocations="59" avgMicrosecondsPerInvocation="1419" maxMicrosecondsPerInvocation="46092" standardDeviationMicrosecondsPerInvocation="5943"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="39" invocations="10" avgMicrosecondsPerInvocation="3951" maxMicrosecondsPerInvocation="15246" standardDeviationMicrosecondsPerInvocation="4917"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="31" invocations="26" avgMicrosecondsPerInvocation="1222" maxMicrosecondsPerInvocation="19931" standardDeviationMicrosecondsPerInvocation="3856"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="27" invocations="273" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="1523" standardDeviationMicrosecondsPerInvocation="195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="21" invocations="2" avgMicrosecondsPerInvocation="10508" maxMicrosecondsPerInvocation="20187" standardDeviationMicrosecondsPerInvocation="9679"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="19" invocations="10" avgMicrosecondsPerInvocation="1960" maxMicrosecondsPerInvocation="7160" standardDeviationMicrosecondsPerInvocation="2441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="18" invocations="10" avgMicrosecondsPerInvocation="1869" maxMicrosecondsPerInvocation="12857" standardDeviationMicrosecondsPerInvocation="3744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="17" invocations="10" avgMicrosecondsPerInvocation="1794" maxMicrosecondsPerInvocation="9116" standardDeviationMicrosecondsPerInvocation="2689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="16" invocations="309" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="485" standardDeviationMicrosecondsPerInvocation="44"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="15" invocations="10" avgMicrosecondsPerInvocation="1589" maxMicrosecondsPerInvocation="5996" standardDeviationMicrosecondsPerInvocation="2113"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

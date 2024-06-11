@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287206810" analysisTimestamp="1714574229039" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/COT/scribe/OAuthRequestTEST/7/org/scribe/model</Jar>
+  </Project>
+  <BugInstance type="BC_VACUOUS_INSTANCEOF" priority="2" rank="17" abbrev="BC" category="STYLE" instanceHash="7e5c7f5824481c9de17bf23080545756" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="571">
+    <ShortMessage>instanceof renverra toujours vrai</ShortMessage>
+    <LongMessage>instanceof renverra toujours vrai dans org.scribe.model.OAuthRequestTest.testOAuthRequestConstruction(), puisque chaque java.util.Map est une instance de OAuthRequestTest.java:[line 24]</LongMessage>
+    <Class classname="org.scribe.model.OAuthRequestTest" primary="true">
+      <SourceLine classname="org.scribe.model.OAuthRequestTest" start="10" end="83" sourcefile="OAuthRequestTest.java" sourcepath="org/scribe/model/OAuthRequestTest.java">
+        <Message>At OAuthRequestTest.java:[lines 10-83]</Message>
+      </SourceLine>
+      <Message>In class org.scribe.model.OAuthRequestTest</Message>
+    </Class>
+    <Method classname="org.scribe.model.OAuthRequestTest" name="testOAuthRequestConstruction" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.scribe.model.OAuthRequestTest" start="22" end="25" startBytecode="0" endBytecode="15" sourcefile="OAuthRequestTest.java" sourcepath="org/scribe/model/OAuthRequestTest.java"/>
+      <Message>In method org.scribe.model.OAuthRequestTest.testOAuthRequestConstruction()</Message>
+    </Method>
+    <Type descriptor="Ljava/util/Map;" role="TYPE_FOUND">
+      <SourceLine classname="java.util.Map" start="588" end="1181" sourcefile="Map.java" sourcepath="java/util/Map.java">
+        <Message>At Map.java:[lines 588-1181]</Message>
+      </SourceLine>
+      <Message>Actual type java.util.Map</Message>
+    </Type>
+    <Type descriptor="Ljava/util/Map;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.util.Map" start="588" end="1181" sourcefile="Map.java" sourcepath="java/util/Map.java">
+        <Message>At Map.java:[lines 588-1181]</Message>
+      </SourceLine>
+      <Message>Expected java.util.Map</Message>
+    </Type>
+    <SourceLine classname="org.scribe.model.OAuthRequestTest" primary="true" start="24" end="24" startBytecode="31" endBytecode="31" sourcefile="OAuthRequestTest.java" sourcepath="org/scribe/model/OAuthRequestTest.java">
+      <Message>At OAuthRequestTest.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="1f13afd9335ffceb5c1d8339e80e7a4d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type java.util.Map in org.scribe.model.OAuthRequestTest.testOAuthRequestConstruction() at OAuthRequestTest.java:[line 24] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Ljava/util/Map;">
+      <SourceLine classname="java.util.Map" start="588" end="1181" sourcefile="Map.java" sourcepath="java/util/Map.java">
+        <Message>At Map.java:[lines 588-1181]</Message>
+      </SourceLine>
+      <Message>Type java.util.Map</Message>
+    </Type>
+    <Class classname="org.scribe.model.OAuthRequestTest" primary="true">
+      <SourceLine classname="org.scribe.model.OAuthRequestTest" start="10" end="83" sourcefile="OAuthRequestTest.java" sourcepath="org/scribe/model/OAuthRequestTest.java">
+        <Message>At OAuthRequestTest.java:[lines 10-83]</Message>
+      </SourceLine>
+      <Message>In class org.scribe.model.OAuthRequestTest</Message>
+    </Class>
+    <Method classname="org.scribe.model.OAuthRequestTest" name="testOAuthRequestConstruction" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.scribe.model.OAuthRequestTest" start="22" end="25" startBytecode="0" endBytecode="73" sourcefile="OAuthRequestTest.java" sourcepath="org/scribe/model/OAuthRequestTest.java"/>
+      <Message>In method org.scribe.model.OAuthRequestTest.testOAuthRequestConstruction()</Message>
+    </Method>
+    <SourceLine classname="org.scribe.model.OAuthRequestTest" primary="true" start="24" end="24" startBytecode="34" endBytecode="34" sourcefile="OAuthRequestTest.java" sourcepath="org/scribe/model/OAuthRequestTest.java">
+      <Message>At OAuthRequestTest.java:[line 24]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="BC_VACUOUS_INSTANCEOF" abbrev="BC" category="STYLE" cweid="571">
+    <ShortDescription>instanceof renverra toujours vrai</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce test <code>instanceof</code> renverra toujours vrai. Même s'il est sûr, assurez-vous qu'il ne s'agit pas d'une erreur logique ou d'une mauvaise compréhension.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="BC">
+    <Description>Mauvais transtypages de références</Description>
+  </BugCode>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.scribe.model.OAuthRequest</MissingClass>
+    <MissingClass>org.scribe.model.Verb</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:46 +0200" total_classes="1" referenced_classes="11" total_bugs="2" total_size="46" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.71" clock_seconds="5.10" peak_mbytes="190.08" alloc_mbytes="7104.00" gc_seconds="0.17" priority_2="2">
+    <FileStats path="org/scribe/model/OAuthRequestTest.java" bugCount="2" size="46" bugHash="73f4871a042334c0d7f6dfc0be21c4bf"/>
+    <PackageStats package="org.scribe.model" total_bugs="2" total_types="1" total_size="46" priority_2="2">
+      <ClassStats class="org.scribe.model.OAuthRequestTest" sourceFile="OAuthRequestTest.java" interface="false" size="46" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="749" invocations="315" avgMicrosecondsPerInvocation="2378" maxMicrosecondsPerInvocation="72012" standardDeviationMicrosecondsPerInvocation="7855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="267" invocations="11" avgMicrosecondsPerInvocation="24291" maxMicrosecondsPerInvocation="191923" standardDeviationMicrosecondsPerInvocation="55090"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="250" invocations="71" avgMicrosecondsPerInvocation="3523" maxMicrosecondsPerInvocation="25721" standardDeviationMicrosecondsPerInvocation="6673"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="212" invocations="11" avgMicrosecondsPerInvocation="19306" maxMicrosecondsPerInvocation="56723" standardDeviationMicrosecondsPerInvocation="21770"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="171" invocations="278" avgMicrosecondsPerInvocation="616" maxMicrosecondsPerInvocation="25411" standardDeviationMicrosecondsPerInvocation="2768"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="143" invocations="12" avgMicrosecondsPerInvocation="11960" maxMicrosecondsPerInvocation="100252" standardDeviationMicrosecondsPerInvocation="27266"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="116" invocations="12" avgMicrosecondsPerInvocation="9689" maxMicrosecondsPerInvocation="101232" standardDeviationMicrosecondsPerInvocation="27753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="106" invocations="30" avgMicrosecondsPerInvocation="3552" maxMicrosecondsPerInvocation="78093" standardDeviationMicrosecondsPerInvocation="14105"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="98" invocations="317" avgMicrosecondsPerInvocation="312" maxMicrosecondsPerInvocation="45016" standardDeviationMicrosecondsPerInvocation="2812"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="98" invocations="11" avgMicrosecondsPerInvocation="8970" maxMicrosecondsPerInvocation="32491" standardDeviationMicrosecondsPerInvocation="10078"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="95" invocations="12" avgMicrosecondsPerInvocation="7940" maxMicrosecondsPerInvocation="32168" standardDeviationMicrosecondsPerInvocation="10854"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ConstructorThrow" totalMilliseconds="92" invocations="1" avgMicrosecondsPerInvocation="92415" maxMicrosecondsPerInvocation="92415" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="87" invocations="10" avgMicrosecondsPerInvocation="8791" maxMicrosecondsPerInvocation="28373" standardDeviationMicrosecondsPerInvocation="10058"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="85" invocations="12" avgMicrosecondsPerInvocation="7105" maxMicrosecondsPerInvocation="40925" standardDeviationMicrosecondsPerInvocation="11333"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="77" invocations="10" avgMicrosecondsPerInvocation="7741" maxMicrosecondsPerInvocation="36035" standardDeviationMicrosecondsPerInvocation="10634"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="76" invocations="11" avgMicrosecondsPerInvocation="6969" maxMicrosecondsPerInvocation="33279" standardDeviationMicrosecondsPerInvocation="10292"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

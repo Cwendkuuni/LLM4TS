@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287211702" analysisTimestamp="1714586618632" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/68_biblestudy/QueueTEST/12/bible/util</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="95e344a5b620befed5ce4f723f6ec567" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode bible.util.QueueTest.testQueue()</LongMessage>
+    <Class classname="bible.util.QueueTest" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="6" end="23" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+        <Message>At QueueTest.java:[lines 6-23]</Message>
+      </SourceLine>
+      <Message>In class bible.util.QueueTest</Message>
+    </Class>
+    <Method classname="bible.util.QueueTest" name="testQueue" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="10" end="14" startBytecode="0" endBytecode="9" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java"/>
+      <Message>In method bible.util.QueueTest.testQueue()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="bible.util.QueueTest" primary="true" start="10" end="10" startBytecode="7" endBytecode="7" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+      <Message>At QueueTest.java:[line 10]</Message>
+    </SourceLine>
+    <SourceLine classname="bible.util.QueueTest" start="11" end="11" startBytecode="16" endBytecode="16" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at QueueTest.java:[line 11]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>bible.util.Queue</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:51 +0200" total_classes="1" referenced_classes="9" total_bugs="1" total_size="13" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.21" clock_seconds="2.47" peak_mbytes="189.43" alloc_mbytes="7104.00" gc_seconds="0.24" priority_1="1">
+    <FileStats path="bible/util/QueueTest.java" bugCount="1" size="13" bugHash="7531cff894ed9289ba7401538d36818c"/>
+    <PackageStats package="bible.util" total_bugs="1" total_types="1" total_size="13" priority_1="1">
+      <ClassStats class="bible.util.QueueTest" sourceFile="QueueTest.java" interface="false" size="13" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="367" invocations="293" avgMicrosecondsPerInvocation="1255" maxMicrosecondsPerInvocation="48053" standardDeviationMicrosecondsPerInvocation="4605"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="242" invocations="9" avgMicrosecondsPerInvocation="26966" maxMicrosecondsPerInvocation="242609" standardDeviationMicrosecondsPerInvocation="76241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="113" invocations="36" avgMicrosecondsPerInvocation="3152" maxMicrosecondsPerInvocation="28990" standardDeviationMicrosecondsPerInvocation="6089"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="96" invocations="9" avgMicrosecondsPerInvocation="10694" maxMicrosecondsPerInvocation="49841" standardDeviationMicrosecondsPerInvocation="15553"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="93" invocations="24" avgMicrosecondsPerInvocation="3909" maxMicrosecondsPerInvocation="51913" standardDeviationMicrosecondsPerInvocation="10769"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="85" invocations="9" avgMicrosecondsPerInvocation="9551" maxMicrosecondsPerInvocation="33454" standardDeviationMicrosecondsPerInvocation="10345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="78" invocations="3" avgMicrosecondsPerInvocation="26168" maxMicrosecondsPerInvocation="76960" standardDeviationMicrosecondsPerInvocation="35916"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="62" invocations="9" avgMicrosecondsPerInvocation="6912" maxMicrosecondsPerInvocation="32410" standardDeviationMicrosecondsPerInvocation="11526"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="60" invocations="9" avgMicrosecondsPerInvocation="6734" maxMicrosecondsPerInvocation="24130" standardDeviationMicrosecondsPerInvocation="9870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="42" invocations="3" avgMicrosecondsPerInvocation="14124" maxMicrosecondsPerInvocation="36887" standardDeviationMicrosecondsPerInvocation="16101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="41" invocations="258" avgMicrosecondsPerInvocation="162" maxMicrosecondsPerInvocation="5076" standardDeviationMicrosecondsPerInvocation="430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="31" invocations="295" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="9513" standardDeviationMicrosecondsPerInvocation="560"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360745932" analysisTimestamp="1714584600982" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/FEWSHOT/45_lotus/GameTEST/26/lotus/core</Jar>
+  </Project>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="777125cb7bf527f38ad817db3e2eaa4f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.playingPlayer depuis la méthode d&apos;une instance lotus.core.GameTest.testGetNonPlayingPlayer()</LongMessage>
+    <Class classname="lotus.core.GameTest" primary="true">
+      <SourceLine classname="lotus.core.GameTest" start="8" end="48" sourcefile="GameTest.java" sourcepath="lotus/core/GameTest.java">
+        <Message>At GameTest.java:[lines 8-48]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.GameTest</Message>
+    </Class>
+    <Method classname="lotus.core.GameTest" name="testGetNonPlayingPlayer" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.GameTest" start="23" end="29" startBytecode="0" endBytecode="66" sourcefile="GameTest.java" sourcepath="lotus/core/GameTest.java"/>
+      <Message>In method lotus.core.GameTest.testGetNonPlayingPlayer()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="playingPlayer" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.playingPlayer</Message>
+    </Field>
+    <SourceLine classname="lotus.core.GameTest" primary="true" start="23" end="23" startBytecode="1" endBytecode="1" sourcefile="GameTest.java" sourcepath="lotus/core/GameTest.java">
+      <Message>At GameTest.java:[line 23]</Message>
+    </SourceLine>
+    <SourceLine classname="lotus.core.GameTest" start="27" end="27" startBytecode="14" endBytecode="14" sourcefile="GameTest.java" sourcepath="lotus/core/GameTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at GameTest.java:[line 27]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" instanceHash="7b76ab8bd7a5002eea698423fbf5e019" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique lotus.core.Game.playingPlayer depuis la méthode d&apos;une instance lotus.core.GameTest.testGetPlayingPlayer()</LongMessage>
+    <Class classname="lotus.core.GameTest" primary="true">
+      <SourceLine classname="lotus.core.GameTest" start="8" end="48" sourcefile="GameTest.java" sourcepath="lotus/core/GameTest.java">
+        <Message>At GameTest.java:[lines 8-48]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.GameTest</Message>
+    </Class>
+    <Method classname="lotus.core.GameTest" name="testGetPlayingPlayer" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.GameTest" start="12" end="18" startBytecode="0" endBytecode="66" sourcefile="GameTest.java" sourcepath="lotus/core/GameTest.java"/>
+      <Message>In method lotus.core.GameTest.testGetPlayingPlayer()</Message>
+    </Method>
+    <Field classname="lotus.core.Game" name="playingPlayer" signature="I" isStatic="true" primary="true">
+      <SourceLine classname="lotus.core.Game">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Field lotus.core.Game.playingPlayer</Message>
+    </Field>
+    <SourceLine classname="lotus.core.GameTest" primary="true" start="12" end="12" startBytecode="1" endBytecode="1" sourcefile="GameTest.java" sourcepath="lotus/core/GameTest.java">
+      <Message>At GameTest.java:[line 12]</Message>
+    </SourceLine>
+    <SourceLine classname="lotus.core.GameTest" start="16" end="16" startBytecode="14" endBytecode="14" sourcefile="GameTest.java" sourcepath="lotus/core/GameTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at GameTest.java:[line 16]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" abbrev="ST" category="STYLE">
+    <ShortDescription>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortDescription>
+    <Details><![CDATA[
+
+<p>La méthode de l'instance écrit la valeur d'un champ statique. Cela peut être difficile à gérer si plusieurs instances ont la possibilité d'écrire cette valeur et cela ressemble surtout à une mauvaise pratique.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ST">
+    <Description>Mauvaise utilisation de champs statiques</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>lotus.core.Game</MissingClass>
+    <MissingClass>lotus.core.Player</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:05 +0100" total_classes="1" referenced_classes="9" total_bugs="2" total_size="23" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.47" clock_seconds="3.01" peak_mbytes="189.33" alloc_mbytes="7104.00" gc_seconds="0.20" priority_1="2">
+    <FileStats path="lotus/core/GameTest.java" bugCount="2" size="23" bugHash="430feb8c293630966ed85e2cbbba4768"/>
+    <PackageStats package="lotus.core" total_bugs="2" total_types="1" total_size="23" priority_1="2">
+      <ClassStats class="lotus.core.GameTest" sourceFile="GameTest.java" interface="false" size="23" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="444" invocations="294" avgMicrosecondsPerInvocation="1510" maxMicrosecondsPerInvocation="31232" standardDeviationMicrosecondsPerInvocation="4628"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="312" invocations="25" avgMicrosecondsPerInvocation="12519" maxMicrosecondsPerInvocation="237512" standardDeviationMicrosecondsPerInvocation="47236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="173" invocations="39" avgMicrosecondsPerInvocation="4445" maxMicrosecondsPerInvocation="29474" standardDeviationMicrosecondsPerInvocation="8362"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="126" invocations="9" avgMicrosecondsPerInvocation="14065" maxMicrosecondsPerInvocation="53273" standardDeviationMicrosecondsPerInvocation="19269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="108" invocations="258" avgMicrosecondsPerInvocation="419" maxMicrosecondsPerInvocation="16791" standardDeviationMicrosecondsPerInvocation="2031"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="73" invocations="6" avgMicrosecondsPerInvocation="12304" maxMicrosecondsPerInvocation="65345" standardDeviationMicrosecondsPerInvocation="23790"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="68" invocations="9" avgMicrosecondsPerInvocation="7595" maxMicrosecondsPerInvocation="50868" standardDeviationMicrosecondsPerInvocation="15495"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="67" invocations="296" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="21201" standardDeviationMicrosecondsPerInvocation="1507"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="66" invocations="9" avgMicrosecondsPerInvocation="7409" maxMicrosecondsPerInvocation="32755" standardDeviationMicrosecondsPerInvocation="11464"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="58" invocations="6" avgMicrosecondsPerInvocation="9740" maxMicrosecondsPerInvocation="56049" standardDeviationMicrosecondsPerInvocation="20719"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="47" invocations="9" avgMicrosecondsPerInvocation="5288" maxMicrosecondsPerInvocation="27704" standardDeviationMicrosecondsPerInvocation="9280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="37" invocations="9" avgMicrosecondsPerInvocation="4213" maxMicrosecondsPerInvocation="37784" standardDeviationMicrosecondsPerInvocation="11869"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="37" invocations="9" avgMicrosecondsPerInvocation="4181" maxMicrosecondsPerInvocation="20194" standardDeviationMicrosecondsPerInvocation="6258"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

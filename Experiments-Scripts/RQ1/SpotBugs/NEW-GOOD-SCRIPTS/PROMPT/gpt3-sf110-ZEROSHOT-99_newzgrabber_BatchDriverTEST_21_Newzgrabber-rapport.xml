@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360751608" analysisTimestamp="1714606425898" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/99_newzgrabber/BatchDriverTEST/21/Newzgrabber</Jar>
+  </Project>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="af53aeb92dab537bd5c6feccc9bce48" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ non lu : devrait-il être statique ?</ShortMessage>
+    <LongMessage>Champ non lu : Newzgrabber.BatchDriverTest.batchfile devrait-il être statique ?</LongMessage>
+    <Class classname="Newzgrabber.BatchDriverTest" primary="true">
+      <SourceLine classname="Newzgrabber.BatchDriverTest" start="12" end="64" sourcefile="BatchDriverTest.java" sourcepath="Newzgrabber/BatchDriverTest.java">
+        <Message>At BatchDriverTest.java:[lines 12-64]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.BatchDriverTest</Message>
+    </Class>
+    <Field classname="Newzgrabber.BatchDriverTest" name="batchfile" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.BatchDriverTest" sourcefile="BatchDriverTest.java" sourcepath="Newzgrabber/BatchDriverTest.java">
+        <Message>In BatchDriverTest.java</Message>
+      </SourceLine>
+      <Message>Field Newzgrabber.BatchDriverTest.batchfile</Message>
+    </Field>
+    <SourceLine classname="Newzgrabber.BatchDriverTest" primary="true" start="15" end="15" startBytecode="13" endBytecode="13" sourcefile="BatchDriverTest.java" sourcepath="Newzgrabber/BatchDriverTest.java">
+      <Message>At BatchDriverTest.java:[line 15]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" instanceHash="bf30f7273e36fd97387091d62fbf2687" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ non lu : devrait-il être statique ?</ShortMessage>
+    <LongMessage>Champ non lu : Newzgrabber.BatchDriverTest.newzini devrait-il être statique ?</LongMessage>
+    <Class classname="Newzgrabber.BatchDriverTest" primary="true">
+      <SourceLine classname="Newzgrabber.BatchDriverTest" start="12" end="64" sourcefile="BatchDriverTest.java" sourcepath="Newzgrabber/BatchDriverTest.java">
+        <Message>At BatchDriverTest.java:[lines 12-64]</Message>
+      </SourceLine>
+      <Message>In class Newzgrabber.BatchDriverTest</Message>
+    </Class>
+    <Field classname="Newzgrabber.BatchDriverTest" name="newzini" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="Newzgrabber.BatchDriverTest" sourcefile="BatchDriverTest.java" sourcepath="Newzgrabber/BatchDriverTest.java">
+        <Message>In BatchDriverTest.java</Message>
+      </SourceLine>
+      <Message>Field Newzgrabber.BatchDriverTest.newzini</Message>
+    </Field>
+    <SourceLine classname="Newzgrabber.BatchDriverTest" primary="true" start="14" end="14" startBytecode="7" endBytecode="7" sourcefile="BatchDriverTest.java" sourcepath="Newzgrabber/BatchDriverTest.java">
+      <Message>At BatchDriverTest.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="SS_SHOULD_BE_STATIC" abbrev="SS" category="PERFORMANCE">
+    <ShortDescription>Champ non lu : devrait-il être statique ?</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette classe contient un champ d'instance <code>final</code> qui est initialisé par une valeur statique déterminée à la compilation. Envisagez de rendre ce champ <code>static</code>.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SS">
+    <Description>Champ non lu qui devrait être statique ?</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>Newzgrabber.BatchDriver</MissingClass>
+    <MissingClass>Newzgrabber.BatchJob</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:11 +0100" total_classes="1" referenced_classes="12" total_bugs="2" total_size="41" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.11" clock_seconds="1.59" peak_mbytes="190.42" alloc_mbytes="7104.00" gc_seconds="0.10" priority_2="2">
+    <FileStats path="Newzgrabber/BatchDriverTest.java" bugCount="2" size="41" bugHash="de7725b9e482ac8bf607c44b04366203"/>
+    <PackageStats package="Newzgrabber" total_bugs="2" total_types="1" total_size="41" priority_2="2">
+      <ClassStats class="Newzgrabber.BatchDriverTest" sourceFile="BatchDriverTest.java" interface="false" size="41" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="254" invocations="319" avgMicrosecondsPerInvocation="796" maxMicrosecondsPerInvocation="31272" standardDeviationMicrosecondsPerInvocation="2523"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="174" invocations="66" avgMicrosecondsPerInvocation="2643" maxMicrosecondsPerInvocation="103550" standardDeviationMicrosecondsPerInvocation="12677"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="82" invocations="12" avgMicrosecondsPerInvocation="6883" maxMicrosecondsPerInvocation="32266" standardDeviationMicrosecondsPerInvocation="9730"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="65" invocations="30" avgMicrosecondsPerInvocation="2198" maxMicrosecondsPerInvocation="33075" standardDeviationMicrosecondsPerInvocation="6616"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="42" invocations="9" avgMicrosecondsPerInvocation="4684" maxMicrosecondsPerInvocation="33836" standardDeviationMicrosecondsPerInvocation="10365"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="36" invocations="280" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="5833" standardDeviationMicrosecondsPerInvocation="395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="33" invocations="12" avgMicrosecondsPerInvocation="2830" maxMicrosecondsPerInvocation="12049" standardDeviationMicrosecondsPerInvocation="3672"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="30" invocations="12" avgMicrosecondsPerInvocation="2572" maxMicrosecondsPerInvocation="17041" standardDeviationMicrosecondsPerInvocation="4616"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="28" invocations="12" avgMicrosecondsPerInvocation="2373" maxMicrosecondsPerInvocation="13548" standardDeviationMicrosecondsPerInvocation="3977"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="28" invocations="9" avgMicrosecondsPerInvocation="3149" maxMicrosecondsPerInvocation="20972" standardDeviationMicrosecondsPerInvocation="6317"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="24" invocations="9" avgMicrosecondsPerInvocation="2751" maxMicrosecondsPerInvocation="14774" standardDeviationMicrosecondsPerInvocation="4357"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="23" invocations="12" avgMicrosecondsPerInvocation="1951" maxMicrosecondsPerInvocation="14404" standardDeviationMicrosecondsPerInvocation="3908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="21" invocations="321" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="784" standardDeviationMicrosecondsPerInvocation="63"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

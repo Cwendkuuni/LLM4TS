@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360740131" analysisTimestamp="1714578714153" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/commons-math/AbstractIntegratorTEST/11/org/apache/commons/math3/ode</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="79c95754987cf3965460f306980bbfbf" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.apache.commons.math3.ode.AbstractIntegratorTest.testComputeDerivatives()</LongMessage>
+    <Class classname="org.apache.commons.math3.ode.AbstractIntegratorTest" primary="true">
+      <SourceLine classname="org.apache.commons.math3.ode.AbstractIntegratorTest" start="11" end="156" sourcefile="AbstractIntegratorTest.java" sourcepath="org/apache/commons/math3/ode/AbstractIntegratorTest.java">
+        <Message>At AbstractIntegratorTest.java:[lines 11-156]</Message>
+      </SourceLine>
+      <Message>In class org.apache.commons.math3.ode.AbstractIntegratorTest</Message>
+    </Class>
+    <Method classname="org.apache.commons.math3.ode.AbstractIntegratorTest" name="testComputeDerivatives" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.apache.commons.math3.ode.AbstractIntegratorTest" start="142" end="156" startBytecode="0" endBytecode="33" sourcefile="AbstractIntegratorTest.java" sourcepath="org/apache/commons/math3/ode/AbstractIntegratorTest.java"/>
+      <Message>In method org.apache.commons.math3.ode.AbstractIntegratorTest.testComputeDerivatives()</Message>
+    </Method>
+    <LocalVariable name="?" register="4" pc="43" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 4</Message>
+    </LocalVariable>
+    <SourceLine classname="org.apache.commons.math3.ode.AbstractIntegratorTest" primary="true" start="150" end="150" startBytecode="41" endBytecode="41" sourcefile="AbstractIntegratorTest.java" sourcepath="org/apache/commons/math3/ode/AbstractIntegratorTest.java">
+      <Message>At AbstractIntegratorTest.java:[line 150]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="18">
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegrator</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$1</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$10</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$11</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$12</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$13</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$2</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$3</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$4</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$5</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$6</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$7</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$8</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.AbstractIntegratorTest$9</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.ExpandableStatefulODE</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.FirstOrderDifferentialEquations</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.events.EventHandler</MissingClass>
+    <MissingClass>org.apache.commons.math3.ode.sampling.StepHandler</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:00 +0100" total_classes="1" referenced_classes="13" total_bugs="1" total_size="65" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.75" clock_seconds="4.24" peak_mbytes="192.03" alloc_mbytes="7104.00" gc_seconds="0.25" priority_1="1">
+    <FileStats path="org/apache/commons/math3/ode/AbstractIntegratorTest.java" bugCount="1" size="65" bugHash="d9bb6a4538949b72a2d9caf44fd68476"/>
+    <PackageStats package="org.apache.commons.math3.ode" total_bugs="1" total_types="1" total_size="65" priority_1="1">
+      <ClassStats class="org.apache.commons.math3.ode.AbstractIntegratorTest" sourceFile="AbstractIntegratorTest.java" interface="false" size="65" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="584" invocations="318" avgMicrosecondsPerInvocation="1838" maxMicrosecondsPerInvocation="73872" standardDeviationMicrosecondsPerInvocation="6467"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="454" invocations="13" avgMicrosecondsPerInvocation="34928" maxMicrosecondsPerInvocation="305425" standardDeviationMicrosecondsPerInvocation="79880"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="208" invocations="44" avgMicrosecondsPerInvocation="4738" maxMicrosecondsPerInvocation="40893" standardDeviationMicrosecondsPerInvocation="10732"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="175" invocations="267" avgMicrosecondsPerInvocation="658" maxMicrosecondsPerInvocation="48702" standardDeviationMicrosecondsPerInvocation="3921"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="137" invocations="10" avgMicrosecondsPerInvocation="13770" maxMicrosecondsPerInvocation="109991" standardDeviationMicrosecondsPerInvocation="32242"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="128" invocations="36" avgMicrosecondsPerInvocation="3564" maxMicrosecondsPerInvocation="87760" standardDeviationMicrosecondsPerInvocation="14636"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="124" invocations="10" avgMicrosecondsPerInvocation="12442" maxMicrosecondsPerInvocation="58936" standardDeviationMicrosecondsPerInvocation="20931"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="109" invocations="17" avgMicrosecondsPerInvocation="6451" maxMicrosecondsPerInvocation="34219" standardDeviationMicrosecondsPerInvocation="10382"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="108" invocations="17" avgMicrosecondsPerInvocation="6397" maxMicrosecondsPerInvocation="47426" standardDeviationMicrosecondsPerInvocation="11229"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="95" invocations="13" avgMicrosecondsPerInvocation="7355" maxMicrosecondsPerInvocation="53765" standardDeviationMicrosecondsPerInvocation="14589"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="76" invocations="10" avgMicrosecondsPerInvocation="7657" maxMicrosecondsPerInvocation="37454" standardDeviationMicrosecondsPerInvocation="11566"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="75" invocations="13" avgMicrosecondsPerInvocation="5799" maxMicrosecondsPerInvocation="68311" standardDeviationMicrosecondsPerInvocation="18064"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="61" invocations="320" avgMicrosecondsPerInvocation="192" maxMicrosecondsPerInvocation="16546" standardDeviationMicrosecondsPerInvocation="1150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="61" invocations="13" avgMicrosecondsPerInvocation="4710" maxMicrosecondsPerInvocation="36633" standardDeviationMicrosecondsPerInvocation="10151"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="58" invocations="10" avgMicrosecondsPerInvocation="5882" maxMicrosecondsPerInvocation="16595" standardDeviationMicrosecondsPerInvocation="6446"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

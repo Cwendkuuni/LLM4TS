@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756239748" analysisTimestamp="1714609442624" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT2/Mockito/14/0/org/mockito/internal</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="92967814a32f06a9d1af1b8c62685ea7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : org.mockito.internal.MockHandlerTest.mockHandler</LongMessage>
+    <Class classname="org.mockito.internal.MockHandlerTest" primary="true">
+      <SourceLine classname="org.mockito.internal.MockHandlerTest" start="7" end="49" sourcefile="MockHandlerTest.java" sourcepath="org/mockito/internal/MockHandlerTest.java">
+        <Message>At MockHandlerTest.java:[lines 7-49]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.MockHandlerTest</Message>
+    </Class>
+    <Field classname="org.mockito.internal.MockHandlerTest" name="mockHandler" signature="Lorg/mockito/internal/MockHandler;" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.MockHandlerTest" sourcefile="MockHandlerTest.java" sourcepath="org/mockito/internal/MockHandlerTest.java">
+        <Message>In MockHandlerTest.java</Message>
+      </SourceLine>
+      <Message>Field org.mockito.internal.MockHandlerTest.mockHandler</Message>
+    </Field>
+    <SourceLine classname="org.mockito.internal.MockHandlerTest" primary="true" start="13" end="13" startBytecode="8" endBytecode="8" sourcefile="MockHandlerTest.java" sourcepath="org/mockito/internal/MockHandlerTest.java">
+      <Message>At MockHandlerTest.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.mockito.internal.MockHandler</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:03:59 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="17" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="3.43" clock_seconds="0.77" peak_mbytes="190.81" alloc_mbytes="7104.00" gc_seconds="0.07" priority_2="1">
+    <FileStats path="org/mockito/internal/MockHandlerTest.java" bugCount="1" size="17" bugHash="842b8952c6b82117c85ef19316998c87"/>
+    <PackageStats package="org.mockito.internal" total_bugs="1" total_types="1" total_size="17" priority_2="1">
+      <ClassStats class="org.mockito.internal.MockHandlerTest" sourceFile="MockHandlerTest.java" interface="false" size="17" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="126" invocations="293" avgMicrosecondsPerInvocation="433" maxMicrosecondsPerInvocation="11364" standardDeviationMicrosecondsPerInvocation="1012"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="81" invocations="295" avgMicrosecondsPerInvocation="274" maxMicrosecondsPerInvocation="68384" standardDeviationMicrosecondsPerInvocation="3972"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="31" invocations="9" avgMicrosecondsPerInvocation="3494" maxMicrosecondsPerInvocation="14063" standardDeviationMicrosecondsPerInvocation="4766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="24" invocations="7" avgMicrosecondsPerInvocation="3493" maxMicrosecondsPerInvocation="23470" standardDeviationMicrosecondsPerInvocation="8159"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="24" invocations="40" avgMicrosecondsPerInvocation="609" maxMicrosecondsPerInvocation="2856" standardDeviationMicrosecondsPerInvocation="591"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="22" invocations="24" avgMicrosecondsPerInvocation="929" maxMicrosecondsPerInvocation="14001" standardDeviationMicrosecondsPerInvocation="2819"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="18" invocations="9" avgMicrosecondsPerInvocation="2086" maxMicrosecondsPerInvocation="9825" standardDeviationMicrosecondsPerInvocation="2963"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="18" invocations="258" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="1202" standardDeviationMicrosecondsPerInvocation="131"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="12" invocations="9" avgMicrosecondsPerInvocation="1431" maxMicrosecondsPerInvocation="5865" standardDeviationMicrosecondsPerInvocation="1888"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="12" invocations="9" avgMicrosecondsPerInvocation="1411" maxMicrosecondsPerInvocation="8161" standardDeviationMicrosecondsPerInvocation="2494"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="11" invocations="7" avgMicrosecondsPerInvocation="1586" maxMicrosecondsPerInvocation="10466" standardDeviationMicrosecondsPerInvocation="3625"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

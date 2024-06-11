@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360751320" analysisTimestamp="1714602858626" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/95_celwars2009/MP3TEST/1</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="9051775ee99d63560d4a80b90a0515d1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in MP3Test.testRun(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="MP3Test" primary="true">
+      <SourceLine classname="MP3Test" start="17" end="39" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>At MP3Test.java:[lines 17-39]</Message>
+      </SourceLine>
+      <Message>In class MP3Test</Message>
+    </Class>
+    <Method classname="MP3Test" name="testRun" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MP3Test" start="33" end="39" startBytecode="0" endBytecode="75" sourcefile="MP3Test.java" sourcepath="MP3Test.java"/>
+      <Message>In method MP3Test.testRun()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="MP3Test" primary="true" start="38" end="38" startBytecode="29" endBytecode="29" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+      <Message>At MP3Test.java:[line 38]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="22b983272e699f5df69892572f648ed4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in MP3Test.testRun(): new java.io.PrintStream(OutputStream)</LongMessage>
+    <Class classname="MP3Test" primary="true">
+      <SourceLine classname="MP3Test" start="17" end="39" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+        <Message>At MP3Test.java:[lines 17-39]</Message>
+      </SourceLine>
+      <Message>In class MP3Test</Message>
+    </Class>
+    <Method classname="MP3Test" name="testRun" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="MP3Test" start="33" end="39" startBytecode="0" endBytecode="75" sourcefile="MP3Test.java" sourcepath="MP3Test.java"/>
+      <Message>In method MP3Test.testRun()</Message>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+      <Message>Called method new java.io.PrintStream(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="MP3Test" primary="true" start="34" end="34" startBytecode="13" endBytecode="13" sourcefile="MP3Test.java" sourcepath="MP3Test.java">
+      <Message>At MP3Test.java:[line 34]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>MP3</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:11 +0100" total_classes="1" referenced_classes="14" total_bugs="2" total_size="16" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.50" clock_seconds="1.59" peak_mbytes="190.91" alloc_mbytes="7104.00" gc_seconds="0.14" priority_1="2">
+    <FileStats path="MP3Test.java" bugCount="2" size="16" bugHash="5b47cf6416fdea606b8b13e7a9ddb7be"/>
+    <PackageStats package="" total_bugs="2" total_types="1" total_size="16" priority_1="2">
+      <ClassStats class="MP3Test" sourceFile="MP3Test.java" interface="false" size="16" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="307" invocations="337" avgMicrosecondsPerInvocation="911" maxMicrosecondsPerInvocation="29887" standardDeviationMicrosecondsPerInvocation="2982"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="161" invocations="14" avgMicrosecondsPerInvocation="11519" maxMicrosecondsPerInvocation="137642" standardDeviationMicrosecondsPerInvocation="35160"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="71" invocations="34" avgMicrosecondsPerInvocation="2093" maxMicrosecondsPerInvocation="29101" standardDeviationMicrosecondsPerInvocation="5752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="62" invocations="14" avgMicrosecondsPerInvocation="4473" maxMicrosecondsPerInvocation="18669" standardDeviationMicrosecondsPerInvocation="5931"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="47" invocations="300" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="5898" standardDeviationMicrosecondsPerInvocation="581"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="47" invocations="63" avgMicrosecondsPerInvocation="749" maxMicrosecondsPerInvocation="8301" standardDeviationMicrosecondsPerInvocation="1223"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="35" invocations="14" avgMicrosecondsPerInvocation="2570" maxMicrosecondsPerInvocation="16104" standardDeviationMicrosecondsPerInvocation="4343"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="34" invocations="14" avgMicrosecondsPerInvocation="2484" maxMicrosecondsPerInvocation="20645" standardDeviationMicrosecondsPerInvocation="5326"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="31" invocations="4" avgMicrosecondsPerInvocation="7887" maxMicrosecondsPerInvocation="30166" standardDeviationMicrosecondsPerInvocation="12866"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="28" invocations="14" avgMicrosecondsPerInvocation="2058" maxMicrosecondsPerInvocation="6655" standardDeviationMicrosecondsPerInvocation="2236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="24" invocations="14" avgMicrosecondsPerInvocation="1767" maxMicrosecondsPerInvocation="15008" standardDeviationMicrosecondsPerInvocation="3817"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

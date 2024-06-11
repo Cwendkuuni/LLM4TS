@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713887944875" analysisTimestamp="1714570183085" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MIXTRAL8x7B/MIXTRAL8x7B_FOR_NEW_DATASET/NewDataset-generated-tests/ZEROSHOT/Odc/15/29/com/oceanbase/Odc/plugin/task/api/datatransfer/model</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="f89ccb1f00ca14c06a0c092e111caabe" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : com.oceanbase.odc.plugin.task.api.datatransfer.model.ObjectResultTest.anotherObjectResult</LongMessage>
+    <Class classname="com.oceanbase.odc.plugin.task.api.datatransfer.model.ObjectResultTest" primary="true" classAnnotationNames="org.junit.runner.RunWith">
+      <SourceLine classname="com.oceanbase.odc.plugin.task.api.datatransfer.model.ObjectResultTest" start="24" end="159" sourcefile="ObjectResultTest.java" sourcepath="com/oceanbase/odc/plugin/task/api/datatransfer/model/ObjectResultTest.java">
+        <Message>At ObjectResultTest.java:[lines 24-159]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.plugin.task.api.datatransfer.model.ObjectResultTest</Message>
+    </Class>
+    <Field classname="com.oceanbase.odc.plugin.task.api.datatransfer.model.ObjectResultTest" name="anotherObjectResult" signature="Lcom/oceanbase/odc/plugin/task/api/datatransfer/model/ObjectResult;" isStatic="false" primary="true" classAnnotationNames="org.junit.runner.RunWith">
+      <SourceLine classname="com.oceanbase.odc.plugin.task.api.datatransfer.model.ObjectResultTest" sourcefile="ObjectResultTest.java" sourcepath="com/oceanbase/odc/plugin/task/api/datatransfer/model/ObjectResultTest.java">
+        <Message>In ObjectResultTest.java</Message>
+      </SourceLine>
+      <Message>Field com.oceanbase.odc.plugin.task.api.datatransfer.model.ObjectResultTest.anotherObjectResult</Message>
+    </Field>
+    <SourceLine classname="com.oceanbase.odc.plugin.task.api.datatransfer.model.ObjectResultTest" primary="true" start="46" end="46" startBytecode="87" endBytecode="87" sourcefile="ObjectResultTest.java" sourcepath="com/oceanbase/odc/plugin/task/api/datatransfer/model/ObjectResultTest.java">
+      <Message>At ObjectResultTest.java:[line 46]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="6">
+    <MissingClass>com.fasterxml.jackson.core.JsonProcessingException</MissingClass>
+    <MissingClass>com.fasterxml.jackson.databind.JsonMappingException</MissingClass>
+    <MissingClass>com.fasterxml.jackson.databind.ObjectMapper</MissingClass>
+    <MissingClass>com.oceanbase.odc.plugin.task.api.datatransfer.model.ObjectResult</MissingClass>
+    <MissingClass>com.oceanbase.tools.loaddump.common.model.ObjectStatus</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 23 Apr 2024 17:59:04 +0200" total_classes="1" referenced_classes="15" total_bugs="1" total_size="105" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.84" clock_seconds="2.40" peak_mbytes="191.32" alloc_mbytes="7104.00" gc_seconds="0.24" priority_2="1">
+    <FileStats path="com/oceanbase/odc/plugin/task/api/datatransfer/model/ObjectResultTest.java" bugCount="1" size="105" bugHash="ef11c0db61af6c9b54a6280e519886c9"/>
+    <PackageStats package="com.oceanbase.odc.plugin.task.api.datatransfer.model" total_bugs="1" total_types="1" total_size="105" priority_2="1">
+      <ClassStats class="com.oceanbase.odc.plugin.task.api.datatransfer.model.ObjectResultTest" sourceFile="ObjectResultTest.java" interface="false" size="105" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="501" invocations="361" avgMicrosecondsPerInvocation="1390" maxMicrosecondsPerInvocation="41204" standardDeviationMicrosecondsPerInvocation="4521"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="267" invocations="15" avgMicrosecondsPerInvocation="17860" maxMicrosecondsPerInvocation="259205" standardDeviationMicrosecondsPerInvocation="64507"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="82" invocations="95" avgMicrosecondsPerInvocation="865" maxMicrosecondsPerInvocation="25245" standardDeviationMicrosecondsPerInvocation="2825"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="73" invocations="43" avgMicrosecondsPerInvocation="1710" maxMicrosecondsPerInvocation="51857" standardDeviationMicrosecondsPerInvocation="7901"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="69" invocations="15" avgMicrosecondsPerInvocation="4637" maxMicrosecondsPerInvocation="29175" standardDeviationMicrosecondsPerInvocation="7293"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="62" invocations="15" avgMicrosecondsPerInvocation="4181" maxMicrosecondsPerInvocation="52698" standardDeviationMicrosecondsPerInvocation="12992"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="54" invocations="363" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="17303" standardDeviationMicrosecondsPerInvocation="1042"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="54" invocations="320" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="14682" standardDeviationMicrosecondsPerInvocation="876"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="46" invocations="15" avgMicrosecondsPerInvocation="3089" maxMicrosecondsPerInvocation="33256" standardDeviationMicrosecondsPerInvocation="8110"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="37" invocations="19" avgMicrosecondsPerInvocation="1982" maxMicrosecondsPerInvocation="12730" standardDeviationMicrosecondsPerInvocation="3326"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="37" invocations="18" avgMicrosecondsPerInvocation="2056" maxMicrosecondsPerInvocation="32035" standardDeviationMicrosecondsPerInvocation="7282"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+condsPerInvocation="2008" maxMicrosecondsPerInvocation="11976" standardDeviationMicrosecondsPerInvocation="3224"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="36" invocations="15" avgMicrosecondsPerInvocation="2433" maxMicrosecondsPerInvocation="10923" standardDeviationMicrosecondsPerInvocation="3446"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+abase" totalMilliseconds="62" invocations="15" avgMicrosecondsPerInvocation="4172" maxMicrosecondsPerInvocation="26361" standardDeviationMicrosecondsPerInvocation="7048"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="59" invocations="18" avgMicrosecondsPerInvocation="3314" maxMicrosecondsPerInvocation="25572" standardDeviationMicrosecondsPerInvocation="6980"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="58" invocations="15" avgMicrosecondsPerInvocation="3923" maxMicrosecondsPerInvocation="30768" standardDeviationMicrosecondsPerInvocation="9131"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+Factory" totalMilliseconds="56" invocations="18" avgMicrosecondsPerInvocation="3126" maxMicrosecondsPerInvocation="19500" standardDeviationMicrosecondsPerInvocation="5471"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

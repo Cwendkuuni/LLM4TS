@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420566041" analysisTimestamp="1714594871887" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/TOT/Jsoup/91/16/org/jsoup</Jar>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="3df96992928dc9f4edf0a5cf52f38336" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>Une méthode expose sa représentation interne en incorporant une référence à un objet modifiable</ShortMessage>
+    <LongMessage>La méthode new org.jsoup.UncheckedIOExceptionTest(IOException) risque d&apos;exposer sa représentation interne en stockant un objet externe modifiable dans org.jsoup.UncheckedIOExceptionTest.input</LongMessage>
+    <Class classname="org.jsoup.UncheckedIOExceptionTest" primary="true" classAnnotationNames="org.junit.runner.RunWith">
+      <SourceLine classname="org.jsoup.UncheckedIOExceptionTest" start="16" end="44" sourcefile="UncheckedIOExceptionTest.java" sourcepath="org/jsoup/UncheckedIOExceptionTest.java">
+        <Message>At UncheckedIOExceptionTest.java:[lines 16-44]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.UncheckedIOExceptionTest</Message>
+    </Class>
+    <Method classname="org.jsoup.UncheckedIOExceptionTest" name="&lt;init&gt;" signature="(Ljava/io/IOException;)V" isStatic="false" primary="true" classAnnotationNames="org.junit.runner.RunWith">
+      <SourceLine classname="org.jsoup.UncheckedIOExceptionTest" start="16" end="18" startBytecode="0" endBytecode="41" sourcefile="UncheckedIOExceptionTest.java" sourcepath="org/jsoup/UncheckedIOExceptionTest.java"/>
+      <Message>In method new org.jsoup.UncheckedIOExceptionTest(IOException)</Message>
+    </Method>
+    <Field classname="org.jsoup.UncheckedIOExceptionTest" name="input" signature="Ljava/io/IOException;" isStatic="false" primary="true" classAnnotationNames="org.junit.runner.RunWith">
+      <SourceLine classname="org.jsoup.UncheckedIOExceptionTest" sourcefile="UncheckedIOExceptionTest.java" sourcepath="org/jsoup/UncheckedIOExceptionTest.java">
+        <Message>In UncheckedIOExceptionTest.java</Message>
+      </SourceLine>
+      <Message>Field org.jsoup.UncheckedIOExceptionTest.input</Message>
+    </Field>
+    <LocalVariable name="?" register="1" pc="6" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jsoup.UncheckedIOExceptionTest" primary="true" start="17" end="17" startBytecode="6" endBytecode="6" sourcefile="UncheckedIOExceptionTest.java" sourcepath="org/jsoup/UncheckedIOExceptionTest.java">
+      <Message>At UncheckedIOExceptionTest.java:[line 17]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>Une méthode expose sa représentation interne en incorporant une référence à un objet modifiable</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce code stocke une référence à un objet externe modifiable dans la représentation interne de l'objet. Si des instances sont accédées par du code non fiable, et que des modifications non vérifiées peuvent compromettre la sécurité ou d'autres propriétés importantes, vous devez faire autre chose. Stocker une copie de l'objet est une meilleur approche dans de nombreuses situations.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EI2">
+    <Description>Stockage d&apos;une référence vers un objet modifiable</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="4">
+    <MissingClass>org.jsoup.UncheckedIOException</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.junit.runners.Parameterized</MissingClass>
+    <MissingClass>org.junit.runners.Parameterized$Parameters</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:06 +0100" total_classes="1" referenced_classes="13" total_bugs="1" total_size="20" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.08" clock_seconds="1.78" peak_mbytes="190.91" alloc_mbytes="7104.00" gc_seconds="0.11" priority_2="1">
+    <FileStats path="org/jsoup/UncheckedIOExceptionTest.java" bugCount="1" size="20" bugHash="6148b8c6b2eb0ca39beb3c25e6a5c018"/>
+    <PackageStats package="org.jsoup" total_bugs="1" total_types="1" total_size="20" priority_2="1">
+      <ClassStats class="org.jsoup.UncheckedIOExceptionTest" sourceFile="UncheckedIOExceptionTest.java" interface="false" size="20" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="420" invocations="358" avgMicrosecondsPerInvocation="1173" maxMicrosecondsPerInvocation="110823" standardDeviationMicrosecondsPerInvocation="6398"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="112" invocations="13" avgMicrosecondsPerInvocation="8658" maxMicrosecondsPerInvocation="37746" standardDeviationMicrosecondsPerInvocation="12637"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="96" invocations="127" avgMicrosecondsPerInvocation="760" maxMicrosecondsPerInvocation="15167" standardDeviationMicrosecondsPerInvocation="2000"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="73" invocations="319" avgMicrosecondsPerInvocation="231" maxMicrosecondsPerInvocation="13871" standardDeviationMicrosecondsPerInvocation="1270"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="64" invocations="13" avgMicrosecondsPerInvocation="4967" maxMicrosecondsPerInvocation="33870" standardDeviationMicrosecondsPerInvocation="9311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="60" invocations="13" avgMicrosecondsPerInvocation="4638" maxMicrosecondsPerInvocation="38248" standardDeviationMicrosecondsPerInvocation="10104"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="57" invocations="33" avgMicrosecondsPerInvocation="1735" maxMicrosecondsPerInvocation="25163" standardDeviationMicrosecondsPerInvocation="4898"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="56" invocations="13" avgMicrosecondsPerInvocation="4370" maxMicrosecondsPerInvocation="21646" standardDeviationMicrosecondsPerInvocation="7133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="55" invocations="13" avgMicrosecondsPerInvocation="4268" maxMicrosecondsPerInvocation="14608" standardDeviationMicrosecondsPerInvocation="5158"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

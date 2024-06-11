@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713290017529" analysisTimestamp="1714581403335" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/DEFECTS4J/AVEC-PACKAGE_GLOBAL/Defects4J-generated-tests/TOT2/Jsoup/34/13/org/jsoup/parser</Jar>
+  </Project>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="ff07bafec00c9095ac182dfd9f939fbf" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de méthode devant commencer par une minuscule</ShortMessage>
+    <LongMessage>Le nom de la méthode org.jsoup.parser.CharacterReaderTest.TestCharacterReaderConstructor() ne commence pas par une minuscule</LongMessage>
+    <Class classname="org.jsoup.parser.CharacterReaderTest" primary="true">
+      <SourceLine classname="org.jsoup.parser.CharacterReaderTest" start="5" end="155" sourcefile="CharacterReaderTest.java" sourcepath="org/jsoup/parser/CharacterReaderTest.java">
+        <Message>At CharacterReaderTest.java:[lines 5-155]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.parser.CharacterReaderTest</Message>
+    </Class>
+    <Method classname="org.jsoup.parser.CharacterReaderTest" name="TestCharacterReaderConstructor" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.parser.CharacterReaderTest" start="10" end="10" startBytecode="0" endBytecode="24" sourcefile="CharacterReaderTest.java" sourcepath="org/jsoup/parser/CharacterReaderTest.java"/>
+      <Message>In method org.jsoup.parser.CharacterReaderTest.TestCharacterReaderConstructor()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.parser.CharacterReaderTest" start="10" end="10" startBytecode="0" endBytecode="24" sourcefile="CharacterReaderTest.java" sourcepath="org/jsoup/parser/CharacterReaderTest.java" synthetic="true">
+      <Message>At CharacterReaderTest.java:[line 10]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="NM_METHOD_NAMING_CONVENTION" abbrev="Nm" category="BAD_PRACTICE">
+    <ShortDescription>Nom de méthode devant commencer par une minuscule</ShortDescription>
+    <Details><![CDATA[
+
+<p>Les noms de méthodes devraient être des verbes en minuscules, avec la première lettre des mots, après le premier, en majuscules.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Nm">
+    <Description>Noms de méthodes ambigus</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:53:37 +0200" total_classes="1" referenced_classes="9" total_bugs="1" total_size="63" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.24" clock_seconds="3.51" peak_mbytes="189.63" alloc_mbytes="7104.00" gc_seconds="0.20" priority_2="1">
+    <FileStats path="org/jsoup/parser/CharacterReaderTest.java" bugCount="1" size="63" bugHash="7df3ea769c778345a7a70a57262fecde"/>
+    <PackageStats package="org.jsoup.parser" total_bugs="1" total_types="1" total_size="63" priority_2="1">
+      <ClassStats class="org.jsoup.parser.CharacterReaderTest" sourceFile="CharacterReaderTest.java" interface="false" size="63" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="710" invocations="291" avgMicrosecondsPerInvocation="2441" maxMicrosecondsPerInvocation="53985" standardDeviationMicrosecondsPerInvocation="7392"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="238" invocations="9" avgMicrosecondsPerInvocation="26463" maxMicrosecondsPerInvocation="233652" standardDeviationMicrosecondsPerInvocation="73255"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="147" invocations="31" avgMicrosecondsPerInvocation="4773" maxMicrosecondsPerInvocation="136632" standardDeviationMicrosecondsPerInvocation="24115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="132" invocations="9" avgMicrosecondsPerInvocation="14730" maxMicrosecondsPerInvocation="49543" standardDeviationMicrosecondsPerInvocation="20076"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="132" invocations="64" avgMicrosecondsPerInvocation="2066" maxMicrosecondsPerInvocation="33210" standardDeviationMicrosecondsPerInvocation="6053"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="85" invocations="9" avgMicrosecondsPerInvocation="9452" maxMicrosecondsPerInvocation="76313" standardDeviationMicrosecondsPerInvocation="23664"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="79" invocations="258" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="21903" standardDeviationMicrosecondsPerInvocation="1752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="75" invocations="23" avgMicrosecondsPerInvocation="3299" maxMicrosecondsPerInvocation="48369" standardDeviationMicrosecondsPerInvocation="9932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="63" invocations="9" avgMicrosecondsPerInvocation="7005" maxMicrosecondsPerInvocation="36033" standardDeviationMicrosecondsPerInvocation="11707"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="62" invocations="31" avgMicrosecondsPerInvocation="2006" maxMicrosecondsPerInvocation="52421" standardDeviationMicrosecondsPerInvocation="9209"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="61" invocations="9" avgMicrosecondsPerInvocation="6805" maxMicrosecondsPerInvocation="21698" standardDeviationMicrosecondsPerInvocation="8750"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="58" invocations="31" avgMicrosecondsPerInvocation="1891" maxMicrosecondsPerInvocation="31220" standardDeviationMicrosecondsPerInvocation="6065"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

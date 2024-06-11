@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713291041671" analysisTimestamp="1714569886404" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/NEWDATASET/MISTRAL7B_FOR_NEW_DATASET/AVEC-PACKAGE_GLOBAL/NewDataset-generated-tests/TOT/Odc/19/29/com/oceanbase/Odc/plugin/connect/obmysql</Jar>
+  </Project>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" instanceHash="b2ddb0cd4565d2c2bd456064b63a6640" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode peut ne pas fermer une ressource base de données</ShortMessage>
+    <LongMessage>La méthode com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.testGetConnectionIdSuccess() peut ne pas fermer une ressource base de données</LongMessage>
+    <Class classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="17" end="84" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+        <Message>At OBMySQLSessionExtensionTest.java:[lines 17-84]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" name="testGetConnectionIdSuccess" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="73" end="78" startBytecode="0" endBytecode="48" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java"/>
+      <Message>In method com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.testGetConnectionIdSuccess()</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/Statement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Need to close java.sql.Statement </Message>
+    </Type>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true" start="74" end="74" startBytecode="27" endBytecode="27" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+      <Message>At OBMySQLSessionExtensionTest.java:[line 74]</Message>
+    </SourceLine>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="75" end="75" startBytecode="58" endBytecode="58" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at OBMySQLSessionExtensionTest.java:[line 75]</Message>
+    </SourceLine>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="76" end="76" startBytecode="96" endBytecode="96" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at OBMySQLSessionExtensionTest.java:[line 76]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" instanceHash="6574c117c261689b5fb1b55bc9fa60b3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>La méthode peut ne pas fermer une ressource base de données</ShortMessage>
+    <LongMessage>La méthode com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.testGetCurrentSchemaSuccess() peut ne pas fermer une ressource base de données</LongMessage>
+    <Class classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="17" end="84" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+        <Message>At OBMySQLSessionExtensionTest.java:[lines 17-84]</Message>
+      </SourceLine>
+      <Message>In class com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest</Message>
+    </Class>
+    <Method classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" name="testGetCurrentSchemaSuccess" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="58" end="63" startBytecode="0" endBytecode="48" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java"/>
+      <Message>In method com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest.testGetCurrentSchemaSuccess()</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/Statement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Need to close java.sql.Statement </Message>
+    </Type>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" primary="true" start="59" end="59" startBytecode="27" endBytecode="27" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java">
+      <Message>At OBMySQLSessionExtensionTest.java:[line 59]</Message>
+    </SourceLine>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="60" end="60" startBytecode="58" endBytecode="58" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at OBMySQLSessionExtensionTest.java:[line 60]</Message>
+    </SourceLine>
+    <SourceLine classname="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" start="61" end="61" startBytecode="96" endBytecode="96" sourcefile="OBMySQLSessionExtensionTest.java" sourcepath="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at OBMySQLSessionExtensionTest.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="ODR_OPEN_DATABASE_RESOURCE" abbrev="ODR" category="BAD_PRACTICE">
+    <ShortDescription>La méthode peut ne pas fermer une ressource base de données</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette méthode crée une ressource base de données (telle qu'une connexion ou un <code>RowSet</code>), ne l'affecte à aucun champ, ne la passe à aucune autre méthode, ne la renvoie pas, et ne semble pas la fermer dans tous les chemins d'exécution. Ne pas fermer une ressource base de données dans tous les chemins d'exécution peut entraîner de faibles performances et poser des problèmes de communication entre la base de données et l'application.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ODR">
+    <Description>Ressource de base données pas toujours fermée dans tous les chemins d&apos;éxécution</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="5">
+    <MissingClass>com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtension</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>org.mockito.ArgumentMatchers</MissingClass>
+    <MissingClass>org.mockito.Mockito</MissingClass>
+    <MissingClass>org.mockito.stubbing.OngoingStubbing</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 20:10:41 +0200" total_classes="1" referenced_classes="15" total_bugs="2" total_size="51" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.89" clock_seconds="3.59" peak_mbytes="192.85" alloc_mbytes="7104.00" gc_seconds="0.18" priority_2="2">
+    <FileStats path="com/oceanbase/odc/plugin/connect/obmysql/OBMySQLSessionExtensionTest.java" bugCount="2" size="51" bugHash="f9e86647c4b4772ea5aefd3c8a8c1910"/>
+    <PackageStats package="com.oceanbase.odc.plugin.connect.obmysql" total_bugs="2" total_types="1" total_size="51" priority_2="2">
+      <ClassStats class="com.oceanbase.odc.plugin.connect.obmysql.OBMySQLSessionExtensionTest" sourceFile="OBMySQLSessionExtensionTest.java" interface="false" size="51" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="617" invocations="345" avgMicrosecondsPerInvocation="1789" maxMicrosecondsPerInvocation="72464" standardDeviationMicrosecondsPerInvocation="7538"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="244" invocations="15" avgMicrosecondsPerInvocation="16313" maxMicrosecondsPerInvocation="201477" standardDeviationMicrosecondsPerInvocation="49851"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="149" invocations="15" avgMicrosecondsPerInvocation="9946" maxMicrosecondsPerInvocation="55412" standardDeviationMicrosecondsPerInvocation="16269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="135" invocations="68" avgMicrosecondsPerInvocation="1990" maxMicrosecondsPerInvocation="36287" standardDeviationMicrosecondsPerInvocation="5597"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="113" invocations="306" avgMicrosecondsPerInvocation="372" maxMicrosecondsPerInvocation="20037" standardDeviationMicrosecondsPerInvocation="2111"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="111" invocations="10" avgMicrosecondsPerInvocation="11124" maxMicrosecondsPerInvocation="76393" standardDeviationMicrosecondsPerInvocation="22346"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="106" invocations="15" avgMicrosecondsPerInvocation="7084" maxMicrosecondsPerInvocation="31988" standardDeviationMicrosecondsPerInvocation="9593"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="103" invocations="15" avgMicrosecondsPerInvocation="6903" maxMicrosecondsPerInvocation="75812" standardDeviationMicrosecondsPerInvocation="19160"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="95" invocations="348" avgMicrosecondsPerInvocation="273" maxMicrosecondsPerInvocation="32124" standardDeviationMicrosecondsPerInvocation="2178"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="92" invocations="10" avgMicrosecondsPerInvocation="9200" maxMicrosecondsPerInvocation="61274" standardDeviationMicrosecondsPerInvocation="17686"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="89" invocations="15" avgMicrosecondsPerInvocation="5941" maxMicrosecondsPerInvocation="42511" standardDeviationMicrosecondsPerInvocation="10407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="84" invocations="11" avgMicrosecondsPerInvocation="7701" maxMicrosecondsPerInvocation="35903" standardDeviationMicrosecondsPerInvocation="10957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="82" invocations="15" avgMicrosecondsPerInvocation="5499" maxMicrosecondsPerInvocation="44297" standardDeviationMicrosecondsPerInvocation="11763"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+MicrosecondsPerInvocation="7476" maxMicrosecondsPerInvocation="35076" standardDeviationMicrosecondsPerInvocation="10122"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+invocations="348" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="15644" standardDeviationMicrosecondsPerInvocation="1016"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="49" invocations="15" avgMicrosecondsPerInvocation="3272" maxMicrosecondsPerInvocation="30935" standardDeviationMicrosecondsPerInvocation="7962"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="48" invocations="306" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="23417" standardDeviationMicrosecondsPerInvocation="1574"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="47" invocations="15" avgMicrosecondsPerInvocation="3184" maxMicrosecondsPerInvocation="14845" standardDeviationMicrosecondsPerInvocation="5422"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="42" invocations="10" avgMicrosecondsPerInvocation="4255" maxMicrosecondsPerInvocation="18634" standardDeviationMicrosecondsPerInvocation="5496"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

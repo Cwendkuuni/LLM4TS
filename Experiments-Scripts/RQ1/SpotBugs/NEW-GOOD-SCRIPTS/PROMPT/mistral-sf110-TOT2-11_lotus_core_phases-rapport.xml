@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287211206" analysisTimestamp="1714581744334" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/45_lotus/PhaseTEST/11/lotus/core/phases</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="9a2ba64c2d28935d6d00c94438bf1d36" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode lotus.core.phases.PhaseTest.testNextPhase()</LongMessage>
+    <Class classname="lotus.core.phases.PhaseTest" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="7" end="17" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+        <Message>At PhaseTest.java:[lines 7-17]</Message>
+      </SourceLine>
+      <Message>In class lotus.core.phases.PhaseTest</Message>
+    </Class>
+    <Method classname="lotus.core.phases.PhaseTest" name="testNextPhase" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="lotus.core.phases.PhaseTest" start="11" end="17" startBytecode="0" endBytecode="16" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java"/>
+      <Message>In method lotus.core.phases.PhaseTest.testNextPhase()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="lotus.core.phases.PhaseTest" primary="true" start="11" end="11" startBytecode="7" endBytecode="7" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java">
+      <Message>At PhaseTest.java:[line 11]</Message>
+    </SourceLine>
+    <SourceLine classname="lotus.core.phases.PhaseTest" start="12" end="12" startBytecode="15" endBytecode="15" sourcefile="PhaseTest.java" sourcepath="lotus/core/phases/PhaseTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at PhaseTest.java:[line 12]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="5">
+    <MissingClass>lotus.core.Game</MissingClass>
+    <MissingClass>lotus.core.phases.Phase</MissingClass>
+    <MissingClass>lotus.core.phases.UntapPhase</MissingClass>
+    <MissingClass>lotus.core.phases.UpkeepPhase</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:51 +0200" total_classes="1" referenced_classes="9" total_bugs="1" total_size="10" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.84" clock_seconds="3.04" peak_mbytes="189.58" alloc_mbytes="7104.00" gc_seconds="0.24" priority_1="1">
+    <FileStats path="lotus/core/phases/PhaseTest.java" bugCount="1" size="10" bugHash="eae24f805e89db900d5fc1d9f0f006a4"/>
+    <PackageStats package="lotus.core.phases" total_bugs="1" total_types="1" total_size="10" priority_1="1">
+      <ClassStats class="lotus.core.phases.PhaseTest" sourceFile="PhaseTest.java" interface="false" size="10" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="558" invocations="296" avgMicrosecondsPerInvocation="1886" maxMicrosecondsPerInvocation="73570" standardDeviationMicrosecondsPerInvocation="7048"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="284" invocations="9" avgMicrosecondsPerInvocation="31576" maxMicrosecondsPerInvocation="271251" standardDeviationMicrosecondsPerInvocation="84785"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="155" invocations="35" avgMicrosecondsPerInvocation="4455" maxMicrosecondsPerInvocation="36633" standardDeviationMicrosecondsPerInvocation="7905"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="154" invocations="258" avgMicrosecondsPerInvocation="599" maxMicrosecondsPerInvocation="24391" standardDeviationMicrosecondsPerInvocation="2907"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="117" invocations="9" avgMicrosecondsPerInvocation="13105" maxMicrosecondsPerInvocation="44403" standardDeviationMicrosecondsPerInvocation="16655"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="97" invocations="9" avgMicrosecondsPerInvocation="10848" maxMicrosecondsPerInvocation="36231" standardDeviationMicrosecondsPerInvocation="13441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="90" invocations="24" avgMicrosecondsPerInvocation="3767" maxMicrosecondsPerInvocation="45822" standardDeviationMicrosecondsPerInvocation="9685"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="71" invocations="9" avgMicrosecondsPerInvocation="7898" maxMicrosecondsPerInvocation="41726" standardDeviationMicrosecondsPerInvocation="13693"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="60" invocations="2" avgMicrosecondsPerInvocation="30230" maxMicrosecondsPerInvocation="59125" standardDeviationMicrosecondsPerInvocation="28895"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="52" invocations="9" avgMicrosecondsPerInvocation="5887" maxMicrosecondsPerInvocation="40086" standardDeviationMicrosecondsPerInvocation="12302"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

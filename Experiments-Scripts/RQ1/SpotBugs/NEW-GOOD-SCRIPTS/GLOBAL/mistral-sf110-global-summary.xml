@@ -1,0 +1,443 @@
+<?xml version="1.0" ?>
+<Dataset name="mistral-sf110">
+  <Total>
+    <Bugs>369</Bugs>
+    <Classes>948</Classes>
+  </Total>
+  <Prompts>
+    <Prompt name="COT">
+      <Bugs>113</Bugs>
+      <Classes>125</Classes>
+      <BugsInstances>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" category="CORRECTNESS"/>
+        <BugInstance type="BC_VACUOUS_INSTANCEOF" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="RANGE_ARRAY_INDEX" priority="2" rank="7" category="CORRECTNESS"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="RANGE_STRING_INDEX" priority="2" rank="9" category="CORRECTNESS"/>
+        <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" category="CORRECTNESS"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="BC_VACUOUS_INSTANCEOF" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+      </BugsInstances>
+      <BugRank rank="15" count="39"/>
+      <BugRank rank="17" count="32"/>
+      <BugRank rank="18" count="17"/>
+      <BugRank rank="12" count="1"/>
+      <BugRank rank="16" count="3"/>
+      <BugRank rank="19" count="18"/>
+      <BugRank rank="7" count="1"/>
+      <BugRank rank="9" count="1"/>
+      <BugRank rank="5" count="1"/>
+    </Prompt>
+    <Prompt name="FEWSHOT">
+      <Bugs>77</Bugs>
+      <Classes>135</Classes>
+      <BugsInstances>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="EC_ARRAY_AND_NONARRAY" priority="2" rank="3" category="CORRECTNESS"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="EC_UNRELATED_TYPES" priority="1" rank="1" category="CORRECTNESS"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="EC_ARRAY_AND_NONARRAY" priority="2" rank="3" category="CORRECTNESS"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="EC_UNRELATED_TYPES" priority="1" rank="1" category="CORRECTNESS"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+      </BugsInstances>
+      <BugRank rank="19" count="33"/>
+      <BugRank rank="3" count="2"/>
+      <BugRank rank="17" count="11"/>
+      <BugRank rank="15" count="12"/>
+      <BugRank rank="18" count="17"/>
+      <BugRank rank="1" count="2"/>
+    </Prompt>
+    <Prompt name="TOT">
+      <Bugs>54</Bugs>
+      <Classes>212</Classes>
+      <BugsInstances>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="RANGE_ARRAY_INDEX" priority="2" rank="7" category="CORRECTNESS"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="EC_UNRELATED_TYPES" priority="1" rank="1" category="CORRECTNESS"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" category="CORRECTNESS"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+      </BugsInstances>
+      <BugRank rank="17" count="26"/>
+      <BugRank rank="19" count="13"/>
+      <BugRank rank="15" count="7"/>
+      <BugRank rank="7" count="1"/>
+      <BugRank rank="18" count="5"/>
+      <BugRank rank="1" count="1"/>
+      <BugRank rank="5" count="1"/>
+    </Prompt>
+    <Prompt name="TOT2">
+      <Bugs>69</Bugs>
+      <Classes>347</Classes>
+      <BugsInstances>
+        <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="CNT_ROUGH_CONSTANT_VALUE" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+      </BugsInstances>
+      <BugRank rank="16" count="4"/>
+      <BugRank rank="18" count="13"/>
+      <BugRank rank="17" count="15"/>
+      <BugRank rank="19" count="18"/>
+      <BugRank rank="15" count="19"/>
+    </Prompt>
+    <Prompt name="ZEROSHOT">
+      <Bugs>56</Bugs>
+      <Classes>129</Classes>
+      <BugsInstances>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DCN_NULLPOINTER_EXCEPTION" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="IL_INFINITE_LOOP" priority="1" rank="8" category="CORRECTNESS"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="EC_UNRELATED_TYPES" priority="1" rank="1" category="CORRECTNESS"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="BC_VACUOUS_INSTANCEOF" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="EC_ARRAY_AND_NONARRAY" priority="2" rank="3" category="CORRECTNESS"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" category="I18N"/>
+      </BugsInstances>
+      <BugRank rank="17" count="12"/>
+      <BugRank rank="8" count="1"/>
+      <BugRank rank="15" count="23"/>
+      <BugRank rank="1" count="1"/>
+      <BugRank rank="18" count="2"/>
+      <BugRank rank="16" count="2"/>
+      <BugRank rank="19" count="14"/>
+      <BugRank rank="3" count="1"/>
+    </Prompt>
+  </Prompts>
+</Dataset>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1710756311600" analysisTimestamp="1714599940565" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/TOT2/100_jgaap/jgaapGUITEST/1</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="729a0f7ed8b1c28a44d23a822252a4eb" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode jgaapGUITest.testActionPerformed()</LongMessage>
+    <Class classname="jgaapGUITest" primary="true">
+      <SourceLine classname="jgaapGUITest" start="4" end="23" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java">
+        <Message>At jgaapGUITest.java:[lines 4-23]</Message>
+      </SourceLine>
+      <Message>In class jgaapGUITest</Message>
+    </Class>
+    <Method classname="jgaapGUITest" name="testActionPerformed" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="jgaapGUITest" start="15" end="17" startBytecode="0" endBytecode="4" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java"/>
+      <Message>In method jgaapGUITest.testActionPerformed()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="jgaapGUITest" primary="true" start="15" end="15" startBytecode="7" endBytecode="7" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java">
+      <Message>At jgaapGUITest.java:[line 15]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="1b32f0ea37a4bcf6c323dc7c09064c4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode jgaapGUITest.testLoadDemo()</LongMessage>
+    <Class classname="jgaapGUITest" primary="true">
+      <SourceLine classname="jgaapGUITest" start="4" end="23" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java">
+        <Message>At jgaapGUITest.java:[lines 4-23]</Message>
+      </SourceLine>
+      <Message>In class jgaapGUITest</Message>
+    </Class>
+    <Method classname="jgaapGUITest" name="testLoadDemo" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="jgaapGUITest" start="21" end="23" startBytecode="0" endBytecode="4" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java"/>
+      <Message>In method jgaapGUITest.testLoadDemo()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="jgaapGUITest" primary="true" start="21" end="21" startBytecode="7" endBytecode="7" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java">
+      <Message>At jgaapGUITest.java:[line 21]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" instanceHash="a9c1802c7b5a3c5d34be862e296f5061" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nom de classe devant commencer par une majuscule</ShortMessage>
+    <LongMessage>Le nom de la classe jgaapGUITest ne commence pas par une majusucle</LongMessage>
+    <Class classname="jgaapGUITest" primary="true">
+      <SourceLine classname="jgaapGUITest" start="4" end="23" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java">
+        <Message>At jgaapGUITest.java:[lines 4-23]</Message>
+      </SourceLine>
+      <Message>In class jgaapGUITest</Message>
+    </Class>
+    <SourceLine classname="jgaapGUITest" start="4" end="23" sourcefile="jgaapGUITest.java" sourcepath="jgaapGUITest.java" synthetic="true">
+      <Message>At jgaapGUITest.java:[lines 4-23]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugPattern type="NM_CLASS_NAMING_CONVENTION" abbrev="Nm" category="BAD_PRACTICE">
+    <ShortDescription>Nom de classe devant commencer par une majuscule</ShortDescription>
+    <Details><![CDATA[
+
+<p>Les noms de classe doivent être en minuscules avec la première lettre de chaque mot en majuscules. Essayez de conserver vos noms de classes simples et explicites. Utilisez des mots entiers et évitez acronymes et abbréviations (à moins que l'abbréviation soit plus largement utilisée que la forme longue, comme "URL" ou "HTML").</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <BugCode abbrev="Nm">
+    <Description>Noms de méthodes ambigus</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>jgaapGUI</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 18 Mar 2024 11:05:11 +0100" total_classes="1" referenced_classes="9" total_bugs="3" total_size="13" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.29" clock_seconds="1.47" peak_mbytes="189.48" alloc_mbytes="7104.00" gc_seconds="0.11" priority_2="1" priority_1="2">
+    <FileStats path="jgaapGUITest.java" bugCount="3" size="13" bugHash="4e2e5cfdaa383a9cb40fe082ddb201f1"/>
+    <PackageStats package="" total_bugs="3" total_types="1" total_size="13" priority_2="1" priority_1="2">
+      <ClassStats class="jgaapGUITest" sourceFile="jgaapGUITest.java" interface="false" size="13" bugs="3" priority_2="1" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="296" invocations="293" avgMicrosecondsPerInvocation="1011" maxMicrosecondsPerInvocation="39790" standardDeviationMicrosecondsPerInvocation="3387"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="120" invocations="9" avgMicrosecondsPerInvocation="13432" maxMicrosecondsPerInvocation="120780" standardDeviationMicrosecondsPerInvocation="37953"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="62" invocations="9" avgMicrosecondsPerInvocation="6962" maxMicrosecondsPerInvocation="28389" standardDeviationMicrosecondsPerInvocation="9043"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="47" invocations="4" avgMicrosecondsPerInvocation="11782" maxMicrosecondsPerInvocation="45828" standardDeviationMicrosecondsPerInvocation="19660"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="44" invocations="37" avgMicrosecondsPerInvocation="1213" maxMicrosecondsPerInvocation="5897" standardDeviationMicrosecondsPerInvocation="1362"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="42" invocations="295" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="20100" standardDeviationMicrosecondsPerInvocation="1169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="41" invocations="24" avgMicrosecondsPerInvocation="1725" maxMicrosecondsPerInvocation="26152" standardDeviationMicrosecondsPerInvocation="5235"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="39" invocations="257" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="4929" standardDeviationMicrosecondsPerInvocation="427"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="27" invocations="9" avgMicrosecondsPerInvocation="3048" maxMicrosecondsPerInvocation="12911" standardDeviationMicrosecondsPerInvocation="3789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="25" invocations="1" avgMicrosecondsPerInvocation="25290" maxMicrosecondsPerInvocation="25290" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="25" invocations="9" avgMicrosecondsPerInvocation="2781" maxMicrosecondsPerInvocation="13599" standardDeviationMicrosecondsPerInvocation="4101"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

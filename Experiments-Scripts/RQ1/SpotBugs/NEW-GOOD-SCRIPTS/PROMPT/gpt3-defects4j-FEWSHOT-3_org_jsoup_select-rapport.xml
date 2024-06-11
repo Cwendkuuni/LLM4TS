@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420574589" analysisTimestamp="1714589319520" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/FEWSHOT/Jsoup/60/3/org/jsoup/select</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="67bfe1187172cd31eb2e7be35907c77c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.Evaluator in org.jsoup.select.QueryParserTest.testParse_EvaluatorOfTypeEvaluator() at QueryParserTest.java:[line 46] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/Evaluator;">
+      <SourceLine classname="org.jsoup.select.Evaluator">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.Evaluator</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="52" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-52]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse_EvaluatorOfTypeEvaluator" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="45" end="47" startBytecode="0" endBytecode="45" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse_EvaluatorOfTypeEvaluator()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="46" end="46" startBytecode="10" endBytecode="10" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 46]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="66026a0a1c6751bbb869ccd46a16e09c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type org.jsoup.select.StructuralEvaluator in org.jsoup.select.QueryParserTest.testParse_EvaluatorOfTypeStructuralEvaluator() at QueryParserTest.java:[line 40] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lorg/jsoup/select/StructuralEvaluator;">
+      <SourceLine classname="org.jsoup.select.StructuralEvaluator">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type org.jsoup.select.StructuralEvaluator</Message>
+    </Type>
+    <Class classname="org.jsoup.select.QueryParserTest" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="6" end="52" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+        <Message>At QueryParserTest.java:[lines 6-52]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.select.QueryParserTest</Message>
+    </Class>
+    <Method classname="org.jsoup.select.QueryParserTest" name="testParse_EvaluatorOfTypeStructuralEvaluator" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.select.QueryParserTest" start="39" end="41" startBytecode="0" endBytecode="45" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java"/>
+      <Message>In method org.jsoup.select.QueryParserTest.testParse_EvaluatorOfTypeStructuralEvaluator()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.select.QueryParserTest" primary="true" start="40" end="40" startBytecode="10" endBytecode="10" sourcefile="QueryParserTest.java" sourcepath="org/jsoup/select/QueryParserTest.java">
+      <Message>At QueryParserTest.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="6">
+    <MissingClass>org.jsoup.select.Evaluator</MissingClass>
+    <MissingClass>org.jsoup.select.QueryParser</MissingClass>
+    <MissingClass>org.jsoup.select.Selector</MissingClass>
+    <MissingClass>org.jsoup.select.Selector$SelectorParseException</MissingClass>
+    <MissingClass>org.jsoup.select.StructuralEvaluator</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:14 +0100" total_classes="1" referenced_classes="10" total_bugs="2" total_size="30" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.08" clock_seconds="1.50" peak_mbytes="189.13" alloc_mbytes="7104.00" gc_seconds="0.13" priority_2="2">
+    <FileStats path="org/jsoup/select/QueryParserTest.java" bugCount="2" size="30" bugHash="265615029adbfa0b573b62d5877db7c6"/>
+    <PackageStats package="org.jsoup.select" total_bugs="2" total_types="1" total_size="30" priority_2="2">
+      <ClassStats class="org.jsoup.select.QueryParserTest" sourceFile="QueryParserTest.java" interface="false" size="30" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="278" invocations="312" avgMicrosecondsPerInvocation="891" maxMicrosecondsPerInvocation="26052" standardDeviationMicrosecondsPerInvocation="2661"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="171" invocations="63" avgMicrosecondsPerInvocation="2716" maxMicrosecondsPerInvocation="127048" standardDeviationMicrosecondsPerInvocation="15812"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="50" invocations="10" avgMicrosecondsPerInvocation="5090" maxMicrosecondsPerInvocation="15256" standardDeviationMicrosecondsPerInvocation="5718"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="48" invocations="27" avgMicrosecondsPerInvocation="1798" maxMicrosecondsPerInvocation="27196" standardDeviationMicrosecondsPerInvocation="5463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="42" invocations="273" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="4253" standardDeviationMicrosecondsPerInvocation="409"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="34" invocations="6" avgMicrosecondsPerInvocation="5784" maxMicrosecondsPerInvocation="31106" standardDeviationMicrosecondsPerInvocation="11345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="29" invocations="10" avgMicrosecondsPerInvocation="2932" maxMicrosecondsPerInvocation="12128" standardDeviationMicrosecondsPerInvocation="3647"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="24" invocations="6" avgMicrosecondsPerInvocation="4166" maxMicrosecondsPerInvocation="19050" standardDeviationMicrosecondsPerInvocation="6715"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="22" invocations="10" avgMicrosecondsPerInvocation="2219" maxMicrosecondsPerInvocation="9036" standardDeviationMicrosecondsPerInvocation="2728"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="21" invocations="10" avgMicrosecondsPerInvocation="2193" maxMicrosecondsPerInvocation="12526" standardDeviationMicrosecondsPerInvocation="3671"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="21" invocations="314" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="1115" standardDeviationMicrosecondsPerInvocation="85"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="20" invocations="6" avgMicrosecondsPerInvocation="3430" maxMicrosecondsPerInvocation="11629" standardDeviationMicrosecondsPerInvocation="4185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="18" invocations="8" avgMicrosecondsPerInvocation="2287" maxMicrosecondsPerInvocation="11654" standardDeviationMicrosecondsPerInvocation="3599"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

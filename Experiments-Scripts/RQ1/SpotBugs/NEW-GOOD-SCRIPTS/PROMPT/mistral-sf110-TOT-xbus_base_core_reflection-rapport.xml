@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287208630" analysisTimestamp="1714579700446" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT/83_xbus/XBUSClassLoaderTEST/14/net/sf/xbus/base/core/reflection</Jar>
+  </Project>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="6367283d2a80e2e747ca72c25f896b46" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortMessage>
+    <LongMessage>Ecriture d&apos;un champ statique net.sf.xbus.base.core.reflection.XBUSClassLoaderTest.classUnderTest depuis la méthode d&apos;une instance net.sf.xbus.base.core.reflection.XBUSClassLoaderTest.testInstance()</LongMessage>
+    <Class classname="net.sf.xbus.base.core.reflection.XBUSClassLoaderTest" primary="true">
+      <SourceLine classname="net.sf.xbus.base.core.reflection.XBUSClassLoaderTest" start="6" end="20" sourcefile="XBUSClassLoaderTest.java" sourcepath="net/sf/xbus/base/core/reflection/XBUSClassLoaderTest.java">
+        <Message>At XBUSClassLoaderTest.java:[lines 6-20]</Message>
+      </SourceLine>
+      <Message>In class net.sf.xbus.base.core.reflection.XBUSClassLoaderTest</Message>
+    </Class>
+    <Method classname="net.sf.xbus.base.core.reflection.XBUSClassLoaderTest" name="testInstance" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="net.sf.xbus.base.core.reflection.XBUSClassLoaderTest" start="18" end="20" startBytecode="0" endBytecode="47" sourcefile="XBUSClassLoaderTest.java" sourcepath="net/sf/xbus/base/core/reflection/XBUSClassLoaderTest.java"/>
+      <Message>In method net.sf.xbus.base.core.reflection.XBUSClassLoaderTest.testInstance()</Message>
+    </Method>
+    <Field classname="net.sf.xbus.base.core.reflection.XBUSClassLoaderTest" name="classUnderTest" signature="Lnet/sf/xbus/base/core/reflection/XBUSClassLoader;" isStatic="true" primary="true">
+      <SourceLine classname="net.sf.xbus.base.core.reflection.XBUSClassLoaderTest" sourcefile="XBUSClassLoaderTest.java" sourcepath="net/sf/xbus/base/core/reflection/XBUSClassLoaderTest.java">
+        <Message>In XBUSClassLoaderTest.java</Message>
+      </SourceLine>
+      <Message>Field net.sf.xbus.base.core.reflection.XBUSClassLoaderTest.classUnderTest</Message>
+    </Field>
+    <SourceLine classname="net.sf.xbus.base.core.reflection.XBUSClassLoaderTest" primary="true" start="18" end="18" startBytecode="6" endBytecode="6" sourcefile="XBUSClassLoaderTest.java" sourcepath="net/sf/xbus/base/core/reflection/XBUSClassLoaderTest.java">
+      <Message>At XBUSClassLoaderTest.java:[line 18]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" abbrev="ST" category="STYLE">
+    <ShortDescription>Ecriture d&apos;un champ statique depuis la méthode d&apos;une instance</ShortDescription>
+    <Details><![CDATA[
+
+<p>La méthode de l'instance écrit la valeur d'un champ statique. Cela peut être difficile à gérer si plusieurs instances ont la possibilité d'écrire cette valeur et cela ressemble surtout à une mauvaise pratique.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="ST">
+    <Description>Mauvaise utilisation de champs statiques</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>net.sf.xbus.base.core.reflection.XBUSClassLoader</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:48 +0200" total_classes="1" referenced_classes="10" total_bugs="1" total_size="12" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.26" clock_seconds="3.16" peak_mbytes="189.31" alloc_mbytes="7104.00" gc_seconds="0.20" priority_2="1">
+    <FileStats path="net/sf/xbus/base/core/reflection/XBUSClassLoaderTest.java" bugCount="1" size="12" bugHash="9ada87614234d1d34741c438ef7fd590"/>
+    <PackageStats package="net.sf.xbus.base.core.reflection" total_bugs="1" total_types="1" total_size="12" priority_2="1">
+      <ClassStats class="net.sf.xbus.base.core.reflection.XBUSClassLoaderTest" sourceFile="XBUSClassLoaderTest.java" interface="false" size="12" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="541" invocations="323" avgMicrosecondsPerInvocation="1676" maxMicrosecondsPerInvocation="61003" standardDeviationMicrosecondsPerInvocation="5793"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="305" invocations="10" avgMicrosecondsPerInvocation="30561" maxMicrosecondsPerInvocation="237628" standardDeviationMicrosecondsPerInvocation="69888"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="154" invocations="10" avgMicrosecondsPerInvocation="15427" maxMicrosecondsPerInvocation="89440" standardDeviationMicrosecondsPerInvocation="26206"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="137" invocations="46" avgMicrosecondsPerInvocation="2996" maxMicrosecondsPerInvocation="32181" standardDeviationMicrosecondsPerInvocation="6157"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="126" invocations="287" avgMicrosecondsPerInvocation="439" maxMicrosecondsPerInvocation="31883" standardDeviationMicrosecondsPerInvocation="2515"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="117" invocations="27" avgMicrosecondsPerInvocation="4362" maxMicrosecondsPerInvocation="60409" standardDeviationMicrosecondsPerInvocation="12594"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="109" invocations="3" avgMicrosecondsPerInvocation="36609" maxMicrosecondsPerInvocation="107242" standardDeviationMicrosecondsPerInvocation="49951"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="79" invocations="3" avgMicrosecondsPerInvocation="26505" maxMicrosecondsPerInvocation="63447" standardDeviationMicrosecondsPerInvocation="26692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="48" invocations="10" avgMicrosecondsPerInvocation="4861" maxMicrosecondsPerInvocation="35035" standardDeviationMicrosecondsPerInvocation="10314"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="46" invocations="10" avgMicrosecondsPerInvocation="4656" maxMicrosecondsPerInvocation="24624" standardDeviationMicrosecondsPerInvocation="7521"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

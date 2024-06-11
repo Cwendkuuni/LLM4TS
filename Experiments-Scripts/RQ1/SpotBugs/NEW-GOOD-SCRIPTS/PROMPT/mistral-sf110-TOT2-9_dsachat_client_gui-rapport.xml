@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287210218" analysisTimestamp="1714585085567" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/12_dsachat/InternalChatFrameTEST/9/dsachat/client/gui</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>dsachat.client.gui.InternalChatFrame</MissingClass>
+    <MissingClass>dsachat.client.gui.MainFrame</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:50 +0200" total_classes="1" referenced_classes="9" total_bugs="0" total_size="8" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.67" clock_seconds="2.75" peak_mbytes="188.75" alloc_mbytes="7104.00" gc_seconds="0.21">
+    <FileStats path="dsachat/client/gui/InternalChatFrameTest.java" bugCount="0" size="8"/>
+    <PackageStats package="dsachat.client.gui" total_bugs="0" total_types="1" total_size="8">
+      <ClassStats class="dsachat.client.gui.InternalChatFrameTest" sourceFile="InternalChatFrameTest.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="440" invocations="294" avgMicrosecondsPerInvocation="1496" maxMicrosecondsPerInvocation="42868" standardDeviationMicrosecondsPerInvocation="4437"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="235" invocations="9" avgMicrosecondsPerInvocation="26178" maxMicrosecondsPerInvocation="230686" standardDeviationMicrosecondsPerInvocation="72307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="149" invocations="258" avgMicrosecondsPerInvocation="579" maxMicrosecondsPerInvocation="37332" standardDeviationMicrosecondsPerInvocation="3072"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="147" invocations="9" avgMicrosecondsPerInvocation="16394" maxMicrosecondsPerInvocation="57657" standardDeviationMicrosecondsPerInvocation="22948"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="131" invocations="35" avgMicrosecondsPerInvocation="3756" maxMicrosecondsPerInvocation="26270" standardDeviationMicrosecondsPerInvocation="6799"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="71" invocations="9" avgMicrosecondsPerInvocation="7947" maxMicrosecondsPerInvocation="47307" standardDeviationMicrosecondsPerInvocation="14572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="70" invocations="9" avgMicrosecondsPerInvocation="7839" maxMicrosecondsPerInvocation="38885" standardDeviationMicrosecondsPerInvocation="13363"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="67" invocations="23" avgMicrosecondsPerInvocation="2955" maxMicrosecondsPerInvocation="38102" standardDeviationMicrosecondsPerInvocation="8036"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="58" invocations="9" avgMicrosecondsPerInvocation="6510" maxMicrosecondsPerInvocation="34814" standardDeviationMicrosecondsPerInvocation="11121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="52" invocations="2" avgMicrosecondsPerInvocation="26323" maxMicrosecondsPerInvocation="49511" standardDeviationMicrosecondsPerInvocation="23187"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

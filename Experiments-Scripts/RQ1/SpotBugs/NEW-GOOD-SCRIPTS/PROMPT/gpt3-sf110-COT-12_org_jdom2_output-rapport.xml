@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360740931" analysisTimestamp="1714575767198" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/COT/jdom/SAXOutputterTEST/12/org/jdom2/output</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="a2e438819f5a348fadb0351aba97c5d4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testBuildTarget()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testBuildTarget" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="210" end="214" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testBuildTarget()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="210" end="210" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 210]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="49c71043b44e985048692ef62db0cd82" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetContentHandler()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetContentHandler" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="26" end="30" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetContentHandler()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="26" end="26" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 26]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="93098c0c045e41c4cad3ba4571ec512b" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetDTDHandler()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetDTDHandler" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="58" end="62" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetDTDHandler()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="58" end="58" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 58]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b2b1300a1919635823f8b08ed1b5dec6" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetDeclHandler()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetDeclHandler" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="106" end="110" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetDeclHandler()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="106" end="106" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 106]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="eed579488edaf828b696aae46aac71bc" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetEntityResolver()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetEntityResolver" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="74" end="78" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetEntityResolver()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="74" end="74" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 74]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="d66a54435a1a5fdd0a7c9a818642d083" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetErrorHandler()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetErrorHandler" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="42" end="46" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetErrorHandler()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="42" end="42" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 42]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="cd4ef36679ec0488f1175b802550f4b1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetFeature()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetFeature" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="154" end="158" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetFeature()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="154" end="154" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 154]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="3df759d0e403534625d2df2ec0cf1219" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetFormat()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetFormat" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="194" end="198" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetFormat()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="194" end="194" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 194]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="a634e81fe9bffc1dc6a52ce7dabafce4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetLexicalHandler()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetLexicalHandler" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="90" end="94" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetLexicalHandler()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="90" end="90" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 90]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="f6049311b777091cf86946da8a389997" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetLocator()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetLocator" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="266" end="270" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetLocator()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="266" end="266" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 266]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="8b20b038148238bff9165a7930e3156a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetProperty()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetProperty" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="170" end="174" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetProperty()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="170" end="170" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 170]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="88a5830430c96f3e3c1a5c1c0ba4d382" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetReportDTDEvents()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetReportDTDEvents" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="130" end="134" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetReportDTDEvents()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="130" end="130" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 130]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="29910c64230252106d60d53d762e0143" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetReportNamespaceDeclarations()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetReportNamespaceDeclarations" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="114" end="118" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetReportNamespaceDeclarations()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="114" end="114" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 114]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="a98136a13a1d3fc9f61e5f34b8344884" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testGetSAXOutputProcessor()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testGetSAXOutputProcessor" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="178" end="182" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testGetSAXOutputProcessor()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="178" end="178" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 178]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="635299a896eeb331008dfc4458345d73" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testHandleError()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testHandleError" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="258" end="262" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testHandleError()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="258" end="258" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 258]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="98d2f5737a6647c2b695f7a6079f8263" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testOutput()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testOutput" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="218" end="222" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testOutput()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="218" end="218" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 218]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b1aff08b1640a0046bc9577bcda30" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testOutputFragment_Content()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testOutputFragment_Content" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="250" end="254" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testOutputFragment_Content()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="250" end="250" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 250]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="198be6c92685ca341929beb3d5d4a160" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testOutputFragment_List()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testOutputFragment_List" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="242" end="246" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testOutputFragment_List()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="242" end="242" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 242]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="6160c3a6eb081c734cb0d4ac671bc3aa" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testOutput_Element()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testOutput_Element" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="234" end="238" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testOutput_Element()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="234" end="234" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 234]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="19a48c7a051ee16b9422b75d7a457afd" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testOutput_List()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testOutput_List" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="226" end="230" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testOutput_List()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="226" end="226" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 226]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="1695d4b76eaafcad23aec1d4be224579" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetContentHandler()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetContentHandler" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="10" end="14" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetContentHandler()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="10" end="10" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 10]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="61cc54ebfeb07c8d6e6456a201a80ecb" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetContentHandler_null()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetContentHandler_null" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="18" end="22" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetContentHandler_null()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="18" end="18" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 18]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="7394cd3615d97350959a3aa7498f07df" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetDTDHandler()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetDTDHandler" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="50" end="54" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetDTDHandler()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="50" end="50" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 50]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="c99f9c041991d9ed33a7634bd1df4bd5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetDeclHandler()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetDeclHandler" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="98" end="102" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetDeclHandler()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="98" end="98" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 98]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="4925166177404ee09b417d9afbff4cd1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetEntityResolver()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetEntityResolver" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="66" end="70" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetEntityResolver()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="66" end="66" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 66]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="b28bd2bb87b6ba68f7e67a09dfb3dd66" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetErrorHandler()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetErrorHandler" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="34" end="38" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetErrorHandler()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="34" end="34" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 34]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="949a5c31a5187eed1716351bd902efc7" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetFeature()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetFeature" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="146" end="150" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetFeature()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="146" end="146" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 146]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="cde1d88ff6640623f115b8270cdc806e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetFormat()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetFormat" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="202" end="206" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetFormat()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="202" end="202" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 202]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="97d539e9ce3717f441a7a4d34a0cf4f5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetLexicalHandler()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetLexicalHandler" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="82" end="86" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetLexicalHandler()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="82" end="82" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 82]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="c65a16d0d004bbbd96a241ec2b59896" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetProperty()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetProperty" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="162" end="166" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetProperty()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="162" end="162" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 162]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="f06d4f4bd3df487a928e61da44b837ef" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetReportDTDEvents()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetReportDTDEvents" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="138" end="142" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetReportDTDEvents()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="138" end="138" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 138]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="6bdd3b3cec06714ce4302fc06eefe364" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetReportNamespaceDeclarations()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetReportNamespaceDeclarations" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="122" end="126" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetReportNamespaceDeclarations()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="122" end="122" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 122]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="35d0b6261a8cd0f9e8a5758ffee4f808" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.jdom2.output.SAXOutputterTest.testSetSAXOutputProcessor()</LongMessage>
+    <Class classname="org.jdom2.output.SAXOutputterTest" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="6" end="270" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+        <Message>At SAXOutputterTest.java:[lines 6-270]</Message>
+      </SourceLine>
+      <Message>In class org.jdom2.output.SAXOutputterTest</Message>
+    </Class>
+    <Method classname="org.jdom2.output.SAXOutputterTest" name="testSetSAXOutputProcessor" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jdom2.output.SAXOutputterTest" start="186" end="190" startBytecode="0" endBytecode="4" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java"/>
+      <Message>In method org.jdom2.output.SAXOutputterTest.testSetSAXOutputProcessor()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.jdom2.output.SAXOutputterTest" primary="true" start="186" end="186" startBytecode="7" endBytecode="7" sourcefile="SAXOutputterTest.java" sourcepath="org/jdom2/output/SAXOutputterTest.java">
+      <Message>At SAXOutputterTest.java:[line 186]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.jdom2.output.SAXOutputter</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:00 +0100" total_classes="1" referenced_classes="9" total_bugs="33" total_size="102" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.77" clock_seconds="4.79" peak_mbytes="190.11" alloc_mbytes="7104.00" gc_seconds="0.19" priority_1="33">
+    <FileStats path="org/jdom2/output/SAXOutputterTest.java" bugCount="33" size="102" bugHash="f779096a04a1a1b5c01a7034acd952f7"/>
+    <PackageStats package="org.jdom2.output" total_bugs="33" total_types="1" total_size="102" priority_1="33">
+      <ClassStats class="org.jdom2.output.SAXOutputterTest" sourceFile="SAXOutputterTest.java" interface="false" size="102" bugs="33" priority_1="33"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="635" invocations="292" avgMicrosecondsPerInvocation="2176" maxMicrosecondsPerInvocation="55089" standardDeviationMicrosecondsPerInvocation="6757"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="220" invocations="9" avgMicrosecondsPerInvocation="24554" maxMicrosecondsPerInvocation="215943" standardDeviationMicrosecondsPerInvocation="67670"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="188" invocations="23" avgMicrosecondsPerInvocation="8181" maxMicrosecondsPerInvocation="117776" standardDeviationMicrosecondsPerInvocation="26108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="179" invocations="9" avgMicrosecondsPerInvocation="19902" maxMicrosecondsPerInvocation="62778" standardDeviationMicrosecondsPerInvocation="22780"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="173" invocations="34" avgMicrosecondsPerInvocation="5092" maxMicrosecondsPerInvocation="110765" standardDeviationMicrosecondsPerInvocation="18687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="161" invocations="67" avgMicrosecondsPerInvocation="2403" maxMicrosecondsPerInvocation="40143" standardDeviationMicrosecondsPerInvocation="6139"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="145" invocations="1" avgMicrosecondsPerInvocation="145563" maxMicrosecondsPerInvocation="145563" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="121" invocations="34" avgMicrosecondsPerInvocation="3572" maxMicrosecondsPerInvocation="111921" standardDeviationMicrosecondsPerInvocation="18879"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="112" invocations="9" avgMicrosecondsPerInvocation="12468" maxMicrosecondsPerInvocation="34984" standardDeviationMicrosecondsPerInvocation="13991"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="111" invocations="34" avgMicrosecondsPerInvocation="3289" maxMicrosecondsPerInvocation="56684" standardDeviationMicrosecondsPerInvocation="9850"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="103" invocations="258" avgMicrosecondsPerInvocation="401" maxMicrosecondsPerInvocation="23410" standardDeviationMicrosecondsPerInvocation="1884"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="100" invocations="34" avgMicrosecondsPerInvocation="2952" maxMicrosecondsPerInvocation="30037" standardDeviationMicrosecondsPerInvocation="6067"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="82" invocations="9" avgMicrosecondsPerInvocation="9208" maxMicrosecondsPerInvocation="40877" standardDeviationMicrosecondsPerInvocation="13855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="80" invocations="34" avgMicrosecondsPerInvocation="2376" maxMicrosecondsPerInvocation="28457" standardDeviationMicrosecondsPerInvocation="5889"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="71" invocations="294" avgMicrosecondsPerInvocation="244" maxMicrosecondsPerInvocation="21162" standardDeviationMicrosecondsPerInvocation="1504"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="70" invocations="34" avgMicrosecondsPerInvocation="2059" maxMicrosecondsPerInvocation="13292" standardDeviationMicrosecondsPerInvocation="3426"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

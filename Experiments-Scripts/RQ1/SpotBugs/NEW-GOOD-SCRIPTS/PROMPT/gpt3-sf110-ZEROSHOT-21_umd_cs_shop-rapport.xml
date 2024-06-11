@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360751060" analysisTimestamp="1714604520646" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/85_shop/JSPredicateFormTEST/21/umd/cs/shop</Jar>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="97828467ecb05863e1e4367516f23073" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in umd.cs.shop.JSPredicateFormTest.testJSPredicateFormPrint(): java.io.ByteArrayOutputStream.toString()</LongMessage>
+    <Class classname="umd.cs.shop.JSPredicateFormTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="8" end="178" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>At JSPredicateFormTest.java:[lines 8-178]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSPredicateFormTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSPredicateFormTest" name="testJSPredicateFormPrint" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="102" end="111" startBytecode="0" endBytecode="120" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java"/>
+      <Message>In method umd.cs.shop.JSPredicateFormTest.testJSPredicateFormPrint()</Message>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="221" end="221" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+      <Message>Called method java.io.ByteArrayOutputStream.toString()</Message>
+    </Method>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" primary="true" start="109" end="109" startBytecode="48" endBytecode="48" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+      <Message>At JSPredicateFormTest.java:[line 109]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="47beb311e339a527bddc74c888b70d8e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in umd.cs.shop.JSPredicateFormTest.testJSPredicateFormPrint(): new java.io.PrintStream(OutputStream)</LongMessage>
+    <Class classname="umd.cs.shop.JSPredicateFormTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="8" end="178" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>At JSPredicateFormTest.java:[lines 8-178]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSPredicateFormTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSPredicateFormTest" name="testJSPredicateFormPrint" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="102" end="111" startBytecode="0" endBytecode="120" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java"/>
+      <Message>In method umd.cs.shop.JSPredicateFormTest.testJSPredicateFormPrint()</Message>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+      <Message>Called method new java.io.PrintStream(OutputStream)</Message>
+    </Method>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" primary="true" start="107" end="107" startBytecode="37" endBytecode="37" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+      <Message>At JSPredicateFormTest.java:[line 107]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="c0c910d98ede8653103797361ea65cad" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type umd.cs.shop.JSParserError in umd.cs.shop.JSPredicateFormTest.testJSPredicateFormInitWithInvalidToken() at JSPredicateFormTest.java:[line 96] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lumd/cs/shop/JSParserError;">
+      <SourceLine classname="umd.cs.shop.JSParserError">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type umd.cs.shop.JSParserError</Message>
+    </Type>
+    <Class classname="umd.cs.shop.JSPredicateFormTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="8" end="178" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>At JSPredicateFormTest.java:[lines 8-178]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSPredicateFormTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSPredicateFormTest" name="testJSPredicateFormInitWithInvalidToken" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="90" end="98" startBytecode="0" endBytecode="134" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java"/>
+      <Message>In method umd.cs.shop.JSPredicateFormTest.testJSPredicateFormInitWithInvalidToken()</Message>
+    </Method>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" primary="true" start="96" end="96" startBytecode="43" endBytecode="43" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+      <Message>At JSPredicateFormTest.java:[line 96]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="3e6b1c3e2b0b23cea57b12d30eb93aa1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type umd.cs.shop.JSParserError in umd.cs.shop.JSPredicateFormTest.testJSPredicateFormInitWithNullTokenizer() at JSPredicateFormTest.java:[line 38] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lumd/cs/shop/JSParserError;">
+      <SourceLine classname="umd.cs.shop.JSParserError">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type umd.cs.shop.JSParserError</Message>
+    </Type>
+    <Class classname="umd.cs.shop.JSPredicateFormTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="8" end="178" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>At JSPredicateFormTest.java:[lines 8-178]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSPredicateFormTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSPredicateFormTest" name="testJSPredicateFormInitWithNullTokenizer" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="32" end="40" startBytecode="0" endBytecode="116" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java"/>
+      <Message>In method umd.cs.shop.JSPredicateFormTest.testJSPredicateFormInitWithNullTokenizer()</Message>
+    </Method>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" primary="true" start="38" end="38" startBytecode="28" endBytecode="28" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+      <Message>At JSPredicateFormTest.java:[line 38]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="fde1e0f3dcd5660411c3d95a49fbf20e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type umd.cs.shop.JSParserError in umd.cs.shop.JSPredicateFormTest.testJSPredicateFormInitWithRightPar() at JSPredicateFormTest.java:[line 58] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lumd/cs/shop/JSParserError;">
+      <SourceLine classname="umd.cs.shop.JSParserError">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type umd.cs.shop.JSParserError</Message>
+    </Type>
+    <Class classname="umd.cs.shop.JSPredicateFormTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="8" end="178" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>At JSPredicateFormTest.java:[lines 8-178]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSPredicateFormTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSPredicateFormTest" name="testJSPredicateFormInitWithRightPar" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="52" end="60" startBytecode="0" endBytecode="134" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java"/>
+      <Message>In method umd.cs.shop.JSPredicateFormTest.testJSPredicateFormInitWithRightPar()</Message>
+    </Method>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" primary="true" start="58" end="58" startBytecode="43" endBytecode="43" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+      <Message>At JSPredicateFormTest.java:[line 58]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="c879464016e9dccb230ebcf0a9a0b531" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type umd.cs.shop.JSPredicateForm in umd.cs.shop.JSPredicateFormTest.testJSPredicateFormInitWithNot() at JSPredicateFormTest.java:[line 76] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lumd/cs/shop/JSPredicateForm;">
+      <SourceLine classname="umd.cs.shop.JSPredicateForm">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type umd.cs.shop.JSPredicateForm</Message>
+    </Type>
+    <Class classname="umd.cs.shop.JSPredicateFormTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="8" end="178" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>At JSPredicateFormTest.java:[lines 8-178]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSPredicateFormTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSPredicateFormTest" name="testJSPredicateFormInitWithNot" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="72" end="77" startBytecode="0" endBytecode="95" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java"/>
+      <Message>In method umd.cs.shop.JSPredicateFormTest.testJSPredicateFormInitWithNot()</Message>
+    </Method>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" primary="true" start="76" end="76" startBytecode="48" endBytecode="48" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+      <Message>At JSPredicateFormTest.java:[line 76]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="14c968b28be24eedb564783ff6b54fd7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type umd.cs.shop.JSTerm in umd.cs.shop.JSPredicateFormTest.testJSPredicateFormInitWithCall() at JSPredicateFormTest.java:[line 85] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Lumd/cs/shop/JSTerm;">
+      <SourceLine classname="umd.cs.shop.JSTerm">
+        <Message>In &lt;Unknown&gt;</Message>
+      </SourceLine>
+      <Message>Type umd.cs.shop.JSTerm</Message>
+    </Type>
+    <Class classname="umd.cs.shop.JSPredicateFormTest" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="8" end="178" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+        <Message>At JSPredicateFormTest.java:[lines 8-178]</Message>
+      </SourceLine>
+      <Message>In class umd.cs.shop.JSPredicateFormTest</Message>
+    </Class>
+    <Method classname="umd.cs.shop.JSPredicateFormTest" name="testJSPredicateFormInitWithCall" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="umd.cs.shop.JSPredicateFormTest" start="81" end="86" startBytecode="0" endBytecode="95" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java"/>
+      <Message>In method umd.cs.shop.JSPredicateFormTest.testJSPredicateFormInitWithCall()</Message>
+    </Method>
+    <SourceLine classname="umd.cs.shop.JSPredicateFormTest" primary="true" start="85" end="85" startBytecode="48" endBytecode="48" sourcefile="JSPredicateFormTest.java" sourcepath="umd/cs/shop/JSPredicateFormTest.java">
+      <Message>At JSPredicateFormTest.java:[line 85]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion,
+and will assume that the default platform encoding is suitable. This will cause the application
+behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
+object explicitly.</p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Utilisation d&apos;une méthode inutile</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="5">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>umd.cs.shop.JSParserError</MissingClass>
+    <MissingClass>umd.cs.shop.JSPredicateForm</MissingClass>
+    <MissingClass>umd.cs.shop.JSSubstitution</MissingClass>
+    <MissingClass>umd.cs.shop.JSTerm</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:11 +0100" total_classes="1" referenced_classes="18" total_bugs="7" total_size="134" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.48" clock_seconds="1.70" peak_mbytes="192.10" alloc_mbytes="7104.00" gc_seconds="0.12" priority_2="5" priority_1="2">
+    <FileStats path="umd/cs/shop/JSPredicateFormTest.java" bugCount="7" size="134" bugHash="3c739d40387af4f9d4e5108de3300ae2"/>
+    <PackageStats package="umd.cs.shop" total_bugs="7" total_types="1" total_size="134" priority_2="5" priority_1="2">
+      <ClassStats class="umd.cs.shop.JSPredicateFormTest" sourceFile="JSPredicateFormTest.java" interface="false" size="134" bugs="7" priority_2="5" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="339" invocations="348" avgMicrosecondsPerInvocation="974" maxMicrosecondsPerInvocation="116102" standardDeviationMicrosecondsPerInvocation="6420"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="78" invocations="18" avgMicrosecondsPerInvocation="4375" maxMicrosecondsPerInvocation="19390" standardDeviationMicrosecondsPerInvocation="5359"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="53" invocations="85" avgMicrosecondsPerInvocation="625" maxMicrosecondsPerInvocation="9266" standardDeviationMicrosecondsPerInvocation="1230"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="47" invocations="18" avgMicrosecondsPerInvocation="2632" maxMicrosecondsPerInvocation="11453" standardDeviationMicrosecondsPerInvocation="2847"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="44" invocations="18" avgMicrosecondsPerInvocation="2461" maxMicrosecondsPerInvocation="16580" standardDeviationMicrosecondsPerInvocation="4052"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="42" invocations="41" avgMicrosecondsPerInvocation="1030" maxMicrosecondsPerInvocation="19570" standardDeviationMicrosecondsPerInvocation="3118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="39" invocations="19" avgMicrosecondsPerInvocation="2095" maxMicrosecondsPerInvocation="34863" standardDeviationMicrosecondsPerInvocation="7727"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="39" invocations="1" avgMicrosecondsPerInvocation="39291" maxMicrosecondsPerInvocation="39291" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="37" invocations="19" avgMicrosecondsPerInvocation="1957" maxMicrosecondsPerInvocation="18327" standardDeviationMicrosecondsPerInvocation="3882"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="35" invocations="19" avgMicrosecondsPerInvocation="1852" maxMicrosecondsPerInvocation="14996" standardDeviationMicrosecondsPerInvocation="3146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="33" invocations="19" avgMicrosecondsPerInvocation="1782" maxMicrosecondsPerInvocation="11461" standardDeviationMicrosecondsPerInvocation="2698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="32" invocations="24" avgMicrosecondsPerInvocation="1336" maxMicrosecondsPerInvocation="11984" standardDeviationMicrosecondsPerInvocation="2310"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="28" invocations="19" avgMicrosecondsPerInvocation="1519" maxMicrosecondsPerInvocation="12149" standardDeviationMicrosecondsPerInvocation="2519"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="27" invocations="310" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="1618" standardDeviationMicrosecondsPerInvocation="171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="22" invocations="18" avgMicrosecondsPerInvocation="1246" maxMicrosecondsPerInvocation="12785" standardDeviationMicrosecondsPerInvocation="2879"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="22" invocations="18" avgMicrosecondsPerInvocation="1239" maxMicrosecondsPerInvocation="5777" standardDeviationMicrosecondsPerInvocation="1783"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="20" invocations="350" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="528" standardDeviationMicrosecondsPerInvocation="43"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="19" invocations="18" avgMicrosecondsPerInvocation="1069" maxMicrosecondsPerInvocation="4884" standardDeviationMicrosecondsPerInvocation="1297"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="17" invocations="19" avgMicrosecondsPerInvocation="930" maxMicrosecondsPerInvocation="11942" standardDeviationMicrosecondsPerInvocation="2614"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

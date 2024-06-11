@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708420587637" analysisTimestamp="1714611991836" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/DEFECTS4J/COMPILED-CLASSES/Defects4J-generated-tests/ZEROSHOT/Jsoup/91/23/org/jsoup</Jar>
+  </Project>
+  <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" abbrev="JUA" category="BAD_PRACTICE" instanceHash="15f7df3815162f8d7933ba33ea393e6d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage> Asserting value of instanceof in tests is not recommended. </ShortMessage>
+    <LongMessage> Assertion of type RuntimeException in org.jsoup.UncheckedIOExceptionTest.testRuntimeException() at UncheckedIOExceptionTest.java:[line 30] may hide useful information about why a cast may have failed.</LongMessage>
+    <Type descriptor="Ljava/lang/RuntimeException;">
+      <SourceLine classname="java.lang.RuntimeException" start="51" end="118" sourcefile="RuntimeException.java" sourcepath="java/lang/RuntimeException.java">
+        <Message>At RuntimeException.java:[lines 51-118]</Message>
+      </SourceLine>
+      <Message>Type RuntimeException</Message>
+    </Type>
+    <Class classname="org.jsoup.UncheckedIOExceptionTest" primary="true">
+      <SourceLine classname="org.jsoup.UncheckedIOExceptionTest" start="7" end="31" sourcefile="UncheckedIOExceptionTest.java" sourcepath="org/jsoup/UncheckedIOExceptionTest.java">
+        <Message>At UncheckedIOExceptionTest.java:[lines 7-31]</Message>
+      </SourceLine>
+      <Message>In class org.jsoup.UncheckedIOExceptionTest</Message>
+    </Class>
+    <Method classname="org.jsoup.UncheckedIOExceptionTest" name="testRuntimeException" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.jsoup.UncheckedIOExceptionTest" start="27" end="31" startBytecode="0" endBytecode="62" sourcefile="UncheckedIOExceptionTest.java" sourcepath="org/jsoup/UncheckedIOExceptionTest.java"/>
+      <Message>In method org.jsoup.UncheckedIOExceptionTest.testRuntimeException()</Message>
+    </Method>
+    <SourceLine classname="org.jsoup.UncheckedIOExceptionTest" primary="true" start="30" end="30" startBytecode="23" endBytecode="23" sourcefile="UncheckedIOExceptionTest.java" sourcepath="org/jsoup/UncheckedIOExceptionTest.java">
+      <Message>At UncheckedIOExceptionTest.java:[line 30]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" abbrev="JUA" category="BAD_PRACTICE">
+    <ShortDescription> Asserting value of instanceof in tests is not recommended. </ShortDescription>
+    <Details><![CDATA[
+      
+            <p>Asserting type checks in tests is not recommended as a class cast exception message could better indicate
+            the cause of an instance of the wrong class being used than an instanceof assertion.</p>
+
+            <p>When debugging tests that fail due to bad casts, it may be more useful to observe the output of the
+            resulting ClassCastException which could provide information about the actual encountered type.
+            Asserting the type before casting would instead result in a less informative <code>"false is not true"</code>
+            message.</p>
+
+            <p>If JUnit is used with hamcrest, the <a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"><code>IsInstanceOf</code></a>
+            class from hamcrest could be used instead.</p>
+            
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="JUA">
+    <Description>Problems in JUnit Assertions</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.jsoup.UncheckedIOException</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Feb 2024 10:16:27 +0100" total_classes="1" referenced_classes="12" total_bugs="1" total_size="18" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.68" clock_seconds="1.06" peak_mbytes="190.37" alloc_mbytes="7104.00" gc_seconds="0.06" priority_2="1">
+    <FileStats path="org/jsoup/UncheckedIOExceptionTest.java" bugCount="1" size="18" bugHash="c3682d9ebe351365cd1dbf993fe4be2d"/>
+    <PackageStats package="org.jsoup" total_bugs="1" total_types="1" total_size="18" priority_2="1">
+      <ClassStats class="org.jsoup.UncheckedIOExceptionTest" sourceFile="UncheckedIOExceptionTest.java" interface="false" size="18" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="180" invocations="309" avgMicrosecondsPerInvocation="582" maxMicrosecondsPerInvocation="15056" standardDeviationMicrosecondsPerInvocation="1345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="99" invocations="61" avgMicrosecondsPerInvocation="1626" maxMicrosecondsPerInvocation="56528" standardDeviationMicrosecondsPerInvocation="7140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="45" invocations="12" avgMicrosecondsPerInvocation="3830" maxMicrosecondsPerInvocation="14618" standardDeviationMicrosecondsPerInvocation="5018"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="33" invocations="4" avgMicrosecondsPerInvocation="8494" maxMicrosecondsPerInvocation="32286" standardDeviationMicrosecondsPerInvocation="13744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="31" invocations="30" avgMicrosecondsPerInvocation="1055" maxMicrosecondsPerInvocation="18128" standardDeviationMicrosecondsPerInvocation="3283"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="26" invocations="274" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="1631" standardDeviationMicrosecondsPerInvocation="182"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="24" invocations="12" avgMicrosecondsPerInvocation="2077" maxMicrosecondsPerInvocation="10466" standardDeviationMicrosecondsPerInvocation="2904"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="19" invocations="12" avgMicrosecondsPerInvocation="1650" maxMicrosecondsPerInvocation="8441" standardDeviationMicrosecondsPerInvocation="2405"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="19" invocations="12" avgMicrosecondsPerInvocation="1644" maxMicrosecondsPerInvocation="11970" standardDeviationMicrosecondsPerInvocation="3250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="17" invocations="12" avgMicrosecondsPerInvocation="1484" maxMicrosecondsPerInvocation="6812" standardDeviationMicrosecondsPerInvocation="2147"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="17" invocations="311" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="601" standardDeviationMicrosecondsPerInvocation="47"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="16" invocations="4" avgMicrosecondsPerInvocation="4005" maxMicrosecondsPerInvocation="12802" standardDeviationMicrosecondsPerInvocation="5087"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="14" invocations="12" avgMicrosecondsPerInvocation="1233" maxMicrosecondsPerInvocation="7834" standardDeviationMicrosecondsPerInvocation="2161"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="13" invocations="5" avgMicrosecondsPerInvocation="2727" maxMicrosecondsPerInvocation="10754" standardDeviationMicrosecondsPerInvocation="4015"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

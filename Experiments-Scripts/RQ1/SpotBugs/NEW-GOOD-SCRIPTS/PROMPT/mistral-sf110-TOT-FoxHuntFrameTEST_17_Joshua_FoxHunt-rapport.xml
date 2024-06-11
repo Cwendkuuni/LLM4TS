@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287208882" analysisTimestamp="1714579184266" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT/98_trans-locator/FoxHuntFrameTEST/17/Joshua/FoxHunt</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="29d3abf727ae8f932ab5d09ca7ef83dd" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode Joshua.FoxHunt.FoxHuntFrameTest.testAddPointWithEmptyTextFields()</LongMessage>
+    <Class classname="Joshua.FoxHunt.FoxHuntFrameTest" primary="true">
+      <SourceLine classname="Joshua.FoxHunt.FoxHuntFrameTest" start="12" end="166" sourcefile="FoxHuntFrameTest.java" sourcepath="Joshua/FoxHunt/FoxHuntFrameTest.java">
+        <Message>At FoxHuntFrameTest.java:[lines 12-166]</Message>
+      </SourceLine>
+      <Message>In class Joshua.FoxHunt.FoxHuntFrameTest</Message>
+    </Class>
+    <Method classname="Joshua.FoxHunt.FoxHuntFrameTest" name="testAddPointWithEmptyTextFields" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="Joshua.FoxHunt.FoxHuntFrameTest" start="60" end="70" startBytecode="0" endBytecode="32" sourcefile="FoxHuntFrameTest.java" sourcepath="Joshua/FoxHunt/FoxHuntFrameTest.java"/>
+      <Message>In method Joshua.FoxHunt.FoxHuntFrameTest.testAddPointWithEmptyTextFields()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="8" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="Joshua.FoxHunt.FoxHuntFrameTest" primary="true" start="60" end="60" startBytecode="7" endBytecode="7" sourcefile="FoxHuntFrameTest.java" sourcepath="Joshua/FoxHunt/FoxHuntFrameTest.java">
+      <Message>At FoxHuntFrameTest.java:[line 60]</Message>
+    </SourceLine>
+    <SourceLine classname="Joshua.FoxHunt.FoxHuntFrameTest" start="61" end="61" startBytecode="15" endBytecode="15" sourcefile="FoxHuntFrameTest.java" sourcepath="Joshua/FoxHunt/FoxHuntFrameTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at FoxHuntFrameTest.java:[line 61]</Message>
+    </SourceLine>
+    <SourceLine classname="Joshua.FoxHunt.FoxHuntFrameTest" start="62" end="62" startBytecode="23" endBytecode="23" sourcefile="FoxHuntFrameTest.java" sourcepath="Joshua/FoxHunt/FoxHuntFrameTest.java" role="SOURCE_LINE_ANOTHER_INSTANCE">
+      <Message>Another occurrence at FoxHuntFrameTest.java:[line 62]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>Joshua.FoxHunt.FoxHuntFrame</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:48 +0200" total_classes="1" referenced_classes="15" total_bugs="1" total_size="97" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="8.14" clock_seconds="4.26" peak_mbytes="193.47" alloc_mbytes="7104.00" gc_seconds="0.22" priority_2="1">
+    <FileStats path="Joshua/FoxHunt/FoxHuntFrameTest.java" bugCount="1" size="97" bugHash="70117b0e31b86c89dec390ed9d782a5d"/>
+    <PackageStats package="Joshua.FoxHunt" total_bugs="1" total_types="1" total_size="97" priority_2="1">
+      <ClassStats class="Joshua.FoxHunt.FoxHuntFrameTest" sourceFile="FoxHuntFrameTest.java" interface="false" size="97" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="873" invocations="512" avgMicrosecondsPerInvocation="1705" maxMicrosecondsPerInvocation="71832" standardDeviationMicrosecondsPerInvocation="6043"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="258" invocations="15" avgMicrosecondsPerInvocation="17253" maxMicrosecondsPerInvocation="248836" standardDeviationMicrosecondsPerInvocation="61898"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="233" invocations="15" avgMicrosecondsPerInvocation="15575" maxMicrosecondsPerInvocation="76003" standardDeviationMicrosecondsPerInvocation="19684"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="184" invocations="15" avgMicrosecondsPerInvocation="12275" maxMicrosecondsPerInvocation="68782" standardDeviationMicrosecondsPerInvocation="18093"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="115" invocations="15" avgMicrosecondsPerInvocation="7678" maxMicrosecondsPerInvocation="47919" standardDeviationMicrosecondsPerInvocation="12531"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="113" invocations="92" avgMicrosecondsPerInvocation="1236" maxMicrosecondsPerInvocation="16216" standardDeviationMicrosecondsPerInvocation="2768"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="113" invocations="37" avgMicrosecondsPerInvocation="3068" maxMicrosecondsPerInvocation="68951" standardDeviationMicrosecondsPerInvocation="11223"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="93" invocations="476" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="28840" standardDeviationMicrosecondsPerInvocation="1505"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="83" invocations="15" avgMicrosecondsPerInvocation="5554" maxMicrosecondsPerInvocation="37367" standardDeviationMicrosecondsPerInvocation="9354"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="71" invocations="514" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="17640" standardDeviationMicrosecondsPerInvocation="977"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="69" invocations="10" avgMicrosecondsPerInvocation="6983" maxMicrosecondsPerInvocation="62653" standardDeviationMicrosecondsPerInvocation="18571"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="64" invocations="476" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="29080" standardDeviationMicrosecondsPerInvocation="1839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="63" invocations="10" avgMicrosecondsPerInvocation="6302" maxMicrosecondsPerInvocation="26282" standardDeviationMicrosecondsPerInvocation="9060"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="61" invocations="10" avgMicrosecondsPerInvocation="6194" maxMicrosecondsPerInvocation="25677" standardDeviationMicrosecondsPerInvocation="8601"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

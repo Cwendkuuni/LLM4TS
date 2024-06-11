@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287215842" analysisTimestamp="1714582117911" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT2/twitter4j/GeoQueryTEST/12/twitter4j</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="3">
+    <MissingClass>org.junit.Assert</MissingClass>
+    <MissingClass>twitter4j.GeoLocation</MissingClass>
+    <MissingClass>twitter4j.GeoQuery</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:55 +0200" total_classes="1" referenced_classes="9" total_bugs="0" total_size="9" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.19" clock_seconds="2.18" peak_mbytes="189.03" alloc_mbytes="7104.00" gc_seconds="0.17">
+    <FileStats path="twitter4j/GeoQueryTest.java" bugCount="0" size="9"/>
+    <PackageStats package="twitter4j" total_bugs="0" total_types="1" total_size="9">
+      <ClassStats class="twitter4j.GeoQueryTest" sourceFile="GeoQueryTest.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="455" invocations="294" avgMicrosecondsPerInvocation="1549" maxMicrosecondsPerInvocation="61008" standardDeviationMicrosecondsPerInvocation="5610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="257" invocations="9" avgMicrosecondsPerInvocation="28645" maxMicrosecondsPerInvocation="199369" standardDeviationMicrosecondsPerInvocation="61406"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="92" invocations="35" avgMicrosecondsPerInvocation="2630" maxMicrosecondsPerInvocation="23444" standardDeviationMicrosecondsPerInvocation="4523"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="65" invocations="258" avgMicrosecondsPerInvocation="255" maxMicrosecondsPerInvocation="13775" standardDeviationMicrosecondsPerInvocation="1230"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="64" invocations="296" avgMicrosecondsPerInvocation="219" maxMicrosecondsPerInvocation="14391" standardDeviationMicrosecondsPerInvocation="1260"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="61" invocations="26" avgMicrosecondsPerInvocation="2377" maxMicrosecondsPerInvocation="32031" standardDeviationMicrosecondsPerInvocation="6482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="58" invocations="2" avgMicrosecondsPerInvocation="29216" maxMicrosecondsPerInvocation="55571" standardDeviationMicrosecondsPerInvocation="26355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="44" invocations="9" avgMicrosecondsPerInvocation="4987" maxMicrosecondsPerInvocation="15961" standardDeviationMicrosecondsPerInvocation="6163"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="36" invocations="9" avgMicrosecondsPerInvocation="4078" maxMicrosecondsPerInvocation="27132" standardDeviationMicrosecondsPerInvocation="8335"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="27" invocations="9" avgMicrosecondsPerInvocation="3065" maxMicrosecondsPerInvocation="22920" standardDeviationMicrosecondsPerInvocation="7062"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

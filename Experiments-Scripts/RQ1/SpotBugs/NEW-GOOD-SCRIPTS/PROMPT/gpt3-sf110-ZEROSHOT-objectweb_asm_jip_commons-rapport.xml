@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360750256" analysisTimestamp="1714603230308" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/51_jiprof/LocalVariablesSorterTEST/14/org/objectweb/asm/jip/commons</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="819af3d0c1eb15cbad7eb98c24817942" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.objectweb.asm.jip.commons.LocalVariablesSorterTest.testConstructor()</LongMessage>
+    <Class classname="org.objectweb.asm.jip.commons.LocalVariablesSorterTest" primary="true">
+      <SourceLine classname="org.objectweb.asm.jip.commons.LocalVariablesSorterTest" start="8" end="74" sourcefile="LocalVariablesSorterTest.java" sourcepath="org/objectweb/asm/jip/commons/LocalVariablesSorterTest.java">
+        <Message>At LocalVariablesSorterTest.java:[lines 8-74]</Message>
+      </SourceLine>
+      <Message>In class org.objectweb.asm.jip.commons.LocalVariablesSorterTest</Message>
+    </Class>
+    <Method classname="org.objectweb.asm.jip.commons.LocalVariablesSorterTest" name="testConstructor" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.objectweb.asm.jip.commons.LocalVariablesSorterTest" start="12" end="14" startBytecode="0" endBytecode="9" sourcefile="LocalVariablesSorterTest.java" sourcepath="org/objectweb/asm/jip/commons/LocalVariablesSorterTest.java"/>
+      <Message>In method org.objectweb.asm.jip.commons.LocalVariablesSorterTest.testConstructor()</Message>
+    </Method>
+    <LocalVariable name="?" register="2" pc="14" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 2</Message>
+    </LocalVariable>
+    <SourceLine classname="org.objectweb.asm.jip.commons.LocalVariablesSorterTest" primary="true" start="13" end="13" startBytecode="13" endBytecode="13" sourcefile="LocalVariablesSorterTest.java" sourcepath="org/objectweb/asm/jip/commons/LocalVariablesSorterTest.java">
+      <Message>At LocalVariablesSorterTest.java:[line 13]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.objectweb.asm.jip.MethodVisitor</MissingClass>
+    <MissingClass>org.objectweb.asm.jip.commons.LocalVariablesSorter</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:10 +0100" total_classes="1" referenced_classes="10" total_bugs="1" total_size="27" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.05" clock_seconds="1.65" peak_mbytes="190.10" alloc_mbytes="7104.00" gc_seconds="0.08" priority_1="1">
+    <FileStats path="org/objectweb/asm/jip/commons/LocalVariablesSorterTest.java" bugCount="1" size="27" bugHash="c1f48541f9d6116067eb9d10030ec16c"/>
+    <PackageStats package="org.objectweb.asm.jip.commons" total_bugs="1" total_types="1" total_size="27" priority_1="1">
+      <ClassStats class="org.objectweb.asm.jip.commons.LocalVariablesSorterTest" sourceFile="LocalVariablesSorterTest.java" interface="false" size="27" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="238" invocations="308" avgMicrosecondsPerInvocation="775" maxMicrosecondsPerInvocation="16895" standardDeviationMicrosecondsPerInvocation="1894"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="164" invocations="10" avgMicrosecondsPerInvocation="16477" maxMicrosecondsPerInvocation="107788" standardDeviationMicrosecondsPerInvocation="31778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="64" invocations="69" avgMicrosecondsPerInvocation="935" maxMicrosecondsPerInvocation="7889" standardDeviationMicrosecondsPerInvocation="1408"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="62" invocations="26" avgMicrosecondsPerInvocation="2398" maxMicrosecondsPerInvocation="40136" standardDeviationMicrosecondsPerInvocation="7791"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="58" invocations="12" avgMicrosecondsPerInvocation="4846" maxMicrosecondsPerInvocation="52250" standardDeviationMicrosecondsPerInvocation="14329"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="40" invocations="273" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="5138" standardDeviationMicrosecondsPerInvocation="395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="32" invocations="10" avgMicrosecondsPerInvocation="3270" maxMicrosecondsPerInvocation="23127" standardDeviationMicrosecondsPerInvocation="6737"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="32" invocations="310" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="5923" standardDeviationMicrosecondsPerInvocation="384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="26" invocations="10" avgMicrosecondsPerInvocation="2634" maxMicrosecondsPerInvocation="10991" standardDeviationMicrosecondsPerInvocation="3669"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="25" invocations="10" avgMicrosecondsPerInvocation="2592" maxMicrosecondsPerInvocation="8726" standardDeviationMicrosecondsPerInvocation="2695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="25" invocations="1" avgMicrosecondsPerInvocation="25589" maxMicrosecondsPerInvocation="25589" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="24" invocations="12" avgMicrosecondsPerInvocation="2039" maxMicrosecondsPerInvocation="20533" standardDeviationMicrosecondsPerInvocation="5578"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

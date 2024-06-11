@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287205534" analysisTimestamp="1714574257051" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/COT/68_biblestudy/QueueTEST/16/bible/util</Jar>
+  </Project>
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" rank="5" abbrev="NP" category="CORRECTNESS" instanceHash="ed28348ce4e9bf305d4b37bd7720dbe4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="476">
+    <ShortMessage>Déréférencement d&apos;un pointeur null dans la méthode</ShortMessage>
+    <LongMessage>Déréférencement d&apos;un pointeur null dans la méthode bible.util.QueueTest.testToStringWithNullQueue()</LongMessage>
+    <Class classname="bible.util.QueueTest" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="7" end="163" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java">
+        <Message>At QueueTest.java:[lines 7-163]</Message>
+      </SourceLine>
+      <Message>In class bible.util.QueueTest</Message>
+    </Class>
+    <Method classname="bible.util.QueueTest" name="testToStringWithNullQueue" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="bible.util.QueueTest" start="161" end="163" startBytecode="0" endBytecode="39" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java"/>
+      <Message>In method bible.util.QueueTest.testToStringWithNullQueue()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="2" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from ?</Message>
+    </LocalVariable>
+    <SourceLine classname="bible.util.QueueTest" primary="true" start="162" end="162" startBytecode="3" endBytecode="3" sourcefile="QueueTest.java" sourcepath="bible/util/QueueTest.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at QueueTest.java:[line 162]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugPattern type="NP_ALWAYS_NULL" abbrev="NP" category="CORRECTNESS">
+    <ShortDescription>Déréférencement d&apos;un pointeur null dans la méthode</ShortDescription>
+    <Details><![CDATA[
+
+<p>Un pointeur à <code>null</code> est déréférencé ici. Ceci va mener à une <code>NullPointerException</code> quand le code sera exécuté.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="NP" cweid="476">
+    <Description>Déréférencement d&apos;un pointeur à null</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>bible.util.Queue</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:45 +0200" total_classes="1" referenced_classes="11" total_bugs="1" total_size="129" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.86" clock_seconds="5.49" peak_mbytes="190.92" alloc_mbytes="7104.00" gc_seconds="0.25" priority_1="1">
+    <FileStats path="bible/util/QueueTest.java" bugCount="1" size="129" bugHash="6e2a5c84569a1e13f3dffaed9dd496b6"/>
+    <PackageStats package="bible.util" total_bugs="1" total_types="1" total_size="129" priority_1="1">
+      <ClassStats class="bible.util.QueueTest" sourceFile="QueueTest.java" interface="false" size="129" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="757" invocations="327" avgMicrosecondsPerInvocation="2315" maxMicrosecondsPerInvocation="92296" standardDeviationMicrosecondsPerInvocation="8140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="313" invocations="79" avgMicrosecondsPerInvocation="3962" maxMicrosecondsPerInvocation="48652" standardDeviationMicrosecondsPerInvocation="9244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="304" invocations="11" avgMicrosecondsPerInvocation="27724" maxMicrosecondsPerInvocation="298712" standardDeviationMicrosecondsPerInvocation="85696"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="264" invocations="11" avgMicrosecondsPerInvocation="24010" maxMicrosecondsPerInvocation="68525" standardDeviationMicrosecondsPerInvocation="24282"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="184" invocations="14" avgMicrosecondsPerInvocation="13157" maxMicrosecondsPerInvocation="83742" standardDeviationMicrosecondsPerInvocation="20789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="171" invocations="11" avgMicrosecondsPerInvocation="15622" maxMicrosecondsPerInvocation="56982" standardDeviationMicrosecondsPerInvocation="17648"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="150" invocations="14" avgMicrosecondsPerInvocation="10742" maxMicrosecondsPerInvocation="118693" standardDeviationMicrosecondsPerInvocation="30306"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="141" invocations="13" avgMicrosecondsPerInvocation="10877" maxMicrosecondsPerInvocation="90793" standardDeviationMicrosecondsPerInvocation="23837"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="128" invocations="11" avgMicrosecondsPerInvocation="11647" maxMicrosecondsPerInvocation="47910" standardDeviationMicrosecondsPerInvocation="16429"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="120" invocations="13" avgMicrosecondsPerInvocation="9270" maxMicrosecondsPerInvocation="34209" standardDeviationMicrosecondsPerInvocation="12307"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="108" invocations="292" avgMicrosecondsPerInvocation="372" maxMicrosecondsPerInvocation="39767" standardDeviationMicrosecondsPerInvocation="2526"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="108" invocations="14" avgMicrosecondsPerInvocation="7725" maxMicrosecondsPerInvocation="49916" standardDeviationMicrosecondsPerInvocation="13693"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="96" invocations="31" avgMicrosecondsPerInvocation="3121" maxMicrosecondsPerInvocation="54433" standardDeviationMicrosecondsPerInvocation="10366"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="84" invocations="11" avgMicrosecondsPerInvocation="7640" maxMicrosecondsPerInvocation="34270" standardDeviationMicrosecondsPerInvocation="11517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="82" invocations="14" avgMicrosecondsPerInvocation="5902" maxMicrosecondsPerInvocation="28647" standardDeviationMicrosecondsPerInvocation="8256"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="82" invocations="329" avgMicrosecondsPerInvocation="250" maxMicrosecondsPerInvocation="16113" standardDeviationMicrosecondsPerInvocation="1334"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="79" invocations="11" avgMicrosecondsPerInvocation="7203" maxMicrosecondsPerInvocation="28749" standardDeviationMicrosecondsPerInvocation="10647"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

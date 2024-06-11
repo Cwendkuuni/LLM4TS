@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713290018385" analysisTimestamp="1714584060064" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/DEFECTS4J/AVEC-PACKAGE_GLOBAL/Defects4J-generated-tests/TOT2/Mockito/19/19/org/mockito/internal/configuration/injection/filter</Jar>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="e52e01d22e31921f0e25c57ba5008b3d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Alimentation à perte d&apos;une variable locale</ShortMessage>
+    <LongMessage>Alimentation à perte d&apos;une variable locale dans la méthode org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilterTest.testConstructor()</LongMessage>
+    <Class classname="org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilterTest" primary="true">
+      <SourceLine classname="org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilterTest" start="5" end="11" sourcefile="TypeBasedCandidateFilterTest.java" sourcepath="org/mockito/internal/configuration/injection/filter/TypeBasedCandidateFilterTest.java">
+        <Message>At TypeBasedCandidateFilterTest.java:[lines 5-11]</Message>
+      </SourceLine>
+      <Message>In class org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilterTest</Message>
+    </Class>
+    <Method classname="org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilterTest" name="testConstructor" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilterTest" start="9" end="11" startBytecode="0" endBytecode="5" sourcefile="TypeBasedCandidateFilterTest.java" sourcepath="org/mockito/internal/configuration/injection/filter/TypeBasedCandidateFilterTest.java"/>
+      <Message>In method org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilterTest.testConstructor()</Message>
+    </Method>
+    <LocalVariable name="?" register="1" pc="9" role="LOCAL_VARIABLE_UNKNOWN">
+      <Message>Local variable stored in JVM register 1</Message>
+    </LocalVariable>
+    <SourceLine classname="org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilterTest" primary="true" start="9" end="9" startBytecode="8" endBytecode="8" sourcefile="TypeBasedCandidateFilterTest.java" sourcepath="org/mockito/internal/configuration/injection/filter/TypeBasedCandidateFilterTest.java">
+      <Message>At TypeBasedCandidateFilterTest.java:[line 9]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="?"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Alimentation à perte d&apos;une variable locale</ShortDescription>
+    <Details><![CDATA[
+
+<p>Cette instruction assigne une valeur à une variable locale mais cette variable n'est pas lue par la suite. Ceci indique souvent une erreur puisque la valeur calculée n'est jamais utilisée.</p>
+<p>Notez que le compilateur javac de Sun génère fréquemment ce genre d'affectations à perte. FindBugs analysant le byte-code généré, il n'y a pas de façon simple d'éliminer ces fausses alarmes.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Alimentation à perte</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>org.mockito.internal.configuration.injection.filter.MockCandidateFilter</MissingClass>
+    <MissingClass>org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:53:38 +0200" total_classes="1" referenced_classes="9" total_bugs="1" total_size="6" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="5.23" clock_seconds="2.75" peak_mbytes="188.49" alloc_mbytes="7104.00" gc_seconds="0.21" priority_1="1">
+    <FileStats path="org/mockito/internal/configuration/injection/filter/TypeBasedCandidateFilterTest.java" bugCount="1" size="6" bugHash="d6ab6c96b457bded1d3747f0790d44e0"/>
+    <PackageStats package="org.mockito.internal.configuration.injection.filter" total_bugs="1" total_types="1" total_size="6" priority_1="1">
+      <ClassStats class="org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilterTest" sourceFile="TypeBasedCandidateFilterTest.java" interface="false" size="6" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="601" invocations="293" avgMicrosecondsPerInvocation="2051" maxMicrosecondsPerInvocation="55950" standardDeviationMicrosecondsPerInvocation="6194"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="236" invocations="9" avgMicrosecondsPerInvocation="26229" maxMicrosecondsPerInvocation="227921" standardDeviationMicrosecondsPerInvocation="71330"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="127" invocations="295" avgMicrosecondsPerInvocation="430" maxMicrosecondsPerInvocation="36454" standardDeviationMicrosecondsPerInvocation="2687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="127" invocations="35" avgMicrosecondsPerInvocation="3628" maxMicrosecondsPerInvocation="21490" standardDeviationMicrosecondsPerInvocation="5813"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="125" invocations="24" avgMicrosecondsPerInvocation="5242" maxMicrosecondsPerInvocation="74780" standardDeviationMicrosecondsPerInvocation="15654"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="88" invocations="9" avgMicrosecondsPerInvocation="9874" maxMicrosecondsPerInvocation="32435" standardDeviationMicrosecondsPerInvocation="13223"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="73" invocations="2" avgMicrosecondsPerInvocation="36862" maxMicrosecondsPerInvocation="57145" standardDeviationMicrosecondsPerInvocation="20283"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="59" invocations="2" avgMicrosecondsPerInvocation="29523" maxMicrosecondsPerInvocation="58554" standardDeviationMicrosecondsPerInvocation="29031"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="53" invocations="9" avgMicrosecondsPerInvocation="5985" maxMicrosecondsPerInvocation="35332" standardDeviationMicrosecondsPerInvocation="10808"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="43" invocations="9" avgMicrosecondsPerInvocation="4814" maxMicrosecondsPerInvocation="25901" standardDeviationMicrosecondsPerInvocation="8622"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

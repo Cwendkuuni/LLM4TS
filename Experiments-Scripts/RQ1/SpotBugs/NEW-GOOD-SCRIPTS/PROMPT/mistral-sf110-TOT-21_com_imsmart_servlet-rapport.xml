@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1713287206842" analysisTimestamp="1714579425313" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/MISTRAL7B/SF110/MISTRAL7B_FOR_SF110_DATASET/AVEC-PACKAGE_GLOBAL/SF110-generated-tests/TOT/11_imsmart/HTMLFilterTEST/21/com/imsmart/servlet</Jar>
+  </Project>
+  <Errors errors="0" missingClasses="2">
+    <MissingClass>com.imsmart.servlet.HTMLFilter</MissingClass>
+    <MissingClass>org.junit.Assert</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Apr 2024 19:06:46 +0200" total_classes="1" referenced_classes="10" total_bugs="0" total_size="26" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="6.05" clock_seconds="2.83" peak_mbytes="189.43" alloc_mbytes="7104.00" gc_seconds="0.19">
+    <FileStats path="com/imsmart/servlet/HTMLFilterTest.java" bugCount="0" size="26"/>
+    <PackageStats package="com.imsmart.servlet" total_bugs="0" total_types="1" total_size="26">
+      <ClassStats class="com.imsmart.servlet.HTMLFilterTest" sourceFile="HTMLFilterTest.java" interface="false" size="26" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="469" invocations="309" avgMicrosecondsPerInvocation="1518" maxMicrosecondsPerInvocation="33553" standardDeviationMicrosecondsPerInvocation="4499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="224" invocations="10" avgMicrosecondsPerInvocation="22498" maxMicrosecondsPerInvocation="201546" standardDeviationMicrosecondsPerInvocation="59944"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="171" invocations="63" avgMicrosecondsPerInvocation="2726" maxMicrosecondsPerInvocation="23221" standardDeviationMicrosecondsPerInvocation="5667"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="146" invocations="10" avgMicrosecondsPerInvocation="14651" maxMicrosecondsPerInvocation="71590" standardDeviationMicrosecondsPerInvocation="22516"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="134" invocations="10" avgMicrosecondsPerInvocation="13464" maxMicrosecondsPerInvocation="61331" standardDeviationMicrosecondsPerInvocation="19314"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="117" invocations="27" avgMicrosecondsPerInvocation="4369" maxMicrosecondsPerInvocation="64431" standardDeviationMicrosecondsPerInvocation="12951"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="100" invocations="273" avgMicrosecondsPerInvocation="367" maxMicrosecondsPerInvocation="35966" standardDeviationMicrosecondsPerInvocation="2373"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="100" invocations="311" avgMicrosecondsPerInvocation="322" maxMicrosecondsPerInvocation="27238" standardDeviationMicrosecondsPerInvocation="2177"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="48" invocations="10" avgMicrosecondsPerInvocation="4871" maxMicrosecondsPerInvocation="28516" standardDeviationMicrosecondsPerInvocation="8398"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="46" invocations="6" avgMicrosecondsPerInvocation="7738" maxMicrosecondsPerInvocation="23736" standardDeviationMicrosecondsPerInvocation="8522"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="44" invocations="10" avgMicrosecondsPerInvocation="4413" maxMicrosecondsPerInvocation="35674" standardDeviationMicrosecondsPerInvocation="10478"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

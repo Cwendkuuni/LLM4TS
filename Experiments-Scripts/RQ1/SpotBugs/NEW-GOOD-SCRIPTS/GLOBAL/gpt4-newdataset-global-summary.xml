@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<Dataset name="gpt4-newdataset">
+  <Total>
+    <Bugs>41</Bugs>
+    <Classes>88</Classes>
+  </Total>
+  <Prompts>
+    <Prompt name="COT">
+      <Bugs>0</Bugs>
+      <Classes>21</Classes>
+      <BugsInstances/>
+    </Prompt>
+    <Prompt name="FEWSHOT">
+      <Bugs>16</Bugs>
+      <Classes>14</Classes>
+      <BugsInstances>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" category="CORRECTNESS"/>
+        <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="BC_VACUOUS_INSTANCEOF" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" category="BAD_PRACTICE"/>
+      </BugsInstances>
+      <BugRank rank="17" count="11"/>
+      <BugRank rank="12" count="1"/>
+      <BugRank rank="16" count="4"/>
+    </Prompt>
+    <Prompt name="TOT">
+      <Bugs>16</Bugs>
+      <Classes>19</Classes>
+      <BugsInstances>
+        <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" category="EXPERIMENTAL"/>
+        <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" category="EXPERIMENTAL"/>
+        <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" category="EXPERIMENTAL"/>
+        <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" category="BAD_PRACTICE"/>
+        <BugInstance type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS" priority="2" rank="16" category="BAD_PRACTICE"/>
+      </BugsInstances>
+      <BugRank rank="18" count="5"/>
+      <BugRank rank="17" count="1"/>
+      <BugRank rank="20" count="3"/>
+      <BugRank rank="16" count="7"/>
+    </Prompt>
+    <Prompt name="TOT2">
+      <Bugs>3</Bugs>
+      <Classes>19</Classes>
+      <BugsInstances>
+        <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" category="STYLE"/>
+        <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" category="PERFORMANCE"/>
+      </BugsInstances>
+      <BugRank rank="18" count="2"/>
+      <BugRank rank="17" count="1"/>
+    </Prompt>
+    <Prompt name="ZEROSHOT">
+      <Bugs>6</Bugs>
+      <Classes>15</Classes>
+      <BugsInstances>
+        <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" category="PERFORMANCE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" category="STYLE"/>
+        <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" category="CORRECTNESS"/>
+      </BugsInstances>
+      <BugRank rank="18" count="3"/>
+      <BugRank rank="15" count="2"/>
+      <BugRank rank="12" count="1"/>
+    </Prompt>
+  </Prompts>
+</Dataset>

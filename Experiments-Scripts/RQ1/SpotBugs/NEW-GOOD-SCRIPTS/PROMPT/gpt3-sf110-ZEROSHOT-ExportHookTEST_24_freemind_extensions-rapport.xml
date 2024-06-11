@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1708360748760" analysisTimestamp="1714605890045" release="">
+  <Project projectName="">
+    <Jar>/home/wendkuuni/EVOSUITE/LLMS-PROJECT/COMPILABILITY-CODECOVERAGE/SF-110/COMPILED-CLASSES/SF110-generated-tests/ZEROSHOT/105_freemind/ExportHookTEST/24/freemind/extensions</Jar>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="b6343c7fa0d1e38bf4fc523750ff92c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Champ inutilisé</ShortMessage>
+    <LongMessage>Champ inutilisé : freemind.extensions.ExportHookTest.exportHook</LongMessage>
+    <Class classname="freemind.extensions.ExportHookTest" primary="true">
+      <SourceLine classname="freemind.extensions.ExportHookTest" start="15" end="78" sourcefile="ExportHookTest.java" sourcepath="freemind/extensions/ExportHookTest.java">
+        <Message>At ExportHookTest.java:[lines 15-78]</Message>
+      </SourceLine>
+      <Message>In class freemind.extensions.ExportHookTest</Message>
+    </Class>
+    <Field classname="freemind.extensions.ExportHookTest" name="exportHook" signature="Lfreemind/extensions/ExportHook;" isStatic="false" primary="true">
+      <SourceLine classname="freemind.extensions.ExportHookTest" sourcefile="ExportHookTest.java" sourcepath="freemind/extensions/ExportHookTest.java">
+        <Message>In ExportHookTest.java</Message>
+      </SourceLine>
+      <Message>Field freemind.extensions.ExportHookTest.exportHook</Message>
+    </Field>
+    <SourceLine classname="freemind.extensions.ExportHookTest" primary="true" start="21" end="21" startBytecode="8" endBytecode="8" sourcefile="ExportHookTest.java" sourcepath="freemind/extensions/ExportHookTest.java">
+      <Message>At ExportHookTest.java:[line 21]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Champ inutilisé</ShortDescription>
+    <Details><![CDATA[
+
+<p>Ce champ n'est jamais lu. Envisagez de le supprimer de la classe.</p>
+
+  ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UrF">
+    <Description>Champ non lu</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>freemind.extensions.ExportHook</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 19 Feb 2024 17:39:08 +0100" total_classes="1" referenced_classes="9" total_bugs="1" total_size="23" num_packages="1" java_version="1.8.0_402" vm_version="25.402-b06" cpu_seconds="4.53" clock_seconds="1.06" peak_mbytes="189.19" alloc_mbytes="7104.00" gc_seconds="0.07" priority_2="1">
+    <FileStats path="freemind/extensions/ExportHookTest.java" bugCount="1" size="23" bugHash="9deb13ae4827180152a4d8b337eebfce"/>
+    <PackageStats package="freemind.extensions" total_bugs="1" total_types="1" total_size="23" priority_2="1">
+      <ClassStats class="freemind.extensions.ExportHookTest" sourceFile="ExportHookTest.java" interface="false" size="23" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="177" invocations="293" avgMicrosecondsPerInvocation="605" maxMicrosecondsPerInvocation="17108" standardDeviationMicrosecondsPerInvocation="1480"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBugsSummaryStats" totalMilliseconds="72" invocations="9" avgMicrosecondsPerInvocation="8089" maxMicrosecondsPerInvocation="72711" standardDeviationMicrosecondsPerInvocation="22847"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="39" invocations="43" avgMicrosecondsPerInvocation="912" maxMicrosecondsPerInvocation="5412" standardDeviationMicrosecondsPerInvocation="1203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="36" invocations="9" avgMicrosecondsPerInvocation="4101" maxMicrosecondsPerInvocation="14061" standardDeviationMicrosecondsPerInvocation="5326"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="30" invocations="10" avgMicrosecondsPerInvocation="3051" maxMicrosecondsPerInvocation="28775" standardDeviationMicrosecondsPerInvocation="8581"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="29" invocations="258" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="2692" standardDeviationMicrosecondsPerInvocation="247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="26" invocations="24" avgMicrosecondsPerInvocation="1107" maxMicrosecondsPerInvocation="15276" standardDeviationMicrosecondsPerInvocation="3089"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="24" invocations="9" avgMicrosecondsPerInvocation="2700" maxMicrosecondsPerInvocation="12137" standardDeviationMicrosecondsPerInvocation="3670"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="18" invocations="10" avgMicrosecondsPerInvocation="1836" maxMicrosecondsPerInvocation="16919" standardDeviationMicrosecondsPerInvocation="5028"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="17" invocations="9" avgMicrosecondsPerInvocation="1962" maxMicrosecondsPerInvocation="12124" standardDeviationMicrosecondsPerInvocation="3692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="16" invocations="9" avgMicrosecondsPerInvocation="1836" maxMicrosecondsPerInvocation="8502" standardDeviationMicrosecondsPerInvocation="2618"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="16" invocations="295" avgMicrosecondsPerInvocation="55" maxMicrosecondsPerInvocation="570" standardDeviationMicrosecondsPerInvocation="46"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="13" invocations="10" avgMicrosecondsPerInvocation="1387" maxMicrosecondsPerInvocation="12014" standardDeviationMicrosecondsPerInvocation="3543"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
