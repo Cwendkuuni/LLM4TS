@@ -68,11 +68,12 @@ The repository is organized into the following directories:
 If you use this package in your research, please cite our paper:
 
 
+```bibtex
 @article{Paper,
-title={LLMs and Prompting for Unit Test Generation: A Large-Scale Evaluation},
-author={Anonymous},
-journal={Journal},
-year={2024}
+  title={LLMs and Prompting for Unit Test Generation: A Large-Scale Evaluation},
+  author={Anonymous},
+  journal={Journal},
+  year={2024}
 }
 
 
