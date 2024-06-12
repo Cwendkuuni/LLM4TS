@@ -45,7 +45,7 @@ The repository is organized into the following directories:
 
 ## Experimental Setup Overview
 
-![Experimental Setup Overview](/experimental_setup-overview.pdf)
+![Experimental Setup Overview](/experimental_setup-overview.png)
 
 
 ## How to Use
