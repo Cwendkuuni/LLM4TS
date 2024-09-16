@@ -54,6 +54,7 @@ The repository is organized into the following directories:
    ```sh
    git clone https://anonymous.4open.science/r/LLM4TS-0F76/
    cd LLM-Unit-Test-Generation
+   ```
 2. **Setup Dependencies**:
    Ensure all necessary dependencies are available by following the instructions in the `Dependencies` directory.
 
