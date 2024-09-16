@@ -51,8 +51,7 @@ The repository is organized into the following directories:
 ## How to Use
 
 1. **Clone the Repository**:
-   
-sh
+   ```sh
    git clone https://anonymous.4open.science/r/LLM4TS-0F76/
    cd LLM-Unit-Test-Generation
 2. **Setup Dependencies**:
@@ -77,6 +76,7 @@ If you use this package in your research, please cite our paper:
   year={2024}
 }
 ```
+
 
 
 ## License
